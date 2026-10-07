@@ -347,13 +347,13 @@ const sideStories = allArticles.slice(1, 5);
       </div>
       <div class="clubs-grid" data-reveal-group>
         {clubs.map(c => (
-          <a class="club-card" href={c.slug === 'boxing-center-etats-unis' ? 'https://clubmma.fr/' : '/clubs/'} target={c.slug === 'boxing-center-etats-unis' ? '_blank' : '_self'} rel={c.slug === 'boxing-center-etats-unis' ? 'noopener noreferrer' : ''} data-reveal>
+          <a class="club-card" href={`/clubs/${c.slug}/`} data-reveal>
             <div class="club-card__visual">
               <img src={c.image} alt={c.imageAlt} width="640" height="360" loading="lazy" decoding="async" />
             </div>
             <div class="club-card__body">
               <span class="kicker">{c.city}</span>
-              <h3 class="display">{c.name} {c.slug === 'boxing-center-etats-unis' && <span class="mono" style="font-size: 0.75rem; color: var(--teal);">[Pôle MMA 31 ↗]</span>}</h3>
+              <h3 class="display">{c.name} {c.slug === 'boxing-center-etats-unis' && <span class="mono" style="font-size: 0.75rem; color: var(--teal);">[Pôle Majeur 31]</span>}</h3>
               <p>{c.description}</p>
               <div class="club-card__tags">
                 {c.disciplines.slice(0, 3).map(d => (

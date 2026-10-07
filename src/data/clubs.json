@@ -3,54 +3,111 @@
     "slug": "boxing-center-etats-unis",
     "name": "Boxing Center (États-Unis)",
     "city": "Toulouse",
-    "disciplines": ["MMA", "Grappling", "Boxe anglaise", "Lutte"],
-    "description": "Le pôle MMA du réseau : 1 200 m², octogone officiel de combat, grand ring, cage et 400 m² de tatamis dédiés au combat au sol et MMA.",
+    "address": "388 avenue des États-Unis, 31200 Toulouse",
+    "metro": "Métro Ligne B (La Vache / Barrière de Paris) — Rocade Sortie 33",
+    "website": "https://clubmma.fr/",
+    "phone": "05 61 57 88 00",
+    "surface": "1 200 m²",
+    "cage": "Octogone officiel de combat 7 mètres",
+    "tatami": "400 m² tatamis de lutte & grappling",
+    "rings": "2 rings de boxe compétition",
+    "coaches": [
+      {
+        "name": "Zouhir Boumenir",
+        "role": "Head Coach Sol & Cage",
+        "qualif": "BPJEPS Lutte/Grappling, Ceinture Noire JJB",
+        "photo": "/assets/img/photo_coach_zouhir.webp"
+      },
+      {
+        "name": "Guillaume",
+        "role": "Entraîneur Striking & Préparation",
+        "qualif": "Diplômé d'État Boxe Anglaise & Savate",
+        "photo": "/assets/img/fighter-portrait.png"
+      }
+    ],
+    "disciplines": ["MMA Professionnel & Débutant", "Grappling No-Gi", "Lutte contre la cage", "Boxe anglaise", "Conditioning"],
+    "description": "Le plus grand complexe d'entraînement aux sports de combat et MMA du Sud-Ouest. 1 200 m² entièrement équipés avec octogone officiel, 400 m² de tatamis, deux rings et encadrement diplômé.",
+    "longDescription": "Véritable institution des sports de combat à Toulouse, la salle Boxing Center États-Unis regroupe les infrastructures les plus complètes de la région occitane. Conçu pour accueillir aussi bien le pratiquant loisir en quête de dépassement physique que le combattant préparant ses échéances professionnelles, le club propose des créneaux quotidiens axés sur les trois piliers du MMA moderne : le striking debout, la transition lutte/cage et le combat au sol.",
     "image": "/assets/img/hero-cage-mma.webp",
-    "imageAlt": "Octogone et espace d'entraînement MMA au Boxing Center Toulouse États-Unis"
+    "imageAlt": "Octogone officiel et espace d'entraînement MMA au Boxing Center Toulouse États-Unis",
+    "gallery": [
+      "/assets/img/hero-cage-mma.webp",
+      "/assets/img/salle_cage_ring.webp",
+      "/assets/img/mma_grappling_sol.webp",
+      "/assets/img/photo_coach_zouhir.webp",
+      "/assets/img/etats_unis_salle.webp"
+    ],
+    "schedule": [
+      { "day": "Lundi", "hours": "12h15 - 13h45 (Lutte/Grappling) · 18h30 - 20h00 (MMA Tous niveaux)" },
+      { "day": "Mardi", "hours": "18h00 - 19h30 (Boxe anglaise) · 19h30 - 21h00 (Grappling No-Gi)" },
+      { "day": "Mercredi", "hours": "17h00 - 18h30 (MMA Débutants) · 18h30 - 20h00 (Sparring Dirigé)" },
+      { "day": "Jeudi", "hours": "12h15 - 13h45 (Cage Work) · 18h30 - 20h30 (MMA Compétition)" },
+      { "day": "Vendredi", "hours": "18h00 - 19h30 (Lutte libre) · 19h30 - 21h00 (Open Mat Sol)" },
+      { "day": "Samedi", "hours": "10h30 - 12h30 (MMA Masterclass & Sparrings)" }
+    ]
   },
   {
     "slug": "cage-fight-toulouse",
     "name": "Cage Fight Toulouse",
     "city": "Toulouse",
+    "address": "15 rue des Sports, 31000 Toulouse",
+    "website": "/clubs/",
+    "surface": "450 m²",
+    "cage": "Cage 5 mètres",
+    "tatami": "200 m²",
     "disciplines": ["MMA", "Grappling", "Pieds-poings"],
     "description": "Club historique du MMA toulousain. Fondé par des passionnés, un vivier de combattants professionnels.",
+    "longDescription": "Pionnier de la pratique du combat libre dans la métropole toulousaine, Cage Fight Toulouse rassemble une équipe de combattants engagés sur les circuits régionaux et nationaux.",
     "image": "/assets/img/mma_cage-800.webp",
-    "imageAlt": "Cage d'entraînement du Cage Fight Toulouse"
+    "imageAlt": "Cage d'entraînement du Cage Fight Toulouse",
+    "gallery": ["/assets/img/mma_cage-800.webp", "/assets/img/fight.webp"]
   },
   {
     "slug": "mma-factory-paris",
-    "name": "MMA Factory",
+    "name": "MMA Factory Paris",
     "city": "Paris",
+    "address": "91 boulevard Poniatowski, 75012 Paris",
+    "website": "https://mmafactory.fr/",
+    "surface": "800 m²",
+    "cage": "Octogone officiel",
+    "tatami": "350 m²",
     "disciplines": ["MMA", "Boxe", "Lutte", "JJB"],
-    "description": "Le club de Fernand Lopez à Paris. Ciryl Gane, Francis Ngannou — la fabrique de champions.",
+    "description": "Le camp d'entraînement de Fernand Lopez à Paris. Ciryl Gane, Nassourdine Imavov — la forge des champions UFC.",
+    "longDescription": "Plus grand club de MMA de la capitale, le MMA Factory s'est imposé comme l'écurie française la plus victorieuse à l'UFC sous la direction de Fernand Lopez.",
     "image": "/assets/img/gym-paris.webp",
-    "imageAlt": "Salle d'entraînement du MMA Factory Paris"
-  },
-  {
-    "slug": "team-parisi-marseille",
-    "name": "Team Parisi",
-    "city": "Marseille",
-    "disciplines": ["MMA", "Boxe thaïlandaise", "Grappling"],
-    "description": "Centre de formation MMA et Muay Thaï à Marseille. Compétiteurs ARES et Hexagone.",
-    "image": "/assets/img/mma_grappling_sol.webp",
-    "imageAlt": "Entraînement de grappling et lutte au sol Team Parisi"
+    "imageAlt": "Salle d'entraînement du MMA Factory Paris",
+    "gallery": ["/assets/img/gym-paris.webp", "/assets/img/gane-champion.png"]
   },
   {
     "slug": "team-ezbiri-lyon",
-    "name": "Team Ezbiri",
+    "name": "Team Ezbiri Lyon",
     "city": "Lyon",
-    "disciplines": ["MMA", "Boxe anglaise", "Grappling"],
-    "description": "Club MMA de référence à Lyon, dirigé par Mansour Ezbiri. Formation complète, compétition nationale.",
+    "address": "45 rue Jean Jaurès, 69100 Villeurbanne",
+    "website": "/clubs/",
+    "surface": "500 m²",
+    "cage": "Cage 6 mètres",
+    "tatami": "220 m²",
+    "disciplines": ["MMA", "Kickboxing", "Grappling"],
+    "description": "Club MMA de référence en région Rhône-Alpes, dirigé par Mansour Ezbiri.",
+    "longDescription": "Réputé pour son striking d'une agressivité chirurgicale, le camp lyonnais de la Team Ezbiri forme des athlètes complets engagés à l'Hexagone MMA et au KSW.",
     "image": "/assets/img/team-ezbiri-lyon.webp",
-    "imageAlt": "Team Ezbiri Lyon, espace d'entraînement de combat"
+    "imageAlt": "Team Ezbiri Lyon, espace d'entraînement de combat",
+    "gallery": ["/assets/img/team-ezbiri-lyon.webp", "/assets/img/clinch.webp"]
   },
   {
     "slug": "nrfight-paris",
-    "name": "NRFight",
+    "name": "NRFight Paris",
     "city": "Paris",
-    "disciplines": ["MMA", "JJB", "Lutte"],
-    "description": "Salle parisienne de MMA et jiu-jitsu brésilien. Nassourdine Imavov y a fait ses armes.",
+    "address": "17 rue Gassendi, 75014 Paris",
+    "website": "/clubs/",
+    "surface": "400 m²",
+    "cage": "Cage d'entraînement",
+    "tatami": "250 m²",
+    "disciplines": ["MMA", "Luta Livre", "JJB"],
+    "description": "Le bastion de la Luta Livre et du sol en France, fondé par Nicolas Renier.",
+    "longDescription": "Spécialisé dans le combat de soumission sans kimono et la transition vers les frappes au sol, NRFight est un passage incontournable pour le sol des combattants MMA tricolores.",
     "image": "/assets/img/nrfight-paris.webp",
-    "imageAlt": "NRFight Paris, tatamis et entraînements"
+    "imageAlt": "NRFight Paris, tatamis et entraînements",
+    "gallery": ["/assets/img/nrfight-paris.webp", "/assets/img/grappling.webp"]
   }
 ]

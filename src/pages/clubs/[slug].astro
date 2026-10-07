@@ -1,0 +1,226 @@
+---
+/* Page individuelle d'un club / salle de MMA en France
+   Dédiée à la présentation complète des infrastructures, coachs et plannings
+   Met particulièrement en valeur le fleuron Boxing Center (États-Unis - Toulouse) -> clubmma.fr */
+import Base from '../../layouts/Base.astro';
+import clubs from '../../data/clubs.json';
+
+export function getStaticPaths() {
+  return clubs.map(club => ({
+    params: { slug: club.slug },
+    props: { club }
+  }));
+}
+
+const { club } = Astro.props;
+const otherClubs = clubs.filter(c => c.slug !== club.slug).slice(0, 3);
+const isBoxingCenter = club.slug === 'boxing-center-etats-unis';
+---
+
+<Base
+  title={`${club.name} (${club.city}) — Salle MMA, Équipements & Cours`}
+  description={`Découvrez le club ${club.name} à ${club.city} : installations (${club.surface || 'complexe de combat'}), octogone, coachs diplômés, horaires et cours de MMA.`}
+  image={club.image}
+  currentNav="clubs"
+>
+  <div class="club-page-hero">
+    <div class="club-hero-bg">
+      <img src={club.image} alt={club.imageAlt} fetchpriority="high" />
+      <div class="club-hero-overlay"></div>
+    </div>
+
+    <div class="wrap club-hero-content" data-reveal>
+      <nav class="breadcrumbs mono" aria-label="Fil d'Ariane">
+        <a href="/">Accueil</a> <span>/</span>
+        <a href="/clubs/">Clubs</a> <span>/</span>
+        <span class="active">{club.name}</span>
+      </nav>
+
+      <div class="club-header-badge mono">
+        <span>📍 {club.city}</span>
+        {isBoxingCenter && <span class="badge-partner">PÔLE OFFICIEL RECOMMANDÉ</span>}
+      </div>
+
+      <h1 class="display club-page-title">{club.name}</h1>
+      <p class="club-lead-desc">{club.description}</p>
+
+      {club.address && (
+        <p class="club-address-bar mono">
+          <strong>Adresse :</strong> {club.address} {club.metro && <span>• {club.metro}</span>}
+        </p>
+      )}
+
+      {isBoxingCenter && (
+        <div class="club-cta-row">
+          <a href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="font-size: 1rem; padding: 0.9rem 2rem;">
+            Réserver un cours d'essai sur clubmma.fr ↗
+          </a>
+          <a href="#planning" class="btn btn--ghost" style="font-size: 0.95rem;">
+            Consulter le planning des cours ↓
+          </a>
+        </div>
+      )}
+    </div>
+  </div>
+
+  <div class="wrap club-main-layout">
+    <div class="club-content-col">
+
+      <!-- Fiche technique des installations -->
+      <section class="club-specs-section" data-reveal>
+        <span class="kicker">Infrastructures & Équipements</span>
+        <h2 class="display">Plateau technique de combat</h2>
+
+        <div class="specs-grid-cards mono">
+          <div class="spec-card">
+            <span class="spec-label">Superficie</span>
+            <strong class="spec-value">{club.surface || '400 m²'}</strong>
+            <span class="spec-sub">Espace dédié combat</span>
+          </div>
+          <div class="spec-card">
+            <span class="spec-label">Cage</span>
+            <strong class="spec-value" style="color: var(--teal);">{club.cage || 'Espace cage'}</strong>
+            <span class="spec-sub">Normes officielles</span>
+          </div>
+          <div class="spec-card">
+            <span class="spec-label">Tatamis</span>
+            <strong class="spec-value">{club.tatami || '200 m²'}</strong>
+            <span class="spec-sub">Lutte & Grappling sol</span>
+          </div>
+          {club.rings && (
+            <div class="spec-card">
+              <span class="spec-label">Rings</span>
+              <strong class="spec-value">{club.rings}</strong>
+              <span class="spec-sub">Boxe anglaise compétition</span>
+            </div>
+          )}
+        </div>
+      </section>
+
+      <!-- Présentation détaillée -->
+      <section class="club-about-section" data-reveal>
+        <span class="kicker">L'esprit de la salle</span>
+        <h2 class="display">Formation, encadrement et philosophie</h2>
+        <div class="club-text-body">
+          <p class="lead">{club.longDescription || club.description}</p>
+          <p>La pratique du Mixed Martial Arts requiert une approche décloisonnée associant frappes percutantes, lutte de corps-à-corps et soumissions au sol. {club.name} met à disposition des pratiquants de tous niveaux un cadre d'apprentissage rigoureux et sécurisé.</p>
+        </div>
+
+        <div class="disciplines-pills mono">
+          {club.disciplines && club.disciplines.map(d => (
+            <span class="pill">{d}</span>
+          ))}
+        </div>
+      </section>
+
+      <!-- Staff & Coachs -->
+      {club.coaches && club.coaches.length > 0 && (
+        <section class="club-coaches-section" data-reveal>
+          <span class="kicker">Équipe technique</span>
+          <h2 class="display">Les entraîneurs</h2>
+
+          <div class="coaches-grid">
+            {club.coaches.map(c => (
+              <div class="coach-card">
+                <div class="coach-media">
+                  <img src={c.photo} alt={c.name} width="320" height="360" loading="lazy" />
+                </div>
+                <div class="coach-body">
+                  <span class="coach-role mono">{c.role}</span>
+                  <h3 class="display coach-name">{c.name}</h3>
+                  <p class="coach-qualif mono">{c.qualif}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <!-- Planning des cours -->
+      {club.schedule && (
+        <section class="club-schedule-section" id="planning" data-reveal>
+          <span class="kicker">Horaires & Créneaux</span>
+          <h2 class="display">Planning hebdomadaire des entraînements</h2>
+
+          <div class="schedule-table-box">
+            <table class="schedule-table mono">
+              <thead>
+                <tr>
+                  <th>Jour</th>
+                  <th>Créneaux & Disciplines</th>
+                </tr>
+              </thead>
+              <tbody>
+                {club.schedule.map(s => (
+                  <tr>
+                    <td class="sched-day"><strong>{s.day}</strong></td>
+                    <td class="sched-hours">{s.hours}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {isBoxingCenter && (
+            <div class="schedule-cta">
+              <p>Envie de faire votre premier entraînement dans l'octogone ?</p>
+              <a href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                Consulter les tarifs & s'inscrire sur clubmma.fr →
+              </a>
+            </div>
+          )}
+        </section>
+      )}
+
+      <!-- Galerie photos de la salle -->
+      {club.gallery && club.gallery.length > 0 && (
+        <section class="club-gallery-section" data-reveal>
+          <span class="kicker">Galerie du club</span>
+          <h2 class="display">Immersion dans les installations</h2>
+
+          <div class="gallery-grid">
+            {club.gallery.map(img => (
+              <div class="gallery-item">
+                <img src={img} alt={`Installation ${club.name}`} width="640" height="400" loading="lazy" />
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+    </div>
+
+    <!-- Sidebar pratique -->
+    <aside class="club-sidebar">
+      <div class="sidebar-box">
+        <h4 class="display">Informations clés</h4>
+        <ul class="practical-list mono">
+          <li><strong>Ville :</strong> {club.city}</li>
+          {club.surface && <li><strong>Superficie :</strong> {club.surface}</li>}
+          {club.cage && <li><strong>Cage :</strong> {club.cage}</li>}
+          {club.phone && <li><strong>Téléphone :</strong> {club.phone}</li>}
+          {club.website && (
+            <li>
+              <strong>Site web :</strong>
+              <a href={club.website} target={isBoxingCenter ? '_blank' : '_self'} rel="noopener noreferrer" style="color: var(--teal);">
+                {isBoxingCenter ? 'clubmma.fr ↗' : 'Visiter le site'}
+              </a>
+            </li>
+          )}
+        </ul>
+      </div>
+
+      <div class="sidebar-box">
+        <h4 class="display">Autres clubs en France</h4>
+        <div class="other-clubs-mini">
+          {otherClubs.map(oth => (
+            <a href={`/clubs/${oth.slug}/`} class="mini-club-link">
+              <span class="kicker">{oth.city}</span>
+              <strong>{oth.name}</strong>
+            </a>
+          ))}
+        </div>
+      </div>
+    </aside>
+  </div>
+</Base>

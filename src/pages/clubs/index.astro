@@ -69,11 +69,14 @@ const otherClubs = clubs.filter(c => c.slug !== 'boxing-center-etats-unis');
           </p>
 
           <div class="spotlight-actions">
-            <a href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="font-size: 0.95rem;">
-              Visiter le site officiel clubmma.fr →
+            <a href="/clubs/boxing-center-etats-unis/" class="btn btn--primary" style="font-size: 0.95rem;">
+              Fiche complète du complexe & horaires →
+            </a>
+            <a href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer" class="btn btn--teal" style="font-size: 0.95rem;">
+              Site officiel clubmma.fr ↗
             </a>
             <a href="/actualites/zouhir-boumenir-coach-sol-boxing-center-toulouse/" class="btn btn--ghost">
-              Lire l'interview du coach sol →
+              Interview du coach sol →
             </a>
           </div>
         </div>
@@ -90,7 +93,7 @@ const otherClubs = clubs.filter(c => c.slug !== 'boxing-center-etats-unis');
 
       <div class="clubs-grid" data-reveal-group>
         {otherClubs.map(c => (
-          <article class="club-card" data-reveal>
+          <a class="club-card" href={`/clubs/${c.slug}/`} data-reveal>
             <div class="club-card__visual">
               <img src={c.image} alt={c.imageAlt} width="640" height="360" loading="lazy" decoding="async" />
             </div>
@@ -103,8 +106,11 @@ const otherClubs = clubs.filter(c => c.slug !== 'boxing-center-etats-unis');
                   <span class="tag mono">{d}</span>
                 ))}
               </div>
+              <span class="mono" style="font-size: 0.78rem; color: var(--teal); margin-top: 0.8rem; display: inline-block;">
+                Voir les équipements & horaires →
+              </span>
             </div>
-          </article>
+          </a>
         ))}
       </div>
     </section>
