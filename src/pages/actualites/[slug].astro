@@ -78,11 +78,60 @@ const breadcrumbSchema = {
         <div class="author-info">
           <span class="author-label mono">Rédigé par</span>
           <strong class="author-name">{article.author || 'Rédaction PRISE MMA'}</strong>
+          <span class="author-sub mono">• Vérifié & Sourcé</span>
         </div>
-        <div class="author-share">
-          <span class="mono">Média indépendant</span>
+        <div class="author-share-tools mono">
+          <button type="button" class="share-btn share-copy" id="copyLinkBtn" title="Copier le lien de l'article">
+            <span class="share-icon">🔗</span> <span class="share-txt">Copier le lien</span>
+          </button>
+          <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(article.title)}&url=${encodeURIComponent(`https://prise-mma.fr/actualites/${article.slug}/`)}`} target="_blank" rel="noopener noreferrer" class="share-btn share-x" title="Partager sur X">
+            𝕏
+          </a>
+          <a href={`https://api.whatsapp.com/send?text=${encodeURIComponent(`${article.title} — https://prise-mma.fr/actualites/${article.slug}/`)}`} target="_blank" rel="noopener noreferrer" class="share-btn share-wa" title="Partager sur WhatsApp">
+            WhatsApp
+          </a>
         </div>
       </div>
+
+      <!-- Toast copié -->
+      <div id="copyToast" class="copy-toast mono" hidden>
+        ✓ Lien de l'article copié dans le presse-papier !
+      </div>
+
+      <script is:inline>
+        (function() {
+          var btn = document.getElementById('copyLinkBtn');
+          var toast = document.getElementById('copyToast');
+          if (!btn || !toast) return;
+
+          btn.addEventListener('click', function() {
+            var url = window.location.href;
+            if (navigator.clipboard) {
+              navigator.clipboard.writeText(url).then(showToast);
+            } else {
+              var ta = document.createElement('textarea');
+              ta.value = url;
+              document.body.appendChild(ta);
+              ta.select();
+              document.execCommand('copy');
+              document.body.removeChild(ta);
+              showToast();
+            }
+          });
+
+          function showToast() {
+            toast.hidden = false;
+            toast.classList.add('shown');
+            var txt = btn.querySelector('.share-txt');
+            if (txt) txt.textContent = 'Copié !';
+            setTimeout(function() {
+              toast.classList.remove('shown');
+              setTimeout(function() { toast.hidden = true; }, 300);
+              if (txt) txt.textContent = 'Copier le lien';
+            }, 2500);
+          }
+        })();
+      </script>
     </header>
 
     <!-- Image principale -->

@@ -99,12 +99,12 @@
       }
     ],
     "schedule": [
-      { "day": "Lundi", "hours": "12h15 - 13h45 (Lutte/Grappling) · 18h30 - 20h00 (MMA Tous niveaux)" },
-      { "day": "Mardi", "hours": "18h00 - 19h30 (Boxe anglaise) · 19h30 - 21h00 (Grappling No-Gi)" },
-      { "day": "Mercredi", "hours": "17h00 - 18h30 (MMA Débutants) · 18h30 - 20h00 (Sparring Dirigé)" },
-      { "day": "Jeudi", "hours": "12h15 - 13h45 (Cage Work) · 18h30 - 20h30 (MMA Compétition)" },
-      { "day": "Vendredi", "hours": "18h00 - 19h30 (Lutte libre) · 19h30 - 21h00 (Open Mat Sol)" },
-      { "day": "Samedi", "hours": "10h30 - 12h30 (MMA Masterclass & Sparrings)" }
+      { "day": "Lundi", "hours": "12h15 - 13h45 (Lutte/Grappling avec Coach Zouhir) · 18h30 - 20h00 (MMA Tous niveaux)" },
+      { "day": "Mardi", "hours": "18h00 - 19h30 (Boxe anglaise & Prépa combat avec Coach Guillaume) · 19h30 - 21h00 (Grappling No-Gi avec Coach Zouhir)" },
+      { "day": "Mercredi", "hours": "17h00 - 18h30 (MMA Débutants & Fondamentaux cage) · 18h30 - 20h00 (Sparrings Dirigés Boxe & MMA)" },
+      { "day": "Jeudi", "hours": "12h15 - 13h45 (Cage Work & Déplacements) · 18h30 - 20h30 (MMA Compétition & Sparring Pro)" },
+      { "day": "Vendredi", "hours": "18h00 - 19h30 (Lutte libre olympique) · 19h30 - 21h00 (Open Mat Sol & JJB)" },
+      { "day": "Samedi", "hours": "10h30 - 12h30 (Masterclass MMA & Assauts supervisés avec Coachs Guillaume & Zouhir)" }
     ]
   },
   {
