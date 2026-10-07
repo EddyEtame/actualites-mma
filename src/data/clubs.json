@@ -3,39 +3,80 @@
     "slug": "boxing-center-etats-unis",
     "name": "Boxing Center (États-Unis)",
     "city": "Toulouse",
+    "postalCode": "31200",
+    "region": "Occitanie",
     "address": "388 avenue des États-Unis, 31200 Toulouse",
     "metro": "Métro Ligne B (La Vache / Barrière de Paris) — Rocade Sortie 33",
     "website": "https://clubmma.fr/",
     "phone": "05 61 57 88 00",
+    "geo": {
+      "latitude": 43.6385,
+      "longitude": 1.4283
+    },
     "surface": "1 200 m²",
     "cage": "Octogone officiel de combat 7 mètres",
     "tatami": "400 m² tatamis de lutte & grappling",
-    "rings": "2 rings de boxe compétition",
+    "rings": "2 rings de boxe anglaise compétition",
     "coaches": [
       {
         "name": "Zouhir Boumenir",
         "role": "Head Coach Sol & Cage",
         "qualif": "BPJEPS Lutte/Grappling, Ceinture Noire JJB",
-        "photo": "/assets/img/photo_coach_zouhir.webp"
+        "photo": "/assets/img/photo_coach_zouhir.webp",
+        "alt": "Portrait du coach Zouhir Boumenir, entraîneur de lutte et combat au sol à Toulouse"
       },
       {
         "name": "Guillaume",
-        "role": "Entraîneur Striking & Préparation",
+        "role": "Entraîneur Striking & Préparation Combat",
         "qualif": "Diplômé d'État Boxe Anglaise & Savate",
-        "photo": "/assets/img/fighter-portrait.png"
+        "photo": "/photos/encadrement-coach-boxe-colomiers-1440.jpg",
+        "alt": "Coach Guillaume serrant les gants d'un boxeur casqué sur le ring du Boxing Center"
       }
     ],
-    "disciplines": ["MMA Professionnel & Débutant", "Grappling No-Gi", "Lutte contre la cage", "Boxe anglaise", "Conditioning"],
-    "description": "Le plus grand complexe d'entraînement aux sports de combat et MMA du Sud-Ouest. 1 200 m² entièrement équipés avec octogone officiel, 400 m² de tatamis, deux rings et encadrement diplômé.",
-    "longDescription": "Véritable institution des sports de combat à Toulouse, la salle Boxing Center États-Unis regroupe les infrastructures les plus complètes de la région occitane. Conçu pour accueillir aussi bien le pratiquant loisir en quête de dépassement physique que le combattant préparant ses échéances professionnelles, le club propose des créneaux quotidiens axés sur les trois piliers du MMA moderne : le striking debout, la transition lutte/cage et le combat au sol.",
-    "image": "/assets/img/hero-cage-mma.webp",
-    "imageAlt": "Octogone officiel et espace d'entraînement MMA au Boxing Center Toulouse États-Unis",
+    "disciplines": [
+      "MMA (Mixed Martial Arts)",
+      "Grappling No-Gi & Sol",
+      "Lutte contre la cage",
+      "Boxe anglaise compétition & loisir",
+      "Préparation physique & conditioning"
+    ],
+    "description": "Le plus grand pôle d'entraînement aux sports de combat et MMA de Haute-Garonne : 1 200 m², octogone officiel de 7 mètres, 400 m² de tatamis, 2 rings de boxe et encadrement professionnel diplômé.",
+    "longDescription": "Implanté au nord de Toulouse (388 avenue des États-Unis), le Boxing Center États-Unis constitue la référence régionale pour l'entraînement au MMA, à la boxe anglaise et aux sports de préhension. Conçu pour répondre aux normes des compétiteurs de haut niveau comme à l'exigence des débutants, le complexe réunit sous un même toit un octogone officiel de compétition de 7 mètres, 400 m² de tatamis monoblocs pour la lutte et le grappling, deux rings de boxe homologués et un pôle de renforcement athlétique.",
+    "image": "/assets/img/boxing-center-etats-unis-vue-ensemble-ring-tatamis-cage.webp",
+    "imageAlt": "Vue d'ensemble du complexe Boxing Center États-Unis à Toulouse : 1 200 m² avec ring de boxe officiel, tatamis et octogone 7 mètres",
     "gallery": [
-      "/assets/img/hero-cage-mma.webp",
-      "/assets/img/salle_cage_ring.webp",
-      "/assets/img/mma_grappling_sol.webp",
-      "/assets/img/photo_coach_zouhir.webp",
-      "/assets/img/etats_unis_salle.webp"
+      {
+        "src": "/assets/img/boxing-center-etats-unis-vue-ensemble-ring-tatamis-cage.webp",
+        "alt": "Vue d'ensemble du complexe Boxing Center États-Unis à Toulouse : ring de boxe officiel, tatamis et octogone de combat 7 mètres"
+      },
+      {
+        "src": "/assets/img/boxing-center-etats-unis-sparring-boxe-kick-cage.webp",
+        "alt": "Séance de sparring de boxe et MMA par deux au Boxing Center États-Unis le long de la cage d'octogone"
+      },
+      {
+        "src": "/assets/img/boxing-center-etats-unis-cours-collectif-boxe-ring.webp",
+        "alt": "Cours collectif d'apprentissage de la boxe et déplacements techniques devant le ring de compétition Boxing Center"
+      },
+      {
+        "src": "/assets/img/boxing-center-etats-unis-sparring-collectif-tatamis.webp",
+        "alt": "Mise de gants et entraînements intensifs de combat sur les 400 m² de tatamis du complexe toulousain"
+      },
+      {
+        "src": "/assets/img/boxing-center-etats-unis-echange-frappe-gants-venum.webp",
+        "alt": "Échange technique en gants de boxe et protège-tibias devant la cage officielle du Boxing Center Toulouse"
+      },
+      {
+        "src": "/assets/img/boxing-center-etats-unis-shadow-boxing-direct-octogone.webp",
+        "alt": "Boxeur en maillot Boxing Center effectuant un direct du bras avant en shadow boxing devant l'octogone"
+      },
+      {
+        "src": "/photos/encadrement-coach-boxe-colomiers-1440.jpg",
+        "alt": "Coach Guillaume serrant les lacets des gants de boxe d'un pratiquant sur le ring du Boxing Center"
+      },
+      {
+        "src": "/assets/img/photo_coach_zouhir.webp",
+        "alt": "Coach Zouhir Boumenir, responsable du pôle sol, lutte et cage au Boxing Center"
+      }
     ],
     "schedule": [
       { "day": "Lundi", "hours": "12h15 - 13h45 (Lutte/Grappling) · 18h30 - 20h00 (MMA Tous niveaux)" },
@@ -50,6 +91,8 @@
     "slug": "cage-fight-toulouse",
     "name": "Cage Fight Toulouse",
     "city": "Toulouse",
+    "postalCode": "31000",
+    "region": "Occitanie",
     "address": "15 rue des Sports, 31000 Toulouse",
     "website": "/clubs/",
     "surface": "450 m²",
@@ -60,12 +103,17 @@
     "longDescription": "Pionnier de la pratique du combat libre dans la métropole toulousaine, Cage Fight Toulouse rassemble une équipe de combattants engagés sur les circuits régionaux et nationaux.",
     "image": "/assets/img/mma_cage-800.webp",
     "imageAlt": "Cage d'entraînement du Cage Fight Toulouse",
-    "gallery": ["/assets/img/mma_cage-800.webp", "/assets/img/fight.webp"]
+    "gallery": [
+      { "src": "/assets/img/mma_cage-800.webp", "alt": "Cage d'entraînement intérieur" },
+      { "src": "/assets/img/fight.webp", "alt": "Combat et percussion" }
+    ]
   },
   {
     "slug": "mma-factory-paris",
     "name": "MMA Factory Paris",
     "city": "Paris",
+    "postalCode": "75012",
+    "region": "Île-de-France",
     "address": "91 boulevard Poniatowski, 75012 Paris",
     "website": "https://mmafactory.fr/",
     "surface": "800 m²",
@@ -76,12 +124,17 @@
     "longDescription": "Plus grand club de MMA de la capitale, le MMA Factory s'est imposé comme l'écurie française la plus victorieuse à l'UFC sous la direction de Fernand Lopez.",
     "image": "/assets/img/gym-paris.webp",
     "imageAlt": "Salle d'entraînement du MMA Factory Paris",
-    "gallery": ["/assets/img/gym-paris.webp", "/assets/img/gane-champion.png"]
+    "gallery": [
+      { "src": "/assets/img/gym-paris.webp", "alt": "Tapis et espace cage du MMA Factory Paris" },
+      { "src": "/assets/img/gane-champion.png", "alt": "Ciryl Gane à l'entraînement" }
+    ]
   },
   {
     "slug": "team-ezbiri-lyon",
     "name": "Team Ezbiri Lyon",
     "city": "Lyon",
+    "postalCode": "69100",
+    "region": "Auvergne-Rhône-Alpes",
     "address": "45 rue Jean Jaurès, 69100 Villeurbanne",
     "website": "/clubs/",
     "surface": "500 m²",
@@ -92,12 +145,17 @@
     "longDescription": "Réputé pour son striking d'une agressivité chirurgicale, le camp lyonnais de la Team Ezbiri forme des athlètes complets engagés à l'Hexagone MMA et au KSW.",
     "image": "/assets/img/team-ezbiri-lyon.webp",
     "imageAlt": "Team Ezbiri Lyon, espace d'entraînement de combat",
-    "gallery": ["/assets/img/team-ezbiri-lyon.webp", "/assets/img/clinch.webp"]
+    "gallery": [
+      { "src": "/assets/img/team-ezbiri-lyon.webp", "alt": "Salle Team Ezbiri Lyon" },
+      { "src": "/assets/img/clinch.webp", "alt": "Travail en corps-à-corps et clinch" }
+    ]
   },
   {
     "slug": "nrfight-paris",
     "name": "NRFight Paris",
     "city": "Paris",
+    "postalCode": "75014",
+    "region": "Île-de-France",
     "address": "17 rue Gassendi, 75014 Paris",
     "website": "/clubs/",
     "surface": "400 m²",
@@ -108,6 +166,9 @@
     "longDescription": "Spécialisé dans le combat de soumission sans kimono et la transition vers les frappes au sol, NRFight est un passage incontournable pour le sol des combattants MMA tricolores.",
     "image": "/assets/img/nrfight-paris.webp",
     "imageAlt": "NRFight Paris, tatamis et entraînements",
-    "gallery": ["/assets/img/nrfight-paris.webp", "/assets/img/grappling.webp"]
+    "gallery": [
+      { "src": "/assets/img/nrfight-paris.webp", "alt": "Tatamis NRFight Paris" },
+      { "src": "/assets/img/grappling.webp", "alt": "Phase de grappling et soumission" }
+    ]
   }
 ]

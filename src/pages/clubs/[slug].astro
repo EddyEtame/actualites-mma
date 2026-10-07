@@ -1,7 +1,11 @@
 ---
 /* Page individuelle d'un club / salle de MMA en France
-   Dédiée à la présentation complète des infrastructures, coachs et plannings
-   Met particulièrement en valeur le fleuron Boxing Center (États-Unis - Toulouse) -> clubmma.fr */
+   Standard Baffled Bar + SEO / AEO / GEO :
+   - Schéma structuré SportsActivityLocation / ExerciseGym
+   - Données géographiques exactes, faits vérifiables
+   - Photos authentiques de boxe et ring avec attributs ALT descriptifs
+   - FAQ balisée FAQPage
+   - Conversion forte et naturelle vers https://clubmma.fr/ */
 import Base from '../../layouts/Base.astro';
 import clubs from '../../data/clubs.json';
 
@@ -15,14 +19,88 @@ export function getStaticPaths() {
 const { club } = Astro.props;
 const otherClubs = clubs.filter(c => c.slug !== club.slug).slice(0, 3);
 const isBoxingCenter = club.slug === 'boxing-center-etats-unis';
+
+const faqItems = isBoxingCenter ? [
+  {
+    q: "Quels sont les équipements disponibles au Boxing Center États-Unis à Toulouse ?",
+    a: "Le complexe de 1 200 m² dispose d'un octogone officiel de combat de 7 mètres, de 400 m² de tatamis monoblocs dédiés à la lutte et au grappling, de 2 rings de boxe anglaise compétition et d'un pôle de préparation physique."
+  },
+  {
+    q: "Peut-on débuter le MMA au Boxing Center sans expérience préalable en combat ?",
+    a: "Oui. Des créneaux 'MMA Débutants' et 'Fondamentaux Sol' sont programmés chaque semaine pour apprendre les bases en toute sécurité sous l'encadrement de coachs diplômés d'État."
+  },
+  {
+    q: "Qui encadre les entraînements de MMA et de boxe au Boxing Center Toulouse ?",
+    a: "Les cours de sol, lutte et travail contre la cage sont dirigés par Zouhir Boumenir (BPJEPS Lutte/Grappling, Ceinture Noire JJB). Le striking et la boxe anglaise sont encadrés par des entraîneurs diplômés d'État dont Coach Guillaume."
+  },
+  {
+    q: "Comment réserver un cours d'essai ou s'inscrire ?",
+    a: "Les réservations de séances d'essai et la consultation des plannings complets s'effectuent directement en ligne sur le site officiel clubmma.fr."
+  }
+] : [
+  {
+    q: `Quelles disciplines sont enseignées à ${club.name} ?`,
+    a: `Le club propose : ${club.disciplines ? club.disciplines.join(', ') : 'MMA et sports de combat'}.`
+  },
+  {
+    q: `Où se situe ${club.name} à ${club.city} ?`,
+    a: `La salle est située à l'adresse suivante : ${club.address || club.city}.`
+  }
+];
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "SportsActivityLocation",
+  "name": club.name,
+  "description": club.description,
+  "image": `https://prise-mma.fr${club.image}`,
+  "url": `https://prise-mma.fr/clubs/${club.slug}/`,
+  "telephone": club.phone || undefined,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": club.address || club.city,
+    "addressLocality": club.city,
+    "postalCode": club.postalCode || "31200",
+    "addressRegion": club.region || "Occitanie",
+    "addressCountry": "FR"
+  },
+  "geo": club.geo ? {
+    "@type": "GeoCoordinates",
+    "latitude": club.geo.latitude,
+    "longitude": club.geo.longitude
+  } : undefined,
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "Octogone de combat", "value": club.cage || "Cage MMA" },
+    { "@type": "LocationFeatureSpecification", "name": "Tatamis sol", "value": club.tatami || "200 m²" },
+    { "@type": "LocationFeatureSpecification", "name": "Superficie", "value": club.surface || "Complexe sportif" }
+  ],
+  "sameAs": isBoxingCenter ? ["https://clubmma.fr/"] : undefined
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqItems.map(item => ({
+    "@type": "Question",
+    "name": item.q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.a
+    }
+  }))
+};
 ---
 
 <Base
-  title={`${club.name} (${club.city}) — Salle MMA, Équipements & Cours`}
-  description={`Découvrez le club ${club.name} à ${club.city} : installations (${club.surface || 'complexe de combat'}), octogone, coachs diplômés, horaires et cours de MMA.`}
+  title={`${club.name} (${club.city}) — Salle MMA, Octogone 7m & Cours`}
+  description={`Fiche officielle ${club.name} à ${club.city} : installations de ${club.surface}, octogone ${club.cage || 'officiel'}, coachs diplômés, plannings et cours d'essai.`}
   image={club.image}
   currentNav="clubs"
 >
+  <!-- Données structurées SEO / GEO / AEO -->
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
   <div class="club-page-hero">
     <div class="club-hero-bg">
       <img src={club.image} alt={club.imageAlt} fetchpriority="high" />
@@ -113,17 +191,17 @@ const isBoxingCenter = club.slug === 'boxing-center-etats-unis';
         </div>
       </section>
 
-      <!-- Staff & Coachs -->
+      <!-- Staff & Coachs avec VRAIES PHOTOS D'ACTION -->
       {club.coaches && club.coaches.length > 0 && (
         <section class="club-coaches-section" data-reveal>
-          <span class="kicker">Équipe technique</span>
-          <h2 class="display">Les entraîneurs</h2>
+          <span class="kicker">Équipe technique & Expérience</span>
+          <h2 class="display">L'encadrement en action</h2>
 
           <div class="coaches-grid">
             {club.coaches.map(c => (
               <div class="coach-card">
                 <div class="coach-media">
-                  <img src={c.photo} alt={c.name} width="320" height="360" loading="lazy" />
+                  <img src={c.photo} alt={c.alt || `Coach ${c.name} à l'entraînement`} width="360" height="400" loading="lazy" />
                 </div>
                 <div class="coach-body">
                   <span class="coach-role mono">{c.role}</span>
@@ -172,21 +250,47 @@ const isBoxingCenter = club.slug === 'boxing-center-etats-unis';
         </section>
       )}
 
-      <!-- Galerie photos de la salle -->
+      <!-- Galerie photos réelles du club (boxeurs en action, cage, ring) -->
       {club.gallery && club.gallery.length > 0 && (
         <section class="club-gallery-section" data-reveal>
-          <span class="kicker">Galerie du club</span>
-          <h2 class="display">Immersion dans les installations</h2>
+          <span class="kicker">Immersion Visuelle Réelle</span>
+          <h2 class="display">Dans le ring, la cage et sur les tatamis</h2>
+          <p class="lede" style="margin-bottom: 1.5rem; font-size: 0.95rem; color: var(--ash);">Photographies réelles des séances d'entraînement, des sparrings et des équipements officiels du club.</p>
 
           <div class="gallery-grid">
-            {club.gallery.map(img => (
-              <div class="gallery-item">
-                <img src={img} alt={`Installation ${club.name}`} width="640" height="400" loading="lazy" />
-              </div>
-            ))}
+            {club.gallery.map(item => {
+              const src = typeof item === 'string' ? item : item.src;
+              const alt = typeof item === 'string' ? `Installation ${club.name}` : item.alt;
+              return (
+                <figure class="gallery-item">
+                  <img src={src} alt={alt} width="640" height="420" loading="lazy" decoding="async" />
+                  <figcaption class="sr-only">{alt}</figcaption>
+                </figure>
+              );
+            })}
           </div>
         </section>
       )}
+
+      <!-- FAQ structurée AEO/GEO : Réponses directes aux requêtes des utilisateurs -->
+      <section class="club-faq-section" data-reveal>
+        <span class="kicker">Questions Fréquentes & Renseignements</span>
+        <h2 class="display">Tout ce qu'il faut savoir avant de venir</h2>
+
+        <div class="faq-list">
+          {faqItems.map((f, idx) => (
+            <details class="faq-accordion" open={idx === 0}>
+              <summary class="faq-question">
+                <span class="faq-title">{f.q}</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </summary>
+              <div class="faq-answer">
+                <p>{f.a}</p>
+              </div>
+            </details>
+          ))}
+        </div>
+      </section>
 
     </div>
 
