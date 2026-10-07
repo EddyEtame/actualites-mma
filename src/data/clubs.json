@@ -46,32 +46,52 @@
     "imageAlt": "Vue d'ensemble du complexe Boxing Center États-Unis à Toulouse : 1 200 m² avec ring de boxe officiel, tatamis et octogone 7 mètres",
     "gallery": [
       {
+        "src": "/assets/img/boxing-center-etats-unis-sparring-boxe-anglaise-casques-ring.webp",
+        "alt": "Deux boxeurs casqués en plein assaut de boxe anglaise avec gants de combat et coquille de protection sur le ring officiel Boxing Center États-Unis à Toulouse"
+      },
+      {
+        "src": "/assets/img/boxing-center-etats-unis-coach-guillaume-supervision-sparring.webp",
+        "alt": "Coach Guillaume supervisant au cordeau un assaut engagé entre deux boxeurs sur le ring de compétition à Toulouse"
+      },
+      {
+        "src": "/assets/img/boxing-center-etats-unis-frappe-kick-ring-officiel.webp",
+        "alt": "Échange de frappes percutantes en gants de boxe sur le ring bleu officiel marqué Boxing Center"
+      },
+      {
+        "src": "/assets/img/boxing-center-etats-unis-assauts-boxe-ring-vue-plongeante.webp",
+        "alt": "Vue plongeante du ring de compétition Boxing Center avec plusieurs duels de boxe simultanés sous les fresques historiques"
+      },
+      {
+        "src": "/assets/img/boxing-center-etats-unis-boxeurs-preparation-ring-competition.webp",
+        "alt": "Boxeurs et pratiquants préparant leurs gants et bandages au pied du ring de boxe anglaise"
+      },
+      {
+        "src": "/assets/img/boxing-center-etats-unis-consignes-techniques-coin-ring.webp",
+        "alt": "Boxeur aux cordes recevant les ajustements tactiques de son entraîneur devant la fresque de combat"
+      },
+      {
+        "src": "/assets/img/boxing-center-etats-unis-cours-mma-frappe-cage-octogone.webp",
+        "alt": "Travail des frappes pieds-poings et percussions supervisé par le coach devant l'octogone officiel de 7 mètres"
+      },
+      {
+        "src": "/assets/img/boxing-center-etats-unis-sparring-kick-cage-tatamis-jjb.webp",
+        "alt": "Exercice technique de percussion le long de la cage avec section de Jiu-Jitsu Brésilien en kimono en arrière-plan"
+      },
+      {
+        "src": "/assets/img/boxing-center-etats-unis-cours-collectif-binomes-tatamis.webp",
+        "alt": "Ligne de sparrings en binômes équipés de protège-tibias et gants sur les 400 m² de tatamis du complexe toulousain"
+      },
+      {
+        "src": "/assets/img/boxing-center-etats-unis-coach-guillaume-briefing-tactique.webp",
+        "alt": "Coach Guillaume dispensant les consignes d'entraînement et le briefing tactique aux boxeurs du club"
+      },
+      {
         "src": "/assets/img/boxing-center-etats-unis-vue-ensemble-ring-tatamis-cage.webp",
-        "alt": "Vue d'ensemble du complexe Boxing Center États-Unis à Toulouse : ring de boxe officiel, tatamis et octogone de combat 7 mètres"
-      },
-      {
-        "src": "/assets/img/boxing-center-etats-unis-sparring-boxe-kick-cage.webp",
-        "alt": "Séance de sparring de boxe et MMA par deux au Boxing Center États-Unis le long de la cage d'octogone"
-      },
-      {
-        "src": "/assets/img/boxing-center-etats-unis-cours-collectif-boxe-ring.webp",
-        "alt": "Cours collectif d'apprentissage de la boxe et déplacements techniques devant le ring de compétition Boxing Center"
-      },
-      {
-        "src": "/assets/img/boxing-center-etats-unis-sparring-collectif-tatamis.webp",
-        "alt": "Mise de gants et entraînements intensifs de combat sur les 400 m² de tatamis du complexe toulousain"
-      },
-      {
-        "src": "/assets/img/boxing-center-etats-unis-echange-frappe-gants-venum.webp",
-        "alt": "Échange technique en gants de boxe et protège-tibias devant la cage officielle du Boxing Center Toulouse"
-      },
-      {
-        "src": "/assets/img/boxing-center-etats-unis-shadow-boxing-direct-octogone.webp",
-        "alt": "Boxeur en maillot Boxing Center effectuant un direct du bras avant en shadow boxing devant l'octogone"
+        "alt": "Vue d'ensemble du complexe Boxing Center États-Unis à Toulouse : 1 200 m² avec ring officiel, tatamis et octogone"
       },
       {
         "src": "/photos/encadrement-coach-boxe-colomiers-1440.jpg",
-        "alt": "Coach Guillaume serrant les lacets des gants de boxe d'un pratiquant sur le ring du Boxing Center"
+        "alt": "Coach Guillaume serrant les lacets des gants de boxe d'un combattant sur le ring"
       },
       {
         "src": "/assets/img/photo_coach_zouhir.webp",

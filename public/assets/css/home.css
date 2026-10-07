@@ -315,20 +315,20 @@
 .split-list .row {
   position: relative;
   display: block;
-  padding: 1.25rem 1.4rem;
-  min-height: 70px;
+  padding: 1.4rem 1.6rem;
+  margin: 0;
+  min-height: 72px;
   border-bottom: 1px solid var(--mist);
   text-decoration: none;
   color: inherit;
   overflow: hidden;
   border-radius: var(--radius-sm);
   background-color: transparent;
-  transition: padding 0.45s cubic-bezier(0.16, 1, 0.3, 1),
-              margin 0.45s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1),
-              border-color 0.45s ease,
-              background-color 0.45s ease;
-  will-change: padding, margin, box-shadow;
+  box-sizing: border-box;
+  transition: background-color 0.25s ease,
+              border-color 0.25s ease,
+              box-shadow 0.25s ease;
+  will-change: background-color, box-shadow;
 }
 
 /* Background image of event/poster */
@@ -338,10 +338,10 @@
   z-index: 1;
   opacity: 0;
   visibility: hidden;
-  transform: scale(1.08);
-  transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.65s cubic-bezier(0.16, 1, 0.3, 1),
-              visibility 0.45s ease;
+  transform: scale(1.05);
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              visibility 0.35s ease;
   pointer-events: none;
   background-color: var(--ink);
 }
@@ -377,14 +377,14 @@
   align-items: center;
   gap: 1.5rem;
   width: 100%;
-  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .split-list .pos {
   font-family: var(--display);
   font-size: 1.2rem;
   color: var(--mist);
-  transition: color 0.35s ease, transform 0.35s ease, text-shadow 0.35s ease;
+  transition: color 0.25s ease, text-shadow 0.25s ease;
 }
 
 .split-list .nm {
@@ -393,7 +393,7 @@
   font-weight: 600;
   line-height: 1.25;
   color: var(--ink);
-  transition: color 0.35s ease, font-size 0.35s ease, text-shadow 0.35s ease;
+  transition: color 0.25s ease, text-shadow 0.25s ease;
 }
 
 .split-list .cat {
@@ -406,7 +406,7 @@
   white-space: nowrap;
   padding: 0.2rem 0.5rem;
   border-radius: var(--radius-sm);
-  transition: all 0.35s ease;
+  transition: all 0.25s ease;
 }
 
 .split-list .rec {
@@ -414,24 +414,30 @@
   font-size: 0.75rem;
   color: var(--ash);
   white-space: nowrap;
-  transition: color 0.35s ease, text-shadow 0.35s ease;
+  transition: color 0.25s ease, text-shadow 0.25s ease;
 }
 
 /* ==========================================================================
    HOVER / FOCUS / TOUCH EXPANSION STATE
-   Le rectangle grandit nettement et dévoile la vraie photo de combat en fond.
+   Transition stable à hauteur fixe : zéro reflow, zéro jitter de bordure.
    ========================================================================== */
 
 .split-list .row:hover,
 .split-list .row:focus,
 .split-list .row:active,
 .split-list .row.is-active {
-  padding: 3.4rem 2.2rem; /* Le pspace s'agrandit considérablement */
-  margin: 0.65rem 0;
+  padding: 1.4rem 1.6rem; /* Maintien strict de la hauteur : pas de saut de layout */
+  margin: 0;              /* Aucun gap entre cartes pour éviter le décrochage */
   border-radius: var(--radius-md);
   border-bottom-color: transparent;
-  box-shadow: 0 18px 42px rgba(6, 8, 17, 0.45), 0 0 0 1px rgba(212, 34, 10, 0.4);
-  z-index: 10;
+  box-shadow: 0 12px 32px rgba(6, 8, 17, 0.4), inset 0 0 0 1px rgba(212, 34, 10, 0.45);
+  z-index: 5;
+}
+
+.split-list .row:hover .row__content,
+.split-list .row:focus .row__content,
+.split-list .row.is-active .row__content {
+  transform: translateX(8px);
 }
 
 .split-list .row:hover .row__bg,
@@ -447,7 +453,6 @@
 .split-list .row:focus .pos,
 .split-list .row.is-active .pos {
   color: #fff;
-  font-size: 1.45rem;
   text-shadow: 0 2px 12px rgba(212, 34, 10, 0.85);
 }
 
@@ -455,7 +460,6 @@
 .split-list .row:focus .nm,
 .split-list .row.is-active .nm {
   color: #fff;
-  font-size: clamp(1.25rem, 2.2vw, 1.55rem);
   text-shadow: 0 3px 18px rgba(0, 0, 0, 0.95);
   letter-spacing: -0.01em;
 }
@@ -465,8 +469,8 @@
 .split-list .row.is-active .cat {
   color: #fff;
   background-color: var(--red);
-  padding: 0.35rem 0.85rem;
-  box-shadow: 0 4px 14px rgba(212, 34, 10, 0.6);
+  padding: 0.25rem 0.65rem;
+  box-shadow: 0 3px 10px rgba(212, 34, 10, 0.5);
 }
 
 .split-list .row:hover .rec,
@@ -474,20 +478,20 @@
 .split-list .row.is-active .rec {
   color: rgba(255, 255, 255, 0.95);
   font-weight: 700;
-  font-size: 0.82rem;
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 680px) {
   .split-list .row {
     padding: 1.1rem 0.9rem;
+    margin: 0;
   }
   .split-list .row:hover,
   .split-list .row:focus,
   .split-list .row:active,
   .split-list .row.is-active {
-    padding: 2.2rem 1.2rem;
-    margin: 0.4rem 0;
+    padding: 1.1rem 0.9rem;
+    margin: 0;
   }
   .split-list .row__content {
     grid-template-columns: 32px 1fr;
