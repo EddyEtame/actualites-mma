@@ -23,9 +23,9 @@ Travail demandé : six actualités véritablement nouvelles tous les trois jours
 
 ## Activation distante encore nécessaire
 
-Le code est prêt pour le dépôt, mais aucun credential GitHub utilisable ni clé API n'était disponible dans cette session. Le test local `--verify-cloud` échoue explicitement avec `WRITER_NOT_CONFIGURED` et ne modifie aucune publication. Ne pas présenter le robot comme actif ni le site comme déployé tant que ces étapes ne sont pas vérifiées.
+Le push du commit `80d3824` a réussi sur `main`. GitHub confirme le workflow actif et le statut Vercel « Deployment has completed » pour ce commit. Les réglages secrets/variables GitHub restent inaccessibles via l'API dans cette session ; le fournisseur de rédaction et une vraie exécution du robot ne sont pas vérifiés. Le test local `--verify-cloud` échoue explicitement avec `WRITER_NOT_CONFIGURED` et ne modifie aucune publication. Ne pas présenter les éditions autonomes comme opérationnelles avant leur smoke distant et leur première publication.
 
-1. Authentifier le push vers `EddyEtame/actualites-mma` avec le compte autorisé. Identité auteur/committer : `Eddy-etame <eddy.etame@enkoschools.com>` ; aucun trailer d'assistant.
+1. Push initial effectué vers `EddyEtame/actualites-mma`. Identité auteur/committer vérifiée : `Eddy-etame <eddy.etame@enkoschools.com>` ; aucun trailer d'assistant.
 2. Dans les réglages Actions du dépôt : secret `OPENAI_API_KEY`, variable `MMA_WRITER_MODEL` compatible Responses/Structured Outputs ; ne jamais mettre la clé dans le chat ou le dépôt.
 3. Autoriser les workflows et le push du jeton Actions dans les règles de branche existantes ; lancer `validation_only: true` et inspecter la fin du workflow.
 4. Dans Vercel : dépôt connecté, branche `main`, preset Astro, build `npm run build`, sortie `dist`, domaine `actu-mma.com`. `vercel.json` est présent. Confirmer l'accès du compte correspondant à l'auteur du commit.

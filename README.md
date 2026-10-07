@@ -45,6 +45,6 @@ Activer les notifications d'échec GitHub Actions pour détecter un manque de si
 
 ## État vérifié
 
-Le 7 octobre 2026 : six articles récents et leurs sources vérifiés en direct ; photos sources et portraits officiels ; Guillaume et galeries retirés. Tests du pipeline et audit du build réalisés localement. La rédaction via fournisseur API, le push distant, une exécution GitHub Actions et le déploiement Vercel restent à vérifier après connexion des comptes et configuration des secrets. Voir `PROJECT-STATE.md` pour les contrôles et limites précis.
+Le 7 octobre 2026 : six articles récents et leurs sources vérifiés en direct ; photos sources et portraits officiels ; Guillaume et galeries retirés. Les 29 tests du pipeline et l'audit des 36 pages passent. Le commit `80d3824` est poussé sur `main` ; GitHub confirme le workflow actif et le déploiement Vercel réussi. La rédaction via fournisseur API, une exécution GitHub Actions complète et le domaine de production restent à vérifier. Voir `PROJECT-STATE.md` pour les contrôles et limites précis.
 
 Références de configuration : [GitHub schedules](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule), [Responses / Structured Outputs](https://developers.openai.com/api/docs/guides/structured-outputs), [Vercel pour GitHub](https://vercel.com/docs/git/vercel-for-github).
