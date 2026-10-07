@@ -1,43 +1,43 @@
 ---
-/* Hub des organisations de MMA */
 import Base from '../../layouts/Base.astro';
 import organisations from '../../data/organisations.json';
+import { formatDate } from '../../lib/editorial.mjs';
 ---
 
 <Base
-  title="Organisations MMA — UFC, ARES, Hexagone MMA, PFL, ONE"
-  description="Guide complet des ligues de MMA mondiales et françaises : UFC, ARES FC, Hexagone MMA, PFL Europe, ONE Championship et la fédération FMMAF."
+  title="Organisations MMA — UFC, ARES, Hexagone, PFL, ONE et FMMAF"
+  description="Les organisations de MMA suivies par Actu MMA : présentation, formats actuels, dates de vérification et sources officielles."
   currentNav="organisations"
 >
   <div class="wrap archive-page">
     <header class="archive-header" data-reveal>
-      <span class="kicker">Écosystème & Ligues</span>
+      <span class="kicker">Promotions & cadre fédéral</span>
       <h1 class="display">Les organisations de MMA</h1>
-      <p class="lede">Chaque ligue possède ses règles, son arène et ses ceintures. Décryptage des circuits mondiaux et des promotions majeures françaises.</p>
+      <p class="lede">Des cartes professionnelles au circuit amateur, chaque organisation a son rôle. Retrouvez les formats, les sources et les informations vérifiées pour suivre ces six acteurs du MMA.</p>
     </header>
 
     <div class="orgs-full-grid" data-reveal-group>
-      {organisations.map(o => (
+      {organisations.map(org => (
         <article class="org-archive-card" data-reveal>
-          <div class="card-badge-top" style={`background: ${o.accent};`}>
-            <span class="display">{o.badge}</span>
-          </div>
+          <div class="card-badge-top" style={'background: ' + org.accent + ';'}><span class="display">{org.badge}</span></div>
           <div class="card-inner">
-            <span class="kicker">{o.fullName}</span>
-            <h2 class="display org-name-title">
-              <a href={`/organisations/${o.slug}/`}>{o.name}</a>
-            </h2>
-            <p>{o.description}</p>
+            <span class="kicker">{org.fullName}</span>
+            <h2 class="display org-name-title"><a href={'/organisations/' + org.slug + '/'}>{org.name}</a></h2>
+            <p>{org.description}</p>
             <div class="org-card-specs mono">
-              <span>🏟️ {o.cage}</span>
-              <span>📺 {o.broadcast}</span>
+              <span>{org.foundedLabel} : {org.founded}</span>
+              {org.broadcast && <span>{org.broadcast}</span>}
             </div>
-            <a href={`/organisations/${o.slug}/`} class="btn btn--ghost" style="margin-top: 1rem; width: 100%;">
-              Voir la fiche complète & les Français →
-            </a>
+            <p class="org-verification mono">Vérifié le <time datetime={org.verifiedAt}>{formatDate(org.verifiedAt)}</time></p>
+            <a href={'/organisations/' + org.slug + '/'} class="btn btn--ghost" style="margin-top: 1rem; width: 100%;">Repères & sources →</a>
           </div>
         </article>
       ))}
     </div>
   </div>
 </Base>
+
+<style>
+  .org-verification { margin-top: 1rem; font-size: 0.72rem; color: var(--ash); }
+  .org-card-specs { line-height: 1.6; }
+</style>

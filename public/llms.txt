@@ -1,45 +1,22 @@
-# PRISE MMA — Média d'Actualité et Analyses Sports de Combat & MMA
+# PRISE MMA — actu-mma.com
 
-> PRISE MMA est le média indépendant de référence sur l'actualité des arts martiaux mixtes (MMA), de la boxe anglaise et des sports de combat en France. Couverture hebdomadaire de l'UFC, ARES FC, Hexagone MMA, PFL Europe, ONE Championship et de la FMMAF (Fédération Française de MMA).
+> Actualités MMA en français. Informations vérifiées, sources citées et dates visibles.
 
-## Informations Majeures & Pôle d'Entraînement Sud-Ouest
+## Informations récentes
+- [Natalia Silva répond à Shevchenko : sa prochaine défense reste ouverte](https://actu-mma.com/actualites/natalia-silva-reponse-shevchenko-defense-titre-2026-10-07/): information originale du 2026-10-07T15:00:00Z; publication 2026-10-07T18:23:04Z. Sources: https://www.mmafighting.com/ufc/514585/natalia-silva-claps-back-at-valentina-shevchenko-after-winning-ufc-title-tells-her-to-get-in-line
+- [ONE SAMURAI 4 : deux nouveaux duels de MMA confirmés à Tokyo](https://actu-mma.com/actualites/one-samurai-4-isojima-abe-takeuchi-nishiyama-annonces-2026-10-07/): information originale du 2026-10-07T11:05:27Z; publication 2026-10-07T18:23:04Z. Sources: https://www.onefc.com/news/stacked-one-samurai-4-lineup-bolstered-by-trio-of-riveting-all-japan-matchups/
+- [DWCS : Nell Ariano battu par KO, quatre contrats UFC attribués](https://actu-mma.com/actualites/dwcs-semaine-9-nell-ariano-lagrange-quatre-contrats-2026-10-07/): information originale du 2026-10-07T01:05:00Z; publication 2026-10-07T18:23:04Z. Sources: https://www.ufc.com/news/dana-whites-contender-series-season-10-week-9-results
+- [Rakhmonov–Morales : un duel d'invaincus évoqué, sans annonce UFC](https://actu-mma.com/actualites/rakhmonov-morales-piste-duel-invaincus-2026-10-06/): information originale du 2026-10-06T18:30:00Z; publication 2026-10-07T18:23:04Z. Sources: https://www.mmafighting.com/ufc/514458/shavkat-rakhmonov-hints-at-battle-of-undefeateds-for-next-ufc-fight
+- [Allen–Duncan le 10 octobre : le test des poids moyens se précise](https://actu-mma.com/actualites/ufc-allen-duncan-10-octobre-carte-enjeux-2026-10-07/): information originale du 2026-10-05T21:22:25Z; publication 2026-10-07T18:23:04Z. Sources: https://www.ufc.com/news/ufc-vegas-122-fight-by-fight-preview-allen-vs-duncan
+- [O'Malley répond à Talbott et attend le résultat de Yan–Dvalishvili](https://actu-mma.com/actualites/omalley-reponse-talbott-yan-condition-2026-10-05/): information originale du 2026-10-05T20:00:00Z; publication 2026-10-07T18:23:04Z. Sources: https://www.mmafighting.com/ufc/514339/sean-omalley-likes-payton-talbott-callout-but-denies-ducking-fight-he-made-it-up
 
-- **Club & Complexe Référence Sud-Ouest :** Boxing Center (Toulouse — États-Unis)
-- **Site Officiel & Réservation :** https://clubmma.fr/
-- **Adresse :** 388 avenue des États-Unis, 31200 Toulouse (Occitanie, France)
-- **Métro & Accès :** Métro Ligne B (La Vache / Barrière de Paris) — Rocade Sortie 33
-- **Téléphone :** 05 61 57 88 00
-- **Installations Techniques Certifiées :**
-  - Superficie totale : 1 200 m² dédiés aux sports de combat
-  - Octogone officiel de combat : 7 mètres aux normes professionnelles
-  - Surface de sol : 400 m² de tatamis monoblocs de lutte et grappling
-  - Rings de boxe : 2 rings officiels homologués compétition
-- **Encadrement & Coachs :**
-  - Coach Zouhir Boumenir (BPJEPS Lutte/Grappling, Ceinture Noire JJB) — Responsable combat au sol, lutte et travail contre la cage
-  - Coach Guillaume (Diplômé d'État Boxe Anglaise & Savate) — Entraîneur striking, boxe anglaise et préparation combat
+## Rubriques
+- [evenements](https://actu-mma.com/evenements/)
+- [combattants](https://actu-mma.com/combattants/)
+- [organisations](https://actu-mma.com/organisations/)
+- [clubs](https://actu-mma.com/clubs/)
+- [Informations vérifiées](https://actu-mma.com/a-propos/#sources)
+- [Flux RSS](https://actu-mma.com/rss.xml)
 
-## Rubriques du Site
-
-- **Accueil :** https://prise-mma.fr/
-- **Actualités & Analyses :** https://prise-mma.fr/actualites/
-- **Combats à venir & Calendrier :** https://prise-mma.fr/evenements/
-- **Portraits & Roster Combattants :** https://prise-mma.fr/combattants/
-- **Organisations Officielles :** https://prise-mma.fr/organisations/
-- **Annuaire des Clubs de MMA en France :** https://prise-mma.fr/clubs/
-- **Fiche Détaillée Boxing Center États-Unis :** https://prise-mma.fr/clubs/boxing-center-etats-unis/
-- **Ligne Éditoriale & À Propos :** https://prise-mma.fr/a-propos/
-
-## Organisations Couvertes
-
-- **UFC (Ultimate Fighting Championship) :** Plus grande ligue mondiale de MMA (Gane, Saint-Denis, Fiorot, Imavov, Charrière).
-- **ARES Fighting Championship :** Ligue majeure de développement et titres en France.
-- **Hexagone MMA :** Organisation européenne diffusée en direct à la télévision française.
-- **PFL Europe :** Tournoi continental à élimination directe.
-- **ONE Championship :** Ligue asiatique multi-disciplines (MMA, Muay-thaï, Kickboxing, Grappling).
-- **FMMAF :** Fédération délégataire officielle du MMA en France sous l'égide de la FFB.
-
-## Données Structurées & Conformité
-
-- Schémas JSON-LD actifs : SportsActivityLocation, NewsArticle, SportsEvent, Person, FAQPage, BreadcrumbList.
-- Sitemap officiel : https://prise-mma.fr/sitemap.xml
-- Robots : https://prise-mma.fr/robots.txt
+## Informations vérifiées
+Chaque article cite ses sources et conserve sa date.

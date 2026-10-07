@@ -1,68 +1,42 @@
 ---
-/* Hub Calendrier des combats MMA
-   Tous les rendez-vous à venir, diffusions et cartes officielles. */
 import Base from '../../layouts/Base.astro';
 import events from '../../data/events.json';
-
-const sortedEvents = events.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+import { formatDate, upcomingEvents } from '../../lib/editorial.mjs';
+const sortedEvents = upcomingEvents(events);
 ---
 
-<Base
-  title="Calendrier des Combats MMA — Dates, Horaires & Cartes"
-  description="Tous les prochains événements MMA en France et dans le monde : UFC, ARES FC, Hexagone MMA, PFL Europe. Horaires de diffusion, cartes des combats et billetterie."
-  currentNav="evenements"
->
+<Base title="Calendrier MMA — Prochains combats confirmés" description="Les prochains rendez-vous UFC et ONE vérifiés auprès des organisations : dates, lieux, combats annoncés et sources pour suivre les mises à jour." currentNav="evenements">
   <div class="wrap archive-page">
     <header class="archive-header" data-reveal>
-      <span class="kicker">Calendrier officiel</span>
+      <span class="kicker">Les prochaines échéances</span>
       <h1 class="display">Les combats à venir</h1>
-      <p class="lede">Retrouvez l'intégralité des dates, cartes de combat et canaux de diffusion pour ne rien manquer des grandes soirées de combat.</p>
+      <p class="lede">Des affiches confirmées, une date, un lieu et l'annonce à consulter. Chaque carte indique ce qui a été vérifié auprès de son organisation.</p>
     </header>
-
     <div class="events-full-list" data-reveal-group>
-      {sortedEvents.map(ev => (
+      {sortedEvents.map(event => (
         <article class="event-row-card" data-reveal>
-          <div class="event-badge-col" style={`background: ${ev.accent};`}>
-            <span class="badge-text display">{ev.badge}</span>
-            <span class="org-name mono">{ev.org}</span>
+          <div class="event-badge-col" style={'background: ' + event.accent + ';'}>
+            <span class="badge-text display">{event.badge}</span><span class="org-name mono">{event.org}</span>
           </div>
-
           <div class="event-main-col">
             <div class="event-row-meta mono">
-              <time datetime={ev.date}>
-                {new Date(ev.date).toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })}
-              </time>
-              <span class="bullet">•</span>
-              <span>{ev.time || 'Horaire TBA'}</span>
-              <span class="bullet">•</span>
-              <span class="status-badge confirmed">{ev.status === 'confirmed' ? 'Confirmé' : 'À confirmer'}</span>
+              <time datetime={event.date}>{formatDate(event.date, { weekday: 'long' })}</time>
+              <span class="bullet">•</span><span class="status-badge confirmed">Annonce confirmée</span>
             </div>
-
-            <h2 class="display event-row-title">
-              <a href={`/evenements/${ev.slug}/`}>{ev.title}</a>
-            </h2>
-
-            <p class="event-row-desc">{ev.description}</p>
-
-            <div class="event-venue-info mono">
-              <span>📍 {ev.venue}</span>
-              {ev.broadcaster && <span class="broadcast-tag">📺 {ev.broadcaster}</span>}
-            </div>
+            <h2 class="display event-row-title"><a href={'/evenements/' + event.slug + '/'}>{event.title}</a></h2>
+            <p class="event-row-desc">{event.description}</p>
+            <div class="event-venue-info mono"><span>{event.venue}</span><span>{event.time}</span></div>
+            <p class="event-source"><a href={event.sources[0].url} target="_blank" rel="noopener noreferrer">Source : {event.sources[0].name} ↗</a> · vérifiée le <time datetime={event.verifiedAt}>{formatDate(event.verifiedAt)}</time></p>
           </div>
-
-          <div class="event-action-col">
-            {ev.countdown && (
-              <div class="row-countdown">
-                <span class="mono">Compte à rebours</span>
-                <strong data-countdown={`${ev.date}T20:00:00`}>Calcul…</strong>
-              </div>
-            )}
-            <a href={`/evenements/${ev.slug}/`} class="btn btn--primary">
-              Voir la carte des combats →
-            </a>
-          </div>
+          <div class="event-action-col"><a href={'/evenements/' + event.slug + '/'} class="btn btn--primary">Voir les combats →</a></div>
         </article>
       ))}
     </div>
+    {sortedEvents.length === 0 && <p class="lede">Les prochaines affiches confirmées seront ajoutées après vérification des annonces des organisations.</p>}
   </div>
 </Base>
+
+<style>
+  .event-source { font-size: .82rem; color: var(--muted); margin-top: 1rem; }
+  .event-source a { text-decoration: underline; text-underline-offset: .2em; }
+</style>

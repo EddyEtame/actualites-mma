@@ -6,10 +6,13 @@ import events from '../data/events.json';
 import fighters from '../data/fighters.json';
 import organisations from '../data/organisations.json';
 import clubs from '../data/clubs.json';
+import { publishedArticles, isFresh, formatDate, upcomingEvents } from '../lib/editorial.mjs';
 
-const allArticles = articles;
-const mainStory = allArticles[0];
-const sideStories = allArticles.slice(1, 5);
+const allArticles = publishedArticles(articles);
+const freshArticles = allArticles.filter(article => isFresh(article));
+const mainStory = freshArticles[0];
+const sideStories = freshArticles.slice(1, 4);
+const calendar = upcomingEvents(events);
 ---
 
 <!doctype html>
@@ -18,22 +21,22 @@ const sideStories = allArticles.slice(1, 5);
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PRISE MMA — L'actualité du MMA français et mondial</title>
-  <meta name="description" content="Combats à venir, résultats en direct, organisations, clubs et combattants français. UFC, ARES FC, Hexagone MMA, PFL, ONE Championship." />
-  <link rel="canonical" href="https://prise-mma.fr/" />
+  <meta name="description" content="Actualités MMA en français : nouvelles sourcées et datées, UFC, ONE, PFL, combattants et clubs. Consultez les dernières informations et les combats à venir." />
+  <link rel="canonical" href="https://actu-mma.com/" />
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="PRISE MMA" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="PRISE MMA — L'actualité du MMA français et mondial" />
   <meta property="og:description" content="Combats à venir, résultats en direct, organisations, clubs et combattants français. UFC, ARES FC, Hexagone MMA, PFL, ONE." />
-  <meta property="og:url" content="https://prise-mma.fr/" />
-  <meta property="og:image" content="https://prise-mma.fr/assets/img/gane.webp" />
+  <meta property="og:url" content="https://actu-mma.com/" />
+  <meta property="og:image" content={`https://actu-mma.com${mainStory?.image || '/assets/img/octagon.webp'}`} />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="PRISE MMA — L'actualité du MMA français" />
   <meta name="twitter:description" content="Combats à venir, résultats, organisations, clubs et combattants français." />
-  <meta name="twitter:image" content="https://prise-mma.fr/assets/img/gane.webp" />
+  <meta name="twitter:image" content={`https://actu-mma.com${mainStory?.image || '/assets/img/octagon.webp'}`} />
 
   <!-- Favicon -->
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -45,21 +48,18 @@ const sideStories = allArticles.slice(1, 5);
   <link rel="stylesheet" href="/assets/css/base.css" />
   <link rel="stylesheet" href="/assets/css/home.css" />
   <link rel="stylesheet" href="/assets/css/motion.css" />
+  <link rel="stylesheet" href="/assets/css/editorial.css" />
 
   <!-- Schema.org -->
   <script is:inline type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "NewsMediaOrganization",
     "name": "PRISE MMA",
-    "url": "https://prise-mma.fr/",
+    "url": "https://actu-mma.com/",
     "description": "Média indépendant d'actualité MMA en français.",
-    "foundingDate": "2026",
     "knowsAbout": ["MMA", "UFC", "ARES", "Hexagone MMA", "PFL", "ONE Championship"]
   })} />
 
-  <script is:inline>document.documentElement.classList.add('fx');</script>
-  <script is:inline defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script is:inline defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </head>
 
 <body class="home">
@@ -108,56 +108,59 @@ const sideStories = allArticles.slice(1, 5);
         <span class="kicker">Partenaire entraînement</span>
         <a href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer" class="drawer__club-link">
           <strong>Boxing Center États-Unis</strong>
-          <span>1 200 m² dédiés au MMA & Grappling à Toulouse →</span>
+          <span>MMA, lutte et grappling à Toulouse →</span>
         </a>
       </div>
     </nav>
   </div>
 
+  <noscript><nav class="no-script-nav" aria-label="Rubriques sans JavaScript"><a href="/actualites/">Actualités</a><a href="/evenements/">Combats</a><a href="/combattants/">Combattants</a><a href="/organisations/">Organisations</a><a href="/clubs/">Clubs</a></nav></noscript>
   <main id="contenu">
 
   <!-- ======================== PALIER 1 — HERO ======================== -->
+  {mainStory && (
   <section class="hero">
     <div class="hero__grid">
       <!-- Main story -->
-      <a class="hero__main" href={`/actualites/${mainStory.slug}/`} data-reveal data-reveal-media>
+      <a class="hero__main" href={`/actualites/${mainStory.slug}/`} data-news-source={mainStory.sourcePublishedAt} data-reveal data-reveal-media>
         <div class="hero__visual">
-          <img src={mainStory.image} alt={mainStory.imageAlt} width="1200" height="800" fetchpriority="high" />
+          <img src={mainStory.image} alt={mainStory.imageAlt} width="1200" height="675" fetchpriority="high" />
         </div>
         <div class="hero__overlay"></div>
         <div class="hero__content">
-          <span class="kicker">{mainStory.kicker}</span>
-          <h2 class="display">
+          <span class="kicker">À la une · {mainStory.kicker}</span>
+          <h1 class="display">
             <span class="reveal-mask"><span>{mainStory.title}</span></span>
-          </h2>
+          </h1>
+          <span class="hero__date mono"><span data-news-freshness={mainStory.sourcePublishedAt}>Informations vérifiées</span> · <time datetime={mainStory.sourcePublishedAt}>{formatDate(mainStory.sourcePublishedAt)}</time></span>
           <p>{mainStory.excerpt.slice(0, 140)}…</p>
         </div>
       </a>
       <!-- Side stories -->
       {sideStories.map((s, i) => (
-        <a class={`hero__side hero__side--${i + 1}`} href={`/actualites/${s.slug}/`} data-reveal data-reveal-media>
+        <a class={`hero__side hero__side--${i + 1}`} href={`/actualites/${s.slug}/`} data-news-source={s.sourcePublishedAt} data-reveal data-reveal-media>
           <div class="hero__visual">
-            <img src={s.image} alt={s.imageAlt} width="600" height="400" loading="lazy" decoding="async" />
+            <img src={s.image} alt={s.imageAlt} width="1200" height="675" loading="lazy" decoding="async" />
           </div>
           <div class="hero__overlay"></div>
           <div class="hero__content">
             <span class="kicker">{s.kicker}</span>
             <h3 class="display">{s.title}</h3>
+            <time class="hero__date mono" datetime={s.sourcePublishedAt}>{formatDate(s.sourcePublishedAt)}</time>
           </div>
         </a>
       ))}
     </div>
   </section>
+  )}
+  {!mainStory && <section class="edition-empty wrap"><span class="kicker">Le fil MMA</span><h1 class="display">L'actualité MMA, vérifiée et datée</h1><p>Retrouvez nos dernières publications, leurs dates et leurs sources dans <a href="/actualites/">les archives du média</a>.</p></section>}
 
   <!-- ======================== PALIER 2 — TICKER ======================== -->
   <div class="ticker">
     <div class="ticker__dot"><b></b></div>
     <div class="ticker__rail">
       <div class="ticker__run">
-        <span class="tick"><strong>UFC 334</strong><span>Gane vs Hokit · 14 novembre · MSG New York</span></span>
-        <span class="tick"><strong>ARES 44</strong><span>Paris · 31 octobre</span></span>
-        <span class="tick"><strong>Hexagone 22</strong><span>Zénith de Rouen · 8 novembre</span></span>
-        <span class="tick"><strong>PFL Europe 5</strong><span>Paris · 29 novembre</span></span>
+        {allArticles.slice(0, 6).map(a => <span class="tick"><strong>{formatDate(a.sourcePublishedAt, {month:'short', year:undefined})}</strong><span>{a.title}</span></span>)}
         <span class="tick"><strong>{allArticles.length} articles</strong><span>toutes organisations, en français</span></span>
         <span class="tick"><strong>{fighters.length} combattants</strong><span>portraits et parcours</span></span>
       </div>
@@ -182,7 +185,7 @@ const sideStories = allArticles.slice(1, 5);
       </div>
 
       <!-- Lead article -->
-      <a class="ed-lead" href={`/actualites/${mainStory.slug}/`} data-reveal data-reveal-media>
+      {mainStory && <a class="ed-lead" href={`/actualites/${mainStory.slug}/`} data-reveal data-reveal-media>
         <div class="ed-lead__media">
           <img src={mainStory.image} alt={mainStory.imageAlt} width="1200" height="800" loading="lazy" decoding="async" />
         </div>
@@ -191,7 +194,7 @@ const sideStories = allArticles.slice(1, 5);
           <h3 class="display">{mainStory.title}</h3>
           <p>{mainStory.excerpt}</p>
         </div>
-      </a>
+      </a>}
 
       <!-- Split list -->
       <div class="split-list" role="feed" aria-label="Fil d'actualité MMA">
@@ -205,7 +208,7 @@ const sideStories = allArticles.slice(1, 5);
               <span class="pos mono">{String(i + 1).padStart(2, '0')}</span>
               <span class="nm">{a.title}</span>
               <span class="cat">{a.kicker}</span>
-              <span class="rec mono">{new Date(a.date).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short' })}</span>
+              <span class="rec mono">{formatDate(a.sourcePublishedAt, {month:'short', year:undefined})}</span>
             </div>
           </a>
         ))}
@@ -238,7 +241,7 @@ const sideStories = allArticles.slice(1, 5);
         <p class="lede">De l'UFC au FMMAF — ce qui se prépare, en France et ailleurs.</p>
       </div>
       <div class="events-grid" data-reveal-group>
-        {events.map(ev => (
+        {calendar.map(ev => (
           <a class={`event-card${ev.countdown ? ' event-card--featured' : ''}`} href={`/evenements/${ev.slug}/`} data-reveal>
             <div class="event-card__badge" style={`background: ${ev.accent};`}>
               <span>{ev.badge}</span>
@@ -253,12 +256,6 @@ const sideStories = allArticles.slice(1, 5);
                 {ev.status === 'confirmed' ? 'Confirmé' : 'À confirmer'}
               </span>
             </div>
-            {ev.countdown && (
-              <div class="event-card__countdown">
-                <span class="countdown-label mono">Compte à rebours</span>
-                <b class="countdown-number" data-countdown={`${ev.date}T00:00:00`}>J−39</b>
-              </div>
-            )}
           </a>
         ))}
       </div>
@@ -296,7 +293,7 @@ const sideStories = allArticles.slice(1, 5);
           <div class="roster__meta">
             <span class="kicker">{f.org}</span>
             <h3>{f.name}</h3>
-            <span class="mono">{f.record} {f.flag}</span>
+            <span class="mono">{f.record || f.country} {f.flag}</span>
             {f.title && <span class="roster__title">{f.title}</span>}
           </div>
         </a>
@@ -344,14 +341,14 @@ const sideStories = allArticles.slice(1, 5);
     <div class="wrap">
       <div class="ed-head" data-reveal>
         <span class="kicker">Les clubs</span>
-        <h2 class="display">Où ça se boxe, <span class="tint">en France</span></h2>
+        <h2 class="display">Où pratiquer le MMA, <span class="tint">en France</span></h2>
         <p class="lede">De Paris à Toulouse — les clubs qui forment les combattants français.</p>
       </div>
       <div class="clubs-grid" data-reveal-group>
         {clubs.map(c => (
           <a class="club-card" href={`/clubs/${c.slug}/`} data-reveal>
             <div class="club-card__visual">
-              <img src={c.image} alt={c.imageAlt} width="640" height="360" loading="lazy" decoding="async" />
+              {c.image ? <img src={c.image} alt={c.imageAlt} width="640" height="360" loading="lazy" decoding="async" /> : <div class="club-city-identity"><span class="mono">MMA / {c.city}</span><strong class="display">{c.name}</strong></div>}
             </div>
             <div class="club-card__body">
               <span class="kicker">{c.city}</span>
@@ -386,7 +383,7 @@ const sideStories = allArticles.slice(1, 5);
         <div class="footer-affiliate-badge">
           <span class="kicker" style="color: var(--teal); margin-bottom: 0.3rem;">Club référence Sud-Ouest :</span>
           <a href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer" class="link-clubmma">
-            Boxing Center Toulouse (États-Unis) — Octogone 7m, 400m² tapis ↗
+            Boxing Center États-Unis — MMA à Toulouse ↗
           </a>
         </div>
       </div>

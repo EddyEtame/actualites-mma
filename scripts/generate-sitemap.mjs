@@ -1,79 +1,20 @@
-import { readFileSync, writeFileSync } from 'fs';
-import { resolve } from 'path';
-
-const baseUrl = 'https://prise-mma.fr';
-const dataDir = resolve(process.cwd(), 'src/data');
-
-const articles = JSON.parse(readFileSync(resolve(dataDir, 'articles.json'), 'utf8'));
-const events = JSON.parse(readFileSync(resolve(dataDir, 'events.json'), 'utf8'));
-const fighters = JSON.parse(readFileSync(resolve(dataDir, 'fighters.json'), 'utf8'));
-const organisations = JSON.parse(readFileSync(resolve(dataDir, 'organisations.json'), 'utf8'));
-const clubs = JSON.parse(readFileSync(resolve(dataDir, 'clubs.json'), 'utf8'));
-
+import { readFileSync, writeFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { SITE_URL, publishedArticles } from '../src/lib/editorial.mjs';
+const root = resolve(import.meta.dirname, '..');
+const read = name => JSON.parse(readFileSync(resolve(root, 'src/data', `${name}.json`), 'utf8'));
+const xml = text => String(text).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]));
+const articles = publishedArticles(read('articles'));
+const groups = { evenements:read('events'), combattants:read('fighters'), organisations:read('organisations'), clubs:read('clubs') };
+const newest = articles.reduce((value, a) => (a.updatedAt || a.publishedAt || a.date) > value ? (a.updatedAt || a.publishedAt || a.date) : value, '');
 const routes = [
-  { path: '/', priority: '1.0', changefreq: 'daily' },
-  { path: '/actualites/', priority: '0.9', changefreq: 'hourly' },
-  { path: '/evenements/', priority: '0.9', changefreq: 'daily' },
-  { path: '/combattants/', priority: '0.8', changefreq: 'weekly' },
-  { path: '/organisations/', priority: '0.8', changefreq: 'weekly' },
-  { path: '/clubs/', priority: '0.9', changefreq: 'weekly' },
-  { path: '/a-propos/', priority: '0.6', changefreq: 'monthly' },
+  { path:'/', lastmod:newest }, { path:'/actualites/', lastmod:newest },
+  ...Object.keys(groups).map(key => ({ path:`/${key}/` })), { path:'/a-propos/' },
+  ...articles.map(a => ({ path:`/actualites/${a.slug}/`, lastmod:a.updatedAt || a.publishedAt || a.date })),
+  ...Object.entries(groups).flatMap(([key, rows]) => rows.map(row => ({ path:`/${key}/${row.slug}/`, lastmod:row.updatedAt })))
 ];
-
-for (const a of articles) {
-  routes.push({ path: `/actualites/${a.slug}/`, priority: '0.8', changefreq: 'weekly' });
-}
-
-for (const e of events) {
-  routes.push({ path: `/evenements/${e.slug}/`, priority: '0.8', changefreq: 'weekly' });
-}
-
-for (const f of fighters) {
-  routes.push({ path: `/combattants/${f.slug}/`, priority: '0.7', changefreq: 'monthly' });
-}
-
-for (const o of organisations) {
-  routes.push({ path: `/organisations/${o.slug}/`, priority: '0.7', changefreq: 'monthly' });
-}
-
-for (const c of clubs) {
-  const prio = c.slug === 'boxing-center-etats-unis' ? '0.95' : '0.7';
-  routes.push({ path: `/clubs/${c.slug}/`, priority: prio, changefreq: 'weekly' });
-}
-
-const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${routes.map(r => `  <url>
-    <loc>${baseUrl}${r.path}</loc>
-    <changefreq>${r.changefreq}</changefreq>
-    <priority>${r.priority}</priority>
-  </url>`).join('\n')}
-</urlset>
-`;
-
-writeFileSync(resolve(process.cwd(), 'public/sitemap.xml'), sitemapXml, 'utf8');
-
-const robotsTxt = `User-agent: *
-Allow: /
-Sitemap: ${baseUrl}/sitemap.xml
-LLMs-Txt: ${baseUrl}/llms.txt
-
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-`;
-
-writeFileSync(resolve(process.cwd(), 'public/robots.txt'), robotsTxt, 'utf8');
-
-console.log(`[SEO Engine] Generated sitemap.xml with ${routes.length} validated endpoints and robots.txt!`);
+writeFileSync(resolve(root, 'public/sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${routes.map(r => `  <url><loc>${xml(SITE_URL + r.path)}</loc>${r.lastmod ? `<lastmod>${xml(r.lastmod)}</lastmod>` : ''}</url>`).join('\n')}\n</urlset>\n`);
+writeFileSync(resolve(root, 'public/robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
+writeFileSync(resolve(root, 'public/llms.txt'), `# PRISE MMA — actu-mma.com\n\n> Actualités MMA en français. Informations vérifiées, sources citées et dates visibles.\n\n## Informations récentes\n${articles.slice(0,24).map(a => `- [${a.title}](${SITE_URL}/actualites/${a.slug}/): information originale du ${a.sourcePublishedAt}; publication ${a.publishedAt}. Sources: ${a.sources.map(s => s.url).join(', ')}`).join('\n')}\n\n## Rubriques\n${Object.keys(groups).map(key => `- [${key}](${SITE_URL}/${key}/)`).join('\n')}\n- [Informations vérifiées](${SITE_URL}/a-propos/#sources)\n- [Flux RSS](${SITE_URL}/rss.xml)\n\n## Informations vérifiées\nChaque article cite ses sources et conserve sa date.\n`);
+writeFileSync(resolve(root, 'public/rss.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>PRISE MMA — Actualités MMA</title><link>${SITE_URL}/</link><description>Nouvelles MMA sourcées et datées</description><language>fr</language>${articles.slice(0,40).map(a => `<item><title>${xml(a.title)}</title><link>${SITE_URL}/actualites/${xml(a.slug)}/</link><guid isPermaLink="true">${SITE_URL}/actualites/${xml(a.slug)}/</guid><pubDate>${new Date(a.publishedAt || a.date).toUTCString()}</pubDate><description>${xml(a.excerpt)}</description></item>`).join('')}</channel></rss>\n`);
+console.log(`Discovery: ${routes.length} canonical routes; sourced RSS and llms.txt generated.`);

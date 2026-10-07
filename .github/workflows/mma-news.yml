@@ -1,0 +1,83 @@
+name: Six actualités MMA tous les trois jours
+
+on:
+  schedule:
+    # Hourly wake-up; the persisted, anchored 72-hour gate decides whether publication is due.
+    # */3 day-of-month is deliberately avoided: it drifts at month boundaries.
+    - cron: '17 * * * *'
+  workflow_dispatch:
+    inputs:
+      validation_only:
+        description: Verify cloud API, six source articles, photographs and build without publishing
+        type: boolean
+        default: true
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actu-mma-editorial-publication
+  cancel-in-progress: false
+
+jobs:
+  edition:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      MMA_WRITER_MODEL: ${{ vars.MMA_WRITER_MODEL }}
+    steps:
+      - name: Checkout the publication branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install reproducible dependencies
+        run: npm ci
+      - name: Verify news safeguards
+        run: node --test scripts/news-pipeline.test.mjs scripts/cloud-news-edition.test.mjs
+      - name: Fetch sources, draft and independently verify six French articles, fetch their photos
+        id: edition
+        if: github.event_name != 'workflow_dispatch' || inputs.validation_only == false
+        run: node scripts/cloud-news-edition.mjs
+      - name: Verify cloud configuration, provider access, current sources and photographs without publishing
+        if: github.event_name == 'workflow_dispatch' && inputs.validation_only == true
+        run: node scripts/cloud-news-edition.mjs --verify-cloud
+      - name: Validate provenance, rendered site, metadata and image dimensions
+        if: steps.edition.outputs.published == '6' || (github.event_name == 'workflow_dispatch' && inputs.validation_only == true)
+        run: |
+          node scripts/ai-wired-crawler.mjs --validate
+          npm run build
+          node scripts/audit-build.mjs
+      - name: Commit and push the complete verified edition
+        if: steps.edition.outputs.published == '6'
+        env:
+          GIT_AUTHOR_NAME: Eddy-etame
+          GIT_AUTHOR_EMAIL: eddy.etame@enkoschools.com
+          GIT_COMMITTER_NAME: Eddy-etame
+          GIT_COMMITTER_EMAIL: eddy.etame@enkoschools.com
+        run: |
+          git config user.name "$GIT_AUTHOR_NAME"
+          git config user.email "$GIT_AUTHOR_EMAIL"
+          git add -- src/data/articles.json public/assets/editorial public/sitemap.xml public/rss.xml public/llms.txt
+          git diff --cached --quiet && exit 1
+          git commit -m "Publier six nouvelles actualités MMA vérifiées"
+          test "$(git log -1 --format=%an)" = "$GIT_AUTHOR_NAME"
+          test "$(git log -1 --format=%ae)" = "$GIT_AUTHOR_EMAIL"
+          test "$(git log -1 --format=%cn)" = "$GIT_COMMITTER_NAME"
+          test "$(git log -1 --format=%ce)" = "$GIT_COMMITTER_EMAIL"
+          git push origin HEAD:main
+      - name: Retain diagnostic rejection reports on a failed edition
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: editorial-failure-${{ github.run_id }}
+          path: .news/editorial-rejections.json
+          if-no-files-found: ignore
+          retention-days: 7

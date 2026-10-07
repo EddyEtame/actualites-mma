@@ -1,242 +1,247 @@
 [
   {
+    "slug": "ufc-allen-duncan",
+    "org": "UFC",
+    "badge": "UFC",
+    "accent": "#DC3B31",
+    "title": "UFC Fight Night : Allen vs Duncan",
+    "date": "2026-10-10",
+    "startAt": "2026-10-10T21:00:00Z",
+    "mainCardStartAt": "2026-10-11T00:00:00Z",
+    "time": "Préliminaires : 23 h le 10 octobre · carte principale : 2 h le 11 octobre (Paris)",
+    "venue": "Meta APEX, Las Vegas, États-Unis",
+    "broadcaster": "Paramount+ (États-Unis) · diffusion française à vérifier",
+    "status": "confirmed",
+    "countdown": true,
+    "countdownLabel": "Avant les préliminaires",
+    "image": "/assets/editorial/ufc-allen-duncan-10-octobre-carte-enjeux-2026-10-07.webp",
+    "imageAlt": "Montage photographique officiel des combattants de l'UFC Fight Night Allen–Duncan.",
+    "imageCaption": "Montage officiel publié par l'UFC pour présenter la carte Allen–Duncan du 10 octobre 2026. Crédit : UFC · source : UFC.",
+    "description": "Brendan Allen affronte Christian Leroy Duncan chez les poids moyens. La page officielle UFC confirme la carte à Las Vegas ; les horaires ci-dessous sont convertis depuis l'heure de New York.",
+    "cardScope": "Combats annoncés sur la page UFC au 7 octobre. Ordre et carte susceptibles de changer.",
+    "fights": [
+      {
+        "red": "Brendan Allen",
+        "blue": "Christian Leroy Duncan",
+        "weight": "Poids moyens",
+        "role": "Combat principal"
+      },
+      {
+        "red": "Matheus Camilo",
+        "blue": "Jai Herbert",
+        "weight": "Poids légers",
+        "role": "Carte principale"
+      },
+      {
+        "red": "Loopy Godinez",
+        "blue": "Ketlen Souza",
+        "weight": "Poids pailles féminins",
+        "role": "Carte principale"
+      },
+      {
+        "red": "Andre Fili",
+        "blue": "Kai Kamaka III",
+        "weight": "Poids plumes",
+        "role": "Carte principale"
+      },
+      {
+        "red": "Malcolm Wellmaker",
+        "blue": "Otari Tanzilovi",
+        "weight": "Poids coqs",
+        "role": "Carte principale"
+      },
+      {
+        "red": "Julius Walker",
+        "blue": "Gerald Meerschaert",
+        "weight": "Poids mi-lourds",
+        "role": "Préliminaires"
+      },
+      {
+        "red": "Francisco Prado",
+        "blue": "Ismael Bonfim",
+        "weight": "Poids légers",
+        "role": "Préliminaires"
+      },
+      {
+        "red": "Niko Price",
+        "blue": "Leon Shahbazyan",
+        "weight": "Poids welters",
+        "role": "Préliminaires"
+      },
+      {
+        "red": "Felipe Franco",
+        "blue": "Brendson Ribeiro",
+        "weight": "Poids mi-lourds",
+        "role": "Préliminaires"
+      },
+      {
+        "red": "Allen Frye Jr.",
+        "blue": "RJ Harris",
+        "weight": "Poids lourds",
+        "role": "Préliminaires"
+      },
+      {
+        "red": "Alice Pereira",
+        "blue": "Daria Zhelezniakova",
+        "weight": "Poids coqs féminins",
+        "role": "Préliminaires"
+      },
+      {
+        "red": "Ernesta Kareckaite",
+        "blue": "Melissa Gatto",
+        "weight": "Poids mouches féminins",
+        "role": "Préliminaires"
+      }
+    ],
+    "sources": [
+      {
+        "name": "UFC",
+        "title": "UFC Fight Night : Allen vs Duncan — carte et horaires",
+        "url": "https://www.ufc.com/event/ufc-fight-night-october-10-2026",
+        "retrievedAt": "2026-10-07T18:27:16Z"
+      }
+    ],
+    "verifiedAt": "2026-10-07T18:27:16Z",
+    "timezone": "America/New_York",
+    "startTimeEvidence": "Préliminaires 5:00 PM EDT ; carte principale 8:00 PM EDT le 10 octobre 2026.",
+    "imageSource": {
+      "url": "https://ufc.com/images/styles/background_image_xl_2x/s3/2026-10/100326-FBF-hero-UFC-Vegas-122.jpg?h=d1cb525d&itok=DuIYLiEX",
+      "ogImageUrl": "https://ufc.com/images/styles/card/s3/2026-10/100326-FBF-hero-UFC-Vegas-122.jpg?itok=ehn6phkQ",
+      "pageUrl": "https://www.ufc.com/news/ufc-vegas-122-fight-by-fight-preview-allen-vs-duncan",
+      "publisher": "UFC",
+      "credit": "UFC",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-07T18:39:43.363Z",
+      "originalWidth": 4000,
+      "originalHeight": 2666
+    }
+  },
+  {
+    "slug": "one-samurai-4",
+    "org": "ONE Championship",
+    "badge": "ONE",
+    "accent": "#5ED1B6",
+    "title": "ONE SAMURAI 4 : les combats de MMA",
+    "date": "2026-10-17",
+    "startAt": null,
+    "mainCardStartAt": null,
+    "time": "Horaire français à confirmer",
+    "venue": "Ariake Arena, Tokyo, Japon",
+    "broadcaster": "Consulter les informations ONE pour votre pays",
+    "status": "confirmed",
+    "countdown": false,
+    "countdownLabel": null,
+    "image": "/assets/editorial/one-samurai-4-isojima-abe-takeuchi-nishiyama-annonces-2026-10-07.webp",
+    "imageAlt": "Shozo Isojima, sur la photographie de ONE Championship accompagnant l'annonce de ONE SAMURAI 4.",
+    "imageCaption": "Shozo Isojima, sur une photographie de contexte publiée avec l'annonce des nouveaux combats de ONE SAMURAI 4. Crédit : ONE Championship · source : ONE Championship.",
+    "description": "Trois combats de MMA sont annoncés à Tokyo. La soirée ONE SAMURAI 4 comprend également du kickboxing, du Muay Thai et du grappling ; cette fiche présente ses affiches de MMA.",
+    "cardScope": "Sélection MMA de la soirée ; aucune position de tête d'affiche n'est déduite de l'ordre ci-dessous.",
+    "fights": [
+      {
+        "red": "Itsuki Hirata",
+        "blue": "Jihin Radzuan",
+        "weight": "Poids atomes féminins",
+        "role": "Combat MMA"
+      },
+      {
+        "red": "Shozo Isojima",
+        "blue": "Kota Abe",
+        "weight": "Poids légers",
+        "role": "Combat MMA"
+      },
+      {
+        "red": "Yu Takeuchi",
+        "blue": "Ryoto Nishiyama",
+        "weight": "Poids mouches",
+        "role": "Combat MMA"
+      }
+    ],
+    "sources": [
+      {
+        "name": "ONE Championship",
+        "title": "ONE SAMURAI 4 — carte de l'événement",
+        "url": "https://www.onefc.com/events/one-samurai-4/",
+        "retrievedAt": "2026-10-07T18:27:16Z"
+      },
+      {
+        "name": "ONE Championship",
+        "title": "Ajouts japonais à ONE SAMURAI 4 — annonce du 7 octobre",
+        "url": "https://www.onefc.com/news/stacked-one-samurai-4-lineup-bolstered-by-trio-of-riveting-all-japan-matchups/",
+        "retrievedAt": "2026-10-07T18:27:16Z"
+      }
+    ],
+    "verifiedAt": "2026-10-07T18:27:16Z",
+    "imageSource": {
+      "url": "https://cdn.onefc.com/wp-content/uploads/2026/07/Shozo-Isojima-ONE-173-21-scaled.jpg",
+      "ogImageUrl": "https://cdn.onefc.com/wp-content/uploads/2026/07/Shozo-Isojima-ONE-173-21-scaled.jpg",
+      "pageUrl": "https://www.onefc.com/news/stacked-one-samurai-4-lineup-bolstered-by-trio-of-riveting-all-japan-matchups/",
+      "publisher": "ONE Championship",
+      "credit": "ONE Championship",
+      "creditBasis": "explicit-source-credit",
+      "sourceImageAlt": "Shozo Isojima ONE 173",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-07T18:41:01.465Z",
+      "originalWidth": 2560,
+      "originalHeight": 1707
+    }
+  },
+  {
     "slug": "ufc-334",
     "org": "UFC",
     "badge": "UFC",
     "accent": "#D4AF37",
     "title": "UFC 334 : Gane vs Hokit",
     "date": "2026-11-14",
-    "time": "02h00 (heure de Paris)",
-    "venue": "Madison Square Garden, New York, USA",
-    "broadcaster": "RMC Sport 2 & UFC Fight Pass",
+    "startAt": null,
+    "mainCardStartAt": null,
+    "time": "Horaire français à confirmer",
+    "venue": "Madison Square Garden, New York, États-Unis",
+    "broadcaster": "Paramount+ (États-Unis) · diffusion française à vérifier",
     "status": "confirmed",
-    "countdown": true,
-    "image": "/assets/img/octagon.webp",
-    "description": "Première défense de titre pour le champion incontesté des poids lourds de l'UFC, Ciryl Gane, face au lutteur américain invaincu Josh Hokit dans l'arène mythique du Madison Square Garden.",
-    "mainTape": {
-      "red": {
-        "name": "Ciryl Gane",
-        "nickname": "Bon Gamin",
-        "rank": "CHAMPION DU MONDE",
-        "flag": "🇫🇷",
-        "country": "France",
-        "record": "13-2-0",
-        "height": "196 cm",
-        "reach": "206 cm",
-        "weight": "112 kg",
-        "age": "36 ans",
-        "stance": "Orthodoxe / Switch",
-        "image": "/assets/img/gane-champion.png",
-        "koWins": "6",
-        "subWins": "3",
-        "decWins": "4"
+    "countdown": false,
+    "countdownLabel": null,
+    "image": "/assets/fighters/ciryl-gane.webp",
+    "imageAlt": "Portrait de Ciryl Gane publié sur sa fiche officielle UFC.",
+    "imageCaption": "Portrait officiel de Ciryl Gane · source : UFC.",
+    "description": "Ciryl Gane doit défendre son titre incontesté des poids lourds contre Josh Hokit. Le deuxième combat de championnat annoncé oppose Kayla Harrison à Amanda Nunes chez les poids coqs.",
+    "cardScope": "Deux combats de championnat confirmés par l'annonce UFC du 20 septembre. La carte complète reste à vérifier.",
+    "fights": [
+      {
+        "red": "Ciryl Gane (C)",
+        "blue": "Josh Hokit",
+        "weight": "Poids lourds",
+        "title": "Titre incontesté UFC",
+        "role": "Combat principal"
       },
-      "blue": {
-        "name": "Josh Hokit",
-        "nickname": "The Machine",
-        "rank": "CHALLENGER #1",
-        "flag": "🇺🇸",
-        "country": "États-Unis",
-        "record": "7-0-0",
-        "height": "188 cm",
-        "reach": "193 cm",
-        "weight": "113 kg",
-        "age": "28 ans",
-        "stance": "Orthodoxe",
-        "image": "/assets/img/fighter-portrait.png",
-        "koWins": "5",
-        "subWins": "1",
-        "decWins": "1"
+      {
+        "red": "Kayla Harrison (C)",
+        "blue": "Amanda Nunes",
+        "weight": "Poids coqs féminins",
+        "title": "Titre UFC",
+        "role": "Co-combat principal"
       }
-    },
-    "fights": [
-      { "red": "Ciryl Gane (C)", "blue": "Josh Hokit", "weight": "Poids Lourds (Heavyweight)", "title": "Ceinture Incontestée UFC" },
-      { "red": "Benoît Saint Denis", "blue": "Jalin Turner", "weight": "Poids Légers (Lightweight)", "title": "Co-Main Event" },
-      { "red": "Nassourdine Imavov", "blue": "Caio Borralho", "weight": "Poids Moyens (Middleweight)" },
-      { "red": "Taylor Lapilus", "blue": "Montel Jackson", "weight": "Poids Coqs (Bantamweight)" }
-    ]
-  },
-  {
-    "slug": "hexagone-22",
-    "org": "Hexagone MMA",
-    "badge": "HEX",
-    "accent": "#8B5CF6",
-    "title": "Hexagone MMA 22 — Rouen",
-    "date": "2026-11-08",
-    "time": "19h00",
-    "venue": "Zénith de Rouen, Normandie",
-    "broadcaster": "RMC Sport Live & DAZN",
-    "status": "confirmed",
-    "image": "/assets/img/actualite-hexagone-mma-toulouse-zenith-septembre-2025.webp",
-    "description": "La plus grande organisation itinérante de MMA en France débarque au Zénith de Rouen avec deux ceintures en jeu et le retour de combattants d'élite européens.",
-    "mainTape": {
-      "red": {
-        "name": "Anzor Baybatyrov",
-        "nickname": "The Predator",
-        "rank": "CHAMPION WELTER",
-        "flag": "🇫🇷",
-        "country": "France (Toulouse)",
-        "record": "9-1-0",
-        "height": "182 cm",
-        "reach": "186 cm",
-        "weight": "77.1 kg",
-        "age": "27 ans",
-        "stance": "Orthodoxe",
-        "image": "/assets/img/fight.webp",
-        "koWins": "7",
-        "subWins": "1",
-        "decWins": "1"
-      },
-      "blue": {
-        "name": "Maksym Polishchuk",
-        "nickname": "Iron Fist",
-        "rank": "CHALLENGER #1",
-        "flag": "🇺🇦",
-        "country": "Ukraine",
-        "record": "8-2-0",
-        "height": "180 cm",
-        "reach": "183 cm",
-        "weight": "77.0 kg",
-        "age": "29 ans",
-        "stance": "Fausse patte",
-        "image": "/assets/img/clinch.webp",
-        "koWins": "4",
-        "subWins": "3",
-        "decWins": "1"
+    ],
+    "sources": [
+      {
+        "name": "UFC",
+        "title": "Gane-Hokit, Harrison-Nunes Headline UFC 334 In New York City",
+        "url": "https://www.ufc.com/news/gane-hokit-harrison-nunes-headline-ufc-334-new-york-city",
+        "retrievedAt": "2026-10-07T18:27:16Z"
       }
-    },
-    "fights": [
-      { "red": "Anzor Baybatyrov", "blue": "Maksym Polishchuk", "weight": "Poids Welters (77 kg)", "title": "Titre Mondial Hexagone" },
-      { "red": "Matthieu Baudot", "blue": "Giorgi Kavelashvili", "weight": "Poids Lourds-Légers (93 kg)" },
-      { "red": "Anthony Morel", "blue": "Zubair Taisumov", "weight": "Poids Lourds" }
-    ]
-  },
-  {
-    "slug": "ares-44",
-    "org": "ARES FC",
-    "badge": "ARES",
-    "accent": "#DC2626",
-    "title": "ARES FC 44 — Dôme de Paris",
-    "date": "2026-10-31",
-    "time": "18h30",
-    "venue": "Dôme de Paris, Porte de Versailles",
-    "broadcaster": "Canal+ Sport 360 & UFC Fight Pass",
-    "status": "confirmed",
-    "image": "/assets/img/sola.webp",
-    "description": "ARES Fighting Championship présente sa 44e édition dans la capitale avec un combat pour la ceinture des poids moyens et les meilleurs prospects français en action.",
-    "mainTape": {
-      "red": {
-        "name": "Virgil Augen",
-        "nickname": "The Prince",
-        "rank": "ASPIRANT #1",
-        "flag": "🇫🇷",
-        "country": "France",
-        "record": "8-1-0",
-        "height": "185 cm",
-        "reach": "190 cm",
-        "weight": "83.9 kg",
-        "age": "28 ans",
-        "stance": "Orthodoxe",
-        "image": "/assets/img/sola.webp",
-        "koWins": "5",
-        "subWins": "2",
-        "decWins": "1"
-      },
-      "blue": {
-        "name": "Henrique Shiguemoto",
-        "nickname": "O Samurai",
-        "rank": "ASPIRANT #2",
-        "flag": "🇧🇷",
-        "country": "Brésil",
-        "record": "14-5-1",
-        "height": "183 cm",
-        "reach": "188 cm",
-        "weight": "84.0 kg",
-        "age": "34 ans",
-        "stance": "Orthodoxe",
-        "image": "/assets/img/pesee.webp",
-        "koWins": "9",
-        "subWins": "3",
-        "decWins": "2"
-      }
-    },
-    "fights": [
-      { "red": "Virgil Augen", "blue": "Henrique Shiguemoto", "weight": "Poids Moyens (84 kg)", "title": "Ceinture Vacante ARES" },
-      { "red": "Baki Chamsoudinov", "blue": "Patrik Celic", "weight": "Poids Welters (77 kg)" },
-      { "red": "Turpal Younousov", "blue": "Manoel Dos Santos", "weight": "Poids Plumes (66 kg)" }
-    ]
-  },
-  {
-    "slug": "pfl-europe-5",
-    "org": "PFL Europe",
-    "badge": "PFL",
-    "accent": "#3B82F6",
-    "title": "PFL Europe 5 — Paris",
-    "date": "2026-11-29",
-    "time": "18h00",
-    "venue": "Accor Arena, Paris Bercy",
-    "broadcaster": "DAZN & RMC Sport",
-    "status": "confirmed",
-    "image": "/assets/img/actualite-pfl-demie-finale-2025.webp",
-    "description": "Les grandes finales du tournoi européen de la PFL. 100 000 dollars de prime et un contrat garanti pour la saison mondiale à 1 million de dollars.",
-    "mainTape": {
-      "red": {
-        "name": "Cédric Doumbé",
-        "nickname": "The Best",
-        "rank": "SUPERSTAR PFL",
-        "flag": "🇫🇷",
-        "country": "France",
-        "record": "6-1-0",
-        "height": "177 cm",
-        "reach": "185 cm",
-        "weight": "77.1 kg",
-        "age": "33 ans",
-        "stance": "Orthodoxe",
-        "image": "/assets/img/hero-main.png",
-        "koWins": "6",
-        "subWins": "0",
-        "decWins": "0"
-      },
-      "blue": {
-        "name": "Rayan Atmani",
-        "nickname": "The Sniper",
-        "rank": "FINALISTE TOURNOI",
-        "flag": "🇩🇿",
-        "country": "Algérie / France",
-        "record": "5-0-0",
-        "height": "181 cm",
-        "reach": "187 cm",
-        "weight": "77.0 kg",
-        "age": "26 ans",
-        "stance": "Fausse patte",
-        "image": "/assets/img/zebo.webp",
-        "koWins": "3",
-        "subWins": "1",
-        "decWins": "1"
-      }
-    },
-    "fights": [
-      { "red": "Cédric Doumbé", "blue": "Rayan Atmani", "weight": "Poids Welters (77 kg)", "title": "Superfight Principal" },
-      { "red": "Abdoul Abdouraguimov", "blue": "Jakub Kaszuba", "weight": "Finale Tournoi Welter" },
-      { "red": "Dakota Ditcheva", "blue": "Valentina Scatizzi", "weight": "Finale Tournoi Flyweight" }
-    ]
-  },
-  {
-    "slug": "fmmaf-chpt",
-    "org": "FMMAF",
-    "badge": "FED",
-    "accent": "#2563EB",
-    "title": "Championnats de France MMA 2026",
-    "date": "2026-12-07",
-    "time": "09h00 à 21h00",
-    "venue": "Grand Palais Éphémère, Paris",
-    "broadcaster": "Sport en France & YouTube FMMAF",
-    "status": "confirmed",
-    "image": "/assets/img/grappling.webp",
-    "description": "Le rendez-vous annuel officiel sous l'égide de la Fédération Française de MMA. Plus de 200 compétiteurs issus de tous les clubs affiliés de France.",
-    "fights": [
-      { "red": "Finales Amateurs Féminines (Toutes catégories)", "blue": "Qualifications du matin" },
-      { "red": "Finales Amateurs Masculines (Toutes catégories)", "blue": "Qualifications de l'après-midi" }
-    ]
+    ],
+    "verifiedAt": "2026-10-07T18:27:16Z",
+    "imageSource": {
+      "url": "https://ufc.com/images/2026-06/GANE_CIRYL_BELT_01-22.png",
+      "pageUrl": "https://www.ufc.com/athlete/ciryl-gane",
+      "publisher": "UFC",
+      "credit": "UFC",
+      "creditBasis": "source-publisher-only",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-07T18:55:51.559Z",
+      "originalWidth": 520,
+      "originalHeight": 325
+    }
   }
 ]

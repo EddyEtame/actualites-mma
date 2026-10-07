@@ -5,28 +5,79 @@
     "slug": "ciryl-gane",
     "org": "UFC",
     "division": "Poids Lourds (Heavyweight)",
-    "record": "13-1-0",
-    "title": "Champion Incontesté UFC",
+    "record": "14-2-0",
+    "title": "Champion incontesté UFC",
     "flag": "🇫🇷",
     "height": "193 cm",
     "reach": "206 cm",
-    "koWins": 6,
+    "koWins": 7,
     "subWins": 3,
     "decWins": 4,
-    "finishRate": "69%",
     "gym": "MMA Factory",
     "city": "Paris",
-    "bio": "Premier Français champion incontesté des poids lourds de l'histoire de l'UFC. Ancien champion de Muay Thai invaincu, réputé pour sa mobilité d'athlète léger dans un gabarit de colosse.",
-    "image": "/assets/img/gane.webp",
-    "imageAlt": "Ciryl Gane, champion poids lourds UFC",
+    "bio": "Ciryl Gane est champion incontesté des poids lourds de l'UFC. Il a remporté le titre intérimaire contre Alex Pereira en juin 2026, puis a été promu après que Tom Aspinall a libéré la ceinture. Sa première défense annoncée l'oppose à Josh Hokit à l'UFC 334.",
+    "image": "/assets/fighters/ciryl-gane.webp",
+    "imageAlt": "Portrait de Ciryl Gane publié sur sa fiche officielle UFC.",
     "fightsHistory": [
-      { "res": "V", "adv": "Alex Pereira", "event": "UFC Freedom 250", "method": "TKO (Frappes)", "round": "R2 4:12" },
-      { "res": "V", "adv": "Serghei Spivac", "event": "UFC Fight Night Paris", "method": "TKO (Coups au corps)", "round": "R2 3:44" },
-      { "res": "D", "adv": "Jon Jones", "event": "UFC 285", "method": "Soumission (Guillotine)", "round": "R1 2:04" },
-      { "res": "V", "adv": "Tai Tuivasa", "event": "UFC Fight Night Paris", "method": "KO (Crochet)", "round": "R3 4:23" },
-      { "res": "D", "adv": "Francis Ngannou", "event": "UFC 270", "method": "Décision unanime", "round": "R5 5:00" },
-      { "res": "V", "adv": "Derrick Lewis", "event": "UFC 265", "method": "TKO (Frappes)", "round": "R3 4:11" }
-    ]
+      {
+        "res": "V",
+        "adv": "Alex Pereira",
+        "event": "UFC Freedom 250",
+        "method": "TKO (frappes)",
+        "round": "R2 · 1:27",
+        "date": "2026-06-14"
+      },
+      {
+        "res": "NC",
+        "adv": "Tom Aspinall",
+        "event": "UFC 321",
+        "method": "No contest (coup au doigt accidentel)",
+        "round": "R1 · 4:35",
+        "date": "2025-10-25"
+      },
+      {
+        "res": "V",
+        "adv": "Alexander Volkov",
+        "event": "UFC 310",
+        "method": "Décision partagée",
+        "round": "R3 · 5:00",
+        "date": "2024-12-07"
+      }
+    ],
+    "recordNote": "1 no contest en complément du bilan victoires-défaites-nuls.",
+    "country": "France",
+    "verifiedAt": "2026-10-07T18:27:16Z",
+    "recordScope": "Bilan professionnel W–L–D affiché par l'UFC au 7 octobre 2026",
+    "imageCaption": "Portrait officiel de Ciryl Gane · source : UFC.",
+    "sources": [
+      {
+        "name": "UFC",
+        "title": "Fiche officielle de Ciryl Gane",
+        "url": "https://www.ufc.com/athlete/ciryl-gane",
+        "retrievedAt": "2026-10-07T18:27:16Z"
+      },
+      {
+        "name": "UFC",
+        "title": "Promotion de Gane et première défense — annonce du 20 septembre",
+        "url": "https://www.ufc.com/news/gane-hokit-harrison-nunes-headline-ufc-334-new-york-city",
+        "retrievedAt": "2026-10-07T18:27:16Z"
+      }
+    ],
+    "imageCredit": "UFC",
+    "illustration": false,
+    "imageWidth": 900,
+    "imageHeight": 900,
+    "imageSource": {
+      "url": "https://ufc.com/images/2026-06/GANE_CIRYL_BELT_01-22.png",
+      "pageUrl": "https://www.ufc.com/athlete/ciryl-gane",
+      "publisher": "UFC",
+      "credit": "UFC",
+      "creditBasis": "source-publisher-only",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-07T18:55:51.559Z",
+      "originalWidth": 520,
+      "originalHeight": 325
+    }
   },
   {
     "name": "Benoît Saint Denis",
@@ -34,50 +85,131 @@
     "slug": "benoit-saint-denis",
     "org": "UFC",
     "division": "Poids Légers (Lightweight)",
-    "record": "13-3-0",
+    "record": "17-4-0",
     "flag": "🇫🇷",
     "height": "180 cm",
     "reach": "185 cm",
-    "koWins": 4,
-    "subWins": 9,
+    "koWins": 6,
+    "subWins": 11,
     "decWins": 0,
-    "finishRate": "100%",
-    "gym": "Team BSD",
-    "city": "Bayonne / Paris",
-    "bio": "Ancien opérateur des forces spéciales de l'armée française (1er RPIMa), BSD est devenu l'un des combattants les plus craints de l'UFC grâce à son style ultra-agressif et son finish rate de 100%.",
-    "image": "/assets/img/saint-denis.webp",
-    "imageAlt": "Benoît Saint Denis en combat UFC",
+    "gym": "Venum Training Camp",
+    "city": "Paris",
+    "bio": "Benoît Saint Denis évolue chez les poids légers de l'UFC. Ancien membre des forces spéciales françaises, il a commencé sa carrière professionnelle en 2019 et a fait ses débuts dans l'organisation en 2021. Sa fiche UFC attribue ses victoires à des KO/TKO et à des soumissions.",
+    "image": "/assets/fighters/benoit-saint-denis.webp",
+    "imageAlt": "Portrait de Benoît Saint Denis publié sur sa fiche officielle UFC.",
     "fightsHistory": [
-      { "res": "V", "adv": "Matt Frevola", "event": "UFC 295", "method": "KO (Head Kick)", "round": "R1 1:31" },
-      { "res": "V", "adv": "Thiago Moisés", "event": "UFC Paris 2", "method": "TKO (Ground & Pound)", "round": "R2 4:40" },
-      { "res": "V", "adv": "Ismael Bonfim", "event": "UFC Vegas 76", "method": "Soumission (RNC)", "round": "R1 4:48" },
-      { "res": "D", "adv": "Dustin Poirier", "event": "UFC 299", "method": "KO (Crochet droit)", "round": "R2 2:32" }
-    ]
+      {
+        "res": "V",
+        "adv": "Dan Hooker",
+        "event": "UFC 325",
+        "method": "TKO (frappes)",
+        "round": "R2 · 4:45",
+        "date": "2026-01-31"
+      },
+      {
+        "res": "V",
+        "adv": "Beneil Dariush",
+        "event": "UFC 322",
+        "method": "KO",
+        "round": "R1 · 0:16",
+        "date": "2025-11-15"
+      },
+      {
+        "res": "V",
+        "adv": "Mauricio Ruffy",
+        "event": "UFC Paris 2025",
+        "method": "Soumission (étranglement arrière)",
+        "round": "R2 · 2:56",
+        "date": "2025-09-06"
+      }
+    ],
+    "recordNote": null,
+    "title": null,
+    "country": "France",
+    "verifiedAt": "2026-10-07T18:27:16Z",
+    "recordScope": "Bilan professionnel W–L–D affiché par l'UFC au 7 octobre 2026",
+    "imageCaption": "Portrait officiel de Benoît Saint Denis · source : UFC.",
+    "sources": [
+      {
+        "name": "UFC",
+        "title": "Fiche officielle de Benoît Saint Denis",
+        "url": "https://www.ufc.com/athlete/benoit-saint-denis",
+        "retrievedAt": "2026-10-07T18:27:16Z"
+      }
+    ],
+    "imageCredit": "UFC",
+    "illustration": false,
+    "imageWidth": 900,
+    "imageHeight": 900,
+    "imageSource": {
+      "url": "https://ufc.com/images/2026-07/SAINT_DENIS_BENOIT_07-11.png",
+      "pageUrl": "https://www.ufc.com/athlete/benoit-saint-denis",
+      "publisher": "UFC",
+      "credit": "UFC",
+      "creditBasis": "source-publisher-only",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-07T18:55:51.559Z",
+      "originalWidth": 520,
+      "originalHeight": 325
+    }
   },
   {
     "name": "Salahdine Parnasse",
-    "nickname": "Le Prodige",
+    "nickname": "Lion of Atlas",
     "slug": "salahdine-parnasse",
     "org": "UFC",
     "division": "Poids Légers (Lightweight)",
-    "record": "18-1-0",
+    "record": "24-2-0",
     "flag": "🇫🇷",
     "height": "178 cm",
-    "reach": "183 cm",
-    "koWins": 5,
+    "reach": "182 cm",
+    "koWins": 9,
     "subWins": 7,
-    "decWins": 6,
-    "finishRate": "67%",
+    "decWins": 8,
     "gym": "Atch Academy",
     "city": "Aubervilliers",
-    "bio": "Double champion historique au KSW (poids plumes et légers), Parnasse est considéré comme l'un des plus purs talents techniques de l'histoire du MMA français. Désormais sous bannière UFC.",
-    "image": "/assets/img/parnasse.webp",
-    "imageAlt": "Salahdine Parnasse",
+    "bio": "Ancien champion KSW dans les catégories poids plumes et poids légers, Salahdine Parnasse a rejoint l'UFC en 2026. Originaire d'Aubervilliers et formé à l'Atch Academy, il a affronté Dan Hooker pour ses débuts à Paris.",
+    "image": "/assets/fighters/salahdine-parnasse.webp",
+    "imageAlt": "Portrait de Salahdine Parnasse publié sur sa fiche officielle UFC.",
     "fightsHistory": [
-      { "res": "V", "adv": "Dan Hooker", "event": "UFC Paris 2026", "method": "Soumission (RNC)", "round": "R3 1:40" },
-      { "res": "V", "adv": "Valeriu Mircea", "event": "KSW 93", "method": "KO (Head Kick)", "round": "R1 4:00" },
-      { "res": "V", "adv": "Robert Ruchała", "event": "KSW 85", "method": "KO (Coup au corps)", "round": "R4 4:42" }
-    ]
+      {
+        "res": "V",
+        "adv": "Dan Hooker",
+        "event": "UFC Paris 2026",
+        "method": "KO/TKO",
+        "round": "R1",
+        "date": "2026-09-05"
+      }
+    ],
+    "recordNote": null,
+    "title": null,
+    "country": "France",
+    "verifiedAt": "2026-10-07T18:27:16Z",
+    "recordScope": "Bilan professionnel W–L–D affiché par l'UFC au 7 octobre 2026",
+    "imageCaption": "Portrait officiel de Salahdine Parnasse · source : UFC.",
+    "sources": [
+      {
+        "name": "UFC",
+        "title": "Fiche officielle de Salahdine Parnasse",
+        "url": "https://www.ufc.com/athlete/salahdine-parnasse",
+        "retrievedAt": "2026-10-07T18:27:16Z"
+      }
+    ],
+    "imageCredit": "UFC",
+    "illustration": false,
+    "imageWidth": 900,
+    "imageHeight": 900,
+    "imageSource": {
+      "url": "https://ufc.com/images/2026-09/PARNASSE_SALAHDINE_09-05.png",
+      "pageUrl": "https://www.ufc.com/athlete/salahdine-parnasse",
+      "publisher": "UFC",
+      "credit": "UFC",
+      "creditBasis": "source-publisher-only",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-07T18:55:51.559Z",
+      "originalWidth": 520,
+      "originalHeight": 325
+    }
   },
   {
     "name": "Manon Fiorot",
@@ -85,25 +217,65 @@
     "slug": "manon-fiorot",
     "org": "UFC",
     "division": "Poids Mouches (Flyweight)",
-    "record": "12-2-0",
-    "title": "Challenger #1 Mondiale",
+    "record": "13-3-0",
+    "title": null,
     "flag": "🇫🇷",
     "height": "170 cm",
     "reach": "165 cm",
-    "koWins": 6,
+    "koWins": 7,
     "subWins": 0,
     "decWins": 6,
-    "finishRate": "50%",
-    "gym": "Boxing Squad",
-    "city": "Nice",
-    "bio": "Invaincue à l'UFC avec six victoires dominantes face aux anciennes championnes mondiales. Combattante puissante dotée d'un karaté d'élite et d'un volume de frappe écrasant.",
-    "image": "/assets/img/actualite-UFC-315-manon-fiorot-1.webp",
-    "imageAlt": "Manon Fiorot en célébration dans la cage",
+    "gym": null,
+    "city": null,
+    "bio": "Manon Fiorot combat chez les poids mouches de l'UFC. Originaire de Nice, elle possède une base de karaté et a rejoint l'organisation en 2021. Elle a affronté Valentina Shevchenko pour le titre à l'UFC 315 en mai 2025.",
+    "image": "/assets/fighters/manon-fiorot.webp",
+    "imageAlt": "Portrait de Manon Fiorot publié sur sa fiche officielle UFC.",
     "fightsHistory": [
-      { "res": "V", "adv": "Erin Blanchfield", "event": "UFC Atlantic City", "method": "Décision unanime", "round": "R5 5:00" },
-      { "res": "V", "adv": "Rose Namajunas", "event": "UFC Paris 2", "method": "Décision unanime", "round": "R3 5:00" },
-      { "res": "V", "adv": "Katlyn Chookagian", "event": "UFC 280", "method": "Décision unanime", "round": "R3 5:00" }
-    ]
+      {
+        "res": "V",
+        "adv": "Jasmine Jasudavicius",
+        "event": "UFC Vancouver 2025",
+        "method": "TKO (frappes)",
+        "round": "R1 · 1:14",
+        "date": "2025-10-18"
+      },
+      {
+        "res": "D",
+        "adv": "Valentina Shevchenko",
+        "event": "UFC 315",
+        "method": "Décision unanime",
+        "round": "R5 · 5:00",
+        "date": "2025-05-10"
+      }
+    ],
+    "recordNote": null,
+    "country": "France",
+    "verifiedAt": "2026-10-07T18:27:16Z",
+    "recordScope": "Bilan professionnel W–L–D affiché par l'UFC au 7 octobre 2026",
+    "imageCaption": "Portrait officiel de Manon Fiorot · source : UFC.",
+    "sources": [
+      {
+        "name": "UFC",
+        "title": "Fiche officielle de Manon Fiorot",
+        "url": "https://www.ufc.com/athlete/manon-fiorot",
+        "retrievedAt": "2026-10-07T18:27:16Z"
+      }
+    ],
+    "imageCredit": "UFC",
+    "illustration": false,
+    "imageWidth": 900,
+    "imageHeight": 900,
+    "imageSource": {
+      "url": "https://ufc.com/images/2026-09/FIOROT_MANON_09-12.png",
+      "pageUrl": "https://www.ufc.com/athlete/manon-fiorot",
+      "publisher": "UFC",
+      "credit": "UFC",
+      "creditBasis": "source-publisher-only",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-07T18:55:51.559Z",
+      "originalWidth": 520,
+      "originalHeight": 325
+    }
   },
   {
     "name": "Nassourdine Imavov",
@@ -111,24 +283,73 @@
     "slug": "nassourdine-imavov",
     "org": "UFC",
     "division": "Poids Moyens (Middleweight)",
-    "record": "14-4-0",
-    "title": "Top 4 Mondial UFC",
+    "record": "17-4-0",
+    "title": null,
     "flag": "🇫🇷",
     "height": "191 cm",
     "reach": "191 cm",
-    "koWins": 6,
+    "koWins": 7,
     "subWins": 4,
-    "decWins": 4,
-    "finishRate": "71%",
-    "gym": "MMA Factory / CS2",
+    "decWins": 6,
+    "gym": "Venum Training Camp",
     "city": "Paris",
-    "bio": "Spécialiste de la boxe anglaise au timing millimétré. Vainqueur de Jared Cannonier et Roman Dolidze, Imavov est aux portes du combat pour la ceinture mondiale des poids moyens.",
-    "image": "/assets/img/imavov.webp",
-    "imageAlt": "Nassourdine Imavov en conférence et pesée",
+    "bio": "Nassourdine Imavov évolue chez les poids moyens de l'UFC et s'entraîne au Venum Training Camp à Paris. Professionnel depuis 2016, il a remporté des combats contre Israel Adesanya, Brendan Allen et Caio Borralho.",
+    "image": "/assets/fighters/nassourdine-imavov.webp",
+    "imageAlt": "Portrait de Nassourdine Imavov publié sur sa fiche officielle UFC.",
     "fightsHistory": [
-      { "res": "V", "adv": "Jared Cannonier", "event": "UFC Louisville", "method": "TKO (Frappes)", "round": "R4 1:34" },
-      { "res": "V", "adv": "Roman Dolidze", "event": "UFC Vegas 85", "method": "Décision majoritaire", "round": "R5 5:00" }
-    ]
+      {
+        "res": "V",
+        "adv": "Caio Borralho",
+        "event": "UFC Paris 2025",
+        "method": "Décision unanime",
+        "round": "R5 · 5:00",
+        "date": "2025-09-06"
+      },
+      {
+        "res": "V",
+        "adv": "Israel Adesanya",
+        "event": "UFC Saudi Arabia 2025",
+        "method": "KO",
+        "round": "R2 · 0:30",
+        "date": "2025-02-01"
+      },
+      {
+        "res": "V",
+        "adv": "Brendan Allen",
+        "event": "UFC Paris 2024",
+        "method": "Décision unanime",
+        "round": "R3 · 5:00",
+        "date": "2024-09-28"
+      }
+    ],
+    "recordNote": "1 no contest en complément du bilan victoires-défaites-nuls.",
+    "country": "France",
+    "verifiedAt": "2026-10-07T18:27:16Z",
+    "recordScope": "Bilan professionnel W–L–D affiché par l'UFC au 7 octobre 2026",
+    "imageCaption": "Portrait officiel de Nassourdine Imavov · source : UFC.",
+    "sources": [
+      {
+        "name": "UFC",
+        "title": "Fiche officielle de Nassourdine Imavov",
+        "url": "https://www.ufc.com/athlete/nassourdine-imavov",
+        "retrievedAt": "2026-10-07T18:27:16Z"
+      }
+    ],
+    "imageCredit": "UFC",
+    "illustration": false,
+    "imageWidth": 900,
+    "imageHeight": 900,
+    "imageSource": {
+      "url": "https://ufc.com/images/2025-09/IMAVOV_NASSOURDINE_09-06.png",
+      "pageUrl": "https://www.ufc.com/athlete/nassourdine-imavov",
+      "publisher": "UFC",
+      "credit": "UFC",
+      "creditBasis": "source-publisher-only",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-07T18:55:51.559Z",
+      "originalWidth": 520,
+      "originalHeight": 325
+    }
   },
   {
     "name": "Morgan Charrière",
@@ -136,48 +357,122 @@
     "slug": "morgan-charriere",
     "org": "UFC",
     "division": "Poids Plumes (Featherweight)",
-    "record": "20-10-1",
+    "record": "21-13-1",
     "flag": "🇫🇷",
     "height": "173 cm",
     "reach": "175 cm",
-    "koWins": 11,
+    "koWins": 13,
     "subWins": 3,
-    "decWins": 6,
-    "finishRate": "70%",
-    "gym": "Team Chapa Quente",
-    "city": "Mantes-la-Jolie",
-    "bio": "Ancien champion mondial du Cage Warriors, Morgan Charrière est l'un des pionniers de la vulgarisation du MMA en France et un puncheur d'élite apprécié pour ses finitions spectaculaires.",
-    "image": "/assets/img/charriere.webp",
-    "imageAlt": "Morgan Charrière",
-    "fightsHistory": [
-      { "res": "V", "adv": "Manolo Zecchini", "event": "UFC Paris 2", "method": "KO (Coups au corps)", "round": "R1 3:51" },
-      { "res": "D", "adv": "Chepe Mariscal", "event": "UFC Vegas 90", "method": "Décision partagée", "round": "R3 5:00" }
-    ]
+    "decWins": 5,
+    "gym": "District Training Zone",
+    "city": null,
+    "bio": "Morgan Charrière, surnommé The Last Pirate, évolue chez les poids plumes de l'UFC. Professionnel depuis 2014, il a débuté dans l'organisation en septembre 2023. Sa fiche officielle indique le District Training Zone comme club d'entraînement.",
+    "image": "/assets/fighters/morgan-charriere.webp",
+    "imageAlt": "Portrait de Morgan Charrière publié sur sa fiche officielle UFC.",
+    "fightsHistory": [],
+    "recordNote": null,
+    "title": null,
+    "country": "France",
+    "verifiedAt": "2026-10-07T18:27:16Z",
+    "recordScope": "Bilan professionnel W–L–D affiché par l'UFC au 7 octobre 2026",
+    "imageCaption": "Portrait officiel de Morgan Charrière · source : UFC.",
+    "sources": [
+      {
+        "name": "UFC",
+        "title": "Fiche officielle de Morgan Charrière",
+        "url": "https://www.ufc.com/athlete/morgan-charriere",
+        "retrievedAt": "2026-10-07T18:27:16Z"
+      }
+    ],
+    "imageCredit": "UFC",
+    "illustration": false,
+    "imageWidth": 900,
+    "imageHeight": 900,
+    "imageSource": {
+      "url": "https://ufc.com/images/2026-09/CHARRIERE_MORGAN_09-05.png",
+      "pageUrl": "https://www.ufc.com/athlete/morgan-charriere",
+      "publisher": "UFC",
+      "credit": "UFC",
+      "creditBasis": "source-publisher-only",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-07T18:55:51.559Z",
+      "originalWidth": 520,
+      "originalHeight": 325
+    }
   },
   {
     "name": "Axel Sola",
     "nickname": "The Saint",
     "slug": "axel-sola",
-    "org": "ARES",
-    "division": "Poids Mi-Moyens (Welterweight)",
-    "record": "10-2-0",
-    "title": "Champion du Monde ARES FC",
+    "org": "UFC",
+    "division": "Poids légers (Lightweight)",
+    "record": "13-1-1",
+    "title": null,
     "flag": "🇫🇷",
-    "height": "183 cm",
-    "reach": "188 cm",
-    "koWins": 4,
-    "subWins": 3,
-    "decWins": 3,
-    "finishRate": "70%",
+    "height": "185 cm",
+    "reach": "187 cm",
+    "koWins": 7,
+    "subWins": 2,
+    "decWins": 4,
     "gym": "Boxing Squad",
     "city": "Nice",
-    "bio": "Champion invaincu chez ARES FC. Solide lutteur et kickboxeur précis, il est le visage de la domination française sur les organisations européennes.",
-    "image": "/assets/img/sola.webp",
-    "imageAlt": "Axel Sola dans la cage ARES",
+    "bio": "Axel Sola évolue désormais chez les poids légers de l'UFC. Originaire de Nice et représentant du Boxing Squad, il a commencé sa carrière professionnelle en 2021. La fiche UFC retrace ses débuts dans l'organisation en septembre 2025.",
+    "image": "/assets/fighters/axel-sola.webp",
+    "imageAlt": "Portrait de Axel Sola publié sur sa fiche officielle UFC.",
     "fightsHistory": [
-      { "res": "V", "adv": "Jady Menezes", "event": "ARES 43", "method": "KO (Crochet)", "round": "R2 3:15" },
-      { "res": "V", "adv": "Turpal Younousov", "event": "ARES 28", "method": "Décision unanime", "round": "R5 5:00" }
-    ]
+      {
+        "res": "V",
+        "adv": "Farès Ziam",
+        "event": "UFC Paris 2026",
+        "method": "KO",
+        "round": "R1 · 1:40",
+        "date": "2026-09-05"
+      },
+      {
+        "res": "V",
+        "adv": "Ismael Bonfim",
+        "event": "UFC Fight Night — juillet 2026",
+        "method": "Soumission (D'Arce)",
+        "round": "R1 · 4:44",
+        "date": "2026-07-25"
+      },
+      {
+        "res": "D",
+        "adv": "Mason Jones",
+        "event": "UFC Fight Night — mars 2026",
+        "method": "Décision unanime",
+        "round": "R3 · 5:00",
+        "date": "2026-03-21"
+      }
+    ],
+    "recordNote": null,
+    "country": "France",
+    "verifiedAt": "2026-10-07T18:27:16Z",
+    "recordScope": "Bilan professionnel W–L–D affiché par l'UFC au 7 octobre 2026",
+    "imageCaption": "Portrait officiel de Axel Sola · source : UFC.",
+    "sources": [
+      {
+        "name": "UFC",
+        "title": "Fiche officielle de Axel Sola",
+        "url": "https://www.ufc.com/athlete/axel-sola",
+        "retrievedAt": "2026-10-07T18:27:16Z"
+      }
+    ],
+    "imageCredit": "UFC",
+    "illustration": false,
+    "imageWidth": 900,
+    "imageHeight": 900,
+    "imageSource": {
+      "url": "https://ufc.com/images/2026-09/SOLA_AXEL_09-05.png",
+      "pageUrl": "https://www.ufc.com/athlete/axel-sola",
+      "publisher": "UFC",
+      "credit": "UFC",
+      "creditBasis": "source-publisher-only",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-07T18:55:51.559Z",
+      "originalWidth": 520,
+      "originalHeight": 325
+    }
   },
   {
     "name": "Oumar Kane",
@@ -185,23 +480,48 @@
     "slug": "oumar-kane",
     "org": "ONE",
     "division": "Poids Lourds (Heavyweight)",
-    "record": "5-1-0",
-    "flag": "🇫🇷",
-    "height": "193 cm",
-    "reach": "200 cm",
-    "koWins": 4,
-    "subWins": 0,
-    "decWins": 1,
-    "finishRate": "80%",
-    "gym": "Black Panther Gym",
-    "city": "Paris",
-    "bio": "Phénomène physique issu de la lutte et du judo, Oumar Kane détruit ses adversaires par sa puissance de percussion et ses projections spectaculaires dans la cage du ONE Championship.",
-    "image": "/assets/img/portrait-one-championship-oumar-kane-force-brute-africaine.webp",
-    "imageAlt": "Oumar Kane au ONE Championship",
-    "fightsHistory": [
-      { "res": "V", "adv": "Marcus Almeida (Buchecha)", "event": "ONE Fight Night 13", "method": "Décision unanime", "round": "R3 5:00" },
-      { "res": "V", "adv": "Batradz Gazzaev", "event": "ONE 161", "method": "TKO (Frappes)", "round": "R2 2:15" }
-    ]
+    "record": null,
+    "flag": "🇸🇳",
+    "height": null,
+    "reach": null,
+    "koWins": null,
+    "subWins": null,
+    "decWins": null,
+    "gym": null,
+    "city": null,
+    "bio": "Oumar Kane, surnommé Reug Reug, est un poids lourd sénégalais issu de la lutte avec frappe. Il a rejoint le ONE Championship en 2021 et remporté son titre des poids lourds en novembre 2024 contre Anatoly Malykhin. La fiche ONE indique qu'il a perdu cette ceinture en mai 2026.",
+    "image": "/assets/fighters/oumar-kane.webp",
+    "imageAlt": "Portrait de Oumar Kane publié sur sa fiche officielle ONE.",
+    "fightsHistory": [],
+    "recordNote": null,
+    "title": null,
+    "country": "Sénégal",
+    "verifiedAt": "2026-10-07T18:27:16Z",
+    "recordScope": null,
+    "imageCaption": "Portrait officiel de Oumar Kane · source : ONE.",
+    "sources": [
+      {
+        "name": "ONE Championship",
+        "title": "Fiche officielle de Oumar Kane",
+        "url": "https://www.onefc.com/athletes/oumar-kane/",
+        "retrievedAt": "2026-10-07T18:27:16Z"
+      }
+    ],
+    "imageCredit": "ONE",
+    "illustration": false,
+    "imageWidth": 900,
+    "imageHeight": 900,
+    "imageSource": {
+      "url": "https://cdn.onefc.com/wp-content/uploads/2021/01/Oumar_Kane-Hero-1200x1165-1.png",
+      "pageUrl": "https://www.onefc.com/athletes/oumar-kane/",
+      "publisher": "ONE",
+      "credit": "ONE",
+      "creditBasis": "source-publisher-only",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-07T18:55:51.559Z",
+      "originalWidth": 1200,
+      "originalHeight": 1165
+    }
   },
   {
     "name": "Farès Ziam",
@@ -209,22 +529,72 @@
     "slug": "fares-ziam",
     "org": "UFC",
     "division": "Poids Légers (Lightweight)",
-    "record": "16-4-0",
+    "record": "18-6-0",
     "flag": "🇫🇷",
     "height": "185 cm",
     "reach": "191 cm",
-    "koWins": 6,
+    "koWins": 7,
     "subWins": 4,
-    "decWins": 6,
-    "finishRate": "62%",
-    "gym": "Team Ezbiri",
-    "city": "Lyon",
-    "bio": "Formé au kickboxing à Lyon chez Ezbiri, Farès Ziam est l'auteur de l'un des plus violents KO de l'année à l'Accor Arena grâce à un coup de genou sauté d'anthologie.",
-    "image": "/assets/img/ziam.webp",
-    "imageAlt": "Farès Ziam célébrant une victoire UFC",
+    "decWins": 7,
+    "gym": "Dominance MMA / Onx Labs",
+    "city": null,
+    "bio": "Farès Ziam est un poids léger de l'UFC originaire de Vénissieux. Professionnel depuis 2014, il a rejoint l'organisation en septembre 2019. Sa fiche officielle indique une base de kickboxing et les équipes Dominance MMA et Onx Labs.",
+    "image": "/assets/fighters/fares-ziam.webp",
+    "imageAlt": "Portrait de Farès Ziam publié sur sa fiche officielle UFC.",
     "fightsHistory": [
-      { "res": "V", "adv": "Matt Frevola", "event": "UFC Paris 3", "method": "KO (Genou sauté)", "round": "R3 2:59" },
-      { "res": "V", "adv": "Claudio Puelles", "event": "UFC Mexico City", "method": "Décision partagée", "round": "R3 5:00" }
-    ]
+      {
+        "res": "D",
+        "adv": "Axel Sola",
+        "event": "UFC Paris 2026",
+        "method": "KO",
+        "round": "R1 · 1:40",
+        "date": "2026-09-05"
+      },
+      {
+        "res": "D",
+        "adv": "Tom Nolan",
+        "event": "UFC Fight Night — juin 2026",
+        "method": "Décision unanime",
+        "round": "R3 · 5:00",
+        "date": "2026-06-06"
+      },
+      {
+        "res": "V",
+        "adv": "Nazim Sadykhov",
+        "event": "UFC 323",
+        "method": "TKO (frappes)",
+        "round": "R2 · 4:59",
+        "date": "2025-12-06"
+      }
+    ],
+    "recordNote": null,
+    "title": null,
+    "country": "France",
+    "verifiedAt": "2026-10-07T18:27:16Z",
+    "recordScope": "Bilan professionnel W–L–D affiché par l'UFC au 7 octobre 2026",
+    "imageCaption": "Portrait officiel de Farès Ziam · source : UFC.",
+    "sources": [
+      {
+        "name": "UFC",
+        "title": "Fiche officielle de Farès Ziam",
+        "url": "https://www.ufc.com/athlete/fares-ziam",
+        "retrievedAt": "2026-10-07T18:27:16Z"
+      }
+    ],
+    "imageCredit": "UFC",
+    "illustration": false,
+    "imageWidth": 900,
+    "imageHeight": 900,
+    "imageSource": {
+      "url": "https://ufc.com/images/2026-09/ZIAM_FARES_09-05.png",
+      "pageUrl": "https://www.ufc.com/athlete/fares-ziam",
+      "publisher": "UFC",
+      "credit": "UFC",
+      "creditBasis": "source-publisher-only",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-07T18:55:51.559Z",
+      "originalWidth": 520,
+      "originalHeight": 325
+    }
   }
 ]

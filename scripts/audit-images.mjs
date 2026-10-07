@@ -10,7 +10,7 @@ async function checkImages() {
   const allImages = [];
 
   for (const url of urls) {
-    const localUrl = url.replace('https://prise-mma.fr', 'http://localhost:3000');
+    const localUrl = url.replace('https://actu-mma.com', 'http://localhost:3000');
     try {
       const res = await fetch(localUrl);
       const html = await res.text();

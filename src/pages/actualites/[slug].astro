@@ -4,16 +4,17 @@
    Typographie éditoriale haute densité, métadonnées Schema.org complètes, maillage interne. */
 import Base from '../../layouts/Base.astro';
 import articles from '../../data/articles.json';
+import { publishedArticles, formatDate } from '../../lib/editorial.mjs';
 
 export function getStaticPaths() {
-  return articles.map(article => ({
+  return publishedArticles(articles).map(article => ({
     params: { slug: article.slug },
     props: { article }
   }));
 }
 
 const { article } = Astro.props;
-const otherArticles = articles.filter(a => a.slug !== article.slug).slice(0, 3);
+const otherArticles = publishedArticles(articles).filter(a => a.slug !== article.slug).slice(0, 3);
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -23,19 +24,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Accueil",
-      "item": "https://prise-mma.fr/"
+      "item": "https://actu-mma.com/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Actualités",
-      "item": "https://prise-mma.fr/actualites/"
+      "item": "https://actu-mma.com/actualites/"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": article.title,
-      "item": `https://prise-mma.fr/actualites/${article.slug}/`
+      "item": `https://actu-mma.com/actualites/${article.slug}/`
     }
   ]
 };
@@ -46,7 +47,9 @@ const breadcrumbSchema = {
   description={article.excerpt}
   image={article.image}
   type="article"
-  publishedTime={article.date}
+  publishedTime={article.publishedAt || article.date}
+  modifiedTime={article.updatedAt || article.publishedAt || article.date}
+  sources={article.sources || []}
   author={article.author || 'Rédaction PRISE MMA'}
   currentNav="actualites"
 >
@@ -78,16 +81,16 @@ const breadcrumbSchema = {
         <div class="author-info">
           <span class="author-label mono">Rédigé par</span>
           <strong class="author-name">{article.author || 'Rédaction PRISE MMA'}</strong>
-          <span class="author-sub mono">• Vérifié & Sourcé</span>
+          <span class="author-sub mono">• Sources consultées le {formatDate(article.verifiedAt || article.publishedAt || article.date)}</span>
         </div>
         <div class="author-share-tools mono">
           <button type="button" class="share-btn share-copy" id="copyLinkBtn" title="Copier le lien de l'article">
             <span class="share-icon">🔗</span> <span class="share-txt">Copier le lien</span>
           </button>
-          <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(article.title)}&url=${encodeURIComponent(`https://prise-mma.fr/actualites/${article.slug}/`)}`} target="_blank" rel="noopener noreferrer" class="share-btn share-x" title="Partager sur X">
+          <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(article.title)}&url=${encodeURIComponent(`https://actu-mma.com/actualites/${article.slug}/`)}`} target="_blank" rel="noopener noreferrer" class="share-btn share-x" title="Partager sur X">
             𝕏
           </a>
-          <a href={`https://api.whatsapp.com/send?text=${encodeURIComponent(`${article.title} — https://prise-mma.fr/actualites/${article.slug}/`)}`} target="_blank" rel="noopener noreferrer" class="share-btn share-wa" title="Partager sur WhatsApp">
+          <a href={`https://api.whatsapp.com/send?text=${encodeURIComponent(`${article.title} — https://actu-mma.com/actualites/${article.slug}/`)}`} target="_blank" rel="noopener noreferrer" class="share-btn share-wa" title="Partager sur WhatsApp">
             WhatsApp
           </a>
         </div>
@@ -136,9 +139,10 @@ const breadcrumbSchema = {
 
     <!-- Image principale -->
     <figure class="article-hero-media" data-reveal>
-      <img src={article.image} alt={article.imageAlt} width="1280" height="720" fetchpriority="high" />
+      <img src={article.image} alt={article.imageAlt} width="1200" height="675" fetchpriority="high" />
       <figcaption class="mono">
-        Photo : {article.imageAlt} · Archives & Reportages PRISE MMA
+        {article.imageCaption || article.imageAlt}
+        {article.imageSource?.pageUrl && <a href={article.imageSource.pageUrl} target="_blank" rel="noopener noreferrer">Source de la photo ↗</a>}
       </figcaption>
     </figure>
 
@@ -149,13 +153,20 @@ const breadcrumbSchema = {
           <Fragment set:html={paragraph} />
         ))}
 
+        <section class="article-sources" id="sources">
+          <span class="kicker">Vérifier l'information</span>
+          <h2>Sources et dates</h2>
+          <p>Information vérifiée. Source publiée le <time datetime={article.sourcePublishedAt}>{formatDate(article.sourcePublishedAt)}</time>.</p>
+          <ul>{article.sources.map(source => <li><a href={source.url} target="_blank" rel="noopener noreferrer">{source.name} — {source.title || 'Lire la source'}</a>{source.publishedAt && <span class="mono"> · {formatDate(source.publishedAt)}</span>}</li>)}</ul>
+        </section>
+
         <!-- Encadré partenaire subtil : Boxing Center États-Unis -->
         <aside class="club-partner-callout">
           <div class="callout-badge">
             <span class="kicker" style="color: var(--teal);">Pratiquer le MMA</span>
           </div>
           <h3>S'entraîner dans les conditions professionnelles à Toulouse</h3>
-          <p>Vous souhaitez débuter ou perfectionner votre sol et striking ? Le <strong>Boxing Center (salle des États-Unis)</strong> met à disposition le plus grand pôle MMA du Sud-Ouest : 1 200 m², un octogone officiel de 7 mètres, deux rings et 400 m² de tatamis encadrés par des coachs diplômés.</p>
+          <p>Travail au sol, lutte et striking : découvrez les cours et les installations MMA du <strong>Boxing Center, salle des États-Unis à Toulouse</strong>, sur le site du club.</p>
           <a href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer" class="btn btn--teal">
             Découvrir la salle Boxing Center États-Unis (clubmma.fr) →
           </a>
@@ -213,17 +224,5 @@ const breadcrumbSchema = {
       </div>
     </section>
 
-    <!-- Sticky training banner for clubmma.fr -->
-    <div class="sticky-gym-bar">
-      <div class="sticky-gym-inner">
-        <div class="sticky-gym-text">
-          <strong>Envie de pratiquer le MMA dans les conditions des pros ?</strong>
-          <span>Octogone officiel 7m, 400 m² de tatamis, cours sol & striking au Boxing Center Toulouse États-Unis.</span>
-        </div>
-        <a href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer" class="btn btn--teal btn--compact">
-          Découvrir le Pôle MMA (clubmma.fr) →
-        </a>
-      </div>
-    </div>
   </article>
 </Base>

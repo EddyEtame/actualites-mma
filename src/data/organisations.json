@@ -5,14 +5,48 @@
     "fullName": "Ultimate Fighting Championship",
     "badge": "UFC",
     "accent": "#D4AF37",
-    "description": "La plus grande organisation de MMA au monde. Fondée en 1993, dirigée par Dana White, elle rassemble l'élite absolue de la discipline et régit les classements de référence.",
-    "headquarters": "Las Vegas, Nevada, USA",
+    "description": "Organisation de MMA lancée en 1993, l'UFC programme des événements numérotés et des Fight Nights. Ciryl Gane, Manon Fiorot et Benoît Saint Denis figurent parmi les athlètes français de son effectif.",
+    "headquarters": null,
     "founded": 1993,
-    "cage": "Octogone 8 faces (9,1 mètres)",
-    "broadcast": "RMC Sport (France), ESPN+ (USA)",
-    "rules": "Unified Rules of MMA (rounds de 5 min, coudes autorisés)",
-    "frenchFighters": ["Ciryl Gane (Champion Lourds)", "Benoît Saint Denis", "Salahdine Parnasse", "Manon Fiorot", "Nassourdine Imavov", "Morgan Charrière", "Farès Ziam"],
-    "image": "/assets/img/octagon.webp"
+    "foundedLabel": "Premier événement",
+    "cage": "Octogone",
+    "broadcast": "Paramount+ aux États-Unis depuis 2026 · droits à consulter selon le territoire",
+    "rules": null,
+    "format": "Événements numérotés et UFC Fight Night, avec des titres par catégorie de poids.",
+    "frenchFighters": [
+      "Ciryl Gane",
+      "Benoît Saint Denis",
+      "Salahdine Parnasse",
+      "Manon Fiorot",
+      "Nassourdine Imavov",
+      "Morgan Charrière",
+      "Axel Sola",
+      "Farès Ziam"
+    ],
+    "athleteDirectory": "https://www.ufc.com/athletes/all",
+    "image": "/assets/fighters/ciryl-gane.webp",
+    "sources": [
+      {
+        "name": "UFC",
+        "title": "Histoire de l'UFC — début en 1993",
+        "url": "https://www.ufc.com/history-ufc",
+        "retrievedAt": "2026-10-07T18:57:26Z"
+      },
+      {
+        "name": "UFC",
+        "title": "Accord de diffusion Paramount+ applicable aux États-Unis depuis 2026",
+        "url": "https://www.ufc.com/news/dana-white-new-ufc-deal-paramount",
+        "publishedAt": "2025-08-11",
+        "retrievedAt": "2026-10-07T18:57:26Z"
+      },
+      {
+        "name": "UFC",
+        "title": "Effectif officiel",
+        "url": "https://www.ufc.com/athletes/all",
+        "retrievedAt": "2026-10-07T18:57:26Z"
+      }
+    ],
+    "verifiedAt": "2026-10-07T18:57:26Z"
   },
   {
     "slug": "ares",
@@ -20,14 +54,33 @@
     "fullName": "ARES Fighting Championship",
     "badge": "ARES",
     "accent": "#DC2626",
-    "description": "Ligue majeure de MMA basée en France, présidée par Fernand Lopez. Connue pour son niveau de production audiovisuelle, sa cage circulaire et ses ceintures internationales.",
-    "headquarters": "Paris, France",
-    "founded": 2020,
-    "cage": "Cage ronde circulaire",
-    "broadcast": "Canal+ Sport 360 & UFC Fight Pass",
-    "rules": "Règles unifiées internationales",
-    "frenchFighters": ["Axel Sola (Champion Welter)", "Virgil Augen", "Turpal Younousov", "Baki Chamsoudinov"],
-    "image": "/assets/img/sola.webp"
+    "description": "Organisation française lancée en 2019, ARES réunit des combattants français et internationaux dans des cartes professionnelles. Ses événements sont diffusés sur les chaînes CANAL+, selon la programmation.",
+    "headquarters": null,
+    "founded": 2019,
+    "foundedLabel": "Lancement",
+    "cage": "Cage octogonale",
+    "broadcast": "Chaînes CANAL+, dont CANAL+ SPORT 360, selon la programmation",
+    "rules": "Combats généralement en trois rounds de cinq minutes ; cinq rounds pour les titres.",
+    "format": "Combats professionnels par catégories de poids, avec des ceintures à défendre.",
+    "frenchFighters": [],
+    "athleteDirectory": "https://www.aresfighting.com/fr/athletes/",
+    "image": null,
+    "sources": [
+      {
+        "name": "ARES",
+        "title": "Calendrier officiel",
+        "url": "https://www.aresfighting.com/fr/events/",
+        "retrievedAt": "2026-10-07T18:57:26Z"
+      },
+      {
+        "name": "CANAL+",
+        "title": "ARES — présentation, format et diffusion, FAQ du 23 septembre 2026",
+        "url": "https://www.canalplus.com/sport/ares-fighting/",
+        "publishedAt": "2026-09-23",
+        "retrievedAt": "2026-10-07T18:57:26Z"
+      }
+    ],
+    "verifiedAt": "2026-10-07T18:57:26Z"
   },
   {
     "slug": "hexagone-mma",
@@ -35,14 +88,33 @@
     "fullName": "Hexagone MMA",
     "badge": "HEX",
     "accent": "#8B5CF6",
-    "description": "Organisation française itinérante qui remplit les Zéniths de province (Rouen, Toulouse, Nantes, Reims). Véritable accélérateur de carrière pour les talents émergents.",
-    "headquarters": "Paris, France",
-    "founded": 2019,
-    "cage": "Cage hexagonale 6 faces",
-    "broadcast": "RMC Sport & DAZN",
-    "rules": "Règles professionnelles FMMAF",
-    "frenchFighters": ["Anzor Baybatyrov", "Matthieu Baudot", "Anthony Morel"],
-    "image": "/assets/img/actualite-hexagone-mma-toulouse-zenith-septembre-2025.webp"
+    "description": "Lancée en juillet 2021 à Paris, HEXAGONE MMA organise des soirées professionnelles en France et en Europe. Son calendrier 2026 passe notamment par les Zéniths de Paris, Toulouse et Rouen.",
+    "headquarters": null,
+    "founded": 2021,
+    "foundedLabel": "Premier événement",
+    "cage": null,
+    "broadcast": null,
+    "rules": null,
+    "format": "Soirées HEXAGONE MMA et HEXAGONE MMA SERIES ; cartes et résultats publiés pour chaque événement.",
+    "frenchFighters": [],
+    "athleteDirectory": "https://hexagonemma.fr/rankings/",
+    "image": null,
+    "sources": [
+      {
+        "name": "HEXAGONE MMA",
+        "title": "Présentation et calendrier officiel — premier événement du 9 juillet 2021",
+        "url": "https://hexagonemma.fr/",
+        "retrievedAt": "2026-10-07T18:57:26Z"
+      },
+      {
+        "name": "HEXAGONE MMA",
+        "title": "Annonce de décembre 2021 — création de la ligue en 2021",
+        "url": "https://hexagonemma.fr/en/hexagone-mma-and-zenith-paris-have-inked-a-deal-of-long-term-residence-for-season-2022-2023/",
+        "publishedAt": "2021-12-09",
+        "retrievedAt": "2026-10-07T18:57:26Z"
+      }
+    ],
+    "verifiedAt": "2026-10-07T18:57:26Z"
   },
   {
     "slug": "pfl",
@@ -50,14 +122,41 @@
     "fullName": "Professional Fighters League",
     "badge": "PFL",
     "accent": "#3B82F6",
-    "description": "Promotion américaine unique basée sur un format tournoi avec saison régulière, playoffs et 1 million de dollars pour chaque vainqueur. PFL Europe opère depuis Paris.",
-    "headquarters": "Washington D.C. / Paris",
+    "description": "Le PFL organise des cartes de MMA internationales. Depuis janvier 2026, ses classements sont administrés par Combat Registry : champions et prétendants sont identifiés par catégorie, en complément du calendrier des combats.",
+    "headquarters": null,
     "founded": 2018,
-    "cage": "SmartCage à 10 faces avec capteurs biométriques",
-    "broadcast": "DAZN",
-    "rules": "Règles PFL avec système de points saisonniers",
-    "frenchFighters": ["Cédric Doumbé", "Abdoul Abdouraguimov", "Taylor Lapilus"],
-    "image": "/assets/img/actualite-pfl-demie-finale-2025.webp"
+    "foundedLabel": "Lancement",
+    "cage": "SmartCage",
+    "broadcast": "Selon l'événement et le territoire · consulter les annonces officielles",
+    "rules": null,
+    "format": "Cartes mondiales et circuits régionaux. Classements administrés par Combat Registry depuis le 27 janvier 2026.",
+    "frenchFighters": [],
+    "athleteDirectory": "https://pflmma.com/fighters",
+    "image": null,
+    "sources": [
+      {
+        "name": "PFL",
+        "title": "Introduction des classements indépendants administrés par Combat Registry",
+        "url": "https://pflmma.com/news/professional-fighters-league-introduces-independent-fighter-rankings-powered-by-combat-registry",
+        "publishedAt": "2026-01-27",
+        "retrievedAt": "2026-10-07T18:57:26Z"
+      },
+      {
+        "name": "PFL",
+        "title": "Programme de six cartes Summer Series en 2026",
+        "url": "https://pflmma.com/news/pfl-kicks-off-summer-series-with-six-shows-in-eight-weeks-and-new-fan-engagement-events-across-the-us",
+        "publishedAt": "2026-06-24",
+        "retrievedAt": "2026-10-07T18:57:26Z"
+      },
+      {
+        "name": "PFL",
+        "title": "Historique — lancement en 2018 et SmartCage",
+        "url": "https://pflmma.com/news/professional-fighters-league-and-srj-sports-investments-sign-global-mma-investment-agreement",
+        "publishedAt": "2023-08-30",
+        "retrievedAt": "2026-10-07T18:57:26Z"
+      }
+    ],
+    "verifiedAt": "2026-10-07T18:57:26Z"
   },
   {
     "slug": "one-championship",
@@ -65,28 +164,79 @@
     "fullName": "ONE Championship",
     "badge": "ONE",
     "accent": "#EF4444",
-    "description": "Le géant asiatique des arts martiaux. Intègre MMA, Muay Thai avec petits gants et Kickboxing dans les plus grands stades d'Asie et des États-Unis.",
+    "description": "Basée à Singapour et lancée en 2011, ONE réunit MMA, muay-thaï, kickboxing et submission grappling. Chaque affiche indique sa discipline : un combat de grappling ou de kickboxing n'est pas un combat de MMA.",
     "headquarters": "Singapour",
     "founded": 2011,
-    "cage": "Ring ou Cage circulaire selon la discipline",
-    "broadcast": "YouTube ONE & RMC Sport",
-    "rules": "Global Martial Arts Rule Set (genoux au sol autorisés)",
-    "frenchFighters": ["Oumar Kane", "Alexis Nicolas", "Elias Mahmoudi"],
-    "image": "/assets/img/portrait-one-championship-oumar-kane-force-brute-africaine.webp"
+    "foundedLabel": "Premier événement",
+    "cage": "Ring ou cage selon l'événement",
+    "broadcast": "Selon la série et le territoire · consulter « How to watch »",
+    "rules": "Règlements distincts pour le MMA, le muay-thaï, le kickboxing et le submission grappling.",
+    "format": "Événements à plusieurs disciplines ; règles précisées pour chaque combat.",
+    "frenchFighters": [],
+    "athleteDirectory": "https://www.onefc.com/athletes/",
+    "image": "/assets/fighters/oumar-kane.webp",
+    "sources": [
+      {
+        "name": "ONE Championship",
+        "title": "Présentation — siège à Singapour",
+        "url": "https://www.onefc.com/about-us/",
+        "retrievedAt": "2026-10-07T18:57:26Z"
+      },
+      {
+        "name": "ONE Championship",
+        "title": "Disciplines et règlements",
+        "url": "https://www.onefc.com/martial-arts/",
+        "retrievedAt": "2026-10-07T18:57:26Z"
+      },
+      {
+        "name": "ONE Championship",
+        "title": "Historique — création en 2011",
+        "url": "https://www.onefc.com/press-releases/historic-100th-live-event-one-century-announced-for-tokyo-on-13-october/",
+        "publishedAt": "2019-07-01",
+        "retrievedAt": "2026-10-07T18:57:26Z"
+      }
+    ],
+    "verifiedAt": "2026-10-07T18:57:26Z"
   },
   {
     "slug": "fmmaf",
     "name": "FMMAF",
-    "fullName": "Fédération Française de MMA",
+    "fullName": "Fédération de MMA Français",
     "badge": "FED",
     "accent": "#2563EB",
-    "description": "Fédération délégataire officielle en France depuis la légalisation de 2020. Elle encadre les compétitions amateurs, forme les arbitres, certifie les coachs et homologue les clubs.",
-    "headquarters": "Paris, France",
+    "description": "Créée en 2020 au sein de la FFBoxe, la FMMAF coordonne des activités fédérales de MMA en France. Un avis du 30 septembre 2026 suspend provisoirement formations, grades et MMA League ; la pratique courante des clubs reste possible.",
+    "headquarters": null,
     "founded": 2020,
-    "cage": "Octogone réglementaire fédéral",
-    "broadcast": "Sport en France",
-    "rules": "Règlementation fédérale amateur et semi-pro",
-    "frenchFighters": ["Équipe de France amateur IMMAF", "Champions nationaux seniors"],
-    "image": "/assets/img/grappling.webp"
+    "foundedLabel": "Création de l'organe FMMAF",
+    "cage": null,
+    "broadcast": null,
+    "rules": null,
+    "format": "Instance fédérale : formation, grades et circuit amateur, avec suspension provisoire de ces activités depuis le 29 septembre 2026.",
+    "frenchFighters": [],
+    "athleteDirectory": null,
+    "image": null,
+    "statusNotice": {
+      "updatedAt": "2026-09-30",
+      "effectiveDate": "2026-09-29",
+      "title": "Suspension provisoire de certaines activités fédérales",
+      "text": "Formations fédérales MMA, passages de grade et compétitions amateurs du circuit MMA League suspendus provisoirement depuis le 29 septembre 2026. La pratique du MMA et l'activité courante des clubs ne sont pas visées par cette décision. Le site officiel annonce une transition vers France MMA.",
+      "url": "https://www.fmmaf.fr/"
+    },
+    "sources": [
+      {
+        "name": "FMMAF",
+        "title": "Avis de suspension provisoire — mis à jour le 30 septembre 2026",
+        "url": "https://www.fmmaf.fr/",
+        "updatedAt": "2026-09-30",
+        "retrievedAt": "2026-10-07T18:57:26Z"
+      },
+      {
+        "name": "FMMAF / FFBoxe",
+        "title": "Communiqué 2023 — création de l'organe FMMAF le 5 septembre 2020",
+        "url": "https://www.fmmaf.fr/wp-content/uploads/2023/06/FMMAF_Communique-Championnats-de-France-2023.pdf",
+        "retrievedAt": "2026-10-07T18:57:26Z"
+      }
+    ],
+    "verifiedAt": "2026-10-07T18:57:26Z"
   }
 ]

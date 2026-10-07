@@ -1,0 +1,242 @@
+[
+  {
+    "slug": "ufc-334",
+    "org": "UFC",
+    "badge": "UFC",
+    "accent": "#D4AF37",
+    "title": "UFC 334 : Gane vs Hokit",
+    "date": "2026-11-14",
+    "time": "02h00 (heure de Paris)",
+    "venue": "Madison Square Garden, New York, USA",
+    "broadcaster": "RMC Sport 2 & UFC Fight Pass",
+    "status": "confirmed",
+    "countdown": true,
+    "image": "/assets/img/octagon.webp",
+    "description": "Première défense de titre pour le champion incontesté des poids lourds de l'UFC, Ciryl Gane, face au lutteur américain invaincu Josh Hokit dans l'arène mythique du Madison Square Garden.",
+    "mainTape": {
+      "red": {
+        "name": "Ciryl Gane",
+        "nickname": "Bon Gamin",
+        "rank": "CHAMPION DU MONDE",
+        "flag": "🇫🇷",
+        "country": "France",
+        "record": "13-2-0",
+        "height": "196 cm",
+        "reach": "206 cm",
+        "weight": "112 kg",
+        "age": "36 ans",
+        "stance": "Orthodoxe / Switch",
+        "image": "/assets/img/gane-champion.png",
+        "koWins": "6",
+        "subWins": "3",
+        "decWins": "4"
+      },
+      "blue": {
+        "name": "Josh Hokit",
+        "nickname": "The Machine",
+        "rank": "CHALLENGER #1",
+        "flag": "🇺🇸",
+        "country": "États-Unis",
+        "record": "7-0-0",
+        "height": "188 cm",
+        "reach": "193 cm",
+        "weight": "113 kg",
+        "age": "28 ans",
+        "stance": "Orthodoxe",
+        "image": "/assets/img/fighter-portrait.png",
+        "koWins": "5",
+        "subWins": "1",
+        "decWins": "1"
+      }
+    },
+    "fights": [
+      { "red": "Ciryl Gane (C)", "blue": "Josh Hokit", "weight": "Poids Lourds (Heavyweight)", "title": "Ceinture Incontestée UFC" },
+      { "red": "Benoît Saint Denis", "blue": "Jalin Turner", "weight": "Poids Légers (Lightweight)", "title": "Co-Main Event" },
+      { "red": "Nassourdine Imavov", "blue": "Caio Borralho", "weight": "Poids Moyens (Middleweight)" },
+      { "red": "Taylor Lapilus", "blue": "Montel Jackson", "weight": "Poids Coqs (Bantamweight)" }
+    ]
+  },
+  {
+    "slug": "hexagone-22",
+    "org": "Hexagone MMA",
+    "badge": "HEX",
+    "accent": "#8B5CF6",
+    "title": "Hexagone MMA 22 — Rouen",
+    "date": "2026-11-08",
+    "time": "19h00",
+    "venue": "Zénith de Rouen, Normandie",
+    "broadcaster": "RMC Sport Live & DAZN",
+    "status": "confirmed",
+    "image": "/assets/img/actualite-hexagone-mma-toulouse-zenith-septembre-2025.webp",
+    "description": "La plus grande organisation itinérante de MMA en France débarque au Zénith de Rouen avec deux ceintures en jeu et le retour de combattants d'élite européens.",
+    "mainTape": {
+      "red": {
+        "name": "Anzor Baybatyrov",
+        "nickname": "The Predator",
+        "rank": "CHAMPION WELTER",
+        "flag": "🇫🇷",
+        "country": "France (Toulouse)",
+        "record": "9-1-0",
+        "height": "182 cm",
+        "reach": "186 cm",
+        "weight": "77.1 kg",
+        "age": "27 ans",
+        "stance": "Orthodoxe",
+        "image": "/assets/img/fight.webp",
+        "koWins": "7",
+        "subWins": "1",
+        "decWins": "1"
+      },
+      "blue": {
+        "name": "Maksym Polishchuk",
+        "nickname": "Iron Fist",
+        "rank": "CHALLENGER #1",
+        "flag": "🇺🇦",
+        "country": "Ukraine",
+        "record": "8-2-0",
+        "height": "180 cm",
+        "reach": "183 cm",
+        "weight": "77.0 kg",
+        "age": "29 ans",
+        "stance": "Fausse patte",
+        "image": "/assets/img/clinch.webp",
+        "koWins": "4",
+        "subWins": "3",
+        "decWins": "1"
+      }
+    },
+    "fights": [
+      { "red": "Anzor Baybatyrov", "blue": "Maksym Polishchuk", "weight": "Poids Welters (77 kg)", "title": "Titre Mondial Hexagone" },
+      { "red": "Matthieu Baudot", "blue": "Giorgi Kavelashvili", "weight": "Poids Lourds-Légers (93 kg)" },
+      { "red": "Anthony Morel", "blue": "Zubair Taisumov", "weight": "Poids Lourds" }
+    ]
+  },
+  {
+    "slug": "ares-44",
+    "org": "ARES FC",
+    "badge": "ARES",
+    "accent": "#DC2626",
+    "title": "ARES FC 44 — Dôme de Paris",
+    "date": "2026-10-31",
+    "time": "18h30",
+    "venue": "Dôme de Paris, Porte de Versailles",
+    "broadcaster": "Canal+ Sport 360 & UFC Fight Pass",
+    "status": "confirmed",
+    "image": "/assets/img/sola.webp",
+    "description": "ARES Fighting Championship présente sa 44e édition dans la capitale avec un combat pour la ceinture des poids moyens et les meilleurs prospects français en action.",
+    "mainTape": {
+      "red": {
+        "name": "Virgil Augen",
+        "nickname": "The Prince",
+        "rank": "ASPIRANT #1",
+        "flag": "🇫🇷",
+        "country": "France",
+        "record": "8-1-0",
+        "height": "185 cm",
+        "reach": "190 cm",
+        "weight": "83.9 kg",
+        "age": "28 ans",
+        "stance": "Orthodoxe",
+        "image": "/assets/img/sola.webp",
+        "koWins": "5",
+        "subWins": "2",
+        "decWins": "1"
+      },
+      "blue": {
+        "name": "Henrique Shiguemoto",
+        "nickname": "O Samurai",
+        "rank": "ASPIRANT #2",
+        "flag": "🇧🇷",
+        "country": "Brésil",
+        "record": "14-5-1",
+        "height": "183 cm",
+        "reach": "188 cm",
+        "weight": "84.0 kg",
+        "age": "34 ans",
+        "stance": "Orthodoxe",
+        "image": "/assets/img/pesee.webp",
+        "koWins": "9",
+        "subWins": "3",
+        "decWins": "2"
+      }
+    },
+    "fights": [
+      { "red": "Virgil Augen", "blue": "Henrique Shiguemoto", "weight": "Poids Moyens (84 kg)", "title": "Ceinture Vacante ARES" },
+      { "red": "Baki Chamsoudinov", "blue": "Patrik Celic", "weight": "Poids Welters (77 kg)" },
+      { "red": "Turpal Younousov", "blue": "Manoel Dos Santos", "weight": "Poids Plumes (66 kg)" }
+    ]
+  },
+  {
+    "slug": "pfl-europe-5",
+    "org": "PFL Europe",
+    "badge": "PFL",
+    "accent": "#3B82F6",
+    "title": "PFL Europe 5 — Paris",
+    "date": "2026-11-29",
+    "time": "18h00",
+    "venue": "Accor Arena, Paris Bercy",
+    "broadcaster": "DAZN & RMC Sport",
+    "status": "confirmed",
+    "image": "/assets/img/actualite-pfl-demie-finale-2025.webp",
+    "description": "Les grandes finales du tournoi européen de la PFL. 100 000 dollars de prime et un contrat garanti pour la saison mondiale à 1 million de dollars.",
+    "mainTape": {
+      "red": {
+        "name": "Cédric Doumbé",
+        "nickname": "The Best",
+        "rank": "SUPERSTAR PFL",
+        "flag": "🇫🇷",
+        "country": "France",
+        "record": "6-1-0",
+        "height": "177 cm",
+        "reach": "185 cm",
+        "weight": "77.1 kg",
+        "age": "33 ans",
+        "stance": "Orthodoxe",
+        "image": "/assets/img/hero-main.png",
+        "koWins": "6",
+        "subWins": "0",
+        "decWins": "0"
+      },
+      "blue": {
+        "name": "Rayan Atmani",
+        "nickname": "The Sniper",
+        "rank": "FINALISTE TOURNOI",
+        "flag": "🇩🇿",
+        "country": "Algérie / France",
+        "record": "5-0-0",
+        "height": "181 cm",
+        "reach": "187 cm",
+        "weight": "77.0 kg",
+        "age": "26 ans",
+        "stance": "Fausse patte",
+        "image": "/assets/img/zebo.webp",
+        "koWins": "3",
+        "subWins": "1",
+        "decWins": "1"
+      }
+    },
+    "fights": [
+      { "red": "Cédric Doumbé", "blue": "Rayan Atmani", "weight": "Poids Welters (77 kg)", "title": "Superfight Principal" },
+      { "red": "Abdoul Abdouraguimov", "blue": "Jakub Kaszuba", "weight": "Finale Tournoi Welter" },
+      { "red": "Dakota Ditcheva", "blue": "Valentina Scatizzi", "weight": "Finale Tournoi Flyweight" }
+    ]
+  },
+  {
+    "slug": "fmmaf-chpt",
+    "org": "FMMAF",
+    "badge": "FED",
+    "accent": "#2563EB",
+    "title": "Championnats de France MMA 2026",
+    "date": "2026-12-07",
+    "time": "09h00 à 21h00",
+    "venue": "Grand Palais Éphémère, Paris",
+    "broadcaster": "Sport en France & YouTube FMMAF",
+    "status": "confirmed",
+    "image": "/assets/img/grappling.webp",
+    "description": "Le rendez-vous annuel officiel sous l'égide de la Fédération Française de MMA. Plus de 200 compétiteurs issus de tous les clubs affiliés de France.",
+    "fights": [
+      { "red": "Finales Amateurs Féminines (Toutes catégories)", "blue": "Qualifications du matin" },
+      { "red": "Finales Amateurs Masculines (Toutes catégories)", "blue": "Qualifications de l'après-midi" }
+    ]
+  }
+]

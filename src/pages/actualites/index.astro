@@ -3,14 +3,15 @@
    Toutes les publications, chroniques, résultats et analyses. */
 import Base from '../../layouts/Base.astro';
 import articles from '../../data/articles.json';
+import { publishedArticles, formatDate } from '../../lib/editorial.mjs';
 
-const sorted = articles.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+const sorted = publishedArticles(articles);
 const lead = sorted[0];
 const rest = sorted.slice(1);
 ---
 
 <Base
-  title="Actualités MMA — Le fil d'info en direct"
+  title="Actualités MMA — Nouvelles sourcées et datées"
   description="Toutes les actualités du MMA français et international : UFC, ARES FC, Hexagone MMA, PFL, ONE Championship. Analyses de combats, interviews et résultats."
   currentNav="actualites"
 >
@@ -18,20 +19,20 @@ const rest = sorted.slice(1);
     <header class="archive-header" data-reveal>
       <span class="kicker">Le fil d'information</span>
       <h1 class="display">Toutes les actualités MMA</h1>
-      <p class="lede">Comptes-rendus d'événements, décryptages tactiques, interviews de coachs et résultats en direct.</p>
+      <p class="lede">Les nouvelles du MMA français et international, classées par date de l'information. Chaque article donne accès aux sources originales.</p>
 
-      <div class="filter-pills" role="tablist" aria-label="Filtrer par ligue">
+      <div class="filter-pills" aria-label="Rubriques MMA">
         <a href="#fil" class="pill on">Tous les articles ({sorted.length})</a>
-        <a href="#ufc" class="pill">UFC</a>
-        <a href="#ares" class="pill">ARES FC</a>
-        <a href="#hexagone" class="pill">Hexagone</a>
-        <a href="#pfl" class="pill">PFL</a>
-        <a href="#clubs" class="pill">Clubs & Interviews</a>
+        <a href="/organisations/ufc/" class="pill">UFC</a>
+        <a href="/organisations/ares/" class="pill">ARES FC</a>
+        <a href="/organisations/hexagone-mma/" class="pill">Hexagone</a>
+        <a href="/organisations/pfl/" class="pill">PFL</a>
+        <a href="/clubs/" class="pill">Clubs MMA</a>
       </div>
     </header>
 
     <!-- Lead article -->
-    <section class="archive-lead-section" data-reveal>
+    {lead && <section class="archive-lead-section" data-reveal>
       <a href={`/actualites/${lead.slug}/`} class="archive-lead-card">
         <div class="archive-lead-media">
           <img src={lead.image} alt={lead.imageAlt} width="1280" height="720" fetchpriority="high" />
@@ -48,7 +49,7 @@ const rest = sorted.slice(1);
           <span class="read-more-btn">Lire l'article complet →</span>
         </div>
       </a>
-    </section>
+    </section>}
 
     <!-- Grille des articles -->
     <section class="archive-grid-section" id="fil">

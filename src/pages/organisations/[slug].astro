@@ -1,135 +1,128 @@
 ---
-/* Page individuelle d'une organisation de MMA */
 import Base from '../../layouts/Base.astro';
 import organisations from '../../data/organisations.json';
+import fighters from '../../data/fighters.json';
 import articles from '../../data/articles.json';
+import { formatDate, publishedArticles } from '../../lib/editorial.mjs';
 
 export function getStaticPaths() {
-  return organisations.map(org => ({
-    params: { slug: org.slug },
-    props: { org }
-  }));
+  return organisations.map(org => ({ params: { slug: org.slug }, props: { org } }));
 }
 
 const { org } = Astro.props;
-const relatedArticles = articles.filter(a =>
-  a.kicker.toLowerCase().includes(org.name.toLowerCase()) ||
-  a.title.toLowerCase().includes(org.name.toLowerCase())
-);
+const relatedArticles = publishedArticles(articles).filter(article =>
+  article.kicker.toLowerCase().startsWith(org.badge.toLowerCase()) ||
+  article.title.toLowerCase().includes(org.name.toLowerCase())
+).slice(0, 4);
+const followedFighters = fighters.filter(fighter => fighter.org === org.name);
 ---
 
-<Base
-  title={`${org.name} (${org.fullName}) — Guide de la Ligue, Règles & Français`}
-  description={org.description}
-  image={org.image}
-  currentNav="organisations"
->
-  <div class="org-hero-block" style={`--org-color: ${org.accent};`}>
+<Base title={org.name + ' — Présentation, format et sources'} description={org.description} image={org.image || undefined} currentNav="organisations">
+  <div class="org-hero-block" style={'--org-color: ' + org.accent + ';'}>
     <div class="wrap org-hero-inner" data-reveal>
       <nav class="breadcrumbs mono" aria-label="Fil d'Ariane">
-        <a href="/">Accueil</a> <span>/</span>
-        <a href="/organisations/">Organisations</a> <span>/</span>
-        <span class="active">{org.name}</span>
+        <a href="/">Accueil</a><span>/</span><a href="/organisations/">Organisations</a><span>/</span><span class="active">{org.name}</span>
       </nav>
-
       <div class="org-title-row">
-        <div class="org-big-badge display" style={`background: ${org.accent};`}>
-          {org.badge}
-        </div>
-        <div>
-          <span class="kicker" style="color: rgba(255,255,255,0.7);">{org.fullName}</span>
-          <h1 class="display org-h1">{org.name}</h1>
-        </div>
+        <div class="org-big-badge display" style={'background: ' + org.accent + ';'}>{org.badge}</div>
+        <div><span class="kicker" style="color: rgba(255,255,255,0.7);">{org.fullName}</span><h1 class="display org-h1">{org.name}</h1></div>
       </div>
-
       <p class="org-lead-p">{org.description}</p>
+      <p class="org-updated mono">Informations vérifiées le <time datetime={org.verifiedAt}>{formatDate(org.verifiedAt)}</time>.</p>
     </div>
   </div>
 
   <div class="wrap org-main-grid">
     <div class="org-content-col">
-      <!-- Fiche technique de la ligue -->
-      <section class="org-specs-section" data-reveal>
-        <span class="kicker">Format & Réglementation</span>
-        <h2 class="display">Spécifications techniques de la ligue</h2>
+      {org.statusNotice && (
+        <section class="org-status-note" data-reveal>
+          <span class="kicker">Avis de l'instance fédérale · {formatDate(org.statusNotice.updatedAt)}</span>
+          <h2 class="display">{org.statusNotice.title}</h2>
+          <p>{org.statusNotice.text}</p>
+          <a href={org.statusNotice.url} target="_blank" rel="noopener noreferrer" class="link-teal mono">Lire l'avis officiel et la FAQ ↗</a>
+        </section>
+      )}
 
+      <section class="org-specs-section" data-reveal>
+        <span class="kicker">Repères</span>
+        <h2 class="display">{org.slug === 'fmmaf' ? 'Le rôle de la FMMAF' : 'Le format de ' + org.name}</h2>
         <div class="specs-table-grid mono">
-          <div class="spec-row">
-            <span class="s-label">Siège :</span>
-            <span class="s-val">{org.headquarters}</span>
-          </div>
-          <div class="spec-row">
-            <span class="s-label">Fondation :</span>
-            <span class="s-val">{org.founded}</span>
-          </div>
-          <div class="spec-row">
-            <span class="s-label">Type d'arène / Cage :</span>
-            <span class="s-val">{org.cage}</span>
-          </div>
-          <div class="spec-row">
-            <span class="s-label">Règles appliquées :</span>
-            <span class="s-val">{org.rules}</span>
-          </div>
-          <div class="spec-row">
-            <span class="s-label">Diffuseur officiel :</span>
-            <span class="s-val" style="color: var(--teal);">{org.broadcast}</span>
-          </div>
+          {org.headquarters && <div class="spec-row"><span class="s-label">Siège</span><span class="s-val">{org.headquarters}</span></div>}
+          <div class="spec-row"><span class="s-label">{org.foundedLabel}</span><span class="s-val">{org.founded}</span></div>
+          <div class="spec-row"><span class="s-label">Organisation des compétitions</span><span class="s-val">{org.format}</span></div>
+          {org.cage && <div class="spec-row"><span class="s-label">Arène</span><span class="s-val">{org.cage}</span></div>}
+          {org.rules && <div class="spec-row"><span class="s-label">Règles et durée</span><span class="s-val">{org.rules}</span></div>}
+          {org.broadcast && <div class="spec-row"><span class="s-label">Diffusion</span><span class="s-val">{org.broadcast}</span></div>}
         </div>
       </section>
 
-      <!-- Les combattants français dans cette organisation -->
-      <section class="org-fighters-section" data-reveal>
-        <span class="kicker">Représentation Tricolore</span>
-        <h2 class="display">Les Français engagés dans l'organisation</h2>
-        <ul class="french-fighters-list">
-          {org.frenchFighters && org.frenchFighters.map(f => (
-            <li class="fighter-tag-item mono">
-              <span>🥋</span> <strong>{f}</strong>
-            </li>
-          ))}
-        </ul>
-      </section>
+      {followedFighters.length > 0 && (
+        <section class="org-fighters-section" data-reveal>
+          <span class="kicker">Les athlètes</span>
+          <h2 class="display">Combattants suivis par Actu MMA</h2>
+          <ul class="french-fighters-list">
+            {followedFighters.map(fighter => (
+              <li class="fighter-tag-item mono"><a href={'/combattants/' + fighter.slug + '/'}>{fighter.flag} <strong>{fighter.name}</strong> · {fighter.country}</a></li>
+            ))}
+          </ul>
+        </section>
+      )}
+      {org.athleteDirectory && <p class="org-athlete-directory"><a href={org.athleteDirectory} target="_blank" rel="noopener noreferrer" class="link-teal mono">Consulter les athlètes et classements de l'organisation ↗</a></p>}
 
-      <!-- Pratiquer le MMA dans ces conditions -->
       <section class="org-gym-promo" data-reveal>
         <div class="promo-box">
-          <span class="kicker" style="color: var(--teal);">Infrastructures Pro</span>
-          <h3 class="display">S'entraîner dans une cage aux normes des grandes ligues</h3>
-          <p>Le <strong>Boxing Center (États-Unis - Toulouse)</strong> est doté d'un véritable octogone de compétition de 7 mètres répondant aux standards des organisations professionnelles. Accessible aux licenciés et compétiteurs du Grand Sud.</p>
-          <a href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer" class="btn btn--teal">
-            Découvrir l'octogone Boxing Center États-Unis (clubmma.fr) →
-          </a>
+          <span class="kicker" style="color: var(--teal);">Pratique du MMA</span>
+          <h3 class="display">De la compétition à l'entraînement</h3>
+          <p>La lutte, le travail contre la cage et le grappling font partie des bases du MMA. Retrouvez les informations sur les cours au Boxing Center Toulouse.</p>
+          <a href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer" class="btn btn--teal">Découvrir les cours de MMA ↗</a>
         </div>
       </section>
     </div>
 
-    <!-- Articles liés -->
     <aside class="org-sidebar">
+      <div class="sidebar-box org-source-box">
+        <h2 class="display">Sources de la fiche</h2>
+        <ul>
+          {org.sources.map(source => (
+            <li><a href={source.url} target="_blank" rel="noopener noreferrer">{source.name} · {source.title} ↗</a></li>
+          ))}
+        </ul>
+        <p>Consultées le {formatDate(org.verifiedAt)}. Les droits de diffusion et les programmes peuvent évoluer ; l'annonce de chaque événement précise ses conditions.</p>
+      </div>
       <div class="sidebar-box">
-        <h4 class="display">Actualités {org.name}</h4>
+        <h2 class="display">Actualités {org.name}</h2>
         {relatedArticles.length > 0 ? (
           <div class="sidebar-posts">
-            {relatedArticles.map(a => (
-              <a href={`/actualites/${a.slug}/`} class="sidebar-item">
-                <span class="sidebar-kicker">{a.kicker}</span>
-                <h5>{a.title}</h5>
-                <span class="mono sidebar-date">{new Date(a.date).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short' })}</span>
+            {relatedArticles.map(article => (
+              <a href={'/actualites/' + article.slug + '/'} class="sidebar-item">
+                <span class="sidebar-kicker">{article.kicker}</span><h3>{article.title}</h3>
+                <time datetime={article.sourcePublishedAt} class="mono sidebar-date">{formatDate(article.sourcePublishedAt)}</time>
               </a>
             ))}
           </div>
-        ) : (
-          <p class="mono" style="font-size: 0.85rem; color: var(--ash);">Aucun article récent dédié pour le moment.</p>
-        )}
+        ) : <p class="mono" style="font-size: 0.85rem; color: var(--ash);">Aucun article récent dédié pour le moment.</p>}
       </div>
-
       <div class="sidebar-box">
-        <h4 class="display">Toutes les ligues</h4>
+        <h2 class="display">Autres organisations</h2>
         <ul class="sidebar-org-list">
-          {organisations.filter(o => o.slug !== org.slug).map(o => (
-            <li><a href={`/organisations/${o.slug}/`}>{o.name}</a></li>
-          ))}
+          {organisations.filter(item => item.slug !== org.slug).map(item => <li><a href={'/organisations/' + item.slug + '/'}>{item.name}</a></li>)}
         </ul>
       </div>
     </aside>
   </div>
 </Base>
+
+<style>
+  .org-updated { color: rgba(255,255,255,0.7); font-size: .8rem; margin-top: 1.5rem; }
+  .org-status-note { margin-bottom: 2.5rem; padding: 1.5rem; border-left: 4px solid var(--teal); background: white; }
+  .org-status-note h2 { font-size: 1.7rem; margin: .75rem 0 1rem; }
+  .org-status-note p { line-height: 1.7; margin-bottom: 1rem; }
+  .org-source-box ul { padding-left: 1.15rem; margin-bottom: 1rem; }
+  .org-source-box li { margin: .65rem 0; line-height: 1.6; font-size: .85rem; }
+  .org-source-box a { color: var(--teal); overflow-wrap: anywhere; }
+  .org-source-box p { font-size: .8rem; color: var(--ash); line-height: 1.6; }
+  .org-sidebar .sidebar-box h2 { margin-bottom: 1rem; font-size: 1.3rem; }
+  .sidebar-item h3 { font-size: 1rem; line-height: 1.4; }
+  .org-athlete-directory { margin: 1.5rem 0; line-height: 1.6; }
+  .fighter-tag-item a { text-decoration: none; color: inherit; }
+</style>

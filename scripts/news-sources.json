@@ -1,0 +1,16 @@
+{
+  "batchSize": 6,
+  "maxSourceAgeHours": 72,
+  "cadenceHours": 72,
+  "scheduleAnchor": "2026-10-07T18:00:00Z",
+  "requestTimeoutMs": 20000,
+  "feeds": [
+    { "name": "ActuMMA", "url": "https://www.actumma.com/feed", "host": "actumma.com" },
+    { "name": "La Sueur", "url": "https://lasueur.com/feed", "host": "lasueur.com" },
+    { "name": "MMA Fighting", "url": "https://www.mmafighting.com/rss/index.xml", "host": "mmafighting.com" },
+    { "name": "RMC Sport", "url": "https://rmcsport.bfmtv.com/rss/sports-de-combat/mma/", "host": "rmcsport.bfmtv.com" }
+  ],
+  "officialHosts": ["ufc.com", "ufc.fr", "onefc.com", "pflmma.com", "aresfighting.com", "hexagonemma.fr", "fmmaf.fr"],
+  "maxFeedItems": 30,
+  "maxCandidates": 12
+}

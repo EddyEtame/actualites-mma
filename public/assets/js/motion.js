@@ -5,7 +5,7 @@
  * 1. Le contenu est visible par défaut. La classe .motion est posée par ce
  *    script — JavaScript coupé, la page reste lisible.
  * 2. Le mouvement informe, il ne décore pas.
- * 3. Zéro dépendance lourde. GSAP est en vendor, pas en CDN.
+ * 3. Les fonctions essentielles utilisent les API natives du navigateur.
  */
 (function () {
   "use strict";
@@ -13,7 +13,21 @@
   var root = document.documentElement;
   var reduit = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  if (reduit || !("IntersectionObserver" in window)) return;
+  document.querySelectorAll('[data-news-freshness]').forEach(function (el) {
+    var timestamp = Date.parse(el.getAttribute('data-news-freshness'));
+    if (!isFinite(timestamp) || Date.now() - timestamp > 72 * 3600000) {
+      el.textContent = 'Dernière édition · nouvelles en attente';
+      el.classList.add('stale-edition');
+    }
+  });
+  document.querySelectorAll('[data-news-source]').forEach(function (el) {
+    var timestamp = Date.parse(el.getAttribute('data-news-source'));
+    if (!isFinite(timestamp) || Date.now() - timestamp > 72 * 3600000) {
+      var label = el.querySelector('.kicker');
+      if (label) label.textContent = 'Archive · ' + label.textContent.replace(/^À la une · /, '');
+    }
+  });
+  if (!reduit && 'IntersectionObserver' in window) {
 
   root.classList.add("motion");
 
@@ -137,7 +151,7 @@
     if (!isNaN(cibleDate)) {
       function ecrire() {
         var reste = cibleDate - Date.now();
-        if (reste <= 0) { countdownEl.textContent = "En cours"; return true; }
+        if (reste <= 0) { countdownEl.textContent = "Date passée"; return true; }
         var j = Math.floor(reste / 864e5);
         countdownEl.textContent = "J−" + j;
         return false;
@@ -177,29 +191,42 @@
     }, { passive: true });
   }
 
+  }
   /* -------------------------------------------- MOBILE MENU TOGGLE */
   var burger = document.querySelector("[data-menu]");
   var drawer = document.querySelector("[data-drawer]");
   var closer = document.querySelector("[data-close]");
   if (burger && drawer) {
+    function closeMenu(restoreFocus) {
+      drawer.hidden = true;
+      burger.setAttribute("aria-expanded", "false");
+      document.body.style.overflow = "";
+      if (restoreFocus) burger.focus();
+    }
     burger.addEventListener("click", function () {
       var open = drawer.hidden;
-      drawer.hidden = !open;
-      burger.setAttribute("aria-expanded", String(open));
-      document.body.style.overflow = open ? "hidden" : "";
+      if (!open) { closeMenu(true); return; }
+      drawer.hidden = false;
+      burger.setAttribute("aria-expanded", "true");
+      document.body.style.overflow = "hidden";
+      if (closer) closer.focus();
     });
     if (closer) {
       closer.addEventListener("click", function () {
-        drawer.hidden = true;
-        burger.setAttribute("aria-expanded", "false");
-        document.body.style.overflow = "";
+        closeMenu(true);
       });
     }
+    drawer.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") { event.preventDefault(); closeMenu(true); return; }
+      if (event.key !== "Tab") return;
+      var controls = Array.from(drawer.querySelectorAll('a[href],button:not([disabled])'));
+      var first = controls[0], last = controls[controls.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    });
     drawer.querySelectorAll("a").forEach(function (a) {
       a.addEventListener("click", function () {
-        drawer.hidden = true;
-        burger.setAttribute("aria-expanded", "false");
-        document.body.style.overflow = "";
+        closeMenu(false);
       });
     });
   }

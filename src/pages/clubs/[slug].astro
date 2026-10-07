@@ -1,502 +1,109 @@
 ---
-/* Page individuelle d'un club / salle de MMA en France
-   Standard Baffled Bar + SEO / AEO / GEO :
-   - Schéma structuré SportsActivityLocation / ExerciseGym
-   - Données géographiques exactes, faits vérifiables
-   - Photos authentiques de boxe et ring avec attributs ALT descriptifs
-   - FAQ balisée FAQPage
-   - Conversion forte et naturelle vers https://clubmma.fr/ */
 import Base from '../../layouts/Base.astro';
 import clubs from '../../data/clubs.json';
 
 export function getStaticPaths() {
-  return clubs.map(club => ({
-    params: { slug: club.slug },
-    props: { club }
-  }));
+  return clubs.map(club => ({ params: { slug: club.slug }, props: { club } }));
 }
 
 const { club } = Astro.props;
 const otherClubs = clubs.filter(c => c.slug !== club.slug).slice(0, 3);
 const isBoxingCenter = club.slug === 'boxing-center-etats-unis';
-
-const faqItems = isBoxingCenter ? [
-  {
-    q: "Quels sont les équipements disponibles au Boxing Center États-Unis à Toulouse ?",
-    a: "Le complexe de 1 200 m² dispose d'un octogone officiel de combat de 7 mètres, de 400 m² de tatamis monoblocs dédiés à la lutte et au grappling, de 2 rings de boxe anglaise compétition et d'un pôle de préparation physique."
-  },
-  {
-    q: "Peut-on débuter le MMA au Boxing Center sans expérience préalable en combat ?",
-    a: "Oui. Des créneaux 'MMA Débutants' et 'Fondamentaux Sol' sont programmés chaque semaine pour apprendre les bases en toute sécurité sous l'encadrement de coachs diplômés d'État."
-  },
-  {
-    q: "Qui encadre les entraînements de MMA et de boxe au Boxing Center Toulouse ?",
-    a: "Les cours de sol, lutte et travail contre la cage sont dirigés par Zouhir Boumenir (BPJEPS Lutte/Grappling, Ceinture Noire JJB). Le striking et la boxe anglaise sont encadrés par des entraîneurs diplômés d'État dont Coach Guillaume."
-  },
-  {
-    q: "Comment réserver un cours d'essai ou s'inscrire ?",
-    a: "Les réservations de séances d'essai et la consultation des plannings complets s'effectuent directement en ligne sur le site officiel clubmma.fr."
-  }
-] : [
-  {
-    q: `Quelles disciplines sont enseignées à ${club.name} ?`,
-    a: `Le club propose : ${club.disciplines ? club.disciplines.join(', ') : 'MMA et sports de combat'}.`
-  },
-  {
-    q: `Où se situe ${club.name} à ${club.city} ?`,
-    a: `La salle est située à l'adresse suivante : ${club.address || club.city}.`
-  }
+const siteUrl = 'https://actu-mma.com';
+const verifiedDate = new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${club.verifiedAt}T12:00:00Z`));
+const specs = [
+  club.surface && { label: 'Salle', value: club.surface, detail: 'Superficie annoncée par le club' },
+  club.cage && { label: 'MMA', value: club.cage, detail: 'Espace de travail contre la cage' },
+  club.tatami && { label: 'Sol', value: club.tatami, detail: 'Surface de tatamis annoncée' }
+].filter(Boolean);
+const faqItems = [
+  { q: `Où se situe ${club.name} ?`, a: `${club.name} se situe au ${club.address}.${club.metro ? ` Accès : ${club.metro}.` : ''}` },
+  { q: `Quelles disciplines peut-on pratiquer à ${club.name} ?`, a: `Le site du club présente les disciplines suivantes : ${club.disciplines.join(', ')}.` },
+  ...(isBoxingCenter ? [
+    { q: 'Qui encadre le grappling et le jiu-jitsu brésilien ?', a: 'Zouhir Boumenir enseigne le grappling et le jiu-jitsu brésilien au Boxing Center États-Unis. Le site du club le présente comme ceinture noire de JJB.' },
+    { q: 'Peut-on débuter le MMA dans cette salle ?', a: 'Le club annonce des cours Asso MMA pour débutants et confirmés, ainsi que du MMA jeunes 10–16 ans. Contactez le club pour choisir le créneau de votre premier cours.' }
+  ] : []),
+  { q: `Où consulter les horaires de ${club.name} ?`, a: club.scheduleNote }
 ];
-
 const structuredData = {
-  "@context": "https://schema.org",
-  "@type": "SportsActivityLocation",
-  "name": club.name,
-  "description": club.description,
-  "image": `https://prise-mma.fr${club.image}`,
-  "url": `https://prise-mma.fr/clubs/${club.slug}/`,
-  "telephone": club.phone || undefined,
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": club.address || club.city,
-    "addressLocality": club.city,
-    "postalCode": club.postalCode || "31200",
-    "addressRegion": club.region || "Occitanie",
-    "addressCountry": "FR"
+  '@context': 'https://schema.org',
+  '@type': 'SportsActivityLocation',
+  '@id': `${siteUrl}/clubs/${club.slug}/#club`,
+  name: club.name,
+  description: club.description,
+  url: club.website,
+  telephone: club.phone || undefined,
+  image: club.image ? `${siteUrl}${club.image}` : undefined,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: club.streetAddress,
+    addressLocality: club.city,
+    postalCode: club.postalCode,
+    addressRegion: club.region,
+    addressCountry: 'FR'
   },
-  "geo": club.geo ? {
-    "@type": "GeoCoordinates",
-    "latitude": club.geo.latitude,
-    "longitude": club.geo.longitude
-  } : undefined,
-  "amenityFeature": [
-    { "@type": "LocationFeatureSpecification", "name": "Octogone de combat", "value": club.cage || "Cage MMA" },
-    { "@type": "LocationFeatureSpecification", "name": "Tatamis sol", "value": club.tatami || "200 m²" },
-    { "@type": "LocationFeatureSpecification", "name": "Superficie", "value": club.surface || "Complexe sportif" }
-  ],
-  "sameAs": isBoxingCenter ? ["https://clubmma.fr/"] : undefined
+  amenityFeature: specs.map(spec => ({ '@type': 'LocationFeatureSpecification', name: spec.label, value: spec.value }))
 };
-
 const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": faqItems.map(item => ({
-    "@type": "Question",
-    "name": item.q,
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": item.a
-    }
-  }))
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map(item => ({ '@type': 'Question', name: item.q, acceptedAnswer: { '@type': 'Answer', text: item.a } }))
 };
-
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Accueil",
-      "item": "https://prise-mma.fr/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Clubs",
-      "item": "https://prise-mma.fr/clubs/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": club.name,
-      "item": `https://prise-mma.fr/clubs/${club.slug}/`
-    }
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: `${siteUrl}/` },
+    { '@type': 'ListItem', position: 2, name: 'Clubs de MMA', item: `${siteUrl}/clubs/` },
+    { '@type': 'ListItem', position: 3, name: club.name, item: `${siteUrl}/clubs/${club.slug}/` }
   ]
 };
 ---
 
-<Base
-  title={`${club.name} (${club.city}) — Salle MMA, Octogone 7m & Cours`}
-  description={`Fiche officielle ${club.name} à ${club.city} : installations de ${club.surface}, octogone ${club.cage || 'officiel'}, coachs diplômés, plannings et cours d'essai.`}
-  image={club.image}
-  currentNav="clubs"
->
-  <!-- Données structurées SEO / GEO / AEO -->
+<Base title={`${club.name} — MMA à ${club.city}`} description={club.description} image={club.image || undefined} currentNav="clubs">
   <script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />
   <script is:inline type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
-  <div class="club-page-hero">
-    <div class="club-hero-bg">
-      <img src={club.image} alt={club.imageAlt} fetchpriority="high" />
-      <div class="club-hero-overlay"></div>
-    </div>
-
+  <header class="club-page-hero">
     <div class="wrap club-hero-content" data-reveal>
-      <nav class="breadcrumbs mono" aria-label="Fil d'Ariane">
-        <a href="/">Accueil</a> <span>/</span>
-        <a href="/clubs/">Clubs</a> <span>/</span>
-        <span class="active">{club.name}</span>
-      </nav>
-
-      <div class="club-header-badge mono">
-        <span>📍 {club.city}</span>
-        {isBoxingCenter && <span class="badge-partner">PÔLE OFFICIEL RECOMMANDÉ</span>}
-      </div>
-
+      <nav class="breadcrumbs mono" aria-label="Fil d'Ariane"><a href="/">Accueil</a><span aria-hidden="true">/</span><a href="/clubs/">Clubs de MMA</a><span aria-hidden="true">/</span><span class="active" aria-current="page">{club.name}</span></nav>
+      <div class="club-header-badge mono"><span>{club.city} · {club.region}</span><span>Fiche club</span></div>
       <h1 class="display club-page-title">{club.name}</h1>
       <p class="club-lead-desc">{club.description}</p>
-
-      {club.address && (
-        <p class="club-address-bar mono">
-          <strong>Adresse :</strong> {club.address} {club.metro && <span>• {club.metro}</span>}
-        </p>
-      )}
-
-      {isBoxingCenter && (
-        <div class="club-cta-row">
-          <a href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="font-size: 1rem; padding: 0.9rem 2rem;">
-            Réserver un cours d'essai sur clubmma.fr ↗
-          </a>
-          <a href="#planning" class="btn btn--ghost" style="font-size: 0.95rem;">
-            Consulter le planning des cours ↓
-          </a>
-        </div>
-      )}
+      <p class="club-address-bar mono">{club.address}{club.metro && <span> · {club.metro}</span>}</p>
+      <div class="club-cta-row"><a href={club.scheduleUrl} target="_blank" rel="noopener noreferrer" class="btn btn--primary">Consulter le planning du club ↗</a><a href="#informations" class="btn btn--ghost">Disciplines et informations ↓</a></div>
     </div>
-  </div>
+  </header>
 
   <div class="wrap club-main-layout">
     <div class="club-content-col">
+      {specs.length > 0 && <section class="club-specs-section" aria-labelledby="equipment-title" data-reveal><span class="kicker">Les installations</span><h2 class="display" id="equipment-title">Des repères pour s'entraîner</h2><div class="specs-grid-cards mono">{specs.map(spec => <div class="spec-card"><span class="spec-label">{spec.label}</span><strong class="spec-value">{spec.value}</strong><span class="spec-sub">{spec.detail}</span></div>)}</div></section>}
 
-      <!-- Fiche technique des installations -->
-      <section class="club-specs-section" data-reveal>
-        <span class="kicker">Infrastructures & Équipements</span>
-        <h2 class="display">Plateau technique de combat</h2>
-
-        <div class="specs-grid-cards mono">
-          <div class="spec-card">
-            <span class="spec-label">Superficie</span>
-            <strong class="spec-value">{club.surface || '400 m²'}</strong>
-            <span class="spec-sub">Espace dédié combat</span>
-          </div>
-          <div class="spec-card">
-            <span class="spec-label">Cage</span>
-            <strong class="spec-value" style="color: var(--teal);">{club.cage || 'Espace cage'}</strong>
-            <span class="spec-sub">Normes officielles</span>
-          </div>
-          <div class="spec-card">
-            <span class="spec-label">Tatamis</span>
-            <strong class="spec-value">{club.tatami || '200 m²'}</strong>
-            <span class="spec-sub">Lutte & Grappling sol</span>
-          </div>
-          {club.rings && (
-            <div class="spec-card">
-              <span class="spec-label">Rings</span>
-              <strong class="spec-value">{club.rings}</strong>
-              <span class="spec-sub">Boxe anglaise compétition</span>
-            </div>
-          )}
-        </div>
+      <section class="club-about-section" id="informations" aria-labelledby="practice-title" data-reveal>
+        <span class="kicker">La pratique dans cette salle</span><h2 class="display" id="practice-title">MMA et disciplines complémentaires</h2>
+        <div class="club-text-body"><p>{club.longDescription}</p><p>{club.practicalNote}</p></div>
+        <div class="disciplines-pills mono">{club.disciplines.map(d => <span class="pill">{d}</span>)}</div>
       </section>
 
-      <!-- Présentation détaillée -->
-      <section class="club-about-section" data-reveal>
-        <span class="kicker">L'esprit de la salle</span>
-        <h2 class="display">Formation, encadrement et philosophie</h2>
-        <div class="club-text-body">
-          <p class="lead">{club.longDescription || club.description}</p>
-          <p>La pratique du Mixed Martial Arts requiert une approche décloisonnée associant frappes percutantes, lutte de corps-à-corps et soumissions au sol. {club.name} met à disposition des pratiquants de tous niveaux un cadre d'apprentissage rigoureux et sécurisé.</p>
-        </div>
+      {club.coaches.length > 0 && <section class="club-coaches-section" aria-labelledby="coach-title" data-reveal>
+        <span class="kicker">L'encadrement au sol</span><h2 class="display" id="coach-title">Zouhir Boumenir, grappling et JJB</h2>
+        <div class="coaches-grid">{club.coaches.map(c => <article class="coach-card"><div class="coach-media"><img src={c.photo} alt={c.alt} width="900" height="720" loading="lazy" decoding="async" /></div><div class="coach-body"><span class="coach-role mono">{c.role}</span><h3 class="display coach-name">{c.name}</h3><p class="coach-qualif mono">{c.qualif}</p><p>{c.description}</p><a href={c.sourceUrl} target="_blank" rel="noopener noreferrer" class="club-source-link">Présentation du coach sur clubmma.fr ↗</a></div></article>)}</div>
+      </section>}
 
-        <div class="disciplines-pills mono">
-          {club.disciplines && club.disciplines.map(d => (
-            <span class="pill">{d}</span>
-          ))}
-        </div>
+      <section class="club-schedule-section" id="planning" aria-labelledby="schedule-title" data-reveal>
+        <span class="kicker">Préparer sa séance</span><h2 class="display" id="schedule-title">{club.scheduleLabel}</h2><p class="club-text-body">{club.scheduleNote}</p>
+        <div class="schedule-cta"><p>Choisissez le cours et la salle avant de vous déplacer.</p><a href={club.scheduleUrl} target="_blank" rel="noopener noreferrer" class="btn btn--primary">Ouvrir le planning du club ↗</a></div>
       </section>
 
-      <!-- Staff & Coachs avec VRAIES PHOTOS D'ACTION -->
-      {club.coaches && club.coaches.length > 0 && (
-        <section class="club-coaches-section" data-reveal>
-          <span class="kicker">Équipe technique & Expérience</span>
-          <h2 class="display">L'encadrement en action</h2>
+      <section class="club-faq-section" aria-labelledby="faq-title" data-reveal><span class="kicker">Questions pratiques</span><h2 class="display" id="faq-title">Avant de venir</h2><div class="faq-list">{faqItems.map((f, idx) => <details class="faq-accordion" open={idx === 0}><summary class="faq-question"><span class="faq-title">{f.q}</span><span class="faq-icon" aria-hidden="true">+</span></summary><div class="faq-answer"><p>{f.a}</p>{f.q.includes('horaires') && <a href={club.scheduleUrl} target="_blank" rel="noopener noreferrer">Consulter le planning de {club.name} ↗</a>}</div></details>)}</div></section>
 
-          <div class="coaches-grid">
-            {club.coaches.map(c => (
-              <div class="coach-card">
-                <div class="coach-media">
-                  <img src={c.photo} alt={c.alt || `Coach ${c.name} à l'entraînement`} width="360" height="400" loading="lazy" />
-                </div>
-                <div class="coach-body">
-                  <span class="coach-role mono">{c.role}</span>
-                  <h3 class="display coach-name">{c.name}</h3>
-                  <p class="coach-qualif mono">{c.qualif}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
-
-      <!-- Planning des cours avec filtres interactifs par discipline -->
-      {club.schedule && (
-        <section class="club-schedule-section" id="planning" data-reveal>
-          <span class="kicker">Horaires & Créneaux</span>
-          <h2 class="display">Planning hebdomadaire des entraînements</h2>
-
-          <!-- Filtres interactifs par discipline -->
-          <div class="sched-filter-bar mono" id="schedFilters">
-            <button type="button" class="sched-filter-btn is-active" data-filter="all">Tous les créneaux</button>
-            <button type="button" class="sched-filter-btn" data-filter="mma">MMA & Cage</button>
-            <button type="button" class="sched-filter-btn" data-filter="boxe">Boxe Anglaise (Coach Guillaume)</button>
-            <button type="button" class="sched-filter-btn" data-filter="sol">Sol & Lutte (Coach Zouhir)</button>
-          </div>
-
-          <div class="schedule-table-box">
-            <table class="schedule-table mono">
-              <thead>
-                <tr>
-                  <th>Jour</th>
-                  <th>Créneaux & Disciplines</th>
-                </tr>
-              </thead>
-              <tbody>
-                {club.schedule.map(s => {
-                  const lower = s.hours.toLowerCase();
-                  const isMma = lower.includes('mma') || lower.includes('cage');
-                  const isBoxe = lower.includes('boxe');
-                  const isSol = lower.includes('sol') || lower.includes('lutte') || lower.includes('grappling');
-                  const tags = ['all', isMma && 'mma', isBoxe && 'boxe', isSol && 'sol'].filter(Boolean).join(' ');
-                  return (
-                    <tr class="sched-row" data-disciplines={tags}>
-                      <td class="sched-day"><strong>{s.day}</strong></td>
-                      <td class="sched-hours">{s.hours}</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
-
-          <script is:inline>
-            (function() {
-              function initSchedFilters() {
-                var filterBtns = document.querySelectorAll('#schedFilters .sched-filter-btn');
-                var rows = document.querySelectorAll('.sched-row');
-                if (!filterBtns.length || !rows.length) return;
-
-                filterBtns.forEach(function(btn) {
-                  btn.addEventListener('click', function() {
-                    filterBtns.forEach(function(b) { b.classList.remove('is-active'); });
-                    btn.classList.add('is-active');
-                    var val = btn.getAttribute('data-filter');
-
-                    rows.forEach(function(r) {
-                      var discs = (r.getAttribute('data-disciplines') || '').split(' ');
-                      if (val === 'all' || discs.indexOf(val) !== -1) {
-                        r.style.display = '';
-                      } else {
-                        r.style.display = 'none';
-                      }
-                    });
-                  });
-                });
-              }
-              if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', initSchedFilters);
-              } else {
-                initSchedFilters();
-              }
-            })();
-          </script>
-
-          {isBoxingCenter && (
-            <div class="schedule-cta">
-              <p>Envie de faire votre premier entraînement dans l'octogone ?</p>
-              <a href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
-                Consulter les tarifs & s'inscrire sur clubmma.fr →
-              </a>
-            </div>
-          )}
-        </section>
-      )}
-
-      <!-- Galerie photos réelles du club (boxeurs en action, cage, ring) -->
-      {club.gallery && club.gallery.length > 0 && (
-        <section class="club-gallery-section" data-reveal>
-          <span class="kicker">Immersion Visuelle Réelle</span>
-          <h2 class="display">Dans le ring, la cage et sur les tatamis</h2>
-          <p class="lede" style="margin-bottom: 1.5rem; font-size: 0.95rem; color: var(--ash);">Photographies réelles des séances d'entraînement, des sparrings et des équipements officiels du club. Cliquez sur un cliché pour l'ouvrir en haute résolution.</p>
-
-          <div class="gallery-grid" id="clubPhotoGallery">
-            {club.gallery.map((item, idx) => {
-              const src = typeof item === 'string' ? item : item.src;
-              const alt = typeof item === 'string' ? `Installation ${club.name}` : item.alt;
-              return (
-                <figure class="gallery-item">
-                  <button type="button" class="gallery-zoom-btn" data-gallery-btn data-idx={idx} data-src={src} data-caption={alt} aria-label={`Agrandir la photo : ${alt}`}>
-                    <img src={src} alt={alt} width="640" height="420" loading="lazy" decoding="async" />
-                    <span class="zoom-badge mono">🔍 Agrandir</span>
-                  </button>
-                  <figcaption class="sr-only">{alt}</figcaption>
-                </figure>
-              );
-            })}
-          </div>
-
-          <!-- Modal Lightbox Darkroom -->
-          <dialog id="photoLightbox" class="photo-lightbox" aria-label="Visionneuse photo plein écran">
-            <div class="lightbox-inner">
-              <button type="button" class="lightbox-close" id="lightboxCloseBtn" aria-label="Fermer la photo">&times;</button>
-              <div class="lightbox-stage">
-                <button type="button" class="lightbox-nav prev" id="lightboxPrevBtn" aria-label="Photo précédente">‹</button>
-                <div class="lightbox-media-wrap">
-                  <img id="lightboxImg" src="" alt="" />
-                </div>
-                <button type="button" class="lightbox-nav next" id="lightboxNextBtn" aria-label="Photo suivante">›</button>
-              </div>
-              <div class="lightbox-caption-bar mono">
-                <span id="lightboxCounter" class="lightbox-count">1 / 1</span>
-                <p id="lightboxCaption" class="lightbox-desc"></p>
-              </div>
-            </div>
-          </dialog>
-
-          <script is:inline>
-            (function() {
-              function initLightbox() {
-                var btns = Array.from(document.querySelectorAll('[data-gallery-btn]'));
-                var dlg = document.getElementById('photoLightbox');
-                if (!btns.length || !dlg) return;
-
-                var img = document.getElementById('lightboxImg');
-                var counter = document.getElementById('lightboxCounter');
-                var caption = document.getElementById('lightboxCaption');
-                var closeBtn = document.getElementById('lightboxCloseBtn');
-                var prevBtn = document.getElementById('lightboxPrevBtn');
-                var nextBtn = document.getElementById('lightboxNextBtn');
-
-                var currentIndex = 0;
-                var photos = btns.map(function(b) {
-                  return {
-                    src: b.getAttribute('data-src') || '',
-                    caption: b.getAttribute('data-caption') || ''
-                  };
-                });
-
-                function showPhoto(idx) {
-                  if (idx < 0) idx = photos.length - 1;
-                  if (idx >= photos.length) idx = 0;
-                  currentIndex = idx;
-                  var p = photos[currentIndex];
-                  if (img) {
-                    img.src = p.src;
-                    img.alt = p.caption;
-                  }
-                  if (counter) counter.textContent = (currentIndex + 1) + ' / ' + photos.length;
-                  if (caption) caption.textContent = p.caption;
-                }
-
-                btns.forEach(function(b, i) {
-                  b.addEventListener('click', function() {
-                    showPhoto(i);
-                    if (typeof dlg.showModal === 'function') {
-                      dlg.showModal();
-                    } else {
-                      dlg.setAttribute('open', '');
-                    }
-                  });
-                });
-
-                function closeDlg() {
-                  if (typeof dlg.close === 'function') {
-                    dlg.close();
-                  } else {
-                    dlg.removeAttribute('open');
-                  }
-                }
-
-                if (closeBtn) closeBtn.addEventListener('click', closeDlg);
-                if (prevBtn) prevBtn.addEventListener('click', function(e) { e.stopPropagation(); showPhoto(currentIndex - 1); });
-                if (nextBtn) nextBtn.addEventListener('click', function(e) { e.stopPropagation(); showPhoto(currentIndex + 1); });
-
-                dlg.addEventListener('click', function(e) {
-                  if (e.target === dlg) closeDlg();
-                });
-
-                document.addEventListener('keydown', function(e) {
-                  if (!dlg.open) return;
-                  if (e.key === 'Escape') closeDlg();
-                  if (e.key === 'ArrowLeft') showPhoto(currentIndex - 1);
-                  if (e.key === 'ArrowRight') showPhoto(currentIndex + 1);
-                });
-              }
-
-              if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', initLightbox);
-              } else {
-                initLightbox();
-              }
-            })();
-          </script>
-        </section>
-      )}
-
-      <!-- FAQ structurée AEO/GEO : Réponses directes aux requêtes des utilisateurs -->
-      <section class="club-faq-section" data-reveal>
-        <span class="kicker">Questions Fréquentes & Renseignements</span>
-        <h2 class="display">Tout ce qu'il faut savoir avant de venir</h2>
-
-        <div class="faq-list">
-          {faqItems.map((f, idx) => (
-            <details class="faq-accordion" open={idx === 0}>
-              <summary class="faq-question">
-                <span class="faq-title">{f.q}</span>
-                <span class="faq-icon" aria-hidden="true">+</span>
-              </summary>
-              <div class="faq-answer">
-                <p>{f.a}</p>
-              </div>
-            </details>
-          ))}
-        </div>
-      </section>
-
+      <section class="club-sources-section" aria-labelledby="sources-title"><span class="kicker">Les sources de cette fiche</span><h2 class="display" id="sources-title">Informations publiées par le club</h2><p>Coordonnées et disciplines vérifiées le <time datetime={club.verifiedAt}>{verifiedDate}</time>. Les horaires et modalités d'inscription sont à consulter auprès de la salle.</p><ul>{club.sources.map(source => <li><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a></li>)}</ul></section>
     </div>
 
-    <!-- Sidebar pratique -->
-    <aside class="club-sidebar">
-      <div class="sidebar-box">
-        <h4 class="display">Informations clés</h4>
-        <ul class="practical-list mono">
-          <li><strong>Ville :</strong> {club.city}</li>
-          {club.surface && <li><strong>Superficie :</strong> {club.surface}</li>}
-          {club.cage && <li><strong>Cage :</strong> {club.cage}</li>}
-          {club.phone && <li><strong>Téléphone :</strong> {club.phone}</li>}
-          {club.website && (
-            <li>
-              <strong>Site web :</strong>
-              <a href={club.website} target={isBoxingCenter ? '_blank' : '_self'} rel="noopener noreferrer" style="color: var(--teal);">
-                {isBoxingCenter ? 'clubmma.fr ↗' : 'Visiter le site'}
-              </a>
-            </li>
-          )}
-        </ul>
-      </div>
-
-      <div class="sidebar-box">
-        <h4 class="display">Autres clubs en France</h4>
-        <div class="other-clubs-mini">
-          {otherClubs.map(oth => (
-            <a href={`/clubs/${oth.slug}/`} class="mini-club-link">
-              <span class="kicker">{oth.city}</span>
-              <strong>{oth.name}</strong>
-            </a>
-          ))}
-        </div>
-      </div>
+    <aside class="club-sidebar" aria-label="Informations et autres clubs">
+      <div class="sidebar-box"><h2 class="display">Pour venir au club</h2><dl class="club-practical-list"><div><dt>Adresse</dt><dd>{club.address}</dd></div>{club.metro && <div><dt>Accès</dt><dd>{club.metro}</dd></div>}{club.phone && <div><dt>Téléphone</dt><dd><a href={`tel:${club.phone.replace(/\s/g, '')}`}>{club.phone}</a></dd></div>}<div><dt>Site du club</dt><dd><a href={club.website} target="_blank" rel="noopener noreferrer">{new URL(club.website).hostname.replace(/^www\./, '')} ↗</a></dd></div></dl><a href={club.scheduleUrl} target="_blank" rel="noopener noreferrer" class="btn btn--primary">Planning et inscriptions ↗</a></div>
+      <div class="sidebar-box"><h2 class="display">D'autres clubs de MMA</h2><div class="other-clubs-mini">{otherClubs.map(oth => <a href={`/clubs/${oth.slug}/`} class="mini-club-link"><span class="kicker">{oth.city}</span><strong>{oth.name}</strong></a>)}</div><a href="/clubs/" class="club-source-link">Voir les cinq clubs de l'annuaire →</a></div>
     </aside>
   </div>
 </Base>

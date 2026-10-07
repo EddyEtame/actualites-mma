@@ -1,194 +1,198 @@
 [
   {
     "slug": "boxing-center-etats-unis",
-    "name": "Boxing Center (États-Unis)",
+    "name": "Boxing Center États-Unis",
     "city": "Toulouse",
+    "cityCode": "TLS",
     "postalCode": "31200",
     "region": "Occitanie",
+    "streetAddress": "388 avenue des États-Unis",
     "address": "388 avenue des États-Unis, 31200 Toulouse",
-    "metro": "Métro Ligne B (La Vache / Barrière de Paris) — Rocade Sortie 33",
     "website": "https://clubmma.fr/",
-    "phone": "05 61 57 88 00",
-    "geo": {
-      "latitude": 43.6385,
-      "longitude": 1.4283
-    },
+    "phone": "05 62 24 46 82",
     "surface": "1 200 m²",
-    "cage": "Octogone officiel de combat 7 mètres",
-    "tatami": "400 m² tatamis de lutte & grappling",
-    "rings": "2 rings de boxe anglaise compétition",
+    "cage": "Cage surélevée",
+    "tatami": "400 m²",
     "coaches": [
       {
         "name": "Zouhir Boumenir",
-        "role": "Head Coach Sol & Cage",
-        "qualif": "BPJEPS Lutte/Grappling, Ceinture Noire JJB",
+        "role": "Grappling & Jiu-Jitsu brésilien",
+        "qualif": "Ceinture noire de jiu-jitsu brésilien",
+        "description": "Spécialiste du travail au sol, Zouhir enseigne aux débutants comme aux pratiquants confirmés à Toulouse États-Unis.",
         "photo": "/assets/img/photo_coach_zouhir.webp",
-        "alt": "Portrait du coach Zouhir Boumenir, entraîneur de lutte et combat au sol à Toulouse"
-      },
-      {
-        "name": "Guillaume",
-        "role": "Entraîneur Striking & Préparation Combat",
-        "qualif": "Diplômé d'État Boxe Anglaise & Savate",
-        "photo": "/photos/encadrement-coach-boxe-colomiers-1440.jpg",
-        "alt": "Coach Guillaume serrant les gants d'un boxeur casqué sur le ring du Boxing Center"
+        "alt": "Zouhir Boumenir devant la cage du Boxing Center",
+        "sourceUrl": "https://clubmma.fr/clubs/"
       }
     ],
     "disciplines": [
-      "MMA (Mixed Martial Arts)",
-      "Grappling No-Gi & Sol",
-      "Lutte contre la cage",
-      "Boxe anglaise compétition & loisir",
-      "Préparation physique & conditioning"
+      "MMA",
+      "Grappling",
+      "Jiu-Jitsu brésilien"
     ],
-    "description": "Le plus grand pôle d'entraînement aux sports de combat et MMA de Haute-Garonne : 1 200 m², octogone officiel de 7 mètres, 400 m² de tatamis, 2 rings de boxe et encadrement professionnel diplômé.",
-    "longDescription": "Implanté au nord de Toulouse (388 avenue des États-Unis), le Boxing Center États-Unis constitue la référence régionale pour l'entraînement au MMA, à la boxe anglaise et aux sports de préhension. Conçu pour répondre aux normes des compétiteurs de haut niveau comme à l'exigence des débutants, le complexe réunit sous un même toit un octogone officiel de compétition de 7 mètres, 400 m² de tatamis monoblocs pour la lutte et le grappling, deux rings de boxe homologués et un pôle de renforcement athlétique.",
-    "image": "/assets/img/boxing-center-etats-unis-vue-ensemble-ring-tatamis-cage.webp",
-    "imageAlt": "Vue d'ensemble du complexe Boxing Center États-Unis à Toulouse : 1 200 m² avec ring de boxe officiel, tatamis et octogone 7 mètres",
-    "gallery": [
+    "description": "MMA, grappling et jiu-jitsu brésilien au nord de Toulouse : cage surélevée et 400 m² de tatamis dans un complexe de 1 200 m².",
+    "longDescription": "Le Boxing Center États-Unis réunit trois espaces de 400 m². Son pôle Striking & Sol accueille le MMA, le grappling et le jiu-jitsu brésilien, avec une cage surélevée, des tatamis et des protections murales pour le travail contre la cage.",
+    "practicalNote": "Le site du club annonce des cours Asso MMA pour débutants et confirmés, ainsi que du MMA jeunes 10–16 ans. Le planning MMA & Sol de la saison 2026–2027 permet de choisir son créneau.",
+    "scheduleUrl": "https://clubmma.fr/planning/#mma",
+    "scheduleLabel": "Planning MMA & Sol · 2026–2027",
+    "scheduleNote": "Consultez les horaires du MMA, du grappling et du jiu-jitsu brésilien sur le planning publié par le club avant votre déplacement.",
+    "image": "/assets/img/photo_coach_zouhir.webp",
+    "imageAlt": "Zouhir Boumenir, coach de grappling et de jiu-jitsu brésilien au Boxing Center États-Unis",
+    "verifiedAt": "2026-10-07",
+    "sources": [
       {
-        "src": "/assets/img/boxing-center-etats-unis-sparring-boxe-anglaise-casques-ring.webp",
-        "alt": "Deux boxeurs casqués en plein assaut de boxe anglaise avec gants de combat et coquille de protection sur le ring officiel Boxing Center États-Unis à Toulouse"
+        "title": "Boxing Center · Le club et l'équipe",
+        "url": "https://clubmma.fr/clubs/"
       },
       {
-        "src": "/assets/img/boxing-center-etats-unis-coach-guillaume-supervision-sparring.webp",
-        "alt": "Coach Guillaume supervisant au cordeau un assaut engagé entre deux boxeurs sur le ring de compétition à Toulouse"
+        "title": "Boxing Center · MMA et disciplines",
+        "url": "https://clubmma.fr/disciplines/"
       },
       {
-        "src": "/assets/img/boxing-center-etats-unis-frappe-kick-ring-officiel.webp",
-        "alt": "Échange de frappes percutantes en gants de boxe sur le ring bleu officiel marqué Boxing Center"
-      },
-      {
-        "src": "/assets/img/boxing-center-etats-unis-assauts-boxe-ring-vue-plongeante.webp",
-        "alt": "Vue plongeante du ring de compétition Boxing Center avec plusieurs duels de boxe simultanés sous les fresques historiques"
-      },
-      {
-        "src": "/assets/img/boxing-center-etats-unis-boxeurs-preparation-ring-competition.webp",
-        "alt": "Boxeurs et pratiquants préparant leurs gants et bandages au pied du ring de boxe anglaise"
-      },
-      {
-        "src": "/assets/img/boxing-center-etats-unis-consignes-techniques-coin-ring.webp",
-        "alt": "Boxeur aux cordes recevant les ajustements tactiques de son entraîneur devant la fresque de combat"
-      },
-      {
-        "src": "/assets/img/boxing-center-etats-unis-cours-mma-frappe-cage-octogone.webp",
-        "alt": "Travail des frappes pieds-poings et percussions supervisé par le coach devant l'octogone officiel de 7 mètres"
-      },
-      {
-        "src": "/assets/img/boxing-center-etats-unis-sparring-kick-cage-tatamis-jjb.webp",
-        "alt": "Exercice technique de percussion le long de la cage avec section de Jiu-Jitsu Brésilien en kimono en arrière-plan"
-      },
-      {
-        "src": "/assets/img/boxing-center-etats-unis-cours-collectif-binomes-tatamis.webp",
-        "alt": "Ligne de sparrings en binômes équipés de protège-tibias et gants sur les 400 m² de tatamis du complexe toulousain"
-      },
-      {
-        "src": "/assets/img/boxing-center-etats-unis-coach-guillaume-briefing-tactique.webp",
-        "alt": "Coach Guillaume dispensant les consignes d'entraînement et le briefing tactique aux boxeurs du club"
-      },
-      {
-        "src": "/assets/img/boxing-center-etats-unis-vue-ensemble-ring-tatamis-cage.webp",
-        "alt": "Vue d'ensemble du complexe Boxing Center États-Unis à Toulouse : 1 200 m² avec ring officiel, tatamis et octogone"
-      },
-      {
-        "src": "/photos/encadrement-coach-boxe-colomiers-1440.jpg",
-        "alt": "Coach Guillaume serrant les lacets des gants de boxe d'un combattant sur le ring"
-      },
-      {
-        "src": "/assets/img/photo_coach_zouhir.webp",
-        "alt": "Coach Zouhir Boumenir, responsable du pôle sol, lutte et cage au Boxing Center"
+        "title": "Boxing Center · Planning MMA & Sol",
+        "url": "https://clubmma.fr/planning/#mma"
       }
-    ],
-    "schedule": [
-      { "day": "Lundi", "hours": "12h15 - 13h45 (Lutte/Grappling avec Coach Zouhir) · 18h30 - 20h00 (MMA Tous niveaux)" },
-      { "day": "Mardi", "hours": "18h00 - 19h30 (Boxe anglaise & Prépa combat avec Coach Guillaume) · 19h30 - 21h00 (Grappling No-Gi avec Coach Zouhir)" },
-      { "day": "Mercredi", "hours": "17h00 - 18h30 (MMA Débutants & Fondamentaux cage) · 18h30 - 20h00 (Sparrings Dirigés Boxe & MMA)" },
-      { "day": "Jeudi", "hours": "12h15 - 13h45 (Cage Work & Déplacements) · 18h30 - 20h30 (MMA Compétition & Sparring Pro)" },
-      { "day": "Vendredi", "hours": "18h00 - 19h30 (Lutte libre olympique) · 19h30 - 21h00 (Open Mat Sol & JJB)" },
-      { "day": "Samedi", "hours": "10h30 - 12h30 (Masterclass MMA & Assauts supervisés avec Coachs Guillaume & Zouhir)" }
     ]
   },
   {
     "slug": "cage-fight-toulouse",
     "name": "Cage Fight Toulouse",
     "city": "Toulouse",
-    "postalCode": "31000",
+    "cityCode": "TLS",
+    "postalCode": "31200",
     "region": "Occitanie",
-    "address": "15 rue des Sports, 31000 Toulouse",
-    "website": "/clubs/",
-    "surface": "450 m²",
-    "cage": "Cage 5 mètres",
-    "tatami": "200 m²",
-    "disciplines": ["MMA", "Grappling", "Pieds-poings"],
-    "description": "Club historique du MMA toulousain. Fondé par des passionnés, un vivier de combattants professionnels.",
-    "longDescription": "Pionnier de la pratique du combat libre dans la métropole toulousaine, Cage Fight Toulouse rassemble une équipe de combattants engagés sur les circuits régionaux et nationaux.",
-    "image": "/assets/img/mma_cage-800.webp",
-    "imageAlt": "Cage d'entraînement du Cage Fight Toulouse",
-    "gallery": [
-      { "src": "/assets/img/mma_cage-800.webp", "alt": "Cage d'entraînement intérieur" },
-      { "src": "/assets/img/fight.webp", "alt": "Combat et percussion" }
+    "streetAddress": "8 rue Théron de Montaugé",
+    "address": "8 rue Théron de Montaugé, 31200 Toulouse",
+    "website": "https://club-mma-toulouse.com/",
+    "disciplines": [
+      "MMA",
+      "Grappling"
+    ],
+    "description": "Association dédiée au MMA, avec des entraînements à Toulouse Balma-Gramont et à Ramonville-Saint-Agne.",
+    "longDescription": "Cage Fight présente deux salles sur son site : Toulouse Balma-Gramont, au 8 rue Théron de Montaugé, et Ramonville-Saint-Agne, au 33 rue des Ormes. Ses sections comprennent du MMA loisir et du MMA pour les compétiteurs.",
+    "practicalNote": "Le site présente Jérôme, Yannis et Tancrède parmi ses coachs. Il annonce aussi un partenariat avec le Boxing Center États-Unis. Vérifiez la salle concernée avant de choisir votre séance.",
+    "scheduleUrl": "https://club-mma-toulouse.com/",
+    "scheduleLabel": "Plannings Cage Fight par salle",
+    "scheduleNote": "Le site distingue les plannings de Balma-Gramont et de Ramonville-Saint-Agne. Consultez les horaires de la salle où vous souhaitez vous entraîner.",
+    "image": "",
+    "imageAlt": "",
+    "coaches": [],
+    "verifiedAt": "2026-10-07",
+    "sources": [
+      {
+        "title": "Cage Fight · Salles, coachs et plannings",
+        "url": "https://club-mma-toulouse.com/"
+      }
     ]
   },
   {
     "slug": "mma-factory-paris",
     "name": "MMA Factory Paris",
     "city": "Paris",
+    "cityCode": "PAR",
     "postalCode": "75012",
     "region": "Île-de-France",
+    "streetAddress": "91 boulevard Poniatowski",
     "address": "91 boulevard Poniatowski, 75012 Paris",
-    "website": "https://mmafactory.fr/",
-    "surface": "800 m²",
-    "cage": "Octogone officiel",
-    "tatami": "350 m²",
-    "disciplines": ["MMA", "Boxe", "Lutte", "JJB"],
-    "description": "Le camp d'entraînement de Fernand Lopez à Paris. Ciryl Gane, Nassourdine Imavov — la forge des champions UFC.",
-    "longDescription": "Plus grand club de MMA de la capitale, le MMA Factory s'est imposé comme l'écurie française la plus victorieuse à l'UFC sous la direction de Fernand Lopez.",
-    "image": "/assets/img/gym-paris.webp",
-    "imageAlt": "Salle d'entraînement du MMA Factory Paris",
-    "gallery": [
-      { "src": "/assets/img/gym-paris.webp", "alt": "Tapis et espace cage du MMA Factory Paris" },
-      { "src": "/assets/img/gane-champion.png", "alt": "Ciryl Gane à l'entraînement" }
+    "website": "https://www.mma-factory.fr/",
+    "phone": "06 41 99 40 11",
+    "disciplines": [
+      "MMA adultes",
+      "Grappling",
+      "Lutte",
+      "MMA enfants"
+    ],
+    "description": "Au 91 boulevard Poniatowski, le MMA Factory propose du MMA pour adultes et enfants, ainsi que du grappling et de la lutte.",
+    "longDescription": "Le MMA Factory accueille des amateurs et des sportifs de haut niveau. Son site répertorie des cours de MMA adultes, de MMA enfants, de grappling et de lutte, avec une inscription et un planning en ligne.",
+    "practicalNote": "Le réseau présente plusieurs salles, dont Paris et La Défense. Son application MMAFACTORY LIVE permet de consulter les informations des salles et leurs plannings : vérifiez que le créneau choisi correspond bien à Paris.",
+    "scheduleUrl": "https://www.mma-factory.fr/planning/",
+    "scheduleLabel": "Salles et planning MMA Factory",
+    "scheduleNote": "Consultez les plannings sur le site du club ou dans MMAFACTORY LIVE et confirmez la salle de votre séance.",
+    "image": "",
+    "imageAlt": "",
+    "coaches": [],
+    "verifiedAt": "2026-10-07",
+    "sources": [
+      {
+        "title": "MMA Factory · Disciplines et coordonnées",
+        "url": "https://www.mma-factory.fr/"
+      },
+      {
+        "title": "MMA Factory · Planning",
+        "url": "https://www.mma-factory.fr/planning/"
+      }
     ]
   },
   {
     "slug": "team-ezbiri-lyon",
-    "name": "Team Ezbiri Lyon",
-    "city": "Lyon",
+    "name": "Team Ezbiri",
+    "city": "Villeurbanne",
+    "cityCode": "LYO",
     "postalCode": "69100",
     "region": "Auvergne-Rhône-Alpes",
-    "address": "45 rue Jean Jaurès, 69100 Villeurbanne",
-    "website": "/clubs/",
-    "surface": "500 m²",
-    "cage": "Cage 6 mètres",
-    "tatami": "220 m²",
-    "disciplines": ["MMA", "Kickboxing", "Grappling"],
-    "description": "Club MMA de référence en région Rhône-Alpes, dirigé par Mansour Ezbiri.",
-    "longDescription": "Réputé pour son striking d'une agressivité chirurgicale, le camp lyonnais de la Team Ezbiri forme des athlètes complets engagés à l'Hexagone MMA et au KSW.",
-    "image": "/assets/img/team-ezbiri-lyon.webp",
-    "imageAlt": "Team Ezbiri Lyon, espace d'entraînement de combat",
-    "gallery": [
-      { "src": "/assets/img/team-ezbiri-lyon.webp", "alt": "Salle Team Ezbiri Lyon" },
-      { "src": "/assets/img/clinch.webp", "alt": "Travail en corps-à-corps et clinch" }
+    "streetAddress": "4 rue Ligne de l'Est",
+    "address": "4 rue Ligne de l'Est, 69100 Villeurbanne",
+    "metro": "Tram T3 · Bel Air – Les Brosses",
+    "website": "https://team-ezbiri.com/",
+    "phone": "07 62 33 46 38",
+    "surface": "600 m²",
+    "disciplines": [
+      "MMA",
+      "Grappling",
+      "Jiu-Jitsu brésilien",
+      "MMA femmes"
+    ],
+    "description": "Fondée par Fouad Ezbiri à Villeurbanne, la Team Ezbiri propose du MMA, du grappling et du JJB dans une salle de 600 m².",
+    "longDescription": "Fondée en 2006 par Fouad Ezbiri, la Team Ezbiri est située au 4 rue Ligne de l'Est, à Villeurbanne. Le club présente une salle de 600 m² et des sections de MMA, grappling et jiu-jitsu brésilien.",
+    "practicalNote": "Le club répertorie aussi une section MMA femmes et des cours pour enfants. Son site publie le planning de la saison 2026–2027 et les modalités d'inscription.",
+    "scheduleUrl": "https://team-ezbiri.com/",
+    "scheduleLabel": "Planning Team Ezbiri · 2026–2027",
+    "scheduleNote": "Le planning du club distingue les disciplines et les publics. Choisissez le groupe correspondant à votre séance sur son site.",
+    "image": "",
+    "imageAlt": "",
+    "coaches": [],
+    "verifiedAt": "2026-10-07",
+    "sources": [
+      {
+        "title": "Team Ezbiri · Présentation du club",
+        "url": "https://team-ezbiri.com/le-club"
+      },
+      {
+        "title": "Team Ezbiri · Sections et planning",
+        "url": "https://team-ezbiri.com/"
+      }
     ]
   },
   {
     "slug": "nrfight-paris",
-    "name": "NRFight Paris",
+    "name": "NRFight Paris Tolbiac",
     "city": "Paris",
-    "postalCode": "75014",
+    "cityCode": "PAR",
+    "postalCode": "75013",
     "region": "Île-de-France",
-    "address": "17 rue Gassendi, 75014 Paris",
-    "website": "/clubs/",
-    "surface": "400 m²",
-    "cage": "Cage d'entraînement",
-    "tatami": "250 m²",
-    "disciplines": ["MMA", "Luta Livre", "JJB"],
-    "description": "Le bastion de la Luta Livre et du sol en France, fondé par Nicolas Renier.",
-    "longDescription": "Spécialisé dans le combat de soumission sans kimono et la transition vers les frappes au sol, NRFight est un passage incontournable pour le sol des combattants MMA tricolores.",
-    "image": "/assets/img/nrfight-paris.webp",
-    "imageAlt": "NRFight Paris, tatamis et entraînements",
-    "gallery": [
-      { "src": "/assets/img/nrfight-paris.webp", "alt": "Tatamis NRFight Paris" },
-      { "src": "/assets/img/grappling.webp", "alt": "Phase de grappling et soumission" }
+    "streetAddress": "185 rue de Tolbiac",
+    "address": "185 rue de Tolbiac, 75013 Paris",
+    "metro": "Métro ligne 7 · Tolbiac",
+    "website": "https://www.nrfight.com/nrfight-paris",
+    "disciplines": [
+      "MMA",
+      "Luta Livre",
+      "Muay Thaï"
+    ],
+    "description": "MMA et Luta Livre au 185 rue de Tolbiac, à Paris 13e. Le club fondé par Nicolas Renier accueille débutants et compétiteurs.",
+    "longDescription": "Le club parisien de NRFight se situe au 185 rue de Tolbiac, près du métro Tolbiac sur la ligne 7. Ses trois disciplines principales sont le MMA, la Luta Livre et le Muay Thaï.",
+    "practicalNote": "Nicolas Renier est présenté comme le head coach du club. Les créneaux et les réservations sont gérés sur Sportigo, accessible depuis le site NRFight Paris.",
+    "scheduleUrl": "https://www.nrfight.com/nrfight-paris",
+    "scheduleLabel": "Planning et réservation NRFight Paris",
+    "scheduleNote": "Les horaires et les places disponibles sont actualisés dans Sportigo. Accédez au planning de Paris depuis le site du club pour réserver votre séance.",
+    "image": "",
+    "imageAlt": "",
+    "coaches": [],
+    "verifiedAt": "2026-10-07",
+    "sources": [
+      {
+        "title": "NRFight · Club Paris Tolbiac",
+        "url": "https://www.nrfight.com/nrfight-paris"
+      }
     ]
   }
 ]

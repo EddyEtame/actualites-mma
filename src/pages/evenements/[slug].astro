@@ -1,335 +1,157 @@
 ---
-/* Page individuelle d'un événement / soirée de combat MMA — Version Baffled Bar Tale of the Tape */
 import Base from '../../layouts/Base.astro';
 import events from '../../data/events.json';
+import { formatDate, upcomingEvents } from '../../lib/editorial.mjs';
 
 export function getStaticPaths() {
-  return events.map(event => ({
-    params: { slug: event.slug },
-    props: { event }
-  }));
+  return events.map(event => ({ params: { slug: event.slug }, props: { event } }));
 }
 
 const { event } = Astro.props;
-const tape = event.mainTape;
-
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Accueil",
-      "item": "https://prise-mma.fr/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Événements",
-      "item": "https://prise-mma.fr/evenements/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": event.title,
-      "item": `https://prise-mma.fr/evenements/${event.slug}/`
-    }
-  ]
+const otherEvents = upcomingEvents(events).filter(item => item.slug !== event.slug);
+const eventSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SportsEvent',
+  name: event.title,
+  sport: 'Mixed Martial Arts',
+  startDate: event.startAt || event.date,
+  eventStatus: 'https://schema.org/EventScheduled',
+  eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+  location: { '@type': 'Place', name: event.venue },
+  description: event.description,
+  url: 'https://actu-mma.com/evenements/' + event.slug + '/',
 };
 ---
 
-<Base
-  title={`${event.title} — Carte des combats, Face-à-Face & Horaires`}
-  description={event.description}
-  image={event.image}
-  currentNav="evenements"
->
-  <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+<Base title={event.title + ' — Date et combats confirmés'} description={event.description} image={event.image} currentNav="evenements">
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(eventSchema)} />
 
-  <div class="event-page-hero" style={`--org-accent: ${event.accent};`}>
+  <div class="event-page-hero" style={'--org-accent: ' + event.accent + ';'}>
     <div class="event-hero-bg">
-      <img src={event.image} alt={event.title} fetchpriority="high" />
+      <img src={event.image} alt={event.imageAlt} fetchpriority="high" />
       <div class="event-hero-overlay"></div>
     </div>
-
     <div class="wrap event-hero-content" data-reveal>
       <nav class="breadcrumbs mono" aria-label="Fil d'Ariane">
-        <a href="/">Accueil</a> <span>/</span>
-        <a href="/evenements/">Combats</a> <span>/</span>
-        <span class="active">{event.org}</span>
+        <a href="/">Accueil</a><span>/</span><a href="/evenements/">Combats</a><span>/</span><span>{event.org}</span>
       </nav>
-
-      <div class="event-header-badge" style={`background: ${event.accent};`}>
-        <span>{event.badge}</span>
-      </div>
-
+      <div class="event-header-badge" style={'background: ' + event.accent + ';'}><span>{event.badge}</span></div>
       <h1 class="display event-page-title">{event.title}</h1>
       <p class="event-lead-desc">{event.description}</p>
-
+      <p class="mono editorial-image-note">{event.imageCaption} {event.imageSource?.pageUrl && <a href={event.imageSource.pageUrl} target="_blank" rel="noopener noreferrer">Source de la photo ↗</a>}</p>
       <div class="event-quick-info mono">
-        <div class="info-pill">
-          <span class="lbl">Date</span>
-          <strong>{new Date(event.date).toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })}</strong>
-        </div>
-        <div class="info-pill">
-          <span class="lbl">Horaire</span>
-          <strong>{event.time || 'En soirée'}</strong>
-        </div>
-        <div class="info-pill">
-          <span class="lbl">Lieu</span>
-          <strong>{event.venue}</strong>
-        </div>
-        <div class="info-pill">
-          <span class="lbl">Diffusion TV</span>
-          <strong style="color: var(--teal);">{event.broadcaster || 'À confirmer'}</strong>
-        </div>
+        <div class="info-pill"><span class="lbl">Date locale de l'événement</span><strong>{formatDate(event.date, { weekday: 'long' })}</strong></div>
+        <div class="info-pill"><span class="lbl">Horaires</span><strong>{event.time}</strong></div>
+        <div class="info-pill"><span class="lbl">Lieu</span><strong>{event.venue}</strong></div>
+        <div class="info-pill"><span class="lbl">Diffusion</span><strong>{event.broadcaster}</strong></div>
       </div>
-
-      <!-- Compte à rebours dynamique live à la seconde -->
-      <div class="event-countdown-box">
-        <span class="mono countdown-title">Compte à rebours officiel avant le premier coup de gong :</span>
-        <div class="live-countdown-grid mono" id="liveCountdown" data-target={`${event.date}T20:00:00`}>
-          <div class="cd-unit">
-            <span class="cd-num" id="cdDays">00</span>
-            <span class="cd-lbl">Jours</span>
+      {event.startAt && (
+        <div class="event-countdown-box">
+          <span class="mono countdown-title">{event.countdownLabel}</span>
+          <div class="mono event-clock" data-event-clock={event.startAt}>
+            <time datetime={event.startAt}>{event.time}</time>
           </div>
-          <div class="cd-sep">:</div>
-          <div class="cd-unit">
-            <span class="cd-num" id="cdHours">00</span>
-            <span class="cd-lbl">Heures</span>
-          </div>
-          <div class="cd-sep">:</div>
-          <div class="cd-unit">
-            <span class="cd-num" id="cdMins">00</span>
-            <span class="cd-lbl">Min</span>
-          </div>
-          <div class="cd-sep">:</div>
-          <div class="cd-unit">
-            <span class="cd-num" id="cdSecs">00</span>
-            <span class="cd-lbl">Sec</span>
-          </div>
+          <p class="mono">Horaire annoncé par l'organisation. Le compte à rebours ne mesure pas l'heure d'entrée des combattants.</p>
         </div>
-
-        <script is:inline>
-          (function() {
-            function initCountdown() {
-              var box = document.getElementById('liveCountdown');
-              if (!box) return;
-              var targetStr = box.getAttribute('data-target');
-              var targetTime = new Date(targetStr).getTime();
-              if (isNaN(targetTime)) return;
-
-              var elDays = document.getElementById('cdDays');
-              var elHours = document.getElementById('cdHours');
-              var elMins = document.getElementById('cdMins');
-              var elSecs = document.getElementById('cdSecs');
-
-              function pad(n) { return n < 10 ? '0' + n : '' + n; }
-
-              function tick() {
-                var diff = targetTime - Date.now();
-                if (diff <= 0) {
-                  box.innerHTML = '<div class="cd-live-badge"><span class="pulse-dot"></span> EN DIRECT • COMBATS EN COURS DANS LA CAGE</div>';
-                  return;
-                }
-                var d = Math.floor(diff / 86400000);
-                var h = Math.floor((diff % 86400000) / 3600000);
-                var m = Math.floor((diff % 3600000) / 60000);
-                var s = Math.floor((diff % 60000) / 1000);
-
-                if (elDays) elDays.textContent = pad(d);
-                if (elHours) elHours.textContent = pad(h);
-                if (elMins) elMins.textContent = pad(m);
-                if (elSecs) elSecs.textContent = pad(s);
-              }
-
-              tick();
-              setInterval(tick, 1000);
-            }
-            if (document.readyState === 'loading') {
-              document.addEventListener('DOMContentLoaded', initCountdown);
-            } else {
-              initCountdown();
-            }
-          })();
-        </script>
-      </div>
+      )}
     </div>
   </div>
 
   <div class="wrap event-main-layout">
     <div class="event-content-col">
-
-      {tape && (
-        <section class="face-to-face-arena" data-reveal>
-          <div class="arena-header">
-            <span class="kicker" style="color: var(--red);">Choc Principal • Main Event</span>
-            <h2 class="display">Face-à-Face Officiel (Tale of the Tape)</h2>
-          </div>
-
-          <div class="showdown-stage">
-            {/* Coin Rouge */}
-            <div class="corner-profile red-corner-stage">
-              <div class="corner-fighter-card">
-                <div class="corner-media">
-                  <img src={tape.red.image} alt={tape.red.name} width="360" height="420" loading="eager" />
-                  <span class="corner-indicator-badge red mono">COIN ROUGE</span>
-                </div>
-                <div class="corner-info">
-                  <span class="fighter-rank mono">{tape.red.rank}</span>
-                  <h3 class="display corner-name">{tape.red.name}</h3>
-                  {tape.red.nickname && <span class="corner-nick display">« {tape.red.nickname} »</span>}
-                  <div class="corner-meta mono">
-                    <span>{tape.red.flag} {tape.red.country}</span>
-                    <strong class="record-tag">{tape.red.record}</strong>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* VS Divider & Stats Comparison */}
-            <div class="showdown-vs-column">
-              <div class="vs-emblem display">VS</div>
-              <span class="weight-class-tag mono">{event.fights && event.fights[0] ? event.fights[0].weight : 'MMA'}</span>
-            </div>
-
-            {/* Coin Bleu */}
-            <div class="corner-profile blue-corner-stage">
-              <div class="corner-fighter-card">
-                <div class="corner-media">
-                  <img src={tape.blue.image} alt={tape.blue.name} width="360" height="420" loading="eager" />
-                  <span class="corner-indicator-badge blue mono">COIN BLEU</span>
-                </div>
-                <div class="corner-info">
-                  <span class="fighter-rank mono">{tape.blue.rank}</span>
-                  <h3 class="display corner-name">{tape.blue.name}</h3>
-                  {tape.blue.nickname && <span class="corner-nick display">« {tape.blue.nickname} »</span>}
-                  <div class="corner-meta mono">
-                    <span>{tape.blue.flag} {tape.blue.country}</span>
-                    <strong class="record-tag">{tape.blue.record}</strong>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Tale of the tape comparison table */}
-          <div class="tape-comparison-grid mono">
-            <div class="tape-comp-row">
-              <span class="tape-val red-val">{tape.red.age}</span>
-              <span class="tape-crit">Âge</span>
-              <span class="tape-val blue-val">{tape.blue.age}</span>
-            </div>
-            <div class="tape-comp-row">
-              <span class="tape-val red-val">{tape.red.height}</span>
-              <span class="tape-crit">Taille</span>
-              <span class="tape-val blue-val">{tape.blue.height}</span>
-            </div>
-            <div class="tape-comp-row">
-              <span class="tape-val red-val">{tape.red.reach}</span>
-              <span class="tape-crit">Allonge</span>
-              <span class="tape-val blue-val">{tape.blue.reach}</span>
-            </div>
-            <div class="tape-comp-row">
-              <span class="tape-val red-val">{tape.red.weight}</span>
-              <span class="tape-crit">Poids officiel</span>
-              <span class="tape-val blue-val">{tape.blue.weight}</span>
-            </div>
-            <div class="tape-comp-row">
-              <span class="tape-val red-val">{tape.red.stance}</span>
-              <span class="tape-crit">Garde / Stance</span>
-              <span class="tape-val blue-val">{tape.blue.stance}</span>
-            </div>
-            <div class="tape-comp-row">
-              <span class="tape-val red-val">{tape.red.koWins} KO • {tape.red.subWins} SUB</span>
-              <span class="tape-crit">Finitions Pro</span>
-              <span class="tape-val blue-val">{tape.blue.koWins} KO • {tape.blue.subWins} SUB</span>
-            </div>
-          </div>
-
-          {/* Sondage interactif de pronostic */}
-          <div class="community-poll-box">
-            <span class="kicker">Pronostic des passionnés</span>
-            <h4 class="display">Qui voyez-vous l'emporter dans la cage ?</h4>
-            <div class="poll-buttons">
-              <button class="poll-btn poll-btn--red mono" type="button" onclick="alert('Votre vote pour le Coin Rouge est enregistré !')">
-                🔴 Victoire de {tape.red.name}
-              </button>
-              <button class="poll-btn poll-btn--blue mono" type="button" onclick="alert('Votre vote pour le Coin Bleu est enregistré !')">
-                🔵 Victoire de {tape.blue.name}
-              </button>
-            </div>
-          </div>
-        </section>
-      )}
-
-      <!-- Carte des combats officielle -->
       <section class="fight-card-section" data-reveal>
-        <span class="kicker">Carte officielle complète</span>
-        <h2 class="display">Tous les combats programmés</h2>
-
+        <span class="kicker">Affiches vérifiées</span>
+        <h2 class="display">Les combats annoncés</h2>
+        <p class="lede">{event.cardScope}</p>
         <div class="bouts-list">
-          {event.fights && event.fights.map((bout, idx) => (
-            <div class={`bout-row ${idx === 0 ? 'main-event' : ''}`}>
+          {event.fights.map(bout => (
+            <div class={'bout-row' + (bout.role === 'Combat principal' ? ' main-event' : '')}>
               <div class="bout-header mono">
-                <span class="bout-rank">{idx === 0 ? 'MAIN EVENT' : idx === 1 ? 'CO-MAIN EVENT' : `COMBAT #${event.fights.length - idx}`}</span>
-                <span class="bout-weight">{bout.weight || 'MMA'}</span>
+                <span class="bout-rank">{bout.role}</span>
+                <span class="bout-weight">{bout.weight}</span>
                 {bout.title && <span class="bout-title-tag">{bout.title}</span>}
               </div>
               <div class="bout-fighters">
-                <div class="corner red-corner">
-                  <span class="corner-indicator"></span>
-                  <strong class="fighter-name display">{bout.red}</strong>
-                </div>
+                <div class="corner red-corner"><span class="corner-indicator"></span><strong class="fighter-name display">{bout.red}</strong></div>
                 <div class="vs-badge mono">VS</div>
-                <div class="corner blue-corner">
-                  <strong class="fighter-name display">{bout.blue}</strong>
-                  <span class="corner-indicator"></span>
-                </div>
+                <div class="corner blue-corner"><strong class="fighter-name display">{bout.blue}</strong><span class="corner-indicator"></span></div>
               </div>
             </div>
           ))}
         </div>
       </section>
 
-      <!-- Où s'entraîner -->
       <section class="event-training-promo" data-reveal>
         <div class="promo-box">
-          <span class="kicker" style="color: var(--teal);">Préparation au combat</span>
-          <h3 class="display">Envie de monter dans la cage ?</h3>
-          <p>Le <strong>Boxing Center (États-Unis - Toulouse)</strong> est équipé d'un octogone de compétition de 7 mètres, 400 m² de tatamis de lutte et grappling, et deux rings de boxe. Accessible aux débutants comme aux compétiteurs.</p>
-          <a href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer" class="btn btn--teal">
-            Consulter les cours & horaires sur clubmma.fr →
-          </a>
+          <span class="kicker">De la carte au tapis</span>
+          <h3 class="display">Travailler les transitions du MMA</h3>
+          <p>Le clinch, les amenées au sol et le grappling relient les phases du combat. Retrouvez les informations sur les cours de MMA au Boxing Center Toulouse.</p>
+          <a href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer" class="btn btn--teal">Découvrir les cours de MMA ↗</a>
         </div>
       </section>
     </div>
 
-    <!-- Sidebar -->
     <aside class="event-sidebar">
       <div class="sidebar-box">
-        <h4 class="display">Informations pratiques</h4>
-        <ul class="practical-list mono">
-          <li><strong>Organisation :</strong> {event.org}</li>
-          <li><strong>Statut :</strong> <span class="status-tag confirmed">{event.status === 'confirmed' ? 'Confirmé' : 'En attente'}</span></li>
-          <li><strong>Salle :</strong> {event.venue}</li>
-          <li><strong>Chaîne :</strong> {event.broadcaster}</li>
-        </ul>
-      </div>
-
-      <div class="sidebar-box">
-        <h4 class="display">Autres événements à venir</h4>
-        <div class="other-events-mini">
-          {events.filter(e => e.slug !== event.slug).slice(0, 3).map(oth => (
-            <a href={`/evenements/${oth.slug}/`} class="mini-event-item">
-              <span class="mini-date mono">{new Date(oth.date).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short' })}</span>
-              <strong class="mini-title">{oth.title}</strong>
-              <span class="mini-venue">{oth.venue}</span>
-            </a>
+        <h2 class="display">Sources de la carte</h2>
+        <p>Vérifiées le <time datetime={event.verifiedAt}>{formatDate(event.verifiedAt)}</time>.</p>
+        <ul class="practical-list">
+          {event.sources.map(source => (
+            <li><a href={source.url} target="_blank" rel="noopener noreferrer">{source.name} · {source.title} ↗</a></li>
           ))}
-        </div>
+        </ul>
+        <p>La carte et les horaires peuvent évoluer avant l'événement. Les liens ci-dessus donnent accès aux annonces de l'organisation.</p>
       </div>
+      {otherEvents.length > 0 && (
+        <div class="sidebar-box">
+          <h2 class="display">Autres rendez-vous</h2>
+          <div class="other-events-mini">
+            {otherEvents.map(item => (
+              <a href={'/evenements/' + item.slug + '/'} class="mini-event-item">
+                <span class="mini-date mono">{formatDate(item.date, { year: undefined })}</span>
+                <strong class="mini-title">{item.title}</strong><span class="mini-venue">{item.venue}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
     </aside>
   </div>
 </Base>
+
+<script>
+  function setupEventClocks() {
+    document.querySelectorAll<HTMLElement>('[data-event-clock]').forEach(box => {
+      if (box.dataset.clockReady === 'true') return;
+      const target = Date.parse(box.dataset.eventClock || '');
+      if (!Number.isFinite(target)) return;
+      box.dataset.clockReady = 'true';
+      let timer: ReturnType<typeof setInterval> | undefined;
+      const tick = () => {
+        const remaining = target - Date.now();
+        if (remaining <= 0) {
+          box.textContent = 'Horaire annoncé atteint · consulter l’organisation pour le suivi.';
+          if (timer) clearInterval(timer);
+          return;
+        }
+        const days = Math.floor(remaining / 86400000);
+        const hours = Math.floor((remaining % 86400000) / 3600000);
+        const minutes = Math.floor((remaining % 3600000) / 60000);
+        const seconds = Math.floor((remaining % 60000) / 1000);
+        box.textContent = days + ' j · ' + hours + ' h · ' + minutes + ' min · ' + seconds + ' s';
+      };
+      tick();
+      if (target > Date.now()) timer = setInterval(tick, 1000);
+      document.addEventListener('astro:before-swap', () => { if (timer) clearInterval(timer); }, { once: true });
+    });
+  }
+  setupEventClocks();
+  document.addEventListener('astro:page-load', setupEventClocks);
+</script>
+
+<style>
+  .event-clock { font-size: clamp(1.4rem, 4vw, 2.4rem); font-weight: 800; padding: 1rem 0; font-variant-numeric: tabular-nums; }
+  .editorial-image-note { font-size: .75rem; opacity: .72; margin-top: .8rem; }
+  .event-sidebar a { text-decoration: underline; text-underline-offset: .2em; }
+  .event-sidebar li { margin: 1rem 0; }
+</style>

@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "PRISE MMA — Média d'actualité et analyses de sports de combat",
   "engines": {
-    "node": ">=22.12.0"
+    "node": ">=22.19.0"
   },
   "scripts": {
     "dev": "astro dev",
@@ -12,12 +12,21 @@
     "preview": "astro preview",
     "crawl:ai": "node scripts/ai-wired-crawler.mjs",
     "crawl:weekly": "node scripts/crawl-weekly-actu.mjs",
-    "astro": "astro"
+    "astro": "astro",
+    "images": "node scripts/news-image-fetch.mjs",
+    "audit": "node scripts/audit-build.mjs",
+    "test": "node --test scripts/news-pipeline.test.mjs scripts/cloud-news-edition.test.mjs",
+    "news:validate": "node scripts/ai-wired-crawler.mjs --validate",
+    "news:discover": "node scripts/ai-wired-crawler.mjs --discover",
+    "news:cloud": "node scripts/cloud-news-edition.mjs"
   },
   "dependencies": {
     "astro": "^7.3.6"
   },
   "allowScripts": {
     "esbuild": true
+  },
+  "devDependencies": {
+    "sharp": "^0.35.5"
   }
 }
