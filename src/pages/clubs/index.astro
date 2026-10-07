@@ -24,15 +24,127 @@ const otherClubs = clubs.filter(c => c.slug !== 'boxing-center-etats-unis');
     <!-- SPOTLIGHT MAJEUR : BOXING CENTER ÉTATS-UNIS (clubmma.fr) -->
     <section class="bc-spotlight-section" data-reveal>
       <div class="spotlight-card">
-        <div class="spotlight-media">
-          <img src="/assets/img/boxing-center-etats-unis-vue-ensemble-ring-tatamis-cage.webp" alt="Vue d'ensemble du complexe Boxing Center États-Unis à Toulouse : 1 200 m², ring officiel, tatamis et octogone 7 mètres" width="1280" height="720" fetchpriority="high" />
-          <div class="spotlight-badge mono">PÔLE MAJEUR SUD-OUEST</div>
-          <div class="spotlight-thumbs">
-            <div class="thumb"><img src="/assets/img/boxing-center-etats-unis-sparring-boxe-anglaise-casques-ring.webp" alt="Assauts de boxe anglaise casqués sur le ring" /><span>Boxe Ring</span></div>
-            <div class="thumb"><img src="/assets/img/boxing-center-etats-unis-cours-mma-frappe-cage-octogone.webp" alt="Entraînement frappes et cage de combat" /><span>MMA Cage</span></div>
-            <div class="thumb"><img src="/assets/img/photo_coach_zouhir.webp" alt="Coach Zouhir Boumenir" /><span>Coach Zouhir</span></div>
-            <div class="thumb"><img src="/photos/encadrement-coach-boxe-colomiers-1440.jpg" alt="Coach Guillaume encadrement boxe" /><span>Coach Guillaume</span></div>
+        <div class="spotlight-visual-col">
+          <!-- Grande photo principale : dégagée, lumineuse, zéro obstruction -->
+          <div class="spotlight-main-media">
+            <img
+              id="spotlightMainImg"
+              src="/assets/img/boxing-center-etats-unis-vue-ensemble-ring-tatamis-cage.webp"
+              alt="Vue d'ensemble du complexe Boxing Center États-Unis à Toulouse : 1 200 m², ring officiel, tatamis et octogone 7 mètres"
+              width="1280"
+              height="720"
+              fetchpriority="high"
+            />
+            <div class="spotlight-badge mono">PÔLE MAJEUR SUD-OUEST</div>
+            <div class="spotlight-caption-bar mono" id="spotlightCaption">
+              Vue d'ensemble • Complexe 1 200 m² (Ring, Cage 7m, Tatamis 400m²)
+            </div>
           </div>
+
+          <!-- Espace sous l'image principale : galerie des 5 clichés réels -->
+          <div class="spotlight-gallery-below">
+            <div class="gallery-below-header mono">
+              <span>Aperçu immersif (cliquez pour afficher) :</span>
+            </div>
+            <div class="spotlight-thumbs-grid" id="spotlightThumbsGrid">
+              <button
+                type="button"
+                class="sp-thumb is-active"
+                data-src="/assets/img/boxing-center-etats-unis-vue-ensemble-ring-tatamis-cage.webp"
+                data-alt="Vue d'ensemble du complexe Boxing Center États-Unis à Toulouse : 1 200 m², ring officiel, tatamis et octogone 7 mètres"
+                data-caption="Vue d'ensemble • Complexe 1 200 m² (Ring, Cage 7m, Tatamis 400m²)"
+                aria-label="Afficher la vue d'ensemble"
+              >
+                <img src="/assets/img/boxing-center-etats-unis-vue-ensemble-ring-tatamis-cage.webp" alt="Vue d'ensemble 1 200 m²" />
+                <span class="sp-thumb-lbl mono">Vue Générale</span>
+              </button>
+
+              <button
+                type="button"
+                class="sp-thumb"
+                data-src="/assets/img/boxing-center-etats-unis-sparring-boxe-anglaise-casques-ring.webp"
+                data-alt="Deux boxeurs casqués en plein assaut de boxe anglaise avec gants de combat et coquille sur le ring officiel à Toulouse"
+                data-caption="Boxe Anglaise • Sparring dirigé avec casques et gants de combat sur ring officiel"
+                aria-label="Afficher les assauts sur le ring de boxe"
+              >
+                <img src="/assets/img/boxing-center-etats-unis-sparring-boxe-anglaise-casques-ring.webp" alt="Assauts de boxe anglaise casqués sur le ring" />
+                <span class="sp-thumb-lbl mono">Boxe Ring</span>
+              </button>
+
+              <button
+                type="button"
+                class="sp-thumb"
+                data-src="/assets/img/boxing-center-etats-unis-cours-mma-frappe-cage-octogone.webp"
+                data-alt="Entraînement de MMA et percussions devant l'octogone officiel de 7 mètres au Boxing Center"
+                data-caption="MMA & Octogone • Travail technique percussions et cage 7 mètres"
+                aria-label="Afficher l'entraînement dans la cage de MMA"
+              >
+                <img src="/assets/img/boxing-center-etats-unis-cours-mma-frappe-cage-octogone.webp" alt="Entraînement frappes et cage de combat" />
+                <span class="sp-thumb-lbl mono">MMA Cage</span>
+              </button>
+
+              <button
+                type="button"
+                class="sp-thumb"
+                data-src="/photos/encadrement-coach-boxe-colomiers-1440.jpg"
+                data-alt="Coach Guillaume serrant les lacets des gants de boxe d'un combattant sur le ring"
+                data-caption="Coach Guillaume • Striking & préparation combat sur le ring"
+                aria-label="Afficher Coach Guillaume"
+              >
+                <img src="/photos/encadrement-coach-boxe-colomiers-1440.jpg" alt="Coach Guillaume encadrement boxe" />
+                <span class="sp-thumb-lbl mono">Coach Guillaume</span>
+              </button>
+
+              <button
+                type="button"
+                class="sp-thumb"
+                data-src="/assets/img/photo_coach_zouhir.webp"
+                data-alt="Coach Zouhir Boumenir, responsable du pôle sol, lutte et cage au Boxing Center"
+                data-caption="Coach Zouhir Boumenir • Head Coach Sol, Lutte & JJB (Ceinture Noire)"
+                aria-label="Afficher Coach Zouhir"
+              >
+                <img src="/assets/img/photo_coach_zouhir.webp" alt="Coach Zouhir Boumenir" />
+                <span class="sp-thumb-lbl mono">Coach Zouhir</span>
+              </button>
+            </div>
+          </div>
+
+          <script is:inline>
+            (function() {
+              function initSpotlightGallery() {
+                var grid = document.getElementById('spotlightThumbsGrid');
+                var mainImg = document.getElementById('spotlightMainImg');
+                var caption = document.getElementById('spotlightCaption');
+                if (!grid || !mainImg) return;
+
+                var thumbs = grid.querySelectorAll('.sp-thumb');
+                thumbs.forEach(function(btn) {
+                  btn.addEventListener('click', function() {
+                    thumbs.forEach(function(t) { t.classList.remove('is-active'); });
+                    btn.classList.add('is-active');
+
+                    var newSrc = btn.getAttribute('data-src');
+                    var newAlt = btn.getAttribute('data-alt');
+                    var newCap = btn.getAttribute('data-caption');
+
+                    mainImg.classList.add('is-fading');
+                    setTimeout(function() {
+                      mainImg.src = newSrc;
+                      mainImg.alt = newAlt;
+                      if (caption) caption.textContent = newCap;
+                      mainImg.classList.remove('is-fading');
+                    }, 120);
+                  });
+                });
+              }
+
+              if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initSpotlightGallery);
+              } else {
+                initSpotlightGallery();
+              }
+            })();
+          </script>
         </div>
 
         <div class="spotlight-body">

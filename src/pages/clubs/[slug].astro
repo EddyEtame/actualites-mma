@@ -328,20 +328,119 @@ const breadcrumbSchema = {
         <section class="club-gallery-section" data-reveal>
           <span class="kicker">Immersion Visuelle Réelle</span>
           <h2 class="display">Dans le ring, la cage et sur les tatamis</h2>
-          <p class="lede" style="margin-bottom: 1.5rem; font-size: 0.95rem; color: var(--ash);">Photographies réelles des séances d'entraînement, des sparrings et des équipements officiels du club.</p>
+          <p class="lede" style="margin-bottom: 1.5rem; font-size: 0.95rem; color: var(--ash);">Photographies réelles des séances d'entraînement, des sparrings et des équipements officiels du club. Cliquez sur un cliché pour l'ouvrir en haute résolution.</p>
 
-          <div class="gallery-grid">
-            {club.gallery.map(item => {
+          <div class="gallery-grid" id="clubPhotoGallery">
+            {club.gallery.map((item, idx) => {
               const src = typeof item === 'string' ? item : item.src;
               const alt = typeof item === 'string' ? `Installation ${club.name}` : item.alt;
               return (
                 <figure class="gallery-item">
-                  <img src={src} alt={alt} width="640" height="420" loading="lazy" decoding="async" />
+                  <button type="button" class="gallery-zoom-btn" data-gallery-btn data-idx={idx} data-src={src} data-caption={alt} aria-label={`Agrandir la photo : ${alt}`}>
+                    <img src={src} alt={alt} width="640" height="420" loading="lazy" decoding="async" />
+                    <span class="zoom-badge mono">🔍 Agrandir</span>
+                  </button>
                   <figcaption class="sr-only">{alt}</figcaption>
                 </figure>
               );
             })}
           </div>
+
+          <!-- Modal Lightbox Darkroom -->
+          <dialog id="photoLightbox" class="photo-lightbox" aria-label="Visionneuse photo plein écran">
+            <div class="lightbox-inner">
+              <button type="button" class="lightbox-close" id="lightboxCloseBtn" aria-label="Fermer la photo">&times;</button>
+              <div class="lightbox-stage">
+                <button type="button" class="lightbox-nav prev" id="lightboxPrevBtn" aria-label="Photo précédente">‹</button>
+                <div class="lightbox-media-wrap">
+                  <img id="lightboxImg" src="" alt="" />
+                </div>
+                <button type="button" class="lightbox-nav next" id="lightboxNextBtn" aria-label="Photo suivante">›</button>
+              </div>
+              <div class="lightbox-caption-bar mono">
+                <span id="lightboxCounter" class="lightbox-count">1 / 1</span>
+                <p id="lightboxCaption" class="lightbox-desc"></p>
+              </div>
+            </div>
+          </dialog>
+
+          <script is:inline>
+            (function() {
+              function initLightbox() {
+                var btns = Array.from(document.querySelectorAll('[data-gallery-btn]'));
+                var dlg = document.getElementById('photoLightbox');
+                if (!btns.length || !dlg) return;
+
+                var img = document.getElementById('lightboxImg');
+                var counter = document.getElementById('lightboxCounter');
+                var caption = document.getElementById('lightboxCaption');
+                var closeBtn = document.getElementById('lightboxCloseBtn');
+                var prevBtn = document.getElementById('lightboxPrevBtn');
+                var nextBtn = document.getElementById('lightboxNextBtn');
+
+                var currentIndex = 0;
+                var photos = btns.map(function(b) {
+                  return {
+                    src: b.getAttribute('data-src') || '',
+                    caption: b.getAttribute('data-caption') || ''
+                  };
+                });
+
+                function showPhoto(idx) {
+                  if (idx < 0) idx = photos.length - 1;
+                  if (idx >= photos.length) idx = 0;
+                  currentIndex = idx;
+                  var p = photos[currentIndex];
+                  if (img) {
+                    img.src = p.src;
+                    img.alt = p.caption;
+                  }
+                  if (counter) counter.textContent = (currentIndex + 1) + ' / ' + photos.length;
+                  if (caption) caption.textContent = p.caption;
+                }
+
+                btns.forEach(function(b, i) {
+                  b.addEventListener('click', function() {
+                    showPhoto(i);
+                    if (typeof dlg.showModal === 'function') {
+                      dlg.showModal();
+                    } else {
+                      dlg.setAttribute('open', '');
+                    }
+                  });
+                });
+
+                function closeDlg() {
+                  if (typeof dlg.close === 'function') {
+                    dlg.close();
+                  } else {
+                    dlg.removeAttribute('open');
+                  }
+                }
+
+                if (closeBtn) closeBtn.addEventListener('click', closeDlg);
+                if (prevBtn) prevBtn.addEventListener('click', function(e) { e.stopPropagation(); showPhoto(currentIndex - 1); });
+                if (nextBtn) nextBtn.addEventListener('click', function(e) { e.stopPropagation(); showPhoto(currentIndex + 1); });
+
+                dlg.addEventListener('click', function(e) {
+                  if (e.target === dlg) closeDlg();
+                });
+
+                document.addEventListener('keydown', function(e) {
+                  if (!dlg.open) return;
+                  if (e.key === 'Escape') closeDlg();
+                  if (e.key === 'ArrowLeft') showPhoto(currentIndex - 1);
+                  if (e.key === 'ArrowRight') showPhoto(currentIndex + 1);
+                });
+              }
+
+              if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initLightbox);
+              } else {
+                initLightbox();
+              }
+            })();
+          </script>
         </section>
       )}
 

@@ -196,7 +196,7 @@ const sideStories = allArticles.slice(1, 5);
         {allArticles.map((a, i) => (
           <a class="row" href={`/actualites/${a.slug}/`} data-reveal tabindex="0">
             <div class="row__bg" aria-hidden="true">
-              <img src={a.image} alt="" loading="lazy" decoding="async" />
+              <img src={a.image} alt={a.imageAlt || `Illustration : ${a.title}`} loading="lazy" decoding="async" />
               <div class="row__overlay"></div>
             </div>
             <div class="row__content">
