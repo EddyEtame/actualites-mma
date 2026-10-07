@@ -219,34 +219,106 @@
    ========================================================================== */
 
 .chiffres {
-  display: flex;
-  justify-content: flex-start;
-  gap: 3rem;
-  margin-bottom: 3rem;
-  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 3.5rem;
+  padding: 1.5rem 0 2.5rem;
   border-bottom: 1px solid var(--mist);
 }
 
+@media (max-width: 860px) {
+  .chiffres {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.85rem;
+  }
+}
+
 .compteur {
+  background: var(--ink);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-sm);
+  padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.35s ease,
+              border-color 0.3s ease;
+  user-select: none;
 }
+
+/* Fente mécanique split-flap */
+.compteur::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* Voyant LED combat rouge palpitant */
+.compteur::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--red);
+  box-shadow: 0 0 8px var(--red);
+  animation: pulse-dot 2s infinite ease-in-out;
+}
+
+.compteur:hover {
+  transform: translateY(-4px);
+  border-color: var(--teal);
+  box-shadow: 0 14px 32px rgba(11, 138, 114, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
 .compteur b {
   font-family: var(--mono);
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  font-weight: 700;
-  color: var(--red);
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  font-weight: 800;
+  color: #fff;
   line-height: 1;
+  letter-spacing: -0.02em;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 2px 14px rgba(212, 34, 10, 0.6);
+  transition: transform 0.2s ease;
 }
+
+.compteur b.is-counting {
+  color: #fff;
+  filter: blur(0.5px);
+}
+
 .compteur span {
   font-family: var(--ui);
-  font-size: .7rem;
-  font-weight: 600;
+  font-size: 0.72rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: .1em;
-  color: var(--ash);
-  margin-top: .3rem;
+  letter-spacing: 0.12em;
+  color: var(--teal);
+  margin-top: 0.6rem;
+  position: relative;
+  z-index: 2;
+  transition: color 0.25s ease;
+}
+
+.compteur:hover span {
+  color: #fff;
 }
 
 /* ==========================================================================
@@ -425,25 +497,28 @@
 .split-list .row:hover,
 .split-list .row:focus,
 .split-list .row:active,
-.split-list .row.is-active {
-  padding: 1.4rem 1.6rem; /* Maintien strict de la hauteur : pas de saut de layout */
-  margin: 0;              /* Aucun gap entre cartes pour éviter le décrochage */
+.split-list .row.is-active,
+.split-list .row.is-in-view {
+  padding: 1.4rem 1.6rem;
+  margin: 0;
   border-radius: var(--radius-md);
   border-bottom-color: transparent;
-  box-shadow: 0 12px 32px rgba(6, 8, 17, 0.4), inset 0 0 0 1px rgba(212, 34, 10, 0.45);
+  box-shadow: 0 12px 32px rgba(6, 8, 17, 0.45), inset 0 0 0 1px rgba(212, 34, 10, 0.5);
   z-index: 5;
 }
 
 .split-list .row:hover .row__content,
 .split-list .row:focus .row__content,
-.split-list .row.is-active .row__content {
+.split-list .row.is-active .row__content,
+.split-list .row.is-in-view .row__content {
   transform: translateX(8px);
 }
 
 .split-list .row:hover .row__bg,
 .split-list .row:focus .row__bg,
 .split-list .row:active .row__bg,
-.split-list .row.is-active .row__bg {
+.split-list .row.is-active .row__bg,
+.split-list .row.is-in-view .row__bg {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
@@ -451,14 +526,16 @@
 
 .split-list .row:hover .pos,
 .split-list .row:focus .pos,
-.split-list .row.is-active .pos {
+.split-list .row.is-active .pos,
+.split-list .row.is-in-view .pos {
   color: #fff;
   text-shadow: 0 2px 12px rgba(212, 34, 10, 0.85);
 }
 
 .split-list .row:hover .nm,
 .split-list .row:focus .nm,
-.split-list .row.is-active .nm {
+.split-list .row.is-active .nm,
+.split-list .row.is-in-view .nm {
   color: #fff;
   text-shadow: 0 3px 18px rgba(0, 0, 0, 0.95);
   letter-spacing: -0.01em;
@@ -466,7 +543,8 @@
 
 .split-list .row:hover .cat,
 .split-list .row:focus .cat,
-.split-list .row.is-active .cat {
+.split-list .row.is-active .cat,
+.split-list .row.is-in-view .cat {
   color: #fff;
   background-color: var(--red);
   padding: 0.25rem 0.65rem;
@@ -475,23 +553,38 @@
 
 .split-list .row:hover .rec,
 .split-list .row:focus .rec,
-.split-list .row.is-active .rec {
+.split-list .row.is-active .rec,
+.split-list .row.is-in-view .rec {
   color: rgba(255, 255, 255, 0.95);
   font-weight: 700;
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 680px) {
+  .split-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
   .split-list .row {
-    padding: 1.1rem 0.9rem;
+    padding: 1.15rem 1rem;
     margin: 0;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: var(--radius-sm);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    min-height: 76px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   }
   .split-list .row:hover,
   .split-list .row:focus,
   .split-list .row:active,
-  .split-list .row.is-active {
-    padding: 1.1rem 0.9rem;
+  .split-list .row.is-active,
+  .split-list .row.is-in-view {
+    padding: 1.15rem 1rem;
     margin: 0;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(6, 8, 17, 0.4), inset 0 0 0 1px rgba(212, 34, 10, 0.5);
   }
   .split-list .row__content {
     grid-template-columns: 32px 1fr;
@@ -501,7 +594,7 @@
     display: inline-block;
     grid-column: 2;
     justify-self: start;
-    margin-top: 0.2rem;
+    margin-top: 0.25rem;
     font-size: 0.65rem;
   }
   .split-list .rec {

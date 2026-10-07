@@ -79,9 +79,9 @@
   }
 
   /* ------------------------------------------------------- COMPTEURS
-   * Le corpus est l'argument du site. Un nombre posé est une donnée ;
-   * un nombre qui monte est une démonstration. */
-  var compteurs = document.querySelectorAll("[data-compte]");
+   * Le corpus est l'argument du site. Ticking dynamique avec suspense
+   * arena fight-night et seuil d'intersection optimisé pour mobile. */
+  var compteurs = Array.from(document.querySelectorAll("[data-compte]"));
   if (compteurs.length) {
     var ioc = new IntersectionObserver(function (entrees) {
       entrees.forEach(function (e) {
@@ -90,15 +90,42 @@
         ioc.unobserve(el);
         var cible = parseInt(el.getAttribute("data-compte"), 10);
         if (!cible) return;
+
+        var card = el.closest(".compteur");
+        var idx = compteurs.indexOf(el);
         var debut = performance.now();
-        var duree = 1000;
+        var duree = 1100 + idx * 150; // Décalage pour suspense dramatique
+
+        if (card) card.classList.add("is-ticking");
+        el.classList.add("is-counting");
+
         (function pas(t) {
           var p = Math.min(1, (t - debut) / duree);
-          el.textContent = Math.round(cible * (1 - Math.pow(1 - p, 3)));
-          if (p < 1) requestAnimationFrame(pas);
+          // Courbe d'accélération puis freinage net façon chronomètre
+          var ease = 1 - Math.pow(1 - p, 4);
+          var val = Math.floor(cible * ease);
+
+          // Effet de brouillage/suspense avant fixation
+          if (p < 0.6) {
+            el.textContent = Math.floor(Math.random() * (cible + 5));
+          } else {
+            el.textContent = val;
+          }
+
+          if (p < 1) {
+            requestAnimationFrame(pas);
+          } else {
+            el.textContent = cible;
+            el.classList.remove("is-counting");
+            if (card) {
+              card.classList.remove("is-ticking");
+              card.classList.add("is-locked");
+            }
+          }
         })(debut);
       });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.15 });
+
     compteurs.forEach(function (el) { ioc.observe(el); });
   }
 
@@ -206,27 +233,73 @@
     });
   }
 
-  /* --------------------------------------------- SPLIT-LIST TOUCH & HOVER
-   * Sur mobile ou au toucher, agrandit le rectangle et affiche l'image de combat. */
-  var splitRows = document.querySelectorAll(".split-list .row");
+  /* --------------------------------------------- SPLIT-LIST TOUCH & SCROLL MOTION
+   * Sur mobile/tactile, les lignes s'animent au défilement (scroll-spy au centre de l'écran)
+   * et au tap, évitant le piège du hover absent sur smartphone. */
+  var splitRows = Array.from(document.querySelectorAll(".split-list .row"));
   if (splitRows.length) {
-    splitRows.forEach(function (row) {
-      row.addEventListener("pointerenter", function () {
-        splitRows.forEach(function (r) { if (r !== row) r.classList.remove("is-active"); });
-      });
-      row.addEventListener("pointerdown", function () {
-        var wasActive = row.classList.contains("is-active");
-        splitRows.forEach(function (r) { r.classList.remove("is-active"); });
-        if (!wasActive) {
-          row.classList.add("is-active");
+    var isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || window.matchMedia("(max-width: 768px)").matches;
+
+    if (isTouchDevice) {
+      var scrollTicking = false;
+      function updateMobileRows() {
+        var vCenter = window.innerHeight * 0.5;
+        var closest = null;
+        var closestDist = Infinity;
+
+        splitRows.forEach(function (r) {
+          var rect = r.getBoundingClientRect();
+          if (rect.bottom > 60 && rect.top < window.innerHeight - 60) {
+            var center = rect.top + rect.height / 2;
+            var dist = Math.abs(center - vCenter);
+            if (dist < closestDist) {
+              closestDist = dist;
+              closest = r;
+            }
+          }
+        });
+
+        if (closest && closestDist < 140) {
+          splitRows.forEach(function (r) {
+            if (r === closest) {
+              r.classList.add("is-in-view");
+            } else {
+              r.classList.remove("is-in-view");
+            }
+          });
         }
-      });
-    });
-    document.addEventListener("pointerdown", function (e) {
-      if (!e.target.closest(".split-list .row")) {
-        splitRows.forEach(function (r) { r.classList.remove("is-active"); });
+        scrollTicking = false;
       }
-    });
+
+      window.addEventListener("scroll", function () {
+        if (!scrollTicking) {
+          requestAnimationFrame(updateMobileRows);
+          scrollTicking = true;
+        }
+      }, { passive: true });
+
+      // Tap direct
+      splitRows.forEach(function (row) {
+        row.addEventListener("touchstart", function () {
+          splitRows.forEach(function (r) { r.classList.remove("is-in-view"); });
+          row.classList.add("is-in-view");
+        }, { passive: true });
+      });
+
+      // Évaluation initiale
+      setTimeout(updateMobileRows, 150);
+    } else {
+      // Sur ordinateur : hover de haute précision 60fps
+      splitRows.forEach(function (row) {
+        row.addEventListener("mouseenter", function () {
+          splitRows.forEach(function (r) { if (r !== row) r.classList.remove("is-active"); });
+          row.classList.add("is-active");
+        });
+        row.addEventListener("mouseleave", function () {
+          row.classList.remove("is-active");
+        });
+      });
+    }
   }
 
 })();

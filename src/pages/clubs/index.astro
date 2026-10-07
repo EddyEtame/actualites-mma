@@ -53,6 +53,7 @@ const otherClubs = clubs.filter(c => c.slug !== 'boxing-center-etats-unis');
                 data-src="/assets/img/boxing-center-etats-unis-vue-ensemble-ring-tatamis-cage.webp"
                 data-alt="Vue d'ensemble du complexe Boxing Center États-Unis à Toulouse : 1 200 m², ring officiel, tatamis et octogone 7 mètres"
                 data-caption="Vue d'ensemble • Complexe 1 200 m² (Ring, Cage 7m, Tatamis 400m²)"
+                data-pos="center center"
                 aria-label="Afficher la vue d'ensemble"
               >
                 <img src="/assets/img/boxing-center-etats-unis-vue-ensemble-ring-tatamis-cage.webp" alt="Vue d'ensemble 1 200 m²" />
@@ -65,6 +66,7 @@ const otherClubs = clubs.filter(c => c.slug !== 'boxing-center-etats-unis');
                 data-src="/assets/img/boxing-center-etats-unis-sparring-boxe-anglaise-casques-ring.webp"
                 data-alt="Deux boxeurs casqués en plein assaut de boxe anglaise avec gants de combat et coquille sur le ring officiel à Toulouse"
                 data-caption="Boxe Anglaise • Sparring dirigé avec casques et gants de combat sur ring officiel"
+                data-pos="center center"
                 aria-label="Afficher les assauts sur le ring de boxe"
               >
                 <img src="/assets/img/boxing-center-etats-unis-sparring-boxe-anglaise-casques-ring.webp" alt="Assauts de boxe anglaise casqués sur le ring" />
@@ -77,6 +79,7 @@ const otherClubs = clubs.filter(c => c.slug !== 'boxing-center-etats-unis');
                 data-src="/assets/img/boxing-center-etats-unis-cours-mma-frappe-cage-octogone.webp"
                 data-alt="Entraînement de MMA et percussions devant l'octogone officiel de 7 mètres au Boxing Center"
                 data-caption="MMA & Octogone • Travail technique percussions et cage 7 mètres"
+                data-pos="center 20%"
                 aria-label="Afficher l'entraînement dans la cage de MMA"
               >
                 <img src="/assets/img/boxing-center-etats-unis-cours-mma-frappe-cage-octogone.webp" alt="Entraînement frappes et cage de combat" />
@@ -89,6 +92,7 @@ const otherClubs = clubs.filter(c => c.slug !== 'boxing-center-etats-unis');
                 data-src="/photos/encadrement-coach-boxe-colomiers-1440.jpg"
                 data-alt="Coach Guillaume serrant les lacets des gants de boxe d'un combattant sur le ring"
                 data-caption="Coach Guillaume • Striking & préparation combat sur le ring"
+                data-pos="top center"
                 aria-label="Afficher Coach Guillaume"
               >
                 <img src="/photos/encadrement-coach-boxe-colomiers-1440.jpg" alt="Coach Guillaume encadrement boxe" />
@@ -101,6 +105,7 @@ const otherClubs = clubs.filter(c => c.slug !== 'boxing-center-etats-unis');
                 data-src="/assets/img/photo_coach_zouhir.webp"
                 data-alt="Coach Zouhir Boumenir, responsable du pôle sol, lutte et cage au Boxing Center"
                 data-caption="Coach Zouhir Boumenir • Head Coach Sol, Lutte & JJB (Ceinture Noire)"
+                data-pos="top center"
                 aria-label="Afficher Coach Zouhir"
               >
                 <img src="/assets/img/photo_coach_zouhir.webp" alt="Coach Zouhir Boumenir" />
@@ -126,11 +131,13 @@ const otherClubs = clubs.filter(c => c.slug !== 'boxing-center-etats-unis');
                     var newSrc = btn.getAttribute('data-src');
                     var newAlt = btn.getAttribute('data-alt');
                     var newCap = btn.getAttribute('data-caption');
+                    var newPos = btn.getAttribute('data-pos') || 'top center';
 
                     mainImg.classList.add('is-fading');
                     setTimeout(function() {
                       mainImg.src = newSrc;
                       mainImg.alt = newAlt;
+                      mainImg.style.objectPosition = newPos;
                       if (caption) caption.textContent = newCap;
                       mainImg.classList.remove('is-fading');
                     }, 120);
