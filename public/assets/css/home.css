@@ -1,0 +1,891 @@
+/*
+ * PRISE MMA — HOME STYLES
+ *
+ * Les styles spécifiques à la page d'accueil. Chaque section a son propre
+ * rythme — la page est une histoire, pas un catalogue de cartes.
+ *
+ * Nomenclature BEM adaptée : bloc__élément, bloc--modificateur.
+ */
+
+/* ==========================================================================
+   SECTION RHYTHM — alternance paper / ink / teal
+   Le rythme de la page. Chaque changement de fond est un changement d'humeur.
+   ========================================================================== */
+
+.block {
+  padding: 5rem 0 6rem;
+  position: relative;
+}
+
+.block.dark {
+  background-color: var(--void);
+  color: #fff;
+}
+.block.dark .kicker { color: var(--teal); }
+.block.dark .mist, .block.dark .ed-head .lede { color: rgba(255,255,255,.55); }
+
+.block.accent {
+  background-color: var(--teal);
+  color: #fff;
+}
+
+/* ==========================================================================
+   HERO — Palier 1
+   Trois panneaux : le principal saigne sur toute la hauteur gauche, les
+   quatre latéraux empilés à droite sur deux rangées. La chorégraphie
+   d'entrée est gérée par motion.css et motion.js.
+   ========================================================================== */
+
+.hero {
+  position: relative;
+  background-color: #000;
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 55vh repeat(4, 35vh);
+  gap: 2px;
+}
+
+@media (min-width: 900px) {
+  .hero__grid {
+    grid-template-columns: 1.4fr 0.6fr;
+    grid-template-rows: 50vh 50vh;
+    min-height: 100vh;
+  }
+  .hero__main {
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+}
+
+.hero__main,
+.hero__side {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero__visual {
+  position: absolute;
+  inset: 0;
+}
+.hero__visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .7s cubic-bezier(.16,1,.3,1);
+}
+.hero__main:hover .hero__visual img,
+.hero__side:hover .hero__visual img {
+  transform: scale(1.05);
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg,
+    rgba(6,8,17,.88) 0%,
+    rgba(6,8,17,.35) 45%,
+    rgba(6,8,17,.1) 100%);
+  pointer-events: none;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem 2.2rem;
+}
+.hero__content .kicker {
+  color: rgba(255,255,255,.7);
+  margin-bottom: .5rem;
+}
+.hero__main .hero__content h2 {
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  line-height: 1.08;
+  color: #fff;
+  text-shadow: 0 4px 24px rgba(0,0,0,.5);
+}
+.hero__main .hero__content p {
+  margin-top: .6rem;
+  color: rgba(255,255,255,.72);
+  font-size: .95rem;
+  line-height: 1.45;
+  max-width: 500px;
+  font-family: var(--ui);
+}
+.hero__side .hero__content h3 {
+  font-size: clamp(1rem, 1.8vw, 1.35rem);
+  line-height: 1.15;
+  color: #fff;
+}
+
+/* ==========================================================================
+   TICKER — Palier 2
+   Bande rouge vivante. Le point pulse, le texte ne s'arrête jamais.
+   ========================================================================== */
+
+.ticker {
+  background-color: var(--red);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  height: 42px;
+}
+
+.ticker__dot {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem 0 1.5rem;
+}
+.ticker__dot b {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+.ticker__rail {
+  overflow: hidden;
+  flex: 1;
+}
+.ticker__run {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: ticker-scroll 35s linear infinite;
+}
+.ticker:hover .ticker__run {
+  animation-play-state: paused;
+}
+
+.tick {
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+  padding: 0 2.5rem 0 0;
+  font-family: var(--ui);
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.tick strong {
+  font-weight: 800;
+}
+.tick span {
+  opacity: .8;
+  font-weight: 400;
+}
+
+/* ==========================================================================
+   ED-HEAD — Section headers (shared pattern)
+   ========================================================================== */
+
+.ed-head {
+  margin-bottom: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--ink);
+}
+.block.dark .ed-head { border-bottom-color: rgba(255,255,255,.12); }
+.block.accent .ed-head { border-bottom-color: rgba(255,255,255,.2); }
+
+.ed-head h2 {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  line-height: 1.1;
+  margin-top: .3rem;
+}
+.ed-head .lede {
+  margin-top: .5rem;
+  color: var(--ash);
+  font-family: var(--ui);
+  font-size: .95rem;
+}
+
+/* ==========================================================================
+   CHIFFRES — Compteurs animés
+   Un nombre posé est une donnée ; un nombre qui monte est une démonstration.
+   ========================================================================== */
+
+.chiffres {
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--mist);
+}
+
+.compteur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.compteur b {
+  font-family: var(--mono);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  color: var(--red);
+  line-height: 1;
+}
+.compteur span {
+  font-family: var(--ui);
+  font-size: .7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--ash);
+  margin-top: .3rem;
+}
+
+/* ==========================================================================
+   ED-LEAD — Lead article (big feature image + text)
+   ========================================================================== */
+
+.ed-lead {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+@media (min-width: 900px) {
+  .ed-lead {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 2.5rem;
+    align-items: center;
+  }
+}
+
+.ed-lead__media {
+  overflow: hidden;
+  aspect-ratio: 16/10;
+}
+.ed-lead__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .6s cubic-bezier(.16,1,.3,1);
+}
+.ed-lead:hover .ed-lead__media img {
+  transform: scale(1.04);
+}
+
+.ed-lead__copy {
+  padding: 1.5rem 0;
+}
+.ed-lead__copy h3 {
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  line-height: 1.12;
+  margin-top: .4rem;
+  transition: color .3s ease;
+}
+.ed-lead:hover .ed-lead__copy h3 { color: var(--red); }
+.ed-lead__copy p {
+  margin-top: .6rem;
+  color: var(--ash);
+  font-size: .95rem;
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   SPLIT-LIST — Lignes éditoriales numérotées
+   La hiérarchie est l'information. Chaque ligne est un article à cliquer.
+   ========================================================================== */
+
+.split-list {
+  border-top: 2px solid var(--ink);
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.split-list .row {
+  position: relative;
+  display: block;
+  padding: 1.25rem 1.4rem;
+  min-height: 70px;
+  border-bottom: 1px solid var(--mist);
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background-color: transparent;
+  transition: padding 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              margin 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.45s ease,
+              background-color 0.45s ease;
+  will-change: padding, margin, box-shadow;
+}
+
+/* Background image of event/poster */
+.split-list .row__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.08);
+  transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+              visibility 0.45s ease;
+  pointer-events: none;
+  background-color: var(--ink);
+}
+
+.split-list .row__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  filter: saturate(1.2) contrast(1.1);
+}
+
+.split-list .row__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg,
+    rgba(6, 8, 17, 0.94) 0%,
+    rgba(6, 8, 17, 0.82) 40%,
+    rgba(6, 8, 17, 0.72) 100%
+  ),
+  linear-gradient(0deg,
+    rgba(6, 8, 17, 0.6) 0%,
+    transparent 65%
+  );
+}
+
+/* Row content grid */
+.split-list .row__content {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 44px 1fr auto auto;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.split-list .pos {
+  font-family: var(--display);
+  font-size: 1.2rem;
+  color: var(--mist);
+  transition: color 0.35s ease, transform 0.35s ease, text-shadow 0.35s ease;
+}
+
+.split-list .nm {
+  font-family: var(--display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--ink);
+  transition: color 0.35s ease, font-size 0.35s ease, text-shadow 0.35s ease;
+}
+
+.split-list .cat {
+  font-family: var(--ui);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--teal);
+  white-space: nowrap;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  transition: all 0.35s ease;
+}
+
+.split-list .rec {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--ash);
+  white-space: nowrap;
+  transition: color 0.35s ease, text-shadow 0.35s ease;
+}
+
+/* ==========================================================================
+   HOVER / FOCUS / TOUCH EXPANSION STATE
+   Le rectangle grandit nettement et dévoile la vraie photo de combat en fond.
+   ========================================================================== */
+
+.split-list .row:hover,
+.split-list .row:focus,
+.split-list .row:active,
+.split-list .row.is-active {
+  padding: 3.4rem 2.2rem; /* Le pspace s'agrandit considérablement */
+  margin: 0.65rem 0;
+  border-radius: var(--radius-md);
+  border-bottom-color: transparent;
+  box-shadow: 0 18px 42px rgba(6, 8, 17, 0.45), 0 0 0 1px rgba(212, 34, 10, 0.4);
+  z-index: 10;
+}
+
+.split-list .row:hover .row__bg,
+.split-list .row:focus .row__bg,
+.split-list .row:active .row__bg,
+.split-list .row.is-active .row__bg {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.split-list .row:hover .pos,
+.split-list .row:focus .pos,
+.split-list .row.is-active .pos {
+  color: #fff;
+  font-size: 1.45rem;
+  text-shadow: 0 2px 12px rgba(212, 34, 10, 0.85);
+}
+
+.split-list .row:hover .nm,
+.split-list .row:focus .nm,
+.split-list .row.is-active .nm {
+  color: #fff;
+  font-size: clamp(1.25rem, 2.2vw, 1.55rem);
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.95);
+  letter-spacing: -0.01em;
+}
+
+.split-list .row:hover .cat,
+.split-list .row:focus .cat,
+.split-list .row.is-active .cat {
+  color: #fff;
+  background-color: var(--red);
+  padding: 0.35rem 0.85rem;
+  box-shadow: 0 4px 14px rgba(212, 34, 10, 0.6);
+}
+
+.split-list .row:hover .rec,
+.split-list .row:focus .rec,
+.split-list .row.is-active .rec {
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 700;
+  font-size: 0.82rem;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 680px) {
+  .split-list .row {
+    padding: 1.1rem 0.9rem;
+  }
+  .split-list .row:hover,
+  .split-list .row:focus,
+  .split-list .row:active,
+  .split-list .row.is-active {
+    padding: 2.2rem 1.2rem;
+    margin: 0.4rem 0;
+  }
+  .split-list .row__content {
+    grid-template-columns: 32px 1fr;
+    gap: 0.8rem;
+  }
+  .split-list .cat {
+    display: inline-block;
+    grid-column: 2;
+    justify-self: start;
+    margin-top: 0.2rem;
+    font-size: 0.65rem;
+  }
+  .split-list .rec {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   EVENTS-GRID — Combats à venir
+   Cartes d'événements avec badges brandés par organisation.
+   ========================================================================== */
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.2rem;
+}
+
+.event-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  padding: 1.5rem;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: #fff;
+  transition: transform .3s var(--ease-out-expo), border-color .3s ease, background .3s ease;
+}
+.event-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--red);
+  background: rgba(255,255,255,.06);
+}
+
+.event-card--featured {
+  border-color: rgba(212,175,55,.3);
+  position: relative;
+}
+.event-card--featured::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #D4AF37, var(--red));
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.event-card__badge {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-sm);
+  color: #fff;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: .8rem;
+}
+
+.event-card__body {
+  flex: 1;
+  min-width: 0;
+}
+.event-card__body time {
+  display: block;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  color: var(--teal);
+  margin-bottom: .3rem;
+  text-transform: capitalize;
+}
+.event-card__body h3 {
+  font-size: 1.05rem;
+  line-height: 1.18;
+  margin-bottom: .25rem;
+}
+.event-card__body p {
+  color: rgba(255,255,255,.55);
+  font-family: var(--ui);
+  font-size: .82rem;
+  margin-bottom: .4rem;
+}
+
+.event-status {
+  display: inline-block;
+  padding: .15rem .5rem;
+  border-radius: 3px;
+  font-family: var(--ui);
+  font-size: .62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+.event-status.confirmed {
+  background: rgba(34,197,94,.15);
+  color: #22c55e;
+}
+.event-status.pending {
+  background: rgba(245,158,11,.15);
+  color: #f59e0b;
+}
+
+.event-card__countdown {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: .5rem .8rem;
+  background: rgba(212,175,55,.1);
+  border-radius: var(--radius-sm);
+}
+.countdown-label {
+  font-size: .55rem;
+  font-weight: 700;
+  color: #D4AF37;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.countdown-number {
+  font-family: var(--display);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #D4AF37;
+  line-height: 1;
+}
+
+/* ==========================================================================
+   CAGE WIRE — Octogone SVG entre les sections
+   Le fil de cage est l'ADN visuel de PRISE. Il tourne au scroll.
+   ========================================================================== */
+
+.cage-wire {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  color: var(--ink);
+  overflow: hidden;
+}
+.cage-wire__svg {
+  width: 120px;
+  height: 120px;
+  opacity: .5;
+}
+
+/* ==========================================================================
+   ROSTER — Bande horizontale de combattants
+   Grayscale → couleur au survol, clip-path octogone au hover.
+   ========================================================================== */
+
+.roster {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 0 2rem 1rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--mist) transparent;
+}
+.roster::-webkit-scrollbar { height: 4px; }
+.roster::-webkit-scrollbar-thumb { background: var(--mist); border-radius: 4px; }
+
+.roster__item {
+  flex-shrink: 0;
+  width: 200px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.roster__visual {
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+}
+.roster__visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1) contrast(1.15);
+  transition: filter .5s ease, transform .5s ease, clip-path .5s var(--ease-out-expo);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.roster__item:hover .roster__visual img {
+  filter: grayscale(0);
+  transform: scale(1.06);
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.roster__meta {
+  padding: .8rem .2rem 0;
+}
+.roster__meta .kicker { font-size: .6rem; }
+.roster__meta h3 {
+  font-family: var(--display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-top: .2rem;
+  transition: color .3s ease;
+}
+.roster__item:hover .roster__meta h3 { color: var(--red); }
+.roster__meta .mono {
+  font-size: .72rem;
+  color: var(--ash);
+}
+.roster__title {
+  display: inline-block;
+  margin-top: .3rem;
+  padding: .12rem .4rem;
+  background: var(--red);
+  color: #fff;
+  font-family: var(--ui);
+  font-size: .58rem;
+  font-weight: 700;
+  border-radius: 3px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+   ORG-CARDS — Les organisations (sur fond teal)
+   ========================================================================== */
+
+.orgs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.org-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  padding: 1.5rem;
+  background: rgba(0,0,0,.2);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: #fff;
+  transition: transform .3s var(--ease-out-expo), background .3s ease;
+}
+.org-card:hover {
+  transform: translateY(-3px);
+  background: rgba(0,0,0,.35);
+}
+
+.org-card__badge {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-sm);
+  color: #fff;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: .85rem;
+}
+.org-card__body h3 {
+  font-size: 1.1rem;
+  margin-bottom: .3rem;
+  transition: color .3s ease;
+}
+.org-card:hover .org-card__body h3 { color: rgba(255,255,255,1); }
+.org-card__body p {
+  font-family: var(--ui);
+  font-size: .82rem;
+  color: rgba(255,255,255,.7);
+  line-height: 1.4;
+  margin-bottom: .5rem;
+}
+.org-card__stats {
+  display: flex;
+  gap: 1rem;
+  font-size: .68rem;
+  color: rgba(255,255,255,.5);
+}
+
+/* ==========================================================================
+   CLUB-CARDS — Les clubs français
+   ========================================================================== */
+
+.clubs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.club-card {
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--mist);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: transform .3s var(--ease-out-expo), border-color .3s ease, box-shadow .3s ease;
+}
+.club-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--teal);
+  box-shadow: 0 8px 32px rgba(0,0,0,.08);
+}
+
+.club-card__visual {
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+.club-card__visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s ease;
+}
+.club-card:hover .club-card__visual img {
+  transform: scale(1.05);
+}
+
+.club-card__body {
+  padding: 1.2rem 1.3rem 1.4rem;
+}
+.club-card__body h3 {
+  font-size: 1.05rem;
+  margin-top: .2rem;
+  margin-bottom: .3rem;
+  transition: color .3s ease;
+}
+.club-card:hover .club-card__body h3 { color: var(--teal); }
+.club-card__body p {
+  font-family: var(--ui);
+  font-size: .82rem;
+  color: var(--ash);
+  line-height: 1.4;
+  margin-bottom: .6rem;
+}
+
+.club-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+}
+.tag {
+  display: inline-block;
+  padding: .15rem .45rem;
+  background: rgba(11,138,114,.08);
+  color: var(--teal);
+  font-size: .62rem;
+  font-weight: 600;
+  border-radius: 3px;
+  letter-spacing: .03em;
+}
+
+/* ==========================================================================
+   RESPONSIVE — MOBILE
+   ========================================================================== */
+
+@media (max-width: 680px) {
+  .block { padding: 3rem 0 4rem; }
+
+  .hero__grid {
+    grid-template-rows: 45vh repeat(4, 28vh);
+  }
+
+  .hero__content {
+    padding: 1.2rem 1rem;
+  }
+
+  .chiffres {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .roster__item {
+    width: 160px;
+  }
+
+  .orgs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .clubs-grid {
+    grid-template-columns: 1fr;
+  }
+}

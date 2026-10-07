@@ -1,0 +1,72 @@
+---
+/* Page À propos, déontologie et contact de PRISE MMA */
+import Base from '../../layouts/Base.astro';
+---
+
+<Base
+  title="À propos de PRISE MMA — Média d'Actualité & Ligne Éditoriale"
+  description="PRISE MMA est un média indépendant dédié aux arts martiaux mixtes en France. Déontologie journalistique, charte de couverture et contact de la rédaction."
+  currentNav="a-propos"
+>
+  <div class="wrap article-page">
+    <header class="article-header" data-reveal>
+      <span class="kicker">Manifeste & Identité</span>
+      <h1 class="display article-title">PRISE MMA : l'exigence du combat, sans concession</h1>
+      <p class="article-excerpt">
+        Un média fondé par et pour les passionnés de sports de combat, avec une mission limpide : raconter la réalité du MMA français et mondial avec la rigueur du journalisme sportif et l'œil du pratiquant.
+      </p>
+    </header>
+
+    <div class="article-layout">
+      <div class="article-body" data-reveal>
+        <h2>Notre ligne éditoriale</h2>
+        <p>Le MMA n'est pas un spectacle d'invectives : c'est l'un des sports les plus complets et exigeants au monde. Chez <strong>PRISE MMA</strong>, nous refusons les pièges du sensationnalisme et du <em>clickbait</em> facile. Chaque analyse repose sur :</p>
+        <ul>
+          <li><strong>Le respect absolu des combattants</strong> qui montent dans la cage et risquent leur intégrité physique.</li>
+          <li><strong>L'exactitude des faits et des chiffres</strong> : records officiels vérifiés, déclarations sourcées, règles précises.</li>
+          <li><strong>L'œil technique du terrain</strong> : décomposition des phases de striking, analyse du <em>cage control</em> et des transitions de lutte/grappling.</li>
+        </ul>
+
+        <h2>Une indépendance totale</h2>
+        <p>PRISE MMA n'est affilié à aucune organisation de promotion (ni UFC, ni ARES, ni Hexagone MMA). Nous couvrons l'ensemble des ligues avec la même impartialité et la même ferveur critique.</p>
+
+        <aside class="club-partner-callout">
+          <div class="callout-badge">
+            <span class="kicker" style="color: var(--teal);">Terrain & Immersion</span>
+          </div>
+          <h3>Notre lien avec les salles de France</h3>
+          <p>Pour comprendre le MMA, il faut être au contact des tatamis. La rédaction suit régulièrement les entraînements et sparrings dans les plus grands clubs de l'Hexagone, notamment au pôle <strong>Boxing Center (États-Unis - Toulouse)</strong>, référence du Sud-Ouest avec son octogone de 7 mètres et ses 400 m² de tatamis dédiés.</p>
+          <a href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer" class="btn btn--teal">
+            Découvrir le club partenaire Boxing Center (clubmma.fr) →
+          </a>
+        </aside>
+
+        <h2 id="contact">Contacter la rédaction</h2>
+        <p>Vous êtes combattant, entraîneur ou dirigeant de club ? Vous souhaitez soumettre un communiqué officiel, un résultat de gala ou proposer une interview ?</p>
+        <div class="contact-box mono">
+          <p>📧 Email rédaction : <strong>contact@prise-mma.fr</strong></p>
+          <p>📍 Siège éditorial : Toulouse & Paris, France</p>
+          <p>⏱️ Délai de réponse moyen : sous 24 heures ouvrées</p>
+        </div>
+
+        <h2 id="mentions">Mentions légales</h2>
+        <p class="mono" style="font-size: 0.85rem; color: var(--ash);">
+          PRISE MMA est une publication numérique d'information sportive indépendante. Tous droits réservés 2026. Les visuels et marques de promotion cités appartiennent à leurs détenteurs légaux respectifs.
+        </p>
+      </div>
+
+      <aside class="article-sidebar">
+        <div class="sidebar-box">
+          <h4 class="display">Sommaire du média</h4>
+          <ul class="sidebar-org-list">
+            <li><a href="/actualites/">Actualités & Chroniques</a></li>
+            <li><a href="/evenements/">Calendrier des combats</a></li>
+            <li><a href="/combattants/">Roster des combattants</a></li>
+            <li><a href="/organisations/">Les organisations</a></li>
+            <li><a href="/clubs/">Annuaire des clubs</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</Base>

@@ -1,0 +1,41 @@
+---
+/* Roster complet des combattants MMA français */
+import Base from '../../layouts/Base.astro';
+import fighters from '../../data/fighters.json';
+---
+
+<Base
+  title="Combattants MMA Français — Roster, Fiches & Palmarès"
+  description="L'annuaire complet des combattants MMA français évoluant à l'UFC, ARES, Hexagone MMA, PFL et ONE Championship. Records officiels, fiches techniques et biographies."
+  currentNav="combattants"
+>
+  <div class="wrap archive-page">
+    <header class="archive-header" data-reveal>
+      <span class="kicker">Le vivier tricolore</span>
+      <h1 class="display">Les combattants français</h1>
+      <p class="lede">Du champion incontesté Ciryl Gane aux prétendants des grandes ligues européennes : découvrez les athlètes qui font briller le drapeau français dans la cage.</p>
+    </header>
+
+    <div class="fighters-full-grid" data-reveal-group>
+      {fighters.map(f => (
+        <a href={`/combattants/${f.slug}/`} class="fighter-roster-card" data-reveal>
+          <div class="fighter-card-media">
+            <img src={f.image} alt={f.imageAlt} width="480" height="480" loading="lazy" decoding="async" />
+            <div class="card-overlay"></div>
+            {f.title && <span class="card-title-badge mono">🏆 Champion</span>}
+          </div>
+          <div class="fighter-card-content">
+            <div class="card-top-meta mono">
+              <span class="f-org">{f.org}</span>
+              <span class="f-record">{f.record}</span>
+            </div>
+            {f.nickname && <span class="f-nickname display">« {f.nickname} »</span>}
+            <h2 class="display f-name">{f.name}</h2>
+            <p class="f-division mono">{f.division}</p>
+            <span class="f-gym mono">📍 {f.gym} ({f.city})</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</Base>

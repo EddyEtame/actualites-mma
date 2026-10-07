@@ -1,0 +1,119 @@
+/*
+ * PRISE MMA - FONTS
+ * 
+ * Loading strategy: We prefer WOFF2 directly from Google Fonts CDN for speed and cache-hits across the web.
+ * Fallbacks include size-adjust to prevent layout shifts (CLS) while web fonts are loading.
+ * 
+ * Fonts:
+ * - Oswald (700) - Used for high-impact displays and primary headings. Raw, aggressive, industrial.
+ * - Newsreader (400, 400i, 700) - Editorial serif for long-form reading. Gives the site authority and credibility.
+ * - Outfit (400, 500, 600, 700) - Clean, modern UI sans-serif. Used for metadata, kickers, small text.
+ * - JetBrains Mono (400, 700) - Technical monospace. Used for stats, data, weight classes, raw numbers.
+ */
+
+/* ==========================================================================
+   OSWALD (Display)
+   ========================================================================== */
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v49/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiZQ.woff2) format('woff2');
+  /* Size adjust for Arial fallback to match Oswald's narrow metrics */
+  ascent-override: 105%;
+  descent-override: 25%;
+  line-gap-override: 0%;
+  size-adjust: 90%;
+}
+
+/* ==========================================================================
+   NEWSREADER (Serif)
+   ========================================================================== */
+
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/newsreader/v22/x3djYwmFxy67CVGQ8slK7GNAhwwzV6n22T8T7wH6T-y0uV8YV81M7rO1f6Y.woff2) format('woff2');
+  ascent-override: 95%;
+  descent-override: 23%;
+  size-adjust: 102%;
+}
+
+@font-face {
+  font-family: 'Newsreader';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/newsreader/v22/x3dgYwmFxy67CVGQ8slK7GNAhwwzV6n22T8T7wH6T-ywuV8YV81M7rO1f6biJg.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/newsreader/v22/x3djYwmFxy67CVGQ8slK7GNAhwwzV6n22T8T7wH6T-y0uV8YVw5M7rO1f6Y.woff2) format('woff2');
+}
+
+/* ==========================================================================
+   OUTFIT (UI Sans)
+   ========================================================================== */
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/outfit/v11/QGYyz_MVcBeNP4NJtEtq.woff2) format('woff2');
+  ascent-override: 90%;
+  descent-override: 20%;
+  size-adjust: 100%;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/outfit/v11/QGYyz_MVcBeNP4NJtEtq.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/outfit/v11/QGYyz_MVcBeNP4NJtEtq.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/outfit/v11/QGYyz_MVcBeNP4NJtEtq.woff2) format('woff2');
+}
+
+/* ==========================================================================
+   JETBRAINS MONO (Monospace)
+   ========================================================================== */
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwI.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RCXyqwI.woff2) format('woff2');
+}

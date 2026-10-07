@@ -1,0 +1,79 @@
+---
+/* Hub des actualités MMA
+   Toutes les publications, chroniques, résultats et analyses. */
+import Base from '../../layouts/Base.astro';
+import articles from '../../data/articles.json';
+
+const sorted = articles.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+const lead = sorted[0];
+const rest = sorted.slice(1);
+---
+
+<Base
+  title="Actualités MMA — Le fil d'info en direct"
+  description="Toutes les actualités du MMA français et international : UFC, ARES FC, Hexagone MMA, PFL, ONE Championship. Analyses de combats, interviews et résultats."
+  currentNav="actualites"
+>
+  <div class="wrap archive-page">
+    <header class="archive-header" data-reveal>
+      <span class="kicker">Le fil d'information</span>
+      <h1 class="display">Toutes les actualités MMA</h1>
+      <p class="lede">Comptes-rendus d'événements, décryptages tactiques, interviews de coachs et résultats en direct.</p>
+
+      <div class="filter-pills" role="tablist" aria-label="Filtrer par ligue">
+        <a href="#fil" class="pill on">Tous les articles ({sorted.length})</a>
+        <a href="#ufc" class="pill">UFC</a>
+        <a href="#ares" class="pill">ARES FC</a>
+        <a href="#hexagone" class="pill">Hexagone</a>
+        <a href="#pfl" class="pill">PFL</a>
+        <a href="#clubs" class="pill">Clubs & Interviews</a>
+      </div>
+    </header>
+
+    <!-- Lead article -->
+    <section class="archive-lead-section" data-reveal>
+      <a href={`/actualites/${lead.slug}/`} class="archive-lead-card">
+        <div class="archive-lead-media">
+          <img src={lead.image} alt={lead.imageAlt} width="1280" height="720" fetchpriority="high" />
+          <div class="media-overlay"></div>
+        </div>
+        <div class="archive-lead-content">
+          <span class="kicker">{lead.kicker}</span>
+          <h2 class="display">{lead.title}</h2>
+          <p>{lead.excerpt}</p>
+          <div class="lead-meta mono">
+            <span>Rédigé par {lead.author || 'La Rédaction'}</span> •
+            <time datetime={lead.date}>{new Date(lead.date).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}</time>
+          </div>
+          <span class="read-more-btn">Lire l'article complet →</span>
+        </div>
+      </a>
+    </section>
+
+    <!-- Grille des articles -->
+    <section class="archive-grid-section" id="fil">
+      <div class="archive-articles-grid" data-reveal-group>
+        {rest.map(art => (
+          <article class="archive-card" data-reveal>
+            <a href={`/actualites/${art.slug}/`} class="card-media-link">
+              <img src={art.image} alt={art.imageAlt} width="640" height="360" loading="lazy" decoding="async" />
+            </a>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="kicker">{art.kicker}</span>
+                <time class="mono" datetime={art.date}>
+                  {new Date(art.date).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short' })}
+                </time>
+              </div>
+              <h3 class="display">
+                <a href={`/actualites/${art.slug}/`}>{art.title}</a>
+              </h3>
+              <p>{art.excerpt.slice(0, 130)}…</p>
+              <a href={`/actualites/${art.slug}/`} class="card-cta mono">Lire l'analyse →</a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  </div>
+</Base>

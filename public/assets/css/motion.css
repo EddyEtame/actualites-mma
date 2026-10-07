@@ -1,0 +1,189 @@
+/*
+ * PRISE MMA - MOTION & ANIMATION SYSTEM
+ * 
+ * Baffled Bar standards applied: Every movement should have meaning, weight, and impact.
+ * Like a martial artist: sudden bursts of speed followed by controlled holds.
+ */
+
+/* ==========================================================================
+   BASE REVEAL STATES
+   ========================================================================== */
+
+/* Only apply initial hidden states if JS runs (by adding .motion class to html) */
+.motion [data-reveal] {
+  opacity: 0;
+  transform: translateY(32px);
+  will-change: opacity, transform;
+}
+
+.motion [data-reveal].shown {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.7s var(--ease-out-expo), transform 0.7s var(--ease-out-expo);
+}
+
+/* Slower reveal for heavy elements */
+.motion [data-reveal="slow"].shown {
+  transition-duration: 1.2s;
+}
+
+/* Image scaling reveal */
+.motion [data-reveal-media] {
+  overflow: hidden;
+}
+
+.motion [data-reveal-media] img {
+  transform: scale(1.08);
+  transition: transform 1.2s var(--ease-out-expo);
+  will-change: transform;
+}
+
+.motion [data-reveal-media].shown img {
+  transform: scale(1);
+}
+
+/* ==========================================================================
+   TEXT REVEAL MASKS (The "Slide up from behind a wall" effect)
+   ========================================================================== */
+
+.reveal-mask {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.motion .reveal-mask span {
+  display: inline-block;
+  transform: translateY(110%);
+  transition: transform 0.8s var(--ease-out-expo);
+  will-change: transform;
+}
+
+.motion .shown .reveal-mask span,
+.motion .shown.reveal-mask span {
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   STAGGERED GROUPS
+   ========================================================================== */
+
+.motion [data-reveal-group] > * {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s var(--ease-out-expo), transform 0.6s var(--ease-out-expo);
+}
+
+.motion [data-reveal-group].shown > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggering up to 10 children */
+.motion [data-reveal-group].shown > :nth-child(1) { transition-delay: 0.1s; }
+.motion [data-reveal-group].shown > :nth-child(2) { transition-delay: 0.2s; }
+.motion [data-reveal-group].shown > :nth-child(3) { transition-delay: 0.3s; }
+.motion [data-reveal-group].shown > :nth-child(4) { transition-delay: 0.4s; }
+.motion [data-reveal-group].shown > :nth-child(5) { transition-delay: 0.5s; }
+.motion [data-reveal-group].shown > :nth-child(6) { transition-delay: 0.6s; }
+.motion [data-reveal-group].shown > :nth-child(7) { transition-delay: 0.7s; }
+.motion [data-reveal-group].shown > :nth-child(8) { transition-delay: 0.8s; }
+.motion [data-reveal-group].shown > :nth-child(9) { transition-delay: 0.9s; }
+.motion [data-reveal-group].shown > :nth-child(10) { transition-delay: 1.0s; }
+
+/* ==========================================================================
+   KEYFRAMES
+   ========================================================================== */
+
+/* Seamless Ticker Scroll */
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Assumes track is doubled */
+}
+
+.ticker-track {
+  animation: ticker-scroll 20s linear infinite;
+}
+
+/* Live Pulse Dot */
+@keyframes pulse-dot {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.5); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+/* Cage Wire Slow Rotation */
+@keyframes cage-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.cage-svg {
+  animation: cage-rotate 120s linear infinite;
+}
+
+/* Split-flap digit rotation for counters */
+@keyframes count-flip {
+  0% { transform: rotateX(90deg); opacity: 0; }
+  100% { transform: rotateX(0deg); opacity: 1; }
+}
+
+.flip-animate {
+  animation: count-flip 0.4s var(--ease-out-expo) forwards;
+}
+
+/* ==========================================================================
+   INTERACTIVE STATES
+   ========================================================================== */
+
+/* Magnetic button distortion helper (JS will apply coordinates) */
+.btn.magnetic {
+  /* Requires JS to track mouse position and set --mx, --my variables */
+  transform: translate(var(--mx, 0), var(--my, 0));
+  transition: transform 0.1s linear, background-color 0.3s;
+}
+
+.btn.magnetic:not(:hover) {
+  transform: translate(0, 0);
+  transition: transform 0.5s var(--ease-out-expo), background-color 0.3s;
+}
+
+/* ==========================================================================
+   ACCESSIBILITY: PREFERS REDUCED MOTION
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  /* Disable specific infinite loops entirely */
+  .ticker-track,
+  .pulse-dot,
+  .cage-svg {
+    animation: none !important;
+  }
+  
+  /* Override initial hidden states if motion is reduced */
+  .motion [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .motion [data-reveal-media] img {
+    transform: none;
+  }
+  
+  .motion .reveal-mask span {
+    transform: none;
+  }
+}

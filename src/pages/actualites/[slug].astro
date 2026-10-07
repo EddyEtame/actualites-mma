@@ -1,0 +1,154 @@
+---
+/* Page individuelle d'article / post de blog
+   Respecte les standards de la skill 'article-writing' et 'baffled-bar' :
+   Typographie éditoriale haute densité, métadonnées Schema.org complètes, maillage interne. */
+import Base from '../../layouts/Base.astro';
+import articles from '../../data/articles.json';
+
+export function getStaticPaths() {
+  return articles.map(article => ({
+    params: { slug: article.slug },
+    props: { article }
+  }));
+}
+
+const { article } = Astro.props;
+const otherArticles = articles.filter(a => a.slug !== article.slug).slice(0, 3);
+---
+
+<Base
+  title={article.title}
+  description={article.excerpt}
+  image={article.image}
+  type="article"
+  publishedTime={article.date}
+  author={article.author || 'Rédaction PRISE MMA'}
+  currentNav="actualites"
+>
+  <article class="article-page wrap">
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs mono" aria-label="Fil d'Ariane">
+      <a href="/">Accueil</a> <span>/</span>
+      <a href="/actualites/">Actualités</a> <span>/</span>
+      <span class="active">{article.kicker}</span>
+    </nav>
+
+    <!-- Header de l'article -->
+    <header class="article-header" data-reveal>
+      <div class="article-meta">
+        <span class="kicker">{article.kicker}</span>
+        <span class="dot">•</span>
+        <time class="mono" datetime={article.date}>
+          {new Date(article.date).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}
+        </time>
+        <span class="dot">•</span>
+        <span class="read-time mono">{article.readTime || '5 min de lecture'}</span>
+      </div>
+
+      <h1 class="display article-title">{article.title}</h1>
+      <p class="article-excerpt">{article.excerpt}</p>
+
+      <div class="article-author-bar">
+        <div class="author-info">
+          <span class="author-label mono">Rédigé par</span>
+          <strong class="author-name">{article.author || 'Rédaction PRISE MMA'}</strong>
+        </div>
+        <div class="author-share">
+          <span class="mono">Média indépendant</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Image principale -->
+    <figure class="article-hero-media" data-reveal>
+      <img src={article.image} alt={article.imageAlt} width="1280" height="720" fetchpriority="high" />
+      <figcaption class="mono">
+        Photo : {article.imageAlt} · Archives & Reportages PRISE MMA
+      </figcaption>
+    </figure>
+
+    <!-- Corps de l'article -->
+    <div class="article-layout">
+      <div class="article-body">
+        {article.content && article.content.map(paragraph => (
+          <Fragment set:html={paragraph} />
+        ))}
+
+        <!-- Encadré partenaire subtil : Boxing Center États-Unis -->
+        <aside class="club-partner-callout">
+          <div class="callout-badge">
+            <span class="kicker" style="color: var(--teal);">Pratiquer le MMA</span>
+          </div>
+          <h3>S'entraîner dans les conditions professionnelles à Toulouse</h3>
+          <p>Vous souhaitez débuter ou perfectionner votre sol et striking ? Le <strong>Boxing Center (salle des États-Unis)</strong> met à disposition le plus grand pôle MMA du Sud-Ouest : 1 200 m², un octogone officiel de 7 mètres, deux rings et 400 m² de tatamis encadrés par des coachs diplômés.</p>
+          <a href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer" class="btn btn--teal">
+            Découvrir la salle Boxing Center États-Unis (clubmma.fr) →
+          </a>
+        </aside>
+      </div>
+
+      <!-- Barre latérale -->
+      <aside class="article-sidebar">
+        <div class="sidebar-box">
+          <h4 class="display">Dans la même rubrique</h4>
+          <div class="sidebar-posts">
+            {otherArticles.map(rel => (
+              <a href={`/actualites/${rel.slug}/`} class="sidebar-item">
+                <span class="sidebar-kicker">{rel.kicker}</span>
+                <h5>{rel.title}</h5>
+                <span class="mono sidebar-date">
+                  {new Date(rel.date).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short' })}
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div class="sidebar-box box-orgs">
+          <h4 class="display">Organisations</h4>
+          <ul class="sidebar-org-list">
+            <li><a href="/organisations/ufc/">UFC (Monde)</a></li>
+            <li><a href="/organisations/ares/">ARES FC (France)</a></li>
+            <li><a href="/organisations/hexagone-mma/">Hexagone MMA (France)</a></li>
+            <li><a href="/organisations/pfl/">PFL Europe</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Articles liés -->
+    <section class="related-section" data-reveal>
+      <div class="related-head">
+        <span class="kicker">Continuer la lecture</span>
+        <h2 class="display">Dernières analyses et comptes-rendus</h2>
+      </div>
+      <div class="related-grid">
+        {otherArticles.map(item => (
+          <a href={`/actualites/${item.slug}/`} class="related-card">
+            <div class="related-media">
+              <img src={item.image} alt={item.imageAlt} width="480" height="270" loading="lazy" decoding="async" />
+            </div>
+            <div class="related-copy">
+              <span class="kicker">{item.kicker}</span>
+              <h3 class="display">{item.title}</h3>
+              <p>{item.excerpt.slice(0, 110)}…</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <!-- Sticky training banner for clubmma.fr -->
+    <div class="sticky-gym-bar">
+      <div class="sticky-gym-inner">
+        <div class="sticky-gym-text">
+          <strong>Envie de pratiquer le MMA dans les conditions des pros ?</strong>
+          <span>Octogone officiel 7m, 400 m² de tatamis, cours sol & striking au Boxing Center Toulouse États-Unis.</span>
+        </div>
+        <a href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer" class="btn btn--teal btn--compact">
+          Découvrir le Pôle MMA (clubmma.fr) →
+        </a>
+      </div>
+    </div>
+  </article>
+</Base>

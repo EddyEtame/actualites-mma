@@ -1,0 +1,56 @@
+[
+  {
+    "slug": "boxing-center-etats-unis",
+    "name": "Boxing Center (États-Unis)",
+    "city": "Toulouse",
+    "disciplines": ["MMA", "Grappling", "Boxe anglaise", "Lutte"],
+    "description": "Le pôle MMA du réseau : 1 200 m², octogone officiel de combat, grand ring, cage et 400 m² de tatamis dédiés au combat au sol et MMA.",
+    "image": "/assets/img/hero-cage-mma.webp",
+    "imageAlt": "Octogone et espace d'entraînement MMA au Boxing Center Toulouse États-Unis"
+  },
+  {
+    "slug": "cage-fight-toulouse",
+    "name": "Cage Fight Toulouse",
+    "city": "Toulouse",
+    "disciplines": ["MMA", "Grappling", "Pieds-poings"],
+    "description": "Club historique du MMA toulousain. Fondé par des passionnés, un vivier de combattants professionnels.",
+    "image": "/assets/img/mma_cage-800.webp",
+    "imageAlt": "Cage d'entraînement du Cage Fight Toulouse"
+  },
+  {
+    "slug": "mma-factory-paris",
+    "name": "MMA Factory",
+    "city": "Paris",
+    "disciplines": ["MMA", "Boxe", "Lutte", "JJB"],
+    "description": "Le club de Fernand Lopez à Paris. Ciryl Gane, Francis Ngannou — la fabrique de champions.",
+    "image": "/assets/img/gym-paris.webp",
+    "imageAlt": "Salle d'entraînement du MMA Factory Paris"
+  },
+  {
+    "slug": "team-parisi-marseille",
+    "name": "Team Parisi",
+    "city": "Marseille",
+    "disciplines": ["MMA", "Boxe thaïlandaise", "Grappling"],
+    "description": "Centre de formation MMA et Muay Thaï à Marseille. Compétiteurs ARES et Hexagone.",
+    "image": "/assets/img/mma_grappling_sol.webp",
+    "imageAlt": "Entraînement de grappling et lutte au sol Team Parisi"
+  },
+  {
+    "slug": "team-ezbiri-lyon",
+    "name": "Team Ezbiri",
+    "city": "Lyon",
+    "disciplines": ["MMA", "Boxe anglaise", "Grappling"],
+    "description": "Club MMA de référence à Lyon, dirigé par Mansour Ezbiri. Formation complète, compétition nationale.",
+    "image": "/assets/img/team-ezbiri-lyon.webp",
+    "imageAlt": "Team Ezbiri Lyon, espace d'entraînement de combat"
+  },
+  {
+    "slug": "nrfight-paris",
+    "name": "NRFight",
+    "city": "Paris",
+    "disciplines": ["MMA", "JJB", "Lutte"],
+    "description": "Salle parisienne de MMA et jiu-jitsu brésilien. Nassourdine Imavov y a fait ses armes.",
+    "image": "/assets/img/nrfight-paris.webp",
+    "imageAlt": "NRFight Paris, tatamis et entraînements"
+  }
+]

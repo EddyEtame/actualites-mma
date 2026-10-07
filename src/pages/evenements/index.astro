@@ -1,0 +1,68 @@
+---
+/* Hub Calendrier des combats MMA
+   Tous les rendez-vous à venir, diffusions et cartes officielles. */
+import Base from '../../layouts/Base.astro';
+import events from '../../data/events.json';
+
+const sortedEvents = events.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+---
+
+<Base
+  title="Calendrier des Combats MMA — Dates, Horaires & Cartes"
+  description="Tous les prochains événements MMA en France et dans le monde : UFC, ARES FC, Hexagone MMA, PFL Europe. Horaires de diffusion, cartes des combats et billetterie."
+  currentNav="evenements"
+>
+  <div class="wrap archive-page">
+    <header class="archive-header" data-reveal>
+      <span class="kicker">Calendrier officiel</span>
+      <h1 class="display">Les combats à venir</h1>
+      <p class="lede">Retrouvez l'intégralité des dates, cartes de combat et canaux de diffusion pour ne rien manquer des grandes soirées de combat.</p>
+    </header>
+
+    <div class="events-full-list" data-reveal-group>
+      {sortedEvents.map(ev => (
+        <article class="event-row-card" data-reveal>
+          <div class="event-badge-col" style={`background: ${ev.accent};`}>
+            <span class="badge-text display">{ev.badge}</span>
+            <span class="org-name mono">{ev.org}</span>
+          </div>
+
+          <div class="event-main-col">
+            <div class="event-row-meta mono">
+              <time datetime={ev.date}>
+                {new Date(ev.date).toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })}
+              </time>
+              <span class="bullet">•</span>
+              <span>{ev.time || 'Horaire TBA'}</span>
+              <span class="bullet">•</span>
+              <span class="status-badge confirmed">{ev.status === 'confirmed' ? 'Confirmé' : 'À confirmer'}</span>
+            </div>
+
+            <h2 class="display event-row-title">
+              <a href={`/evenements/${ev.slug}/`}>{ev.title}</a>
+            </h2>
+
+            <p class="event-row-desc">{ev.description}</p>
+
+            <div class="event-venue-info mono">
+              <span>📍 {ev.venue}</span>
+              {ev.broadcaster && <span class="broadcast-tag">📺 {ev.broadcaster}</span>}
+            </div>
+          </div>
+
+          <div class="event-action-col">
+            {ev.countdown && (
+              <div class="row-countdown">
+                <span class="mono">Compte à rebours</span>
+                <strong data-countdown={`${ev.date}T20:00:00`}>Calcul…</strong>
+              </div>
+            )}
+            <a href={`/evenements/${ev.slug}/`} class="btn btn--primary">
+              Voir la carte des combats →
+            </a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</Base>

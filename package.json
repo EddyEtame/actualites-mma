@@ -1,0 +1,23 @@
+{
+  "name": "prise-mma",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "PRISE MMA — Média d'actualité et analyses de sports de combat",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "crawl:ai": "node scripts/ai-wired-crawler.mjs",
+    "crawl:weekly": "node scripts/crawl-weekly-actu.mjs",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^7.3.6"
+  },
+  "allowScripts": {
+    "esbuild": true
+  }
+}

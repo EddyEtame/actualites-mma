@@ -1,0 +1,135 @@
+---
+/* Page individuelle d'une organisation de MMA */
+import Base from '../../layouts/Base.astro';
+import organisations from '../../data/organisations.json';
+import articles from '../../data/articles.json';
+
+export function getStaticPaths() {
+  return organisations.map(org => ({
+    params: { slug: org.slug },
+    props: { org }
+  }));
+}
+
+const { org } = Astro.props;
+const relatedArticles = articles.filter(a =>
+  a.kicker.toLowerCase().includes(org.name.toLowerCase()) ||
+  a.title.toLowerCase().includes(org.name.toLowerCase())
+);
+---
+
+<Base
+  title={`${org.name} (${org.fullName}) — Guide de la Ligue, Règles & Français`}
+  description={org.description}
+  image={org.image}
+  currentNav="organisations"
+>
+  <div class="org-hero-block" style={`--org-color: ${org.accent};`}>
+    <div class="wrap org-hero-inner" data-reveal>
+      <nav class="breadcrumbs mono" aria-label="Fil d'Ariane">
+        <a href="/">Accueil</a> <span>/</span>
+        <a href="/organisations/">Organisations</a> <span>/</span>
+        <span class="active">{org.name}</span>
+      </nav>
+
+      <div class="org-title-row">
+        <div class="org-big-badge display" style={`background: ${org.accent};`}>
+          {org.badge}
+        </div>
+        <div>
+          <span class="kicker" style="color: rgba(255,255,255,0.7);">{org.fullName}</span>
+          <h1 class="display org-h1">{org.name}</h1>
+        </div>
+      </div>
+
+      <p class="org-lead-p">{org.description}</p>
+    </div>
+  </div>
+
+  <div class="wrap org-main-grid">
+    <div class="org-content-col">
+      <!-- Fiche technique de la ligue -->
+      <section class="org-specs-section" data-reveal>
+        <span class="kicker">Format & Réglementation</span>
+        <h2 class="display">Spécifications techniques de la ligue</h2>
+
+        <div class="specs-table-grid mono">
+          <div class="spec-row">
+            <span class="s-label">Siège :</span>
+            <span class="s-val">{org.headquarters}</span>
+          </div>
+          <div class="spec-row">
+            <span class="s-label">Fondation :</span>
+            <span class="s-val">{org.founded}</span>
+          </div>
+          <div class="spec-row">
+            <span class="s-label">Type d'arène / Cage :</span>
+            <span class="s-val">{org.cage}</span>
+          </div>
+          <div class="spec-row">
+            <span class="s-label">Règles appliquées :</span>
+            <span class="s-val">{org.rules}</span>
+          </div>
+          <div class="spec-row">
+            <span class="s-label">Diffuseur officiel :</span>
+            <span class="s-val" style="color: var(--teal);">{org.broadcast}</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Les combattants français dans cette organisation -->
+      <section class="org-fighters-section" data-reveal>
+        <span class="kicker">Représentation Tricolore</span>
+        <h2 class="display">Les Français engagés dans l'organisation</h2>
+        <ul class="french-fighters-list">
+          {org.frenchFighters && org.frenchFighters.map(f => (
+            <li class="fighter-tag-item mono">
+              <span>🥋</span> <strong>{f}</strong>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <!-- Pratiquer le MMA dans ces conditions -->
+      <section class="org-gym-promo" data-reveal>
+        <div class="promo-box">
+          <span class="kicker" style="color: var(--teal);">Infrastructures Pro</span>
+          <h3 class="display">S'entraîner dans une cage aux normes des grandes ligues</h3>
+          <p>Le <strong>Boxing Center (États-Unis - Toulouse)</strong> est doté d'un véritable octogone de compétition de 7 mètres répondant aux standards des organisations professionnelles. Accessible aux licenciés et compétiteurs du Grand Sud.</p>
+          <a href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer" class="btn btn--teal">
+            Découvrir l'octogone Boxing Center États-Unis (clubmma.fr) →
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Articles liés -->
+    <aside class="org-sidebar">
+      <div class="sidebar-box">
+        <h4 class="display">Actualités {org.name}</h4>
+        {relatedArticles.length > 0 ? (
+          <div class="sidebar-posts">
+            {relatedArticles.map(a => (
+              <a href={`/actualites/${a.slug}/`} class="sidebar-item">
+                <span class="sidebar-kicker">{a.kicker}</span>
+                <h5>{a.title}</h5>
+                <span class="mono sidebar-date">{new Date(a.date).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short' })}</span>
+              </a>
+            ))}
+          </div>
+        ) : (
+          <p class="mono" style="font-size: 0.85rem; color: var(--ash);">Aucun article récent dédié pour le moment.</p>
+        )}
+      </div>
+
+      <div class="sidebar-box">
+        <h4 class="display">Toutes les ligues</h4>
+        <ul class="sidebar-org-list">
+          {organisations.filter(o => o.slug !== org.slug).map(o => (
+            <li><a href={`/organisations/${o.slug}/`}>{o.name}</a></li>
+          ))}
+        </ul>
+      </div>
+    </aside>
+  </div>
+</Base>

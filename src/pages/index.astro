@@ -1,0 +1,431 @@
+---
+/* PRISE MMA — Page d'accueil officielle
+   Architecture Baffled Bar en 7 paliers, connectée à l'ensemble du média multi-pages. */
+import articles from '../data/articles.json';
+import events from '../data/events.json';
+import fighters from '../data/fighters.json';
+import organisations from '../data/organisations.json';
+import clubs from '../data/clubs.json';
+
+const allArticles = articles;
+const mainStory = allArticles[0];
+const sideStories = allArticles.slice(1, 5);
+---
+
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PRISE MMA — L'actualité du MMA français et mondial</title>
+  <meta name="description" content="Combats à venir, résultats en direct, organisations, clubs et combattants français. UFC, ARES FC, Hexagone MMA, PFL, ONE Championship." />
+  <link rel="canonical" href="https://prise-mma.fr/" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="PRISE MMA" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="PRISE MMA — L'actualité du MMA français et mondial" />
+  <meta property="og:description" content="Combats à venir, résultats en direct, organisations, clubs et combattants français. UFC, ARES FC, Hexagone MMA, PFL, ONE." />
+  <meta property="og:url" content="https://prise-mma.fr/" />
+  <meta property="og:image" content="https://prise-mma.fr/assets/img/gane.webp" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PRISE MMA — L'actualité du MMA français" />
+  <meta name="twitter:description" content="Combats à venir, résultats, organisations, clubs et combattants français." />
+  <meta name="twitter:image" content="https://prise-mma.fr/assets/img/gane.webp" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+  <!-- Fonts & Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/fonts.css" />
+  <link rel="stylesheet" href="/assets/css/base.css" />
+  <link rel="stylesheet" href="/assets/css/home.css" />
+  <link rel="stylesheet" href="/assets/css/motion.css" />
+
+  <!-- Schema.org -->
+  <script is:inline type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "NewsMediaOrganization",
+    "name": "PRISE MMA",
+    "url": "https://prise-mma.fr/",
+    "description": "Média indépendant d'actualité MMA en français.",
+    "foundingDate": "2026",
+    "knowsAbout": ["MMA", "UFC", "ARES", "Hexagone MMA", "PFL", "ONE Championship"]
+  })} />
+
+  <script is:inline>document.documentElement.classList.add('fx');</script>
+  <script is:inline defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script is:inline defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+
+<body class="home">
+  <a class="skip" href="#contenu">Aller au contenu</a>
+
+  <!-- ======================== HEADER ======================== -->
+  <header>
+    <div class="header-inner">
+      <a class="brand" href="/" aria-label="PRISE MMA Accueil">
+        <span class="brand__mark">PRISE</span>
+        <span class="brand__tag mono">MMA</span>
+      </a>
+      <nav class="main" aria-label="Navigation principale">
+        <a class="on" href="/">Accueil</a>
+        <a href="/actualites/">Actualités</a>
+        <a href="/evenements/">Combats</a>
+        <a href="/combattants/">Combattants</a>
+        <a href="/organisations/">Organisations</a>
+        <a href="/clubs/">Clubs</a>
+        <a class="nav-clubmma" href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer" title="Boxing Center États-Unis — Salle MMA Toulouse">
+          <span>Pôle MMA</span> <span class="tag-live">31</span>
+        </a>
+      </nav>
+      <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu" data-menu>
+        <i></i><i></i><i></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Drawer mobile -->
+  <div class="drawer" id="menu" data-drawer hidden>
+    <button class="drawer__close" type="button" aria-label="Fermer le menu" data-close>&times;</button>
+    <div class="drawer__brand">
+      <span class="brand__mark">PRISE</span>
+      <span class="brand__tag mono">MMA</span>
+    </div>
+    <nav aria-label="Toutes les rubriques">
+      <a class="on" href="/">Accueil</a>
+      <a href="/actualites/">Actualités</a>
+      <a href="/evenements/">Combats à venir</a>
+      <a href="/combattants/">Combattants</a>
+      <a href="/organisations/">Organisations</a>
+      <a href="/clubs/">Clubs</a>
+      <a href="/a-propos/">À propos & Ligne éditoriale</a>
+      <div class="drawer__featured-club">
+        <span class="kicker">Partenaire entraînement</span>
+        <a href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer" class="drawer__club-link">
+          <strong>Boxing Center États-Unis</strong>
+          <span>1 200 m² dédiés au MMA & Grappling à Toulouse →</span>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <main id="contenu">
+
+  <!-- ======================== PALIER 1 — HERO ======================== -->
+  <section class="hero">
+    <div class="hero__grid">
+      <!-- Main story -->
+      <a class="hero__main" href={`/actualites/${mainStory.slug}/`} data-reveal data-reveal-media>
+        <div class="hero__visual">
+          <img src={mainStory.image} alt={mainStory.imageAlt} width="1200" height="800" fetchpriority="high" />
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <span class="kicker">{mainStory.kicker}</span>
+          <h2 class="display">
+            <span class="reveal-mask"><span>{mainStory.title}</span></span>
+          </h2>
+          <p>{mainStory.excerpt.slice(0, 140)}…</p>
+        </div>
+      </a>
+      <!-- Side stories -->
+      {sideStories.map((s, i) => (
+        <a class={`hero__side hero__side--${i + 1}`} href={`/actualites/${s.slug}/`} data-reveal data-reveal-media>
+          <div class="hero__visual">
+            <img src={s.image} alt={s.imageAlt} width="600" height="400" loading="lazy" decoding="async" />
+          </div>
+          <div class="hero__overlay"></div>
+          <div class="hero__content">
+            <span class="kicker">{s.kicker}</span>
+            <h3 class="display">{s.title}</h3>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- ======================== PALIER 2 — TICKER ======================== -->
+  <div class="ticker">
+    <div class="ticker__dot"><b></b></div>
+    <div class="ticker__rail">
+      <div class="ticker__run">
+        <span class="tick"><strong>UFC 334</strong><span>Gane vs Hokit · 14 novembre · MSG New York</span></span>
+        <span class="tick"><strong>ARES 44</strong><span>Paris · 31 octobre</span></span>
+        <span class="tick"><strong>Hexagone 22</strong><span>Zénith de Rouen · 8 novembre</span></span>
+        <span class="tick"><strong>PFL Europe 5</strong><span>Paris · 29 novembre</span></span>
+        <span class="tick"><strong>{allArticles.length} articles</strong><span>toutes organisations, en français</span></span>
+        <span class="tick"><strong>{fighters.length} combattants</strong><span>portraits et parcours</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================== PALIER 3 — LE FIL ======================== -->
+  <section class="block ed-week" id="fil">
+    <div class="wrap">
+      <div class="ed-head" data-reveal>
+        <span class="kicker">À la une</span>
+        <h2 class="display">L'actualité du MMA, <span class="tint">en français</span></h2>
+        <p class="lede">Le MMA n'attend pas. Ni en cage, ni ici.</p>
+      </div>
+
+      <!-- Compteurs -->
+      <div class="chiffres" data-reveal-group>
+        <p class="compteur"><b data-compte={String(allArticles.length)}>{allArticles.length}</b><span>articles</span></p>
+        <p class="compteur"><b data-compte={String(fighters.length)}>{fighters.length}</b><span>combattants</span></p>
+        <p class="compteur"><b data-compte={String(clubs.length)}>{clubs.length}</b><span>clubs français</span></p>
+        <p class="compteur"><b data-compte={String(organisations.length)}>{organisations.length}</b><span>organisations</span></p>
+      </div>
+
+      <!-- Lead article -->
+      <a class="ed-lead" href={`/actualites/${mainStory.slug}/`} data-reveal data-reveal-media>
+        <div class="ed-lead__media">
+          <img src={mainStory.image} alt={mainStory.imageAlt} width="1200" height="800" loading="lazy" decoding="async" />
+        </div>
+        <div class="ed-lead__copy">
+          <span class="kicker">{mainStory.kicker}</span>
+          <h3 class="display">{mainStory.title}</h3>
+          <p>{mainStory.excerpt}</p>
+        </div>
+      </a>
+
+      <!-- Split list -->
+      <div class="split-list" role="feed" aria-label="Fil d'actualité MMA">
+        {allArticles.map((a, i) => (
+          <a class="row" href={`/actualites/${a.slug}/`} data-reveal tabindex="0">
+            <div class="row__bg" aria-hidden="true">
+              <img src={a.image} alt="" loading="lazy" decoding="async" />
+              <div class="row__overlay"></div>
+            </div>
+            <div class="row__content">
+              <span class="pos mono">{String(i + 1).padStart(2, '0')}</span>
+              <span class="nm">{a.title}</span>
+              <span class="cat">{a.kicker}</span>
+              <span class="rec mono">{new Date(a.date).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short' })}</span>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <div style="margin-top: 2.5rem; text-align: center;">
+        <a href="/actualites/" class="btn btn--ghost" style="padding: 0.9rem 2rem;">
+          Consulter toutes les actualités & chroniques →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cage wire divider -->
+  <div class="cage-wire" aria-hidden="true">
+    <svg class="cage-wire__svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="100,10 168,35 190,100 168,165 100,190 32,165 10,100 32,35"
+               stroke="currentColor" stroke-width="0.5" opacity="0.15" />
+      <polygon points="100,30 152,48 170,100 152,152 100,170 48,152 30,100 48,48"
+               stroke="currentColor" stroke-width="0.3" opacity="0.08" />
+    </svg>
+  </div>
+
+  <!-- ======================== PALIER 4 — COMBATS À VENIR ======================== -->
+  <section class="block dark" id="rdv">
+    <div class="wrap">
+      <div class="ed-head" data-reveal>
+        <span class="kicker" style="color: var(--teal);">Calendrier</span>
+        <h2 class="display">Les combats à venir</h2>
+        <p class="lede">De l'UFC au FMMAF — ce qui se prépare, en France et ailleurs.</p>
+      </div>
+      <div class="events-grid" data-reveal-group>
+        {events.map(ev => (
+          <a class={`event-card${ev.countdown ? ' event-card--featured' : ''}`} href={`/evenements/${ev.slug}/`} data-reveal>
+            <div class="event-card__badge" style={`background: ${ev.accent};`}>
+              <span>{ev.badge}</span>
+            </div>
+            <div class="event-card__body">
+              <time class="mono" datetime={ev.date}>
+                {new Date(ev.date).toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' })}
+              </time>
+              <h3 class="display">{ev.title}</h3>
+              <p>{ev.venue}</p>
+              <span class={`event-status ${ev.status}`}>
+                {ev.status === 'confirmed' ? 'Confirmé' : 'À confirmer'}
+              </span>
+            </div>
+            {ev.countdown && (
+              <div class="event-card__countdown">
+                <span class="countdown-label mono">Compte à rebours</span>
+                <b class="countdown-number" data-countdown={`${ev.date}T00:00:00`}>J−39</b>
+              </div>
+            )}
+          </a>
+        ))}
+      </div>
+      <div style="margin-top: 2.5rem; text-align: center;">
+        <a href="/evenements/" class="btn btn--primary" style="padding: 0.9rem 2rem;">
+          Accéder au calendrier complet & horaires TV →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cage wire divider -->
+  <div class="cage-wire" aria-hidden="true">
+    <svg class="cage-wire__svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="100,10 168,35 190,100 168,165 100,190 32,165 10,100 32,35"
+               stroke="currentColor" stroke-width="0.5" opacity="0.15" />
+    </svg>
+  </div>
+
+  <!-- ======================== PALIER 5 — COMBATTANTS ======================== -->
+  <section class="block" id="combattants">
+    <div class="wrap">
+      <div class="ed-head" data-reveal>
+        <span class="kicker">Les combattants</span>
+        <h2 class="display">{fighters.length} portraits, <span class="tint">cinq organisations</span></h2>
+        <p class="lede">De l'UFC au ONE. Parcours, records, style — sans classement maison.</p>
+      </div>
+    </div>
+    <div class="roster" data-reveal-group>
+      {fighters.map(f => (
+        <a class="roster__item" href={`/combattants/${f.slug}/`} data-reveal>
+          <div class="roster__visual">
+            <img src={f.image} alt={f.imageAlt} width="400" height="400" loading="lazy" decoding="async" />
+          </div>
+          <div class="roster__meta">
+            <span class="kicker">{f.org}</span>
+            <h3>{f.name}</h3>
+            <span class="mono">{f.record} {f.flag}</span>
+            {f.title && <span class="roster__title">{f.title}</span>}
+          </div>
+        </a>
+      ))}
+    </div>
+    <div style="margin-top: 2rem; text-align: center;">
+      <a href="/combattants/" class="btn btn--ghost" style="padding: 0.8rem 1.8rem;">
+        Voir l'annuaire complet des combattants français →
+      </a>
+    </div>
+  </section>
+
+  <!-- ======================== PALIER 6 — ÉCOSYSTÈME ======================== -->
+
+  <!-- Organisations -->
+  <section class="block accent" id="orgs">
+    <div class="wrap">
+      <div class="ed-head" data-reveal>
+        <span class="kicker" style="color: rgba(255,255,255,.6);">L'écosystème</span>
+        <h2 class="display" style="color: #fff;">Les organisations</h2>
+        <p class="lede" style="color: rgba(255,255,255,.75);">UFC, ARES, Hexagone, PFL, ONE, FMMAF — qui fait quoi, depuis quand, et pourquoi ça compte.</p>
+      </div>
+      <div class="orgs-grid" data-reveal-group>
+        {organisations.map(o => (
+          <a class="org-card" href={`/organisations/${o.slug}/`} data-reveal>
+            <div class="org-card__badge" style={`background: ${o.accent};`}>
+              <span>{o.badge}</span>
+            </div>
+            <div class="org-card__body">
+              <h3 class="display">{o.name}</h3>
+              <p>{o.description}</p>
+              <div class="org-card__stats mono">
+                <span>Depuis {o.founded}</span>
+                <span>En savoir plus →</span>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Clubs -->
+  <section class="block" id="clubs">
+    <div class="wrap">
+      <div class="ed-head" data-reveal>
+        <span class="kicker">Les clubs</span>
+        <h2 class="display">Où ça se boxe, <span class="tint">en France</span></h2>
+        <p class="lede">De Paris à Toulouse — les clubs qui forment les combattants français.</p>
+      </div>
+      <div class="clubs-grid" data-reveal-group>
+        {clubs.map(c => (
+          <a class="club-card" href={c.slug === 'boxing-center-etats-unis' ? 'https://clubmma.fr/' : '/clubs/'} target={c.slug === 'boxing-center-etats-unis' ? '_blank' : '_self'} rel={c.slug === 'boxing-center-etats-unis' ? 'noopener noreferrer' : ''} data-reveal>
+            <div class="club-card__visual">
+              <img src={c.image} alt={c.imageAlt} width="640" height="360" loading="lazy" decoding="async" />
+            </div>
+            <div class="club-card__body">
+              <span class="kicker">{c.city}</span>
+              <h3 class="display">{c.name} {c.slug === 'boxing-center-etats-unis' && <span class="mono" style="font-size: 0.75rem; color: var(--teal);">[Pôle MMA 31 ↗]</span>}</h3>
+              <p>{c.description}</p>
+              <div class="club-card__tags">
+                {c.disciplines.slice(0, 3).map(d => (
+                  <span class="tag mono">{d}</span>
+                ))}
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+      <div style="margin-top: 2.5rem; text-align: center;">
+        <a href="/clubs/" class="btn btn--ghost" style="padding: 0.9rem 2rem;">
+          Accéder à l'annuaire complet des clubs de France →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand__mark" style="font-size: 1.6rem;">PRISE</span>
+        <span class="brand__tag mono" style="font-size: .8rem;">MMA</span>
+        <p>Média indépendant d'actualité MMA. Combats à venir, résultats, organisations, clubs et combattants français.</p>
+        <div class="footer-affiliate-badge">
+          <span class="kicker" style="color: var(--teal); margin-bottom: 0.3rem;">Club référence Sud-Ouest :</span>
+          <a href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer" class="link-clubmma">
+            Boxing Center Toulouse (États-Unis) — Octogone 7m, 400m² tapis ↗
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Rubriques</h4>
+        <ul>
+          <li><a href="/actualites/">Actualités</a></li>
+          <li><a href="/evenements/">Combats à venir</a></li>
+          <li><a href="/combattants/">Combattants</a></li>
+          <li><a href="/organisations/">Organisations</a></li>
+          <li><a href="/clubs/">Clubs</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Organisations</h4>
+        <ul>
+          <li><a href="/organisations/ufc/">UFC</a></li>
+          <li><a href="/organisations/ares/">ARES FC</a></li>
+          <li><a href="/organisations/hexagone-mma/">Hexagone MMA</a></li>
+          <li><a href="/organisations/pfl/">PFL</a></li>
+          <li><a href="/organisations/one-championship/">ONE Championship</a></li>
+          <li><a href="/organisations/fmmaf/">FMMAF</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Le site</h4>
+        <ul>
+          <li><a href="/a-propos/">À propos</a></li>
+          <li><a href="/a-propos/#mentions">Mentions légales</a></li>
+          <li><a href="/a-propos/#contact">Contact</a></li>
+          <li><a href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer">Pôle MMA Toulouse (clubmma.fr)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="mono">© 2026 PRISE MMA — Média indépendant. Pas affilié à l'UFC ni à aucune organisation.</p>
+    </div>
+  </footer>
+
+  <a class="back-to-top" href="#contenu" aria-label="Retour en haut">↑</a>
+
+  <script is:inline defer src="/assets/js/motion.js"></script>
+</body>
+</html>

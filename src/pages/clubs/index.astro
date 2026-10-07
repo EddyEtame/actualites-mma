@@ -1,0 +1,137 @@
+---
+/* Annuaire des clubs et salles de MMA en France
+   Met en avant de façon naturelle et légitime le pôle Boxing Center États-Unis (clubmma.fr) */
+import Base from '../../layouts/Base.astro';
+import clubs from '../../data/clubs.json';
+
+const bcGym = clubs.find(c => c.slug === 'boxing-center-etats-unis') || clubs[0];
+const otherClubs = clubs.filter(c => c.slug !== 'boxing-center-etats-unis');
+---
+
+<Base
+  title="Clubs et Salles de MMA en France — Où s'entraîner"
+  description="Trouver une salle de MMA en France : Paris, Toulouse, Lyon, Marseille. Annuaire des clubs équipés d'octogones et encadrés par des coachs professionnels."
+  image="/assets/img/hero-cage-mma.webp"
+  currentNav="clubs"
+>
+  <div class="wrap archive-page">
+    <header class="archive-header" data-reveal>
+      <span class="kicker">Infrastructures & Pratique</span>
+      <h1 class="display">Les clubs et salles de MMA en France</h1>
+      <p class="lede">De la cage d'octogone aux tatamis de grappling : où s'entraîner dans les meilleures conditions techniques et sécuritaires pour progresser.</p>
+    </header>
+
+    <!-- SPOTLIGHT MAJEUR : BOXING CENTER ÉTATS-UNIS (clubmma.fr) -->
+    <section class="bc-spotlight-section" data-reveal>
+      <div class="spotlight-card">
+        <div class="spotlight-media">
+          <img src="/assets/img/hero-cage-mma.webp" alt="Octogone et tatamis Boxing Center États-Unis Toulouse" width="1280" height="720" fetchpriority="high" />
+          <div class="spotlight-badge mono">PÔLE MAJEUR SUD-OUEST</div>
+          <div class="spotlight-thumbs">
+            <div class="thumb"><img src="/assets/img/salle_cage_ring.webp" alt="Rings et cage" /><span>Cage & Rings</span></div>
+            <div class="thumb"><img src="/assets/img/mma_grappling_sol.webp" alt="Tapis sol" /><span>400m² Sol</span></div>
+            <div class="thumb"><img src="/assets/img/photo_coach_zouhir.webp" alt="Coach Zouhir" /><span>Coach Zouhir</span></div>
+          </div>
+        </div>
+
+        <div class="spotlight-body">
+          <div class="spotlight-header">
+            <span class="kicker">Salle recommandée par PRISE MMA</span>
+            <h2 class="display">Boxing Center (Toulouse — États-Unis)</h2>
+            <p class="spotlight-address mono">📍 388 avenue des États-Unis, 31200 Toulouse</p>
+          </div>
+
+          <p class="spotlight-text">
+            Implantée au nord de Toulouse, la salle <strong>Boxing Center États-Unis</strong> est le fleuron des sports de combat dans la région toulousaine. Conçue pour répondre aux exigences des combattants professionnels comme des débutants, elle propose un équipement unique :
+          </p>
+
+          <div class="spotlight-specs-grid mono">
+            <div class="spec-item">
+              <strong>1 200 m²</strong>
+              <span>Superficie totale</span>
+            </div>
+            <div class="spec-item">
+              <strong>7 mètres</strong>
+              <span>Octogone officiel</span>
+            </div>
+            <div class="spec-item">
+              <strong>400 m²</strong>
+              <span>Tapis sol & lutte</span>
+            </div>
+            <div class="spec-item">
+              <strong>2 rings</strong>
+              <span>Boxe compétition</span>
+            </div>
+          </div>
+
+          <p class="spotlight-coaching">
+            Encadrement d'élite sous la direction de coachs diplômés d'État, dont <strong>Zouhir Boumenir</strong> (BPJEPS Lutte/Grappling, ceinture noire JJB) pour les sections sol et combat contre la cage.
+          </p>
+
+          <div class="spotlight-actions">
+            <a href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="font-size: 0.95rem;">
+              Visiter le site officiel clubmma.fr →
+            </a>
+            <a href="/actualites/zouhir-boumenir-coach-sol-boxing-center-toulouse/" class="btn btn--ghost">
+              Lire l'interview du coach sol →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Annuaire des autres grands clubs français -->
+    <section class="all-clubs-section" data-reveal>
+      <div class="ed-head">
+        <span class="kicker">Annuaire National</span>
+        <h2 class="display">Les autres salles de référence dans l'Hexagone</h2>
+        <p class="lede">Sélection des clubs réputés pour la formation de compétiteurs et la qualité de l'encadrement.</p>
+      </div>
+
+      <div class="clubs-grid" data-reveal-group>
+        {otherClubs.map(c => (
+          <article class="club-card" data-reveal>
+            <div class="club-card__visual">
+              <img src={c.image} alt={c.imageAlt} width="640" height="360" loading="lazy" decoding="async" />
+            </div>
+            <div class="club-card__body">
+              <span class="kicker">{c.city}</span>
+              <h3 class="display">{c.name}</h3>
+              <p>{c.description}</p>
+              <div class="club-card__tags">
+                {c.disciplines && c.disciplines.map(d => (
+                  <span class="tag mono">{d}</span>
+                ))}
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <!-- Guide débutant : bien choisir sa salle de MMA -->
+    <section class="guide-debutant-section" data-reveal>
+      <div class="guide-box">
+        <span class="kicker">Guide Pratique</span>
+        <h2 class="display">3 critères essentiels pour choisir sa salle de MMA</h2>
+        <div class="guide-steps-grid">
+          <div class="step-card">
+            <span class="step-num mono">01</span>
+            <h3 class="display">La surface de tatamis & la paroi de cage</h3>
+            <p>Le MMA moderne nécessite au minimum 150 m² d'espace de tapis propre et des protections murales pour pratiquer le <em>cage control</em> sans risque de blessure.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num mono">02</span>
+            <h3 class="display">Des coachs certifiés par discipline</h3>
+            <p>Exigez des diplômes d'État (BPJEPS, DEJEPS) ou des ceintures noires reconnues pour l'enseignement du JJB, de la lutte et de la boxe thaïlandaise.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num mono">03</span>
+            <h3 class="display">Des créneaux adaptés à son niveau</h3>
+            <p>Une bonne salle sépare les cours fondamentaux (sécurité, technique) des créneaux de sparring engagé réservés aux compétiteurs confirmés.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</Base>

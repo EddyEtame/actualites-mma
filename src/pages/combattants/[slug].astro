@@ -1,0 +1,166 @@
+---
+/* Page individuelle d'un combattant MMA français */
+import Base from '../../layouts/Base.astro';
+import fighters from '../../data/fighters.json';
+import articles from '../../data/articles.json';
+
+export function getStaticPaths() {
+  return fighters.map(fighter => ({
+    params: { slug: fighter.slug },
+    props: { fighter }
+  }));
+}
+
+const { fighter } = Astro.props;
+const relatedArticles = articles.filter(a =>
+  a.title.toLowerCase().includes(fighter.name.toLowerCase()) ||
+  a.excerpt.toLowerCase().includes(fighter.name.toLowerCase())
+);
+---
+
+<Base
+  title={`${fighter.name} « ${fighter.nickname} » — Fiche Combattant & Record MMA`}
+  description={`Fiche complète de ${fighter.name} : palmarès officiel (${fighter.record}), division ${fighter.division}, bio, club d'entraînement et prochains combats.`}
+  image={fighter.image}
+  currentNav="combattants"
+>
+  <div class="wrap fighter-page">
+    <nav class="breadcrumbs mono" aria-label="Fil d'Ariane">
+      <a href="/">Accueil</a> <span>/</span>
+      <a href="/combattants/">Combattants</a> <span>/</span>
+      <span class="active">{fighter.name}</span>
+    </nav>
+
+    <div class="fighter-hero-grid" data-reveal>
+      <div class="fighter-portrait-stage">
+        <img src={fighter.image} alt={fighter.imageAlt} width="640" height="640" fetchpriority="high" />
+        <div class="portrait-glow"></div>
+      </div>
+
+      <div class="fighter-header-info">
+        <div class="fighter-badge-row">
+          <span class="org-badge mono">{fighter.org}</span>
+          <span class="country-badge mono">{fighter.flag} France</span>
+          {fighter.title && <span class="champion-badge mono">🏆 {fighter.title}</span>}
+        </div>
+
+        {fighter.nickname && <span class="fighter-nickname display">« {fighter.nickname} »</span>}
+        <h1 class="display fighter-main-name">{fighter.name}</h1>
+        <p class="fighter-division mono">{fighter.division}</p>
+
+        <!-- Record bar avec Finish Rate -->
+        <div class="fighter-record-bar">
+          <div class="record-stat">
+            <span class="stat-num display">{fighter.record}</span>
+            <span class="stat-lbl mono">Palmarès Pro</span>
+          </div>
+          <div class="record-breakdown mono">
+            <span class="chip ko">{fighter.koWins} KO/TKO</span>
+            <span class="chip sub">{fighter.subWins} Soumissions</span>
+            <span class="chip dec">{fighter.decWins} Décisions</span>
+          </div>
+          {fighter.finishRate && (
+            <div class="finish-rate-box mono">
+              <span class="fr-label">Taux de Finition : <strong>{fighter.finishRate}</strong></span>
+              <div class="fr-bar">
+                <div class="fr-fill" style={`width: ${fighter.finishRate};`}></div>
+              </div>
+            </div>
+          )}
+        </div>
+
+        <!-- Tale of the tape -->
+        <div class="tale-of-tape mono">
+          <div class="tape-row">
+            <span class="t-lbl">Club d'entraînement :</span>
+            <span class="t-val">{fighter.gym} ({fighter.city})</span>
+          </div>
+          <div class="tape-row">
+            <span class="t-lbl">Taille :</span>
+            <span class="t-val">{fighter.height || '—'}</span>
+          </div>
+          <div class="tape-row">
+            <span class="t-lbl">Allonge :</span>
+            <span class="t-val">{fighter.reach || '—'}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Historique des combats officiels -->
+    {fighter.fightsHistory && fighter.fightsHistory.length > 0 && (
+      <section class="fighter-history-section" data-reveal>
+        <span class="kicker">Palmarès Détaillé</span>
+        <h2 class="display">Derniers combats officiels</h2>
+        <div class="fights-table-wrap">
+          <table class="fights-table mono">
+            <thead>
+              <tr>
+                <th>Résultat</th>
+                <th>Adversaire</th>
+                <th>Événement</th>
+                <th>Méthode</th>
+                <th>Round</th>
+              </tr>
+            </thead>
+            <tbody>
+              {fighter.fightsHistory.map(h => (
+                <tr class={h.res === 'V' ? 'win-row' : 'loss-row'}>
+                  <td>
+                    <span class={`res-badge ${h.res === 'V' ? 'win' : 'loss'}`}>
+                      {h.res === 'V' ? 'VICTOIRE' : 'DÉFAITE'}
+                    </span>
+                  </td>
+                  <td class="adv-name"><strong>{h.adv}</strong></td>
+                  <td>{h.event}</td>
+                  <td>{h.method}</td>
+                  <td class="round-time">{h.round}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )}
+
+    <!-- Bio & Analyse du profil -->
+    <section class="fighter-bio-section" data-reveal>
+      <span class="kicker">Profil & Carrière</span>
+      <h2 class="display">L'ascension et le style de combat</h2>
+      <div class="bio-text">
+        <p class="lead">{fighter.bio}</p>
+        <p>Évoluant au plus haut niveau de sa division, {fighter.name} incarne l'excellence technique et la rigueur de la formation française. Son entraînement quotidien allie préparation physique pointue, lutte contre la cage et perfectionnement tactique.</p>
+      </div>
+
+      <div class="gym-cross-link">
+        <span class="kicker" style="color: var(--teal);">Entraînement MMA</span>
+        <p>Pour développer les mêmes bases techniques en lutte et grappling que les pros : découvrez le pôle d'entraînement <strong>Boxing Center (États-Unis - Toulouse)</strong>, doté de 400 m² de tatamis, octogone de 7 mètres et coaching personnalisé.</p>
+        <a href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer" class="link-teal mono">
+          Découvrir les installations Boxing Center États-Unis ↗
+        </a>
+      </div>
+    </section>
+
+    <!-- Articles liés -->
+    {relatedArticles.length > 0 && (
+      <section class="fighter-articles-section" data-reveal>
+        <span class="kicker">Dernières actualités</span>
+        <h2 class="display">Articles & Analyses concernant {fighter.name}</h2>
+        <div class="related-grid">
+          {relatedArticles.map(art => (
+            <a href={`/actualites/${art.slug}/`} class="related-card">
+              <div class="related-media">
+                <img src={art.image} alt={art.imageAlt} width="480" height="270" loading="lazy" decoding="async" />
+              </div>
+              <div class="related-copy">
+                <span class="kicker">{art.kicker}</span>
+                <h3 class="display">{art.title}</h3>
+                <p>{art.excerpt.slice(0, 110)}…</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+  </div>
+</Base>
