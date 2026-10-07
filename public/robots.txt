@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Sitemap: https://prise-mma.fr/sitemap.xml
+LLMs-Txt: https://prise-mma.fr/llms.txt
 
 User-agent: Googlebot
 Allow: /

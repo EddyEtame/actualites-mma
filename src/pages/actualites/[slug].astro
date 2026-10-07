@@ -14,6 +14,31 @@ export function getStaticPaths() {
 
 const { article } = Astro.props;
 const otherArticles = articles.filter(a => a.slug !== article.slug).slice(0, 3);
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://prise-mma.fr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Actualités",
+      "item": "https://prise-mma.fr/actualites/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": article.title,
+      "item": `https://prise-mma.fr/actualites/${article.slug}/`
+    }
+  ]
+};
 ---
 
 <Base
@@ -25,6 +50,7 @@ const otherArticles = articles.filter(a => a.slug !== article.slug).slice(0, 3);
   author={article.author || 'Rédaction PRISE MMA'}
   currentNav="actualites"
 >
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   <article class="article-page wrap">
     <!-- Breadcrumbs -->
     <nav class="breadcrumbs mono" aria-label="Fil d'Ariane">

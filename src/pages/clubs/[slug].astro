@@ -89,6 +89,31 @@ const faqSchema = {
     }
   }))
 };
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://prise-mma.fr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Clubs",
+      "item": "https://prise-mma.fr/clubs/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": club.name,
+      "item": `https://prise-mma.fr/clubs/${club.slug}/`
+    }
+  ]
+};
 ---
 
 <Base
@@ -100,6 +125,7 @@ const faqSchema = {
   <!-- Données structurées SEO / GEO / AEO -->
   <script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />
   <script is:inline type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
   <div class="club-page-hero">
     <div class="club-hero-bg">
@@ -214,11 +240,19 @@ const faqSchema = {
         </section>
       )}
 
-      <!-- Planning des cours -->
+      <!-- Planning des cours avec filtres interactifs par discipline -->
       {club.schedule && (
         <section class="club-schedule-section" id="planning" data-reveal>
           <span class="kicker">Horaires & Créneaux</span>
           <h2 class="display">Planning hebdomadaire des entraînements</h2>
+
+          <!-- Filtres interactifs par discipline -->
+          <div class="sched-filter-bar mono" id="schedFilters">
+            <button type="button" class="sched-filter-btn is-active" data-filter="all">Tous les créneaux</button>
+            <button type="button" class="sched-filter-btn" data-filter="mma">MMA & Cage</button>
+            <button type="button" class="sched-filter-btn" data-filter="boxe">Boxe Anglaise (Coach Guillaume)</button>
+            <button type="button" class="sched-filter-btn" data-filter="sol">Sol & Lutte (Coach Zouhir)</button>
+          </div>
 
           <div class="schedule-table-box">
             <table class="schedule-table mono">
@@ -229,15 +263,54 @@ const faqSchema = {
                 </tr>
               </thead>
               <tbody>
-                {club.schedule.map(s => (
-                  <tr>
-                    <td class="sched-day"><strong>{s.day}</strong></td>
-                    <td class="sched-hours">{s.hours}</td>
-                  </tr>
-                ))}
+                {club.schedule.map(s => {
+                  const lower = s.hours.toLowerCase();
+                  const isMma = lower.includes('mma') || lower.includes('cage');
+                  const isBoxe = lower.includes('boxe');
+                  const isSol = lower.includes('sol') || lower.includes('lutte') || lower.includes('grappling');
+                  const tags = ['all', isMma && 'mma', isBoxe && 'boxe', isSol && 'sol'].filter(Boolean).join(' ');
+                  return (
+                    <tr class="sched-row" data-disciplines={tags}>
+                      <td class="sched-day"><strong>{s.day}</strong></td>
+                      <td class="sched-hours">{s.hours}</td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>
+
+          <script is:inline>
+            (function() {
+              function initSchedFilters() {
+                var filterBtns = document.querySelectorAll('#schedFilters .sched-filter-btn');
+                var rows = document.querySelectorAll('.sched-row');
+                if (!filterBtns.length || !rows.length) return;
+
+                filterBtns.forEach(function(btn) {
+                  btn.addEventListener('click', function() {
+                    filterBtns.forEach(function(b) { b.classList.remove('is-active'); });
+                    btn.classList.add('is-active');
+                    var val = btn.getAttribute('data-filter');
+
+                    rows.forEach(function(r) {
+                      var discs = (r.getAttribute('data-disciplines') || '').split(' ');
+                      if (val === 'all' || discs.indexOf(val) !== -1) {
+                        r.style.display = '';
+                      } else {
+                        r.style.display = 'none';
+                      }
+                    });
+                  });
+                });
+              }
+              if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initSchedFilters);
+              } else {
+                initSchedFilters();
+              }
+            })();
+          </script>
 
           {isBoxingCenter && (
             <div class="schedule-cta">

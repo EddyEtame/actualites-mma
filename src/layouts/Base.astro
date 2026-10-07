@@ -84,6 +84,10 @@ const absoluteImageUrl = image.startsWith('http') ? image : `${siteUrl}${image}`
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": canonical
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".article-title", ".article-excerpt"]
       }
     })} />
   ) : (

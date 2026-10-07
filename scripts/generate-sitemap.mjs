@@ -56,6 +56,7 @@ writeFileSync(resolve(process.cwd(), 'public/sitemap.xml'), sitemapXml, 'utf8');
 const robotsTxt = `User-agent: *
 Allow: /
 Sitemap: ${baseUrl}/sitemap.xml
+LLMs-Txt: ${baseUrl}/llms.txt
 
 User-agent: Googlebot
 Allow: /
