@@ -1,5 +1,461 @@
 [
   {
+    "newsKey": "beneil-dariush-pronostic-strickland-imavov-victoire-aux-points",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/10/sean-strickland-vs-nassourdine-imavov-_-une-star-de-l-ufc-donne-son-pronostic-direct.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/10/sean-strickland-vs-nassourdine-imavov-_-une-star-de-l-ufc-donne-son-pronostic-direct.jpg",
+      "pageUrl": "https://actumma.com/sean-strickland-vs-nassourdine-imavov-une-star-de-lufc-donne-son-pronostic-direct/193587",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-12T14:57:32.443Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "beneil-dariush-voit-sean-strickland-battre-nassourdine-imavov-aux-points-2026-10-12",
+    "title": "Beneil Dariush voit Sean Strickland battre Nassourdine Imavov aux points",
+    "excerpt": "Le prétendant des poids légers pronostique une victoire de Strickland par décision, mais une revanche avec Imavov dépend encore du règlement du différend contractuel du champion avec l’UFC.",
+    "category": "actualites",
+    "kicker": "UFC · Pronostic",
+    "date": "2026-10-12",
+    "publishedAt": "2026-10-12T15:02:55.504Z",
+    "verifiedAt": "2026-10-12T15:02:55.504Z",
+    "sourcePublishedAt": "2026-10-12T13:24:33.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Beneil Dariush pronostique une victoire de Sean Strickland aux points face à Nassourdine Imavov, si cette revanche venait à se concrétiser. Le prétendant des poids légers imagine une décision en faveur de l’Américain, sur le score de 49-46. ActuMMA rapporte cette prédiction alors que le duel reste conditionné au règlement du différend contractuel entre Strickland et l’UFC.</p>",
+      "<h2>Dariush mise sur une victoire à la décision</h2>",
+      "<p>Dariush connaît le style de Strickland et avait déjà prédit sa victoire contre Khamzat Chimaev. Pour le combat envisagé contre Imavov, il s’attend à un scénario proche de leur premier affrontement, en janvier 2023. Selon ActuMMA, il estime que Strickland peut avoir besoin de temps pour se mettre en route, puis prendre progressivement l’avantage en repérant les failles de son adversaire.</p>",
+      "<h2>Imavov a progressé depuis leur premier duel</h2>",
+      "<p>Le Français aborderait une revanche dans une situation différente de celle de leur premier combat. Depuis sa défaite contre Strickland, il s’est imposé comme l’un des principaux prétendants des poids moyens. Ce nouvel affrontement pourrait lui permettre de montrer les progrès accomplis depuis 2023, mais aucun combat n’est présenté comme confirmé.</p>",
+      "<h2>Le différend contractuel reste à régler</h2>",
+      "<p>Avant une éventuelle revanche, Strickland doit trouver un accord avec l’UFC au sujet de sa rémunération. ActuMMA rapporte que l’organisation lui proposerait 400 000 dollars pour le show et 400 000 dollars en cas de victoire. Le champion chercherait à obtenir une offre plus élevée. Le pronostic de Dariush reste donc lié à un combat dont la tenue dépend encore de cette négociation.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Sean Strickland vs Nassourdine Imavov : une star de l’UFC donne son pronostic direct",
+        "url": "https://actumma.com/sean-strickland-vs-nassourdine-imavov-une-star-de-lufc-donne-son-pronostic-direct/193587",
+        "publishedAt": "2026-10-12T13:24:33.000Z",
+        "retrievedAt": "2026-10-12T15:02:55.504Z",
+        "bodyHash": "b0a4be5cc4b1395c9034be5a56ce2eeb5b3788432f91c1eb12d26d5310d60c8f"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-12T14:57:15.151Z"
+    },
+    "image": "/assets/editorial/beneil-dariush-voit-sean-strickland-battre-nassourdine-imavov-aux-points-2026-10-12.webp",
+    "publicationBatchId": "2026-10-10T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/sean-strickland-vs-nassourdine-imavov-une-star-de-lufc-donne-son-pronostic-direct/193587",
+        "sha256": "fa982735ee5b003c00e7ec4c2f5d1501953394f91f901699cb020b577cbff76d"
+      },
+      {
+        "sourceUrl": "https://actumma.com/sean-strickland-vs-nassourdine-imavov-une-star-de-lufc-donne-son-pronostic-direct/193587",
+        "sha256": "bfe3723a99ae6f95f623a7d302dd1803ee4ec78539f25a03d286ccf031b2fb22"
+      },
+      {
+        "sourceUrl": "https://actumma.com/sean-strickland-vs-nassourdine-imavov-une-star-de-lufc-donne-son-pronostic-direct/193587",
+        "sha256": "9470fb9143d5300a3e97c267dc36954b3668c091b74244de7bb2a1861be58a67"
+      },
+      {
+        "sourceUrl": "https://actumma.com/sean-strickland-vs-nassourdine-imavov-une-star-de-lufc-donne-son-pronostic-direct/193587",
+        "sha256": "4aa5167086e166406144116f1227fe98bd04970c86e78973d2002e00185d38e3"
+      }
+    ]
+  },
+  {
+    "newsKey": "brendan-allen-soutient-sean-strickland-remuneration-ufc",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/10/brendan-allen-felicite-sean-strickland-et-relance-le-debat-sur-la-remuneration-des-combattants-1.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/10/brendan-allen-felicite-sean-strickland-et-relance-le-debat-sur-la-remuneration-des-combattants-1.jpg",
+      "pageUrl": "https://actumma.com/brendan-allen-felicite-sean-strickland-et-relance-le-debat-sur-la-remuneration-des-combattants/193576",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-12T14:59:46.045Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "brendan-allen-soutient-la-prise-de-parole-de-sean-strickland-sur-les-salaires-a-l-ufc-2026-10-12",
+    "title": "Brendan Allen soutient la prise de parole de Sean Strickland sur les salaires à l’UFC",
+    "excerpt": "Après sa victoire contre Christian Leroy Duncan, Brendan Allen a salué les demandes de Sean Strickland pour une meilleure rémunération, tout en disant ne pas vouloir suivre la même stratégie.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-10-12",
+    "publishedAt": "2026-10-12T15:02:55.504Z",
+    "verifiedAt": "2026-10-12T15:02:55.504Z",
+    "sourcePublishedAt": "2026-10-12T11:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Après sa victoire par soumission contre Christian Leroy Duncan à l’UFC Vegas 122, Brendan Allen a abordé la question de la rémunération des combattants. Dans des propos rapportés par ActuMMA après son succès, l’Américain a dit comprendre la démarche de Sean Strickland, qui critique les conditions financières de son contrat avec l’organisation.</p>",
+      "<h2>Allen salue les demandes de hausse des salaires</h2>",
+      "<p>Allen explique qu’il ne souhaite pas se plaindre de sa paie, mais qu’il ne refuserait pas de gagner davantage. Il estime que les combattants qui s’expriment contribuent à soulever la question des salaires. Il a félicité Strickland d’avoir réclamé plus d’argent et affirmé que, selon les statistiques qu’il évoque, les combattants sont sous-payés.</p>",
+      "<h2>Allen ne veut pas adopter la même stratégie</h2>",
+      "<p>Le combattant dit être reconnaissant de pouvoir exercer ce métier et se satisfaire de sa rémunération. Il ajoute qu’il ne veut pas s’attirer les foudres des dirigeants et qu’il a besoin de cet argent, mentionnant sa collection de voitures et sa maison. Il respecte la prise de position de Strickland, sans vouloir l’imiter.</p>",
+      "<h2>Strickland envisage de ne pas poursuivre à l’UFC</h2>",
+      "<p>Strickland réclame une meilleure rémunération et n’exclut pas de quitter l’organisation si les négociations échouent. Il a également menacé de ne pas accepter de nouveau combat tant que le différend persisterait. Allen, lui, reconnaît l’importance de cette revendication tout en préférant ne pas mener lui-même le même bras de fer.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Brendan Allen soutient Sean Strickland dans ses prises de positions contre l’UFC",
+        "url": "https://actumma.com/brendan-allen-felicite-sean-strickland-et-relance-le-debat-sur-la-remuneration-des-combattants/193576",
+        "publishedAt": "2026-10-12T11:00:00.000Z",
+        "retrievedAt": "2026-10-12T15:02:55.504Z",
+        "bodyHash": "c02e5c710f09d53d0a181c4c74db526e67a0f57c7418ab4daaab68e566d37a5c"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-12T14:57:15.151Z"
+    },
+    "image": "/assets/editorial/brendan-allen-soutient-la-prise-de-parole-de-sean-strickland-sur-les-salaires-a-l-ufc-2026-10-12.webp",
+    "publicationBatchId": "2026-10-10T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/brendan-allen-felicite-sean-strickland-et-relance-le-debat-sur-la-remuneration-des-combattants/193576",
+        "sha256": "2ed4d982b38e0ffb22b3e3311c09bee9d8b464251612dad745b46c37423ba90f"
+      },
+      {
+        "sourceUrl": "https://actumma.com/brendan-allen-felicite-sean-strickland-et-relance-le-debat-sur-la-remuneration-des-combattants/193576",
+        "sha256": "0c4bc7b0e5d04ace1160d01b10740cdde40a0be51e8570c809aade9a34f5d3cd"
+      },
+      {
+        "sourceUrl": "https://actumma.com/brendan-allen-felicite-sean-strickland-et-relance-le-debat-sur-la-remuneration-des-combattants/193576",
+        "sha256": "710ba05fc5e3730c2cd6348349bc3be5c4ffe523f55948027df731a834c76b92"
+      }
+    ]
+  },
+  {
+    "newsKey": "marc-goddard-justifie-retrait-point-christian-leroy-duncan",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/10/marc-goddard-justifie-son-geste-ferme-lors-du-main-event-de-l-ufc-vegas-122.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/10/marc-goddard-justifie-son-geste-ferme-lors-du-main-event-de-l-ufc-vegas-122.jpg",
+      "pageUrl": "https://actumma.com/marc-goddard-justifie-son-geste-ferme-lors-du-main-event-de-lufc-vegas-122/193567",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-12T15:00:27.590Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "marc-goddard-explique-le-retrait-d-un-point-a-christian-leroy-duncan-2026-10-12",
+    "title": "Marc Goddard explique le retrait d’un point à Christian Leroy Duncan",
+    "excerpt": "Après le coup dans l’œil de Brendan Allen à l’UFC Vegas 122, l’arbitre affirme avoir averti Duncan avant de le sanctionner.",
+    "category": "actualites",
+    "kicker": "UFC · Arbitrage",
+    "date": "2026-10-12",
+    "publishedAt": "2026-10-12T15:02:55.504Z",
+    "verifiedAt": "2026-10-12T15:02:55.504Z",
+    "sourcePublishedAt": "2026-10-12T09:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Le main event de l’UFC Vegas 122 a été marqué par une sanction arbitrale peu courante. Au deuxième round, Marc Goddard a retiré un point à Christian Leroy Duncan après un coup dans l’œil porté à Brendan Allen. La décision a surpris une partie du public, mais l’arbitre affirme avoir averti le combattant avant de l’appliquer.</p>",
+      "<h2>Goddard évoque plusieurs avertissements</h2>",
+      "<p>ActuMMA rapporte que l’arbitre britannique a expliqué sa décision dans un message publié sur les réseaux sociaux. Il indique avoir rappelé aux combattants les règles sur les coups dans les yeux avant le combat, puis avoir averti Duncan dès le premier round. Goddard dit lui avoir demandé à nouveau de contrôler ses mains avant la reprise suivante.</p>",
+      "<h2>Une sanction après le coup dans l’œil</h2>",
+      "<p>Selon Goddard, le retrait de point est intervenu après ces rappels, lorsque le coup dans l’œil s’est produit. Il reconnaît qu’il est difficile de demander à un athlète de modifier des habitudes acquises au fil de nombreuses années en quelques minutes. Il ajoute que lui-même et ses collègues considèrent la prévention de ces fautes comme une priorité.</p>",
+      "<h2>Allen s’impose au cinquième round</h2>",
+      "<p>La pénalité n’a pas changé l’issue du combat : Brendan Allen a soumis Duncan au cinquième round par étranglement arrière et signé une quatrième victoire consécutive. La décision de Goddard relance toutefois le débat sur la sanction des coups dans les yeux en MMA.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Marc Goddard justifie son geste ferme lors du main event de l’UFC Vegas 122",
+        "url": "https://actumma.com/marc-goddard-justifie-son-geste-ferme-lors-du-main-event-de-lufc-vegas-122/193567",
+        "publishedAt": "2026-10-12T09:00:00.000Z",
+        "retrievedAt": "2026-10-12T15:02:55.504Z",
+        "bodyHash": "3eb2268fdd48d52ddd60966c8b50c61a5ea9d84a5cb13a9827a1d362c93cc9b4"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-12T14:57:15.151Z"
+    },
+    "image": "/assets/editorial/marc-goddard-explique-le-retrait-d-un-point-a-christian-leroy-duncan-2026-10-12.webp",
+    "publicationBatchId": "2026-10-10T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/marc-goddard-justifie-son-geste-ferme-lors-du-main-event-de-lufc-vegas-122/193567",
+        "sha256": "df347f245e3833ba3f44f3de6fc2d1fc07ddd22a02dd66ff80b70d2cb2412a09"
+      },
+      {
+        "sourceUrl": "https://actumma.com/marc-goddard-justifie-son-geste-ferme-lors-du-main-event-de-lufc-vegas-122/193567",
+        "sha256": "361f3ea95728e54f6a2a2a1c03a3fe910b4db11c9304f449aa175b9f12590dca"
+      },
+      {
+        "sourceUrl": "https://actumma.com/marc-goddard-justifie-son-geste-ferme-lors-du-main-event-de-lufc-vegas-122/193567",
+        "sha256": "4c2f175a808f98db211fa319752215933577bdcf8a4cdf93dc9825eb620e8ba4"
+      },
+      {
+        "sourceUrl": "https://actumma.com/marc-goddard-justifie-son-geste-ferme-lors-du-main-event-de-lufc-vegas-122/193567",
+        "sha256": "610ec330ea8077d69ea324af2e67a8b71f1922188986cd4763272d44da9de895"
+      }
+    ]
+  },
+  {
+    "newsKey": "bruce-buffer-introduction-the-one-the-only-trois-combattants",
+    "imageAlt": "Photographie publiée par La Sueur avec son article source.",
+    "imageCaption": "Photographie publiée par La Sueur avec son article. Crédit : La Sueur.",
+    "imageCredit": "La Sueur",
+    "imageSource": {
+      "url": "https://lasueur.com/wp-content/uploads/2026/10/Bruce-Buffer-_The-One-The-Only_.jpg",
+      "ogImageUrl": "https://lasueur.com/wp-content/uploads/2026/10/Bruce-Buffer-_The-One-The-Only_.jpg",
+      "pageUrl": "https://lasueur.com/la-voix-de-lufc-bruce-buffer-devoile-la-liste-de-ceux-qui-meritent-son-introduction-ultime-12-10-2026",
+      "publisher": "La Sueur",
+      "credit": "La Sueur",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-12T15:00:52.880Z",
+      "originalWidth": 1920,
+      "originalHeight": 1080
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "bruce-buffer-explique-pourquoi-trois-combattants-ont-recu-son-introduction-speciale-2026-10-12",
+    "title": "Bruce Buffer explique pourquoi trois combattants ont reçu son introduction spéciale",
+    "excerpt": "L’annonceur de l’UFC a réservé « The One, The Only » à Conor McGregor, Jon Jones et Alex Pereira, et explique les raisons de ses choix.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-10-12",
+    "publishedAt": "2026-10-12T15:02:55.504Z",
+    "verifiedAt": "2026-10-12T15:02:55.504Z",
+    "sourcePublishedAt": "2026-10-12T06:34:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Bruce Buffer affirme n’avoir utilisé son introduction « The One, The Only » que pour Conor McGregor, Jon Jones et Alex Pereira. Dans un entretien avec Helen Yee Sports, rapporté par La Sueur, l’annonceur de l’UFC explique ce qui a motivé ces choix.</p>",
+      "<h2>McGregor, à l’origine de la formule</h2>",
+      "<p>Selon Buffer, cette introduction a commencé avec McGregor. Il évoque le parcours de l’Irlandais, qui percevait des aides sociales en Irlande et empruntait le costume de son père, avant de bâtir une carrière et une marque. Buffer estime que l’intérêt du public, qu’il souhaite voir McGregor gagner ou perdre, justifie cette formule.</p>",
+      "<h2>Jones et Pereira également distingués</h2>",
+      "<p>Buffer présente Jon Jones comme le plus grand combattant de l’UFC et rappelle leur amitié de longue date. Il explique aussi avoir employé la formule pour Alex Pereira. Le Brésilien a perdu lors de cette présentation, mais Buffer précise que ce résultat n’avait pas de lien avec son annonce : ses accomplissements ont motivé son choix.</p>",
+      "<h2>Une formule à ne pas banaliser</h2>",
+      "<p>L’annonceur dit qu’il réfléchira sérieusement avant d’utiliser à nouveau ces mots. Il estime qu’en les réservant à trop de combattants, ils perdraient leur sens. À ce jour, les seuls noms qu’il cite sont donc McGregor, Jones et Pereira.</p>"
+    ],
+    "sources": [
+      {
+        "name": "La Sueur",
+        "title": "La voix de l’UFC, Bruce Buffer, dévoile la liste de ceux qui méritent son introduction ultime",
+        "url": "https://lasueur.com/la-voix-de-lufc-bruce-buffer-devoile-la-liste-de-ceux-qui-meritent-son-introduction-ultime-12-10-2026",
+        "publishedAt": "2026-10-12T06:34:00.000Z",
+        "retrievedAt": "2026-10-12T15:02:55.504Z",
+        "bodyHash": "34a447fadc1a77f5fff0e13358897ac0c4e131b3ff49f02070e93585a2e4ad6a"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-12T14:57:15.151Z"
+    },
+    "image": "/assets/editorial/bruce-buffer-explique-pourquoi-trois-combattants-ont-recu-son-introduction-speciale-2026-10-12.webp",
+    "publicationBatchId": "2026-10-10T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://lasueur.com/la-voix-de-lufc-bruce-buffer-devoile-la-liste-de-ceux-qui-meritent-son-introduction-ultime-12-10-2026",
+        "sha256": "3ed02a236230e8f071574735d7f010a2feef72115742d5720a007bf4cba89233"
+      },
+      {
+        "sourceUrl": "https://lasueur.com/la-voix-de-lufc-bruce-buffer-devoile-la-liste-de-ceux-qui-meritent-son-introduction-ultime-12-10-2026",
+        "sha256": "c3cf93fc5cb06d6ceff39b0d03be7663ad9e004c17a44dd2df8ca0db3fba9542"
+      },
+      {
+        "sourceUrl": "https://lasueur.com/la-voix-de-lufc-bruce-buffer-devoile-la-liste-de-ceux-qui-meritent-son-introduction-ultime-12-10-2026",
+        "sha256": "5db8021fdc89bc23fb5134295367a042d01bfb59b00413534e3c6ed9f52b29c0"
+      }
+    ]
+  },
+  {
+    "newsKey": "chimaev-critique-strickland-blessures-boxe",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/10/khamzat-chimaev-s-en-prend-a-sean-strickland-apres-ses-recentes-declarations.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/10/khamzat-chimaev-s-en-prend-a-sean-strickland-apres-ses-recentes-declarations.jpg",
+      "pageUrl": "https://actumma.com/khamzat-chimaev-sen-prend-a-sean-strickland-apres-ses-recentes-declarations-ca-nous-arrive-a-tous/193554",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-12T15:01:39.281Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "khamzat-chimaev-critique-sean-strickland-apres-ses-declarations-sur-ses-blessures-2026-10-12",
+    "title": "Khamzat Chimaev critique Sean Strickland après ses déclarations sur ses blessures",
+    "excerpt": "L’ancien champion des poids moyens reproche à Sean Strickland d’insister sur ses problèmes physiques, alors que l’Américain évoque une possible reconversion dans la boxe.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-10-12",
+    "publishedAt": "2026-10-12T15:02:55.504Z",
+    "verifiedAt": "2026-10-12T15:02:55.504Z",
+    "sourcePublishedAt": "2026-10-12T06:08:13.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Khamzat Chimaev a réagi aux propos de Sean Strickland sur ses blessures et son intérêt grandissant pour la boxe. Selon ActuMMA, le Tchétchène a publié sur les réseaux sociaux un message dans lequel il reproche à l’Américain de trop mettre en avant ses difficultés physiques. Sa sortie relance les tensions entre les deux combattants, qui se sont affrontés pour la ceinture.</p>",
+      "<h2>Strickland évoque ses blessures et la boxe</h2>",
+      "<p>L’Américain a récemment expliqué que son corps supportait moins bien les exigences du MMA. Il a notamment parlé d’une déchirure à l’aine et d’une séparation de l’articulation acromio-claviculaire. Strickland a aussi indiqué que la boxe l’attirait davantage, qu’il estime moins éprouvante et plus rémunératrice. Ces déclarations interviennent alors qu’il est en désaccord financier avec l’UFC.</p>",
+      "<h2>Chimaev lui reproche de se plaindre</h2>",
+      "<p>Dans son message, Chimaev affirme que les blessures à l’entraînement font partie du métier et invite Strickland à ne pas se montrer faible. Il met également en doute le statut de champion de l’Américain. ActuMMA rapporte que cette réaction intervient quelques mois après leur affrontement, remporté par Strickland à l’UFC 328 en mai dernier.</p>",
+      "<h2>Une revanche reste incertaine</h2>",
+      "<p>Chimaev espère retrouver Strickland pour un nouveau combat, après avoir réclamé une revanche à la suite de cette première défaite en carrière. Mais le différend contractuel de l’Américain avec l’UFC et son envie possible de se tourner vers la boxe rendent la suite incertaine. Une défense contre Nassourdine Imavov est également évoquée comme une possibilité pour Strickland, sans qu’une revanche soit garantie prochainement.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Khamzat Chimaev s’en prend à Sean Strickland après ses récentes déclarations : « Ça nous arrive à tous… »",
+        "url": "https://actumma.com/khamzat-chimaev-sen-prend-a-sean-strickland-apres-ses-recentes-declarations-ca-nous-arrive-a-tous/193554",
+        "publishedAt": "2026-10-12T06:08:13.000Z",
+        "retrievedAt": "2026-10-12T15:02:55.504Z",
+        "bodyHash": "7a33610b35395e7baf4e0b3ba0160e11011c1e8c39b2c92d8e49b8241d686d65"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-12T14:57:15.151Z"
+    },
+    "image": "/assets/editorial/khamzat-chimaev-critique-sean-strickland-apres-ses-declarations-sur-ses-blessures-2026-10-12.webp",
+    "publicationBatchId": "2026-10-10T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/khamzat-chimaev-sen-prend-a-sean-strickland-apres-ses-recentes-declarations-ca-nous-arrive-a-tous/193554",
+        "sha256": "f2917acaf8668339abfe14e0626824d5b938a7dccf0bc65d9a327497f86207d8"
+      },
+      {
+        "sourceUrl": "https://actumma.com/khamzat-chimaev-sen-prend-a-sean-strickland-apres-ses-recentes-declarations-ca-nous-arrive-a-tous/193554",
+        "sha256": "0f5dc5ff8ff57bbd7a4900bfb47a50dc1d3c25f23567c51ac723e99134e8392c"
+      },
+      {
+        "sourceUrl": "https://actumma.com/khamzat-chimaev-sen-prend-a-sean-strickland-apres-ses-recentes-declarations-ca-nous-arrive-a-tous/193554",
+        "sha256": "0bab1efbcb1717050041a70aadaed6690f6148983cde46fe9d08217ef07add7c"
+      }
+    ]
+  },
+  {
+    "newsKey": "ilia-topuria-camp-retour-lasha-beka-guruli",
+    "imageAlt": "Photographie publiée par La Sueur avec son article source.",
+    "imageCaption": "Photographie publiée par La Sueur avec son article. Crédit : La Sueur.",
+    "imageCredit": "La Sueur",
+    "imageSource": {
+      "url": "https://lasueur.com/wp-content/uploads/2026/10/Ilia-Topuria-retour-a-lUFC-avec-de-gros-noms.jpeg",
+      "ogImageUrl": "https://lasueur.com/wp-content/uploads/2026/10/Ilia-Topuria-retour-a-lUFC-avec-de-gros-noms.jpeg",
+      "pageUrl": "https://lasueur.com/ilia-topuria-prepare-retour-ufc-avec-gros-noms-12-10-2026",
+      "publisher": "La Sueur",
+      "credit": "La Sueur",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-12T15:02:29.184Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "ilia-topuria-prepare-son-retour-a-l-ufc-avec-lasha-et-beka-guruli-2026-10-12",
+    "title": "Ilia Topuria prépare son retour à l’UFC avec Lasha et Beka Guruli",
+    "excerpt": "Pour son nouveau camp d’entraînement, l’ancien champion s’est entouré de Lasha Guruli, médaillé olympique de boxe, et de son frère Beka, spécialiste de lutte gréco-romaine.",
+    "category": "actualites",
+    "kicker": "UFC · Retour à l’entraînement",
+    "date": "2026-10-12",
+    "publishedAt": "2026-10-12T15:02:55.504Z",
+    "verifiedAt": "2026-10-12T15:02:55.504Z",
+    "sourcePublishedAt": "2026-10-12T05:15:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Ilia Topuria prépare son retour à l’UFC avec un nouveau camp d’entraînement entouré de spécialistes. Selon La Sueur, l’ancien champion a repris l’entraînement après une période de récupération et cherche à relancer sa dynamique après avoir subi la première défaite de son palmarès.</p>",
+      "<h2>Lasha Guruli pour le travail de boxe</h2>",
+      "<p>Le média rapporte que Topuria a récemment annoncé son retour à l’entraînement. Pour ce nouveau camp, il s’est notamment entouré de Lasha Guruli, médaillé de bronze en boxe aux Jeux olympiques de Paris 2024. La Sueur indique que ce renfort doit contribuer au travail de boxe du combattant géorgien et espagnol.</p>",
+      "<h2>Beka Guruli rejoint aussi le camp</h2>",
+      "<p>Le camp inclut également Beka Guruli, le frère de Lasha. La Sueur le présente comme un spécialiste de la lutte gréco-romaine. Sa présence s’inscrit dans la volonté de Topuria de travailler aussi le grappling et les phases de corps à corps, en complément du travail des poings.</p>",
+      "<h2>Un camp pour travailler toutes les dimensions de son jeu</h2>",
+      "<p>D’après La Sueur, Topuria veut perfectionner chaque dimension de son jeu et corriger les failles susceptibles d’être exploitées. Sa préparation réunit ainsi un médaillé olympique de boxe et un spécialiste de la lutte gréco-romaine, alors que l’ancien champion prépare son retour à l’UFC.</p>"
+    ],
+    "sources": [
+      {
+        "name": "La Sueur",
+        "title": "Ilia Topuria prépare son retour à l’UFC avec de gros noms",
+        "url": "https://lasueur.com/ilia-topuria-prepare-retour-ufc-avec-gros-noms-12-10-2026",
+        "publishedAt": "2026-10-12T05:15:00.000Z",
+        "retrievedAt": "2026-10-12T15:02:55.504Z",
+        "bodyHash": "9ff46f620b3e7dd9c53faefc2247a4497c5ed7aab405ef2711d4dfa46a420f5d"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-12T14:57:15.151Z"
+    },
+    "image": "/assets/editorial/ilia-topuria-prepare-son-retour-a-l-ufc-avec-lasha-et-beka-guruli-2026-10-12.webp",
+    "publicationBatchId": "2026-10-10T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://lasueur.com/ilia-topuria-prepare-retour-ufc-avec-gros-noms-12-10-2026",
+        "sha256": "f15e24360395cb56c45fd7562295211615530a3ebbf158f916e1746587e3d633"
+      },
+      {
+        "sourceUrl": "https://lasueur.com/ilia-topuria-prepare-retour-ufc-avec-gros-noms-12-10-2026",
+        "sha256": "14eaeece11b19ff06cbce398602bae61d638bae9f289e1299d211d5ffe8722f3"
+      },
+      {
+        "sourceUrl": "https://lasueur.com/ilia-topuria-prepare-retour-ufc-avec-gros-noms-12-10-2026",
+        "sha256": "00c71ff665dce639f66f4c174d1ff24cf07e9d03e0e795a6e51e398a95199d91"
+      },
+      {
+        "sourceUrl": "https://lasueur.com/ilia-topuria-prepare-retour-ufc-avec-gros-noms-12-10-2026",
+        "sha256": "1b6e75f397a81b695fb1a75d7e59237696a730395c338e4c077781b9b818b96e"
+      }
+    ]
+  },
+  {
     "slug": "natalia-silva-reponse-shevchenko-defense-titre-2026-10-07",
     "title": "Natalia Silva répond à Shevchenko : sa prochaine défense reste ouverte",
     "excerpt": "Dans un nouvel entretien, la championne veut défendre son titre sans attendre Shevchenko. Elle cite Grasso et Blanchfield, sans annoncer de combat.",
