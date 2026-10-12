@@ -1,20 +1,9 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
+import { decodeEntities as decode } from './news-pipeline.mjs';
 
-const args = process.argv.slice(2);
-const option = (name, fallback) => {
-  const index = args.indexOf(name);
-  return index === -1 ? fallback : args[index + 1];
-};
-const input = path.resolve(option('--input', 'src/data/articles.json'));
-const outDir = path.resolve(option('--out-dir', 'public/assets/editorial'));
-const publicPrefix = option('--public-prefix', '/assets/editorial');
-const articles = JSON.parse(await readFile(input, 'utf8'));
-const selectedSlug = option('--slug', null);
-const selectedArticles = selectedSlug ? articles.filter(article => article.slug === selectedSlug) : articles;
-if (!selectedArticles.length) throw new Error('No articles selected for image retrieval.');
-const fetchedAt = new Date().toISOString();
 const known = {
   'natalia-silva-reponse-shevchenko-defense-titre-2026-10-07': {
     newsKey: 'natalia-silva-reponse-shevchenko-apres-ufc-332',
@@ -61,9 +50,6 @@ const known = {
   },
 };
 
-const decode = text => String(text).replace(/&amp;/g, '&').replace(/&quot;/g, '"')
-  .replace(/&#(?:039|39);/g, "'").replace(/&#x27;/gi, "'")
-  .replace(/&nbsp;/g, ' ').replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)));
 const parseAttributes = tag => Object.fromEntries(
   [...tag.matchAll(/([\w:-]+)\s*=\s*["']([^"']*)["']/g)]
     .map(match => [match[1].toLowerCase(), decode(match[2])])
@@ -81,14 +67,21 @@ const request = async url => {
   if (!response.ok) throw new Error('HTTP ' + response.status + ' for ' + url);
   return response;
 };
-const results = await Promise.all(selectedArticles.map(async article => {
+
+/**
+ * Photograph published with an article's first source, as a 1200 × 675 WebP of at most 350 kB.
+ * Reads the network only; the caller decides where (and whether) the file is written.
+ * Without a slug, `fields.image` is left for the caller to set once the article is named.
+ */
+export async function sourcePhotograph(article, { publicPrefix = '/assets/editorial', fetchedAt = new Date().toISOString() } = {}) {
+  const label = article.slug || article.sources?.[0]?.url;
   const source = article.sources?.[0];
-  if (!source?.url) throw new Error('Missing original source for ' + article.slug);
+  if (!source?.url) throw new Error('Missing original source for ' + label);
   const html = await (await request(source.url)).text();
   const meta = [...html.matchAll(/<meta\b[^>]*>/gi)].map(match => parseAttributes(match[0]));
   const metaValue = property => meta.find(item => item.property === property || item.name === property)?.content;
   const rawImage = metaValue('og:image') || metaValue('twitter:image');
-  if (!rawImage) throw new Error('Missing source editorial image for ' + article.slug);
+  if (!rawImage) throw new Error('Missing source editorial image for ' + label);
   const ogImageUrl = new URL(rawImage, source.url).href;
   let imageUrl = ogImageUrl;
   // Prefer a larger rendition explicitly embedded by the original publisher.
@@ -102,15 +95,16 @@ const results = await Promise.all(selectedArticles.map(async article => {
   const original = Buffer.from(await (await request(imageUrl)).arrayBuffer());
   const metadata = await sharp(original).metadata();
   if (!metadata.width || !metadata.height || metadata.width < 250 || metadata.height < 140) {
-    throw new Error('Invalid or unusable source image for ' + article.slug);
+    throw new Error('Invalid or unusable source image for ' + label);
   }
-  const settings = known[article.slug];
+  const settings = article.slug ? known[article.slug] : undefined;
   if (settings?.creditOriginal && !decode(html).includes(settings.creditOriginal)) {
-    throw new Error('Declared photo credit no longer present in source for ' + article.slug);
+    throw new Error('Declared photo credit no longer present in source for ' + label);
   }
-  const imageAlt = settings?.alt || metaValue('og:image:alt') || 'Photographie publiée par ' + source.name + ' avec son article source.';
+  const sourceImageAlt = metaValue('og:image:alt') || metaValue('twitter:image:alt') || null;
+  const imageAlt = settings?.alt || sourceImageAlt || 'Photographie publiée par ' + source.name + ' avec son article source.';
   const credit = settings?.credit || source.name;
-  const caption = settings?.caption || 'Photographie de contexte publiée avec l’article source.';
+  const caption = settings?.caption || 'Photographie publiée par ' + source.name + ' avec son article.';
   const imageSource = {
     url: imageUrl,
     ogImageUrl,
@@ -118,32 +112,30 @@ const results = await Promise.all(selectedArticles.map(async article => {
     publisher: source.name,
     credit,
     creditBasis: settings?.creditOriginal ? 'explicit-source-credit' : 'source-publisher-only',
-    sourceImageAlt: metaValue('og:image:alt') || null,
+    sourceImageAlt,
     rightsStatus: 'unverified',
     fetchedAt,
     originalWidth: metadata.width,
     originalHeight: metadata.height,
   };
-  const webp = await sharp(original).rotate()
+  const render = quality => sharp(original).rotate()
     .resize(1200, 675, { fit: 'cover', position: settings?.position || sharp.strategy.attention })
-    .webp({ quality: 88 }).toBuffer();
-  let optimized = webp;
+    .webp({ quality }).toBuffer();
+  let optimized = await render(88);
   for (const quality of [80, 72, 64, 56]) {
     if (optimized.length <= 350000) break;
-    optimized = await sharp(original).rotate()
-      .resize(1200, 675, { fit: 'cover', position: settings?.position || sharp.strategy.attention })
-      .webp({ quality }).toBuffer();
+    optimized = await render(quality);
   }
-  if (optimized.length > 350000) throw new Error('Source photograph cannot meet the 350 kB budget for ' + article.slug);
+  if (optimized.length > 350000) throw new Error('Source photograph cannot meet the 350 kB budget for ' + label);
   return {
     slug: article.slug,
-    fileName: article.slug + '.webp',
+    fileName: article.slug ? article.slug + '.webp' : undefined,
     webp: optimized,
     fields: {
       newsKey: article.newsKey || settings?.newsKey || article.slug,
-      image: publicPrefix + '/' + article.slug + '.webp',
+      ...(article.slug ? { image: publicPrefix + '/' + article.slug + '.webp' } : {}),
       imageAlt,
-      imageCaption: caption + ' Crédit : ' + credit + ' · source : ' + source.name + '.',
+      imageCaption: credit === source.name ? caption + ' Crédit : ' + credit + '.' : caption + ' Crédit : ' + credit + ' · source : ' + source.name + '.',
       imageCredit: credit,
       imageSource,
       imageWidth: 1200,
@@ -151,20 +143,36 @@ const results = await Promise.all(selectedArticles.map(async article => {
       illustration: false,
     },
   };
-}));
-
-await mkdir(outDir, { recursive: true });
-for (const result of results) {
-  await writeFile(path.join(outDir, result.fileName), result.webp);
 }
-const current = JSON.parse(await readFile(input, 'utf8'));
-const updated = current.map(article => {
-  const result = results.find(item => item.slug === article.slug);
-  return result ? { ...article, ...result.fields } : article;
-});
-await writeFile(input, JSON.stringify(updated, null, 2) + '\n', 'utf8');
-for (const result of results) console.log(JSON.stringify({
-  slug: result.slug, image: result.fields.image,
-  originalSize: [result.fields.imageSource.originalWidth, result.fields.imageSource.originalHeight],
-  outputBytes: result.webp.length, source: result.fields.imageSource.url,
-}));
+
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  const args = process.argv.slice(2);
+  const option = (name, fallback) => {
+    const index = args.indexOf(name);
+    return index === -1 ? fallback : args[index + 1];
+  };
+  const input = path.resolve(option('--input', 'src/data/articles.json'));
+  const outDir = path.resolve(option('--out-dir', 'public/assets/editorial'));
+  const publicPrefix = option('--public-prefix', '/assets/editorial');
+  const articles = JSON.parse(await readFile(input, 'utf8'));
+  const selectedSlug = option('--slug', null);
+  const selectedArticles = selectedSlug ? articles.filter(article => article.slug === selectedSlug) : articles;
+  if (!selectedArticles.length) throw new Error('No articles selected for image retrieval.');
+  const fetchedAt = new Date().toISOString();
+  const results = await Promise.all(selectedArticles.map(article => sourcePhotograph(article, { publicPrefix, fetchedAt })));
+  await mkdir(outDir, { recursive: true });
+  for (const result of results) {
+    await writeFile(path.join(outDir, result.fileName), result.webp);
+  }
+  const current = JSON.parse(await readFile(input, 'utf8'));
+  const updated = current.map(article => {
+    const result = results.find(item => item.slug === article.slug);
+    return result ? { ...article, ...result.fields } : article;
+  });
+  await writeFile(input, JSON.stringify(updated, null, 2) + '\n', 'utf8');
+  for (const result of results) console.log(JSON.stringify({
+    slug: result.slug, image: result.fields.image,
+    originalSize: [result.fields.imageSource.originalWidth, result.fields.imageSource.originalHeight],
+    outputBytes: result.webp.length, source: result.fields.imageSource.url,
+  }));
+}

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
-import { isFresh, parseFeed, canonicalUrl, extractSource, discoverNews, publishBatch, validateArticles, scheduledSlot, batchDue, sameTopic, fetchSource } from './news-pipeline.mjs';
+import { isFresh, parseFeed, canonicalUrl, extractSource, discoverNews, publishBatch, validateArticles, scheduledSlot, batchDue, sameTopic, fetchSource, containsEvidence, wordCount, decodeEntities, plainText } from './news-pipeline.mjs';
 
 const now = '2026-10-07T18:00:00.000Z';
 const sourceDate = '2026-10-07T10:00:00.000Z';
@@ -113,4 +113,29 @@ test('batch requires a public news status and reporting category; archives retai
 });
 test('archives remain valid after source freshness window expires', () => {
   assert.equal(validateArticles([article(0)],{now:'2027-01-01T00:00:00Z',config}).ok,true);
+});
+test('evidence survives French typography and line breaks but not altered wording', () => {
+  const body='L’arbitre a déclaré : « Ça nous arrive à tous », après l’UFC Vegas 122.\nIl l’a répété le lendemain.';
+  assert.equal(containsEvidence(body,`L'arbitre a déclaré : "Ça nous arrive à tous", après l'UFC Vegas 122. Il l'a répété le lendemain.`),true);
+  assert.equal(containsEvidence(body,'l’arbitre a déclaré: « ça nous arrive à tous »'),true);
+  assert.equal(containsEvidence(body,`L'arbitre a déclaré : "Ça arrive à tout le monde"`),false);
+  assert.equal(containsEvidence(body,'Ça nous arrive'),false);
+});
+test('every Latin-1 and typographic entity decodes; double-escaped text stays literal', () => {
+  assert.equal(decodeEntities('remport&eacute; &agrave; l&rsquo;UFC &laquo;&nbsp;oui&nbsp;&raquo; &Ccedil;a &oelig;uvre &amp;eacute; &unknown;'),'remporté à l’UFC « oui » Ça œuvre &eacute; &unknown;');
+  assert.equal(decodeEntities('&nbsp;&iexcl;&yuml;'),' ¡ÿ');
+});
+test('entity-encoded French source bodies match plainly quoted evidence', () => {
+  const body=plainText('<p>Brendan Allen a remport&eacute; son combat face &agrave; Christian Leroy Duncan par soumission au cinqui&egrave;me round.</p>');
+  assert.equal(containsEvidence(body,'Brendan Allen a remporté son combat face à Christian Leroy Duncan par soumission au cinquième round.'),true);
+  assert.equal(containsEvidence('Brendan Allen a remport&eacute; son combat face &agrave; Christian Leroy Duncan','Brendan Allen a remporté son combat face à Christian Leroy Duncan'),true);
+});
+test('word count ignores spaced French punctuation', () => {
+  assert.equal(wordCount('<p>Il a dit : « Ça nous arrive à tous » ; voilà l’essentiel — c’est-à-dire tout.</p>'),12);
+});
+test('publication re-check accepts typographically quoted evidence from the live source', async t => {
+  const articlesPath=await temporaryDatabase(t);const curly=sourceBody.replace('fighter accepted','fighter’s team accepted');
+  const batch=Array.from({length:6},(_,i)=>article(i));for(const a of batch)a.sourceEvidence[0].excerpt="The fighter's team accepted the new challenge announced today.";
+  const result=await publishBatch({batch,articlesPath,config,now,fetchImpl:async url=>new Response(url.includes('/feed')?'':html(sourceDate,curly))});
+  assert.equal(result.published,6);
 });

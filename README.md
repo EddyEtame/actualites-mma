@@ -26,25 +26,25 @@ La découverte ne publie jamais à elle seule. Chaque lot doit contenir exacteme
 
 ## Exécution cloud, ordinateur éteint
 
-Le workflow `.github/workflows/mma-news.yml` fonctionne sur les serveurs GitHub Actions. Une vérification horaire à la minute 17 applique une cadence persistée de 72 heures, ancrée au 7 octobre 2026 à 18 h UTC. L'édition initiale est déjà enregistrée dans ce créneau ; le suivant est le 10 octobre à 18 h UTC. Le planificateur GitHub peut démarrer avec retard.
+Le workflow `.github/workflows/mma-news.yml` fonctionne sur les serveurs GitHub Actions. Deux réveils par heure (minutes 17 et 47) appliquent une cadence persistée de 72 heures, ancrée au 7 octobre 2026 à 18 h UTC ; le planificateur GitHub en abandonne beaucoup (19 réveils sur environ 106 du 8 au 12 octobre 2026), d'où deux réveils. Une édition due mais incomplète (moins de six sujets frais, ou moins de six articles validés) reste « en attente » et repasse au réveil suivant ; l'exécution n'échoue qu'après `pendingGraceHours` (24 h). Une clé absente, refusée ou sans quota échoue immédiatement.
 
-Chaîne : flux RSS → page originale et date → dédoublonnage → rédaction française fondée sur le corps source → seconde vérification factuelle → photos de la page source, WebP 1200 × 675, maximum 350 kB → publication atomique de six articles → validation et build → commit et push sur `main`. Vercel reçoit ensuite le push via son intégration GitHub.
+Chaîne : flux RSS → page originale et date (entités HTML décodées) → dédoublonnage → photo de la page source qualifiée avant toute rédaction → rédaction française fondée sur le corps source → seconde vérification factuelle → une révision si un défaut est réparable (preuve, nombre, longueur, kicker, fait non soutenu), puis nouvelle vérification → photos WebP 1200 × 675, maximum 350 kB → publication atomique de six articles → validation, build et audit → commit et push sur `main`. Vercel reçoit ensuite le push via son intégration GitHub. Le résumé de chaque exécution liste les articles retenus et les motifs de rejet.
 
 Configuration requise dans [le dépôt GitHub](https://github.com/EddyEtame/actualites-mma) :
 
-- Secret Actions `OPENAI_API_KEY`, saisi uniquement dans les réglages GitHub.
-- Variable Actions `MMA_WRITER_MODEL`, identifiant d'un modèle API disponible sur le compte et compatible Responses / Structured Outputs.
+- Secret Actions `OPENAI_API_KEY`, saisi uniquement dans les réglages GitHub (Settings → Secrets and variables → Actions). C'est le seul réglage indispensable.
+- Modèle : `writerModel` dans `scripts/news-sources.json` (`gpt-6-luna`, vérifié le 12 octobre 2026). La variable Actions `MMA_WRITER_MODEL` reste possible pour le remplacer sans commit.
 - GitHub Actions autorisé sur le dépôt et son jeton autorisé à écrire le contenu ; respecter les règles de protection de `main`.
 - Identité Git de publication : `Eddy-etame`, `eddy.etame@enkoschools.com`.
 
-Dans Vercel, relier le dépôt, sélectionner `main` comme branche de production, garder la racine du dépôt, `npm run build` et `dist`, puis rattacher `actu-mma.com` selon les enregistrements DNS indiqués par Vercel. `vercel.json` décrit le build ; il ne crée ni la connexion Vercel, ni le domaine, ni les secrets.
+Dans Vercel, relier le dépôt, sélectionner `main` comme branche de production, garder la racine du dépôt, `npm run build` et `dist`, puis rattacher `actu-mma.com` selon les enregistrements DNS indiqués par Vercel. `vercel.json` décrit le build ; il ne crée ni la connexion Vercel, ni le domaine, ni les secrets. Vercel sert `https://www.actu-mma.com` et redirige le domaine nu vers lui : `SITE_URL` (`src/lib/editorial.mjs`) est donc l'origine `www`, unique source des canoniques, du sitemap, du RSS, de llms.txt et des cartes de partage ; l'audit refuse toute URL du domaine nu.
 
-Après configuration, lancer manuellement le workflow avec `validation_only: true` (valeur par défaut). Ce contrôle vérifie le modèle, six sources, leurs photos et le build sans publier de nouveaux articles ni pousser de commit. Son équivalent local est `node scripts/cloud-news-edition.mjs --verify-cloud`.
+Après configuration, lancer manuellement le workflow avec `validation_only: true` (valeur par défaut). Ce contrôle vérifie la clé et le modèle, l'édition en ligne, les flux et les sujets frais du moment, la chaîne photo et le build, sans rédiger, publier ni pousser. Son équivalent local est `node scripts/cloud-news-edition.mjs --verify-cloud`.
 
 Activer les notifications d'échec GitHub Actions pour détecter un manque de six informations nouvelles ou une panne. Les photos conservent leur provenance et leur crédit ; aucune licence de réutilisation n'est présumée.
 
 ## État vérifié
 
-Le 7 octobre 2026 : six articles récents et leurs sources vérifiés en direct ; photos sources et portraits officiels ; Guillaume et galeries retirés. Les 29 tests du pipeline et l'audit des 36 pages passent. Le commit `80d3824` est poussé sur `main` ; GitHub confirme le workflow actif et le déploiement Vercel réussi. La rédaction via fournisseur API, une exécution GitHub Actions complète et le domaine de production restent à vérifier. Voir `PROJECT-STATE.md` pour les contrôles et limites précis.
+Le 12 octobre 2026 : l'édition du créneau du 10 octobre a échoué à chaque réveil (#12 à #19) faute du secret `OPENAI_API_KEY`. Avec la clé et `gpt-6-luna`, l'ancien code n'aurait retenu qu'un article sur douze : les corps de source français arrivaient avec leurs accents encodés (`&eacute;`…), si bien que les passages de preuve cités par le modèle ne correspondaient pas. Après correction, une édition complète exécutée hors du dépôt a retenu six articles sur sept sujets, puis passé validation, build (42 pages) et audit. Les 42 tests passent. Voir `PROJECT-STATE.md`.
 
 Références de configuration : [GitHub schedules](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule), [Responses / Structured Outputs](https://developers.openai.com/api/docs/guides/structured-outputs), [Vercel pour GitHub](https://vercel.com/docs/git/vercel-for-github).

@@ -1,4 +1,14 @@
-# Actu MMA — état du 7 octobre 2026
+# PRISE MMA (actu-mma.com) — état du 12 octobre 2026
+
+## 12 octobre 2026 — édition automatique réparée
+
+- **Cause des échecs #12 à #19** (GitHub Actions, depuis le créneau du 10 octobre 18 h UTC) : le secret `OPENAI_API_KEY` n'a jamais été créé ; l'étape d'édition s'arrêtait en 0 s sur `WRITER_NOT_CONFIGURED`. Les exécutions #1 à #11 étaient vertes uniquement parce qu'aucune édition n'était due.
+- **Deuxième cause, masquée par la première** : avec la clé et `gpt-6-luna`, l'ancien code aurait échoué quand même (1 article retenu sur 12). Les corps ActuMMA et La Sueur contenaient 50 à 118 entités HTML non décodées par article (`&eacute;`, `&agrave;`, `&laquo;`…) ; selon que le modèle recopiait ou non ces entités, ses passages de preuve « n'existaient pas » dans la source. Le décodeur couvre maintenant tout Latin-1 et la typographie ; la preuve est comparée après normalisation (apostrophes, guillemets, espaces insécables, retours à la ligne, casse).
+- Autres corrections du pipeline : comptage de mots qui ignore la ponctuation française espacée ; une révision quand un défaut est réparable, puis nouvelle vérification ; photo qualifiée avant toute rédaction (une photo inutilisable écarte un sujet, plus l'édition) ; erreurs fournisseur temporaires réessayées, clé/quota refusés en arrêt immédiat ; budgets de sortie 12 000/8 000 jetons ; modèle par défaut versionné (`writerModel`) ; édition incomplète « en attente » 24 h avant alarme ; résumé d'exécution ; actions GitHub v7 (Node 24) épinglées par SHA ; runner `ubuntu-24.04` ; deux réveils par heure ; push protégé contre un rebase en conflit.
+- **Preuve** : édition complète exécutée dans un clone jetable, avec la vraie clé et `gpt-6-luna`, sans variable de modèle : 16 sujets frais, 7 rédigés, 6 retenus (le 7e, doublon Goddard, rejeté à juste titre), 18 appels, publication locale, validation, build de 42 pages et audit passés. Rien n'a été publié en ligne depuis ce clone. 42 tests passent (29 avant).
+- **Site** : origine unique `https://www.actu-mma.com` (le domaine nu redirige en 308 ; canoniques, sitemap, RSS, llms.txt et cartes pointaient vers une URL redirigée) ; plus de « Dernière édition · nouvelles en attente » ni d'« Archive » sur la une ; titre principal toujours présent ; extrait complet ; « 9 portraits, cinq organisations » (faux : deux) calculé depuis les données ; boutons qui promettaient « chroniques » et « annuaire complet » corrigés ; soirées passées retirées de « À venir » au chargement ; dates en minuscules françaises ; titres longs sans suffixe de marque ; descriptions coupées en fin de phrase ; signature des articles alignée sur la marque affichée (`Rédaction PRISE MMA`), le nom du média source étant transmis tel quel au rédacteur pour ne plus écrire « Actu MMA » à la place d'ActuMMA ; nouveaux contrôles d'audit (domaine nu, og:url, longueur des descriptions, libellés négatifs).
+
+## 7 octobre 2026
 
 Travail demandé : six actualités véritablement nouvelles tous les trois jours, chaîne autonome ordinateur éteint, vraies photos des personnes concernées, retrait de Guillaume et des galeries de boxe, domaine `actu-mma.com`, déploiement Vercel via GitHub. Skills Desktop Baffled Bar et SEO lus ; aucun fichier GEO/AEO distinct trouvé, règles GEO de Baffled Bar appliquées.
 
@@ -21,9 +31,11 @@ Travail demandé : six actualités véritablement nouvelles tous les trois jours
 - Navigateur : bureau 1440, mobile 375 et 320 pixels ; aucune image cassée ni débordement observé. Menu ouverture/fermeture, Escape et retour du focus vérifiés ; comportement en mode mouvement réduit testé. Navigation sans JavaScript et contenu rendus côté serveur.
 - Preuves locales : `.news/qa/home-desktop.jpg`, `.news/qa/home-mobile.jpg` (non versionnées).
 
-## Activation distante encore nécessaire
+## Activation distante encore nécessaire (mise à jour du 12 octobre)
 
-Le push du commit `80d3824` a réussi sur `main`. GitHub confirme le workflow actif et le statut Vercel « Deployment has completed » pour ce commit. Les réglages secrets/variables GitHub restent inaccessibles via l'API dans cette session ; le fournisseur de rédaction et une vraie exécution du robot ne sont pas vérifiés. Le test local `--verify-cloud` échoue explicitement avec `WRITER_NOT_CONFIGURED` et ne modifie aucune publication. Ne pas présenter les éditions autonomes comme opérationnelles avant leur smoke distant et leur première publication.
+Seul le secret manque : GitHub → Settings → Secrets and variables → Actions → New repository secret `OPENAI_API_KEY`. La variable `MMA_WRITER_MODEL` n'est plus nécessaire. Ensuite : Actions → « Six actualités MMA tous les trois jours » → Run workflow avec `validation_only: false` pour publier tout de suite l'édition due, ou attendre le prochain réveil.
+
+Historique du 7 octobre : le push du commit `80d3824` a réussi sur `main`. GitHub confirme le workflow actif et le statut Vercel « Deployment has completed » pour ce commit. Les réglages secrets/variables GitHub restent inaccessibles via l'API dans cette session ; le fournisseur de rédaction et une vraie exécution du robot ne sont pas vérifiés. Le test local `--verify-cloud` échoue explicitement avec `WRITER_NOT_CONFIGURED` et ne modifie aucune publication. Ne pas présenter les éditions autonomes comme opérationnelles avant leur smoke distant et leur première publication.
 
 1. Push initial effectué vers `EddyEtame/actualites-mma`. Identité auteur/committer vérifiée : `Eddy-etame <eddy.etame@enkoschools.com>` ; aucun trailer d'assistant.
 2. Dans les réglages Actions du dépôt : secret `OPENAI_API_KEY`, variable `MMA_WRITER_MODEL` compatible Responses/Structured Outputs ; ne jamais mettre la clé dans le chat ou le dépôt.

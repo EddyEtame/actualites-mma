@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { createHash, randomUUID } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
+import { SITE_URL } from '../src/lib/editorial.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const HOUR = 3_600_000;
@@ -16,17 +17,40 @@ export class NewsError extends Error {
 export async function loadConfig() {
   return JSON.parse(await fs.readFile(path.join(ROOT, 'scripts/news-sources.json'), 'utf8'));
 }
+// French publishers encode every accent (&eacute;, &agrave;, &laquo;…): the full Latin-1 block, U+00A0 to U+00FF in order, plus typography.
+const LATIN1 = 'nbsp iexcl cent pound curren yen brvbar sect uml copy ordf laquo not shy reg macr deg plusmn sup2 sup3 acute micro para middot cedil sup1 ordm raquo frac14 frac12 frac34 iquest Agrave Aacute Acirc Atilde Auml Aring AElig Ccedil Egrave Eacute Ecirc Euml Igrave Iacute Icirc Iuml ETH Ntilde Ograve Oacute Ocirc Otilde Ouml times Oslash Ugrave Uacute Ucirc Uuml Yacute THORN szlig agrave aacute acirc atilde auml aring aelig ccedil egrave eacute ecirc euml igrave iacute icirc iuml eth ntilde ograve oacute ocirc otilde ouml divide oslash ugrave uacute ucirc uuml yacute thorn yuml';
+const ENTITIES = {
+  ...Object.fromEntries(LATIN1.split(' ').map((name, i) => [name, String.fromCharCode(0xa0 + i)])),
+  amp: '&', quot: '"', apos: "'", lt: '<', gt: '>', OElig: 'Œ', oelig: 'œ', Scaron: 'Š', scaron: 'š', Yuml: 'Ÿ', circ: 'ˆ', tilde: '˜',
+  ensp: ' ', emsp: ' ', thinsp: ' ', zwnj: '‌', zwj: '‍', lrm: '‎', rlm: '‏', ndash: '–', mdash: '—',
+  lsquo: '‘', rsquo: '’', sbquo: '‚', ldquo: '“', rdquo: '”', bdquo: '„', dagger: '†', Dagger: '‡', bull: '•', hellip: '…', permil: '‰',
+  prime: '′', Prime: '″', lsaquo: '‹', rsaquo: '›', euro: '€', trade: '™', minus: '−',
+};
 export function decodeEntities(value = '') {
   return value.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
     .replace(/&#(x[\da-f]+|\d+);/gi, (_, n) => {
       const code = n[0].toLowerCase() === 'x' ? parseInt(n.slice(1), 16) : Number(n);
       return code <= 0x10ffff ? String.fromCodePoint(code) : '';
-    }).replace(/&(amp|quot|apos|lt|gt|nbsp|rsquo|lsquo|rdquo|ldquo|ndash|mdash|hellip);/g, (_, name) => ({ amp: '&', quot: '"', apos: "'", lt: '<', gt: '>', nbsp: ' ', rsquo: '’', lsquo: '‘', rdquo: '”', ldquo: '“', ndash: '–', mdash: '—', hellip: '…' }[name]));
+    }).replace(/&([A-Za-z][A-Za-z0-9]*);/g, (match, name) => ENTITIES[name] ?? match);
 }
 export function plainText(html = '') {
   return decodeEntities(html.replace(/<(script|style|nav|aside|footer|noscript)\b[\s\S]*?<\/\1>/gi, ' ')
     .replace(/<br\s*\/?>|<\/(p|h[1-6]|div|li)>/gi, '\n').replace(/<[^>]*>/g, ' '))
     .replace(/[ \t]+/g, ' ').replace(/\n\s*\n/g, '\n').trim();
+}
+// Quoting equivalence: sources print ’, « », non-breaking spaces and line breaks that quoting models normalise.
+export function evidenceText(value = '') {
+  return plainText(value).normalize('NFKC').replace(/[‘’‚‛ʼ′`´]/g, "'")
+    .replace(/["“”„‟«»‹›]/g, ' ').replace(/[‐-―−]/g, '-')
+    .replace(/\s+([,.;:!?)\]])/g, '$1').replace(/\s+/g, ' ').trim().toLowerCase();
+}
+export function containsEvidence(body, excerpt) {
+  const passage = evidenceText(excerpt);
+  return passage.length >= 25 && evidenceText(body).includes(passage);
+}
+// Words only: spaced French punctuation (« », :, ;) is not counted.
+export function wordCount(text = '') {
+  return (plainText(text).match(/[\p{L}\p{N}]+(?:['’-][\p{L}\p{N}]+)*/gu) ?? []).length;
 }
 export function canonicalUrl(value) {
   const url = new URL(decodeEntities(value));
@@ -104,7 +128,7 @@ async function requestText(url, config, fetchImpl = fetch) {
 async function requestOnce(url, config, fetchImpl = fetch) {
   let current = trustedUrl(url, config);
   for (let redirect = 0; redirect <= 4; redirect++) {
-    const response = await fetchImpl(current, { redirect: 'manual', signal: AbortSignal.timeout(config.requestTimeoutMs), headers: { 'User-Agent': 'ActuMMA-EditorialMonitor/1.0 (+https://actu-mma.com/methode/)', Accept: 'application/rss+xml, application/atom+xml, text/html, application/xml' } });
+    const response = await fetchImpl(current, { redirect: 'manual', signal: AbortSignal.timeout(config.requestTimeoutMs), headers: { 'User-Agent': `PriseMMA-EditorialMonitor/1.1 (+${SITE_URL}/a-propos/)`, Accept: 'application/rss+xml, application/atom+xml, text/html, application/xml' } });
     if ([301, 302, 303, 307, 308].includes(response.status)) {
       const location = response.headers.get('location');
       if (!location) throw new NewsError('INVALID_REDIRECT', 'Source redirect has no location.');
@@ -240,9 +264,9 @@ export function validateArticles(articles, { now = new Date().toISOString(), bat
     if (batch) {
       if (!['actualites','resultats','evenements','analyses','interviews'].includes(article.category)) errors.push(`${label}: batch category must describe current MMA reporting`);
       if (!article.newsKey || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(article.newsKey)) errors.push(`${label}: stable newsKey required for event deduplication`);
-      if (plainText(article.content.join(' ')).split(/\s+/).length < 110) errors.push(`${label}: body requires at least 110 useful words`);
+      if (wordCount(article.content.join(' ')) < 110) errors.push(`${label}: body requires at least 110 useful words`);
       if (!article.sourceEvidence?.length || article.sourceEvidence.length < 2) errors.push(`${label}: two supporting source passages required`);
-      else if (new Set(article.sourceEvidence.map(item => plainText(item.excerpt))).size !== article.sourceEvidence.length) errors.push(`${label}: supporting passages must be distinct`);
+      else if (new Set(article.sourceEvidence.map(item => evidenceText(item.excerpt))).size !== article.sourceEvidence.length) errors.push(`${label}: supporting passages must be distinct`);
       if (new Set(sourceUrls(article)).size !== article.sources.length) errors.push(`${label}: duplicate canonical source URLs`);
       for (const source of article.sources) if (!article.sourceEvidence?.some(item => canonicalUrl(item.sourceUrl) === canonicalUrl(source.url))) errors.push(`${label}: every source must have supporting evidence`);
       if (!article.image?.startsWith('/assets/') || !article.imageAlt || article.imageWidth !== 1200 || article.imageHeight !== 675) errors.push(`${label}: image requires a local asset, descriptive alt and 1200×675 dimensions`);
@@ -289,7 +313,7 @@ async function publishLocked({ batch, articlesPath, config, now = new Date().toI
       if (!isFresh(fetched.publishedAt, now, config.maxSourceAgeHours)) throw new NewsError('STALE_OR_FUTURE_SOURCE', `Original source outside the last 72 hours: ${source.url}`);
       if (Date.parse(fetched.publishedAt) !== Date.parse(source.publishedAt)) throw new NewsError('SOURCE_DATE_MISMATCH', `Original timestamp differs from supplied metadata: ${source.url}`);
       for (const evidence of article.sourceEvidence.filter(item => canonicalUrl(item.sourceUrl) === canonicalUrl(source.url))) {
-        if (plainText(evidence.excerpt).length < 25 || !plainText(fetched.body).includes(plainText(evidence.excerpt))) throw new NewsError('UNSUPPORTED_EVIDENCE', `Supporting passage absent from fetched source: ${article.slug}`);
+        if (!containsEvidence(fetched.body, evidence.excerpt)) throw new NewsError('UNSUPPORTED_EVIDENCE', `Supporting passage absent from fetched source: ${article.slug}`);
       }
     }
     if (article.sourceEvidence.some(item => !sourceUrls(article).includes(canonicalUrl(item.sourceUrl)))) throw new NewsError('UNATTRIBUTED_EVIDENCE', `Evidence references an unlisted source: ${article.slug}`);
@@ -325,7 +349,7 @@ export async function runNewsCli(args = []) {
           if (!isFresh(fetched.publishedAt, now, config.maxSourceAgeHours)) throw new NewsError('STALE_OR_FUTURE_SOURCE', `Latest article source is outside the freshness window: ${article.slug}`);
           if (Date.parse(fetched.publishedAt) !== Date.parse(source.publishedAt)) throw new NewsError('SOURCE_DATE_MISMATCH', `Source publication timestamp differs: ${article.slug}`);
           for (const evidence of (article.sourceEvidence ?? []).filter(item => canonicalUrl(item.sourceUrl) === canonicalUrl(source.url))) {
-            if (!plainText(fetched.body).includes(plainText(evidence.excerpt))) throw new NewsError('UNSUPPORTED_EVIDENCE', `Supporting passage absent from fetched body: ${article.slug}`);
+            if (!containsEvidence(fetched.body, evidence.excerpt)) throw new NewsError('UNSUPPORTED_EVIDENCE', `Supporting passage absent from fetched body: ${article.slug}`);
           }
         }
       }
