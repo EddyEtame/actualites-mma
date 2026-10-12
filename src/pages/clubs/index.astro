@@ -21,7 +21,7 @@ const listSchema = {
 
 <Base
   title="Clubs de MMA en France — Toulouse, Paris et Lyon"
-  description="Cinq clubs de MMA à Toulouse, Paris et Villeurbanne : adresses vérifiées, disciplines, coachs et liens vers les plannings des salles."
+  description="Cinq clubs de MMA à Toulouse, Paris et Villeurbanne : adresses vérifiées, plans d’accès, disciplines et coachs, pour choisir sa salle."
   image="/og/clubs.jpg"
   currentNav="clubs"
 >
@@ -36,6 +36,7 @@ const listSchema = {
 
     <section class="bc-spotlight-section" aria-labelledby="spotlight-title" data-reveal>
       <div class="spotlight-card">
+        <figure class="spotlight-media"><img src={bcGym.image} alt={bcGym.imageAlt} width="1600" height="891" loading="lazy" decoding="async" /></figure>
         <div class="spotlight-practice-col">
           <span class="kicker">Toulouse · États-Unis</span>
           <span class="spotlight-practice-title display">MMA.<br />Cage.<br />Travail au sol.</span>
@@ -64,18 +65,18 @@ const listSchema = {
       <div class="ed-head">
         <span class="kicker">L'annuaire</span>
         <h2 class="display" id="other-clubs-title">D'autres terrains de progression</h2>
-        <p class="lede">MMA, grappling, lutte ou Luta Livre : retrouvez l'adresse et le planning de chaque club.</p>
+        <p class="lede">MMA, grappling, lutte ou Luta Livre : retrouvez l'adresse, le plan d'accès et les disciplines de chaque club.</p>
       </div>
       <div class="clubs-grid" data-reveal-group>
         {otherClubs.map(c => (
           <a class="club-card club-card--directory" href={`/clubs/${c.slug}/`} data-reveal>
-            <div class="club-card__identity"><span class="mono">{c.region}</span><strong class="display" aria-hidden="true">{c.cityCode}</strong><span>{c.city}</span></div>
+            <div class="club-card__visual">{c.plan ? <img src={c.plan} alt={c.planAlt} width="1280" height="720" loading="lazy" decoding="async" /> : null}<span class="club-card__city mono">{c.city} · {c.region}</span></div>
             <div class="club-card__body">
               <h3 class="display">{c.name}</h3>
               <p>{c.description}</p>
               <p class="club-card-address mono">{c.address}</p>
               <div class="club-card__tags">{c.disciplines.map(d => <span class="tag mono">{d}</span>)}</div>
-              <span class="club-card-cta mono">Adresse, disciplines & planning →</span>
+              <span class="club-card-cta mono">Adresse, plan et disciplines →</span>
             </div>
           </a>
         ))}

@@ -193,40 +193,38 @@
 
   }
   /* -------------------------------------------- MOBILE MENU TOGGLE */
+  /* Le burger devient la croix qui ferme : un seul bouton, au même endroit,
+   * au-dessus du tiroir. Le tiroir défile seul ; la page derrière ne bouge pas. */
   var burger = document.querySelector("[data-menu]");
   var drawer = document.querySelector("[data-drawer]");
-  var closer = document.querySelector("[data-close]");
   if (burger && drawer) {
-    function closeMenu(restoreFocus) {
-      drawer.hidden = true;
-      burger.setAttribute("aria-expanded", "false");
-      document.body.style.overflow = "";
-      if (restoreFocus) burger.focus();
+    function setMenu(open, restoreFocus) {
+      drawer.hidden = !open;
+      burger.setAttribute("aria-expanded", String(open));
+      burger.setAttribute("aria-label", open ? "Fermer le menu" : "Ouvrir le menu");
+      document.body.classList.toggle("menu-open", open);
+      document.body.style.overflow = open ? "hidden" : "";
+      if (open) drawer.scrollTop = 0;
+      else if (restoreFocus) burger.focus();
     }
     burger.addEventListener("click", function () {
-      var open = drawer.hidden;
-      if (!open) { closeMenu(true); return; }
-      drawer.hidden = false;
-      burger.setAttribute("aria-expanded", "true");
-      document.body.style.overflow = "hidden";
-      if (closer) closer.focus();
+      setMenu(drawer.hidden, true);
     });
-    if (closer) {
-      closer.addEventListener("click", function () {
-        closeMenu(true);
-      });
-    }
-    drawer.addEventListener("keydown", function (event) {
-      if (event.key === "Escape") { event.preventDefault(); closeMenu(true); return; }
+    document.addEventListener("keydown", function (event) {
+      if (drawer.hidden) return;
+      if (event.key === "Escape") { event.preventDefault(); setMenu(false, true); return; }
       if (event.key !== "Tab") return;
-      var controls = Array.from(drawer.querySelectorAll('a[href],button:not([disabled])'));
-      var first = controls[0], last = controls[controls.length - 1];
-      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
-      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+      // La croix fait partie du cycle : Tab tourne entre elle et les liens du tiroir.
+      var controls = [burger].concat(Array.from(drawer.querySelectorAll("a[href]")));
+      var index = controls.indexOf(document.activeElement);
+      if (index === -1) { event.preventDefault(); controls[0].focus(); return; }
+      var next = (index + (event.shiftKey ? -1 : 1) + controls.length) % controls.length;
+      event.preventDefault();
+      controls[next].focus();
     });
     drawer.querySelectorAll("a").forEach(function (a) {
       a.addEventListener("click", function () {
-        closeMenu(false);
+        setMenu(false, false);
       });
     });
   }

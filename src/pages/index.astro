@@ -100,11 +100,6 @@ const rosterOrgsLabel = `${inWords[rosterOrgs] ?? rosterOrgs} organisation${rost
 
   <!-- Drawer mobile -->
   <div class="drawer" id="menu" data-drawer hidden>
-    <button class="drawer__close" type="button" aria-label="Fermer le menu" data-close>&times;</button>
-    <div class="drawer__brand">
-      <span class="brand__mark">PRISE</span>
-      <span class="brand__tag mono">MMA</span>
-    </div>
     <nav aria-label="Toutes les rubriques">
       <a class="on" href="/">Accueil</a>
       <a href="/actualites/">Actualités</a>
@@ -357,7 +352,7 @@ const rosterOrgsLabel = `${inWords[rosterOrgs] ?? rosterOrgs} organisation${rost
         {clubs.map(c => (
           <a class="club-card" href={`/clubs/${c.slug}/`} data-reveal>
             <div class="club-card__visual">
-              {c.image ? <img src={c.image} alt={c.imageAlt} width="640" height="360" loading="lazy" decoding="async" /> : <div class="club-city-identity"><span class="mono">MMA / {c.city}</span><strong class="display">{c.name}</strong></div>}
+              {(c.image || c.plan) ? <img src={c.image || c.plan} alt={c.image ? c.imageAlt : c.planAlt} width="1280" height="720" loading="lazy" decoding="async" /> : <div class="club-city-identity"><span class="mono">MMA / {c.city}</span><strong class="display">{c.name}</strong></div>}
             </div>
             <div class="club-card__body">
               <span class="kicker">{c.city}</span>
@@ -388,7 +383,7 @@ const rosterOrgsLabel = `${inWords[rosterOrgs] ?? rosterOrgs} organisation${rost
       <div class="footer-brand">
         <span class="brand__mark" style="font-size: 1.6rem;">PRISE</span>
         <span class="brand__tag mono" style="font-size: .8rem;">MMA</span>
-        <p>Média indépendant d'actualité MMA. Combats à venir, résultats, organisations, clubs et combattants français.</p>
+        <p>Média indépendant d’actualité MMA en français : nouvelles sourcées et datées, combats à venir, combattants, organisations et clubs.</p>
         <div class="footer-affiliate-badge">
           <span class="kicker" style="color: var(--teal); margin-bottom: 0.3rem;">Club référence Sud-Ouest :</span>
           <a href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer" class="link-clubmma">
@@ -428,7 +423,7 @@ const rosterOrgsLabel = `${inWords[rosterOrgs] ?? rosterOrgs} organisation${rost
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="mono">© 2026 PRISE MMA — Média indépendant. Pas affilié à l'UFC ni à aucune organisation.</p>
+      <p class="mono">© 2026 PRISE MMA — Média indépendant.</p>
     </div>
   </footer>
 

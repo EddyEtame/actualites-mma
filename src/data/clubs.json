@@ -35,8 +35,8 @@
     "scheduleUrl": "https://clubmma.fr/planning/#mma",
     "scheduleLabel": "Planning MMA & Sol · 2026–2027",
     "scheduleNote": "Consultez les horaires du MMA, du grappling et du jiu-jitsu brésilien sur le planning publié par le club avant votre déplacement.",
-    "image": "/assets/img/photo_coach_zouhir.webp",
-    "imageAlt": "Zouhir Boumenir, coach de grappling et de jiu-jitsu brésilien au Boxing Center États-Unis",
+    "image": "/assets/img/salle_cage_ring.webp",
+    "imageAlt": "La salle du Boxing Center États-Unis à Toulouse : la cage de MMA au premier plan, le ring et les tatamis.",
     "verifiedAt": "2026-10-07",
     "sources": [
       {
@@ -51,7 +51,13 @@
         "title": "Boxing Center · Planning MMA & Sol",
         "url": "https://clubmma.fr/planning/#mma"
       }
-    ]
+    ],
+    "geo": {
+      "lat": 43.663567,
+      "lon": 1.414873,
+      "source": "OpenStreetMap Nominatim",
+      "matched": "388, Avenue des États-Unis, Lalande, Sept Deniers / Ginestous-Sesquières / Lalande, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31200, France"
+    }
   },
   {
     "slug": "cage-fight-toulouse",
@@ -82,7 +88,15 @@
         "title": "Cage Fight · Salles, coachs et plannings",
         "url": "https://club-mma-toulouse.com/"
       }
-    ]
+    ],
+    "geo": {
+      "lat": 43.634328,
+      "lon": 1.484037,
+      "source": "OpenStreetMap Nominatim",
+      "matched": "8, Rue Theron de Montaugé, Gramont, Jolimont / Soupetard / Roseraie / Gloire / Gramont / Amouroux, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31200, France"
+    },
+    "plan": "/assets/clubs/cage-fight-toulouse-plan.webp",
+    "planAlt": "Plan du quartier de Cage Fight Toulouse, 8 rue Théron de Montaugé, 31200 Toulouse, d'après les données OpenStreetMap."
   },
   {
     "slug": "mma-factory-paris",
@@ -120,7 +134,15 @@
         "title": "MMA Factory · Planning",
         "url": "https://www.mma-factory.fr/planning/"
       }
-    ]
+    ],
+    "geo": {
+      "lat": 48.834136,
+      "lon": 2.403611,
+      "source": "OpenStreetMap Nominatim",
+      "matched": "91, Boulevard Poniatowski, Quartier de Picpus, Paris 12e Arrondissement, Paris, Île-de-France, France métropolitaine, 75012, France"
+    },
+    "plan": "/assets/clubs/mma-factory-paris-plan.webp",
+    "planAlt": "Plan du quartier de MMA Factory Paris, 91 boulevard Poniatowski, 75012 Paris, d'après les données OpenStreetMap."
   },
   {
     "slug": "team-ezbiri-lyon",
@@ -129,8 +151,8 @@
     "cityCode": "LYO",
     "postalCode": "69100",
     "region": "Auvergne-Rhône-Alpes",
-    "streetAddress": "4 rue Ligne de l'Est",
-    "address": "4 rue Ligne de l'Est, 69100 Villeurbanne",
+    "streetAddress": "4 rue de la Ligne de l'Est",
+    "address": "4 rue de la Ligne de l'Est, 69100 Villeurbanne",
     "metro": "Tram T3 · Bel Air – Les Brosses",
     "website": "https://team-ezbiri.com/",
     "phone": "07 62 33 46 38",
@@ -142,7 +164,7 @@
       "MMA femmes"
     ],
     "description": "Fondée par Fouad Ezbiri à Villeurbanne, la Team Ezbiri propose du MMA, du grappling et du JJB dans une salle de 600 m².",
-    "longDescription": "Fondée en 2006 par Fouad Ezbiri, la Team Ezbiri est située au 4 rue Ligne de l'Est, à Villeurbanne. Le club présente une salle de 600 m² et des sections de MMA, grappling et jiu-jitsu brésilien.",
+    "longDescription": "Fondée en 2006 par Fouad Ezbiri, la Team Ezbiri est située au 4 rue de la Ligne de l'Est, à Villeurbanne. Le club présente une salle de 600 m² et des sections de MMA, grappling et jiu-jitsu brésilien.",
     "practicalNote": "Le club répertorie aussi une section MMA femmes et des cours pour enfants. Son site publie le planning de la saison 2026–2027 et les modalités d'inscription.",
     "scheduleUrl": "https://team-ezbiri.com/",
     "scheduleLabel": "Planning Team Ezbiri · 2026–2027",
@@ -160,7 +182,15 @@
         "title": "Team Ezbiri · Sections et planning",
         "url": "https://team-ezbiri.com/"
       }
-    ]
+    ],
+    "geo": {
+      "lat": 45.757233,
+      "lon": 4.902495,
+      "source": "OpenStreetMap Nominatim",
+      "matched": "4, Rue de la Ligne de l'Est, Cyprian, Villeurbanne, Lyon, Métropole de Lyon, Rhône, Auvergne-Rhône-Alpes, France métropolitaine, 69100, France"
+    },
+    "plan": "/assets/clubs/team-ezbiri-lyon-plan.webp",
+    "planAlt": "Plan du quartier de Team Ezbiri, 4 rue de la Ligne de l'Est, 69100 Villeurbanne, d'après les données OpenStreetMap."
   },
   {
     "slug": "nrfight-paris",
@@ -193,6 +223,14 @@
         "title": "NRFight · Club Paris Tolbiac",
         "url": "https://www.nrfight.com/nrfight-paris"
       }
-    ]
+    ],
+    "geo": {
+      "lat": 48.825804,
+      "lon": 2.351868,
+      "source": "OpenStreetMap Nominatim",
+      "matched": "185, Rue de Tolbiac, Maison-Blanche, Paris 13e Arrondissement, Paris, Île-de-France, France métropolitaine, 75013, France"
+    },
+    "plan": "/assets/clubs/nrfight-paris-plan.webp",
+    "planAlt": "Plan du quartier de NRFight Paris Tolbiac, 185 rue de Tolbiac, 75013 Paris, d'après les données OpenStreetMap."
   }
 ]

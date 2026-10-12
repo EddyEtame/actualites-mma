@@ -377,28 +377,49 @@ nav.main a.on { color: var(--red); }
   background: #fff;
   transition: all .3s var(--ease-out-expo);
 }
+/* Open: the three lines become the X that closes the menu (5px gap + 2px line = 7px). */
+.burger[aria-expanded="true"] i:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.burger[aria-expanded="true"] i:nth-child(2) { opacity: 0; transform: scaleX(.2); }
+.burger[aria-expanded="true"] i:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* Drawer — full-screen mobile menu */
+/* While the menu is open the header sits on the dark drawer, whatever the scroll position. */
+body.menu-open > header,
+body.menu-open > header.is-compact {
+  background: var(--ink);
+  border-bottom-color: rgba(255,255,255,.08);
+  box-shadow: none;
+}
+body.menu-open > header .brand__mark { color: #fff; }
+body.menu-open > header .burger i { background: #fff; }
+
+/* Drawer — full-screen mobile menu that scrolls on its own, down to the last link. */
 .drawer {
   position: fixed;
   inset: 0;
   background: var(--ink);
   color: #fff;
   z-index: 999;
-  padding: 5rem 2rem 2rem;
+  padding: calc(var(--header-height) + .5rem) 1.5rem calc(2.5rem + env(safe-area-inset-bottom));
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
 }
 .drawer[hidden] { display: none; }
-.drawer__close {
-  position: absolute;
-  top: 1.2rem;
-  right: 1.2rem;
-  font-size: 2rem;
-  color: #fff;
-  background: none;
-  border: none;
-  cursor: pointer;
+.drawer nav a.on { color: var(--red); }
+@media (prefers-reduced-motion: no-preference) {
+  .drawer:not([hidden]) nav > * { animation: drawer-in .5s var(--ease-out-expo) both; }
+  .drawer:not([hidden]) nav > :nth-child(2) { animation-delay: .03s; }
+  .drawer:not([hidden]) nav > :nth-child(3) { animation-delay: .06s; }
+  .drawer:not([hidden]) nav > :nth-child(4) { animation-delay: .09s; }
+  .drawer:not([hidden]) nav > :nth-child(5) { animation-delay: .12s; }
+  .drawer:not([hidden]) nav > :nth-child(6) { animation-delay: .15s; }
+  .drawer:not([hidden]) nav > :nth-child(7) { animation-delay: .18s; }
+  .drawer:not([hidden]) nav > :nth-child(8) { animation-delay: .21s; }
+}
+@keyframes drawer-in {
+  from { opacity: 0; transform: translateY(14px); }
 }
 .drawer nav {
   display: flex;
@@ -587,10 +608,6 @@ body > header.is-compact .nav-clubmma {
 }
 .link-clubmma:hover { color: var(--teal); }
 
-.drawer__brand {
-  margin-bottom: 1.5rem;
-  font-size: 1.8rem;
-}
 .drawer__featured-club {
   margin-top: 2rem;
   padding: 1.2rem;
@@ -1444,22 +1461,26 @@ body > header.is-compact .nav-clubmma {
 .spotlight-practice-col .club-source-link { color: #81dccb; }
 .all-clubs-section { margin-bottom: 4.5rem; }
 .club-card--directory { display: flex; flex-direction: column; }
-.club-card__identity {
-  position: relative;
-  padding: 1.5rem;
-  min-height: 175px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: var(--ink);
+/* A club without a photograph we may publish shows its neighbourhood plan, labelled with its city. */
+.club-card__visual { position: relative; background: var(--ink); border-bottom: 3px solid var(--teal); }
+.club-card__city {
+  position: absolute;
+  left: .9rem;
+  top: .8rem;
+  padding: .3rem .6rem;
+  border-radius: 4px;
+  background: rgba(11,13,20,.82);
   color: #fff;
-  overflow: hidden;
-  border-bottom: 3px solid var(--teal);
+  font-size: .66rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
 }
-.club-card__identity .mono { font-size: .62rem; color: #c0c9ce; letter-spacing: .045em; }
-.club-card__identity strong { font-size: 4rem; line-height: .9; letter-spacing: -.04em; color: #fff; transition: transform .3s ease; transform-origin: left center; }
-.club-card__identity > span:last-child { font-size: .84rem; margin-top: .65rem; }
-.club-card:hover .club-card__identity strong { transform: translateX(.25rem); }
+.spotlight-media { grid-column: 1 / -1; margin: 0; background: var(--ink); }
+.spotlight-media img { display: block; width: 100%; aspect-ratio: 21 / 9; object-fit: cover; }
+.club-hero-media { margin: 2.5rem 0 0; }
+.club-hero-media img { display: block; width: 100%; aspect-ratio: 21 / 9; object-fit: cover; border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,.12); background: var(--void); }
+.club-hero-media figcaption { margin-top: .75rem; font-size: .72rem; line-height: 1.6; color: #c0c9ce; }
+.club-hero-media figcaption a { color: #81dccb; text-decoration: underline; text-underline-offset: .2em; }
 .club-card-address { font-size: .7rem !important; line-height: 1.6 !important; }
 .club-card-cta { display: inline-block; color: var(--teal-deep); font-size: .72rem; margin-top: 1rem; }
 .guide-steps-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; margin-top: 2rem; }
@@ -1471,9 +1492,8 @@ body > header.is-compact .nav-clubmma {
   .spotlight-card { grid-template-columns: 1fr; }
   .spotlight-practice-title { font-size: clamp(2.5rem, 8vw, 4.3rem); }
   .guide-steps-grid { grid-template-columns: 1fr; gap: 1rem; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .club-card__identity strong { transition: none; }
+  .spotlight-media img,
+  .club-hero-media img { aspect-ratio: 16 / 9; }
 }
 
 

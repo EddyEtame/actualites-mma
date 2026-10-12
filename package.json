@@ -19,7 +19,8 @@
     "news:validate": "node scripts/ai-wired-crawler.mjs --validate",
     "news:discover": "node scripts/ai-wired-crawler.mjs --discover",
     "news:cloud": "node scripts/cloud-news-edition.mjs",
-    "og": "node scripts/generate-og.mjs"
+    "og": "node scripts/generate-og.mjs",
+    "plans": "node scripts/club-plans.mjs"
   },
   "dependencies": {
     "astro": "^7.3.6"

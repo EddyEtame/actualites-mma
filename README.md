@@ -17,6 +17,14 @@ Chaque page montre sa propre image quand un lien est partagé : sa photo (articl
 
 Les polices (Oswald, Outfit, Newsreader, JetBrains Mono) sont servies depuis `public/assets/fonts` : aucune requête vers Google Fonts, donc aucune adresse IP de visiteur transmise à un tiers pour afficher le texte.
 
+## Clubs
+
+Le Boxing Center États-Unis est montré par une photo de sa salle. Les clubs dont aucune photo publiable n'existe ont un plan de quartier aux couleurs du site, tiré des données OpenStreetMap (`npm run plans` : géocodage une seule fois, coordonnées enregistrées dans `clubs.json`, puis images dans `public/assets/clubs`) ; la page du club crédite « © les contributeurs d'OpenStreetMap ». Seul le Boxing Center renvoie vers son site : les autres clubs sont cités par leur nom, leur adresse et le titre de leurs sources, sans lien, et l'audit refuse tout lien sortant sur les pages clubs hors clubmma.fr et OpenStreetMap.
+
+## Adresses des articles
+
+L'adresse d'un article est son titre, sans date (la date est affichée dans la page) ; un titre répété reçoit `-2`, `-3`. Les anciennes adresses datées redirigent définitivement (`vercel.json`).
+
 ## Actualités vérifiables
 
 La une suit la date originale de la source. Les articles indiquent leur propre date de publication, la date de l'information, les liens sources et les crédits photo. Les anciennes données sans preuve sont conservées hors publication dans `docs/quarantined-*.json`.

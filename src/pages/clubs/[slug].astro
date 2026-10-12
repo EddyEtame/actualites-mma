@@ -11,6 +11,11 @@ const { club } = Astro.props;
 const otherClubs = clubs.filter(c => c.slug !== club.slug).slice(0, 3);
 const isBoxingCenter = club.slug === 'boxing-center-etats-unis';
 const siteUrl = SITE_URL;
+// Only the Boxing Center links out; the other clubs are referenced by name, address and source title.
+const linksOut = isBoxingCenter;
+const websiteHost = new URL(club.website).hostname.replace(/^www\./, '');
+const visual = club.image || club.plan;
+const visualAlt = club.image ? club.imageAlt : club.planAlt;
 const verifiedDate = new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${club.verifiedAt}T12:00:00Z`));
 const specs = [
   club.surface && { label: 'Salle', value: club.surface, detail: 'Superficie annoncée par le club' },
@@ -35,6 +40,8 @@ const structuredData = {
   url: club.website,
   telephone: club.phone || undefined,
   image: club.image ? `${siteUrl}${club.image}` : undefined,
+  hasMap: club.plan ? `${siteUrl}${club.plan}` : undefined,
+  geo: club.geo ? { '@type': 'GeoCoordinates', latitude: club.geo.lat, longitude: club.geo.lon } : undefined,
   address: {
     '@type': 'PostalAddress',
     streetAddress: club.streetAddress,
@@ -73,7 +80,8 @@ const breadcrumbSchema = {
       <h1 class="display club-page-title">{club.name}</h1>
       <p class="club-lead-desc">{club.description}</p>
       <p class="club-address-bar mono">{club.address}{club.metro && <span> · {club.metro}</span>}</p>
-      <div class="club-cta-row"><a href={club.scheduleUrl} target="_blank" rel="noopener noreferrer" class="btn btn--primary">Consulter le planning du club ↗</a><a href="#informations" class="btn btn--ghost">Disciplines et informations ↓</a></div>
+      <div class="club-cta-row">{linksOut ? <a href={club.scheduleUrl} target="_blank" rel="noopener noreferrer" class="btn btn--primary">Consulter le planning du club ↗</a> : <a href="#venir" class="btn btn--primary">Adresse et accès ↓</a>}<a href="#informations" class="btn btn--ghost">Disciplines et informations ↓</a></div>
+      {visual && <figure class="club-hero-media"><img src={visual} alt={visualAlt} width="1280" height="720" fetchpriority="high" decoding="async" /><figcaption class="mono">{club.image ? visualAlt : <>Plan du quartier · {club.address} · <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© les contributeurs d’OpenStreetMap</a></>}</figcaption></figure>}
     </div>
   </header>
 
@@ -94,16 +102,16 @@ const breadcrumbSchema = {
 
       <section class="club-schedule-section" id="planning" aria-labelledby="schedule-title" data-reveal>
         <span class="kicker">Préparer sa séance</span><h2 class="display" id="schedule-title">{club.scheduleLabel}</h2><p class="club-text-body">{club.scheduleNote}</p>
-        <div class="schedule-cta"><p>Choisissez le cours et la salle avant de vous déplacer.</p><a href={club.scheduleUrl} target="_blank" rel="noopener noreferrer" class="btn btn--primary">Ouvrir le planning du club ↗</a></div>
+        {linksOut && <div class="schedule-cta"><p>Choisissez le cours et la salle avant de vous déplacer.</p><a href={club.scheduleUrl} target="_blank" rel="noopener noreferrer" class="btn btn--primary">Ouvrir le planning du club ↗</a></div>}
       </section>
 
-      <section class="club-faq-section" aria-labelledby="faq-title" data-reveal><span class="kicker">Questions pratiques</span><h2 class="display" id="faq-title">Avant de venir</h2><div class="faq-list">{faqItems.map((f, idx) => <details class="faq-accordion" open={idx === 0}><summary class="faq-question"><span class="faq-title">{f.q}</span><span class="faq-icon" aria-hidden="true">+</span></summary><div class="faq-answer"><p>{f.a}</p>{f.q.includes('horaires') && <a href={club.scheduleUrl} target="_blank" rel="noopener noreferrer">Consulter le planning de {club.name} ↗</a>}</div></details>)}</div></section>
+      <section class="club-faq-section" aria-labelledby="faq-title" data-reveal><span class="kicker">Questions pratiques</span><h2 class="display" id="faq-title">Avant de venir</h2><div class="faq-list">{faqItems.map((f, idx) => <details class="faq-accordion" open={idx === 0}><summary class="faq-question"><span class="faq-title">{f.q}</span><span class="faq-icon" aria-hidden="true">+</span></summary><div class="faq-answer"><p>{f.a}</p>{linksOut && f.q.includes('horaires') && <a href={club.scheduleUrl} target="_blank" rel="noopener noreferrer">Consulter le planning de {club.name} ↗</a>}</div></details>)}</div></section>
 
-      <section class="club-sources-section" aria-labelledby="sources-title"><span class="kicker">Les sources de cette fiche</span><h2 class="display" id="sources-title">Informations publiées par le club</h2><p>Coordonnées et disciplines vérifiées le <time datetime={club.verifiedAt}>{verifiedDate}</time>. Les horaires et modalités d'inscription sont à consulter auprès de la salle.</p><ul>{club.sources.map(source => <li><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a></li>)}</ul></section>
+      <section class="club-sources-section" aria-labelledby="sources-title"><span class="kicker">Les sources de cette fiche</span><h2 class="display" id="sources-title">Informations publiées par le club</h2><p>Coordonnées et disciplines vérifiées le <time datetime={club.verifiedAt}>{verifiedDate}</time>. Les horaires et modalités d'inscription sont à consulter auprès de la salle.</p><ul>{club.sources.map(source => <li>{linksOut ? <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a> : <>{source.title} <span class="mono">({new URL(source.url).hostname.replace(/^www\./, '')})</span></>}</li>)}</ul></section>
     </div>
 
     <aside class="club-sidebar" aria-label="Informations et autres clubs">
-      <div class="sidebar-box"><h2 class="display">Pour venir au club</h2><dl class="club-practical-list"><div><dt>Adresse</dt><dd>{club.address}</dd></div>{club.metro && <div><dt>Accès</dt><dd>{club.metro}</dd></div>}{club.phone && <div><dt>Téléphone</dt><dd><a href={`tel:${club.phone.replace(/\s/g, '')}`}>{club.phone}</a></dd></div>}<div><dt>Site du club</dt><dd><a href={club.website} target="_blank" rel="noopener noreferrer">{new URL(club.website).hostname.replace(/^www\./, '')} ↗</a></dd></div></dl><a href={club.scheduleUrl} target="_blank" rel="noopener noreferrer" class="btn btn--primary">Planning et inscriptions ↗</a></div>
+      <div class="sidebar-box" id="venir"><h2 class="display">Pour venir au club</h2><dl class="club-practical-list"><div><dt>Adresse</dt><dd>{club.address}</dd></div>{club.metro && <div><dt>Accès</dt><dd>{club.metro}</dd></div>}{club.phone && <div><dt>Téléphone</dt><dd><a href={`tel:${club.phone.replace(/\s/g, '')}`}>{club.phone}</a></dd></div>}<div><dt>Site du club</dt><dd>{linksOut ? <a href={club.website} target="_blank" rel="noopener noreferrer">{websiteHost} ↗</a> : websiteHost}</dd></div></dl>{linksOut && <a href={club.scheduleUrl} target="_blank" rel="noopener noreferrer" class="btn btn--primary">Planning et inscriptions ↗</a>}</div>
       <div class="sidebar-box"><h2 class="display">D'autres clubs de MMA</h2><div class="other-clubs-mini">{otherClubs.map(oth => <a href={`/clubs/${oth.slug}/`} class="mini-club-link"><span class="kicker">{oth.city}</span><strong>{oth.name}</strong></a>)}</div><a href="/clubs/" class="club-source-link">Voir les cinq clubs de l'annuaire →</a></div>
     </aside>
   </div>
