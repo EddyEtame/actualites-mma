@@ -44,6 +44,12 @@ jobs:
         run: npm ci
       - name: Verify news safeguards
         run: node --test scripts/news-pipeline.test.mjs scripts/cloud-news-edition.test.mjs
+      # A site that no longer passes its audit stops here, before any paid drafting: otherwise every
+      # wake-up would redraft the same edition and fail again at the final audit.
+      - name: Build and audit the current site
+        run: |
+          npm run build
+          node scripts/audit-build.mjs
       - name: Fetch sources, draft and independently verify six French articles, fetch their photos
         id: edition
         if: github.event_name != 'workflow_dispatch' || inputs.validation_only == false

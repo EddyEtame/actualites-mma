@@ -17,7 +17,7 @@ const relatedArticles = publishedArticles(articles).filter(article =>
 const followedFighters = fighters.filter(fighter => fighter.org === org.name);
 ---
 
-<Base title={org.name + ' — Présentation, format et sources'} description={org.description} image={org.image || undefined} currentNav="organisations">
+<Base title={org.name + ' — Présentation, format et sources'} description={org.description} image={`/og/organisations-${org.slug}.jpg`} currentNav="organisations">
   <div class="org-hero-block" style={'--org-color: ' + org.accent + ';'}>
     <div class="wrap org-hero-inner" data-reveal>
       <nav class="breadcrumbs mono" aria-label="Fil d'Ariane">

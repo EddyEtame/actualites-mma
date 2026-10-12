@@ -61,7 +61,7 @@ const breadcrumbSchema = {
 };
 ---
 
-<Base title={`${club.name} — MMA à ${club.city}`} description={club.description} image={club.image || undefined} currentNav="clubs">
+<Base title={`${club.name} — MMA à ${club.city}`} description={club.description} image={club.image || `/og/clubs-${club.slug}.jpg`} currentNav="clubs">
   <script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />
   <script is:inline type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />

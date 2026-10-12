@@ -9,6 +9,7 @@ const files = fs.readdirSync(dist, { recursive: true }).filter(file => file.ends
 const articles = publishedArticles(JSON.parse(fs.readFileSync(path.join(root, 'src/data/articles.json'), 'utf8')));
 const titles = new Set();
 const assets = new Set();
+const shareImages = new Map();
 for (const file of files) {
   const html = fs.readFileSync(path.join(dist, file), 'utf8');
   const route = '/' + file.replaceAll('\\', '/').replace(/index\.html$/, '');
@@ -26,6 +27,11 @@ for (const file of files) {
   assert(description.length >= 50 && description.length <= 160, `${route}: description must hold 50–160 characters (${description.length})`);
   // Never announce an absence to the visitor: an edition is dated, not "pending" or "archived".
   assert(!/nouvelles en attente|Archive ·/.test(html), `${route}: negative edition label`);
+  // A shared link shows what this page alone says: its own photograph or its own card (npm run og).
+  const shareImage = html.match(/<meta property="og:image" content="([^"]+)"/)?.[1] ?? '';
+  assert(shareImage.startsWith(SITE_URL + '/') && fs.existsSync(path.join(dist, decodeURIComponent(shareImage.slice(SITE_URL.length)))), `${route}: share image missing (${shareImage})`);
+  assert(!shareImages.has(shareImage), `${route}: share image already used by ${shareImages.get(shareImage)}`);
+  shareImages.set(shareImage, route);
   for (const script of html.matchAll(/<script[^>]+type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)) JSON.parse(script[1]);
   for (const match of html.matchAll(/(?:src|href)="([^"#]+)"/g)) {
     let address = match[1].replaceAll('&amp;', '&');

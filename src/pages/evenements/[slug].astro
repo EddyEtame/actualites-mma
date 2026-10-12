@@ -23,7 +23,7 @@ const eventSchema = {
 };
 ---
 
-<Base title={event.title + ' — Date et combats confirmés'} description={event.description} image={event.image} currentNav="evenements">
+<Base title={event.title + ' — Date et combats confirmés'} description={event.description} image={`/og/evenements-${event.slug}.jpg`} currentNav="evenements">
   <script is:inline type="application/ld+json" set:html={JSON.stringify(eventSchema)} />
 
   <div class="event-page-hero" style={'--org-accent: ' + event.accent + ';'}>

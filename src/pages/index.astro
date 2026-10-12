@@ -15,7 +15,7 @@ const leadArticles = freshArticles.length ? freshArticles : allArticles;
 const mainStory = leadArticles[0];
 const sideStories = leadArticles.slice(1, 4);
 const calendar = upcomingEvents(events);
-const ogImage = `${SITE_URL}${mainStory?.image || '/assets/img/octagon.webp'}`;
+const ogImage = `${SITE_URL}/og/home.jpg`;
 // Counted from the roster itself, so the heading can never claim more organisations than it shows.
 const rosterOrgs = new Set(fighters.map(fighter => fighter.org)).size;
 const inWords = ['zéro', 'une', 'deux', 'trois', 'quatre', 'cinq', 'six', 'sept', 'huit', 'neuf', 'dix'];
@@ -51,8 +51,8 @@ const rosterOrgsLabel = `${inWords[rosterOrgs] ?? rosterOrgs} organisation${rost
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
   <!-- Fonts & Stylesheets -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="/assets/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="/assets/css/fonts.css" />
   <link rel="stylesheet" href="/assets/css/base.css" />
   <link rel="stylesheet" href="/assets/css/home.css" />

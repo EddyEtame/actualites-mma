@@ -11,6 +11,12 @@ npm run build
 npm run audit
 ```
 
+## Cartes de partage et polices
+
+Chaque page montre sa propre image quand un lien est partagé : sa photo (articles, combattants) ou une carte 1200 × 630 composée pour elle (accueil, rubriques, organisations, événements, clubs sans photo). Après avoir modifié `events.json`, `organisations.json` ou `clubs.json`, lancer `npm run og` puis versionner `public/og` ; l'audit refuse une image de partage absente ou déjà utilisée par une autre page. Le rendu du texte utilise `scripts/og-fonts/Oswald-Variable.ttf` (licence OFL) et n'a lieu qu'en local : ni Vercel ni GitHub Actions ne dessinent de texte.
+
+Les polices (Oswald, Outfit, Newsreader, JetBrains Mono) sont servies depuis `public/assets/fonts` : aucune requête vers Google Fonts, donc aucune adresse IP de visiteur transmise à un tiers pour afficher le texte.
+
 ## Actualités vérifiables
 
 La une suit la date originale de la source. Les articles indiquent leur propre date de publication, la date de l'information, les liens sources et les crédits photo. Les anciennes données sans preuve sont conservées hors publication dans `docs/quarantined-*.json`.

@@ -18,7 +18,8 @@
     "test": "node --test scripts/news-pipeline.test.mjs scripts/cloud-news-edition.test.mjs",
     "news:validate": "node scripts/ai-wired-crawler.mjs --validate",
     "news:discover": "node scripts/ai-wired-crawler.mjs --discover",
-    "news:cloud": "node scripts/cloud-news-edition.mjs"
+    "news:cloud": "node scripts/cloud-news-edition.mjs",
+    "og": "node scripts/generate-og.mjs"
   },
   "dependencies": {
     "astro": "^7.3.6"
