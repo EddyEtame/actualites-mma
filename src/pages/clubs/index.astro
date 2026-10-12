@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import clubs from '../../data/clubs.json';
+import { SITE_URL } from '../../lib/editorial.mjs';
 
 const bcGym = clubs.find(c => c.slug === 'boxing-center-etats-unis')!;
 const otherClubs = clubs.filter(c => c.slug !== bcGym.slug);
@@ -13,7 +14,7 @@ const listSchema = {
     '@type': 'ListItem',
     position: index + 1,
     name: club.name,
-    url: `https://actu-mma.com/clubs/${club.slug}/`
+    url: `${SITE_URL}/clubs/${club.slug}/`
   }))
 };
 ---

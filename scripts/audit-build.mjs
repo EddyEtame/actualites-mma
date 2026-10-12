@@ -17,8 +17,15 @@ for (const file of files) {
   assert(title && !titles.has(title), `${route}: unique title required`);
   titles.add(title);
   assert(!html.includes('prise-mma.fr') && !html.includes('localhost:') && !html.includes('127.0.0.1:'), `${route}: obsolete origin`);
+  // The bare domain answers with a permanent redirect to www: no canonical, link or card may point at it.
+  assert(!html.includes('https://actu-mma.com'), `${route}: redirecting bare-domain URL`);
   const canonical = html.match(/<link[^>]*rel="canonical"[^>]*href="([^"]+)"/)?.[1];
   assert.equal(canonical, SITE_URL + route, `${route}: canonical mismatch`);
+  assert.equal(html.match(/<meta property="og:url" content="([^"]+)"/)?.[1], canonical, `${route}: og:url differs from canonical`);
+  const description = html.match(/<meta name="description" content="([^"]*)"/)?.[1] ?? '';
+  assert(description.length >= 50 && description.length <= 160, `${route}: description must hold 50–160 characters (${description.length})`);
+  // Never announce an absence to the visitor: an edition is dated, not "pending" or "archived".
+  assert(!/nouvelles en attente|Archive ·/.test(html), `${route}: negative edition label`);
   for (const script of html.matchAll(/<script[^>]+type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)) JSON.parse(script[1]);
   for (const match of html.matchAll(/(?:src|href)="([^"#]+)"/g)) {
     let address = match[1].replaceAll('&amp;', '&');
@@ -48,6 +55,6 @@ for (const article of articles) {
   assert(page.includes(article.imageSource.pageUrl.replaceAll('&', '&amp;')) && page.includes('Source de la photo'), `${article.slug}: visible photograph source missing`);
 }
 const homepage = fs.readFileSync(path.join(dist, 'index.html'), 'utf8');
-assert(homepage.includes(`/actualites/${articles[0].slug}/`) && homepage.includes('data-news-freshness='), 'Newest story/freshness indicator missing');
+assert(homepage.includes(`/actualites/${articles[0].slug}/`) && homepage.includes(`<time datetime="${articles[0].sourcePublishedAt}"`), 'Newest story or its visible date missing');
 assert(fs.readFileSync(path.join(dist, 'robots.txt'), 'utf8').includes(`${SITE_URL}/sitemap.xml`), 'Robots origin mismatch');
 console.log(`Build audit passed: ${files.length} pages, ${assets.size} referenced images, ${articles.length} sourced article images at 1200 × 675.`);

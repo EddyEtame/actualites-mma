@@ -27,3 +27,7 @@ pnpm-debug.log*
 .news/
 *.news-lock
 .env.*
+
+# local agent tooling and private research notes
+.claude/
+.research/

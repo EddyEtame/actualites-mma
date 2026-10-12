@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://actu-mma.com/sitemap.xml
+Sitemap: https://www.actu-mma.com/sitemap.xml

@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { SITE_URL } from '../src/lib/editorial.mjs';
 
 const sitemap = fs.readFileSync('public/sitemap.xml', 'utf8');
 const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(m => m[1]);
@@ -10,7 +11,7 @@ async function checkImages() {
   const allImages = [];
 
   for (const url of urls) {
-    const localUrl = url.replace('https://actu-mma.com', 'http://localhost:3000');
+    const localUrl = url.replace(SITE_URL, 'http://localhost:3000');
     try {
       const res = await fetch(localUrl);
       const html = await res.text();

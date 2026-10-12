@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import clubs from '../../data/clubs.json';
+import { SITE_URL } from '../../lib/editorial.mjs';
 
 export function getStaticPaths() {
   return clubs.map(club => ({ params: { slug: club.slug }, props: { club } }));
@@ -9,7 +10,7 @@ export function getStaticPaths() {
 const { club } = Astro.props;
 const otherClubs = clubs.filter(c => c.slug !== club.slug).slice(0, 3);
 const isBoxingCenter = club.slug === 'boxing-center-etats-unis';
-const siteUrl = 'https://actu-mma.com';
+const siteUrl = SITE_URL;
 const verifiedDate = new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${club.verifiedAt}T12:00:00Z`));
 const specs = [
   club.surface && { label: 'Salle', value: club.surface, detail: 'Superficie annoncée par le club' },

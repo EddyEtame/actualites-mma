@@ -3,7 +3,7 @@
    Respecte les standards Baffled Bar : SEO sémantique complet, polices locales optimisées,
    header compact au scroll, tiroir mobile accessible, maillage interne et liens externes. */
 import articles from '../data/articles.json';
-import { publishedArticles, formatDate } from '../lib/editorial.mjs';
+import { publishedArticles, formatDate, SITE_URL, SITE_NAME, pageTitle, metaDescription } from '../lib/editorial.mjs';
 interface Props {
   title: string;
   description: string;
@@ -19,19 +19,21 @@ interface Props {
 
 const {
   title,
-  description,
+  description: fullDescription,
   image = '/assets/fighters/ciryl-gane.webp',
-  canonical = new URL(Astro.url.pathname, 'https://actu-mma.com').href,
+  canonical = new URL(Astro.url.pathname, SITE_URL).href,
   type = 'website',
   publishedTime,
   modifiedTime,
-  author = 'Rédaction PRISE MMA',
+  author = `Rédaction ${SITE_NAME}`,
   currentNav = '',
   sources = []
 } = Astro.props;
 
-const siteUrl = 'https://actu-mma.com';
+const siteUrl = SITE_URL;
 const absoluteImageUrl = image.startsWith('http') ? image : `${siteUrl}${image}`;
+const fullTitle = pageTitle(title);
+const description = metaDescription(fullDescription);
 const latestArticles = publishedArticles(articles).slice(0, 6);
 ---
 <!doctype html>
@@ -39,22 +41,22 @@ const latestArticles = publishedArticles(articles).slice(0, 6);
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{title} — PRISE MMA</title>
+  <title>{fullTitle}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={canonical} />
 
   <!-- Open Graph / Facebook -->
-  <meta property="og:site_name" content="PRISE MMA" />
+  <meta property="og:site_name" content={SITE_NAME} />
   <meta property="og:locale" content="fr_FR" />
   <meta property="og:type" content={type} />
-  <meta property="og:title" content={`${title} — PRISE MMA`} />
+  <meta property="og:title" content={fullTitle} />
   <meta property="og:description" content={description} />
   <meta property="og:url" content={canonical} />
   <meta property="og:image" content={absoluteImageUrl} />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={`${title} — PRISE MMA`} />
+  <meta name="twitter:title" content={fullTitle} />
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={absoluteImageUrl} />
 

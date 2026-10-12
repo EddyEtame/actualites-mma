@@ -4,7 +4,7 @@
    Typographie éditoriale haute densité, métadonnées Schema.org complètes, maillage interne. */
 import Base from '../../layouts/Base.astro';
 import articles from '../../data/articles.json';
-import { publishedArticles, formatDate } from '../../lib/editorial.mjs';
+import { publishedArticles, formatDate, SITE_URL, SITE_NAME } from '../../lib/editorial.mjs';
 
 export function getStaticPaths() {
   return publishedArticles(articles).map(article => ({
@@ -15,6 +15,8 @@ export function getStaticPaths() {
 
 const { article } = Astro.props;
 const otherArticles = publishedArticles(articles).filter(a => a.slug !== article.slug).slice(0, 3);
+const articleUrl = `${SITE_URL}/actualites/${article.slug}/`;
+const byline = article.author || `Rédaction ${SITE_NAME}`;
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -24,19 +26,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Accueil",
-      "item": "https://actu-mma.com/"
+      "item": `${SITE_URL}/`
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Actualités",
-      "item": "https://actu-mma.com/actualites/"
+      "item": `${SITE_URL}/actualites/`
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": article.title,
-      "item": `https://actu-mma.com/actualites/${article.slug}/`
+      "item": articleUrl
     }
   ]
 };
@@ -50,7 +52,7 @@ const breadcrumbSchema = {
   publishedTime={article.publishedAt || article.date}
   modifiedTime={article.updatedAt || article.publishedAt || article.date}
   sources={article.sources || []}
-  author={article.author || 'Rédaction PRISE MMA'}
+  author={byline}
   currentNav="actualites"
 >
   <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
@@ -80,17 +82,17 @@ const breadcrumbSchema = {
       <div class="article-author-bar">
         <div class="author-info">
           <span class="author-label mono">Rédigé par</span>
-          <strong class="author-name">{article.author || 'Rédaction PRISE MMA'}</strong>
+          <strong class="author-name">{byline}</strong>
           <span class="author-sub mono">• Sources consultées le {formatDate(article.verifiedAt || article.publishedAt || article.date)}</span>
         </div>
         <div class="author-share-tools mono">
           <button type="button" class="share-btn share-copy" id="copyLinkBtn" title="Copier le lien de l'article">
             <span class="share-icon">🔗</span> <span class="share-txt">Copier le lien</span>
           </button>
-          <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(article.title)}&url=${encodeURIComponent(`https://actu-mma.com/actualites/${article.slug}/`)}`} target="_blank" rel="noopener noreferrer" class="share-btn share-x" title="Partager sur X">
+          <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(article.title)}&url=${encodeURIComponent(articleUrl)}`} target="_blank" rel="noopener noreferrer" class="share-btn share-x" title="Partager sur X">
             𝕏
           </a>
-          <a href={`https://api.whatsapp.com/send?text=${encodeURIComponent(`${article.title} — https://actu-mma.com/actualites/${article.slug}/`)}`} target="_blank" rel="noopener noreferrer" class="share-btn share-wa" title="Partager sur WhatsApp">
+          <a href={`https://api.whatsapp.com/send?text=${encodeURIComponent(`${article.title} — ${articleUrl}`)}`} target="_blank" rel="noopener noreferrer" class="share-btn share-wa" title="Partager sur WhatsApp">
             WhatsApp
           </a>
         </div>

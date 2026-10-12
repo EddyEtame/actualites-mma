@@ -670,7 +670,10 @@
   letter-spacing: .04em;
   color: var(--teal);
   margin-bottom: .3rem;
-  text-transform: capitalize;
+}
+/* « Samedi 10 octobre » : en français, seule la première lettre prend la capitale. */
+.event-card__body time::first-letter {
+  text-transform: uppercase;
 }
 .event-card__body h3 {
   font-size: 1.05rem;

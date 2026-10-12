@@ -14,7 +14,7 @@ const sortedEvents = upcomingEvents(events);
     </header>
     <div class="events-full-list" data-reveal-group>
       {sortedEvents.map(event => (
-        <article class="event-row-card" data-reveal>
+        <article class="event-row-card" data-event-date={event.date} data-reveal>
           <div class="event-badge-col" style={'background: ' + event.accent + ';'}>
             <span class="badge-text display">{event.badge}</span><span class="org-name mono">{event.org}</span>
           </div>
@@ -32,7 +32,7 @@ const sortedEvents = upcomingEvents(events);
         </article>
       ))}
     </div>
-    {sortedEvents.length === 0 && <p class="lede">Les prochaines affiches confirmées seront ajoutées après vérification des annonces des organisations.</p>}
+    <p class="lede" data-events-empty hidden={sortedEvents.length > 0}>Les dernières annonces d'affiches et de combats sont dans <a href="/actualites/">le fil d'actualité</a>, avec leurs sources.</p>
   </div>
 </Base>
 

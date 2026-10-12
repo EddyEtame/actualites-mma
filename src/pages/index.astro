@@ -6,13 +6,20 @@ import events from '../data/events.json';
 import fighters from '../data/fighters.json';
 import organisations from '../data/organisations.json';
 import clubs from '../data/clubs.json';
-import { publishedArticles, isFresh, formatDate, upcomingEvents } from '../lib/editorial.mjs';
+import { publishedArticles, isFresh, formatDate, upcomingEvents, SITE_URL, SITE_NAME } from '../lib/editorial.mjs';
 
 const allArticles = publishedArticles(articles);
 const freshArticles = allArticles.filter(article => isFresh(article));
-const mainStory = freshArticles[0];
-const sideStories = freshArticles.slice(1, 4);
+// The hero always carries the latest edition, dated in plain sight; an empty front page sells nothing.
+const leadArticles = freshArticles.length ? freshArticles : allArticles;
+const mainStory = leadArticles[0];
+const sideStories = leadArticles.slice(1, 4);
 const calendar = upcomingEvents(events);
+const ogImage = `${SITE_URL}${mainStory?.image || '/assets/img/octagon.webp'}`;
+// Counted from the roster itself, so the heading can never claim more organisations than it shows.
+const rosterOrgs = new Set(fighters.map(fighter => fighter.org)).size;
+const inWords = ['zéro', 'une', 'deux', 'trois', 'quatre', 'cinq', 'six', 'sept', 'huit', 'neuf', 'dix'];
+const rosterOrgsLabel = `${inWords[rosterOrgs] ?? rosterOrgs} organisation${rosterOrgs > 1 ? 's' : ''}`;
 ---
 
 <!doctype html>
@@ -22,21 +29,23 @@ const calendar = upcomingEvents(events);
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PRISE MMA — L'actualité du MMA français et mondial</title>
   <meta name="description" content="Actualités MMA en français : nouvelles sourcées et datées, UFC, ONE, PFL, combattants et clubs. Consultez les dernières informations et les combats à venir." />
-  <link rel="canonical" href="https://actu-mma.com/" />
+  <link rel="canonical" href={`${SITE_URL}/`} />
+  <link rel="alternate" type="application/rss+xml" title="Actualités MMA" href="/rss.xml" />
 
   <!-- Open Graph -->
-  <meta property="og:site_name" content="PRISE MMA" />
+  <meta property="og:site_name" content={SITE_NAME} />
+  <meta property="og:locale" content="fr_FR" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="PRISE MMA — L'actualité du MMA français et mondial" />
-  <meta property="og:description" content="Combats à venir, résultats en direct, organisations, clubs et combattants français. UFC, ARES FC, Hexagone MMA, PFL, ONE." />
-  <meta property="og:url" content="https://actu-mma.com/" />
-  <meta property="og:image" content={`https://actu-mma.com${mainStory?.image || '/assets/img/octagon.webp'}`} />
+  <meta property="og:description" content="Nouvelles MMA sourcées et datées, combats à venir, organisations, clubs et combattants français. UFC, ARES FC, Hexagone MMA, PFL, ONE." />
+  <meta property="og:url" content={`${SITE_URL}/`} />
+  <meta property="og:image" content={ogImage} />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="PRISE MMA — L'actualité du MMA français" />
-  <meta name="twitter:description" content="Combats à venir, résultats, organisations, clubs et combattants français." />
-  <meta name="twitter:image" content={`https://actu-mma.com${mainStory?.image || '/assets/img/octagon.webp'}`} />
+  <meta name="twitter:description" content="Nouvelles MMA sourcées et datées, combats à venir, organisations, clubs et combattants français." />
+  <meta name="twitter:image" content={ogImage} />
 
   <!-- Favicon -->
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -54,8 +63,8 @@ const calendar = upcomingEvents(events);
   <script is:inline type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "NewsMediaOrganization",
-    "name": "PRISE MMA",
-    "url": "https://actu-mma.com/",
+    "name": SITE_NAME,
+    "url": `${SITE_URL}/`,
     "description": "Média indépendant d'actualité MMA en français.",
     "knowsAbout": ["MMA", "UFC", "ARES", "Hexagone MMA", "PFL", "ONE Championship"]
   })} />
@@ -122,7 +131,7 @@ const calendar = upcomingEvents(events);
   <section class="hero">
     <div class="hero__grid">
       <!-- Main story -->
-      <a class="hero__main" href={`/actualites/${mainStory.slug}/`} data-news-source={mainStory.sourcePublishedAt} data-reveal data-reveal-media>
+      <a class="hero__main" href={`/actualites/${mainStory.slug}/`} data-reveal data-reveal-media>
         <div class="hero__visual">
           <img src={mainStory.image} alt={mainStory.imageAlt} width="1200" height="675" fetchpriority="high" />
         </div>
@@ -132,13 +141,13 @@ const calendar = upcomingEvents(events);
           <h1 class="display">
             <span class="reveal-mask"><span>{mainStory.title}</span></span>
           </h1>
-          <span class="hero__date mono"><span data-news-freshness={mainStory.sourcePublishedAt}>Informations vérifiées</span> · <time datetime={mainStory.sourcePublishedAt}>{formatDate(mainStory.sourcePublishedAt)}</time></span>
-          <p>{mainStory.excerpt.slice(0, 140)}…</p>
+          <span class="hero__date mono">Informations vérifiées · <time datetime={mainStory.sourcePublishedAt}>{formatDate(mainStory.sourcePublishedAt)}</time></span>
+          <p>{mainStory.excerpt}</p>
         </div>
       </a>
       <!-- Side stories -->
       {sideStories.map((s, i) => (
-        <a class={`hero__side hero__side--${i + 1}`} href={`/actualites/${s.slug}/`} data-news-source={s.sourcePublishedAt} data-reveal data-reveal-media>
+        <a class={`hero__side hero__side--${i + 1}`} href={`/actualites/${s.slug}/`} data-reveal data-reveal-media>
           <div class="hero__visual">
             <img src={s.image} alt={s.imageAlt} width="1200" height="675" loading="lazy" decoding="async" />
           </div>
@@ -216,7 +225,7 @@ const calendar = upcomingEvents(events);
 
       <div style="margin-top: 2.5rem; text-align: center;">
         <a href="/actualites/" class="btn btn--ghost" style="padding: 0.9rem 2rem;">
-          Consulter toutes les actualités & chroniques →
+          Toutes les actualités →
         </a>
       </div>
     </div>
@@ -242,7 +251,7 @@ const calendar = upcomingEvents(events);
       </div>
       <div class="events-grid" data-reveal-group>
         {calendar.map(ev => (
-          <a class={`event-card${ev.countdown ? ' event-card--featured' : ''}`} href={`/evenements/${ev.slug}/`} data-reveal>
+          <a class={`event-card${ev.countdown ? ' event-card--featured' : ''}`} href={`/evenements/${ev.slug}/`} data-event-date={ev.date} data-reveal>
             <div class="event-card__badge" style={`background: ${ev.accent};`}>
               <span>{ev.badge}</span>
             </div>
@@ -261,7 +270,7 @@ const calendar = upcomingEvents(events);
       </div>
       <div style="margin-top: 2.5rem; text-align: center;">
         <a href="/evenements/" class="btn btn--primary" style="padding: 0.9rem 2rem;">
-          Accéder au calendrier complet & horaires TV →
+          Le calendrier : dates, horaires et diffusion →
         </a>
       </div>
     </div>
@@ -280,7 +289,7 @@ const calendar = upcomingEvents(events);
     <div class="wrap">
       <div class="ed-head" data-reveal>
         <span class="kicker">Les combattants</span>
-        <h2 class="display">{fighters.length} portraits, <span class="tint">cinq organisations</span></h2>
+        <h2 class="display">{fighters.length} portraits, <span class="tint">{rosterOrgsLabel}</span></h2>
         <p class="lede">De l'UFC au ONE. Parcours, records, style — sans classement maison.</p>
       </div>
     </div>
@@ -301,7 +310,7 @@ const calendar = upcomingEvents(events);
     </div>
     <div style="margin-top: 2rem; text-align: center;">
       <a href="/combattants/" class="btn btn--ghost" style="padding: 0.8rem 1.8rem;">
-        Voir l'annuaire complet des combattants français →
+        Tous les portraits de combattants →
       </a>
     </div>
   </section>
@@ -365,7 +374,7 @@ const calendar = upcomingEvents(events);
       </div>
       <div style="margin-top: 2.5rem; text-align: center;">
         <a href="/clubs/" class="btn btn--ghost" style="padding: 0.9rem 2rem;">
-          Accéder à l'annuaire complet des clubs de France →
+          Tous les clubs référencés →
         </a>
       </div>
     </div>

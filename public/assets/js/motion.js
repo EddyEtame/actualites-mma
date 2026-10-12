@@ -13,20 +13,15 @@
   var root = document.documentElement;
   var reduit = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  document.querySelectorAll('[data-news-freshness]').forEach(function (el) {
-    var timestamp = Date.parse(el.getAttribute('data-news-freshness'));
-    if (!isFinite(timestamp) || Date.now() - timestamp > 72 * 3600000) {
-      el.textContent = 'Dernière édition · nouvelles en attente';
-      el.classList.add('stale-edition');
-    }
+  /* Une page statique ne vieillit pas seule : une soirée passée quitte
+   * « à venir » dès le lendemain, à l'heure de Paris, sans attendre le build. */
+  var aujourdhui = new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Paris' });
+  document.querySelectorAll('[data-event-date]').forEach(function (carte) {
+    if (carte.getAttribute('data-event-date') < aujourdhui) carte.remove();
   });
-  document.querySelectorAll('[data-news-source]').forEach(function (el) {
-    var timestamp = Date.parse(el.getAttribute('data-news-source'));
-    if (!isFinite(timestamp) || Date.now() - timestamp > 72 * 3600000) {
-      var label = el.querySelector('.kicker');
-      if (label) label.textContent = 'Archive · ' + label.textContent.replace(/^À la une · /, '');
-    }
-  });
+  var vide = document.querySelector('[data-events-empty]');
+  if (vide && !document.querySelector('[data-event-date]')) vide.hidden = false;
+
   if (!reduit && 'IntersectionObserver' in window) {
 
   root.classList.add("motion");
@@ -164,7 +159,12 @@
    * Double le contenu du ticker pour une boucle CSS sans saut. */
   var tickerRun = document.querySelector(".ticker__run");
   if (tickerRun) {
-    tickerRun.innerHTML += tickerRun.innerHTML;
+    // La copie ne sert qu'à la boucle sans couture : un lecteur d'écran n'entend chaque titre qu'une fois.
+    var copie = document.createElement("span");
+    copie.setAttribute("aria-hidden", "true");
+    copie.style.display = "contents";
+    copie.innerHTML = tickerRun.innerHTML;
+    tickerRun.appendChild(copie);
   }
 
   /* --------------------------------------------- MAGNETIC BUTTONS
