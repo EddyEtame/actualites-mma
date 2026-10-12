@@ -84,7 +84,13 @@ test('an unsupported fact flagged by the reviewer is revised and reviewed again'
     if(request.name==='actu_mma_fact_review')return ++reviews===1?{supported:false,newInformation:true,isMma:true,reasons:['La date de contamination est inventée.']}:approve;
     if(request.name==='actu_mma_article_revision')assert.deepEqual(JSON.parse(request.input).problems,['La date de contamination est inventée.']);
     return draft;}});
-  assert.deepEqual(names,['actu_mma_article','actu_mma_fact_review','actu_mma_article_revision','actu_mma_fact_review']);assert.equal(article.slug.endsWith('-2026-10-07'),true);
+  assert.deepEqual(names,['actu_mma_article','actu_mma_fact_review','actu_mma_article_revision','actu_mma_fact_review']);assert.equal(article.slug,'ufc-une-reponse-au-defi');
+});
+test('the address carries the headline without a date, and a repeated headline is numbered',async()=>{
+  const model=async request=>request.name==='actu_mma_article'?draft:approve;
+  assert.equal((await draftArticle(candidate,{now,model})).slug,'ufc-une-reponse-au-defi');
+  const taken=[{slug:'ufc-une-reponse-au-defi'},{slug:'ufc-une-reponse-au-defi-2'}];
+  assert.equal((await draftArticle(candidate,{now,model,existingCoverage:taken})).slug,'ufc-une-reponse-au-defi-3');
 });
 test('independent review receives prior source titles and rejects republished news without revision',async()=>{
   let reviewInput;let calls=0;

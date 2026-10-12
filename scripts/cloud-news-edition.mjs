@@ -14,6 +14,12 @@ const KICKER = /^[^·\s][^·]{0,30} · [^·\s][^·.!?]{1,40}$/u;
 const escapeHtml = text => text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 const slugify = text => text.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,100).replace(/-$/,'');
 const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
+// Addresses carry the headline only; the date lives on the page, and a repeated headline gets -2, -3.
+export function uniqueSlug(base, taken) {
+  const used = new Set(taken);
+  if (!used.has(base)) return base;
+  for (let n = 2; ; n++) if (!used.has(`${base}-${n}`)) return `${base}-${n}`;
+}
 const string = { type: 'string' };
 const draftSchema = {
   type: 'object', additionalProperties: false,
@@ -182,7 +188,7 @@ export async function draftArticle(candidate, { now, model = modelJson, existing
     const review = await reviewDraft(source, draft, { model, existingCoverage });
     if (!review.supported || !review.newInformation || !review.isMma) throw new NewsError('EDITORIAL_REJECTED',`Independent review rejected the revised draft: ${review.reasons.join('; ')}`);
   }
-  const slug=`${slugify(draft.title)}-${now.slice(0,10)}`;
+  const slug=uniqueSlug(slugify(draft.title), existingCoverage.map(article=>article.slug));
   const content=draft.paragraphs.flatMap((paragraph,i)=>[...(paragraph.heading ? [`<h2>${escapeHtml(paragraph.heading)}</h2>`] : []),`<p${i===0?' class="lead"':''}>${escapeHtml(paragraph.text)}</p>`]);
   return {slug,title:draft.title,excerpt:draft.excerpt,newsKey:slugify(draft.newsKey),category:'actualites',kicker:draft.kicker,...(draft.imageAlt?.trim() ? {imageAlt:draft.imageAlt.trim()} : {}),date:now.slice(0,10),publishedAt:now,verifiedAt:now,sourcePublishedAt:candidate.publishedAt,status:'published',author:`Rédaction ${SITE_NAME}`,readTime:`${Math.max(2,Math.ceil(wordCount(content.join(' '))/200))} min`,originalReporting:false,content,sources:[{name:candidate.source,title:candidate.title,url:candidate.url,publishedAt:candidate.publishedAt,retrievedAt:now}],sourceEvidence:draft.evidence.map(excerpt=>({sourceUrl:candidate.url,excerpt})),editorialReview:{method:'source-grounded-draft-and-independent-review',verifiedAt:now}};
 }
@@ -245,7 +251,16 @@ export async function runCloudEdition({ environment = process.env, photograph = 
   }
 }
 
+/** Cheap gate for frequent wake-ups: needs no installed package and tells the workflow whether to do anything at all. */
+export async function dueNow({ environment = process.env, now = new Date().toISOString() } = {}) {
+  const [config, articles] = await Promise.all([loadConfig(), fs.readFile(path.join(ROOT,'src/data/articles.json'),'utf8').then(JSON.parse)]);
+  const due = batchDue(articles, now, config);
+  if (environment.GITHUB_OUTPUT) await fs.appendFile(environment.GITHUB_OUTPUT, `due=${due.due}\n`);
+  console.log(JSON.stringify(due));
+  return due;
+}
+
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  const run = process.argv.includes('--verify-cloud') ? verifyCloud().then(result=>console.log(JSON.stringify(result,null,2))) : runCloudEdition();
+  const run = process.argv.includes('--verify-cloud') ? verifyCloud().then(result=>console.log(JSON.stringify(result,null,2))) : process.argv.includes('--due') ? dueNow() : runCloudEdition();
   run.catch(error=>{console.error(`[CLOUD EDITION] ${error.code ?? 'FAILED'}: ${error.message}`);process.exitCode=1;});
 }

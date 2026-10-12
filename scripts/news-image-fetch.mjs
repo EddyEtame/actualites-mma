@@ -5,14 +5,14 @@ import sharp from 'sharp';
 import { decodeEntities as decode } from './news-pipeline.mjs';
 
 const known = {
-  'natalia-silva-reponse-shevchenko-defense-titre-2026-10-07': {
+  'natalia-silva-reponse-shevchenko-defense-titre': {
     newsKey: 'natalia-silva-reponse-shevchenko-apres-ufc-332',
     alt: "Natalia Silva à l'UFC 332, sur la photographie publiée par MMA Fighting.",
     caption: "Natalia Silva à l'UFC 332 du 3 octobre 2026. Photographie de contexte publiée avec l'entretien.",
     credit: 'Cooper Neill / Zuffa LLC',
     creditOriginal: 'Cooper Neill/Zuffa LLC',
   },
-  'one-samurai-4-isojima-abe-takeuchi-nishiyama-annonces-2026-10-07': {
+  'one-samurai-4-isojima-abe-takeuchi-nishiyama-annonces': {
     newsKey: 'one-samurai-4-isojima-abe-takeuchi-nishiyama',
     alt: "Shozo Isojima, sur la photographie de ONE Championship accompagnant l'annonce de ONE SAMURAI 4.",
     caption: "Shozo Isojima, sur une photographie de contexte publiée avec l'annonce des nouveaux combats de ONE SAMURAI 4.",
@@ -20,28 +20,28 @@ const known = {
     creditOriginal: 'ONE Championship',
     position: 'north',
   },
-  'dwcs-semaine-9-nell-ariano-lagrange-quatre-contrats-2026-10-07': {
+  'dwcs-semaine-9-nell-ariano-lagrange-quatre-contrats': {
     newsKey: 'dwcs-saison-10-semaine-9-resultats',
     alt: "Salhahuddin Everett réagit après son combat du 6 octobre 2026 au Dana White's Contender Series.",
     caption: "Salhahuddin Everett après son combat de la neuvième semaine du DWCS, le 6 octobre 2026. Photographie publiée avec les résultats officiels.",
     credit: 'UFC',
     creditOriginal: null,
   },
-  'rakhmonov-morales-piste-duel-invaincus-2026-10-06': {
+  'rakhmonov-morales-piste-duel-invaincus': {
     newsKey: 'rakhmonov-message-duel-invaincus-morales',
     alt: "Shavkat Rakhmonov sur la photographie d'archive publiée par MMA Fighting avec son nouveau message.",
     caption: "Shavkat Rakhmonov à l'UFC 310. Photographie d'archive utilisée par MMA Fighting pour accompagner cette actualité.",
     credit: 'Steve Marcus / Getty Images',
     creditOriginal: 'Steve Marcus, Getty Images',
   },
-  'ufc-allen-duncan-10-octobre-carte-enjeux-2026-10-07': {
+  'ufc-allen-duncan-10-octobre-carte-enjeux': {
     newsKey: 'ufc-allen-duncan-fight-night-octobre-2026-avant-combat',
     alt: "Montage photographique officiel des combattants de l'UFC Fight Night Allen–Duncan.",
     caption: "Montage officiel publié par l'UFC pour présenter la carte Allen–Duncan du 10 octobre 2026.",
     credit: 'UFC',
     creditOriginal: null,
   },
-  'omalley-reponse-talbott-yan-condition-2026-10-05': {
+  'omalley-reponse-talbott-yan-condition': {
     newsKey: 'omalley-reponse-talbott-condition-yan-dvalishvili-ufc-333',
     alt: "Sean O'Malley lors de la conférence de presse de l'UFC Freedom 250, sur la photographie publiée par MMA Fighting.",
     caption: "Sean O'Malley à la conférence de presse de l'UFC Freedom 250. Photographie d'archive accompagnant sa nouvelle réaction.",

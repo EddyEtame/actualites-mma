@@ -2,5 +2,127 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "astro",
   "buildCommand": "npm run build",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/actualites/beneil-dariush-voit-sean-strickland-battre-nassourdine-imavov-aux-points-2026-10-12",
+      "destination": "/actualites/beneil-dariush-voit-sean-strickland-battre-nassourdine-imavov-aux-points/",
+      "permanent": true
+    },
+    {
+      "source": "/actualites/beneil-dariush-voit-sean-strickland-battre-nassourdine-imavov-aux-points-2026-10-12/",
+      "destination": "/actualites/beneil-dariush-voit-sean-strickland-battre-nassourdine-imavov-aux-points/",
+      "permanent": true
+    },
+    {
+      "source": "/actualites/brendan-allen-soutient-la-prise-de-parole-de-sean-strickland-sur-les-salaires-a-l-ufc-2026-10-12",
+      "destination": "/actualites/brendan-allen-soutient-la-prise-de-parole-de-sean-strickland-sur-les-salaires-a-l-ufc/",
+      "permanent": true
+    },
+    {
+      "source": "/actualites/brendan-allen-soutient-la-prise-de-parole-de-sean-strickland-sur-les-salaires-a-l-ufc-2026-10-12/",
+      "destination": "/actualites/brendan-allen-soutient-la-prise-de-parole-de-sean-strickland-sur-les-salaires-a-l-ufc/",
+      "permanent": true
+    },
+    {
+      "source": "/actualites/marc-goddard-explique-le-retrait-d-un-point-a-christian-leroy-duncan-2026-10-12",
+      "destination": "/actualites/marc-goddard-explique-le-retrait-d-un-point-a-christian-leroy-duncan/",
+      "permanent": true
+    },
+    {
+      "source": "/actualites/marc-goddard-explique-le-retrait-d-un-point-a-christian-leroy-duncan-2026-10-12/",
+      "destination": "/actualites/marc-goddard-explique-le-retrait-d-un-point-a-christian-leroy-duncan/",
+      "permanent": true
+    },
+    {
+      "source": "/actualites/bruce-buffer-explique-pourquoi-trois-combattants-ont-recu-son-introduction-speciale-2026-10-12",
+      "destination": "/actualites/bruce-buffer-explique-pourquoi-trois-combattants-ont-recu-son-introduction-speciale/",
+      "permanent": true
+    },
+    {
+      "source": "/actualites/bruce-buffer-explique-pourquoi-trois-combattants-ont-recu-son-introduction-speciale-2026-10-12/",
+      "destination": "/actualites/bruce-buffer-explique-pourquoi-trois-combattants-ont-recu-son-introduction-speciale/",
+      "permanent": true
+    },
+    {
+      "source": "/actualites/khamzat-chimaev-critique-sean-strickland-apres-ses-declarations-sur-ses-blessures-2026-10-12",
+      "destination": "/actualites/khamzat-chimaev-critique-sean-strickland-apres-ses-declarations-sur-ses-blessures/",
+      "permanent": true
+    },
+    {
+      "source": "/actualites/khamzat-chimaev-critique-sean-strickland-apres-ses-declarations-sur-ses-blessures-2026-10-12/",
+      "destination": "/actualites/khamzat-chimaev-critique-sean-strickland-apres-ses-declarations-sur-ses-blessures/",
+      "permanent": true
+    },
+    {
+      "source": "/actualites/ilia-topuria-prepare-son-retour-a-l-ufc-avec-lasha-et-beka-guruli-2026-10-12",
+      "destination": "/actualites/ilia-topuria-prepare-son-retour-a-l-ufc-avec-lasha-et-beka-guruli/",
+      "permanent": true
+    },
+    {
+      "source": "/actualites/ilia-topuria-prepare-son-retour-a-l-ufc-avec-lasha-et-beka-guruli-2026-10-12/",
+      "destination": "/actualites/ilia-topuria-prepare-son-retour-a-l-ufc-avec-lasha-et-beka-guruli/",
+      "permanent": true
+    },
+    {
+      "source": "/actualites/natalia-silva-reponse-shevchenko-defense-titre-2026-10-07",
+      "destination": "/actualites/natalia-silva-reponse-shevchenko-defense-titre/",
+      "permanent": true
+    },
+    {
+      "source": "/actualites/natalia-silva-reponse-shevchenko-defense-titre-2026-10-07/",
+      "destination": "/actualites/natalia-silva-reponse-shevchenko-defense-titre/",
+      "permanent": true
+    },
+    {
+      "source": "/actualites/one-samurai-4-isojima-abe-takeuchi-nishiyama-annonces-2026-10-07",
+      "destination": "/actualites/one-samurai-4-isojima-abe-takeuchi-nishiyama-annonces/",
+      "permanent": true
+    },
+    {
+      "source": "/actualites/one-samurai-4-isojima-abe-takeuchi-nishiyama-annonces-2026-10-07/",
+      "destination": "/actualites/one-samurai-4-isojima-abe-takeuchi-nishiyama-annonces/",
+      "permanent": true
+    },
+    {
+      "source": "/actualites/dwcs-semaine-9-nell-ariano-lagrange-quatre-contrats-2026-10-07",
+      "destination": "/actualites/dwcs-semaine-9-nell-ariano-lagrange-quatre-contrats/",
+      "permanent": true
+    },
+    {
+      "source": "/actualites/dwcs-semaine-9-nell-ariano-lagrange-quatre-contrats-2026-10-07/",
+      "destination": "/actualites/dwcs-semaine-9-nell-ariano-lagrange-quatre-contrats/",
+      "permanent": true
+    },
+    {
+      "source": "/actualites/rakhmonov-morales-piste-duel-invaincus-2026-10-06",
+      "destination": "/actualites/rakhmonov-morales-piste-duel-invaincus/",
+      "permanent": true
+    },
+    {
+      "source": "/actualites/rakhmonov-morales-piste-duel-invaincus-2026-10-06/",
+      "destination": "/actualites/rakhmonov-morales-piste-duel-invaincus/",
+      "permanent": true
+    },
+    {
+      "source": "/actualites/ufc-allen-duncan-10-octobre-carte-enjeux-2026-10-07",
+      "destination": "/actualites/ufc-allen-duncan-10-octobre-carte-enjeux/",
+      "permanent": true
+    },
+    {
+      "source": "/actualites/ufc-allen-duncan-10-octobre-carte-enjeux-2026-10-07/",
+      "destination": "/actualites/ufc-allen-duncan-10-octobre-carte-enjeux/",
+      "permanent": true
+    },
+    {
+      "source": "/actualites/omalley-reponse-talbott-yan-condition-2026-10-05",
+      "destination": "/actualites/omalley-reponse-talbott-yan-condition/",
+      "permanent": true
+    },
+    {
+      "source": "/actualites/omalley-reponse-talbott-yan-condition-2026-10-05/",
+      "destination": "/actualites/omalley-reponse-talbott-yan-condition/",
+      "permanent": true
+    }
+  ]
 }
