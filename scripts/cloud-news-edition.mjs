@@ -87,7 +87,15 @@ export async function verifyCloud({ environment = process.env, config, now = new
   for (const article of latest) {
     if (!article.sources?.length) throw new NewsError('MISSING_SOURCE','Cloud verification found an unsourced article.');
     for (const source of article.sources) {
-      const fetched = await sourceReader(source.url, config);
+      let fetched;
+      try { fetched = await sourceReader(source.url, config); }
+      catch (error) {
+        // Some publishers refuse datacenter addresses. The passages were verified at publication;
+        // an edition simply skips a source it cannot read, so a refusal is reported, not fatal.
+        if (!refusedAccess(error)) throw error;
+        warnings.push(`${article.slug}: ${new URL(source.url).hostname} refuses this server (${error.message})`);
+        continue;
+      }
       if (Date.parse(fetched.publishedAt) !== Date.parse(source.publishedAt)) throw new NewsError('SOURCE_DATE_MISMATCH',`Original source publication changed: ${article.slug}`);
       const passages = (article.sourceEvidence ?? []).filter(item => canonicalUrl(item.sourceUrl) === canonicalUrl(source.url));
       if (passages.length) {
@@ -106,12 +114,32 @@ export async function verifyCloud({ environment = process.env, config, now = new
     if (dimensions.width!==1200 || dimensions.height!==675 || dimensions.bytes>350_000) throw new NewsError('IMAGE_DIMENSIONS',`Photo must be 1200×675 and at most 350 kB: ${article.slug}`);
   }
   const report = await discover({ articles, config, now });
+  const blocked = blockedHosts(report);
+  for (const [host, count] of Object.entries(blocked)) warnings.push(`${host} refused ${count} article page(s) to this server`);
+  if (report.candidates.length < config.batchSize) warnings.push(`only ${report.candidates.length}/${config.batchSize} fresh subjects reachable right now`);
   const photo = report.candidates[0] ? await photograph({ sources:[{ url:report.candidates[0].url, name:report.candidates[0].source }] }) : null;
   if (report.candidates[0] && (!photo?.webp?.length || photo.fields?.imageWidth !== 1200)) throw new NewsError('IMAGE_PIPELINE_FAILED','The photograph pipeline could not prepare a current source image.');
   const provider = await model({ environment, name:'actu_mma_cloud_smoke', schema:{type:'object',additionalProperties:false,properties:{answer:{type:'string',enum:['OK']}},required:['answer']}, instructions:'Return the required JSON object with answer OK. This is a connectivity and structured-output check. Do not write an article or perform any other action.', input:'Cloud editorial API readiness verification.', maxOutputTokens:128 });
   if (provider.answer !== 'OK') throw new NewsError('PROVIDER_SMOKE_FAILED','Provider returned an unexpected structured verification response.');
   if (await fs.readFile(articlesPath,'utf8') !== original) throw new NewsError('CONCURRENT_EDIT','Article data changed during read-only cloud verification.');
-  return { status:'cloud-verified-without-publication', model:environment.MMA_WRITER_MODEL, sources:sourceCount, photographs:latest.length, feeds:report.feeds, freshCandidates:report.candidates.length, photographPipeline:photo ? 'verified' : 'no-current-candidate', provider:'structured-output-verified', warnings, published:0 };
+  return { status:'cloud-verified-without-publication', model:environment.MMA_WRITER_MODEL, sources:sourceCount, photographs:latest.length, feeds:report.feeds, freshCandidates:report.candidates.length, blockedHosts:blocked, photographPipeline:photo ? 'verified' : 'no-current-candidate', provider:'structured-output-verified', warnings, published:0 };
+}
+
+/** A publisher saying no (401/403/429/451) or unreachable from this server, as opposed to a page that changed. */
+export function refusedAccess(error) {
+  return (error?.code === 'SOURCE_HTTP' && [401, 403, 429, 451].includes(error.details?.status)) || ['TypeError', 'AbortError', 'TimeoutError'].includes(error?.name);
+}
+
+/** Article pages each publisher refused during discovery, counted by host. */
+export function blockedHosts(report) {
+  const counts = {};
+  for (const item of report.rejected ?? []) {
+    const status = Number(item.detail?.match(/responded HTTP (\d{3})/)?.[1]);
+    if (![401, 403, 429, 451].includes(status)) continue;
+    const host = new URL(item.url).hostname.replace(/^www\./, '');
+    counts[host] = (counts[host] ?? 0) + 1;
+  }
+  return counts;
 }
 
 /** Local checks a draft must pass before the reviewer reads it; `detail` is what the writer is told to fix. */
@@ -200,7 +228,8 @@ export async function runCloudEdition({ environment = process.env, photograph = 
     if (batch.length === config.batchSize) break;
   }
   await fs.writeFile(path.join(ROOT,'.news/editorial-rejections.json'),JSON.stringify(rejections,null,2)+'\n');
-  await summarise(environment,[`### Édition ${due.slot}`,'',`${batch.length}/${config.batchSize} articles retenus sur ${report.candidates.length} sujets frais.`,'','| Résultat | Source |','|---|---|',...batch.map(item=>`| Retenu : ${item.article.title.replace(/\|/g,'/')} | ${item.article.sources[0].url} |`),...rejections.map(item=>`| ${item.code} | ${item.url} |`)]);
+  const refused = Object.entries(blockedHosts(report)).map(([host, count]) => `${host} : ${count} page(s) refusée(s) à ce serveur`);
+  await summarise(environment,[`### Édition ${due.slot}`,'',`${batch.length}/${config.batchSize} articles retenus sur ${report.candidates.length} sujets frais.`,'',`Flux : ${report.feeds.map(feed => feed.ok ? `${feed.name} ${feed.discovered}` : `${feed.name} injoignable (${feed.error})`).join(' · ')}`,...(refused.length ? ['',`Accès refusé : ${refused.join(' · ')}`] : []),'','| Résultat | Source |','|---|---|',...batch.map(item=>`| Retenu : ${item.article.title.replace(/\|/g,'/')} | ${item.article.sources[0].url} |`),...rejections.map(item=>`| ${item.code} | ${item.url} |`)]);
   if (batch.length !== config.batchSize) return pendingOrFail(new NewsError('INSUFFICIENT_REVIEWED_NEWS',`Only ${batch.length}/${config.batchSize} factual, new French articles passed independent review. Nothing was published.`),{due,now,config,environment});
   const directory=path.join(ROOT,'public/assets/editorial');await fs.mkdir(directory,{recursive:true});
   const illustrated=batch.map(({article,photo})=>({...photo.fields,...article,image:`/assets/editorial/${article.slug}.webp`}));

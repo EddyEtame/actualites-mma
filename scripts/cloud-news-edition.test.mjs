@@ -144,7 +144,18 @@ test('cloud smoke reports a revised source text without failing the pipeline',as
   const articles=JSON.parse(await fs.readFile(fixture.articlesPath,'utf8')).map(article=>({...article,sourceEvidence:undefined,sources:article.sources.map(source=>({...source,bodyHash:'old'}))}));
   await fs.writeFile(fixture.articlesPath,JSON.stringify(articles));
   const result=await verifyCloud({...fixture,sourceReader:async()=>({publishedAt:candidate.publishedAt,body:candidate.body,bodyHash:'new'}),model:async()=>({answer:'OK'})});
-  assert.equal(result.warnings.length,6);
+  assert.equal(result.warnings.filter(warning=>/source text changed/.test(warning)).length,6);
+});
+test('a publisher refusing the server is reported, but a page that changed still fails',async t=>{
+  const fixture=await smokeFixture(t);
+  const refusal=Object.assign(new Error('Source mma.test responded HTTP 403.'),{code:'SOURCE_HTTP',details:{status:403}});
+  const result=await verifyCloud({...fixture,sourceReader:async()=>{throw refusal;},model:async()=>({answer:'OK'}),
+    discover:async()=>({feeds:[{name:'Source MMA',ok:true,discovered:9}],candidates:[candidate],rejected:[{url:'https://www.blocked.test/a',reason:'SOURCE_HTTP',detail:'Source blocked.test responded HTTP 403.'},{url:'https://blocked.test/b',reason:'SOURCE_HTTP',detail:'Source blocked.test responded HTTP 403.'},{url:'https://mma.test/old',reason:'STALE_OR_FUTURE_SOURCE',detail:'old'}]})});
+  assert.equal(result.sources,0);assert.deepEqual(result.blockedHosts,{'blocked.test':2});
+  assert.equal(result.warnings.filter(warning=>/refuses this server/.test(warning)).length,6);
+  assert.ok(result.warnings.some(warning=>/blocked\.test refused 2/.test(warning)));assert.ok(result.warnings.some(warning=>/only 1\/6 fresh subjects/.test(warning)));
+  const changed=Object.assign(new Error('No substantial article body extracted.'),{code:'MISSING_SOURCE_BODY'});
+  await assert.rejects(verifyCloud({...fixture,sourceReader:async()=>{throw changed;},model:async()=>({answer:'OK'})}),error=>error.code==='MISSING_SOURCE_BODY');
 });
 test('cloud smoke fails an unexpected provider response without changing article bytes',async t=>{
   const fixture=await smokeFixture(t);const original=await fs.readFile(fixture.articlesPath,'utf8');
