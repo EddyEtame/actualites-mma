@@ -133,6 +133,21 @@ test('entity-encoded French source bodies match plainly quoted evidence', () => 
 test('word count ignores spaced French punctuation', () => {
   assert.equal(wordCount('<p>Il a dit : « Ça nous arrive à tous » ; voilà l’essentiel — c’est-à-dire tout.</p>'),12);
 });
+test('publication re-checks the sources read at discovery without downloading them again', async t => {
+  const articlesPath=await temporaryDatabase(t);const batch=Array.from({length:6},(_,i)=>article(i));
+  const prefetched=new Map(batch.map((_,i)=>[canonicalUrl(`https://mma.test/story/${i}`),{publishedAt:sourceDate,body:sourceBody,bodyHash:`hash-${i}`}]));
+  let downloads=0;const refused=async()=>{downloads++;return new Response('blocked',{status:403});};
+  const result=await publishBatch({batch,articlesPath,config,now,prefetched,fetchImpl:refused});
+  assert.equal(result.published,6);assert.equal(downloads,0);
+  const second=await temporaryDatabase(t);const forged=Array.from({length:6},(_,i)=>article(i));forged[2].sourceEvidence[0].excerpt='A passage that the discovered page never contained at all.';
+  await assert.rejects(publishBatch({batch:forged,articlesPath:second,config,now,prefetched,fetchImpl:refused}),error=>error.code==='UNSUPPORTED_EVIDENCE');
+});
+test('source extraction carries the photograph address, and none when the page has none', () => {
+  const page=html().replace('<head>','<head><meta property="og:image" content="/img/p.jpg"><meta property="og:image:alt" content="L&rsquo;arbitre au centre">');
+  const extracted=extractSource(page,'https://mma.test/news');
+  assert.equal(extracted.image,'https://mma.test/img/p.jpg');assert.equal(extracted.imageAlt,'L’arbitre au centre');
+  assert.equal(extractSource(html(),'https://mma.test/news').image,null);
+});
 test('publication re-check accepts typographically quoted evidence from the live source', async t => {
   const articlesPath=await temporaryDatabase(t);const curly=sourceBody.replace('fighter accepted','fighter’s team accepted');
   const batch=Array.from({length:6},(_,i)=>article(i));for(const a of batch)a.sourceEvidence[0].excerpt="The fighter's team accepted the new challenge announced today.";

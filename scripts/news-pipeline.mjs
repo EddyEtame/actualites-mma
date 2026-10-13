@@ -184,7 +184,11 @@ export function extractSource(html, url) {
   const paragraphHtml = bodyHtml.match(/<(?:p|h2|h3)\b[^>]*>[\s\S]*?<\/(?:p|h2|h3)>/gi) ?? [];
   const paragraphs = paragraphHtml.map(plainText).filter(text => text.length > 35 && !/^(read more|lire aussi|à lire|related|share this|sign up)/i.test(text));
   const body = article?.articleBody ? plainText(article.articleBody) : paragraphs.join('\n');
-  return { url: canonicalUrl(canonicalTag?.href ? new URL(canonicalTag.href, url).toString() : url), title, publishedAt, body, bodyHash: createHash('sha256').update(body).digest('hex') };
+  // The photograph's address travels with the source, so the photo step never has to read the page again.
+  const rawImage = meta('og:image') || meta('twitter:image');
+  let image = null;
+  if (rawImage) try { image = new URL(rawImage, url).href; } catch { /* unusable photograph address: the photo step reads the page */ }
+  return { url: canonicalUrl(canonicalTag?.href ? new URL(canonicalTag.href, url).toString() : url), title, publishedAt, body, bodyHash: createHash('sha256').update(body).digest('hex'), image, imageAlt: meta('og:image:alt') || meta('twitter:image:alt') || null };
 }
 export async function fetchSource(url, config, fetchImpl = fetch) {
   const response = await requestText(url, config, fetchImpl);
@@ -295,7 +299,9 @@ export async function publishBatch(options = {}) {
   try { return await publishLocked({ ...options, articlesPath }); }
   finally { await lock.close(); await fs.rm(lockPath, { force: true }); }
 }
-async function publishLocked({ batch, articlesPath, config, now = new Date().toISOString(), fetchImpl = fetch, dryRun = false }) {
+// `prefetched` (canonical URL → source read at discovery, minutes earlier) is re-checked without downloading
+// the page again: a third request from a datacenter is exactly what bot protections refuse (lasueur.com, 13 Oct 2026).
+async function publishLocked({ batch, articlesPath, config, now = new Date().toISOString(), fetchImpl = fetch, dryRun = false, prefetched = new Map() }) {
   config ??= await loadConfig();
   if (!Array.isArray(batch) || batch.length !== config.batchSize) throw new NewsError('WRONG_BATCH_SIZE', `Exactly ${config.batchSize} articles required. Nothing was published.`);
   const original = await fs.readFile(articlesPath, 'utf8'); const existing = JSON.parse(original);
@@ -308,7 +314,7 @@ async function publishLocked({ batch, articlesPath, config, now = new Date().toI
     if (duplicateOf(article, seen)) throw new NewsError('DUPLICATE_BATCH', `Source, topic, newsKey or slug already published: ${article.slug}. Nothing was published.`);
     for (const source of article.sources) {
       const key = trustedUrl(source.url, config);
-      if (!sourceCache.has(key)) sourceCache.set(key, await fetchSource(key, config, fetchImpl));
+      if (!sourceCache.has(key)) sourceCache.set(key, prefetched.get(canonicalUrl(source.url)) ?? await fetchSource(key, config, fetchImpl));
       const fetched = sourceCache.get(key);
       if (!isFresh(fetched.publishedAt, now, config.maxSourceAgeHours)) throw new NewsError('STALE_OR_FUTURE_SOURCE', `Original source outside the last 72 hours: ${source.url}`);
       if (Date.parse(fetched.publishedAt) !== Date.parse(source.publishedAt)) throw new NewsError('SOURCE_DATE_MISMATCH', `Original timestamp differs from supplied metadata: ${source.url}`);

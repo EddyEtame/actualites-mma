@@ -123,13 +123,16 @@ export async function verifyCloud({ environment = process.env, config, now = new
   const blocked = blockedHosts(report);
   for (const [host, count] of Object.entries(blocked)) warnings.push(`${host} refused ${count} article page(s) to this server`);
   if (report.candidates.length < config.batchSize) warnings.push(`only ${report.candidates.length}/${config.batchSize} fresh subjects reachable right now`);
-  const photo = report.candidates[0] ? await photograph({ sources:[{ url:report.candidates[0].url, name:report.candidates[0].source }] }) : null;
+  const photo = report.candidates[0] ? await photograph({ sources:[sourceForPhoto(report.candidates[0])] }) : null;
   if (report.candidates[0] && (!photo?.webp?.length || photo.fields?.imageWidth !== 1200)) throw new NewsError('IMAGE_PIPELINE_FAILED','The photograph pipeline could not prepare a current source image.');
   const provider = await model({ environment, name:'actu_mma_cloud_smoke', schema:{type:'object',additionalProperties:false,properties:{answer:{type:'string',enum:['OK']}},required:['answer']}, instructions:'Return the required JSON object with answer OK. This is a connectivity and structured-output check. Do not write an article or perform any other action.', input:'Cloud editorial API readiness verification.', maxOutputTokens:128 });
   if (provider.answer !== 'OK') throw new NewsError('PROVIDER_SMOKE_FAILED','Provider returned an unexpected structured verification response.');
   if (await fs.readFile(articlesPath,'utf8') !== original) throw new NewsError('CONCURRENT_EDIT','Article data changed during read-only cloud verification.');
   return { status:'cloud-verified-without-publication', model:environment.MMA_WRITER_MODEL, sources:sourceCount, photographs:latest.length, feeds:report.feeds, freshCandidates:report.candidates.length, blockedHosts:blocked, photographPipeline:photo ? 'verified' : 'no-current-candidate', provider:'structured-output-verified', warnings, published:0 };
 }
+
+/** What the photo step needs from a discovered source: its page, its name and the photograph discovery already found. */
+const sourceForPhoto = candidate => ({ url:candidate.url, name:candidate.source, image:candidate.image, imageAlt:candidate.imageAlt });
 
 /** A publisher saying no (401/403/429/451) or unreachable from this server, as opposed to a page that changed. */
 export function refusedAccess(error) {
@@ -224,7 +227,7 @@ export async function runCloudEdition({ environment = process.env, photograph = 
   const batch=[];const rejections=[];
   for (const candidate of report.candidates) {
     let photo;
-    try { photo=await photograph({sources:[{url:candidate.url,name:candidate.source}]}); }
+    try { photo=await photograph({sources:[sourceForPhoto(candidate)]}); }
     catch(error) { rejections.push({url:candidate.url,code:'IMAGE_UNUSABLE',message:error.message});console.warn('[EDITORIAL] Rejected candidate: IMAGE_UNUSABLE');continue; }
     try { batch.push({article:await draftArticle(candidate,{now,sourceImageAlt:photo.fields.imageSource?.sourceImageAlt,existingCoverage:[...batch.map(item=>item.article),...articles],model:options=>modelJson({...options,environment})}),photo}); }
     catch(error) {
@@ -242,7 +245,7 @@ export async function runCloudEdition({ environment = process.env, photograph = 
   const written=[];
   try {
     for (const {article,photo} of batch) { const file=path.join(directory,`${article.slug}.webp`); await fs.writeFile(file,photo.webp,{flag:'wx'}); written.push(file); }
-    const result=await publishBatch({batch:illustrated,articlesPath,config,now:new Date().toISOString()});
+    const result=await publishBatch({batch:illustrated,articlesPath,config,now:new Date().toISOString(),prefetched:new Map(report.candidates.map(candidate=>[canonicalUrl(candidate.url),candidate]))});
     if (environment.GITHUB_OUTPUT) await fs.appendFile(environment.GITHUB_OUTPUT,`published=${result.published}\n`);
     console.log(JSON.stringify(result,null,2));return result;
   } catch (error) {

@@ -77,10 +77,14 @@ export async function sourcePhotograph(article, { publicPrefix = '/assets/editor
   const label = article.slug || article.sources?.[0]?.url;
   const source = article.sources?.[0];
   if (!source?.url) throw new Error('Missing original source for ' + label);
-  const html = await (await request(source.url)).text();
+  const settings = article.slug ? known[article.slug] : undefined;
+  // Discovery already read the page and passes its photograph's address: the page is fetched again only for
+  // what its meta tags cannot give (a larger UFC rendition, a declared photo credit to confirm).
+  const readPage = !source.image || new URL(source.url).hostname.endsWith('ufc.com') || Boolean(settings?.creditOriginal);
+  const html = readPage ? await (await request(source.url)).text() : '';
   const meta = [...html.matchAll(/<meta\b[^>]*>/gi)].map(match => parseAttributes(match[0]));
   const metaValue = property => meta.find(item => item.property === property || item.name === property)?.content;
-  const rawImage = metaValue('og:image') || metaValue('twitter:image');
+  const rawImage = metaValue('og:image') || metaValue('twitter:image') || source.image;
   if (!rawImage) throw new Error('Missing source editorial image for ' + label);
   const ogImageUrl = new URL(rawImage, source.url).href;
   let imageUrl = ogImageUrl;
@@ -97,11 +101,10 @@ export async function sourcePhotograph(article, { publicPrefix = '/assets/editor
   if (!metadata.width || !metadata.height || metadata.width < 250 || metadata.height < 140) {
     throw new Error('Invalid or unusable source image for ' + label);
   }
-  const settings = article.slug ? known[article.slug] : undefined;
   if (settings?.creditOriginal && !decode(html).includes(settings.creditOriginal)) {
     throw new Error('Declared photo credit no longer present in source for ' + label);
   }
-  const sourceImageAlt = metaValue('og:image:alt') || metaValue('twitter:image:alt') || null;
+  const sourceImageAlt = metaValue('og:image:alt') || metaValue('twitter:image:alt') || source.imageAlt || null;
   const imageAlt = settings?.alt || sourceImageAlt || 'Photographie publiée par ' + source.name + ' avec son article source.';
   const credit = settings?.credit || source.name;
   const caption = settings?.caption || 'Photographie publiée par ' + source.name + ' avec son article.';

@@ -109,6 +109,18 @@ test('approved draft escapes HTML, keeps a translated photo description and reta
   assert.equal('imageAlt' in silent,false);
 });
 
+test('the photo step downloads only the image when discovery already found its address',async t=>{
+  const { default: sharp } = await import('sharp');
+  const { sourcePhotograph } = await import('./news-image-fetch.mjs');
+  const png=await sharp({create:{width:1600,height:900,channels:3,background:'#336699'}}).png().toBuffer();
+  const original=globalThis.fetch;const requested=[];
+  globalThis.fetch=async url=>{requested.push(String(url));return new Response(png,{status:200});};
+  t.after(()=>{globalThis.fetch=original;});
+  const photo=await sourcePhotograph({sources:[{url:'https://mma.test/news/story',name:'Source MMA',image:'https://cdn.mma.test/photo.png',imageAlt:'Le combattant à la pesée.'}]});
+  assert.deepEqual(requested,['https://cdn.mma.test/photo.png']);
+  assert.equal(photo.fields.imageSource.sourceImageAlt,'Le combattant à la pesée.');assert.equal(photo.fields.imageWidth,1200);assert.ok(photo.webp.length>0);
+});
+
 async function smokeFixture(t) {
   const directory=await fs.mkdtemp(path.join(os.tmpdir(),'actu-mma-cloud-smoke-'));
   t.after(()=>fs.rm(directory,{recursive:true,force:true}));
