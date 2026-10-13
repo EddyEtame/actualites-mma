@@ -1,5 +1,457 @@
 [
   {
+    "newsKey": "dwcs-bulaid-visconde-carte",
+    "imageAlt": "Pesée du Dana White’s Contender Series, saison 10, semaine 8.",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/10/gettyimages-2297577156.jpg?quality=90&strip=all&crop=0%2C4.8445402819638%2C100%2C78.553798348275&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/10/gettyimages-2297577156.jpg?quality=90&strip=all&crop=0%2C4.8445402819638%2C100%2C78.553798348275&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/515470/dwcs-results-bulaid-vs-visconde",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "Dana White’s Contender Series: Season 10, Week 8 Weigh-in",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-13T23:18:22.537Z",
+      "originalWidth": 1200,
+      "originalHeight": 623
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "bulaid-visconde-en-tete-de-la-carte-du-dwcs",
+    "title": "Bulaid-Visconde en tête de la carte du DWCS",
+    "excerpt": "MMA Fighting présente la carte du Dana White’s Contender Series à Las Vegas, avec Ilias Bulaid face à Erick Visconde en combat principal.",
+    "category": "actualites",
+    "kicker": "DWCS · Carte en direct",
+    "date": "2026-10-13",
+    "publishedAt": "2026-10-13T23:21:50.388Z",
+    "verifiedAt": "2026-10-13T23:21:50.388Z",
+    "sourcePublishedAt": "2026-10-13T22:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">MMA Fighting publie la carte du Dana White’s Contender Series (DWCS), organisée au Meta APEX, à Las Vegas, un mardi soir, et indique que les combats sont en direct sur Paramount+. La page présente notamment l’affiche principale entre Ilias Bulaid et Erick Visconde, sans fournir de résultat dans les éléments listés.</p>",
+      "<h2>Bulaid face à Visconde chez les poids plumes</h2>",
+      "<p>Chez les poids plumes, Bulaid (9-0) doit affronter Visconde. MMA Fighting précise que Bulaid cherche à préserver son bilan parfait et que Visconde reste sur quatre victoires consécutives.</p>",
+      "<h2>Pereira débute au DWCS contre Sundell</h2>",
+      "<p>Le co-événement principal oppose Aline Pereira à Smilla Sundell, chez les poids coqs. Le média indique qu’il s’agit des débuts de Pereira au DWCS. Sœur de l’ancien champion de l’UFC Alex Pereira, elle tentera d’infliger à Sundell sa première défaite. Sundell affiche un bilan de 2-0 selon la présentation.</p>",
+      "<h2>Trois autres combats au programme</h2>",
+      "<p>La carte comprend aussi Will Rentz contre Luis Francischinelli, Douglas da Lapa face à Davi Cabral et Jason Asher contre Greg Foster. En note de contexte, MMA Fighting indique que 42 contrats avaient été attribués au cours des neuf semaines de la saison, dont quatre la semaine précédente.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "DWCS LIVE Results: Bulaid vs. Visconde",
+        "url": "https://mmafighting.com/ufc/515470/dwcs-results-bulaid-vs-visconde",
+        "publishedAt": "2026-10-13T22:00:00.000Z",
+        "retrievedAt": "2026-10-13T23:21:50.388Z",
+        "bodyHash": "c3f065e600dad4150b341c611c00e1a80f3f29609f7994455a1c7fe8bdf6e962"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-13T23:17:21.484Z"
+    },
+    "image": "/assets/editorial/bulaid-visconde-en-tete-de-la-carte-du-dwcs.webp",
+    "publicationBatchId": "2026-10-13T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/515470/dwcs-results-bulaid-vs-visconde",
+        "sha256": "a240aef6552776402e4cba881288b3a3ee442deb3e46cc60e8fdefd735910a57"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/515470/dwcs-results-bulaid-vs-visconde",
+        "sha256": "eb2ee2f7679b71dd0823cdb1878940f66f1487ae94768f6a4b738bc0c83ddfac"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/515470/dwcs-results-bulaid-vs-visconde",
+        "sha256": "3bdb6b692870b77f2a0fdb3e77c98fa8c96a3fa19cc50ee09861e7d056c8d7fa"
+      }
+    ]
+  },
+  {
+    "newsKey": "sal-everett-conserve-emploi-ufc-apres-contrat",
+    "imageAlt": "Photographie publiée par La Sueur avec son article source.",
+    "imageCaption": "Photographie publiée par La Sueur avec son article. Crédit : La Sueur.",
+    "imageCredit": "La Sueur",
+    "imageSource": {
+      "url": "https://lasueur.com/wp-content/uploads/2026/10/Sal-Everett.jpg",
+      "ogImageUrl": "https://lasueur.com/wp-content/uploads/2026/10/Sal-Everett.jpg",
+      "pageUrl": "https://lasueur.com/il-decroche-son-contrat-ufc-et-continue-de-remplir-le-frigo-de-dana-white-13-10-2026",
+      "publisher": "La Sueur",
+      "credit": "La Sueur",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-13T23:19:05.098Z",
+      "originalWidth": 1920,
+      "originalHeight": 1080
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "sal-everett-garde-son-emploi-a-l-ufc-apres-avoir-obtenu-son-contrat-de-combattant",
+    "title": "Sal Everett garde son emploi à l’UFC après avoir obtenu son contrat de combattant",
+    "excerpt": "Après avoir décroché un contrat à l’UFC lors des Contender Series, Sal Everett continue de travailler pour l’organisation et de s’occuper notamment du réfrigérateur de Dana White.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-10-13",
+    "publishedAt": "2026-10-13T23:21:50.388Z",
+    "verifiedAt": "2026-10-13T23:21:50.388Z",
+    "sourcePublishedAt": "2026-10-13T18:33:35.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Sal Everett a obtenu un contrat de combattant avec l’UFC après avoir mis K.-O. Ozzy Martin au premier round des Contender Series. Cette signature ne l’a toutefois pas conduit à quitter son autre poste : l’Américain continue de travailler pour l’organisation, notamment en s’occupant du réfrigérateur de Dana White.</p>",
+      "<h2>Un employé de l’UFC depuis 2019</h2>",
+      "<p>Everett travaille pour l’organisation depuis 2019. Il a commencé au service courrier avant de devenir l’un des hommes à tout faire du patron de l’UFC. Ses tâches comprennent des courses personnelles pour Dana White ainsi que le réapprovisionnement de son réfrigérateur.</p>",
+      "<h2>Il poursuit ses deux activités</h2>",
+      "<p>Selon La Sueur, Everett a confirmé à TMZ qu’il avait travaillé la veille et le jour de l’entretien, et qu’il était encore au travail au moment de répondre. Il a expliqué apprécier son emploi et ne pas chercher à s’en éloigner après avoir décroché son contrat de combattant.</p>",
+      "<h2>La date de ses débuts reste inconnue</h2>",
+      "<p>Pour l’instant, Everett entend donc mener de front son travail auprès de Dana White et sa carrière de combattant à l’UFC. La date de ses débuts dans l’organisation n’est pas encore connue. En attendant, il peut poursuivre son activité professionnelle tout en s’entraînant.</p>"
+    ],
+    "sources": [
+      {
+        "name": "La Sueur",
+        "title": "Il décroche son contrat UFC… et continue de remplir le frigo de Dana White",
+        "url": "https://lasueur.com/il-decroche-son-contrat-ufc-et-continue-de-remplir-le-frigo-de-dana-white-13-10-2026",
+        "publishedAt": "2026-10-13T18:33:35.000Z",
+        "retrievedAt": "2026-10-13T23:21:50.388Z",
+        "bodyHash": "bdd847f62e41a3f3189944cd186a0fda6cb9b8b90e74447e04514577bddc5f82"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-13T23:17:21.484Z"
+    },
+    "image": "/assets/editorial/sal-everett-garde-son-emploi-a-l-ufc-apres-avoir-obtenu-son-contrat-de-combattant.webp",
+    "publicationBatchId": "2026-10-13T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://lasueur.com/il-decroche-son-contrat-ufc-et-continue-de-remplir-le-frigo-de-dana-white-13-10-2026",
+        "sha256": "b42e03d1f113d896a1761ea72bfeaad32f9a4576d16403dad8f130dc715ce20d"
+      },
+      {
+        "sourceUrl": "https://lasueur.com/il-decroche-son-contrat-ufc-et-continue-de-remplir-le-frigo-de-dana-white-13-10-2026",
+        "sha256": "419aae0abb0910b1ffaed4fd6c9418da9021945ae3ed7e82268e4d1ec9a2a0d6"
+      },
+      {
+        "sourceUrl": "https://lasueur.com/il-decroche-son-contrat-ufc-et-continue-de-remplir-le-frigo-de-dana-white-13-10-2026",
+        "sha256": "094a1373fdcaa46ce0b3ab95c27c4b9cb213e199e80b20884fbfe2dc049c0d6e"
+      },
+      {
+        "sourceUrl": "https://lasueur.com/il-decroche-son-contrat-ufc-et-continue-de-remplir-le-frigo-de-dana-white-13-10-2026",
+        "sha256": "c1210ad855c48f0a9ad82dbcdf15f15d9a28993407c73627d5c51c6a8cf2bda1"
+      }
+    ]
+  },
+  {
+    "newsKey": "joaquin-buckley-exercice-inspire-herb-dean",
+    "imageAlt": "Joaquin Buckley",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/10/gettyimages-1371620059.jpg?quality=90&strip=all&crop=0%2C1.1549847495404%2C100%2C73.112456698324&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/10/gettyimages-1371620059.jpg?quality=90&strip=all&crop=0%2C1.1549847495404%2C100%2C73.112456698324&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/515483/video-joaquin-buckley-creates-herb-dean-drill-in-homage-to-controversial-ufc-referee",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "Joaquin Buckley",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-13T23:19:24.511Z",
+      "originalWidth": 1200,
+      "originalHeight": 627
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "joaquin-buckley-cree-un-exercice-inspire-de-herb-dean",
+    "title": "Joaquin Buckley crée un exercice inspiré de Herb Dean",
+    "excerpt": "Le combattant a publié une vidéo d’entraînement en hommage à l’arbitre, régulièrement critiqué pour ses décisions.",
+    "category": "actualites",
+    "kicker": "UFC · Vidéo",
+    "date": "2026-10-13",
+    "publishedAt": "2026-10-13T23:21:50.388Z",
+    "verifiedAt": "2026-10-13T23:21:50.388Z",
+    "sourcePublishedAt": "2026-10-13T17:30:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Joaquin Buckley a imaginé un exercice d’entraînement inspiré de l’arbitre Herb Dean. Dans une vidéo publiée mardi et relayée par MMA Fighting, le combattant se déchaîne sur un sac de frappe tandis qu’un partenaire doit le retenir fermement.</p>",
+      "<h2>Un défi d’entraînement en clin d’œil à l’arbitre</h2>",
+      "<p>À la fin de la séquence, Buckley baptise lui-même l’activité « Herb Dean Drill ». Le dispositif détourne ainsi les interventions de l’arbitre en défi d’entraînement : le partenaire doit contenir Buckley pendant qu’il frappe le sac.</p>",
+      "<h2>Des décisions arbitrales souvent contestées</h2>",
+      "<p>Le clin d’œil s’inscrit dans un contexte de critiques visant l’arbitrage de Dean. MMA Fighting rappelle que des combattants, des médias et des fans lui ont reproché des arrêts précoces ou tardifs, ainsi que l’absence fréquente de sanctions après des fautes.</p>",
+      "<h2>Buckley rend hommage à Dean</h2>",
+      "<p>Selon MMA Fighting, dans le message accompagnant la vidéo, Buckley qualifie l’exercice de ludique et fait l’éloge de Dean, souhaitant que davantage d’arbitres lui ressemblent. Le média indique également que Buckley doit affronter Mike Malott samedi dans le combat principal de l’UFC Edmonton.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Video: Joaquin Buckley creates ‘Herb Dean drill’ in homage to controversial UFC referee",
+        "url": "https://mmafighting.com/ufc/515483/video-joaquin-buckley-creates-herb-dean-drill-in-homage-to-controversial-ufc-referee",
+        "publishedAt": "2026-10-13T17:30:00.000Z",
+        "retrievedAt": "2026-10-13T23:21:50.388Z",
+        "bodyHash": "40b636fe2b51de357a23c602ffd7ce0149e6dc20243cf72d2dc64d7f93cb3080"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-13T23:17:21.484Z"
+    },
+    "image": "/assets/editorial/joaquin-buckley-cree-un-exercice-inspire-de-herb-dean.webp",
+    "publicationBatchId": "2026-10-13T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/515483/video-joaquin-buckley-creates-herb-dean-drill-in-homage-to-controversial-ufc-referee",
+        "sha256": "7f89a94ff3e0e6822eac766dbd9a1ac8eee131b7d11499a21a243a7121955e70"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/515483/video-joaquin-buckley-creates-herb-dean-drill-in-homage-to-controversial-ufc-referee",
+        "sha256": "20407a44ed221f402e1081a2122efdfb58588be418b3c1da93d4d405fb9d75ec"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/515483/video-joaquin-buckley-creates-herb-dean-drill-in-homage-to-controversial-ufc-referee",
+        "sha256": "2c6d2ff0160518fc800b97a93a1c28ceceb630f48479b68fadad1128f492eb90"
+      }
+    ]
+  },
+  {
+    "newsKey": "volkanovski-sketch-pique-remuneration-ufc",
+    "imageAlt": "Alexander Volkanovski",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/10/Screenshot-2026-10-13-at-9.19.58-AM.png?quality=90&strip=all&crop=0%2C0%2C100%2C97.542409262103&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/10/Screenshot-2026-10-13-at-9.19.58-AM.png?quality=90&strip=all&crop=0%2C0%2C100%2C97.542409262103&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/515451/video-alexander-volkanovski-goes-full-movie-star-takes-shot-at-ufc-fighter-pay-in-latest-skit",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "Alexander Volkanovski",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-13T23:19:57.303Z",
+      "originalWidth": 1200,
+      "originalHeight": 625
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "dans-un-sketch-le-personnage-de-beverly-s-en-prend-a-la-remuneration-a-l-ufc",
+    "title": "Dans un sketch, le personnage de Beverly s’en prend à la rémunération à l’UFC",
+    "excerpt": "Dans une vidéo tournée avec Sportsbet.com.au, Alexander Volkanovski parodie plusieurs films. La pique sur ce que verse Dana White est prononcée par Beverly, son agente dans le sketch.",
+    "category": "actualites",
+    "kicker": "UFC · Sketch humoristique",
+    "date": "2026-10-13",
+    "publishedAt": "2026-10-13T23:21:50.388Z",
+    "verifiedAt": "2026-10-13T23:21:50.388Z",
+    "sourcePublishedAt": "2026-10-13T16:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Alexander Volkanovski endosse plusieurs rôles de cinéma dans un nouveau sketch réalisé avec Sportsbet.com.au. La vidéo, publiée avant son prochain combat, enchaîne des parodies de films et comprend une plaisanterie sur la rémunération à l’UFC. MMA Fighting rapporte que le champion poids plume y joue notamment « Alexander the Great », en clin d’œil à son surnom et au film The Odyssey.</p>",
+      "<h2>Des parodies de films et une référence à Makhachev</h2>",
+      "<p>Le clip le place ensuite dans Going the Distance, une aventure spatiale, puis dans Submission Impossible, parodie de James Bond, et Miami KO, inspirée de Miami Vice. Dans une scène, Volkanovski fait également référence à ses deux combats contre Islam Makhachev. Ces séquences appartiennent au sketch et ne constituent pas des annonces de projets cinématographiques.</p>",
+      "<h2>La remarque sur Dana White vient de Beverly</h2>",
+      "<p>Le personnage de Beverly, présenté dans la vidéo comme l’agente autoritaire de Volkanovski, critique le choix du combattant de participer à un film indépendant peu rentable. MMA Fighting rapporte que c’est Beverly qui affirme que le projet, malgré son échec, aurait rapporté davantage que ce que Dana White paie. La pique sur la rémunération est donc celle du personnage, et non une déclaration attribuée à Volkanovski.</p>",
+      "<h2>Volkanovski doit défendre sa ceinture à l’UFC 333</h2>",
+      "<p>Le champion doit affronter Movsar Evloev, présenté comme invaincu, dans le combat principal de l’UFC 333, le 24 octobre. Ce rendez-vous constitue le contexte du sketch, tourné avant la défense de titre annoncée par la source.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Video: Alexander Volkanovski goes full movie star, takes shot at UFC fighter pay in latest skit",
+        "url": "https://mmafighting.com/ufc/515451/video-alexander-volkanovski-goes-full-movie-star-takes-shot-at-ufc-fighter-pay-in-latest-skit",
+        "publishedAt": "2026-10-13T16:00:00.000Z",
+        "retrievedAt": "2026-10-13T23:21:50.388Z",
+        "bodyHash": "55926335177c4bfe55871978844953985a7bf1f3b1f5c12099bab2eea9847610"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-13T23:17:21.484Z"
+    },
+    "image": "/assets/editorial/dans-un-sketch-le-personnage-de-beverly-s-en-prend-a-la-remuneration-a-l-ufc.webp",
+    "publicationBatchId": "2026-10-13T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/515451/video-alexander-volkanovski-goes-full-movie-star-takes-shot-at-ufc-fighter-pay-in-latest-skit",
+        "sha256": "6e65d0a15bc5891caf90bb1f52d769979dd94f7d7e5375bf72d7adb0110e8ffd"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/515451/video-alexander-volkanovski-goes-full-movie-star-takes-shot-at-ufc-fighter-pay-in-latest-skit",
+        "sha256": "044396ae2945d9a75b3246bcedb8dd352845290ea6375976c426a3346f71d372"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/515451/video-alexander-volkanovski-goes-full-movie-star-takes-shot-at-ufc-fighter-pay-in-latest-skit",
+        "sha256": "9284388e4d675a5589e94fad35682d0f93e7fb54e7c60e5d5192c44044dbab00"
+      }
+    ]
+  },
+  {
+    "newsKey": "islam-makhachev-carlos-prates-negociations-ufc-336",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/10/islam-makhachev-pourrait-faire-son-retour-pour-l-ufc-336.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/10/islam-makhachev-pourrait-faire-son-retour-pour-l-ufc-336.jpg",
+      "pageUrl": "https://actumma.com/islam-makhachev-pourrait-faire-son-retour-pour-lufc-336/193632",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-13T23:20:45.445Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "islam-makhachev-et-carlos-prates-des-negociations-evoquees-pour-l-ufc-336",
+    "title": "Islam Makhachev et Carlos Prates : des négociations évoquées pour l’UFC 336",
+    "excerpt": "Islam Makhachev pourrait défendre sa ceinture face à Carlos Prates à l’UFC 336. Selon ActuMMA, des discussions seraient en cours, mais aucun combat n’est confirmé.",
+    "category": "actualites",
+    "kicker": "UFC · Négociations",
+    "date": "2026-10-13",
+    "publishedAt": "2026-10-13T23:21:50.388Z",
+    "verifiedAt": "2026-10-13T23:21:50.388Z",
+    "sourcePublishedAt": "2026-10-13T14:43:15.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Islam Makhachev pourrait retrouver l’octogone face à Carlos Prates lors de l’UFC 336, mais l’affiche n’est pas officielle. ActuMMA rapporte que des discussions seraient en cours pour organiser cette défense de titre, alors que le champion souhaite combattre avant le Ramadan.</p>",
+      "<h2>Des discussions autour d’un combat à Toronto</h2>",
+      "<p>Selon le journaliste espagnol Álvaro Colmenero, cité par ActuMMA, les négociations porteraient sur un combat le 30 janvier à Toronto, dans le cadre de l’UFC 336. Le Brésilien pourrait accentuer sa préparation si les échanges évoluent favorablement, rapporte le média. Aucun accord n’est annoncé à ce stade.</p>",
+      "<h2>Makhachev veut combattre avant le Ramadan</h2>",
+      "<p>Le Ramadan doit débuter en février 2027. Dans des propos rapportés par ActuMMA, Makhachev évoque un retour en janvier ou à la fin de l’année et dit vouloir se battre rapidement. Le champion estime également que son état physique ne devrait pas freiner ce projet.</p>",
+      "<h2>Le champion évoque son état physique</h2>",
+      "<p>Âgé de 34 ans, Makhachev dit ne pas avoir de blessure importante et vouloir faire vérifier son nez. Une rencontre avec Prates lui permettrait, si elle se concrétise, de défendre une deuxième fois sa ceinture des poids welters avant de s’éloigner temporairement de la compétition pour le Ramadan.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Islam Makhachev proche d’un retour pour l’UFC 336",
+        "url": "https://actumma.com/islam-makhachev-pourrait-faire-son-retour-pour-lufc-336/193632",
+        "publishedAt": "2026-10-13T14:43:15.000Z",
+        "retrievedAt": "2026-10-13T23:21:50.388Z",
+        "bodyHash": "8fe43b79737b63af7610f12ddcf442a2fb5b95f0cd441d8c0eb4a382aff15c34"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-13T23:17:21.484Z"
+    },
+    "image": "/assets/editorial/islam-makhachev-et-carlos-prates-des-negociations-evoquees-pour-l-ufc-336.webp",
+    "publicationBatchId": "2026-10-13T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/islam-makhachev-pourrait-faire-son-retour-pour-lufc-336/193632",
+        "sha256": "bc890a132c3004f1a27fd605768b79a5b9eba60f90b8bdd1c76156e1060baf38"
+      },
+      {
+        "sourceUrl": "https://actumma.com/islam-makhachev-pourrait-faire-son-retour-pour-lufc-336/193632",
+        "sha256": "a108000b46c6e4f2c911735c4e91c4d7a45bf097cfc0e1f5bf9573401d17864a"
+      },
+      {
+        "sourceUrl": "https://actumma.com/islam-makhachev-pourrait-faire-son-retour-pour-lufc-336/193632",
+        "sha256": "33493aa9b6a8be26a93ee2cd16e2de6a52cb819da906b13a75d54b8526bc33dd"
+      },
+      {
+        "sourceUrl": "https://actumma.com/islam-makhachev-pourrait-faire-son-retour-pour-lufc-336/193632",
+        "sha256": "34cd94bc97ee6e6706583b2275914464f961e127143b74f49ed21a5de7f9909b"
+      }
+    ]
+  },
+  {
+    "newsKey": "ketlen-vieira-suspension-six-mois-pfl-controle-antidopage",
+    "imageAlt": "Événement PFL à Tampa",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/10/gettyimages-2291640454.jpg?quality=90&strip=all&crop=0%2C5.3357321522526%2C100%2C78.528873184948&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/10/gettyimages-2291640454.jpg?quality=90&strip=all&crop=0%2C5.3357321522526%2C100%2C78.528873184948&w=1200",
+      "pageUrl": "https://mmafighting.com/pfl/515455/ketlen-vieira-releases-statement-after-6-month-suspension-for-failed-drug-test",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "PFL Tampa",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-13T23:21:10.833Z",
+      "originalWidth": 1200,
+      "originalHeight": 624
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "ketlen-vieira-suspendue-six-mois-apres-un-controle-antidopage-positif",
+    "title": "Ketlen Vieira suspendue six mois après un contrôle antidopage positif",
+    "excerpt": "La combattante attribue la prise de médicaments pour son genou à la période qui a suivi son départ de l’UFC, sans que la substance détectée soit révélée.",
+    "category": "actualites",
+    "kicker": "PFL · Suspension",
+    "date": "2026-10-13",
+    "publishedAt": "2026-10-13T23:21:50.388Z",
+    "verifiedAt": "2026-10-13T23:21:50.388Z",
+    "sourcePublishedAt": "2026-10-13T14:30:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Ketlen Vieira a été suspendue six mois après avoir échoué à un contrôle antidopage lors de ses débuts au PFL contre Cris Cyborg. La combattante a confirmé la sanction à MMA Fighting, après un premier rapport de Sherdog. La substance interdite n’a pas été divulguée. La suspension étant rétroactive à la date du combat, Vieira pourra combattre de nouveau à partir du 22 mars 2027.</p>",
+      "<h2>Vieira explique la prise de médicaments</h2>",
+      "<p>Dans une déclaration à MMA Fighting, Vieira affirme qu’elle n’a pas utilisé la substance détectée pour obtenir un avantage lors du combat. Elle explique avoir pris des médicaments pour soigner son genou après son départ de l’UFC et sa sortie du programme de contrôles antidopage de l’organisation. Selon elle, son équipe a arrêté les médicaments dès qu’elle a appris sa signature au PFL. La combattante dit que le traitement a donné de bons résultats.</p>",
+      "<h2>Le contexte de ses débuts au PFL</h2>",
+      "<p>Vieira a signé avec le PFL moins d’un mois après sa dernière victoire à l’UFC, contre Jacqueline Cavalcanti en mai. Son affrontement contre Cyborg a eu lieu en août. Elle avait manqué la limite de poids et expliqué alors souffrir de douleurs aux reins et à l’estomac pendant sa perte de poids. Elle s’est inclinée à l’unanimité des juges.</p>",
+      "<h2>Cyborg salue les contrôles antidopage</h2>",
+      "<p>Après l’annonce de la sanction, Cris Cyborg a réagi dans une déclaration publiée sur les réseaux sociaux. Elle a remercié Mike Mazzulli, directeur du département de régulation de la tribu Mohegan, pour le sérieux accordé aux contrôles antidopage et le niveau d’exigence imposé aux combattants.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Ketlen Vieira releases statement after 6-month suspension for failed drug test",
+        "url": "https://mmafighting.com/pfl/515455/ketlen-vieira-releases-statement-after-6-month-suspension-for-failed-drug-test",
+        "publishedAt": "2026-10-13T14:30:00.000Z",
+        "retrievedAt": "2026-10-13T23:21:50.388Z",
+        "bodyHash": "a7a1ab2cb27ee13b216c5e9b586b9be9636a00e517a861ebaf07046007d433d5"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-13T23:17:21.484Z"
+    },
+    "image": "/assets/editorial/ketlen-vieira-suspendue-six-mois-apres-un-controle-antidopage-positif.webp",
+    "publicationBatchId": "2026-10-13T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/pfl/515455/ketlen-vieira-releases-statement-after-6-month-suspension-for-failed-drug-test",
+        "sha256": "e5929d7da2ded1fea2efe3c5636a4e2da730f7a18d8e22592765f81ef19bb212"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/pfl/515455/ketlen-vieira-releases-statement-after-6-month-suspension-for-failed-drug-test",
+        "sha256": "c15acbc65b8390a869bd8452520d09867758647489dc72d45728f723ce3f880a"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/pfl/515455/ketlen-vieira-releases-statement-after-6-month-suspension-for-failed-drug-test",
+        "sha256": "819cc2294286bc327a67d5c8470b0169c1daf2e1c6b0390be3f924e830a5471c"
+      }
+    ]
+  },
+  {
     "newsKey": "beneil-dariush-pronostic-strickland-imavov-victoire-aux-points",
     "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
     "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
