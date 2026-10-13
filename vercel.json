@@ -123,6 +123,16 @@
       "source": "/actualites/omalley-reponse-talbott-yan-condition-2026-10-05/",
       "destination": "/actualites/omalley-reponse-talbott-yan-condition/",
       "permanent": true
+    },
+    {
+      "source": "/actualites/dans-un-sketch-le-personnage-de-beverly-s-en-prend-a-la-remuneration-a-l-ufc",
+      "destination": "/actualites/le-sketch-d-alexander-volkanovski-egratigne-la-paie-de-l-ufc/",
+      "permanent": true
+    },
+    {
+      "source": "/actualites/dans-un-sketch-le-personnage-de-beverly-s-en-prend-a-la-remuneration-a-l-ufc/",
+      "destination": "/actualites/le-sketch-d-alexander-volkanovski-egratigne-la-paie-de-l-ufc/",
+      "permanent": true
     }
   ]
 }
