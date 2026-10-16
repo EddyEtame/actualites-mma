@@ -1,5 +1,453 @@
 [
   {
+    "newsKey": "pfl-chicago-carmouche-bishop-revanche-titre-vacant",
+    "imageAlt": "PFL_20261015_MB8_2401",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/10/PFL_20261015_MB8_2401.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C78.526773855955&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/10/PFL_20261015_MB8_2401.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C78.526773855955&w=1200",
+      "pageUrl": "https://mmafighting.com/pfl/515773/pfl-chicago-results-carmouche-vs-bishop-2",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "PFL_20261015_MB8_2401",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-16T22:35:54.437Z",
+      "originalWidth": 1200,
+      "originalHeight": 623
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "pfl-chicago-liz-carmouche-et-jena-bishop-se-retrouvent-pour-le-titre-vacant",
+    "title": "PFL Chicago : Liz Carmouche et Jena Bishop se retrouvent pour le titre vacant",
+    "excerpt": "Liz Carmouche et Jena Bishop se retrouvent en tête de PFL Chicago, avec la ceinture vacante des 125 livres en jeu lors de leur revanche.",
+    "category": "actualites",
+    "kicker": "PFL · Carte des combats",
+    "date": "2026-10-16",
+    "publishedAt": "2026-10-16T22:41:13.093Z",
+    "verifiedAt": "2026-10-16T22:41:13.093Z",
+    "sourcePublishedAt": "2026-10-16T09:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">La carte de PFL Chicago s’articule autour des retrouvailles entre Liz Carmouche et Jena Bishop. Dans sa présentation de l’événement, MMA Fighting indique que leur revanche sera le combat principal de la soirée organisée au Wintrust Arena, à Chicago, samedi soir.</p>",
+      "<h2>Une ceinture vacante en jeu</h2>",
+      "<p>Les deux combattantes s’affronteront pour le titre vacant des 125 livres de la PFL. Carmouche avait déjà battu Bishop en finale du tournoi PFL 2025. L’article rappelle également que l’ancienne prétendante au titre de l’UFC reste sur quatre victoires consécutives, tandis que Bishop a gagné quatre de ses cinq derniers combats.</p>",
+      "<h2>Khizriev et Braga en co-vedette</h2>",
+      "<p>Le combat co-principal opposera Timur Khizriev à Gabriel Braga chez les poids plumes. Khizriev est présenté comme invaincu et Braga comme un vétéran de la PFL. La carte principale comprend aussi les duels entre Sarvarjon Khamidov et Rafael do Nascimento, puis Oualy Tandia et J.P. Saint Louis.</p>",
+      "<h2>Une longue carte préliminaire</h2>",
+      "<p>La programmation préliminaire inclut notamment Eliezer Kubanza face à Trey Waters, Emiliano Sordi contre Abraham Bably et Shannon Clark opposée à Lucero Acosta. Elle comporte également les combats de Gamid Khizriev, Levan Khabalaev et Paulina Wisniewska. La page de MMA Fighting recense l’ensemble des affiches, sans donner de résultats dans le texte fourni.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "PFL Chicago LIVE Results: Carmouche vs. Bishop 2",
+        "url": "https://mmafighting.com/pfl/515773/pfl-chicago-results-carmouche-vs-bishop-2",
+        "publishedAt": "2026-10-16T09:00:00.000Z",
+        "retrievedAt": "2026-10-16T22:41:13.093Z",
+        "bodyHash": "f9704c1b039448577c324b8cb35c600a9d9347f2298304f4d9437452889954d0"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-16T22:35:47.635Z"
+    },
+    "image": "/assets/editorial/pfl-chicago-liz-carmouche-et-jena-bishop-se-retrouvent-pour-le-titre-vacant.webp",
+    "publicationBatchId": "2026-10-16T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/pfl/515773/pfl-chicago-results-carmouche-vs-bishop-2",
+        "sha256": "b02a41f0ff3aa82d23959d8199f441d8c245c49ac46e4d5e26ac839f9af61b92"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/pfl/515773/pfl-chicago-results-carmouche-vs-bishop-2",
+        "sha256": "2b7e02747fc036fea9d552a7cea8a89e9f6ce69bb88d1ac6ee809141943d57cd"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/pfl/515773/pfl-chicago-results-carmouche-vs-bishop-2",
+        "sha256": "55ab5a760f2f1a796438888ad6e1b094267eefa42b2ac5ed1f41943956e78c70"
+      }
+    ]
+  },
+  {
+    "newsKey": "ufc-edmonton-pesee-malott-buckley",
+    "imageAlt": "Mike Malott",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/10/gettyimages-2299945992.jpg?quality=90&strip=all&crop=0%2C2.0948361272255%2C100%2C78.55366983107&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/10/gettyimages-2299945992.jpg?quality=90&strip=all&crop=0%2C2.0948361272255%2C100%2C78.55366983107&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/515968/ufc-edmonton-weigh-in-results-headliners-mike-malott-joaquin-buckley-cap-off-perfect-slate",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "Mike Malott",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-16T22:36:52.477Z",
+      "originalWidth": 1200,
+      "originalHeight": 623
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "ufc-edmonton-malott-et-buckley-passent-la-pesee",
+    "title": "UFC Edmonton : Malott et Buckley passent la pesée",
+    "excerpt": "Mike Malott et Joaquin Buckley ont validé leur pesée avant l’UFC Edmonton. Les 26 combattants de la carte ont fait le poids.",
+    "category": "actualites",
+    "kicker": "UFC · Résultats de pesée",
+    "date": "2026-10-16",
+    "publishedAt": "2026-10-16T22:41:13.093Z",
+    "verifiedAt": "2026-10-16T22:41:13.093Z",
+    "sourcePublishedAt": "2026-10-16T16:19:09.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Mike Malott et Joaquin Buckley ont réussi la pesée officielle avant le combat principal de l’UFC Edmonton. Les deux hommes doivent s’affronter chez les poids mi-moyens lors de l’événement prévu samedi, après avoir satisfait aux vérifications vendredi matin.</p>",
+      "<h2>La pesée du co-main event</h2>",
+      "<p>Erin Blanchfield et Jasmine Jasudavicius ont également fait le poids avant leur affrontement. Ces deux combattantes du top 10 des poids mouches figurent au programme du co-main event, avec une éventuelle chance de titre en jeu.</p>",
+      "<h2>Toute la carte a fait le poids</h2>",
+      "<p>Les 26 combattants prévus samedi ont validé leur pesée. Kyle Daukaus et Melissa Croden ont toutefois occasionné quelques frayeurs au début de la deuxième heure de la fenêtre officielle : tous deux se sont déshabillés et ont été pesés derrière une boîte.</p>",
+      "<h2>Les enjeux du combat principal</h2>",
+      "<p>Malott cherchera une quatrième victoire consécutive après son KO de Gilbert Burns lors de son dernier combat. Burns est présenté comme un ancien prétendant au titre. Buckley, de son côté, cherchera à mettre fin à une série de deux défaites.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "UFC Edmonton weigh-in results: Headliners Mike Malott, Joaquin Buckley cap off perfect slate",
+        "url": "https://mmafighting.com/ufc/515968/ufc-edmonton-weigh-in-results-headliners-mike-malott-joaquin-buckley-cap-off-perfect-slate",
+        "publishedAt": "2026-10-16T16:19:09.000Z",
+        "retrievedAt": "2026-10-16T22:41:13.093Z",
+        "bodyHash": "337f48dbf6794665a4e92a00c6ec36d55afccc100cd397a06e4a358822b8b07a"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-16T22:35:47.635Z"
+    },
+    "image": "/assets/editorial/ufc-edmonton-malott-et-buckley-passent-la-pesee.webp",
+    "publicationBatchId": "2026-10-16T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/515968/ufc-edmonton-weigh-in-results-headliners-mike-malott-joaquin-buckley-cap-off-perfect-slate",
+        "sha256": "f0d55b4b37c1f39019a20e979f08ebb385057eb017e84df3ff7b2b1cf62936b6"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/515968/ufc-edmonton-weigh-in-results-headliners-mike-malott-joaquin-buckley-cap-off-perfect-slate",
+        "sha256": "8e247d1d865a426cafdc7c11605085c491eef265b4ca7a38dc642b318a68086b"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/515968/ufc-edmonton-weigh-in-results-headliners-mike-malott-joaquin-buckley-cap-off-perfect-slate",
+        "sha256": "a46460b71a18be100b98ca15b712fd439b872ae56656e9cbf182ed28ca60b76f"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/515968/ufc-edmonton-weigh-in-results-headliners-mike-malott-joaquin-buckley-cap-off-perfect-slate",
+        "sha256": "4c3739927618a31d4a8aa6df3c3978778ee415661742dd442f36ed83d2824a26"
+      }
+    ]
+  },
+  {
+    "newsKey": "muhammad-mokaev-critique-strategie-ufc-depart-farid-basharat",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/10/muhammad-mokaev-reagit-depart-farid-basharat-ufc.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/10/muhammad-mokaev-reagit-depart-farid-basharat-ufc.jpg",
+      "pageUrl": "https://actumma.com/muhammad-mokaev-reagit-au-depart-de-farid-basharat-de-lufc-et-critique-lorganisation-dana-avait-lhabitude/193773",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-16T22:37:33.608Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "muhammad-mokaev-critique-la-strategie-de-l-ufc-apres-le-depart-de-farid-basharat",
+    "title": "Muhammad Mokaev critique la stratégie de l’UFC après le départ de Farid Basharat",
+    "excerpt": "Muhammad Mokaev défend Farid Basharat, récemment parti de l’UFC, et accuse la promotion de privilégier le divertissement à la performance sportive.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-10-16",
+    "publishedAt": "2026-10-16T22:41:13.093Z",
+    "verifiedAt": "2026-10-16T22:41:13.093Z",
+    "sourcePublishedAt": "2026-10-16T14:45:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Après le départ de Farid Basharat de l’UFC, Muhammad Mokaev a pris publiquement sa défense. L’ancien combattant de la promotion estime que le cas de Basharat illustre un changement de priorités au sein de l’organisation américaine.</p>",
+      "<h2>Mokaev dénonce un choix en faveur du divertissement</h2>",
+      "<p>Dans un message publié sur X le vendredi 16 octobre, Mokaev a soutenu que l’UFC privilégiait désormais le divertissement à la performance sportive. Il reconnaît que cette orientation peut se justifier sur le plan commercial, mais la juge contraire aux exigences sportives, rapporte ActuMMA.</p>",
+      "<h2>Basharat parti sans nouvelle proposition</h2>",
+      "<p>Mokaev souligne que Basharat a quitté l’organisation alors qu’il était invaincu et que son contrat était arrivé à échéance, sans recevoir de nouvelle proposition. Il conteste le fait que des combattants au parcours parfait puissent être laissés partir avant d’avoir subi une défaite.</p>",
+      "<h2>Le Britannique évoque aussi son propre départ</h2>",
+      "<p>Mokaev rappelle également son départ de l’UFC après sa victoire contre Manel Kape. Il estime que la promotion aurait pu attendre que ses meilleurs combattants mettent fin à son invincibilité et juge incompréhensible qu’un combattant ayant battu le prétendant numéro un au titre ne soit pas conservé. Il prédit enfin que le PFL pourrait prendre le dessus et salue le rapprochement entre le PFL et MVP.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Muhammad Mokaev réagit au départ de Farid Basharat de l’UFC et critique l’organisation : « Dana avait l’habitude… »",
+        "url": "https://actumma.com/muhammad-mokaev-reagit-au-depart-de-farid-basharat-de-lufc-et-critique-lorganisation-dana-avait-lhabitude/193773",
+        "publishedAt": "2026-10-16T14:45:00.000Z",
+        "retrievedAt": "2026-10-16T22:41:13.093Z",
+        "bodyHash": "af9ac332589d04ca394a7c1887b69b540dedc25378e9ea5a41e6fba8120bdfd5"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-16T22:35:47.635Z"
+    },
+    "image": "/assets/editorial/muhammad-mokaev-critique-la-strategie-de-l-ufc-apres-le-depart-de-farid-basharat.webp",
+    "publicationBatchId": "2026-10-16T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/muhammad-mokaev-reagit-au-depart-de-farid-basharat-de-lufc-et-critique-lorganisation-dana-avait-lhabitude/193773",
+        "sha256": "8401a20595dfa4faf3cba4e865f6ece77cd223e165a63a821bc7de348ffd89dc"
+      },
+      {
+        "sourceUrl": "https://actumma.com/muhammad-mokaev-reagit-au-depart-de-farid-basharat-de-lufc-et-critique-lorganisation-dana-avait-lhabitude/193773",
+        "sha256": "9300a19107f72bcfe9499c35f842e4d742a9031f391913846cbde89277f52987"
+      },
+      {
+        "sourceUrl": "https://actumma.com/muhammad-mokaev-reagit-au-depart-de-farid-basharat-de-lufc-et-critique-lorganisation-dana-avait-lhabitude/193773",
+        "sha256": "6b1e138c85a0d5328a2561463ef08a300ad0598e083860e6f83c11e63cefdac3"
+      }
+    ]
+  },
+  {
+    "newsKey": "larissa-pacheco-absence-offres-promotions-mma",
+    "imageAlt": "Championnats PFL 2023",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/chorus/uploads/chorus_asset/file/25687404/1812597386.jpg?quality=90&strip=all&crop=0%2C10.730165209576%2C100%2C78.539669580847&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/chorus/uploads/chorus_asset/file/25687404/1812597386.jpg?quality=90&strip=all&crop=0%2C10.730165209576%2C100%2C78.539669580847&w=1200",
+      "pageUrl": "https://mmafighting.com/latest-news/515657/larissa-pacheco-frustrated-over-lack-of-offers-after-ufc-snub-the-market-has-kind-of-closed-its-doors-on-me",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "2023 PFL Championships",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-16T22:38:02.022Z",
+      "originalWidth": 1200,
+      "originalHeight": 624
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "larissa-pacheco-deplore-l-absence-d-offres-des-promotions-de-mma",
+    "title": "Larissa Pacheco déplore l’absence d’offres des promotions de MMA",
+    "excerpt": "L’ancienne championne de la PFL affirme n’avoir reçu d’offre ni de l’UFC ni d’autres promotions et dit vouloir retrouver un combat de MMA.",
+    "category": "actualites",
+    "kicker": "MMA · Déclaration",
+    "date": "2026-10-16",
+    "publishedAt": "2026-10-16T22:41:13.093Z",
+    "verifiedAt": "2026-10-16T22:41:13.093Z",
+    "sourcePublishedAt": "2026-10-16T14:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Un an après avoir quitté la PFL, Larissa Pacheco dit rencontrer des difficultés à retrouver une place dans une grande organisation de MMA. L’ancienne championne dans deux catégories explique avoir tenté de rejoindre l’UFC, sans succès, et affirme que d’autres promotions n’ont pas non plus donné suite à ses démarches.</p>",
+      "<h2>Pacheco évoque les réticences des promoteurs</h2>",
+      "<p>Dans un entretien accordé à MMA Fighting, la Brésilienne estime que l’UFC influence les décisions du marché. Elle rapporte que des promoteurs craignent de ne pas trouver d’adversaire à son niveau ou de devoir proposer une rémunération trop élevée. Selon elle, certains redoutent aussi qu’une victoire de sa part freine les occasions pour d’autres combattantes.</p>",
+      "<h2>Un combat de karaté, mais pas de retour en MMA</h2>",
+      "<p>Pacheco n’a disputé qu’un seul combat au cours des deux dernières années, en karaté-combat, contre Julia Stasiuk. Elle explique avoir accepté cette rencontre pour montrer qu’elle pouvait respecter la limite de poids des poids coqs. Mais cette victoire, souligne-t-elle, ne lui a pas permis de décrocher un combat de MMA.</p>",
+      "<h2>Elle demande une occasion de combattre</h2>",
+      "<p>La combattante dit à MMA Fighting que cette période sans activité la rend triste et la fait craindre d’être oubliée par les nouveaux adeptes. Elle précise ne pas réclamer un combat pour le titre ni une arrivée immédiate à l’UFC pour affronter ses vedettes. Elle veut avant tout une occasion de montrer ce qu’elle peut encore apporter dans une cage de MMA.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Larissa Pacheco frustrated over lack of offers after UFC snub: ‘The market has kind of closed its doors on me’",
+        "url": "https://mmafighting.com/latest-news/515657/larissa-pacheco-frustrated-over-lack-of-offers-after-ufc-snub-the-market-has-kind-of-closed-its-doors-on-me",
+        "publishedAt": "2026-10-16T14:00:00.000Z",
+        "retrievedAt": "2026-10-16T22:41:13.093Z",
+        "bodyHash": "8accd76560c633cd89578af05d5b74febe761087a803d007ef3c54ed8321a850"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-16T22:35:47.635Z"
+    },
+    "image": "/assets/editorial/larissa-pacheco-deplore-l-absence-d-offres-des-promotions-de-mma.webp",
+    "publicationBatchId": "2026-10-16T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/latest-news/515657/larissa-pacheco-frustrated-over-lack-of-offers-after-ufc-snub-the-market-has-kind-of-closed-its-doors-on-me",
+        "sha256": "1fb5241381febe64517f96b56695497096b38729734f0c527aa4abb348b4ed9c"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/latest-news/515657/larissa-pacheco-frustrated-over-lack-of-offers-after-ufc-snub-the-market-has-kind-of-closed-its-doors-on-me",
+        "sha256": "f7db6a16a84b47e18c86d1aaa3c12dfba35b2d4dfd082e5553afe2e0878efcc0"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/latest-news/515657/larissa-pacheco-frustrated-over-lack-of-offers-after-ufc-snub-the-market-has-kind-of-closed-its-doors-on-me",
+        "sha256": "2c163dafa539783be7b3e0e297e3ac70ed6ff141ab77697f2dae0986c2031fb1"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/latest-news/515657/larissa-pacheco-frustrated-over-lack-of-offers-after-ufc-snub-the-market-has-kind-of-closed-its-doors-on-me",
+        "sha256": "ac62c68cafb7b50379b40eca0e850bed53d167ed759a21e2f214b8bb767a20c8"
+      }
+    ]
+  },
+  {
+    "newsKey": "bo-nickal-joe-pyfer-fight-night-cleveland-2027",
+    "imageAlt": "UFC Freedom 250 : Nickal contre Daukaus",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/06/gettyimages-2281614318.jpg?quality=90&strip=all&crop=0%2C16.12471879863%2C100%2C78.534031413613&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/06/gettyimages-2281614318.jpg?quality=90&strip=all&crop=0%2C16.12471879863%2C100%2C78.534031413613&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/515917/bo-nickal-says-scheduled-ufc-335-bout-with-joe-pyfer-moved-to-main-event-in-cleveland",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "UFC Freedom 250: Nickal v Daukaus",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-16T22:38:27.907Z",
+      "originalWidth": 1200,
+      "originalHeight": 624
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "bo-nickal-annonce-le-deplacement-de-son-combat-contre-joe-pyfer-a-cleveland",
+    "title": "Bo Nickal annonce le déplacement de son combat contre Joe Pyfer à Cleveland",
+    "excerpt": "Bo Nickal affirme que son combat contre Joe Pyfer est déplacé à février 2027 et sera en tête d’affiche d’un Fight Night à Cleveland.",
+    "category": "actualites",
+    "kicker": "UFC · Changement de programme",
+    "date": "2026-10-16",
+    "publishedAt": "2026-10-16T22:41:13.093Z",
+    "verifiedAt": "2026-10-16T22:41:13.093Z",
+    "sourcePublishedAt": "2026-10-16T13:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Bo Nickal a annoncé que son combat contre Joe Pyfer, initialement prévu à l’UFC 335, avait été déplacé à février 2027. Selon MMA Fighting, le combattant a révélé la nouvelle jeudi soir, lors d’un rassemblement politique dans l’Ohio. Il a également indiqué que le duel serait la tête d’affiche d’un événement Fight Night à Cleveland.</p>",
+      "<h2>Un combat déplacé de l’UFC 335</h2>",
+      "<p>L’UFC avait annoncé pendant la diffusion de l’UFC 332 que Pyfer affronterait Nickal sur la carte prévue le 12 décembre à la T-Mobile Arena de Las Vegas. Le changement de programmation a donc été rapporté par Nickal, qui n’a pas précisé la date exacte de l’événement de Cleveland.</p>",
+      "<h2>Nickal vise la victoire et la ceinture</h2>",
+      "<p>Sur scène, Nickal a expliqué que le combat avait été repoussé à février et qu’il ferait la tête d’affiche à Cleveland. Il a aussi affirmé qu’il comptait battre Pyfer avant de viser la ceinture. Ces propos ont été rapportés par MMA Fighting.</p>",
+      "<h2>Pyfer réagit aux propos de son adversaire</h2>",
+      "<p>Pyfer a réagi à l’annonce dans ses stories Instagram. Il a contesté la confiance affichée par Nickal et a évoqué ses « faux rêves », tout en présentant leur opposition comme celle d’un jeune pauvre face à un jeune riche. Aucune date précise n’a été annoncée pour ce Fight Night.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Bo Nickal says scheduled UFC 335 bout with Joe Pyfer moved to main event in Cleveland",
+        "url": "https://mmafighting.com/ufc/515917/bo-nickal-says-scheduled-ufc-335-bout-with-joe-pyfer-moved-to-main-event-in-cleveland",
+        "publishedAt": "2026-10-16T13:00:00.000Z",
+        "retrievedAt": "2026-10-16T22:41:13.093Z",
+        "bodyHash": "cbf6748b715d154a3df558370c9fa10f9ce8e53f0edfc4ce87e8ace136d4f009"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-16T22:35:47.635Z"
+    },
+    "image": "/assets/editorial/bo-nickal-annonce-le-deplacement-de-son-combat-contre-joe-pyfer-a-cleveland.webp",
+    "publicationBatchId": "2026-10-16T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/515917/bo-nickal-says-scheduled-ufc-335-bout-with-joe-pyfer-moved-to-main-event-in-cleveland",
+        "sha256": "98cd3fb431fe79e2e92365d2cd897fa17c8b59738c902816c69fc56ca5b12b40"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/515917/bo-nickal-says-scheduled-ufc-335-bout-with-joe-pyfer-moved-to-main-event-in-cleveland",
+        "sha256": "b45693f24e78a66344b4dfdfe914b8571de11e95439b90e1c1ea43cde3adb811"
+      }
+    ]
+  },
+  {
+    "newsKey": "henry-cejudo-estime-alex-pereira-a-eu-trop-opportunites-ufc",
+    "imageAlt": "Photographie publiée par La Sueur avec son article source.",
+    "imageCaption": "Photographie publiée par La Sueur avec son article. Crédit : La Sueur.",
+    "imageCredit": "La Sueur",
+    "imageSource": {
+      "url": "https://lasueur.com/wp-content/uploads/2025/12/alex-pereira-ufc-maison-blanche.jpeg",
+      "ogImageUrl": "https://lasueur.com/wp-content/uploads/2025/12/alex-pereira-ufc-maison-blanche.jpeg",
+      "pageUrl": "https://lasueur.com/un-ancien-champion-affirme-qualex-pereira-est-gate-par-lufc-16-10-2026",
+      "publisher": "La Sueur",
+      "credit": "La Sueur",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-16T22:38:55.306Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "henry-cejudo-estime-qu-alex-pereira-a-eu-trop-d-opportunites-a-l-ufc",
+    "title": "Henry Cejudo estime qu’Alex Pereira a eu trop d’opportunités à l’UFC",
+    "excerpt": "Henry Cejudo estime qu’Alex Pereira a bénéficié de trop d’opportunités à l’UFC et qu’il doit encore gagner des combats avant de viser le titre.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-10-16",
+    "publishedAt": "2026-10-16T22:41:13.093Z",
+    "verifiedAt": "2026-10-16T22:41:13.093Z",
+    "sourcePublishedAt": "2026-10-16T09:02:10.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Henry Cejudo estime qu’Alex Pereira a bénéficié de trop d’opportunités à l’UFC. Selon La Sueur, l’ancien double champion de l’organisation a exprimé cet avis lors d’un podcast. Il considère que le Brésilien doit encore faire ses preuves avant de prétendre à une nouvelle chance pour le titre des poids lourds.</p>",
+      "<h2>Le parcours de Pereira à l’UFC</h2>",
+      "<p>Pereira a rejoint l’UFC après une carrière de kickboxeur et son passage au Glory, où il a été double champion. Sa rivalité avec Israel Adesanya l’a conduit à disputer le titre des poids moyens, qu’il a remporté en mettant son adversaire KO. Il est ensuite monté chez les poids mi-lourds et a décroché la ceinture après deux combats.</p>",
+      "<h2>Une nouvelle chance chez les poids lourds en question</h2>",
+      "<p>Plus récemment, Pereira a tenté de conquérir une troisième ceinture chez les poids lourds, lors de l’UFC Maison-Blanche. Il a été battu par Ciryl Gane. Depuis ce revers, le Brésilien réclame une revanche et continue d’espérer combattre à nouveau pour le titre de la catégorie.</p>",
+      "<h2>Cejudo réclame davantage de combats</h2>",
+      "<p>Dans les propos rapportés par La Sueur, Cejudo juge que Pereira a déjà eu suffisamment d’occasions et qu’il doit d’abord enchaîner deux ou trois victoires supplémentaires. Pour l’ancien champion, le Brésilien doit gagner des combats chez les poids lourds avant de pouvoir prétendre à une nouvelle dispute du titre.</p>"
+    ],
+    "sources": [
+      {
+        "name": "La Sueur",
+        "title": "Un ancien champion affirme qu’Alex Pereira est gâté par l’UFC",
+        "url": "https://lasueur.com/un-ancien-champion-affirme-qualex-pereira-est-gate-par-lufc-16-10-2026",
+        "publishedAt": "2026-10-16T09:02:10.000Z",
+        "retrievedAt": "2026-10-16T22:41:13.093Z",
+        "bodyHash": "3e0d7525f38163573f8b22daad59168c5ec2a0c68a84dc01859724080da6913f"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-16T22:35:47.635Z"
+    },
+    "image": "/assets/editorial/henry-cejudo-estime-qu-alex-pereira-a-eu-trop-d-opportunites-a-l-ufc.webp",
+    "publicationBatchId": "2026-10-16T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://lasueur.com/un-ancien-champion-affirme-qualex-pereira-est-gate-par-lufc-16-10-2026",
+        "sha256": "7e314535754db0d87212102fdc175ea5295568ca1b565f758e3a46db166e39dd"
+      },
+      {
+        "sourceUrl": "https://lasueur.com/un-ancien-champion-affirme-qualex-pereira-est-gate-par-lufc-16-10-2026",
+        "sha256": "a496b47c1ee834604a73816898873ba881725882b7fa8d63869a0a0eacd75c4a"
+      },
+      {
+        "sourceUrl": "https://lasueur.com/un-ancien-champion-affirme-qualex-pereira-est-gate-par-lufc-16-10-2026",
+        "sha256": "0c681e33c925f349ab883f49de7cbf4141dcfe734db42f8da5f5b44c49a29bb4"
+      }
+    ]
+  },
+  {
     "slug": "mma-toulouse-sud-est-la-cage-de-7-m-de-ramonville",
     "title": "Au sud-est de Toulouse, le MMA se pratique dans un octogone de 7 m à Ramonville",
     "excerpt": "Le Boxing Center Ramonville réunit sur 300 m² couverts un octogone de 7 mètres, un grand ring et des tatamis. Visite de la salle MMA du sud toulousain, cours par cours.",
