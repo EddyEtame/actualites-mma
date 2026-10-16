@@ -111,6 +111,14 @@ test('batch requires a public news status and reporting category; archives retai
   assert.equal(validateArticles([a],{now,config}).ok,true);
   a.category='evenements';assert.equal(validateArticles([a],{now,batch:true,config}).ok,true);
 });
+test('original reporting cites undated consulted pages and dates the consultation; news and editions stay strict', () => {
+  const guide={...article(0),originalReporting:true,verifiedAt:now,sourcePublishedAt:now,sources:[{name:'Club',title:'La salle',url:'https://club.test/la-salle/'},{name:'Club',title:'Article daté',url:'https://club.test/blog/',publishedAt:sourceDate}]};
+  assert.equal(validateArticles([guide],{now,config}).ok,true);
+  assert.equal(validateArticles([{...guide,verifiedAt:undefined}],{now,config}).ok,false);
+  assert.equal(validateArticles([{...guide,sources:[{name:'Club',title:'La salle',url:'https://club.test/',publishedAt:'not a date'}]}],{now,config}).ok,false);
+  assert.equal(validateArticles([{...guide,originalReporting:false}],{now,config}).ok,false);
+  assert.equal(validateArticles([guide],{now,batch:true,config}).ok,false);
+});
 test('archives remain valid after source freshness window expires', () => {
   assert.equal(validateArticles([article(0)],{now:'2027-01-01T00:00:00Z',config}).ok,true);
 });

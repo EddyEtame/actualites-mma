@@ -257,14 +257,23 @@ export function validateArticles(articles, { now = new Date().toISOString(), bat
     if (!publicationDate(article.publishedAt) || Date.parse(article.publishedAt) > Date.parse(now)) errors.push(`${label}: missing or future site publication timestamp`);
     if (article.publishedAt && article.date !== article.publishedAt.slice(0, 10)) errors.push(`${label}: display date differs from real publication date`);
     if (article.updatedAt && (!publicationDate(article.updatedAt) || Date.parse(article.updatedAt) < Date.parse(article.publishedAt) || Date.parse(article.updatedAt) > Date.parse(now))) errors.push(`${label}: invalid modification date`);
+    // Original reporting (guides, club visits) cites the pages it consulted — club sites, maps — which often carry
+    // no publication date; the article dates that consultation instead (verifiedAt). News keeps dated, retrieved
+    // sources, and an automatic edition is always news.
+    const reference = article.originalReporting === true && !batch;
     for (const source of article.sources) {
       try { canonicalUrl(source.url); } catch { errors.push(`${label}: invalid source URL`); }
-      if (!source.name || !source.title || !publicationDate(source.publishedAt) || !publicationDate(source.retrievedAt)) errors.push(`${label}: source name, title, publication and retrieval timestamps required`);
+      if (reference ? !source.name || !source.title : !source.name || !source.title || !publicationDate(source.publishedAt) || !publicationDate(source.retrievedAt)) errors.push(`${label}: source name, title, publication and retrieval timestamps required`);
+      if (reference && source.publishedAt && !publicationDate(source.publishedAt)) errors.push(`${label}: invalid source publication date`);
       if (Date.parse(source.publishedAt) > Date.parse(now) || Date.parse(source.retrievedAt) > Date.parse(now)) errors.push(`${label}: future source metadata`);
       if (batch && !isFresh(source.publishedAt, now, config.maxSourceAgeHours)) errors.push(`${label}: source is outside the last ${config.maxSourceAgeHours} hours`);
     }
-    const dates = article.sources.map(source => Date.parse(source.publishedAt));
-    if (!publicationDate(article.sourcePublishedAt) || Date.parse(article.sourcePublishedAt) !== Math.min(...dates)) errors.push(`${label}: sourcePublishedAt must preserve the earliest original source publication`);
+    if (reference) {
+      if (!publicationDate(article.verifiedAt) || Date.parse(article.verifiedAt) > Date.parse(now)) errors.push(`${label}: original reporting must date the consultation of its sources (verifiedAt)`);
+    } else {
+      const dates = article.sources.map(source => Date.parse(source.publishedAt));
+      if (!publicationDate(article.sourcePublishedAt) || Date.parse(article.sourcePublishedAt) !== Math.min(...dates)) errors.push(`${label}: sourcePublishedAt must preserve the earliest original source publication`);
+    }
     if (batch) {
       if (!['actualites','resultats','evenements','analyses','interviews'].includes(article.category)) errors.push(`${label}: batch category must describe current MMA reporting`);
       if (!article.newsKey || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(article.newsKey)) errors.push(`${label}: stable newsKey required for event deduplication`);

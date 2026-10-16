@@ -52,11 +52,12 @@ jobs:
       - name: Verify news safeguards
         if: steps.due.outputs.due == 'true' || github.event_name == 'workflow_dispatch'
         run: node --test scripts/news-pipeline.test.mjs scripts/cloud-news-edition.test.mjs
-      # A site that no longer passes its audit stops here, before any paid drafting: otherwise every
-      # wake-up would redraft the same edition and fail again at the final audit.
-      - name: Build and audit the current site
+      # Every check the edition must pass after drafting runs here first, before any paid drafting: a site that
+      # fails one of them stops in seconds instead of paying for an edition the final check throws away (run #46).
+      - name: Validate, build and audit the current site
         if: steps.due.outputs.due == 'true' || github.event_name == 'workflow_dispatch'
         run: |
+          node scripts/ai-wired-crawler.mjs --validate
           npm run build
           node scripts/audit-build.mjs
       - name: Fetch sources, draft and independently verify six French articles, fetch their photos

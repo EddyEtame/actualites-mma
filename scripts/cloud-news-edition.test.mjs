@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
-import { modelJson, draftArticle, verifyCloud, writerEnvironment } from './cloud-news-edition.mjs';
+import { modelJson, draftArticle, verifyCloud, writerEnvironment, assertPublishedDataValid } from './cloud-news-edition.mjs';
 
 const now='2026-10-07T18:00:00Z';
 const passages=['The fighter confirmed he is interested in this MMA match.', 'The organization has not yet announced a confirmed date.'];
@@ -77,6 +77,20 @@ test('a sentence-like kicker is sent back for the "Organisation · Nature" forma
   assert.equal(JSON.parse(requests[0].input).sourceName,'Source MMA');
   assert.match(JSON.parse(requests[1].input).problems[0],/Organisation · Nature/);
   assert.equal(article.kicker,'UFC · Déclaration');assert.equal(article.author,'Rédaction PRISE MMA');
+});
+test('invalid published data stops an edition before any paid drafting',()=>{
+  const valid={slug:'ok',title:'T',excerpt:'E',category:'actualites',content:['<p>x</p>'],publishedAt:now,date:now.slice(0,10),sourcePublishedAt:candidate.publishedAt,sources:[{name:'S',title:'T',url:'https://mma.test/a',publishedAt:candidate.publishedAt,retrievedAt:now}]};
+  assert.equal(assertPublishedDataValid([valid],now,{batchSize:6}).ok,true);
+  const undated={...valid,slug:'guide',sources:[{name:'Club',title:'La salle',url:'https://club.test/'}]};
+  assert.throws(()=>assertPublishedDataValid([valid,undated],now,{batchSize:6}),error=>error.code==='INVALID_PUBLISHED_DATA'&&/nothing was written or paid for/.test(error.message));
+});
+test('an excerpt too short for a page description is sent back once',async()=>{
+  const names=[];
+  const article=await draftArticle(candidate,{now,model:async request=>{names.push(request.name);
+    if(request.name==='actu_mma_article')return {...draft,excerpt:'Une réponse.'};
+    if(request.name==='actu_mma_article_revision'){assert.match(JSON.parse(request.input).problems.join(' '),/110 et 160 caractères/);return draft;}
+    return approve;}});
+  assert.deepEqual(names,['actu_mma_article','actu_mma_article_revision','actu_mma_fact_review']);assert.equal(article.excerpt,draft.excerpt);
 });
 test('an unsupported fact flagged by the reviewer is revised and reviewed again',async()=>{
   const names=[];let reviews=0;

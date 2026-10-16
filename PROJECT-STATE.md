@@ -13,6 +13,8 @@
 
 - **13 octobre** : première édition automatique (#26, créneau du 13 octobre 18 h UTC) rédigée puis perdue : chaque page La Sueur était téléchargée trois fois en quelques minutes (découverte, photo, revérification avant publication) et la troisième requête a reçu HTTP 403. La publication revérifie désormais la copie lue à la découverte (mêmes contrôles de passages, de dates et de fraîcheur, sans nouveau téléchargement) et l'étape photo reçoit l'adresse de l'image trouvée à la découverte : une seule requête par page source.
 
+- **16 octobre** : l'édition du créneau de 18 h UTC (#46) a été rédigée puis perdue au contrôle final : les trois articles de fond ajoutés le jour même (Ramonville, États-Unis, guide toulousain) citent des pages de clubs sans date, et la validation « actualité » exigeait des sources datées. Le validateur distingue maintenant le reportage original (`originalReporting`) : sources consultées sans date obligatoire, consultation datée par `verifiedAt` ; l'actualité et les éditions automatiques restent strictes. Prévention : la validation de provenance tourne avant toute rédaction (workflow et script), un résumé trop court pour la description est renvoyé en révision, un titre déjà publié écarte le sujet, et `verify.yml` vérifie chaque commit poussé sur `main` avec les mêmes contrôles.
+
 ## 7 octobre 2026
 
 Travail demandé : six actualités véritablement nouvelles tous les trois jours, chaîne autonome ordinateur éteint, vraies photos des personnes concernées, retrait de Guillaume et des galeries de boxe, domaine `actu-mma.com`, déploiement Vercel via GitHub. Skills Desktop Baffled Bar et SEO lus ; aucun fichier GEO/AEO distinct trouvé, règles GEO de Baffled Bar appliquées.
