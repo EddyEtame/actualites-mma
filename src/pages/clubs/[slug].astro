@@ -9,10 +9,11 @@ export function getStaticPaths() {
 
 const { club } = Astro.props;
 const otherClubs = clubs.filter(c => c.slug !== club.slug).slice(0, 3);
-const isBoxingCenter = club.slug === 'boxing-center-etats-unis';
 const siteUrl = SITE_URL;
-// Only the Boxing Center links out; the other clubs are referenced by name, address and source title.
-const linksOut = isBoxingCenter;
+// Seuls les clubs Boxing Center (États-Unis, Ramonville — `linksOut: true` dans clubs.json) mènent vers leur site ;
+// les autres clubs sont cités par leur nom, leur adresse et le titre de leurs sources, sans lien.
+const linksOut = club.linksOut === true;
+const isBoxingCenter = linksOut;
 const websiteHost = new URL(club.website).hostname.replace(/^www\./, '');
 const visual = club.image || club.plan;
 const visualAlt = club.image ? club.imageAlt : club.planAlt;
@@ -25,10 +26,7 @@ const specs = [
 const faqItems = [
   { q: `Où se situe ${club.name} ?`, a: `${club.name} se situe au ${club.address}.${club.metro ? ` Accès : ${club.metro}.` : ''}` },
   { q: `Quelles disciplines peut-on pratiquer à ${club.name} ?`, a: `Le site du club présente les disciplines suivantes : ${club.disciplines.join(', ')}.` },
-  ...(isBoxingCenter ? [
-    { q: 'Qui encadre le grappling et le jiu-jitsu brésilien ?', a: 'Zouhir Boumenir enseigne le grappling et le jiu-jitsu brésilien au Boxing Center États-Unis. Le site du club le présente comme ceinture noire de JJB.' },
-    { q: 'Peut-on débuter le MMA dans cette salle ?', a: 'Le club annonce des cours Asso MMA pour débutants et confirmés, ainsi que du MMA jeunes 10–16 ans. Contactez le club pour choisir le créneau de votre premier cours.' }
-  ] : []),
+  ...(club.faq || []),
   { q: `Où consulter les horaires de ${club.name} ?`, a: club.scheduleNote }
 ];
 const structuredData = {
@@ -97,7 +95,7 @@ const breadcrumbSchema = {
 
       {club.coaches.length > 0 && <section class="club-coaches-section" aria-labelledby="coach-title" data-reveal>
         <span class="kicker">L'encadrement au sol</span><h2 class="display" id="coach-title">Zouhir Boumenir, grappling et JJB</h2>
-        <div class="coaches-grid">{club.coaches.map(c => <article class="coach-card"><div class="coach-media"><img src={c.photo} alt={c.alt} width="900" height="720" loading="lazy" decoding="async" /></div><div class="coach-body"><span class="coach-role mono">{c.role}</span><h3 class="display coach-name">{c.name}</h3><p class="coach-qualif mono">{c.qualif}</p><p>{c.description}</p><a href={c.sourceUrl} target="_blank" rel="noopener noreferrer" class="club-source-link">Présentation du coach sur clubmma.fr ↗</a></div></article>)}</div>
+        <div class="coaches-grid">{club.coaches.map(c => <article class="coach-card"><div class="coach-media"><img src={c.photo} alt={c.alt} width="900" height="720" loading="lazy" decoding="async" /></div><div class="coach-body"><span class="coach-role mono">{c.role}</span><h3 class="display coach-name">{c.name}</h3><p class="coach-qualif mono">{c.qualif}</p><p>{c.description}</p><a href={c.sourceUrl} target="_blank" rel="noopener noreferrer" class="club-source-link">Présentation du coach sur {websiteHost} ↗</a></div></article>)}</div>
       </section>}
 
       <section class="club-schedule-section" id="planning" aria-labelledby="schedule-title" data-reveal>

@@ -21,7 +21,7 @@ const listSchema = {
 
 <Base
   title="Clubs de MMA en France — Toulouse, Paris et Lyon"
-  description="Cinq clubs de MMA à Toulouse, Paris et Villeurbanne : adresses vérifiées, plans d’accès, disciplines et coachs, pour choisir sa salle."
+  description="Six clubs de MMA à Toulouse, Ramonville, Paris et Villeurbanne : adresses vérifiées, plans d’accès, disciplines et coachs, pour choisir sa salle."
   image="/og/clubs.jpg"
   currentNav="clubs"
 >
@@ -30,7 +30,7 @@ const listSchema = {
     <header class="archive-header" data-reveal>
       <span class="kicker">La pratique · Clubs de MMA</span>
       <h1 class="display">Trouver sa salle.<br />Entrer dans le MMA.</h1>
-      <p class="lede">Toulouse, Paris, métropole de Lyon : cinq clubs, leurs disciplines et les informations utiles pour choisir votre premier entraînement.</p>
+      <p class="lede">Toulouse et sa banlieue, Paris, métropole de Lyon : six clubs, leurs disciplines et les informations utiles pour choisir votre premier entraînement.</p>
       <p class="club-source-note mono">Coordonnées et disciplines vérifiées le <time datetime={bcGym.verifiedAt}>{verifiedDate}</time> · Sources des clubs sur chaque fiche</p>
     </header>
 
@@ -70,7 +70,7 @@ const listSchema = {
       <div class="clubs-grid" data-reveal-group>
         {otherClubs.map(c => (
           <a class="club-card club-card--directory" href={`/clubs/${c.slug}/`} data-reveal>
-            <div class="club-card__visual">{c.plan ? <img src={c.plan} alt={c.planAlt} width="1280" height="720" loading="lazy" decoding="async" /> : null}<span class="club-card__city mono">{c.city} · {c.region}</span></div>
+            <div class="club-card__visual">{(c.image || c.plan) ? <img src={c.image || c.plan} alt={c.image ? c.imageAlt : c.planAlt} width="1280" height="720" loading="lazy" decoding="async" /> : null}<span class="club-card__city mono">{c.city} · {c.region}</span></div>
             <div class="club-card__body">
               <h3 class="display">{c.name}</h3>
               <p>{c.description}</p>

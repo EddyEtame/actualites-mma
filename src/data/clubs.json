@@ -57,6 +57,101 @@
       "lon": 1.414873,
       "source": "OpenStreetMap Nominatim",
       "matched": "388, Avenue des États-Unis, Lalande, Sept Deniers / Ginestous-Sesquières / Lalande, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31200, France"
+    },
+    "linksOut": true,
+    "faq": [
+      {
+        "q": "Qui encadre le grappling et le jiu-jitsu brésilien ?",
+        "a": "Zouhir Boumenir enseigne le grappling et le jiu-jitsu brésilien au Boxing Center États-Unis. Le site du club le présente comme ceinture noire de JJB."
+      },
+      {
+        "q": "Peut-on débuter le MMA dans cette salle ?",
+        "a": "Le club annonce des cours Asso MMA pour débutants et confirmés, ainsi que du MMA jeunes 10–16 ans. Contactez le club pour choisir le créneau de votre premier cours."
+      }
+    ]
+  },
+  {
+    "slug": "boxing-center-ramonville",
+    "name": "Boxing Center Ramonville",
+    "city": "Ramonville-Saint-Agne",
+    "cityCode": "RAM",
+    "postalCode": "31520",
+    "region": "Occitanie",
+    "streetAddress": "33 rue des Ormes",
+    "address": "33 rue des Ormes, 31520 Ramonville-Saint-Agne",
+    "website": "https://mmatoulouse.com/",
+    "phone": "09 39 03 67 48",
+    "linksOut": true,
+    "surface": "300 m² couverts",
+    "cage": "Octogone de 7 m",
+    "tatami": "Tatamis au sol",
+    "metro": "Bus Ramonville Sud à 200 m ; station Ramonville, terminus du métro B, à environ 2 km",
+    "coaches": [
+      {
+        "name": "Jérôme",
+        "role": "MMA & grappling",
+        "qualif": "Ancien combattant, passé par les États-Unis et le Canada",
+        "description": "Jérôme tient les cours de MMA et de grappling dans l’octogone de 7 m. Le site du club le présente comme un ancien combattant qui a boxé aux États-Unis et au Canada ; les débutants sont admis et personne n’est mis en opposition le premier jour.",
+        "photo": "/assets/clubs/ramonville-coach-jerome.webp",
+        "alt": "Jérôme, coach de MMA et de grappling au Boxing Center Ramonville.",
+        "sourceUrl": "https://mmatoulouse.com/coachs/jerome/"
+      }
+    ],
+    "disciplines": [
+      "MMA",
+      "Grappling",
+      "Boxe pieds-poings",
+      "Boxe anglaise",
+      "Lady Punch",
+      "Boxing Camp",
+      "École enfants"
+    ],
+    "description": "MMA et grappling au sud-est de Toulouse : un octogone de 7 m sur 300 m² d’entraînement couverts, à Ramonville-Saint-Agne, bus Ramonville Sud à 200 m.",
+    "longDescription": "Le Boxing Center Ramonville occupe 300 m² d’entraînement couverts, en plein air, au 33 rue des Ormes : un octogone de 7 mètres, un grand ring de boxe, des tatamis et une ligne de sacs, avec un étage de musculation et de cardio compris dans l’abonnement. C’est la salle MMA du réseau Boxing Center au sud-est de Toulouse, ouverte depuis septembre 2019, affiliée FFBoxe, FFKMDA et FMMAF.",
+    "practicalNote": "Le site du club annonce le MMA tous niveaux et le grappling dans l’octogone, encadrés par Jérôme, ainsi que la boxe anglaise, la boxe pieds-poings, le Lady Punch, le Boxing Camp et une école enfants dès 3 ans. La séance d’essai se réserve sur la boutique du club ; le planning de la saison 2026–2027 donne les créneaux.",
+    "scheduleUrl": "https://mmatoulouse.com/plannings/",
+    "scheduleLabel": "Planning 2026–2027 du club",
+    "scheduleNote": "Consultez les horaires du MMA, du grappling et des autres cours sur le planning publié par le club avant votre déplacement ; la salle ouvre du lundi au samedi de 10h à 21h30.",
+    "image": "/assets/img/ramonville-octogone-mma.webp",
+    "imageAlt": "Cours de MMA dans l’octogone de 7 mètres du Boxing Center Ramonville, sous la charpente du plateau couvert.",
+    "verifiedAt": "2026-10-16",
+    "sources": [
+      {
+        "title": "Boxing Center Ramonville · La salle",
+        "url": "https://mmatoulouse.com/la-salle/"
+      },
+      {
+        "title": "Boxing Center Ramonville · MMA à Toulouse sud-est",
+        "url": "https://mmatoulouse.com/mma-toulouse/"
+      },
+      {
+        "title": "Boxing Center Ramonville · Le cours de MMA",
+        "url": "https://mmatoulouse.com/activites/mma/"
+      },
+      {
+        "title": "Boxing Center Ramonville · Planning 2026–2027",
+        "url": "https://mmatoulouse.com/plannings/"
+      },
+      {
+        "title": "Boxing Center Ramonville · Contact et accès",
+        "url": "https://mmatoulouse.com/contact/"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Qui encadre le MMA et le grappling à Ramonville ?",
+        "a": "Jérôme tient les cours de MMA et de grappling dans l’octogone de 7 m. Le site du club le présente comme un ancien combattant passé par les États-Unis et le Canada."
+      },
+      {
+        "q": "Peut-on venir en métro ?",
+        "a": "La station Ramonville, terminus de la ligne B, est à environ 2 km de la salle ; l’arrêt de bus Ramonville Sud est à 200 m. Les automobilistes venant de Toulouse quittent la rocade à la sortie Ramonville."
+      }
+    ],
+    "geo": {
+      "lat": 43.5366,
+      "lon": 1.484,
+      "source": "OpenStreetMap Nominatim",
+      "matched": "33, Rue des Ormes, Ramonville-Saint-Agne, Haute-Garonne, Occitanie, France métropolitaine"
     }
   },
   {

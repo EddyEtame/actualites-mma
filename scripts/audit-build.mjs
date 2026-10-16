@@ -47,10 +47,10 @@ for (const file of files) {
   }
   if (route.startsWith('/clubs/')) {
     assert(!/Guillaume|gallery-zoom|clubPhotoGallery|lightbox-overlay/.test(html), `${route}: removed boxing content returned`);
-    // Other clubs are referenced, never linked: only the Boxing Center and the map licence credit lead out.
+    // Other clubs are referenced, never linked: only the Boxing Center clubs (clubmma.fr, mmatoulouse.com) and the map licence credit lead out.
     for (const [, href] of html.matchAll(/href="(https?:\/\/[^"]+)"/g)) {
       const host = new URL(href.replaceAll('&amp;', '&')).hostname.replace(/^www\./, '');
-      assert([new URL(SITE_URL).hostname.replace(/^www\./, ''), 'clubmma.fr', 'openstreetmap.org'].includes(host), `${route}: outbound link to ${host}`);
+      assert([new URL(SITE_URL).hostname.replace(/^www\./, ''), 'clubmma.fr', 'mmatoulouse.com', 'openstreetmap.org'].includes(host), `${route}: outbound link to ${host}`);
     }
   }
 }

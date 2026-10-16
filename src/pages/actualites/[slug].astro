@@ -17,6 +17,23 @@ const { article } = Astro.props;
 const otherArticles = publishedArticles(articles).filter(a => a.slug !== article.slug).slice(0, 3);
 const articleUrl = `${SITE_URL}/actualites/${article.slug}/`;
 const byline = article.author || `Rédaction ${SITE_NAME}`;
+import clubs from '../../data/clubs.json';
+/* L'encadré de fin d'article mène à la salle Boxing Center dont l'article parle (`partnerClub`
+   dans articles.json) ; sans ce champ, à la salle des États-Unis comme avant. */
+const PARTNERS = {
+  'boxing-center-etats-unis': {
+    calloutTitle: "S'entraîner dans les conditions professionnelles à Toulouse",
+    calloutText: 'Travail au sol, lutte et striking : découvrez les cours et les installations MMA du Boxing Center, salle des États-Unis à Toulouse, sur le site du club.',
+    calloutCta: 'Découvrir la salle Boxing Center États-Unis (clubmma.fr) →'
+  },
+  'boxing-center-ramonville': {
+    calloutTitle: 'Le MMA dans un octogone de 7 m, au sud-est de Toulouse',
+    calloutText: 'MMA tous niveaux et grappling dans la cage, boxe anglaise et pieds-poings sur le plateau : les cours du Boxing Center Ramonville, salle par salle, sur le site du club.',
+    calloutCta: 'Découvrir le Boxing Center Ramonville (mmatoulouse.com) →'
+  }
+};
+const partnerSlug = PARTNERS[article.partnerClub] ? article.partnerClub : 'boxing-center-etats-unis';
+const partner = { ...PARTNERS[partnerSlug], website: clubs.find(c => c.slug === partnerSlug).website };
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -162,15 +179,15 @@ const breadcrumbSchema = {
           <ul>{article.sources.map(source => <li><a href={source.url} target="_blank" rel="noopener noreferrer">{source.name} — {source.title || 'Lire la source'}</a>{source.publishedAt && <span class="mono"> · {formatDate(source.publishedAt)}</span>}</li>)}</ul>
         </section>
 
-        <!-- Encadré partenaire subtil : Boxing Center États-Unis -->
+        <!-- Encadré club : la salle Boxing Center dont parle l'article (partnerClub), États-Unis par défaut -->
         <aside class="club-partner-callout">
           <div class="callout-badge">
             <span class="kicker" style="color: var(--teal);">Pratiquer le MMA</span>
           </div>
-          <h3>S'entraîner dans les conditions professionnelles à Toulouse</h3>
-          <p>Travail au sol, lutte et striking : découvrez les cours et les installations MMA du <strong>Boxing Center, salle des États-Unis à Toulouse</strong>, sur le site du club.</p>
-          <a href="https://clubmma.fr/" target="_blank" rel="noopener noreferrer" class="btn btn--teal">
-            Découvrir la salle Boxing Center États-Unis (clubmma.fr) →
+          <h3>{partner.calloutTitle}</h3>
+          <p>{partner.calloutText}</p>
+          <a href={partner.website} target="_blank" rel="noopener noreferrer" class="btn btn--teal">
+            {partner.calloutCta}
           </a>
         </aside>
       </div>
