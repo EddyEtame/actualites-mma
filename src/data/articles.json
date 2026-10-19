@@ -1,5 +1,449 @@
 [
   {
+    "newsKey": "ufc-edmonton-video-altercation-projection-policiere",
+    "imageAlt": "Capture d’écran du 19 octobre 2026 à 11 h 51.",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/10/Screenshot-2026-10-19-at-11.51.56-AM.png?quality=90&strip=all&crop=0,44.336692938103,100,55.663307061897",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/10/Screenshot-2026-10-19-at-11.51.56-AM.png?quality=90&strip=all&crop=0,44.336692938103,100,55.663307061897",
+      "pageUrl": "https://mmafighting.com/ufc/516645/ufc-edmonton-viral-video-allegedly-shows-police-officer-brutally-suplexing-fan-amid-crowd-brawl",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "Screenshot 2026-10-19 at 11.51.56 AM",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-19T19:19:39.455Z",
+      "originalWidth": 993,
+      "originalHeight": 514
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "ufc-edmonton-une-video-virale-semble-montrer-un-policier-projeter-une-personne",
+    "title": "UFC Edmonton : une vidéo virale semble montrer un policier projeter une personne",
+    "excerpt": "Une séquence diffusée après l’UFC Edmonton semble montrer un policier projeter une personne au sol lors d’une altercation dans la foule.",
+    "category": "actualites",
+    "kicker": "UFC · Vidéo virale",
+    "date": "2026-10-19",
+    "publishedAt": "2026-10-19T19:27:08.457Z",
+    "verifiedAt": "2026-10-19T19:27:08.457Z",
+    "sourcePublishedAt": "2026-10-19T17:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Une vidéo montrant une violente altercation dans la foule à l’UFC Edmonton a circulé sur les réseaux sociaux après l’événement organisé samedi au Rogers Place, à Edmonton. Selon MMA Fighting, la séquence mettrait en scène des spectateurs, des agents de sécurité de l’aréna et des policiers d’Edmonton.</p>",
+      "<h2>Une projection filmée dans la foule</h2>",
+      "<p>Dans les images, un policier semble saisir une personne par-derrière avant de la projeter en arrière, provoquant une lourde chute au sol. Le média décrit un mouvement ressemblant à un suplex, sans que les circonstances de l’incident soient établies. La personne paraît ensuite rester raide après l’impact. La vidéo semble également montrer une possible utilisation d’un pistolet à impulsion électrique, mais ce geste reste difficile à distinguer.</p>",
+      "<h2>La police n’a pas encore répondu</h2>",
+      "<p>MMA Fighting indique avoir contacté le service des relations avec les médias de la police d’Edmonton pour vérifier l’authenticité de la séquence et obtenir des informations sur l’incident. Au moment de la publication de son article, le média n’avait pas reçu de réponse. Les faits rapportés à partir de la vidéo ne sont donc pas confirmés par la police.</p>",
+      "<h2>Un événement marqué par les arrêts</h2>",
+      "<p>L’altercation s’est produite en marge d’une soirée qui a aussi connu de nombreux arrêts dans l’octogone : 12 des 13 combats se sont terminés par KO ou soumission. En tête d’affiche, Mike Malott a battu Joaquin Buckley par KO au genou au deuxième round.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "UFC Edmonton viral video allegedly shows police officer brutally suplexing fan amid crowd brawl",
+        "url": "https://mmafighting.com/ufc/516645/ufc-edmonton-viral-video-allegedly-shows-police-officer-brutally-suplexing-fan-amid-crowd-brawl",
+        "publishedAt": "2026-10-19T17:00:00.000Z",
+        "retrievedAt": "2026-10-19T19:27:08.457Z",
+        "bodyHash": "feb286deb980695dd518d6423f282790aad63f513735838ecb85ba05030a3eb8"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-19T19:18:52.982Z"
+    },
+    "image": "/assets/editorial/ufc-edmonton-une-video-virale-semble-montrer-un-policier-projeter-une-personne.webp",
+    "publicationBatchId": "2026-10-19T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/516645/ufc-edmonton-viral-video-allegedly-shows-police-officer-brutally-suplexing-fan-amid-crowd-brawl",
+        "sha256": "1268d9b8f2e08d8d82db8cdae740079ec75b39756712393bce477bb367fc4932"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/516645/ufc-edmonton-viral-video-allegedly-shows-police-officer-brutally-suplexing-fan-amid-crowd-brawl",
+        "sha256": "be09ad2a6472fbb80989ba62d8b07a67e3f261e15e2cfb634deaa57e1dd5da4d"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/516645/ufc-edmonton-viral-video-allegedly-shows-police-officer-brutally-suplexing-fan-amid-crowd-brawl",
+        "sha256": "f1b82827842adba55061bed7fa619b50edf96c300aafb77e5bdecd94fb77c23f"
+      }
+    ]
+  },
+  {
+    "newsKey": "charles-oliveira-style-ceinture-bmf",
+    "imageAlt": "Holloway contre Oliveira 2 à l’UFC 326",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/05/gettyimages-2265360631.jpg?quality=90&strip=all&crop=0%2C10.735875613104%2C100%2C78.528248773791&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/05/gettyimages-2265360631.jpg?quality=90&strip=all&crop=0%2C10.735875613104%2C100%2C78.528248773791&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/515678/charles-oliveira-if-the-bmf-belt-is-about-rock-em-sock-em-robots-take-it-somewhere-else",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "UFC 326: Holloway v Oliveira 2",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-19T19:20:56.252Z",
+      "originalWidth": 1200,
+      "originalHeight": 624
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "charles-oliveira-refuse-d-adapter-son-style-aux-attentes-autour-de-la-ceinture-bmf",
+    "title": "Charles Oliveira refuse d’adapter son style aux attentes autour de la ceinture BMF",
+    "excerpt": "Charles Oliveira affirme qu’il ne changera pas sa manière de combattre pour satisfaire les attentes liées à la ceinture BMF, avant sa défense contre Diego Lopes.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-10-19",
+    "publishedAt": "2026-10-19T19:27:08.457Z",
+    "verifiedAt": "2026-10-19T19:27:08.457Z",
+    "sourcePublishedAt": "2026-10-19T15:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Charles Oliveira assure qu’il ne modifiera pas sa façon de combattre pour répondre aux attentes associées à la ceinture BMF. Après avoir battu Max Holloway pour s’emparer du titre, le Brésilien a été critiqué par des fans qui auraient préféré un combat plus porté sur les échanges debout.</p>",
+      "<h2>Oliveira ne veut pas combattre pour plaire au public</h2>",
+      "<p>Dans un entretien accordé à MMA Fighting, Oliveira explique qu’il rit de ces critiques et qu’il entend avant tout combattre pour gagner. Il estime que les reproches peuvent changer selon la stratégie choisie : certains lui auraient notamment reproché d’avoir privilégié le grappling contre Holloway.</p>",
+      "<h2>La ceinture BMF ne dictera pas son approche</h2>",
+      "<p>Oliveira reconnaît que le public peut vouloir voir deux combattants échanger des coups jusqu’à ce que l’un d’eux tombe. Mais il ne considère pas cette attente comme une obligation liée à la ceinture. Il affirme vouloir se battre en MMA, en mêlant les différentes disciplines plutôt qu’en se limitant à la boxe, au muay-thaï, à la lutte ou au jiu-jitsu.</p>",
+      "<h2>Une défense annoncée contre Diego Lopes</h2>",
+      "<p>Oliveira doit défendre son titre contre Diego Lopes à l’UFC 335, prévu le 12 décembre à Las Vegas. Il indique que son équipe étudie son adversaire et qu’il ne compte pas entrer dans la cage pour échanger les coups sans discernement. Il dit vouloir proposer une meilleure version de lui-même et se concentrer sur ce qu’il peut apporter au combat.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Charles Oliveira: If the BMF belt is about rock ‘em sock ‘em robots, ‘take it somewhere else’",
+        "url": "https://mmafighting.com/ufc/515678/charles-oliveira-if-the-bmf-belt-is-about-rock-em-sock-em-robots-take-it-somewhere-else",
+        "publishedAt": "2026-10-19T15:00:00.000Z",
+        "retrievedAt": "2026-10-19T19:27:08.457Z",
+        "bodyHash": "b2d231a4ef73ba922dd9a2d4b63760690d28be19037f55a83c68620026ef7803"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-19T19:18:52.982Z"
+    },
+    "image": "/assets/editorial/charles-oliveira-refuse-d-adapter-son-style-aux-attentes-autour-de-la-ceinture-bmf.webp",
+    "publicationBatchId": "2026-10-19T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/515678/charles-oliveira-if-the-bmf-belt-is-about-rock-em-sock-em-robots-take-it-somewhere-else",
+        "sha256": "fb503f7d2e23db86a239299942ea986eea518a4d83cd96369081d3bf385491b9"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/515678/charles-oliveira-if-the-bmf-belt-is-about-rock-em-sock-em-robots-take-it-somewhere-else",
+        "sha256": "67a603099396dc1e8fbc50f23d4497aa8f6c2ca5bcdfef86eaa9722f0b76cb48"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/515678/charles-oliveira-if-the-bmf-belt-is-about-rock-em-sock-em-robots-take-it-somewhere-else",
+        "sha256": "1fb2c01fd703640526ce66f31deac58e99fd2d484aae1d0e12267954231a89c4"
+      }
+    ]
+  },
+  {
+    "newsKey": "mike-malott-vise-top-5-et-espere-combattre-toronto",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/10/mike-malott-pense-deja-au-top-5-apres-son-k.-o.-brutal-lors-du-main-event-de-l-ufc-edmonton.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/10/mike-malott-pense-deja-au-top-5-apres-son-k.-o.-brutal-lors-du-main-event-de-l-ufc-edmonton.jpg",
+      "pageUrl": "https://actumma.com/mike-malott-pense-deja-au-top-5-apres-son-k-o-brutal-lors-du-main-event-de-lufc-edmonton/193893",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-19T19:23:34.423Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "mike-malott-vise-un-adversaire-du-top-5-et-espere-combattre-a-toronto",
+    "title": "Mike Malott vise un adversaire du top 5 et espère combattre à Toronto",
+    "excerpt": "Mike Malott vise un adversaire du top 10, voire du top 5, et espère combattre à Toronto lors du retour de l’UFC en janvier 2027.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-10-19",
+    "publishedAt": "2026-10-19T19:27:08.457Z",
+    "verifiedAt": "2026-10-19T19:27:08.457Z",
+    "sourcePublishedAt": "2026-10-19T10:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Mike Malott veut capitaliser sur son succès contre Joaquin Buckley. Le 17 octobre, lors du main event de l’UFC Edmonton, le Canadien a mis fin au combat au deuxième round avec un genou au visage. Cette victoire porte sa série à cinq succès consécutifs, rapporte ActuMMA.</p>",
+      "<h2>Un adversaire du top 10 ou du top 5</h2>",
+      "<p>Dans des propos rapportés par ActuMMA, Malott explique vouloir se mesurer à un adversaire du top 10, voire du top 5 des poids mi-moyens. Il estime que ses prestations progressent à mesure qu’il affronte des adversaires plus dangereux et veut profiter de cette dynamique pour se rapprocher des meilleurs de la catégorie.</p>",
+      "<h2>Toronto en ligne de mire pour janvier</h2>",
+      "<p>Le Canadien espère aussi retrouver l’Octogone lors du retour de l’UFC au Canada en janvier. ActuMMA indique que l’organisation doit revenir à Toronto le 30 janvier 2027 pour l’UFC 336. Malott souhaite être à l’affiche, mais aucun combat à cette date n’est annoncé dans l’article.</p>",
+      "<h2>Jack Della Maddalena évoqué, sans annonce</h2>",
+      "<p>Après la victoire contre Buckley, le nom de Jack Della Maddalena a été évoqué. L’ancien champion des poids mi-moyens pourrait représenter une option pour Malott, selon ActuMMA. Le média ne rapporte toutefois aucune confirmation de cet affrontement ni d’un adversaire pour le prochain combat du Canadien.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Mike Malott pense déjà au top 5 après son K.-O. brutal lors du main event de l’UFC Edmonton",
+        "url": "https://actumma.com/mike-malott-pense-deja-au-top-5-apres-son-k-o-brutal-lors-du-main-event-de-lufc-edmonton/193893",
+        "publishedAt": "2026-10-19T10:00:00.000Z",
+        "retrievedAt": "2026-10-19T19:27:08.457Z",
+        "bodyHash": "f18e8faacbd3ba14f3f7144a40193ddf42b20ca928b8cac7498211a193132c94"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-19T19:18:52.982Z"
+    },
+    "image": "/assets/editorial/mike-malott-vise-un-adversaire-du-top-5-et-espere-combattre-a-toronto.webp",
+    "publicationBatchId": "2026-10-19T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/mike-malott-pense-deja-au-top-5-apres-son-k-o-brutal-lors-du-main-event-de-lufc-edmonton/193893",
+        "sha256": "4200e37f7fea252446e313635d07856ba2c509b41201212c06c947bbfc31073d"
+      },
+      {
+        "sourceUrl": "https://actumma.com/mike-malott-pense-deja-au-top-5-apres-son-k-o-brutal-lors-du-main-event-de-lufc-edmonton/193893",
+        "sha256": "1fb8a59469b6ef51cf37f15d0a334b139b00d15692c5415fd0aae658a9efb2ff"
+      },
+      {
+        "sourceUrl": "https://actumma.com/mike-malott-pense-deja-au-top-5-apres-son-k-o-brutal-lors-du-main-event-de-lufc-edmonton/193893",
+        "sha256": "cb58b6f129a9c433e73042b5e8fb7cf343eed0c42129d2b9c29749074845df5a"
+      }
+    ]
+  },
+  {
+    "newsKey": "dana-white-plaisanterie-defaite-joaquin-buckley",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/10/la-reaction-hilarante-de-dana-white-a-la-defaite-de-joaquin-buckley-a-l-ufc-edmonton.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/10/la-reaction-hilarante-de-dana-white-a-la-defaite-de-joaquin-buckley-a-l-ufc-edmonton.jpg",
+      "pageUrl": "https://actumma.com/la-reaction-hilarante-de-dana-white-a-la-defaite-de-joaquin-buckley-a-lufc-edmonton/193885",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-19T19:25:43.087Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "dana-white-plaisante-apres-la-defaite-de-joaquin-buckley-a-l-ufc-edmonton",
+    "title": "Dana White plaisante après la défaite de Joaquin Buckley à l’UFC Edmonton",
+    "excerpt": "Dana White a relativisé le refus de poignée de main de Joaquin Buckley avant l’UFC Edmonton, puis a plaisanté sur son renvoi après sa défaite.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-10-19",
+    "publishedAt": "2026-10-19T19:27:08.457Z",
+    "verifiedAt": "2026-10-19T19:27:08.457Z",
+    "sourcePublishedAt": "2026-10-19T07:17:43.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Après le K.-O. de Joaquin Buckley face à Mike Malott à l’UFC Edmonton, Dana White est revenu sur un épisode survenu avant le combat. À la pesée cérémonielle, Buckley avait ignoré la poignée de main tendue par le patron de l’UFC. Interrogé après l’événement, White a expliqué qu’il ne prenait pas ce geste personnellement.</p>",
+      "<h2>Dana White relativise le geste de Buckley</h2>",
+      "<p>Dans une déclaration rapportée par ActuMMA, White a rappelé que les combattants abordent différemment la semaine précédant un combat. La perte de poids, la préparation et la pression peuvent les rendre irritables ou les pousser à rester à l’écart, a-t-il expliqué. Après des années dans le milieu, il dit respecter cette manière de gérer la période.</p>",
+      "<h2>Une plaisanterie après le K.-O.</h2>",
+      "<p>Dana White a aussi raconté qu’il avait cessé de passer dans les vestiaires le soir des combats pour souhaiter bonne chance aux combattants, afin de ne pas les déranger. Puis, sur le ton de la plaisanterie, il a affirmé avoir demandé à Hunter de renvoyer Buckley après sa défaite. Il ne s’agissait pas d’une annonce de renvoi.</p>",
+      "<h2>Buckley concède un troisième revers consécutif</h2>",
+      "<p>Le résultat sportif est, lui, bien réel : Buckley a subi un troisième revers de suite, après ses défaites face à Kamaru Usman et Sean Brady. Mike Malott a de son côté signé une cinquième victoire consécutive devant son public canadien.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "La réaction hilarante de Dana White à la défaite de Joaquin Buckley à l’UFC Edmonton",
+        "url": "https://actumma.com/la-reaction-hilarante-de-dana-white-a-la-defaite-de-joaquin-buckley-a-lufc-edmonton/193885",
+        "publishedAt": "2026-10-19T07:17:43.000Z",
+        "retrievedAt": "2026-10-19T19:27:08.457Z",
+        "bodyHash": "341a226fc4d943ff2660646657a328a5dc018af41c9ac1baa7c1d932a88aa56b"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-19T19:18:52.982Z"
+    },
+    "image": "/assets/editorial/dana-white-plaisante-apres-la-defaite-de-joaquin-buckley-a-l-ufc-edmonton.webp",
+    "publicationBatchId": "2026-10-19T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/la-reaction-hilarante-de-dana-white-a-la-defaite-de-joaquin-buckley-a-lufc-edmonton/193885",
+        "sha256": "6c1080a80a75f7811d58b825b47bd919c13c7fb8e843ad060e65cce3c5bac462"
+      },
+      {
+        "sourceUrl": "https://actumma.com/la-reaction-hilarante-de-dana-white-a-la-defaite-de-joaquin-buckley-a-lufc-edmonton/193885",
+        "sha256": "d9686464bce2f9b3c58ea1d87cab74dfed7569a41e9e49bea9771180b01b0623"
+      },
+      {
+        "sourceUrl": "https://actumma.com/la-reaction-hilarante-de-dana-white-a-la-defaite-de-joaquin-buckley-a-lufc-edmonton/193885",
+        "sha256": "db4e74f2727de424035451d5a14aa79baa9fc869149823a409c1ee33592b7d6d"
+      }
+    ]
+  },
+  {
+    "newsKey": "volkanovski-defi-lutte-evloev",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/10/alexander-volkanovski-lance-un-defi-a-movsar-evloev-avant-leur-affrontement-a-l-ufc-333.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/10/alexander-volkanovski-lance-un-defi-a-movsar-evloev-avant-leur-affrontement-a-l-ufc-333.jpg",
+      "pageUrl": "https://actumma.com/alexander-volkanovski-lance-un-defi-a-movsar-evloev-avant-leur-affrontement-a-lufc-333/193876",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-19T19:26:01.623Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "alexander-volkanovski-veut-mettre-la-lutte-de-movsar-evloev-a-l-epreuve",
+    "title": "Alexander Volkanovski veut mettre la lutte de Movsar Evloev à l’épreuve",
+    "excerpt": "Alexander Volkanovski veut pousser Movsar Evloev à multiplier les tentatives de lutte, persuadé de pouvoir les repousser et garder le combat debout.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-10-19",
+    "publishedAt": "2026-10-19T19:27:08.457Z",
+    "verifiedAt": "2026-10-19T19:27:08.457Z",
+    "sourcePublishedAt": "2026-10-19T06:33:59.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Alexander Volkanovski veut inciter Movsar Evloev à utiliser sa lutte lors de leur combat. Le 24 octobre, l’Australien retrouvera l’Octogone à Abu Dhabi pour défendre sa ceinture face au Russe, invaincu en carrière et réputé pour contrôler ses adversaires grâce à cette spécialité.</p>",
+      "<h2>Un défi lancé à Evloev</h2>",
+      "<p>Interrogé par le New York Post Sports, dans des propos rapportés par ActuMMA, Volkanovski a expliqué qu’il ne comptait pas attendre les initiatives de son adversaire. Il souhaite le pousser à tenter des amenées au sol, convaincu que sa défense en lutte lui permettra de reprendre rapidement le contrôle des échanges.</p>",
+      "<h2>Volkanovski veut garder le combat debout</h2>",
+      "<p>Le champion affirme pouvoir se défendre même si Evloev parvient à le saisir ou à l’amener au sol. Selon lui, la répétition des tentatives pourrait faire hésiter le Russe à recommencer. Il estime que cette résistance l’obligerait à montrer ses qualités en striking, plutôt que de laisser le combat se dérouler au sol.</p>",
+      "<h2>Un adversaire jugé complet</h2>",
+      "<p>Volkanovski considère Evloev comme un adversaire sérieux, plus complet et doté de davantage d’armes. À 37 ans, l’Australien entend démontrer qu’il reste l’un des combattants les plus complets de sa catégorie. Il assure toutefois que les qualités qui posent problème à d’autres ne le gênent pas de la même manière.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Alexander Volkanovski lance un défi à Movsar Evloev avant leur affrontement à l’UFC 333",
+        "url": "https://actumma.com/alexander-volkanovski-lance-un-defi-a-movsar-evloev-avant-leur-affrontement-a-lufc-333/193876",
+        "publishedAt": "2026-10-19T06:33:59.000Z",
+        "retrievedAt": "2026-10-19T19:27:08.457Z",
+        "bodyHash": "4880a65c527fe75e43d8e0f06d26655b752dbd6e74e0ffe4aa96e19cae83ea2d"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-19T19:18:52.982Z"
+    },
+    "image": "/assets/editorial/alexander-volkanovski-veut-mettre-la-lutte-de-movsar-evloev-a-l-epreuve.webp",
+    "publicationBatchId": "2026-10-19T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/alexander-volkanovski-lance-un-defi-a-movsar-evloev-avant-leur-affrontement-a-lufc-333/193876",
+        "sha256": "9491d10e56fd4aaaf76286e8c319cf5edb6727f378e91f014bf81bdc28938b5f"
+      },
+      {
+        "sourceUrl": "https://actumma.com/alexander-volkanovski-lance-un-defi-a-movsar-evloev-avant-leur-affrontement-a-lufc-333/193876",
+        "sha256": "51a9bdf2a6c56a50d6946181080e2be0db2eb378fdb7e8bb5d4be85e414d9410"
+      },
+      {
+        "sourceUrl": "https://actumma.com/alexander-volkanovski-lance-un-defi-a-movsar-evloev-avant-leur-affrontement-a-lufc-333/193876",
+        "sha256": "5397099325cdb225c96b8a607f492c509b6dac2a2ed21dc751e20edc8b05f44a"
+      }
+    ]
+  },
+  {
+    "newsKey": "joaquin-buckley-reagit-images-ko-mike-malott",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/10/joaquin-buckley-sort-du-silence-apres-son-k.-o.-terrible-a-l-ufc-edmonton.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/10/joaquin-buckley-sort-du-silence-apres-son-k.-o.-terrible-a-l-ufc-edmonton.jpg",
+      "pageUrl": "https://actumma.com/joaquin-buckley-sort-du-silence-apres-son-k-o-terrible-a-lufc-edmonton/193871",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-19T19:26:48.218Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "joaquin-buckley-reagit-aux-images-de-son-k-o-contre-mike-malott",
+    "title": "Joaquin Buckley réagit aux images de son K.-O. contre Mike Malott",
+    "excerpt": "Après son K.-O. contre Mike Malott à l’UFC Edmonton, Joaquin Buckley a revu les images et réagi avec incrédulité lors d’un direct sur Kick.",
+    "category": "actualites",
+    "kicker": "UFC · Réaction",
+    "date": "2026-10-19",
+    "publishedAt": "2026-10-19T19:27:08.457Z",
+    "verifiedAt": "2026-10-19T19:27:08.457Z",
+    "sourcePublishedAt": "2026-10-19T06:10:10.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Après son K.-O. face à Mike Malott à l’UFC Edmonton, Joaquin Buckley a découvert les images de sa défaite. L’Américain est revenu sur cette séquence au cours d’un direct diffusé sur sa chaîne Kick, quelques heures après le combat, rapporte ActuMMA.</p>",
+      "<h2>Buckley a d’abord cru à une vidéo truquée</h2>",
+      "<p>En revoyant le moment où il est mis hors de combat, Buckley a d’abord pensé que les images étaient fausses ou générées par intelligence artificielle. Selon ActuMMA, sa réaction mêlait incrédulité et humour face à la violence de la séquence.</p>",
+      "<h2>Une défaite qu’il juge inédite</h2>",
+      "<p>Au fil du direct, le combattant a finalement reconnu que Mike Malott l’avait éteint d’une manière qu’il n’avait encore jamais connue. Buckley avait déjà subi des K.-O., mais expliquait jusque-là ne pas avoir été mis hors de combat de cette façon, rapporte ActuMMA.</p>",
+      "<h2>Un arrêt après deux défaites aux points</h2>",
+      "<p>Le Canadien a touché Buckley avec un genou au visage au deuxième round, avant de le mettre K.-O. Ce revers intervient après deux défaites aux points contre Kamaru Usman et Sean Brady. Malott a, lui, remporté le combat devant son public.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Joaquin Buckley sort du silence après son K.-O. terrible à l’UFC Edmonton",
+        "url": "https://actumma.com/joaquin-buckley-sort-du-silence-apres-son-k-o-terrible-a-lufc-edmonton/193871",
+        "publishedAt": "2026-10-19T06:10:10.000Z",
+        "retrievedAt": "2026-10-19T19:27:08.457Z",
+        "bodyHash": "88776ab2665ed157907056cec5af1fb419b396c13d6d05febdceced16dc2c51c"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-19T19:18:52.982Z"
+    },
+    "image": "/assets/editorial/joaquin-buckley-reagit-aux-images-de-son-k-o-contre-mike-malott.webp",
+    "publicationBatchId": "2026-10-19T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/joaquin-buckley-sort-du-silence-apres-son-k-o-terrible-a-lufc-edmonton/193871",
+        "sha256": "f31b2142ee2ed20c386f5a9c4963cf1110161a167f0b88eee0b007419c81e5d0"
+      },
+      {
+        "sourceUrl": "https://actumma.com/joaquin-buckley-sort-du-silence-apres-son-k-o-terrible-a-lufc-edmonton/193871",
+        "sha256": "1d135d38266f11e7a3b5fc11ab8e9da4bda774abbfb5722c039996b9261ae0b1"
+      },
+      {
+        "sourceUrl": "https://actumma.com/joaquin-buckley-sort-du-silence-apres-son-k-o-terrible-a-lufc-edmonton/193871",
+        "sha256": "2642b09687546941b75bf4ced8fd260edf02d9164a04170f83e0edeb9a4fe09e"
+      }
+    ]
+  },
+  {
     "newsKey": "pfl-chicago-carmouche-bishop-revanche-titre-vacant",
     "imageAlt": "PFL_20261015_MB8_2401",
     "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
