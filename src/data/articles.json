@@ -1,5 +1,449 @@
 [
   {
+    "newsKey": "petr-yan-promet-de-defendre-son-titre-contre-merab-dvalishvili",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/10/petr-yan-merab-dvalishvili-promesse-ufc-333.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/10/petr-yan-merab-dvalishvili-promesse-ufc-333.jpg",
+      "pageUrl": "https://actumma.com/petr-yan-fait-une-promesse-avant-la-trilogie-contre-merab-dvalishvili-a-lufc-333-je-vais-lui-casser/194012",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-22T18:05:58.751Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "petr-yan-promet-de-defendre-son-titre-avant-la-trilogie-contre-merab-dvalishvili",
+    "title": "Petr Yan promet de défendre son titre avant la trilogie contre Merab Dvalishvili",
+    "excerpt": "Petr Yan promet de battre Merab Dvalishvili lors de leur trilogie à l’UFC 333 et affirme vouloir défendre sa ceinture.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-10-22",
+    "publishedAt": "2026-10-22T18:11:48.494Z",
+    "verifiedAt": "2026-10-22T18:11:48.494Z",
+    "sourcePublishedAt": "2026-10-22T17:35:52.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Petr Yan a affiché sa confiance avant la trilogie face à Merab Dvalishvili, prévue samedi en co-main event de l’UFC 333. Le champion a présenté ce rendez-vous comme un nouveau combat et dit ne pas vouloir penser à leur dernier affrontement.</p>",
+      "<h2>Yan veut défendre sa ceinture</h2>",
+      "<p>Lors de la conférence de presse de jeudi, Yan a affirmé vouloir démolir son adversaire et défendre son titre, selon le compte rendu publié par ActuMMA. Le Russe a aussi promis de lui casser le nez une nouvelle fois.</p>",
+      "<h2>Une stratégie préparée avec son équipe</h2>",
+      "<p>Yan a expliqué que son équipe élaborait une stratégie précise et qu’il comptait démonter son rival. Il s’attend à voir Dvalishvili chercher à saisir ses jambes, mais assure que ces tentatives ne fonctionneront pas.</p>",
+      "<h2>Une troisième rencontre décisive</h2>",
+      "<p>Dvalishvili avait remporté leur premier duel à la décision en 2023, avant que Yan ne récupère la ceinture lors de la revanche à l’UFC 323, en décembre 2025. Les deux rivaux sont à égalité avant cette troisième rencontre, qui remet en jeu le titre des moins de 61 kg.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Petr Yan fait une promesse avant la trilogie contre Merab Dvalishvili à l’UFC 333 : « Je vais lui casser… »",
+        "url": "https://actumma.com/petr-yan-fait-une-promesse-avant-la-trilogie-contre-merab-dvalishvili-a-lufc-333-je-vais-lui-casser/194012",
+        "publishedAt": "2026-10-22T17:35:52.000Z",
+        "retrievedAt": "2026-10-22T18:11:48.494Z",
+        "bodyHash": "1ac4a8438e5081bfa33807621fcccbbd4d3b76321efb1a84517f3d47136875e8"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-22T18:05:43.965Z"
+    },
+    "image": "/assets/editorial/petr-yan-promet-de-defendre-son-titre-avant-la-trilogie-contre-merab-dvalishvili.webp",
+    "publicationBatchId": "2026-10-22T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/petr-yan-fait-une-promesse-avant-la-trilogie-contre-merab-dvalishvili-a-lufc-333-je-vais-lui-casser/194012",
+        "sha256": "e6008889eba1abb2a6a0bcd07a17be048cc3df7e3ca5cbf4d130db865d5fd33c"
+      },
+      {
+        "sourceUrl": "https://actumma.com/petr-yan-fait-une-promesse-avant-la-trilogie-contre-merab-dvalishvili-a-lufc-333-je-vais-lui-casser/194012",
+        "sha256": "cb0bcac4d387c8b6a014c9560792a95a4342dcbfe4f4213583d5321f20a86756"
+      },
+      {
+        "sourceUrl": "https://actumma.com/petr-yan-fait-une-promesse-avant-la-trilogie-contre-merab-dvalishvili-a-lufc-333-je-vais-lui-casser/194012",
+        "sha256": "92553f24fe4606ddcb9d33625ba7aaf31a50c9a16a32443909f6e5cf35f431fc"
+      }
+    ]
+  },
+  {
+    "newsKey": "arman-tsarukyan-prochain-combat-pour-le-titre-retour-2027",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/10/arman-tsarukyan-retour-ufc.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/10/arman-tsarukyan-retour-ufc.jpg",
+      "pageUrl": "https://actumma.com/arman-tsarukyan-evoque-une-date-pour-son-retour-a-lufc-et-livre-un-indice-important-sur-son-prochain-adversaire/194008",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-22T18:06:44.704Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "arman-tsarukyan-affirme-que-son-prochain-combat-devrait-etre-pour-le-titre",
+    "title": "Arman Tsarukyan affirme que son prochain combat devrait être pour le titre",
+    "excerpt": "Arman Tsarukyan dit que son prochain combat devrait être pour le titre des légers et évoque un retour au début de 2027, sans date fixée.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-10-22",
+    "publishedAt": "2026-10-22T18:11:48.494Z",
+    "verifiedAt": "2026-10-22T18:11:48.494Z",
+    "sourcePublishedAt": "2026-10-22T16:34:29.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Arman Tsarukyan affirme que son prochain combat à l’UFC devrait être disputé pour la ceinture des poids légers. Le combattant arménien a aussi évoqué un retour au début de 2027, sans avancer de date précise ni confirmer qu’il aura lieu avant la fin mars.</p>",
+      "<h2>Un combat pour la ceinture attendu</h2>",
+      "<p>Dans un entretien accordé à MMA Fighting, Tsarukyan a indiqué que, d’après les informations qu’il a reçues, son prochain affrontement serait pour le titre. Aucun adversaire n’a toutefois été officialisé. Justin Gaethje est présenté comme une possibilité, mais Dana White n’a pas confirmé cette affiche.</p>",
+      "<h2>Une descente chez les poids plumes écartée pour l’instant</h2>",
+      "<p>Interrogé sur un éventuel passage chez les poids plumes, Tsarukyan a expliqué qu’il ne l’envisagerait que si l’UFC ne lui accordait pas de combat pour le titre à 155 livres. Ses propos indiquent qu’il entend rester chez les légers si cette chance se concrétise.</p>",
+      "<h2>Pas de date confirmée pour 2027</h2>",
+      "<p>Questionné sur un possible retour au premier trimestre 2027, entre janvier et mars, le combattant a répondu « Presque ». Cette réponse ne permet pas de confirmer un combat avant la fin mars. Aucune date n’est arrêtée. La situation pourrait se préciser après les fêtes, alors que Justin Gaethje prévoit de discuter de son avenir avec sa famille à Noël.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Arman Tsarukyan évoque une date pour son retour à l’UFC et livre un indice important sur son prochain adversaire",
+        "url": "https://actumma.com/arman-tsarukyan-evoque-une-date-pour-son-retour-a-lufc-et-livre-un-indice-important-sur-son-prochain-adversaire/194008",
+        "publishedAt": "2026-10-22T16:34:29.000Z",
+        "retrievedAt": "2026-10-22T18:11:48.494Z",
+        "bodyHash": "1583bcd22bd3672de18d727f00b4cda5d1d515c692d516e9a28f84a08fe31907"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-22T18:05:43.965Z"
+    },
+    "image": "/assets/editorial/arman-tsarukyan-affirme-que-son-prochain-combat-devrait-etre-pour-le-titre.webp",
+    "publicationBatchId": "2026-10-22T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/arman-tsarukyan-evoque-une-date-pour-son-retour-a-lufc-et-livre-un-indice-important-sur-son-prochain-adversaire/194008",
+        "sha256": "b7b83b8ea07b3f9608775e9c5d846059c559337d365451a7405c33ecd3ba73cd"
+      },
+      {
+        "sourceUrl": "https://actumma.com/arman-tsarukyan-evoque-une-date-pour-son-retour-a-lufc-et-livre-un-indice-important-sur-son-prochain-adversaire/194008",
+        "sha256": "6f7dbdce68878ecb61dc5692e23ce696de109c20e53343291ffb3b8833c2ff82"
+      },
+      {
+        "sourceUrl": "https://actumma.com/arman-tsarukyan-evoque-une-date-pour-son-retour-a-lufc-et-livre-un-indice-important-sur-son-prochain-adversaire/194008",
+        "sha256": "4e50d0c462727d80f28e2889bab24cda07426e1eae1f250b7abd06be83f5c043"
+      }
+    ]
+  },
+  {
+    "newsKey": "alex-pereira-retour-mi-lourds-defaite-pavlovich",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/10/alex-pereira-decision-radicale-defaite-ufc-335.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/10/alex-pereira-decision-radicale-defaite-ufc-335.jpg",
+      "pageUrl": "https://actumma.com/alex-pereira-prendra-une-decision-radicale-sil-perd-son-prochain-combat-a-lufc-335-faire-autre-chose/193999",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-22T18:08:41.048Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "alex-pereira-quittera-les-poids-lourds-en-cas-de-defaite-contre-sergei-pavlovich",
+    "title": "Alex Pereira quittera les poids lourds en cas de défaite contre Sergei Pavlovich",
+    "excerpt": "Alex Pereira affirme qu’il quittera les poids lourds en cas de défaite contre Sergei Pavlovich et redescendra chez les mi-lourds.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-10-22",
+    "publishedAt": "2026-10-22T18:11:48.494Z",
+    "verifiedAt": "2026-10-22T18:11:48.494Z",
+    "sourcePublishedAt": "2026-10-22T14:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Alex Pereira a indiqué qu’en cas de défaite contre Sergei Pavlovich, il ne poursuivrait pas chez les poids lourds. Il prévoit alors de revenir chez les mi-lourds. Dans une déclaration rapportée par ActuMMA, le Brésilien a expliqué cette position dans The Ariel Helwani Show, mercredi 21 octobre.</p>",
+      "<h2>Le combat contre Sergei Pavlovich</h2>",
+      "<p>Pereira doit affronter le Russe en co-main event de l’UFC 335. Cette année, il a quitté sa ceinture des mi-lourds pour se tester dans la catégorie reine. Il y a affronté Ciryl Gane pour la ceinture intérimaire, en co-main event de l’UFC Maison-Blanche, mais s’est incliné par TKO au deuxième round.</p>",
+      "<h2>Pourquoi il envisage de changer de catégorie</h2>",
+      "<p>Le Brésilien a expliqué qu’il était plus léger que les poids lourds et qu’il ne voulait pas continuer à rivaliser avec leur puissance. En cas de revers face à Pavlovich, il privilégierait donc un retour chez les mi-lourds, plutôt que de poursuivre son parcours dans la catégorie reine.</p>",
+      "<h2>La dynamique de Pavlovich</h2>",
+      "<p>Sergei Pavlovich reste sur une série de trois victoires consécutives, selon ActuMMA, et vient de s’imposer par KO au premier round. Pereira dit vouloir gagner, tout en reconnaissant qu’une défaite reste possible.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Alex Pereira prendra une décision radicale s’il perd son prochain combat à l’UFC 335 : « Faire autre chose… »",
+        "url": "https://actumma.com/alex-pereira-prendra-une-decision-radicale-sil-perd-son-prochain-combat-a-lufc-335-faire-autre-chose/193999",
+        "publishedAt": "2026-10-22T14:00:00.000Z",
+        "retrievedAt": "2026-10-22T18:11:48.494Z",
+        "bodyHash": "a04e8bba9ee26eedb0f765aac5d591e854fe5e0eb9e561f33921b021a4fc8f53"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-22T18:05:43.965Z"
+    },
+    "image": "/assets/editorial/alex-pereira-quittera-les-poids-lourds-en-cas-de-defaite-contre-sergei-pavlovich.webp",
+    "publicationBatchId": "2026-10-22T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/alex-pereira-prendra-une-decision-radicale-sil-perd-son-prochain-combat-a-lufc-335-faire-autre-chose/193999",
+        "sha256": "bbac6079cda56566768e4630d727ba4bc2063eef09df5b2cbe47c1c3076cf1ac"
+      },
+      {
+        "sourceUrl": "https://actumma.com/alex-pereira-prendra-une-decision-radicale-sil-perd-son-prochain-combat-a-lufc-335-faire-autre-chose/193999",
+        "sha256": "1d5e811e2b6f30fd28ba0313ce09f40280ad10f1f3c5c7dd53dbb74553a4cc49"
+      },
+      {
+        "sourceUrl": "https://actumma.com/alex-pereira-prendra-une-decision-radicale-sil-perd-son-prochain-combat-a-lufc-335-faire-autre-chose/193999",
+        "sha256": "56e6c506793ebbb930513c5ef10c899cd8a118f9edf73291314e902a9f51a9b1"
+      }
+    ]
+  },
+  {
+    "newsKey": "dana-white-clarifie-propos-basharat",
+    "imageAlt": "Conférence de presse de l’UFC 333.",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/10/gettyimages-2301477079.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/10/gettyimages-2301477079.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/516976/dana-white-clarifies-statement-on-farid-basharat-situation-i-wasnt-pointing-him-out-specifically",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "UFC 333 - Press Conference",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-22T18:09:04.306Z",
+      "originalWidth": 1200,
+      "originalHeight": 624
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "dana-white-clarifie-ses-propos-sur-farid-basharat",
+    "title": "Dana White clarifie ses propos sur Farid Basharat",
+    "excerpt": "Dana White précise que ses propos sur les contrats non renouvelés à l’UFC étaient généraux et ne visaient pas Farid Basharat en particulier.",
+    "category": "actualites",
+    "kicker": "UFC · Clarification",
+    "date": "2026-10-22",
+    "publishedAt": "2026-10-22T18:11:48.494Z",
+    "verifiedAt": "2026-10-22T18:11:48.494Z",
+    "sourcePublishedAt": "2026-10-22T14:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Dana White a clarifié ses propos sur Farid Basharat lors de la conférence de presse de l’UFC 333, jeudi. Il a apporté cette précision après une question sur la situation de Movsar Evloev : l’interrogation portait sur le risque que le combattant soit lui aussi écarté de l’organisation.</p>",
+      "<h2>Le contexte du départ de Basharat</h2>",
+      "<p>La semaine précédente, Basharat avait été retiré de l’effectif de l’UFC après le non-renouvellement de son contrat. Cette décision est intervenue malgré son bilan de 7-0 dans l’organisation et sa présence au classement des poids coqs. Quelques jours plus tard, White avait évoqué des problèmes concernant le combattant en dehors de la cage.</p>",
+      "<h2>Une mise au point sur ses propos</h2>",
+      "<p>Basharat avait contesté les affirmations selon lesquelles il aurait refusé des combats ou été difficile à faire travailler. À la conférence de presse, Dana White a expliqué à MMA Fighting qu’il parlait des départs et des contrats non renouvelés de façon générale, et qu’il ne désignait pas Basharat en particulier.</p>",
+      "<h2>La situation de Movsar Evloev</h2>",
+      "<p>Evloev, qui affiche 10-0 dans l’organisation, doit affronter Alexander Volkanovski pour le titre des poids plumes samedi. Interrogé sur son avenir, White a dit ne pouvoir rien garantir, mais a estimé qu’Evloev était dans une bonne situation et qu’il n’avait pas à s’inquiéter pour son poste.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Dana White clarifies statement on Farid Basharat situation: ‘I wasn’t pointing him out, specifically’",
+        "url": "https://mmafighting.com/ufc/516976/dana-white-clarifies-statement-on-farid-basharat-situation-i-wasnt-pointing-him-out-specifically",
+        "publishedAt": "2026-10-22T14:00:00.000Z",
+        "retrievedAt": "2026-10-22T18:11:48.494Z",
+        "bodyHash": "71c2e3393a2d439b46082105b2af413de541c119a1b1330db72244545ff6e122"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-22T18:05:43.965Z"
+    },
+    "image": "/assets/editorial/dana-white-clarifie-ses-propos-sur-farid-basharat.webp",
+    "publicationBatchId": "2026-10-22T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/516976/dana-white-clarifies-statement-on-farid-basharat-situation-i-wasnt-pointing-him-out-specifically",
+        "sha256": "91f16f6f9690c4bf24b6f4cca5fc75511f05d5f5d1563694a5826e055699d10e"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/516976/dana-white-clarifies-statement-on-farid-basharat-situation-i-wasnt-pointing-him-out-specifically",
+        "sha256": "2a66dfe7cc126559d38179da0a231e596906aa45287bfd7a3d8c5efa93fd29fc"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/516976/dana-white-clarifies-statement-on-farid-basharat-situation-i-wasnt-pointing-him-out-specifically",
+        "sha256": "da7e7874849de243fc6c0fd1fb89f45d01445d6eecaab097c3cd3d336cd9615c"
+      }
+    ]
+  },
+  {
+    "newsKey": "eugene-bareman-compare-volkanovski-georges-st-pierre",
+    "imageAlt": "Alexander Volkanovski",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/02/gettyimages-2259327324.jpg?quality=90&strip=all&crop=0%2C1.1468970105799%2C100%2C78.534031413613&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/02/gettyimages-2259327324.jpg?quality=90&strip=all&crop=0%2C1.1468970105799%2C100%2C78.534031413613&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/516875/morning-report-alexander-volkanovski-coach-calls-him-our-generations-version-of-gsp",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "Alexander Volkanovski",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-22T18:10:06.469Z",
+      "originalWidth": 1200,
+      "originalHeight": 623
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "eugene-bareman-compare-alexander-volkanovski-a-georges-st-pierre",
+    "title": "Eugene Bareman compare Alexander Volkanovski à Georges St-Pierre",
+    "excerpt": "Eugene Bareman compare Alexander Volkanovski à Georges St-Pierre, en saluant sa polyvalence et sa capacité à orienter un combat.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-10-22",
+    "publishedAt": "2026-10-22T18:11:48.494Z",
+    "verifiedAt": "2026-10-22T18:11:48.494Z",
+    "sourcePublishedAt": "2026-10-22T12:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Eugene Bareman voit en Alexander Volkanovski une version de Georges St-Pierre propre à leur génération. Dans un entretien accordé à She Loves The Gloves, dont MMA Fighting rapporte les propos, l’entraîneur de City Kickboxing a salué les qualités du champion des poids plumes.</p>",
+      "<h2>Une grande palette de solutions</h2>",
+      "<p>Bareman estime que Volkanovski peut combattre à distance, avancer ou reculer, mais aussi lutter, défendre les tentatives de lutte et sortir des phases d’échange au sol. Selon lui, le champion sait faire évoluer le combat vers les domaines qui lui permettent de prendre l’avantage sur son adversaire.</p>",
+      "<h2>Le parallèle avec Georges St-Pierre</h2>",
+      "<p>L’entraîneur rapproche cette polyvalence de celle de St-Pierre. Il explique que l’ancien champion pouvait privilégier son jeu debout, sa lutte défensive ou sa lutte offensive selon les besoins du combat. Bareman considère cette capacité à adapter son approche à l’opposition comme un élément déterminant de la valeur d’un combattant.</p>",
+      "<h2>Le travail derrière la réussite</h2>",
+      "<p>Bareman doit accompagner Volkanovski samedi pour la défense de son titre face à Movsar Evloev, dans le combat principal de l’UFC 333. Il attribue le parcours du champion au travail, à l’engagement et à sa volonté de progresser, plutôt qu’à un talent naturel exceptionnel. Il le décrit comme un athlète qui a construit ses qualités par la détermination.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Morning Report: Alexander Volkanovski coach calls him ‘our generation’s version of GSP’",
+        "url": "https://mmafighting.com/ufc/516875/morning-report-alexander-volkanovski-coach-calls-him-our-generations-version-of-gsp",
+        "publishedAt": "2026-10-22T12:00:00.000Z",
+        "retrievedAt": "2026-10-22T18:11:48.494Z",
+        "bodyHash": "9fcbddd7c245f441564c6f7aa2003f34fd468cde3fdb423e1a0993ea83353b9f"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-22T18:05:43.965Z"
+    },
+    "image": "/assets/editorial/eugene-bareman-compare-alexander-volkanovski-a-georges-st-pierre.webp",
+    "publicationBatchId": "2026-10-22T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/516875/morning-report-alexander-volkanovski-coach-calls-him-our-generations-version-of-gsp",
+        "sha256": "6a269d1c341d99dac9af38c4ddbe37ea60f8e14e254c8c8f5e126988535a963b"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/516875/morning-report-alexander-volkanovski-coach-calls-him-our-generations-version-of-gsp",
+        "sha256": "519e3ada13949c6456b2e829e82ddcd1003d8f62a79a33b70ba78e187a1f0432"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/516875/morning-report-alexander-volkanovski-coach-calls-him-our-generations-version-of-gsp",
+        "sha256": "450eb0a8238e63053ddf98adff53884f119385cc55c3884519de0489c8f90ad5"
+      }
+    ]
+  },
+  {
+    "newsKey": "dillashaw-pronostic-yan-trilogie-dvalishvili",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/10/petr-yan-merab-dvalishvili-pronostic.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/10/petr-yan-merab-dvalishvili-pronostic.jpg",
+      "pageUrl": "https://actumma.com/t-j-dillashaw-identifie-ce-qui-pourrait-faire-la-difference-entre-petr-yan-et-merab-dvalishvili-a-lufc-333/193983",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-22T18:11:29.456Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "t-j-dillashaw-donne-un-leger-avantage-a-petr-yan-avant-sa-trilogie-contre-merab-dvalishvili",
+    "title": "T.J. Dillashaw donne un léger avantage à Petr Yan avant sa trilogie contre Merab Dvalishvili",
+    "excerpt": "T.J. Dillashaw penche pour Petr Yan avant sa troisième confrontation avec Merab Dvalishvili, attendue à l’UFC 333 avec la ceinture en jeu.",
+    "category": "actualites",
+    "kicker": "UFC · Pronostic",
+    "date": "2026-10-22",
+    "publishedAt": "2026-10-22T18:11:48.494Z",
+    "verifiedAt": "2026-10-22T18:11:48.494Z",
+    "sourcePublishedAt": "2026-10-22T09:35:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">À l’approche de leur troisième affrontement à l’UFC 333, Petr Yan et Merab Dvalishvili ont chacun remporté une victoire par décision unanime dans leur rivalité. Ancien champion des poids coqs, T.J. Dillashaw estime que Yan dispose d’un léger avantage pour cette nouvelle rencontre, avec la ceinture en jeu.</p>",
+      "<h2>Les clés du pronostic de Dillashaw</h2>",
+      "<p>Invité du podcast « The Bohnfire », Dillashaw a analysé le précédent combat et les options des deux hommes, selon ActuMMA. Il considère que la défense de lutte de Yan et sa capacité à empêcher les mises au sol ont pesé dans leur deuxième affrontement. Il pense aussi que les tentatives répétées de Dvalishvili peuvent finir par lui coûter de l’énergie lorsqu’elles échouent.</p>",
+      "<h2>Des ajustements attendus des deux côtés</h2>",
+      "<p>Pour Dvalishvili, Dillashaw recommande de mieux enchaîner ses actions et d’utiliser ses entrées en lutte pour perturber le rythme de Yan, même sans obtenir chaque mise au sol. Du côté du Russe, il souligne l’efficacité du travail au corps, du jab et du coup de pied gauche. Il estime que Yan doit aussi maintenir sa défense contre les tentatives de lutte.</p>",
+      "<h2>Yan préféré, sans certitude</h2>",
+      "<p>Dillashaw penche donc pour Yan, notamment parce que le combattant russe lui semble avoir trouvé des réponses lors de leur dernière confrontation. Il reconnaît toutefois que le combat reste difficile à prévoir : Dvalishvili conserve une menace constante grâce à sa pression et à son endurance.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "T.J. Dillashaw identifie ce qui pourrait faire la différence entre Petr Yan et Merab Dvalishvili à l’UFC 333",
+        "url": "https://actumma.com/t-j-dillashaw-identifie-ce-qui-pourrait-faire-la-difference-entre-petr-yan-et-merab-dvalishvili-a-lufc-333/193983",
+        "publishedAt": "2026-10-22T09:35:00.000Z",
+        "retrievedAt": "2026-10-22T18:11:48.494Z",
+        "bodyHash": "80e2f8f5858f7e2a93abbc2e121b602117219add51d7127877d84c0dc22ca46e"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-22T18:05:43.965Z"
+    },
+    "image": "/assets/editorial/t-j-dillashaw-donne-un-leger-avantage-a-petr-yan-avant-sa-trilogie-contre-merab-dvalishvili.webp",
+    "publicationBatchId": "2026-10-22T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/t-j-dillashaw-identifie-ce-qui-pourrait-faire-la-difference-entre-petr-yan-et-merab-dvalishvili-a-lufc-333/193983",
+        "sha256": "6c952767d069818c4a318611daf71b9e6852a82fe7ca3565e5de778d34cee989"
+      },
+      {
+        "sourceUrl": "https://actumma.com/t-j-dillashaw-identifie-ce-qui-pourrait-faire-la-difference-entre-petr-yan-et-merab-dvalishvili-a-lufc-333/193983",
+        "sha256": "4845a6b3779dc0d30e0cd82043b809121ae776fd1cfdd09d1f7bc958eb63c2d8"
+      },
+      {
+        "sourceUrl": "https://actumma.com/t-j-dillashaw-identifie-ce-qui-pourrait-faire-la-difference-entre-petr-yan-et-merab-dvalishvili-a-lufc-333/193983",
+        "sha256": "440538349f6c4331a8f1237fbb54ec1cb95135df0cc447b21e798c4e10976adc"
+      }
+    ]
+  },
+  {
     "newsKey": "ufc-edmonton-video-altercation-projection-policiere",
     "imageAlt": "Capture d’écran du 19 octobre 2026 à 11 h 51.",
     "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
