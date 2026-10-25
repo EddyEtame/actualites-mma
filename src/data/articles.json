@@ -1,5 +1,449 @@
 [
   {
+    "newsKey": "volkanovski-superfight-gaethje-retraite",
+    "imageAlt": "Volkanovski contre Evloev à l’UFC 333",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/10/gettyimages-2301828323.jpg?quality=90&strip=all&crop=0%2C0.82970803181199%2C100%2C78.53959291998&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/10/gettyimages-2301828323.jpg?quality=90&strip=all&crop=0%2C0.82970803181199%2C100%2C78.53959291998&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/517734/alexander-volkanovski-wants-superfight-with-justin-gaethje-thats-something-i-would-retire-for",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "UFC 333: Volkanovski v Evloev",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-25T18:31:11.043Z",
+      "originalWidth": 1200,
+      "originalHeight": 623
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "alexander-volkanovski-veut-affronter-justin-gaethje-dans-un-superfight",
+    "title": "Alexander Volkanovski veut affronter Justin Gaethje dans un superfight",
+    "excerpt": "Alexander Volkanovski dit vouloir affronter Justin Gaethje dans un superfight et se dit prêt à prendre sa retraite après le combat.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-10-25",
+    "publishedAt": "2026-10-25T18:35:55.423Z",
+    "verifiedAt": "2026-10-25T18:35:55.423Z",
+    "sourcePublishedAt": "2026-10-25T15:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Après sa victoire contre Movsar Evloev en tête d’affiche de l’UFC 333, Alexander Volkanovski a relancé son souhait d’affronter Justin Gaethje, champion des poids légers. Lors de la conférence de presse d’après-combat, il a présenté ce duel comme un superfight qu’il serait prêt à disputer avant de se retirer, selon MMA Fighting.</p>",
+      "<h2>Un duel qui pourrait précéder sa retraite</h2>",
+      "<p>Volkanovski envisage que les deux combattants mettent leur avenir en jeu et prennent leur retraite après le combat, quel qu’en soit le résultat. Cette issue permettrait, selon lui, de ne pas bloquer la division : la ceinture deviendrait vacante et les autres prétendants pourraient se disputer le titre.</p>",
+      "<h2>Volkanovski veut éviter de bloquer la division</h2>",
+      "<p>Le champion des poids plumes dit avoir mérité cette opportunité, tout en reconnaissant que d’autres combattants ont également gagné leur place dans la course au titre. Il a déjà tenté à deux reprises de conquérir la ceinture des poids légers, rappelle MMA Fighting.</p>",
+      "<h2>Arman Tsarukyan reste une autre option</h2>",
+      "<p>Volkanovski se dit aussi prêt à affronter Arman Tsarukyan si celui-ci décroche la ceinture avant qu’un combat contre Gaethje ne se concrétise. Aucun affrontement n’est confirmé : à défaut de ce superfight, Volkanovski affirme vouloir avancer combat après combat.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Alexander Volkanovski wants superfight with Justin Gaethje: ‘That’s something I would retire for’",
+        "url": "https://mmafighting.com/ufc/517734/alexander-volkanovski-wants-superfight-with-justin-gaethje-thats-something-i-would-retire-for",
+        "publishedAt": "2026-10-25T15:00:00.000Z",
+        "retrievedAt": "2026-10-25T18:35:55.423Z",
+        "bodyHash": "92abb79fd5178006c476f8bc038593faaeddf13d27815fb81b95b1d47d4f5d52"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-25T18:31:00.293Z"
+    },
+    "image": "/assets/editorial/alexander-volkanovski-veut-affronter-justin-gaethje-dans-un-superfight.webp",
+    "publicationBatchId": "2026-10-25T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/517734/alexander-volkanovski-wants-superfight-with-justin-gaethje-thats-something-i-would-retire-for",
+        "sha256": "f4f82c75a658f585f6b3b90a54c0a5f2e048a427f820665c20590d012e88b495"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/517734/alexander-volkanovski-wants-superfight-with-justin-gaethje-thats-something-i-would-retire-for",
+        "sha256": "c8bf00896ccc0d3ef194e6635f178c12b0c7e3720794219a586097c774ffdf18"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/517734/alexander-volkanovski-wants-superfight-with-justin-gaethje-thats-something-i-would-retire-for",
+        "sha256": "7e73e401f076bb1f0fb8a9a2472fe114976da87913b22ad3493a19e546a2d729"
+      }
+    ]
+  },
+  {
+    "newsKey": "cedric-doumbe-hommage-pengo-bossio-wangi",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/10/cedric-doumbe-reagit-mort-combattant-mma-attentat.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/10/cedric-doumbe-reagit-mort-combattant-mma-attentat.jpg",
+      "pageUrl": "https://actumma.com/cedric-doumbe-prend-la-parole-apres-la-mort-dun-jeune-combattant-de-mma-dans-un-attentat-tous-ceux-qui/194175",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-25T18:31:45.044Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "cedric-doumbe-rend-hommage-a-pengo-bossio-wangi-apres-l-attentat",
+    "title": "Cédric Doumbé rend hommage à Pengo Bossio Wangi après l’attentat",
+    "excerpt": "Cédric Doumbé a rendu hommage à Pengo Bossio Wangi après sa mort dans l’attentat. Il a aussi adressé une pensée aux autres victimes.",
+    "category": "actualites",
+    "kicker": "MMA · Hommage",
+    "date": "2026-10-25",
+    "publishedAt": "2026-10-25T18:35:55.423Z",
+    "verifiedAt": "2026-10-25T18:35:55.423Z",
+    "sourcePublishedAt": "2026-10-25T14:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Cédric Doumbé a rendu hommage à Pengo Bossio Wangi, jeune combattant de MMA tué lors de l’attentat terroriste survenu vendredi dans les Yvelines. Le combattant français a également adressé une pensée aux autres victimes de l’attaque.</p>",
+      "<h2>Un message publié sur X</h2>",
+      "<p>Dans un message publié sur son compte X, Doumbé a exprimé sa tristesse et présenté ses condoléances à la famille, aux proches et à toutes les personnes qui appréciaient le jeune homme. Selon ActuMMA, cette réaction a été publiée dimanche 25 octobre. Le média rapporte que le combattant a aussi mentionné les autres personnes touchées par l’attaque.</p>",
+      "<h2>Le combattant s’entraînait à l’Atch Academy</h2>",
+      "<p>Originaire de Poissy, Pengo Bossio Wangi s’entraînait depuis trois ans à l’Atch Academy d’Aubervilliers. Il rêvait de devenir professionnel et effectuait quotidiennement de longs trajets pour poursuivre sa passion. Sa mort a suscité une vive émotion dans son club et au sein de la communauté du MMA.</p>",
+      "<h2>Un hommage adressé à toutes les victimes</h2>",
+      "<p>Dans son message, Doumbé a associé son soutien à la famille et aux proches du combattant à une pensée pour les autres victimes. ActuMMA précise que l’attaque a également fait cinq blessés, dont une fillette de 12 ans. Pengo Bossio Wangi avait 26 ans.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Cédric Doumbé prend la parole après la mort d’un jeune combattant de MMA dans un attentat : « Tous ceux qui… »",
+        "url": "https://actumma.com/cedric-doumbe-prend-la-parole-apres-la-mort-dun-jeune-combattant-de-mma-dans-un-attentat-tous-ceux-qui/194175",
+        "publishedAt": "2026-10-25T14:00:00.000Z",
+        "retrievedAt": "2026-10-25T18:35:55.423Z",
+        "bodyHash": "7bf18fda492e967ed2008120dea346ba9a9ba6e97479df962d1086128bef6452"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-25T18:31:00.293Z"
+    },
+    "image": "/assets/editorial/cedric-doumbe-rend-hommage-a-pengo-bossio-wangi-apres-l-attentat.webp",
+    "publicationBatchId": "2026-10-25T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/cedric-doumbe-prend-la-parole-apres-la-mort-dun-jeune-combattant-de-mma-dans-un-attentat-tous-ceux-qui/194175",
+        "sha256": "ce8b98a66501a1e0215648149798bbbe6f6428ca5209b2fb31ba374b47313a73"
+      },
+      {
+        "sourceUrl": "https://actumma.com/cedric-doumbe-prend-la-parole-apres-la-mort-dun-jeune-combattant-de-mma-dans-un-attentat-tous-ceux-qui/194175",
+        "sha256": "4520e5ac1cad4404ccf713987c5b7ce34f30261eb1338246c0632dff35412f86"
+      },
+      {
+        "sourceUrl": "https://actumma.com/cedric-doumbe-prend-la-parole-apres-la-mort-dun-jeune-combattant-de-mma-dans-un-attentat-tous-ceux-qui/194175",
+        "sha256": "fa1ca777b2f2b8890c4f4f95e122fca0613c583edc1178a0bc56dbac57da222d"
+      }
+    ]
+  },
+  {
+    "newsKey": "movsar-evloev-reaction-premiere-defaite-volkanovski",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/10/movsar-evloev-reagit-defaite-ufc-333.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/10/movsar-evloev-reagit-defaite-ufc-333.jpg",
+      "pageUrl": "https://actumma.com/movsar-evloev-reagit-apres-sa-defaite-face-a-alexander-volkanovski-lors-de-lufc-333-comme-un-bon-vin/194162",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-25T18:33:04.457Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "movsar-evloev-reagit-a-sa-premiere-defaite-professionnelle-contre-alexander-volkanovski",
+    "title": "Movsar Evloev réagit à sa première défaite professionnelle contre Alexander Volkanovski",
+    "excerpt": "Movsar Evloev a réagi à sa première défaite professionnelle après l’UFC 333, en saluant Alexander Volkanovski et en évoquant un possible retour.",
+    "category": "actualites",
+    "kicker": "UFC · Réaction",
+    "date": "2026-10-25",
+    "publishedAt": "2026-10-25T18:35:55.423Z",
+    "verifiedAt": "2026-10-25T18:35:55.423Z",
+    "sourcePublishedAt": "2026-10-25T13:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Après sa défaite contre Alexander Volkanovski à l’UFC 333, Movsar Evloev a pris la parole dans l’octogone. ActuMMA rapporte que le Russe a félicité le champion et salué sa longévité, le comparant à un vin qui se bonifie avec le temps.</p>",
+      "<h2>Evloev reconnaît la supériorité du champion</h2>",
+      "<p>Volkanovski s’est imposé par TKO au deuxième round et a conservé sa ceinture des moins de 66 kg. Pour Evloev, qui n’avait encore jamais perdu en carrière professionnelle, ce revers marque une première. Dans son article, ActuMMA rapporte qu’il a reconnu ne pas avoir démontré qu’il était le meilleur et qu’il lui restait du chemin à parcourir.</p>",
+      "<h2>Le Russe évoque un possible retour</h2>",
+      "<p>Evloev n’a pas écarté l’idée d’un nouvel affrontement, tout en indiquant vouloir rentrer chez lui pour se reposer et soigner ses blessures. Il a également dit préférer perdre face à un grand champion plutôt qu’à un adversaire moins fort. Ces propos ont été tenus après le combat, lors de son échange avec Daniel Cormier dans l’octogone.</p>",
+      "<h2>Un hommage à Volkanovski</h2>",
+      "<p>Dans sa réaction rapportée par ActuMMA, Evloev a aussi décrit Volkanovski comme une légende toujours au sommet. Le Russe a exprimé sa gratitude d’avoir partagé l’octogone avec lui. Battu, il n’a donc pas annoncé de revanche, mais a laissé ouverte la possibilité de réessayer à l’avenir.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Movsar Evloev réagit après sa défaite face à Alexander Volkanovski lors de l’UFC 333 : « Comme un bon vin… »",
+        "url": "https://actumma.com/movsar-evloev-reagit-apres-sa-defaite-face-a-alexander-volkanovski-lors-de-lufc-333-comme-un-bon-vin/194162",
+        "publishedAt": "2026-10-25T13:00:00.000Z",
+        "retrievedAt": "2026-10-25T18:35:55.423Z",
+        "bodyHash": "2d804f4bac79ce3a944f3d751e547879b6945ac3666fd067f4830578cf98fb73"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-25T18:31:00.293Z"
+    },
+    "image": "/assets/editorial/movsar-evloev-reagit-a-sa-premiere-defaite-professionnelle-contre-alexander-volkanovski.webp",
+    "publicationBatchId": "2026-10-25T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/movsar-evloev-reagit-apres-sa-defaite-face-a-alexander-volkanovski-lors-de-lufc-333-comme-un-bon-vin/194162",
+        "sha256": "b2a42129bf74ed91a19cddbd196afeb9146ef72d33074aeb70b587a5ad07cb49"
+      },
+      {
+        "sourceUrl": "https://actumma.com/movsar-evloev-reagit-apres-sa-defaite-face-a-alexander-volkanovski-lors-de-lufc-333-comme-un-bon-vin/194162",
+        "sha256": "de0484e0cce7c2141e84ef1d9d676ce6028aaaa818b902381a344b278e21cb71"
+      }
+    ]
+  },
+  {
+    "newsKey": "ufc-ceinture-interimaire-prates-morales-calendrier-makhachev",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/10/dana-white-explication-islam-mkhachev-ufc-ceinture.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/10/dana-white-explication-islam-mkhachev-ufc-ceinture.jpg",
+      "pageUrl": "https://actumma.com/dana-white-explique-pourquoi-lufc-a-pris-une-decision-inattendue-concernant-la-ceinture-dislam-makhachev/194155",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-25T18:33:30.852Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "dana-white-justifie-la-ceinture-interimaire-entre-prates-et-morales",
+    "title": "Dana White justifie la ceinture intérimaire entre Prates et Morales",
+    "excerpt": "Dana White explique pourquoi l’UFC a confié une ceinture intérimaire à Carlos Prates et Michael Morales malgré le règne d’Islam Makhachev.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-10-25",
+    "publishedAt": "2026-10-25T18:35:55.423Z",
+    "verifiedAt": "2026-10-25T18:35:55.423Z",
+    "sourcePublishedAt": "2026-10-25T12:00:22.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">L’UFC a annoncé un combat pour le titre intérimaire des poids mi-moyens entre Carlos Prates et Michael Morales, alors qu’Islam Makhachev détient toujours la ceinture. L’affrontement est prévu le 30 janvier à Toronto, lors de l’UFC 336. La décision intervient après que Makhachev a renoncé à combattre avant la fin du ramadan.</p>",
+      "<h2>Dana White explique le choix</h2>",
+      "<p>Après l’UFC 333, le dirigeant de l’organisation a justifié cette décision en évoquant le calendrier du champion. Dans des propos rapportés par ActuMMA, Dana White a expliqué que Makhachev ne souhaitait finalement pas combattre avant la fin du ramadan. Il estime que l’UFC ne peut pas laisser la catégorie attendre plusieurs mois sans avancer.</p>",
+      "<h2>Aucune raison supplémentaire avancée</h2>",
+      "<p>Interrogé sur les raisons précises du report et sur l’éventualité d’une blessure, Dana White a indiqué que Makhachev n’avait donné aucune explication supplémentaire. Cette précision accompagne la décision de programmer un titre intérimaire, alors que le Daghestanais reste champion.</p>",
+      "<h2>Une réunification attendue</h2>",
+      "<p>Carlos Prates et Michael Morales se disputeront donc la ceinture intérimaire à l’UFC 336. Selon ActuMMA, le vainqueur devrait ensuite affronter Makhachev pour réunifier les titres. Aucune date n’a toutefois été officialisée pour cette rencontre.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Dana White explique pourquoi l’UFC a pris une décision inattendue concernant la ceinture d’Islam Makhachev",
+        "url": "https://actumma.com/dana-white-explique-pourquoi-lufc-a-pris-une-decision-inattendue-concernant-la-ceinture-dislam-makhachev/194155",
+        "publishedAt": "2026-10-25T12:00:22.000Z",
+        "retrievedAt": "2026-10-25T18:35:55.423Z",
+        "bodyHash": "7865557a247f859bdb01b8c70a2c7dd9d56888b16b641b207b333eeb1413d3a7"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-25T18:31:00.293Z"
+    },
+    "image": "/assets/editorial/dana-white-justifie-la-ceinture-interimaire-entre-prates-et-morales.webp",
+    "publicationBatchId": "2026-10-25T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/dana-white-explique-pourquoi-lufc-a-pris-une-decision-inattendue-concernant-la-ceinture-dislam-makhachev/194155",
+        "sha256": "ca71e5990abdc77050e4f26e7f69cf9daf79bb913cb95c3b58f5c55ae04f3a32"
+      },
+      {
+        "sourceUrl": "https://actumma.com/dana-white-explique-pourquoi-lufc-a-pris-une-decision-inattendue-concernant-la-ceinture-dislam-makhachev/194155",
+        "sha256": "ab76a0e443a40c195c2fc11620ccfc9b0fefcc0e2d1d8dbda4e64bdac958da83"
+      },
+      {
+        "sourceUrl": "https://actumma.com/dana-white-explique-pourquoi-lufc-a-pris-une-decision-inattendue-concernant-la-ceinture-dislam-makhachev/194155",
+        "sha256": "a3572ad9a847f812467015a09063aceeb971bf7a80e09461d004f21c58ed29e5"
+      }
+    ]
+  },
+  {
+    "newsKey": "alexander-volkov-reclame-une-chance-au-titre",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/10/alexander-volkov-reaction-ufc-333.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/10/alexander-volkov-reaction-ufc-333.jpg",
+      "pageUrl": "https://actumma.com/alexander-volkov-interpelle-dana-white-et-vise-la-ceinture-de-ciryl-gane-apres-sa-victoire-a-lufc-333/194152",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-25T18:34:42.658Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "alexander-volkov-interpelle-dana-white-et-reclame-une-chance-au-titre",
+    "title": "Alexander Volkov interpelle Dana White et réclame une chance au titre",
+    "excerpt": "Alexander Volkov interpelle Dana White après sa victoire contre Rizvan Kuniev et réclame une chance pour la ceinture des poids lourds.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-10-25",
+    "publishedAt": "2026-10-25T18:35:55.423Z",
+    "verifiedAt": "2026-10-25T18:35:55.423Z",
+    "sourcePublishedAt": "2026-10-25T08:56:06.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Alexander Volkov a profité de sa victoire contre Rizvan Kuniev à l’UFC 333 pour interpeller Dana White. Le poids lourd russe a demandé au dirigeant de l’UFC ce qu’il devait encore accomplir pour obtenir une chance de combattre pour la ceinture, actuellement détenue par Ciryl Gane.</p>",
+      "<h2>Une troisième victoire consécutive</h2>",
+      "<p>Volkov s’est imposé par décision unanime face à Kuniev, signant un troisième succès d’affilée. Après l’annonce du résultat, il a adressé directement sa question à White et insisté sur son envie de disputer le titre. Cette prise de parole intervient alors qu’il estime ne pas avoir été retenu pour le prochain combat de championnat.</p>",
+      "<h2>Une demande rapportée par ActuMMA</h2>",
+      "<p>Selon ActuMMA, Volkov a demandé à Dana White de lui expliquer les conditions à remplir pour décrocher une opportunité. Le Russe a aussi rappelé qu’il compte environ vingt combats professionnels à l’UFC. Il avait déjà interrogé le dirigeant sur ce sujet lors de la conférence de presse de l’événement.</p>",
+      "<h2>Le combat de championnat en ligne de mire</h2>",
+      "<p>Ciryl Gane doit affronter Josh Hokit pour la ceinture, tandis que Volkov avait critiqué le choix de cet adversaire avant son propre combat. Dana White a salué la prestation du Russe après sa victoire, sans lui garantir une prochaine chance au titre. Volkov devra donc attendre l’évolution de la catégorie avant de savoir si sa demande aboutira.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Alexander Volkov interpelle Dana White et vise la ceinture de Ciryl Gane après sa victoire à l’UFC 333",
+        "url": "https://actumma.com/alexander-volkov-interpelle-dana-white-et-vise-la-ceinture-de-ciryl-gane-apres-sa-victoire-a-lufc-333/194152",
+        "publishedAt": "2026-10-25T08:56:06.000Z",
+        "retrievedAt": "2026-10-25T18:35:55.423Z",
+        "bodyHash": "4a92ff23a19ea183db60da888137b347e58ee9b04b1d4316dfeddc4901903a66"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-25T18:31:00.293Z"
+    },
+    "image": "/assets/editorial/alexander-volkov-interpelle-dana-white-et-reclame-une-chance-au-titre.webp",
+    "publicationBatchId": "2026-10-25T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/alexander-volkov-interpelle-dana-white-et-vise-la-ceinture-de-ciryl-gane-apres-sa-victoire-a-lufc-333/194152",
+        "sha256": "c4f376e384cc0f9265bbd8d59e206721eb8122ecc15db80d67da33b46479cca6"
+      },
+      {
+        "sourceUrl": "https://actumma.com/alexander-volkov-interpelle-dana-white-et-vise-la-ceinture-de-ciryl-gane-apres-sa-victoire-a-lufc-333/194152",
+        "sha256": "7daf445b5dfe284702933a0fd3e7f71983425c968ec5bdeb8b432523c425f061"
+      },
+      {
+        "sourceUrl": "https://actumma.com/alexander-volkov-interpelle-dana-white-et-vise-la-ceinture-de-ciryl-gane-apres-sa-victoire-a-lufc-333/194152",
+        "sha256": "cbd5d150f3da297304a238d2757139879389bbc59d2b59fd88cf7d0a84482224"
+      }
+    ]
+  },
+  {
+    "newsKey": "losene-keita-tko-aaron-pico-ufc-333",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/10/losene-keita-tko-aaron-pico-ufc-333.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/10/losene-keita-tko-aaron-pico-ufc-333.jpg",
+      "pageUrl": "https://actumma.com/losene-keita-tombe-des-le-1er-round-par-tko-face-a-aaron-pico-lors-de-lufc-333/194116",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-25T18:35:33.169Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "losene-keita-s-incline-par-tko-face-a-aaron-pico-a-l-ufc-333",
+    "title": "Losene Keita s’incline par TKO face à Aaron Pico à l’UFC 333",
+    "excerpt": "Losene Keita s’est incliné par TKO face à Aaron Pico au premier round de l’UFC 333, après avoir remplacé Arnold Allen au pied levé.",
+    "category": "actualites",
+    "kicker": "UFC · Résultat",
+    "date": "2026-10-25",
+    "publishedAt": "2026-10-25T18:35:55.423Z",
+    "verifiedAt": "2026-10-25T18:35:55.423Z",
+    "sourcePublishedAt": "2026-10-25T06:55:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Sur la carte principale de l’UFC 333, Losene Keita a perdu par TKO face à Aaron Pico au premier round. Le Belge avait été appelé à la dernière minute pour remplacer Arnold Allen, forfait sur blessure. Il affrontait un adversaire présenté dans l’article comme l’un des combattants les plus dangereux de la catégorie des poids plumes.</p>",
+      "<h2>Pico prend rapidement l’ascendant</h2>",
+      "<p>À l’Etihad Arena d’Abou Dhabi, l’Américain a tenté une amenée au sol sur une jambe dès les premières secondes. Keita s’est retrouvé sur le dos, puis s’est relevé en s’aidant de la cage. Debout, le Belge a placé un coup qui lui a permis de créer la séparation, mais Pico a ensuite décoché un direct du droit. Keita a été envoyé au tapis et s’est incliné par TKO.</p>",
+      "<h2>Un deuxième revers à l’UFC pour Keita</h2>",
+      "<p>Cette défaite est la deuxième de Keita en trois apparitions dans l’organisation. Pour ses débuts, il avait perdu par décision partagée contre Nathaniel Wood. Il avait ensuite rebondi en mettant Muhammadjon Naimov K.-O. dès le premier round, lors de son deuxième combat à l’UFC, à Paris en septembre.</p>",
+      "<h2>Pico enchaîne un deuxième succès</h2>",
+      "<p>Avec ce revers, le bilan de Keita passe à 17 victoires pour 3 défaites. Pico signe, lui, un deuxième succès consécutif à l’UFC, après sa victoire contre Patricio Pitbull. Son bilan s’établit à 15 victoires et 5 défaites, et il conserve sa place dans le top 15 de la division des poids plumes.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Losene Keita tombe dès le 1er round par TKO face à Aaron Pico lors de l’UFC 333",
+        "url": "https://actumma.com/losene-keita-tombe-des-le-1er-round-par-tko-face-a-aaron-pico-lors-de-lufc-333/194116",
+        "publishedAt": "2026-10-25T06:55:00.000Z",
+        "retrievedAt": "2026-10-25T18:35:55.423Z",
+        "bodyHash": "9c01f932894cb214ca7a9a106f122a17854147594c947f671b2d503e82a7f693"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-25T18:31:00.293Z"
+    },
+    "image": "/assets/editorial/losene-keita-s-incline-par-tko-face-a-aaron-pico-a-l-ufc-333.webp",
+    "publicationBatchId": "2026-10-25T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/losene-keita-tombe-des-le-1er-round-par-tko-face-a-aaron-pico-lors-de-lufc-333/194116",
+        "sha256": "cc152effab0dfc58b2ecf17c9ad9f03dc64969dab3f823e3b989b5a8cd894e1f"
+      },
+      {
+        "sourceUrl": "https://actumma.com/losene-keita-tombe-des-le-1er-round-par-tko-face-a-aaron-pico-lors-de-lufc-333/194116",
+        "sha256": "86e49f0c073f74bbec776681f8980e4198907a4a50bc6ef733d6394ce50bd0c6"
+      },
+      {
+        "sourceUrl": "https://actumma.com/losene-keita-tombe-des-le-1er-round-par-tko-face-a-aaron-pico-lors-de-lufc-333/194116",
+        "sha256": "01139241173505c66373d40aee1d4fb0eae806680306c476df347714a18aed52"
+      },
+      {
+        "sourceUrl": "https://actumma.com/losene-keita-tombe-des-le-1er-round-par-tko-face-a-aaron-pico-lors-de-lufc-333/194116",
+        "sha256": "c6b5b31d8dd857e2ead29f61ff463160f8ab1515a977ec9c78a5bda7470220c9"
+      }
+    ]
+  },
+  {
     "newsKey": "petr-yan-promet-de-defendre-son-titre-contre-merab-dvalishvili",
     "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
     "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
