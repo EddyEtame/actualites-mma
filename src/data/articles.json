@@ -1,5 +1,445 @@
 [
   {
+    "newsKey": "pfl-carte-complete-dubai-nemkov-bilostenniy-adjoudj",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/10/pfl-dubai-carte-devoilee.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/10/pfl-dubai-carte-devoilee.jpg",
+      "pageUrl": "https://actumma.com/pfl-dubai-la-carte-complete-devoilee-avec-un-combat-pour-le-titre-et-un-francais-au-programme/194262",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-28T19:35:18.948Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "pfl-la-carte-de-dubai-devoilee-avec-une-defense-de-titre-pour-vadim-nemkov",
+    "title": "PFL : la carte de Dubaï dévoilée, avec une défense de titre pour Vadim Nemkov",
+    "excerpt": "Le PFL a officialisé les 15 combats de son événement à Dubaï : Vadim Nemkov défendra sa ceinture face à Sergei Bilostenniy, et Asaël Adjoudj sera au programme.",
+    "category": "actualites",
+    "kicker": "PFL · Carte dévoilée",
+    "date": "2026-10-28",
+    "publishedAt": "2026-10-28T19:38:24.623Z",
+    "verifiedAt": "2026-10-28T19:38:24.623Z",
+    "sourcePublishedAt": "2026-10-28T17:02:48.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Le PFL a officialisé la carte complète de son événement à Dubaï, prévu le 14 novembre à la Coca-Cola Arena. L’organisation annonce 15 combats, avec une défense de titre en tête d’affiche et la présence du Français Asaël Adjoudj.</p>",
+      "<h2>Vadim Nemkov défend sa ceinture</h2>",
+      "<p>Champion des poids lourds, Vadim Nemkov affrontera Sergei Bilostenniy pour sa première défense de titre. Nemkov avait remporté la ceinture en décembre 2025 contre Renan Ferreira. Bilostenniy reste, lui, sur une victoire par K.-O. face à ce même adversaire en mai dernier.</p>",
+      "<h2>Asaël Adjoudj sur la carte préliminaire</h2>",
+      "<p>Le Français sera opposé à Movlid Khaybulaev lors de la partie préliminaire. Le co-main event mettra aux prises le Belge Patrick Habirora et Omar El Dafrawy, champion des poids mi-moyens du PFL MENA. La carte comprend aussi notamment Sergio Pettis contre Joji Goto et Abubakar Nurmagomedov face à David Martinez.</p>",
+      "<h2>Nemkov évoque son approche</h2>",
+      "<p>Dans une déclaration rapportée par ActuMMA, Vadim Nemkov explique qu’il cherche à finir ses combats par soumission ou étranglement. Il souligne aussi que le MMA peut réserver des imprévus et qu’il faut pouvoir s’adapter pendant le combat.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "PFL Dubaï : la carte complète dévoilée avec un combat pour le titre et un Français au programme",
+        "url": "https://actumma.com/pfl-dubai-la-carte-complete-devoilee-avec-un-combat-pour-le-titre-et-un-francais-au-programme/194262",
+        "publishedAt": "2026-10-28T17:02:48.000Z",
+        "retrievedAt": "2026-10-28T19:38:24.623Z",
+        "bodyHash": "bc0c549e3e8db7b1872d1f46a5f720a6ce240664294aa5a318845426a2941225"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-28T19:34:35.809Z"
+    },
+    "image": "/assets/editorial/pfl-la-carte-de-dubai-devoilee-avec-une-defense-de-titre-pour-vadim-nemkov.webp",
+    "publicationBatchId": "2026-10-28T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/pfl-dubai-la-carte-complete-devoilee-avec-un-combat-pour-le-titre-et-un-francais-au-programme/194262",
+        "sha256": "d55461b24c5f6aa20906884d707a3c1f08a03fc0e68fff82b31c6d7de5d0abb9"
+      },
+      {
+        "sourceUrl": "https://actumma.com/pfl-dubai-la-carte-complete-devoilee-avec-un-combat-pour-le-titre-et-un-francais-au-programme/194262",
+        "sha256": "bcdd47c2a563daaf07b1c8aaf4e562b826f6c9ee6ec23ab58804ea1510970590"
+      },
+      {
+        "sourceUrl": "https://actumma.com/pfl-dubai-la-carte-complete-devoilee-avec-un-combat-pour-le-titre-et-un-francais-au-programme/194262",
+        "sha256": "492b5cc74943a628f7f511344079f0e7b2fa95b2e9fb813fe0213ae1a50cb961"
+      }
+    ]
+  },
+  {
+    "newsKey": "jose-aldo-larmes-defaite-mcgregor-absence-revanche",
+    "imageAlt": "Photographie publiée par MMA Fighting avec son article source.",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/10/Captura-de-Tela-2026-10-28-as-09.25.39.png?quality=90&strip=all&crop=3.8%2C0%2C76.4%2C60.045972697847&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/10/Captura-de-Tela-2026-10-28-as-09.25.39.png?quality=90&strip=all&crop=3.8%2C0%2C76.4%2C60.045972697847&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/518188/jose-aldo-reveals-real-reason-why-he-cried-a-lot-after-conor-mcgregor-loss",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-28T19:35:38.245Z",
+      "originalWidth": 1198,
+      "originalHeight": 630
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "jose-aldo-revele-pourquoi-il-a-pleure-apres-sa-defaite-contre-conor-mcgregor",
+    "title": "José Aldo révèle pourquoi il a pleuré après sa défaite contre Conor McGregor",
+    "excerpt": "José Aldo explique que ses larmes après sa défaite contre Conor McGregor venaient surtout de la perspective de ne jamais obtenir de revanche.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-10-28",
+    "publishedAt": "2026-10-28T19:38:24.623Z",
+    "verifiedAt": "2026-10-28T19:38:24.623Z",
+    "sourcePublishedAt": "2026-10-28T17:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">José Aldo affirme que ses larmes après sa défaite contre Conor McGregor ne venaient pas seulement du revers. Dans un entretien récent avec Mundo da Luta, rapporté par MMA Fighting, l’ancien champion explique qu’il pleurait surtout en comprenant qu’il n’aurait probablement pas de revanche.</p>",
+      "<h2>Une revanche qu’il croyait possible</h2>",
+      "<p>Après le combat, Aldo pensait qu’un nouveau duel aurait lieu. Il estimait que son statut de champion dominant, jusque-là premier et seul champion des poids plumes, rendait une revanche envisageable. Il imaginait retrouver McGregor et donner une autre issue à leur affrontement.</p>",
+      "<h2>L’annonce de Dana White</h2>",
+      "<p>Mais, raconte-t-il, Dana White est venu dans le vestiaire lui annoncer que McGregor ne pourrait plus faire le poids chez les plumes et allait passer chez les légers. Aldo dit avoir alors compris que l’Irlandais ne reviendrait pas dans cette catégorie, quel que soit le résultat.</p>",
+      "<h2>La possibilité de revanche s’éloigne</h2>",
+      "<p>Le Brésilien avait réclamé une revanche pendant des années, sans jamais l’obtenir : McGregor n’est pas redescendu chez les plumes après avoir remporté la ceinture des poids légers. Aldo résume que ce qui l’a brisé était de savoir qu’il n’aurait plus la possibilité de reprendre cette victoire.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Jose Aldo reveals real reason why he ‘cried a lot’ after Conor McGregor loss",
+        "url": "https://mmafighting.com/ufc/518188/jose-aldo-reveals-real-reason-why-he-cried-a-lot-after-conor-mcgregor-loss",
+        "publishedAt": "2026-10-28T17:00:00.000Z",
+        "retrievedAt": "2026-10-28T19:38:24.623Z",
+        "bodyHash": "a40efbe439b65c81e1d16dffa616dca9342d7be57fb29e49f0e05808386eeddc"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-28T19:34:35.809Z"
+    },
+    "image": "/assets/editorial/jose-aldo-revele-pourquoi-il-a-pleure-apres-sa-defaite-contre-conor-mcgregor.webp",
+    "publicationBatchId": "2026-10-28T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/518188/jose-aldo-reveals-real-reason-why-he-cried-a-lot-after-conor-mcgregor-loss",
+        "sha256": "f6a4dfe3dfa8884a552dc3baf4b06796a20d9c6fa14880253c6507bf8f410508"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/518188/jose-aldo-reveals-real-reason-why-he-cried-a-lot-after-conor-mcgregor-loss",
+        "sha256": "271508359fd934b24fb36abaf66044b5588002afbb574496e3ae830957914d90"
+      }
+    ]
+  },
+  {
+    "newsKey": "sean-omalley-rematch-petr-yan-attendue",
+    "imageAlt": "Combat entre Yan et O’Malley à l’UFC 280.",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/01/gettyimages-1435653702.jpg?quality=90&strip=all&crop=0%2C0.01435915214786%2C100%2C72.377105092974&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/01/gettyimages-1435653702.jpg?quality=90&strip=all&crop=0%2C0.01435915214786%2C100%2C72.377105092974&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/518097/sean-omalley-theres-no-debate-or-an-argument-rematch-against-petr-yan-is-happening-next",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "UFC 280: Yan v O’Malley",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-28T19:36:02.616Z",
+      "originalWidth": 1200,
+      "originalHeight": 624
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "sean-o-malley-s-attend-a-retrouver-petr-yan-pour-le-titre",
+    "title": "Sean O’Malley s’attend à retrouver Petr Yan pour le titre",
+    "excerpt": "Sean O’Malley affirme que Petr Yan est son prochain adversaire attendu, mais l’UFC n’a encore pris aucune décision sur le prochain combat du champion.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-10-28",
+    "publishedAt": "2026-10-28T19:38:24.623Z",
+    "verifiedAt": "2026-10-28T19:38:24.623Z",
+    "sourcePublishedAt": "2026-10-28T15:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Sean O’Malley pense être le prochain à affronter Petr Yan pour le titre des poids coqs. L’ancien champion assure que leur revanche est la suite logique, alors que l’UFC n’a pas encore décidé qui sera le prochain adversaire de Yan.</p>",
+      "<h2>Song Yadong dans la discussion</h2>",
+      "<p>Après la victoire de Yan contre Merab Dvalishvili à l’UFC 333, l’organisation s’est intéressée à Song Yadong, présent dans la salle. O’Malley dit ne pas en prendre ombrage. Il rappelle avoir battu Song et avoir déjà gagné contre Yan.</p>",
+      "<h2>Une revanche qu’il juge évidente</h2>",
+      "<p>Selon MMA Fighting, O’Malley a expliqué cette position sur le podcast de Daniel Cormier. Il estime ne pas avoir à réclamer le combat ni à défendre son choix, et se dit convaincu que son nom sera retenu pour la prochaine défense de Yan.</p>",
+      "<h2>O’Malley mise sur un combat majeur</h2>",
+      "<p>O’Malley soutient aussi qu’une revanche pour le titre pourrait devenir le plus grand combat de l’histoire des poids coqs à l’UFC. Il estime que son affrontement contre Petr Yan dépasserait, en chiffres, celui qu’il a disputé contre Chito Vera. L’UFC n’a toutefois annoncé aucun choix.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Sean O’Malley: There’s no ‘debate or an argument,’ rematch against Petr Yan is next",
+        "url": "https://mmafighting.com/ufc/518097/sean-omalley-theres-no-debate-or-an-argument-rematch-against-petr-yan-is-happening-next",
+        "publishedAt": "2026-10-28T15:00:00.000Z",
+        "retrievedAt": "2026-10-28T19:38:24.623Z",
+        "bodyHash": "096350a0c5dedbd6ace6acbe3fcccb09bd766d32dc1ab43c0e80400bd383eaca"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-28T19:34:35.809Z"
+    },
+    "image": "/assets/editorial/sean-o-malley-s-attend-a-retrouver-petr-yan-pour-le-titre.webp",
+    "publicationBatchId": "2026-10-28T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/518097/sean-omalley-theres-no-debate-or-an-argument-rematch-against-petr-yan-is-happening-next",
+        "sha256": "c99a30dd839bbe4b8ea79c3e2763a8267d3a00312545518a68f847b37957703b"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/518097/sean-omalley-theres-no-debate-or-an-argument-rematch-against-petr-yan-is-happening-next",
+        "sha256": "d52bb59260faab0aff3589ed9d5466cc492abd226c7a0c353abcc8e7c484a222"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/518097/sean-omalley-theres-no-debate-or-an-argument-rematch-against-petr-yan-is-happening-next",
+        "sha256": "c10a76d73afdee0c0199b663182012f9c9613ebae3e58ddb259e141c5c5afa67"
+      }
+    ]
+  },
+  {
+    "newsKey": "renato-moicano-terminer-contrat-ufc-options-marche",
+    "imageAlt": "Renato Moicano lors de l’UFC Fight Night face à Chris Duncan.",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/04/gettyimages-2269863379.jpg?quality=90&strip=all&crop=0%2C5.8450172937093%2C100%2C78.534031413613&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/04/gettyimages-2269863379.jpg?quality=90&strip=all&crop=0%2C5.8450172937093%2C100%2C78.534031413613&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/518106/i-would-like-to-be-a-free-agent-renato-moicano-plans-to-fight-out-remainder-of-deal-ahead-of-ufc-vegas-123-headliner",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "UFC Fight Night: Moicano v Duncan",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-28T19:36:22.625Z",
+      "originalWidth": 1200,
+      "originalHeight": 624
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "renato-moicano-veut-terminer-son-contrat-ufc-avant-d-evaluer-le-marche",
+    "title": "Renato Moicano veut terminer son contrat UFC avant d’évaluer le marché",
+    "excerpt": "Renato Moicano veut aller au terme de son contrat avec l’UFC, qui prévoit encore trois combats, avant d’évaluer ses options sur le marché.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-10-28",
+    "publishedAt": "2026-10-28T19:38:24.623Z",
+    "verifiedAt": "2026-10-28T19:38:24.623Z",
+    "sourcePublishedAt": "2026-10-28T13:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Renato Moicano prévoit d’honorer les trois combats restant à son contrat avec l’UFC avant de décider de la suite. Dans un entretien accordé à MMA Fighting, le Brésilien a expliqué vouloir aller au bout de son engagement, puis évaluer sa valeur sur le marché.</p>",
+      "<h2>Un contrat à terminer avant de décider</h2>",
+      "<p>Moicano doit affronter Tom Nolan dans le combat principal de l’UFC Vegas 123, ce week-end. Il indique que ses choix dépendront notamment de la rémunération proposée par l’organisation. Il souhaite ensuite découvrir ce que pourrait lui apporter le statut d’agent libre, sans annoncer de décision sur son avenir.</p>",
+      "<h2>D’autres activités en parallèle</h2>",
+      "<p>Le combattant dit pouvoir compter sur plusieurs projets en dehors de l’octogone : une entreprise, sa chaîne YouTube et sa salle. Il a également commencé à gérer des combattants au Brésil et prévoit une émission consacrée au MMA le 5 décembre. Il évoque aussi d’autres pistes, comme la boxe ou l’influence.</p>",
+      "<h2>Moicano a refusé une nouvelle offre pour Ortega</h2>",
+      "<p>L’UFC lui a proposé une troisième fois un combat contre Brian Ortega, cette fois au Qatar en novembre. Moicano a décliné, expliquant ne pas être certain que son adversaire se présenterait. Il préfère affronter Nolan et dit devoir combattre rapidement, son épouse attendant des jumeaux en décembre.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "‘I would like to be a free agent’: Renato Moicano plans to fight out remainder of deal ahead of UFC Vegas 123 headliner",
+        "url": "https://mmafighting.com/ufc/518106/i-would-like-to-be-a-free-agent-renato-moicano-plans-to-fight-out-remainder-of-deal-ahead-of-ufc-vegas-123-headliner",
+        "publishedAt": "2026-10-28T13:00:00.000Z",
+        "retrievedAt": "2026-10-28T19:38:24.623Z",
+        "bodyHash": "cdddc7e68a90f48a94f4a17751659d91f80e1212e2f943c79208dbdce590946a"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-28T19:34:35.809Z"
+    },
+    "image": "/assets/editorial/renato-moicano-veut-terminer-son-contrat-ufc-avant-d-evaluer-le-marche.webp",
+    "publicationBatchId": "2026-10-28T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/518106/i-would-like-to-be-a-free-agent-renato-moicano-plans-to-fight-out-remainder-of-deal-ahead-of-ufc-vegas-123-headliner",
+        "sha256": "9ecae07b051d3449901fe1862b4610e3a8b0adbe228c7747ce4107af8b46645c"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/518106/i-would-like-to-be-a-free-agent-renato-moicano-plans-to-fight-out-remainder-of-deal-ahead-of-ufc-vegas-123-headliner",
+        "sha256": "0f5dbb6c74273d15976297894493c356beb960f1321753aa4c8982f1c2211a80"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/518106/i-would-like-to-be-a-free-agent-renato-moicano-plans-to-fight-out-remainder-of-deal-ahead-of-ufc-vegas-123-headliner",
+        "sha256": "b90611cd88d5e91be42019fab989d3f9dcbcc81b73870b49561196c6c600892c"
+      }
+    ]
+  },
+  {
+    "newsKey": "chael-sonnen-critique-projet-volkanovski-gaethje-retraite",
+    "imageAlt": "Alexander Volkanovski face à Movsar Evloev lors de l’UFC 333.",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/10/gettyimages-2301826395.jpg?quality=90&strip=all&crop=0%2C10.736041757626%2C100%2C78.527916484748&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/10/gettyimages-2301826395.jpg?quality=90&strip=all&crop=0%2C10.736041757626%2C100%2C78.527916484748&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/517092/morning-report-chael-sonnen-alexander-volkanovski-double-retirement-fight-pitch-is-one-of-the-dumbest-ideas-ive-ever-heard",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "UFC 333: Volkanovski v Evloev",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-28T19:36:49.666Z",
+      "originalWidth": 1200,
+      "originalHeight": 624
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "chael-sonnen-critique-le-projet-de-combat-entre-volkanovski-et-gaethje",
+    "title": "Chael Sonnen critique le projet de combat entre Volkanovski et Gaethje",
+    "excerpt": "Chael Sonnen critique le projet d’Alexander Volkanovski d’affronter Justin Gaethje avant une retraite commune et plaide pour un abandon de ceinture.",
+    "category": "actualites",
+    "kicker": "UFC · Réaction",
+    "date": "2026-10-28",
+    "publishedAt": "2026-10-28T19:38:24.623Z",
+    "verifiedAt": "2026-10-28T19:38:24.623Z",
+    "sourcePublishedAt": "2026-10-28T12:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Chael Sonnen a vivement critiqué le projet évoqué par Alexander Volkanovski : affronter le champion des poids légers Justin Gaethje, puis prendre sa retraite avec lui. Selon MMA Fighting, Sonnen a donné son avis sur sa chaîne YouTube, jugeant cette proposition dénuée de sens.</p>",
+      "<h2>Une retraite commune en question</h2>",
+      "<p>Volkanovski a suggéré que ce superfight permettrait aux deux hommes de se mesurer l’un à l’autre sans bloquer les divisions des poids plumes et des poids légers, avant de raccrocher les gants. Sonnen s’interroge sur l’intérêt d’organiser un combat dont les deux participants quitteraient ensuite la compétition.</p>",
+      "<h2>Sonnen préconise un abandon de ceinture</h2>",
+      "<p>Sonnen estime que monter chez les poids légers tout en conservant le titre des poids plumes ne constituerait pas un véritable test. Il recommande à Volkanovski de renoncer à sa ceinture et d’intégrer la catégorie sans garantie d’obtenir une chance de titre. Il cite les parcours d’Ilia Topuria et de Max Holloway à l’appui de son point de vue.</p>",
+      "<h2>La position de l’UFC reste inconnue</h2>",
+      "<p>MMA Fighting précise que l’UFC n’a pas fait savoir si elle souhaitait donner suite à cette proposition. Après l’UFC 333, son dirigeant Dana White a toutefois laissé entendre qu’il serait difficile de refuser de nombreuses demandes à Volkanovski. Aucune décision de l’organisation sur ce combat n’est rapportée.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Morning Report | Chael Sonnen: Alexander Volkanovski double retirement fight pitch is ‘one of the dumbest ideas I’ve ever heard’",
+        "url": "https://mmafighting.com/ufc/517092/morning-report-chael-sonnen-alexander-volkanovski-double-retirement-fight-pitch-is-one-of-the-dumbest-ideas-ive-ever-heard",
+        "publishedAt": "2026-10-28T12:00:00.000Z",
+        "retrievedAt": "2026-10-28T19:38:24.623Z",
+        "bodyHash": "915621d2aada3b36f612454e4b08e366ccfd26e324d5e407c358aeab313403a8"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-28T19:34:35.809Z"
+    },
+    "image": "/assets/editorial/chael-sonnen-critique-le-projet-de-combat-entre-volkanovski-et-gaethje.webp",
+    "publicationBatchId": "2026-10-28T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/517092/morning-report-chael-sonnen-alexander-volkanovski-double-retirement-fight-pitch-is-one-of-the-dumbest-ideas-ive-ever-heard",
+        "sha256": "e8b3e1d9f9a928acfce7d1f22e41ccd11fb459725ecf0695ad7ac5cf4f27a0e6"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/517092/morning-report-chael-sonnen-alexander-volkanovski-double-retirement-fight-pitch-is-one-of-the-dumbest-ideas-ive-ever-heard",
+        "sha256": "2f19cf124357bde3b0808577143dbab2fa57855bce10e7ce020c26aa56bb73f3"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/517092/morning-report-chael-sonnen-alexander-volkanovski-double-retirement-fight-pitch-is-one-of-the-dumbest-ideas-ive-ever-heard",
+        "sha256": "5de3cd8ef896693e8d4f83ef6b6986cbcf34c8c643e40cde8abdd3fe7a52634c"
+      }
+    ]
+  },
+  {
+    "newsKey": "volkanovski-pronostic-salkilld-saint-denis",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/10/benoit-saint-denis-quillan-salkilld-pronostic.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/10/benoit-saint-denis-quillan-salkilld-pronostic.jpg",
+      "pageUrl": "https://actumma.com/alexander-volkanovski-donne-son-pronostic-tranche-sur-benoit-saint-denis-vs-quillan-salkilld/194259",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-28T19:37:36.061Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "alexander-volkanovski-predit-une-victoire-de-quillan-salkilld-contre-benoit-saint-denis",
+    "title": "Alexander Volkanovski prédit une victoire de Quillan Salkilld contre Benoît Saint Denis",
+    "excerpt": "Alexander Volkanovski estime que Quillan Salkilld battra Benoît Saint Denis et qu’un succès rapprocherait l’Australien des grands noms des poids légers.",
+    "category": "actualites",
+    "kicker": "UFC · Pronostic",
+    "date": "2026-10-28",
+    "publishedAt": "2026-10-28T19:38:24.623Z",
+    "verifiedAt": "2026-10-28T19:38:24.623Z",
+    "sourcePublishedAt": "2026-10-28T11:34:17.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">ActuMMA rapporte la prise de position d’Alexander Volkanovski sur le combat à venir entre Benoît Saint Denis et Quillan Salkilld à l’UFC Sydney. Dans une vidéo publiée par le compte officiel UFC AusNZ, le champion australien des poids plumes a affiché sa confiance envers son compatriote, tout en disant apprécier le Français.</p>",
+      "<h2>Volkanovski voit un cap à franchir pour Salkilld</h2>",
+      "<p>Volkanovski estime qu’une victoire contre Saint Denis ferait progresser Salkilld et le propulserait à un autre niveau. Il considère que le succès de l’Australien face à Mateusz Gamrot l’a déjà fait avancer, mais que le combat contre le Français représente une étape supérieure. Salkilld affrontera Saint Denis le 7 février 2027, en main event de l’UFC Sydney.</p>",
+      "<h2>Un succès pourrait rapprocher Salkilld du titre</h2>",
+      "<p>Dans ses propos rapportés par ActuMMA, Volkanovski envisage qu’une victoire permettrait à Salkilld de se mesurer à des combattants comme Ilia ou Paddy Pimblett, puis de se rapprocher d’un combat pour le titre des poids légers. Il a également prédit que son compatriote s’imposerait nettement contre Saint Denis.</p>",
+      "<h2>Saint Denis cherchera à rebondir</h2>",
+      "<p>Le Français abordera ce rendez-vous après sa défaite contre Paddy Pimblett, selon le contexte présenté par ActuMMA. Face à Salkilld, il tentera de contredire le pronostic de Volkanovski devant le public australien. L’affiche constitue, aux yeux du champion, une occasion importante pour son compatriote de poursuivre sa progression dans la catégorie.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Alexander Volkanovski donne son pronostic tranché sur Benoît Saint Denis vs Quillan Salkilld",
+        "url": "https://actumma.com/alexander-volkanovski-donne-son-pronostic-tranche-sur-benoit-saint-denis-vs-quillan-salkilld/194259",
+        "publishedAt": "2026-10-28T11:34:17.000Z",
+        "retrievedAt": "2026-10-28T19:38:24.623Z",
+        "bodyHash": "90fedd2e92fa90b5e2979f07fa296aa45765a7fc0ef9c2a26f795394f7bdf96c"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-28T19:34:35.809Z"
+    },
+    "image": "/assets/editorial/alexander-volkanovski-predit-une-victoire-de-quillan-salkilld-contre-benoit-saint-denis.webp",
+    "publicationBatchId": "2026-10-28T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/alexander-volkanovski-donne-son-pronostic-tranche-sur-benoit-saint-denis-vs-quillan-salkilld/194259",
+        "sha256": "35e87410a6ae8e3ac66e4002f786b06e1d0a771fa376b856f14718e75fbea9e0"
+      },
+      {
+        "sourceUrl": "https://actumma.com/alexander-volkanovski-donne-son-pronostic-tranche-sur-benoit-saint-denis-vs-quillan-salkilld/194259",
+        "sha256": "5073b29f454f41d240a29f3068e2726b69928808db48dffc116d6d3cc1d0207c"
+      },
+      {
+        "sourceUrl": "https://actumma.com/alexander-volkanovski-donne-son-pronostic-tranche-sur-benoit-saint-denis-vs-quillan-salkilld/194259",
+        "sha256": "bbe3ec0d5414b38fe4495534c7f91aba9e13848bea956d9e6634d7c0de9e4081"
+      }
+    ]
+  },
+  {
     "newsKey": "volkanovski-superfight-gaethje-retraite",
     "imageAlt": "Volkanovski contre Evloev à l’UFC 333",
     "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
