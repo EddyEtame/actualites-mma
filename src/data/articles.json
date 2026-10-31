@@ -1,5 +1,457 @@
 [
   {
+    "newsKey": "jacobe-smith-defend-daniel-cormier-commentary-reyes",
+    "imageAlt": "Daniel Cormier",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/08/gettyimages-2285693066.jpg?quality=90&strip=all&crop=0%2C7.6881027657857%2C100%2C78.534031413613&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/08/gettyimages-2285693066.jpg?quality=90&strip=all&crop=0%2C7.6881027657857%2C100%2C78.534031413613&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/518435/ufc-vegas-123s-jacobe-smith-reacts-to-dominick-reyes-talking-sht-about-coach-daniel-cormiers-commentary",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "Daniel Cormier",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-31T18:30:51.512Z",
+      "originalWidth": 1200,
+      "originalHeight": 623
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "jacobe-smith-defend-daniel-cormier-apres-les-critiques-de-dominick-reyes",
+    "title": "Jacobe Smith défend Daniel Cormier après les critiques de Dominick Reyes",
+    "excerpt": "Jacobe Smith prend la défense de son entraîneur Daniel Cormier après les critiques de Dominick Reyes sur ses commentaires à l’UFC.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-10-31",
+    "publishedAt": "2026-10-31T18:35:04.321Z",
+    "verifiedAt": "2026-10-31T18:35:04.321Z",
+    "sourcePublishedAt": "2026-10-31T15:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">À l’approche de son combat contre Randy Brown à l’UFC Vegas 123, Jacobe Smith a réagi aux critiques de Dominick Reyes visant les commentaires de Daniel Cormier. Reyes avait notamment attribué la note « F+ » à Cormier après son travail au micro lors du combat entre Reyes et Azamat Murzakanov.</p>",
+      "<h2>Smith prend la défense de son entraîneur</h2>",
+      "<p>Entraîné par Cormier, Smith estime que les critiques de Reyes s’expliquent par une période de frustration et ne reflètent pas nécessairement ce qu’il pense réellement de son coach. Dans un entretien accordé à MMA Fighting, il affirme que ceux qui côtoient Cormier peuvent constater ses qualités humaines.</p>",
+      "<h2>Un tempérament jugé professionnel</h2>",
+      "<p>Smith dit s’appuyer sur son expérience personnelle auprès de Cormier et de sa famille. Il décrit un homme posé et professionnel, y compris lorsque l’attention du public devient pesante. Il reconnaît toutefois que chacun peut avoir son opinion et que les commentaires négatifs font partie de l’environnement médiatique.</p>",
+      "<h2>Smith évoque aussi les critiques qu’il reçoit</h2>",
+      "<p>Le combattant explique qu’il est lui-même la cible de messages hostiles, malgré ses victoires, et conseille de ne pas trop s’attarder sur ces réactions. Il doit affronter Brown après avoir remplacé Carlos Leal, blessé, avec moins de deux semaines de préavis. Smith a déjà travaillé avec Brown et dit avoir beaucoup de respect pour lui.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "UFC Vegas 123’s Jacobe Smith reacts to Dominick Reyes ‘talking sh*t’ about coach Daniel Cormier’s commentary",
+        "url": "https://mmafighting.com/ufc/518435/ufc-vegas-123s-jacobe-smith-reacts-to-dominick-reyes-talking-sht-about-coach-daniel-cormiers-commentary",
+        "publishedAt": "2026-10-31T15:00:00.000Z",
+        "retrievedAt": "2026-10-31T18:35:04.321Z",
+        "bodyHash": "f0b7b5fce92ad717dab3a743edcc111854dc31a3ce1fb2f24fbaf28a070eceb7"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-31T18:30:37.927Z"
+    },
+    "image": "/assets/editorial/jacobe-smith-defend-daniel-cormier-apres-les-critiques-de-dominick-reyes.webp",
+    "publicationBatchId": "2026-10-31T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/518435/ufc-vegas-123s-jacobe-smith-reacts-to-dominick-reyes-talking-sht-about-coach-daniel-cormiers-commentary",
+        "sha256": "db6529018fb4cb3dfa85ca635ca5aeb39bd2396f0d526ce954c1698a44a2336c"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/518435/ufc-vegas-123s-jacobe-smith-reacts-to-dominick-reyes-talking-sht-about-coach-daniel-cormiers-commentary",
+        "sha256": "ac50056d2739eb0b97c0962006ca34b6e9827806016f7debfe37e2b7887a475e"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/518435/ufc-vegas-123s-jacobe-smith-reacts-to-dominick-reyes-talking-sht-about-coach-daniel-cormiers-commentary",
+        "sha256": "f65f24a6cbbc7ad927a1aaeb109c97579ca9e38536977966c281a494d37a16d1"
+      }
+    ]
+  },
+  {
+    "newsKey": "moicano-prefere-gaethje-volkanovski-a-tsarukyan",
+    "imageAlt": "Justin Gaethje à l’UFC White House",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/06/gettyimages-2281632938.jpg?quality=90&strip=all&crop=0%2C7.2127456331312%2C100%2C72.862220478361&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/06/gettyimages-2281632938.jpg?quality=90&strip=all&crop=0%2C7.2127456331312%2C100%2C72.862220478361&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/518092/renato-moicano-arman-tsarukyan-is-the-next-champion-but-i-would-rather-watch-alexander-volkanovski-fight-justin-gaethje",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "Justin Gaethje at UFC White House",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-31T18:31:20.646Z",
+      "originalWidth": 1200,
+      "originalHeight": 620
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "renato-moicano-prefere-voir-gaethje-affronter-volkanovski-plutot-que-tsarukyan",
+    "title": "Renato Moicano préfère voir Gaethje affronter Volkanovski plutôt que Tsarukyan",
+    "excerpt": "Renato Moicano estime que Gaethje aurait intérêt à affronter Volkanovski et dit préférer ce duel à un combat contre Tsarukyan.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-10-31",
+    "publishedAt": "2026-10-31T18:35:04.321Z",
+    "verifiedAt": "2026-10-31T18:35:04.321Z",
+    "sourcePublishedAt": "2026-10-31T13:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Renato Moicano estime que Justin Gaethje aurait intérêt à affronter Alexander Volkanovski plutôt qu’Arman Tsarukyan. Dans une déclaration accordée à MMA Fighting, le Brésilien a aussi affirmé qu’il préférerait regarder le duel contre Volkanovski, tout en présentant Tsarukyan comme un futur champion.</p>",
+      "<h2>Moicano prédit une soirée difficile à Gaethje</h2>",
+      "<p>Si Gaethje devait finalement combattre Tsarukyan, Moicano s’attend à une opposition compliquée pour lui. Il s’appuie notamment sur la prestation de Tsarukyan contre Mauricio Ruffy. Moicano estime que Ruffy est meilleur que Gaethje en striking et décrit Tsarukyan comme un combattant complet, capable de frapper et de lutter.</p>",
+      "<h2>Un combat attirant pour Gaethje et l’UFC</h2>",
+      "<p>Moicano apprécie l’idée d’un affrontement entre Gaethje et Volkanovski. Selon lui, l’UFC ne se résume pas à opposer les meilleurs combattants : le récit qui entoure un combat compte aussi. Il estime que cette affiche pourrait convenir à Volkanovski, à Gaethje et à l’organisation, et que Gaethje aurait davantage intérêt à la choisir qu’à affronter Tsarukyan.</p>",
+      "<h2>Une préférence qui ne suit pas les classements</h2>",
+      "<p>Moicano reconnaît toutefois que cette option ne correspond pas à la logique des classements et que Tsarukyan ne devrait pas avoir à attendre. Volkanovski a, de son côté, évoqué l’idée d’un combat contre Gaethje comme un duel de retraite, les deux hommes abandonnant ensuite leurs titres. Malgré l’attente que cela pourrait imposer à Tsarukyan, Moicano dit préférer voir Volkanovski combattre Gaethje.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Renato Moicano: Arman Tsarukyan ‘is the next champion,’ but would rather watch Alexander Volkanovski fight Justin Gaethje",
+        "url": "https://mmafighting.com/ufc/518092/renato-moicano-arman-tsarukyan-is-the-next-champion-but-i-would-rather-watch-alexander-volkanovski-fight-justin-gaethje",
+        "publishedAt": "2026-10-31T13:00:00.000Z",
+        "retrievedAt": "2026-10-31T18:35:04.321Z",
+        "bodyHash": "57ada8d661cda91cf43e620583c0e8b7ce3b795228dd2e18bee4f50836f42de2"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-31T18:30:37.927Z"
+    },
+    "image": "/assets/editorial/renato-moicano-prefere-voir-gaethje-affronter-volkanovski-plutot-que-tsarukyan.webp",
+    "publicationBatchId": "2026-10-31T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/518092/renato-moicano-arman-tsarukyan-is-the-next-champion-but-i-would-rather-watch-alexander-volkanovski-fight-justin-gaethje",
+        "sha256": "b735c804e8efe18d5111536c0a424d6d3993254ed58e5c22cae097efc10234fe"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/518092/renato-moicano-arman-tsarukyan-is-the-next-champion-but-i-would-rather-watch-alexander-volkanovski-fight-justin-gaethje",
+        "sha256": "607556af02534e943b0d168ba767bcf0a71b433b8105403c1fef85dd13167708"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/518092/renato-moicano-arman-tsarukyan-is-the-next-champion-but-i-would-rather-watch-alexander-volkanovski-fight-justin-gaethje",
+        "sha256": "82e2701e62949338d213072c60d640178b8e7344758a4efc4cab5b0cb9e72153"
+      }
+    ]
+  },
+  {
+    "newsKey": "mma-fighting-pronostics-ufc-vegas-123",
+    "imageAlt": "Renato Moicano",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2025/08/gettyimages-2222681067.jpg?quality=90&strip=all&crop=0%2C2.2398074146733%2C100%2C78.538855075022&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2025/08/gettyimages-2222681067.jpg?quality=90&strip=all&crop=0%2C2.2398074146733%2C100%2C78.538855075022&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/518500/ufc-vegas-123-predictions",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "Renato Moicano",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-31T18:32:04.790Z",
+      "originalWidth": 1200,
+      "originalHeight": 623
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "mma-fighting-devoile-ses-pronostics-pour-ufc-vegas-123",
+    "title": "MMA Fighting dévoile ses pronostics pour UFC Vegas 123",
+    "excerpt": "MMA Fighting donne Tom Nolan vainqueur de Renato Moicano par décision et mise aussi sur Jacobe Smith, Ode Osbourne et Luana Santos.",
+    "category": "actualites",
+    "kicker": "UFC · Pronostics",
+    "date": "2026-10-31",
+    "publishedAt": "2026-10-31T18:35:04.321Z",
+    "verifiedAt": "2026-10-31T18:35:04.321Z",
+    "sourcePublishedAt": "2026-10-31T12:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">MMA Fighting publie ses pronostics pour UFC Vegas 123. Pour le combat principal, le média prévoit une victoire de Tom Nolan face à Renato Moicano, par décision. Il estime que Nolan pourrait faire la différence si l’affrontement devient disputé et se prolonge.</p>",
+      "<h2>Nolan choisi face à Moicano</h2>",
+      "<p>Dans son analyse, MMA Fighting souligne que Nolan n’a jamais combattu au-delà de cinq rounds et qu’il devra user Moicano pour tirer parti d’un combat long. Le média retient néanmoins le succès du jeune combattant dans cette affiche principale.</p>",
+      "<h2>Smith, Osbourne et Luana Santos aussi donnés gagnants</h2>",
+      "<p>Pour les autres combats de la carte principale, MMA Fighting pronostique une victoire de Jacobe Smith contre Randy Brown, malgré le court délai de préparation de Smith. Le média choisit aussi Ode Osbourne face à Cody Durden et Luana Santos contre Yana Santos.</p>",
+      "<h2>Lebosnoyani préféré à Hasanov</h2>",
+      "<p>Enfin, MMA Fighting mise sur Jean-Paul Lebosnoyani contre Farman Hasanov. Le média prévoit que Lebosnoyani l’emportera après avoir laissé Hasanov dépenser son énergie. Ces choix sont des pronostics, et non des résultats annoncés.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "UFC Vegas 123 predictions",
+        "url": "https://mmafighting.com/ufc/518500/ufc-vegas-123-predictions",
+        "publishedAt": "2026-10-31T12:00:00.000Z",
+        "retrievedAt": "2026-10-31T18:35:04.321Z",
+        "bodyHash": "183f8ea3888f2aae305579607a2622677ebd20b3bcad508b08fb0cf5b4fb8e24"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-31T18:30:37.927Z"
+    },
+    "image": "/assets/editorial/mma-fighting-devoile-ses-pronostics-pour-ufc-vegas-123.webp",
+    "publicationBatchId": "2026-10-31T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/518500/ufc-vegas-123-predictions",
+        "sha256": "2c94693375b2b3dcec3d02f7f755bb2a4148ce8d900589faed6d525d32c079b0"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/518500/ufc-vegas-123-predictions",
+        "sha256": "99a0ae0fd7243647f9782b760e9ee945ac591029332516a66040bf0f8901f1e2"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/518500/ufc-vegas-123-predictions",
+        "sha256": "81db02946a2c572b744fb1a8b681e4ab280d0702a133ed624fe7df0fb0129858"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/518500/ufc-vegas-123-predictions",
+        "sha256": "1904fd25b0cecfbaf75aabc46c0fa674335aa37511f01e6eed3e9c7f77a04e14"
+      }
+    ]
+  },
+  {
+    "newsKey": "ares-44-horaires-diffusion-strasbourg",
+    "imageAlt": "Photographie publiée par La Sueur avec son article source.",
+    "imageCaption": "Photographie publiée par La Sueur avec son article. Crédit : La Sueur.",
+    "imageCredit": "La Sueur",
+    "imageSource": {
+      "url": "https://lasueur.com/wp-content/uploads/2026/10/ARES-44-%E2%80%93-Boughanem-vs-Soumah-_-A-quelle-heure-et-sur-quelle-chaine-suivre-levenement-_.jpg",
+      "ogImageUrl": "https://lasueur.com/wp-content/uploads/2026/10/ARES-44-%E2%80%93-Boughanem-vs-Soumah-_-A-quelle-heure-et-sur-quelle-chaine-suivre-levenement-_.jpg",
+      "pageUrl": "https://lasueur.com/ares-44-avec-youssef-boughanem-et-abou-younousov-quelle-heure-quelle-chaine-31-10-2026",
+      "publisher": "La Sueur",
+      "credit": "La Sueur",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-31T18:33:21.294Z",
+      "originalWidth": 1920,
+      "originalHeight": 1080
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "ares-44-les-horaires-et-la-diffusion-de-la-soiree-a-strasbourg",
+    "title": "ARES 44 : les horaires et la diffusion de la soirée à Strasbourg",
+    "excerpt": "ARES 44 se tient au Zénith de Strasbourg : la soirée commence à 19h30, avant une carte principale annoncée à 20h30 sur Canal+ Sport 360.",
+    "category": "actualites",
+    "kicker": "ARES · Horaires et diffusion",
+    "date": "2026-10-31",
+    "publishedAt": "2026-10-31T18:35:04.321Z",
+    "verifiedAt": "2026-10-31T18:35:04.321Z",
+    "sourcePublishedAt": "2026-10-31T09:59:02.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">L’ARES 44 se déroule ce samedi 31 octobre au Zénith de Strasbourg. La soirée s’ouvre à 19h30, tandis que la carte principale est annoncée à partir de 20h30 sur Canal+ Sport 360. Le combat de Youssef Boughanem contre Mohamed Soumah, prévu en co-main event, est attendu aux alentours de 21h30-22h00.</p>",
+      "<h2>Les débuts de Youssef Boughanem à l’ARES</h2>",
+      "<p>Cette affiche marquera les débuts de Boughanem sous la bannière de l’organisation. Le Français poursuit sa transition vers le MMA après une carrière dans les sports de combat. Il reste invaincu après cinq apparitions dans la discipline, toutes conclues avant la limite.</p>",
+      "<h2>Mohamed Soumah en co-main event</h2>",
+      "<p>Face à lui, Mohamed Soumah évolue en MMA depuis 2023. Le spécialiste du kickboxing compte quatre victoires dans la discipline, toutes obtenues par KO ou TKO. Leur duel précédera le combat pour la ceinture des bantamweights.</p>",
+      "<h2>La ceinture en jeu dans le main event</h2>",
+      "<p>Le main event opposera Aboubakar Younousov à Tyson Nam pour le titre des bantamweights. Le Français remet sa ceinture en jeu et reste invaincu après huit apparitions professionnelles. La Sueur présente Nam comme un vétéran de l’UFC comptant 50 combats professionnels. La carte préliminaire est annoncée sur le Twitch de Canal+Sport à partir de 19h30.</p>"
+    ],
+    "sources": [
+      {
+        "name": "La Sueur",
+        "title": "ARES 44 avec Youssef Boughanem et Abou Younousov : Quelle heure ? Quelle chaîne ?",
+        "url": "https://lasueur.com/ares-44-avec-youssef-boughanem-et-abou-younousov-quelle-heure-quelle-chaine-31-10-2026",
+        "publishedAt": "2026-10-31T09:59:02.000Z",
+        "retrievedAt": "2026-10-31T18:35:04.321Z",
+        "bodyHash": "f49a11fae3dc069ba756c6041fd56ee0d56ec165cee83a8a49d4ef45e81414cb"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-31T18:30:37.927Z"
+    },
+    "image": "/assets/editorial/ares-44-les-horaires-et-la-diffusion-de-la-soiree-a-strasbourg.webp",
+    "publicationBatchId": "2026-10-31T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://lasueur.com/ares-44-avec-youssef-boughanem-et-abou-younousov-quelle-heure-quelle-chaine-31-10-2026",
+        "sha256": "e7e197ef6185f8c9b0be53b0509846c9661e69c48ec2997e59a8c55f1e69dc6f"
+      },
+      {
+        "sourceUrl": "https://lasueur.com/ares-44-avec-youssef-boughanem-et-abou-younousov-quelle-heure-quelle-chaine-31-10-2026",
+        "sha256": "603be370baeede3b0470108935ab89ca965d3d5b7c9fb9f7c9c4874d34a7d7e9"
+      },
+      {
+        "sourceUrl": "https://lasueur.com/ares-44-avec-youssef-boughanem-et-abou-younousov-quelle-heure-quelle-chaine-31-10-2026",
+        "sha256": "66438c73cafe797a54b5c955ac13f0c895663f7a16d04fa7ca8816afdd59f6b1"
+      }
+    ]
+  },
+  {
+    "newsKey": "cain-velasquez-confidence-cormier-lesnar",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/10/daniel-cormier-ufc.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/10/daniel-cormier-ufc.jpg",
+      "pageUrl": "https://actumma.com/daniel-cormier-avoue-quil-ne-voulait-pas-affronter-ce-combattant-de-lufc-une-confidence-surprenante/194377",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-31T18:33:50.631Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "cain-velasquez-rapporte-que-daniel-cormier-ne-voulait-pas-affronter-brock-lesnar",
+    "title": "Cain Velasquez rapporte que Daniel Cormier ne voulait pas affronter Brock Lesnar",
+    "excerpt": "Cain Velasquez rapporte que Daniel Cormier ne souhaitait pas affronter Brock Lesnar. Il a raconté cette confidence lors d’un entretien au Shawn Ryan Show.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-10-31",
+    "publishedAt": "2026-10-31T18:35:04.321Z",
+    "verifiedAt": "2026-10-31T18:35:04.321Z",
+    "sourcePublishedAt": "2026-10-31T08:25:54.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Lors d’un entretien au Shawn Ryan Show, Cain Velasquez est revenu sur la préparation de son combat contre Brock Lesnar. ActuMMA rapporte que l’ancien champion des poids lourds y a raconté une confidence de Daniel Cormier, qui lui aurait fait part de sa réticence à affronter Lesnar.</p>",
+      "<h2>Une confidence rapportée par Velasquez</h2>",
+      "<p>Velasquez a expliqué que son équipe estimait avoir les moyens de battre Lesnar grâce à une stratégie adaptée. Selon son récit, Cormier lui a avoué après le combat qu’il n’avait pas envie de se retrouver face à cet adversaire. Cette confidence concerne la réaction de Cormier à l’approche du duel entre Velasquez et Lesnar.</p>",
+      "<h2>Le physique de Lesnar en question</h2>",
+      "<p>Dans le même entretien, Velasquez a décrit lui-même l’impression que pouvait produire Lesnar : un athlète exceptionnel, doté d’un gabarit imposant. Il a évoqué son passage par la NFL et son titre de champion national de lutte. Ces remarques sont celles de Velasquez, et non des propos attribués à Cormier.</p>",
+      "<h2>Un duel avec Cormier qui n’a pas eu lieu</h2>",
+      "<p>En octobre 2010, Velasquez avait battu Lesnar par TKO au premier round et remporté le titre des poids lourds de l’UFC. Plus tard, après la conquête de cette ceinture par Cormier, un affrontement entre ce dernier et Lesnar avait été envisagé. Il ne s’était finalement pas concrétisé.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Daniel Cormier avoue qu’il ne voulait pas affronter ce combattant de l’UFC : une confidence surprenante",
+        "url": "https://actumma.com/daniel-cormier-avoue-quil-ne-voulait-pas-affronter-ce-combattant-de-lufc-une-confidence-surprenante/194377",
+        "publishedAt": "2026-10-31T08:25:54.000Z",
+        "retrievedAt": "2026-10-31T18:35:04.321Z",
+        "bodyHash": "087484e2d9a95270564e0a1e8b018b3103e961b180d28a05aa1b6f99630cab57"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-31T18:30:37.927Z"
+    },
+    "image": "/assets/editorial/cain-velasquez-rapporte-que-daniel-cormier-ne-voulait-pas-affronter-brock-lesnar.webp",
+    "publicationBatchId": "2026-10-31T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/daniel-cormier-avoue-quil-ne-voulait-pas-affronter-ce-combattant-de-lufc-une-confidence-surprenante/194377",
+        "sha256": "60c563e2a20ce3887e0ea8ae1217f8b8fc0c886abd6dfb46a1ec3b427983c10f"
+      },
+      {
+        "sourceUrl": "https://actumma.com/daniel-cormier-avoue-quil-ne-voulait-pas-affronter-ce-combattant-de-lufc-une-confidence-surprenante/194377",
+        "sha256": "24cbfbb9fff5ae5ad4068dc6c6b41fc1a5d80461d3465ad9029d099d6b10d6c4"
+      },
+      {
+        "sourceUrl": "https://actumma.com/daniel-cormier-avoue-quil-ne-voulait-pas-affronter-ce-combattant-de-lufc-une-confidence-surprenante/194377",
+        "sha256": "fa4b9f4c489c572289bf2e7812890c96cb217bf629a310f5b63659632a314521"
+      }
+    ]
+  },
+  {
+    "newsKey": "plinio-cruz-herb-dean-images-reaction",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/10/ciryl-gane-alex-pereira-ufc.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/10/ciryl-gane-alex-pereira-ufc.jpg",
+      "pageUrl": "https://actumma.com/ciryl-gane-vs-alex-pereira-de-nouvelles-images-revelent-la-reaction-furieuse-de-lentraineur-du-bresilien/194374",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-10-31T18:34:39.469Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "plinio-cruz-interpelle-herb-dean-dans-de-nouvelles-images-de-l-ufc",
+    "title": "Plinio Cruz interpelle Herb Dean dans de nouvelles images de l’UFC",
+    "excerpt": "De nouvelles images diffusées par l’UFC montrent Plinio Cruz interpeller Herb Dean pendant la séquence finale du combat contre Ciryl Gane.",
+    "category": "actualites",
+    "kicker": "UFC · Images dévoilées",
+    "date": "2026-10-31",
+    "publishedAt": "2026-10-31T18:35:04.321Z",
+    "verifiedAt": "2026-10-31T18:35:04.321Z",
+    "sourcePublishedAt": "2026-10-31T08:03:15.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Plus de quatre mois après le combat entre Ciryl Gane et Alex Pereira, de nouvelles images diffusées par l’UFC reviennent sur ses derniers instants. Elles montrent la réaction de Plinio Cruz, l’un des entraîneurs du Brésilien, dans son coin, alors que Gane enchaîne les frappes.</p>",
+      "<h2>La réaction de Plinio Cruz</h2>",
+      "<p>MMA Fighting a relayé ces images, rapporte ActuMMA. Sur la séquence, Cruz, également traducteur de Pereira, apparaît agité et interpelle l’arbitre Herb Dean. Les images montrent la réaction du coin brésilien au moment où le combat touche à sa fin.</p>",
+      "<h2>Une victoire toujours contestée</h2>",
+      "<p>De l’autre côté de la cage, Fernand Lopez et Benjamin Sarfati célèbrent la victoire française. Gane avait battu Pereira par K.-O. au deuxième round, le 14 juin, et obtenu la ceinture intérimaire des poids lourds. Il est ensuite devenu champion incontesté après que Tom Aspinall a laissé son titre vacant.</p>",
+      "<h2>La vidéo ne tranche pas la polémique</h2>",
+      "<p>ActuMMA rappelle que Pereira avait accusé Gane de lui avoir porté des coups illégaux derrière la tête et critiqué l’arbitrage. Ces nouvelles images alimentent une controverse déjà installée, mais ne suffisent pas à établir si les frappes contestées étaient irrégulières. Le résultat du combat reste inchangé.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Ciryl Gane vs Alex Pereira : de nouvelles images révèlent la réaction furieuse de l’entraîneur du Brésilien",
+        "url": "https://actumma.com/ciryl-gane-vs-alex-pereira-de-nouvelles-images-revelent-la-reaction-furieuse-de-lentraineur-du-bresilien/194374",
+        "publishedAt": "2026-10-31T08:03:15.000Z",
+        "retrievedAt": "2026-10-31T18:35:04.321Z",
+        "bodyHash": "e7a85e0f71618a29ac11d22242259138d157adea38d4f86e7cb8f8464bad0327"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-10-31T18:30:37.927Z"
+    },
+    "image": "/assets/editorial/plinio-cruz-interpelle-herb-dean-dans-de-nouvelles-images-de-l-ufc.webp",
+    "publicationBatchId": "2026-10-31T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/ciryl-gane-vs-alex-pereira-de-nouvelles-images-revelent-la-reaction-furieuse-de-lentraineur-du-bresilien/194374",
+        "sha256": "b6623993e4bc46291b1cc9118389a19323242579203e0b2e0398a0db22483758"
+      },
+      {
+        "sourceUrl": "https://actumma.com/ciryl-gane-vs-alex-pereira-de-nouvelles-images-revelent-la-reaction-furieuse-de-lentraineur-du-bresilien/194374",
+        "sha256": "a6075cc875e3c338ae2932d99b77f97d35ec77dfab5079612c653761d82e6870"
+      },
+      {
+        "sourceUrl": "https://actumma.com/ciryl-gane-vs-alex-pereira-de-nouvelles-images-revelent-la-reaction-furieuse-de-lentraineur-du-bresilien/194374",
+        "sha256": "87409e5bbc48b1c86758503fa6f99056bddf7b23733aedcc8dc22f5752db6c56"
+      },
+      {
+        "sourceUrl": "https://actumma.com/ciryl-gane-vs-alex-pereira-de-nouvelles-images-revelent-la-reaction-furieuse-de-lentraineur-du-bresilien/194374",
+        "sha256": "ddbc74490970d33696dd7bd4c027675f2911dda5135b5ff9155722871f2752a5"
+      }
+    ]
+  },
+  {
     "newsKey": "pfl-carte-complete-dubai-nemkov-bilostenniy-adjoudj",
     "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
     "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
