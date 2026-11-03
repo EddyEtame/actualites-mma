@@ -1,5 +1,449 @@
 [
   {
+    "newsKey": "carlos-prates-reagit-au-changement-de-programme-de-makhachev",
+    "imageAlt": "UFC Fight Night : Della Maddalena contre Prates",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/05/gettyimages-2274155598.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/05/gettyimages-2274155598.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/519240/carlos-prates-pretty-pissed-off-at-islam-makhachev-over-change-of-plans-he-chickened-out",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "UFC Fight Night: Della Maddalena v Prates",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-03T21:16:53.751Z",
+      "originalWidth": 1200,
+      "originalHeight": 623
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "carlos-prates-reagit-au-changement-de-programme-d-islam-makhachev",
+    "title": "Carlos Prates réagit au changement de programme d’Islam Makhachev",
+    "excerpt": "Carlos Prates dit avoir été contrarié par le changement de programme autour d’Islam Makhachev et doit désormais affronter Michael Morales pour la ceinture intérimaire.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-11-03",
+    "publishedAt": "2026-11-03T21:20:09.799Z",
+    "verifiedAt": "2026-11-03T21:20:09.799Z",
+    "sourcePublishedAt": "2026-11-03T20:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Carlos Prates affirme que le changement de programme autour d’Islam Makhachev l’a fortement contrarié. Selon MMA Fighting, il se préparait déjà à défier le champion des poids mi-moyens pour la ceinture de l’UFC, le 30 janvier, lorsque l’organisation l’a informé que le projet avait changé.</p>",
+      "<h2>Prates reproche son retrait à Makhachev</h2>",
+      "<p>Prates doit désormais affronter Michael Morales pour la ceinture intérimaire, en co-événement principal de la même carte. Dans une déclaration faite à Laerte Viana et rapportée par MMA Fighting, il reproche à Makhachev d’avoir renoncé après que Hunter Campbell lui aurait indiqué que cette date était réservée au champion.</p>",
+      "<h2>Morales devient sa priorité</h2>",
+      "<p>Le combattant dit avoir été très en colère, mais explique qu’il doit maintenant se concentrer sur Morales et remporter la ceinture intérimaire. Il présente cette victoire comme l’étape nécessaire avant de pouvoir retrouver Makhachev, qu’il dit vouloir combattre ensuite.</p>",
+      "<h2>Une affiche menée par Van et Kape</h2>",
+      "<p>Morales est invaincu et compte 19 victoires en autant de combats. Il a également remporté ses sept apparitions sous la bannière de l’UFC. La carte UFC 336 doit être menée par le combat entre le champion des poids mouches Joshua Van et Manel Kape.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Carlos Prates ‘pretty pissed off’ at Islam Makhachev over change of plans: ‘He chickened out’",
+        "url": "https://mmafighting.com/ufc/519240/carlos-prates-pretty-pissed-off-at-islam-makhachev-over-change-of-plans-he-chickened-out",
+        "publishedAt": "2026-11-03T20:00:00.000Z",
+        "retrievedAt": "2026-11-03T21:20:09.799Z",
+        "bodyHash": "4fa5923a1cce1cedb1e05708484c4690f7c25c774335ef6a73270038b76c8876"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-03T21:16:44.456Z"
+    },
+    "image": "/assets/editorial/carlos-prates-reagit-au-changement-de-programme-d-islam-makhachev.webp",
+    "publicationBatchId": "2026-11-03T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/519240/carlos-prates-pretty-pissed-off-at-islam-makhachev-over-change-of-plans-he-chickened-out",
+        "sha256": "8eceed8ebcee00359aa6820991265d7ac1f2b2f034c26453d9962f26908ac31c"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/519240/carlos-prates-pretty-pissed-off-at-islam-makhachev-over-change-of-plans-he-chickened-out",
+        "sha256": "f2a55f2e0225ef42bae3f18d3994d9fd3bdf0c16d3e3f9773d10ce3346e0b736"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/519240/carlos-prates-pretty-pissed-off-at-islam-makhachev-over-change-of-plans-he-chickened-out",
+        "sha256": "5804fdaf8998ea004427f1125e38e108c0b6a375206229b28219b08769bd1d9a"
+      }
+    ]
+  },
+  {
+    "newsKey": "dan-hooker-critique-titre-bmf-oliveira",
+    "imageAlt": "Dan Hooker",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2293713695.jpg?quality=90&strip=all&crop=0%2C4.4258544942906%2C100%2C78.534031413613&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2293713695.jpg?quality=90&strip=all&crop=0%2C4.4258544942906%2C100%2C78.534031413613&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/519248/dan-hooker-blames-charles-oliveira-ufc-for-tarnishing-bmf-title-he-killed-it",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "Dan Hooker",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-03T21:17:24.697Z",
+      "originalWidth": 1200,
+      "originalHeight": 623
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "dan-hooker-critique-le-titre-bmf-et-estime-qu-oliveira-en-a-terni-l-image",
+    "title": "Dan Hooker critique le titre BMF et estime qu’Oliveira en a terni l’image",
+    "excerpt": "Dan Hooker souhaite voir le titre BMF mis en pause et estime que Charles Oliveira lui a fait perdre de son attrait après sa victoire contre Max Holloway.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-11-03",
+    "publishedAt": "2026-11-03T21:20:09.799Z",
+    "verifiedAt": "2026-11-03T21:20:09.799Z",
+    "sourcePublishedAt": "2026-11-03T17:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Dan Hooker souhaite que le titre symbolique BMF soit mis de côté pour le moment. Dans des propos recueillis par Submission Radio et rapportés par MMA Fighting, le combattant estime que Charles Oliveira a diminué l’attrait de la ceinture après l’avoir remportée. Il considère même qu’Oliveira l’a « tuée ».</p>",
+      "<h2>Les critiques après la victoire d’Oliveira</h2>",
+      "<p>Oliveira a gagné le titre en battant Max Holloway à la décision, à l’issue d’une prestation axée sur le grappling. Celle-ci a été critiquée comme contraire à l’esprit du BMF. Hooker estime que la ceinture a perdu de son lustre après ce combat, sans que la source lui attribue une adhésion explicite à cette critique précise. Oliveira doit remettre le titre en jeu contre Diego Lopes dans le combat principal de l’UFC 335, le 12 décembre.</p>",
+      "<h2>Hooker défend une autre identité pour le BMF</h2>",
+      "<p>Le combattant reproche aussi à l’organisation de s’être éloignée de l’objectif initial du titre. Selon lui, la ceinture devrait revenir à des combattants qui aiment l’affrontement et assument une personnalité provocatrice. Il cite Nate Diaz et Jorge Masvidal comme exemples de cette identité, et estime que des profils plus sages ont depuis eu leur chance.</p>",
+      "<h2>Un intérêt pour l’affiche Oliveira-Lopes</h2>",
+      "<p>Hooker apprécie néanmoins le combat entre Oliveira et Lopes, même si la présence du BMF lui semble surtout ajouter une ceinture à l’enjeu. Il doit affronter Brian Ortega à l’UFC Qatar le 21 novembre. Si Hooker et Lopes gagnent leurs combats, il envisage de défier le Brésilien pour le titre.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Dan Hooker blames Charles Oliveira, UFC for tarnishing ‘BMF’ title: ‘He killed it’",
+        "url": "https://mmafighting.com/ufc/519248/dan-hooker-blames-charles-oliveira-ufc-for-tarnishing-bmf-title-he-killed-it",
+        "publishedAt": "2026-11-03T17:00:00.000Z",
+        "retrievedAt": "2026-11-03T21:20:09.799Z",
+        "bodyHash": "cfc8b3ff7dfac0d1aafff63154e82f49000a9b5d3241156931678ea1cf87f259"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-03T21:16:44.456Z"
+    },
+    "image": "/assets/editorial/dan-hooker-critique-le-titre-bmf-et-estime-qu-oliveira-en-a-terni-l-image.webp",
+    "publicationBatchId": "2026-11-03T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/519248/dan-hooker-blames-charles-oliveira-ufc-for-tarnishing-bmf-title-he-killed-it",
+        "sha256": "8ad003a345ce5cb8eac6b06732e78c31cee512598ede443976d4d95465c53cf0"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/519248/dan-hooker-blames-charles-oliveira-ufc-for-tarnishing-bmf-title-he-killed-it",
+        "sha256": "56a0daebc529d0ea15e10fa61768a7b320a16da77795323daa74612267a192e0"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/519248/dan-hooker-blames-charles-oliveira-ufc-for-tarnishing-bmf-title-he-killed-it",
+        "sha256": "8ee16491b51d4a0a54c70e6c909a6e1b94c1d32de241032ec2db407543eceb88"
+      }
+    ]
+  },
+  {
+    "newsKey": "mohamed-soumah-evoque-fin-carriere",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/11/mohamed-soumah-reaction-annonce-youssef-boughanem-ares.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/11/mohamed-soumah-reaction-annonce-youssef-boughanem-ares.jpg",
+      "pageUrl": "https://actumma.com/mohammed-soumah-repond-a-youssef-boughanem-et-fait-une-annonce-forte-apres-son-combat-a-lares-44/194493",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-03T21:18:11.800Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "mohamed-soumah-evoque-une-possible-fin-de-carriere-apres-l-ares-44",
+    "title": "Mohamed Soumah évoque une possible fin de carrière après l’ARES 44",
+    "excerpt": "Après sa défaite contre Youssef Boughanem à l’ARES 44, Mohamed Soumah a publié un message laissant entendre qu’il pourrait arrêter sa carrière.",
+    "category": "actualites",
+    "kicker": "ARES · Déclaration",
+    "date": "2026-11-03",
+    "publishedAt": "2026-11-03T21:20:09.799Z",
+    "verifiedAt": "2026-11-03T21:20:09.799Z",
+    "sourcePublishedAt": "2026-11-03T16:05:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Après sa défaite contre Youssef Boughanem à l’ARES 44, Mohamed Soumah est revenu sur le combat dans une vidéo publiée sur Instagram. Selon ActuMMA, le Français y a notamment abordé les critiques suscitées par ses propos sur l’arbitrage et les réactions reçues après l’affrontement.</p>",
+      "<h2>Soumah revient sur la défaite</h2>",
+      "<p>Le combattant reconnaît que la forme de ses déclarations après le combat n’était pas appropriée, mais maintient leur fond. Il explique avoir été préoccupé par l’intégrité physique de Boughanem et estime que cette inquiétude a contribué à son décrochage mental. Il reconnaît également que son adversaire a mérité la victoire.</p>",
+      "<h2>Un échange apaisé avec Boughanem</h2>",
+      "<p>Les deux hommes ont ensuite échangé des messages respectueux. ActuMMA rapporte que Boughanem a défendu son adversaire face aux insultes racistes et au harcèlement en ligne. Soumah a partagé cette prise de position sur Instagram et l’a remercié dans une publication.</p>",
+      "<h2>Un message qui laisse planer le doute</h2>",
+      "<p>Quelques heures plus tard, Soumah a publié une story indiquant qu’il déposait les gants. Son message laisse entendre qu’il envisage de mettre un terme à sa carrière, mais il n’a pas précisé si sa décision était définitive. Le Français semble vouloir prendre du recul après ce combat éprouvant.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Mohammed Soumah répond à Youssef Boughanem et fait une annonce forte après son combat à l’ARES 44",
+        "url": "https://actumma.com/mohammed-soumah-repond-a-youssef-boughanem-et-fait-une-annonce-forte-apres-son-combat-a-lares-44/194493",
+        "publishedAt": "2026-11-03T16:05:00.000Z",
+        "retrievedAt": "2026-11-03T21:20:09.799Z",
+        "bodyHash": "d1a747b2ed81be5948e3ce134f3b95d955d1717a845f13450dacbdba49b121ea"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-03T21:16:44.456Z"
+    },
+    "image": "/assets/editorial/mohamed-soumah-evoque-une-possible-fin-de-carriere-apres-l-ares-44.webp",
+    "publicationBatchId": "2026-11-03T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/mohammed-soumah-repond-a-youssef-boughanem-et-fait-une-annonce-forte-apres-son-combat-a-lares-44/194493",
+        "sha256": "24a825a33ee8d4f760bdcd0f0f21a6fdd65a6435713ad3d716acd31dd7a4ecce"
+      },
+      {
+        "sourceUrl": "https://actumma.com/mohammed-soumah-repond-a-youssef-boughanem-et-fait-une-annonce-forte-apres-son-combat-a-lares-44/194493",
+        "sha256": "5c261c091382140b7b6543a65c186fbb5268110e470083fe3f543c7834d8ec1b"
+      },
+      {
+        "sourceUrl": "https://actumma.com/mohammed-soumah-repond-a-youssef-boughanem-et-fait-une-annonce-forte-apres-son-combat-a-lares-44/194493",
+        "sha256": "f798c9285fae498a071abda3f5ab08c11864a5b0724dbf2f99c41650612888ee"
+      }
+    ]
+  },
+  {
+    "newsKey": "artem-lobov-accuse-conor-mcgregor-menaces-voiture-mere",
+    "imageAlt": "Artem Lobov et Conor McGregor dans The Ultimate Fighter en 2015",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-501633368.jpg?quality=90&strip=all&crop=0%2C1.675412539453%2C100%2C77.411563739391&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-501633368.jpg?quality=90&strip=all&crop=0%2C1.675412539453%2C100%2C77.411563739391&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/519236/artem-lobov-accuses-conor-mcgregor-of-sending-people-to-burn-his-car-threaten-60-year-old-mother-with-hammer",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "Artem Lobov and Conor McGregor in The Ultimate Fighter in 2015",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-03T21:18:29.887Z",
+      "originalWidth": 1200,
+      "originalHeight": 624
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "artem-lobov-accuse-conor-mcgregor-d-avoir-vise-sa-voiture-et-sa-mere",
+    "title": "Artem Lobov accuse Conor McGregor d’avoir visé sa voiture et sa mère",
+    "excerpt": "Artem Lobov affirme que Conor McGregor aurait envoyé des personnes incendier sa voiture et menacer sa mère avec un marteau.",
+    "category": "actualites",
+    "kicker": "MMA · Accusations publiques",
+    "date": "2026-11-03",
+    "publishedAt": "2026-11-03T21:20:09.799Z",
+    "verifiedAt": "2026-11-03T21:20:09.799Z",
+    "sourcePublishedAt": "2026-11-03T15:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Artem Lobov accuse Conor McGregor d’avoir envoyé des personnes incendier sa voiture et menacer sa mère, âgée de 60 ans, avec un marteau. Dans une série de messages publiés sur les réseaux sociaux, l’ancien partenaire d’entraînement de McGregor a formulé ces accusations, rapportées par MMA Fighting. Elles ne sont pas présentées comme des faits établis.</p>",
+      "<h2>Un conflit ravivé sur les réseaux sociaux</h2>",
+      "<p>Les deux hommes, autrefois proches, avaient réglé en avril leur différend judiciaire autour de la marque de whiskey Proper No. 12. Lobov estimait avoir droit à une part des bénéfices pour avoir contribué à l’idée du produit. Les conditions de l’accord n’ont pas été divulguées. Leurs tensions ont toutefois ressurgi lundi après un commentaire de Lobov au sujet de McGregor.</p>",
+      "<h2>Lobov met aussi en cause le comportement de McGregor</h2>",
+      "<p>En réponse aux critiques de fans, Lobov a également accusé son ancien ami d’avoir mal traité plusieurs proches et coéquipiers, et d’avoir manqué à des accords financiers. Il a avancé, sans présenter de preuve dans ces messages, que l’alcool et la drogue auraient contribué à ces comportements. Il a accompagné son accusation concernant sa mère et sa voiture d’une capture d’écran d’un échange privé cordial avec McGregor.</p>",
+      "<h2>Lobov évoque leur ancienne amitié</h2>",
+      "<p>Lobov a aussi rappelé leur proximité passée et le soutien de McGregor lors de leur rivalité commune avec Khabib Nurmagomedov. Il estime que l’homme qu’il considérait comme un frère n’est plus le même et dit regretter leur ancienne relation.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Artem Lobov accuses Conor McGregor of sending people to burn his car, threaten 60-year-old mother with hammer",
+        "url": "https://mmafighting.com/ufc/519236/artem-lobov-accuses-conor-mcgregor-of-sending-people-to-burn-his-car-threaten-60-year-old-mother-with-hammer",
+        "publishedAt": "2026-11-03T15:00:00.000Z",
+        "retrievedAt": "2026-11-03T21:20:09.799Z",
+        "bodyHash": "c9115bfc66d56ad727bc1d4eaf1dea4e2a7980c5cb97460d537ac55d4c18b866"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-03T21:16:44.456Z"
+    },
+    "image": "/assets/editorial/artem-lobov-accuse-conor-mcgregor-d-avoir-vise-sa-voiture-et-sa-mere.webp",
+    "publicationBatchId": "2026-11-03T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/519236/artem-lobov-accuses-conor-mcgregor-of-sending-people-to-burn-his-car-threaten-60-year-old-mother-with-hammer",
+        "sha256": "646e8fdc2892e4f8cee482172b2d1be0849e49b1cfa21543a199a0b0e2e01cd4"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/519236/artem-lobov-accuses-conor-mcgregor-of-sending-people-to-burn-his-car-threaten-60-year-old-mother-with-hammer",
+        "sha256": "0f389beba458961ad233a2bcc8a2cdee18b979fb45ac9ab0e8913adb6eb5deff"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/519236/artem-lobov-accuses-conor-mcgregor-of-sending-people-to-burn-his-car-threaten-60-year-old-mother-with-hammer",
+        "sha256": "8b21d515b2715a7369ab2581f03fb615f0b776e1c202a08b9d2b7d06e1a999bf"
+      }
+    ]
+  },
+  {
+    "newsKey": "matt-brown-reclame-sanctions-dan-miragliotta-remise-debout-moicano",
+    "imageAlt": "Renato Moicano, Dan Miragliotta et Tom Nolan à l’UFC Vegas 123",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/10/gettyimages-2302926101.jpg?quality=90&strip=all&crop=0%2C5.5707942589744%2C100%2C78.534031413613&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/10/gettyimages-2302926101.jpg?quality=90&strip=all&crop=0%2C5.5707942589744%2C100%2C78.534031413613&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/519180/matt-brown-rips-dan-miragliotta-for-terrible-standup-calls-for-him-to-be-reprimanded-what-the-fck-are-you-doing",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "Renato Moicano, Dan Miragliotta, and Tom Nolan at UFC Vegas 123",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-03T21:18:49.787Z",
+      "originalWidth": 1200,
+      "originalHeight": 624
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "matt-brown-reclame-des-sanctions-contre-dan-miragliotta-apres-la-remise-debout-de-moicano",
+    "title": "Matt Brown réclame des sanctions contre Dan Miragliotta après la remise debout de Moicano",
+    "excerpt": "Matt Brown critique la remise debout de Renato Moicano par Dan Miragliotta et réclame que l’arbitre soit réprimandé après le combat contre Tom Nolan.",
+    "category": "actualites",
+    "kicker": "UFC · Critique arbitrale",
+    "date": "2026-11-03",
+    "publishedAt": "2026-11-03T21:20:09.799Z",
+    "verifiedAt": "2026-11-03T21:20:09.799Z",
+    "sourcePublishedAt": "2026-11-03T14:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Matt Brown a vivement critiqué la décision de l’arbitre Dan Miragliotta de faire relever Renato Moicano pendant son combat contre Tom Nolan. L’ancien welterweight de l’UFC demande que Miragliotta soit réprimandé. Dans le dernier épisode du podcast The Fighter vs. The Writer, Matt Brown a réagi à cette remise debout, rapporte MMA Fighting.</p>",
+      "<h2>La remise debout de Moicano</h2>",
+      "<p>Miragliotta a interrompu l’action alors que Moicano contrôlait le dos de Nolan avec un body triangle. Après la reprise debout, Nolan a failli conclure, puis a battu Moicano au troisième round. Brown estime que l’intervention a privé le Brésilien d’une position dominante, sans affirmer qu’elle a déterminé l’issue du combat.</p>",
+      "<h2>Brown demande une réprimande</h2>",
+      "<p>Dans ses propos rapportés par MMA Fighting, Brown a jugé la décision injustifiée et réclamé que Miragliotta soit réprimandé. Il a aussi estimé que l’arbitre devrait perdre de l’argent et ne plus officier lors de grands combats. Brown a défendu la neutralité des commissions, des arbitres et des juges, qui ne devraient pas, selon lui, influencer un affrontement.</p>",
+      "<h2>Un appel à la cohérence</h2>",
+      "<p>L’ancien combattant a également dénoncé le manque de constance dans l’arbitrage. Il a notamment relevé que Moicano n’avait reçu aucun avertissement avant d’être relevé. Brown estime que les combattants doivent pouvoir savoir à quoi s’attendre pendant un combat.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Matt Brown rips Dan Miragliotta for terrible standup, calls for him to be reprimanded: ‘What the f*ck are you doing?",
+        "url": "https://mmafighting.com/ufc/519180/matt-brown-rips-dan-miragliotta-for-terrible-standup-calls-for-him-to-be-reprimanded-what-the-fck-are-you-doing",
+        "publishedAt": "2026-11-03T14:00:00.000Z",
+        "retrievedAt": "2026-11-03T21:20:09.799Z",
+        "bodyHash": "699e2f485b9a2dccd2d168c58f9905a013497c5f06441ee054533958fdeeb5b1"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-03T21:16:44.456Z"
+    },
+    "image": "/assets/editorial/matt-brown-reclame-des-sanctions-contre-dan-miragliotta-apres-la-remise-debout-de-moicano.webp",
+    "publicationBatchId": "2026-11-03T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/519180/matt-brown-rips-dan-miragliotta-for-terrible-standup-calls-for-him-to-be-reprimanded-what-the-fck-are-you-doing",
+        "sha256": "22cc53058a1084e8525e770111350ef855437fe4f04863fcf087deb7935d53c3"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/519180/matt-brown-rips-dan-miragliotta-for-terrible-standup-calls-for-him-to-be-reprimanded-what-the-fck-are-you-doing",
+        "sha256": "33d55a97388e138f6f0012b9bbb5b0b89ab4fb1275f0a4ef06f9b2cb171656d9"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/519180/matt-brown-rips-dan-miragliotta-for-terrible-standup-calls-for-him-to-be-reprimanded-what-the-fck-are-you-doing",
+        "sha256": "d5861300a07017c8f942fd2e0f907a6084c82f24bfda1b1c9fb7afb1cd1a447a"
+      }
+    ]
+  },
+  {
+    "newsKey": "john-mccarthy-cachet-maximal-arbitre-ufc",
+    "imageAlt": "Photographie publiée par La Sueur avec son article source.",
+    "imageCaption": "Photographie publiée par La Sueur avec son article. Crédit : La Sueur.",
+    "imageCredit": "La Sueur",
+    "imageSource": {
+      "url": "https://lasueur.com/wp-content/uploads/2026/11/Salaire-arbitre-UFC.jpg",
+      "ogImageUrl": "https://lasueur.com/wp-content/uploads/2026/11/Salaire-arbitre-UFC.jpg",
+      "pageUrl": "https://lasueur.com/le-legendaire-john-mccarthy-revele-les-salaires-des-arbitres-ufc-03-11-2026",
+      "publisher": "La Sueur",
+      "credit": "La Sueur",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-03T21:19:50.881Z",
+      "originalWidth": 1920,
+      "originalHeight": 1080
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "john-mccarthy-revele-son-cachet-maximal-comme-arbitre-a-l-ufc",
+    "title": "John McCarthy révèle son cachet maximal comme arbitre à l’UFC",
+    "excerpt": "John McCarthy affirme n’avoir jamais touché plus de 2 000 dollars pour arbitrer une soirée UFC et évoque aussi les pressions subies par les officiels.",
+    "category": "actualites",
+    "kicker": "UFC · Rémunération",
+    "date": "2026-11-03",
+    "publishedAt": "2026-11-03T21:20:09.799Z",
+    "verifiedAt": "2026-11-03T21:20:09.799Z",
+    "sourcePublishedAt": "2026-11-03T10:39:12.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Selon La Sueur, John McCarthy a révélé que son plus gros cachet pour une soirée UFC s’était élevé à 2 000 dollars. L’ancien arbitre a fait cette déclaration lors de son passage dans The Ariel Helwani Show, le 2 novembre, en revenant sur sa dernière apparition dans l’organisation.</p>",
+      "<h2>Deux combats de championnat pour un même cachet</h2>",
+      "<p>Ce maximum correspond, selon son récit, à l’événement organisé à New York en 2017. McCarthy y avait arbitré deux combats de championnat et affirme avoir reçu 2 000 dollars pour l’ensemble de la soirée. La Sueur rattache cet événement à l’UFC 217, organisé en novembre 2017.</p>",
+      "<h2>Une estimation pour Dan Miragliotta</h2>",
+      "<p>L’ancien officiel a également évoqué la rémunération de Dan Miragliotta après les critiques suscitées par son arbitrage lors du combat entre Renato Moicano et Tom Nolan à l’UFC Vegas 123. McCarthy estime que son collègue a probablement touché 1 600 dollars pour ce combat, tout en précisant qu’il ne connaît pas le montant exact.</p>",
+      "<h2>McCarthy dénonce les pressions contre les arbitres</h2>",
+      "<p>Enfin, McCarthy a dénoncé les insultes et les menaces de mort visant les arbitres, qu’il associe notamment à la place prise par les paris dans le sport. Il estime que ces attaques, combinées à leur rémunération, peuvent finir par peser sur leur motivation à poursuivre.</p>"
+    ],
+    "sources": [
+      {
+        "name": "La Sueur",
+        "title": "Le légendaire John McCarthy révèle les salaires des arbitres UFC",
+        "url": "https://lasueur.com/le-legendaire-john-mccarthy-revele-les-salaires-des-arbitres-ufc-03-11-2026",
+        "publishedAt": "2026-11-03T10:39:12.000Z",
+        "retrievedAt": "2026-11-03T21:20:09.799Z",
+        "bodyHash": "c815a7b864dfcad8a373585f6d572ae27c135f1bb5e5072a87e7b7f9d15387bc"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-03T21:16:44.456Z"
+    },
+    "image": "/assets/editorial/john-mccarthy-revele-son-cachet-maximal-comme-arbitre-a-l-ufc.webp",
+    "publicationBatchId": "2026-11-03T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://lasueur.com/le-legendaire-john-mccarthy-revele-les-salaires-des-arbitres-ufc-03-11-2026",
+        "sha256": "3c2e861ef80e816508da5d32136a1440ef05dbdfbb34ab3a27007f9ba7a06a09"
+      },
+      {
+        "sourceUrl": "https://lasueur.com/le-legendaire-john-mccarthy-revele-les-salaires-des-arbitres-ufc-03-11-2026",
+        "sha256": "e868e32987a45a211093914e493d43cb2df78342d9048366733b214f6aa9e6aa"
+      },
+      {
+        "sourceUrl": "https://lasueur.com/le-legendaire-john-mccarthy-revele-les-salaires-des-arbitres-ufc-03-11-2026",
+        "sha256": "fd28b11aa2f4c626cf522ad959435254e40657b6002dfe28b54f9550e97e1849"
+      }
+    ]
+  },
+  {
     "newsKey": "jacobe-smith-defend-daniel-cormier-commentary-reyes",
     "imageAlt": "Daniel Cormier",
     "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
