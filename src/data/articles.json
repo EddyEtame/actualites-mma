@@ -1,5 +1,441 @@
 [
   {
+    "newsKey": "carlos-prates-echeance-juin-islam-makhachev",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/11/carlos-prates-critique-islam-makhachev-khabib.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/11/carlos-prates-critique-islam-makhachev-khabib.jpg",
+      "pageUrl": "https://actumma.com/carlos-prates-critique-islam-makhachev-et-khabib-nurmagomedov-et-fixe-un-ultimatum-au-champion-de-lufc/194581",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-06T22:06:54.538Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "carlos-prates-fixe-a-juin-son-echeance-pour-islam-makhachev",
+    "title": "Carlos Prates fixe à juin son échéance pour Islam Makhachev",
+    "excerpt": "Carlos Prates estime qu’Islam Makhachev ne doit pas retarder son retour au-delà de juin, après le combat pour la ceinture intérimaire.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-11-06",
+    "publishedAt": "2026-11-06T22:10:17.399Z",
+    "verifiedAt": "2026-11-06T22:10:17.399Z",
+    "sourcePublishedAt": "2026-11-06T20:57:57.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Carlos Prates estime qu’Islam Makhachev ne doit pas laisser sa catégorie attendre trop longtemps. Le Brésilien fixe juin comme échéance au champion des welterweights : s’il n’est toujours pas prêt à combattre à ce moment-là, il devrait, selon lui, envisager de prendre sa retraite.</p>",
+      "<h2>Un combat intérimaire avant le retour de Makhachev</h2>",
+      "<p>Makhachev a choisi de repousser son retour après le Ramadan et ne défendra donc pas son titre en janvier. Initialement pressenti pour l’affronter à l’UFC 336, Prates doit finalement disputer une ceinture intérimaire face à Michael Morales, le 30 janvier à Toronto. Le champion a expliqué vouloir que les deux prétendants s’affrontent pour désigner son prochain adversaire.</p>",
+      "<h2>Prates compare Makhachev à Khabib Nurmagomedov</h2>",
+      "<p>Interrogé par Squawka, Prates a rapproché la gestion des combats de Makhachev de celle de Khabib Nurmagomedov lorsqu’il était champion. Il estime qu’attendre longtemps entre les combats, parfois en n’en disputant qu’un par an, n’est pas la bonne manière de faire, même s’il comprend que les champions choisissent leur calendrier. Il a aussi évoqué la possibilité que Makhachev privilégie sa famille et sa santé.</p>",
+      "<h2>Juin, la limite fixée par le Brésilien</h2>",
+      "<p>Prates situe un éventuel affrontement avec Makhachev autour de juin, après le combat intérimaire et le Ramadan. Il affirme qu’en cas de nouveau report, il sera temps pour le champion de se retirer. D’ici là, il devra battre Morales. Prates dit vouloir le mettre K.-O., tout en précisant que cette opposition n’a rien de personnel.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Carlos Prates critique Islam Makhachev et Khabib Nurmagomedov et fixe un ultimatum au champion de l’UFC",
+        "url": "https://actumma.com/carlos-prates-critique-islam-makhachev-et-khabib-nurmagomedov-et-fixe-un-ultimatum-au-champion-de-lufc/194581",
+        "publishedAt": "2026-11-06T20:57:57.000Z",
+        "retrievedAt": "2026-11-06T22:10:17.399Z",
+        "bodyHash": "6762f446315eaf469cc189499eae528a3458f728e4dea4a5450ee48bfc8e2427"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-06T22:05:55.156Z"
+    },
+    "image": "/assets/editorial/carlos-prates-fixe-a-juin-son-echeance-pour-islam-makhachev.webp",
+    "publicationBatchId": "2026-11-06T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/carlos-prates-critique-islam-makhachev-et-khabib-nurmagomedov-et-fixe-un-ultimatum-au-champion-de-lufc/194581",
+        "sha256": "2fa91210da9fb1d532d0ba2c1849f6cc32a4f922af3a7dfbe0909d35e1a19696"
+      },
+      {
+        "sourceUrl": "https://actumma.com/carlos-prates-critique-islam-makhachev-et-khabib-nurmagomedov-et-fixe-un-ultimatum-au-champion-de-lufc/194581",
+        "sha256": "f602210af9e61f26f94800f822d77118d54541b0d393619926505f2e013ce2d4"
+      },
+      {
+        "sourceUrl": "https://actumma.com/carlos-prates-critique-islam-makhachev-et-khabib-nurmagomedov-et-fixe-un-ultimatum-au-champion-de-lufc/194581",
+        "sha256": "6040660782c6e5a58161c2ff3d21c6f0d60922d084f23dd95f46594418a2341e"
+      }
+    ]
+  },
+  {
+    "newsKey": "virna-jandiroba-trilogie-mackenzie-dern-apres-suarez",
+    "imageAlt": "UFC Fight Night : Jandiroba contre Ricci",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2269860970.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C78.534031413613&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2269860970.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C78.534031413613&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/519359/virna-jandiroba-mackenzie-dern-trilogy-bout-possible-with-win-over-tatiana-suarez-at-ufc-vegas-124",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "UFC Fight Night: Jandiroba v Ricci",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-06T22:07:19.889Z",
+      "originalWidth": 1200,
+      "originalHeight": 624
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "virna-jandiroba-evoque-une-trilogie-contre-mackenzie-dern-en-2027",
+    "title": "Virna Jandiroba évoque une trilogie contre Mackenzie Dern en 2027",
+    "excerpt": "Virna Jandiroba estime qu’une victoire contre Tatiana Suarez pourrait lui ouvrir la voie à une trilogie face à Mackenzie Dern en 2027.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-11-06",
+    "publishedAt": "2026-11-06T22:10:17.399Z",
+    "verifiedAt": "2026-11-06T22:10:17.399Z",
+    "sourcePublishedAt": "2026-11-06T20:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Virna Jandiroba envisage une troisième confrontation avec Mackenzie Dern en 2027, si elle bat Tatiana Suarez. La Brésilienne doit affronter Suarez dans le co-événement principal de l’UFC Vegas 124. Cette trilogie n’est pas annoncée : Jandiroba la présente comme une possibilité.</p>",
+      "<h2>Un duel présenté comme un possible éliminatoire</h2>",
+      "<p>Dans une déclaration à MMA Fighting, Jandiroba juge l’affrontement avec Suarez équitable pour les deux combattantes. Elle estime que la gagnante mériterait une nouvelle chance pour le titre et que le combat pourrait servir d’éliminatoire. Elle précise toutefois que les décisions sur la suite de la course à la ceinture ne lui appartiennent pas.</p>",
+      "<h2>Deux défaites contre Mackenzie Dern</h2>",
+      "<p>Jandiroba s’est inclinée deux fois aux points face à Dern. Elle estime que l’un de leurs affrontements était très serré, sans préciser lequel. La combattante reste convaincue qu’une trilogie pourrait se profiler en 2027 si elle passe l’obstacle Suarez.</p>",
+      "<h2>Profiter des derniers combats</h2>",
+      "<p>Jandiroba explique également qu’il ne lui reste que quelques combats et qu’elle veut avant tout se battre et profiter de ces moments. La ceinture reste un objectif, mais elle dit vouloir aussi livrer de bons combats et se rapprocher de l’idéal qu’elle s’était fixé comme artiste martiale.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Virna Jandiroba: Mackenzie Dern trilogy bout possible with win over Tatiana Suarez at UFC Vegas 124",
+        "url": "https://mmafighting.com/ufc/519359/virna-jandiroba-mackenzie-dern-trilogy-bout-possible-with-win-over-tatiana-suarez-at-ufc-vegas-124",
+        "publishedAt": "2026-11-06T20:00:00.000Z",
+        "retrievedAt": "2026-11-06T22:10:17.399Z",
+        "bodyHash": "edc44c5f18e8e372a797793a0b72ad3c3c5f50efbf39eab1540083fc8b88e0b3"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-06T22:05:55.156Z"
+    },
+    "image": "/assets/editorial/virna-jandiroba-evoque-une-trilogie-contre-mackenzie-dern-en-2027.webp",
+    "publicationBatchId": "2026-11-06T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/519359/virna-jandiroba-mackenzie-dern-trilogy-bout-possible-with-win-over-tatiana-suarez-at-ufc-vegas-124",
+        "sha256": "1ca2535db5d8607ad37def1a6927760099b2f9478e881d92369fbbca3fa2c376"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/519359/virna-jandiroba-mackenzie-dern-trilogy-bout-possible-with-win-over-tatiana-suarez-at-ufc-vegas-124",
+        "sha256": "2ff314c966c32049dcb2b8c15789d29151456f670c0436235c81d7c27ee96223"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/519359/virna-jandiroba-mackenzie-dern-trilogy-bout-possible-with-win-over-tatiana-suarez-at-ufc-vegas-124",
+        "sha256": "1764ef4cb2f25440537b03f7ecd4a9d3c56efa97e97c8604850de3c371cd9b96"
+      }
+    ]
+  },
+  {
+    "newsKey": "waldo-cortes-acosta-devance-johnny-walker-pesee",
+    "imageAlt": "Waldo Cortes-Acosta",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2303851967.jpg?quality=90&strip=all&crop=0%2C3.5586534442742%2C100%2C78.534031413613&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2303851967.jpg?quality=90&strip=all&crop=0%2C3.5586534442742%2C100%2C78.534031413613&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/519766/ufc-vegas-124-weigh-in-results-waldo-cortes-acosta-has-23-pound-edge-over-johnny-walker-in-main-event",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "Waldo Cortes-Acosta",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-06T22:08:11.634Z",
+      "originalWidth": 1200,
+      "originalHeight": 623
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "waldo-cortes-acosta-devance-johnny-walker-de-23-livres-a-la-pesee",
+    "title": "Waldo Cortes-Acosta devance Johnny Walker de 23 livres à la pesée",
+    "excerpt": "Waldo Cortes-Acosta a pesé 262 livres, avec 23 livres de plus que Johnny Walker, avant leur affrontement en tête d’affiche de l’UFC Vegas 124.",
+    "category": "actualites",
+    "kicker": "UFC · Pesée officielle",
+    "date": "2026-11-06",
+    "publishedAt": "2026-11-06T22:10:17.399Z",
+    "verifiedAt": "2026-11-06T22:10:17.399Z",
+    "sourcePublishedAt": "2026-11-06T19:01:37.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Waldo Cortes-Acosta a pesé 262 livres lors de la pesée officielle de l’UFC Vegas 124, soit 23 livres de plus que Johnny Walker. Les deux hommes doivent se retrouver en tête d’affiche de l’événement, samedi, au Meta Apex de Las Vegas.</p>",
+      "<h2>Walker revient chez les poids lourds</h2>",
+      "<p>Ce rendez-vous sera le deuxième combat de Walker chez les poids lourds. Il avait réussi son passage dans cette catégorie à l’UFC 332 en octobre, en mettant Mick Parkin KO au premier round. Les deux combattants ont accepté ce combat à court préavis : Cortes-Acosta avait combattu moins de deux mois auparavant, tandis que Walker en sera à sa deuxième sortie en 35 jours.</p>",
+      "<h2>Suarez et Jandiroba satisfont à la pesée</h2>",
+      "<p>Tatiana Suarez et Virna Jandiroba, engagées dans le combat co-principal, ont elles aussi satisfait à la pesée. Toutes deux visaient une victoire pour rester dans la course au championnat.</p>",
+      "<h2>Toute la carte a passé la pesée</h2>",
+      "<p>Le combat principal a été monté après le retrait du duel des poids mi-moyens entre Gabriel Bonfim et Sean Brady, initialement prévu, en raison d’une blessure de Brady. Au total, les 28 combattants de la carte ont satisfait à la pesée.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "UFC Vegas 124 weigh-in results: Waldo Cortes-Acosta has 23-pound edge over Johnny Walker in main event",
+        "url": "https://mmafighting.com/ufc/519766/ufc-vegas-124-weigh-in-results-waldo-cortes-acosta-has-23-pound-edge-over-johnny-walker-in-main-event",
+        "publishedAt": "2026-11-06T19:01:37.000Z",
+        "retrievedAt": "2026-11-06T22:10:17.399Z",
+        "bodyHash": "7c0062084aa7bb91425a2742bc8628c51d44bc4fa4d93d5b3c33501e8c26928b"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-06T22:05:55.156Z"
+    },
+    "image": "/assets/editorial/waldo-cortes-acosta-devance-johnny-walker-de-23-livres-a-la-pesee.webp",
+    "publicationBatchId": "2026-11-06T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/519766/ufc-vegas-124-weigh-in-results-waldo-cortes-acosta-has-23-pound-edge-over-johnny-walker-in-main-event",
+        "sha256": "317ed89d5986c15021b1eb9e362879e4ff0c74e265b35d4c21697b3ca1e1e69c"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/519766/ufc-vegas-124-weigh-in-results-waldo-cortes-acosta-has-23-pound-edge-over-johnny-walker-in-main-event",
+        "sha256": "06fd707b2713aa1f60792f481220540f49f8543334ea9083dd445158f830d8f9"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/519766/ufc-vegas-124-weigh-in-results-waldo-cortes-acosta-has-23-pound-edge-over-johnny-walker-in-main-event",
+        "sha256": "b6df12acf5c880212cd999b993c6e859e458e47f8557911059a3a883d806439b"
+      }
+    ]
+  },
+  {
+    "newsKey": "ilia-topuria-remercie-frere-arret-combat-retour-avril",
+    "imageAlt": "Photographie publiée par RMC Sport avec son article source.",
+    "imageCaption": "Photographie publiée par RMC Sport avec son article. Crédit : RMC Sport.",
+    "imageCredit": "RMC Sport",
+    "imageSource": {
+      "url": "https://io-fsly-bfmtv.cdn.nextradiotv.com/xe9k1XLDGUhE0GLA1QHjvs4is9I=/0x77:2048x1229/images/Ilia-Topuria-lors-de-sa-defaite-contre-Gaethje-a-l-UFC-Maison-Blanche-le-14-juin-2026-2379417.jpg",
+      "ogImageUrl": "https://io-fsly-bfmtv.cdn.nextradiotv.com/xe9k1XLDGUhE0GLA1QHjvs4is9I=/0x77:2048x1229/images/Ilia-Topuria-lors-de-sa-defaite-contre-Gaethje-a-l-UFC-Maison-Blanche-le-14-juin-2026-2379417.jpg",
+      "pageUrl": "https://rmcsport.bfmtv.com/sports-de-combat/mma/ufc/sans-lui-je-n-aurais-probablement-plus-jamais-pu-combattre-ilia-topuria-remercie-son-frere-d-avoir-arrete-son-combat-a-l-ufc-maison-blanche_AV-202611060700.html",
+      "publisher": "RMC Sport",
+      "credit": "RMC Sport",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-06T22:08:54.760Z",
+      "originalWidth": 2048,
+      "originalHeight": 1152
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "ilia-topuria-remercie-son-frere-apres-l-arret-de-son-combat-contre-justin-gaethje",
+    "title": "Ilia Topuria remercie son frère après l’arrêt de son combat contre Justin Gaethje",
+    "excerpt": "Dans le podcast Fight Disciples, Ilia Topuria remercie Aleksandre d’avoir arrêté son combat contre Justin Gaethje et évoque un retour dès avril.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-11-06",
+    "publishedAt": "2026-11-06T22:10:17.399Z",
+    "verifiedAt": "2026-11-06T22:10:17.399Z",
+    "sourcePublishedAt": "2026-11-06T16:58:51.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Ilia Topuria est revenu sur l’intervention de son frère Aleksandre lors de son combat contre Justin Gaethje, en juin 2026, à l’UFC Maison Blanche. Dans son coin, Aleksandre avait arrêté l’affrontement au quatrième round, alors que son cadet était blessé au visage. Cette décision avait entraîné la première défaite professionnelle de Topuria.</p>",
+      "<h2>Topuria reconnaissant envers son frère</h2>",
+      "<p>Dans le podcast Fight Disciples, l’ancien champion a déclaré que cette intervention avait été déterminante pour la suite de sa carrière. Il estime que, sans son frère, il n’aurait probablement plus été en mesure de combattre. Malgré la frustration liée à la défaite, il affirme ne nourrir aucune rancœur et se dit reconnaissant envers Aleksandre.</p>",
+      "<h2>Un retour envisagé à partir d’avril</h2>",
+      "<p>Topuria explique qu’il aime toujours pratiquer le MMA et qu’il lui reste beaucoup de choses à accomplir. Il a aussi évoqué une reprise de la compétition à partir d’avril 2027, sans annoncer de date précise pour son retour.</p>",
+      "<h2>Paddy Pimblett évoqué comme possible adversaire</h2>",
+      "<p>Interrogé sur un éventuel prochain adversaire, Topuria a provoqué Paddy Pimblett, dans la continuité d’une rivalité entretenue depuis plus d’un an. Aucun combat entre les deux n’est confirmé. Topuria n’a pas précisé l’identité de son prochain adversaire.</p>"
+    ],
+    "sources": [
+      {
+        "name": "RMC Sport",
+        "title": "\"Sans lui, je n’aurais probablement plus jamais pu combattre\": Ilia Topuria remercie son frère d'avoir...",
+        "url": "https://rmcsport.bfmtv.com/sports-de-combat/mma/ufc/sans-lui-je-n-aurais-probablement-plus-jamais-pu-combattre-ilia-topuria-remercie-son-frere-d-avoir-arrete-son-combat-a-l-ufc-maison-blanche_AV-202611060700.html",
+        "publishedAt": "2026-11-06T16:58:51.000Z",
+        "retrievedAt": "2026-11-06T22:10:17.399Z",
+        "bodyHash": "a8e80074e8fc0af886b4cf435e018e5e647acb7996b7776f8b7c68b3a801f018"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-06T22:05:55.156Z"
+    },
+    "image": "/assets/editorial/ilia-topuria-remercie-son-frere-apres-l-arret-de-son-combat-contre-justin-gaethje.webp",
+    "publicationBatchId": "2026-11-06T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://rmcsport.bfmtv.com/sports-de-combat/mma/ufc/sans-lui-je-n-aurais-probablement-plus-jamais-pu-combattre-ilia-topuria-remercie-son-frere-d-avoir-arrete-son-combat-a-l-ufc-maison-blanche_AV-202611060700.html",
+        "sha256": "1a8728b4311df38e4d2eb94196ef00fd81e1c127d13ef83518114e5a75a2d48a"
+      },
+      {
+        "sourceUrl": "https://rmcsport.bfmtv.com/sports-de-combat/mma/ufc/sans-lui-je-n-aurais-probablement-plus-jamais-pu-combattre-ilia-topuria-remercie-son-frere-d-avoir-arrete-son-combat-a-l-ufc-maison-blanche_AV-202611060700.html",
+        "sha256": "f2639076755b74b792f7ab443e9f24ae39083516ff8ec920185c411beb7ee0d3"
+      },
+      {
+        "sourceUrl": "https://rmcsport.bfmtv.com/sports-de-combat/mma/ufc/sans-lui-je-n-aurais-probablement-plus-jamais-pu-combattre-ilia-topuria-remercie-son-frere-d-avoir-arrete-son-combat-a-l-ufc-maison-blanche_AV-202611060700.html",
+        "sha256": "950539994c5c0844a1dc1e2c5609fc637f62dbea83a50c4abe9768ae2cd1e11c"
+      }
+    ]
+  },
+  {
+    "newsKey": "kamaru-usman-pronostic-ciryl-gane-josh-hokit",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/11/pronostic-ciryl-gane-josh-hokit.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/11/pronostic-ciryl-gane-josh-hokit.jpg",
+      "pageUrl": "https://actumma.com/kamaru-usman-donne-son-pronostic-tranche-sur-le-combat-entre-ciryl-gane-et-josh-hokit-a-lufc-334/194583",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-06T22:09:24.433Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "kamaru-usman-voit-ciryl-gane-battre-josh-hokit",
+    "title": "Kamaru Usman voit Ciryl Gane battre Josh Hokit",
+    "excerpt": "Kamaru Usman prédit une victoire de Ciryl Gane face à Josh Hokit. Dans son podcast, il salue le profil complet du Français.",
+    "category": "actualites",
+    "kicker": "UFC · Pronostic",
+    "date": "2026-11-06",
+    "publishedAt": "2026-11-06T22:10:17.399Z",
+    "verifiedAt": "2026-11-06T22:10:17.399Z",
+    "sourcePublishedAt": "2026-11-06T16:45:54.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Kamaru Usman voit Ciryl Gane s’imposer face à Josh Hokit et juge le Français particulièrement complet pour un poids lourd. L’ancien champion des welters a livré ce pronostic dans Pound 4 Pound, son podcast animé avec Henry Cejudo, selon ActuMMA.</p>",
+      "<h2>Un profil qui impressionne Usman</h2>",
+      "<p>Usman estime que Gane réunit une mobilité et une variété de techniques rarement observées dans la catégorie. Il a aussi souligné que le Français pouvait rester dangereux en soumission. Dans son analyse, il distingue ces qualités de la puissance de Francis Ngannou, qu’il présente comme particulièrement redoutable, et évoque également Cain Velasquez parmi les grands champions.</p>",
+      "<h2>Usman mise sur l’expérience de Gane</h2>",
+      "<p>L’ancien champion considère que l’expérience de Gane et sa manière de combattre actuellement devraient lui permettre de prendre le dessus sur Hokit. Il reconnaît toutefois que l’Américain sait se faire une place et gagner de l’argent, sans que cela change son pronostic.</p>",
+      "<h2>Un avis avant leur affrontement</h2>",
+      "<p>Cette prise de position intervient alors que Gane doit affronter Hokit à l’UFC 334. Usman se montre donc confiant dans les chances du Français, tandis que le texte d’ActuMMA rappelle que Hokit reste invaincu en combats professionnels.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Kamaru Usman donne son pronostic tranché sur le combat entre Ciryl Gane et Josh Hokit à l’UFC 334",
+        "url": "https://actumma.com/kamaru-usman-donne-son-pronostic-tranche-sur-le-combat-entre-ciryl-gane-et-josh-hokit-a-lufc-334/194583",
+        "publishedAt": "2026-11-06T16:45:54.000Z",
+        "retrievedAt": "2026-11-06T22:10:17.399Z",
+        "bodyHash": "7c148df6f772f84b552ee3244814556c9e4c113439850522fc3f58c42cc3b573"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-06T22:05:55.156Z"
+    },
+    "image": "/assets/editorial/kamaru-usman-voit-ciryl-gane-battre-josh-hokit.webp",
+    "publicationBatchId": "2026-11-06T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/kamaru-usman-donne-son-pronostic-tranche-sur-le-combat-entre-ciryl-gane-et-josh-hokit-a-lufc-334/194583",
+        "sha256": "6a1d5dc2df4af298b2e81d252c5c372103aba7434c6adbf1cad22556c6043c0b"
+      },
+      {
+        "sourceUrl": "https://actumma.com/kamaru-usman-donne-son-pronostic-tranche-sur-le-combat-entre-ciryl-gane-et-josh-hokit-a-lufc-334/194583",
+        "sha256": "3a94296fb0b3ef60c8a1224dacc6eaaa28a988823ce93abf14e6a8f53c54b9a1"
+      }
+    ]
+  },
+  {
+    "newsKey": "islam-makhachev-decision-retraite-avis-mere",
+    "imageAlt": "Islam Makhachev",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2290664037.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C78.534031413613&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2290664037.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C78.534031413613&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/519724/islam-makhachev-reveals-mother-may-have-final-say-in-retirement-call-i-will-obey-her-word",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "Islam Makhachev",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-06T22:09:48.941Z",
+      "originalWidth": 1200,
+      "originalHeight": 623
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "islam-makhachev-pourrait-laisser-sa-mere-peser-dans-sa-decision-de-retraite",
+    "title": "Islam Makhachev pourrait laisser sa mère peser dans sa décision de retraite",
+    "excerpt": "Islam Makhachev affirme que sa mère pourrait peser dans sa décision de poursuivre sa carrière, sans fixer de calendrier pour la retraite.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-11-06",
+    "publishedAt": "2026-11-06T22:10:17.399Z",
+    "verifiedAt": "2026-11-06T22:10:17.399Z",
+    "sourcePublishedAt": "2026-11-06T16:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Islam Makhachev a laissé entendre que l’avis de sa mère pourrait compter dans sa décision de mettre un terme à sa carrière. Selon MMA Fighting, le combattant s’est exprimé auprès de Red Corner MMA pendant les championnats du monde de sambo, à Tachkent.</p>",
+      "<h2>L’avis de sa mère au cœur de sa réflexion</h2>",
+      "<p>Makhachev a expliqué que sa mère s’était toujours opposée à ses combats et qu’il avait toujours tenu compte de ses paroles. Il a indiqué qu’il entendait bientôt lui obéir, sans annoncer pour autant une retraite immédiate ni donner de date.</p>",
+      "<h2>Aucun nombre de combats fixé</h2>",
+      "<p>Le champion a également reconnu ne pas avoir arrêté de plan précis pour la fin de sa carrière. Il estime approcher de la dernière étape et dit manquer de nouvelles sources de motivation, tout en souhaitant encore affronter les prétendants.</p>",
+      "<h2>La suite dépendra des prochains prétendants</h2>",
+      "<p>Makhachev a ajouté qu’il ne savait pas quand il prendrait sa décision sur son dernier combat. Son prochain adversaire doit être déterminé par le combat pour le titre intérimaire entre Carlos Prates et Michael Morales, prévu en janvier à l’UFC 336.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Islam Makhachev reveals mother may have final say in retirement call: ‘I will obey her word’",
+        "url": "https://mmafighting.com/ufc/519724/islam-makhachev-reveals-mother-may-have-final-say-in-retirement-call-i-will-obey-her-word",
+        "publishedAt": "2026-11-06T16:00:00.000Z",
+        "retrievedAt": "2026-11-06T22:10:17.399Z",
+        "bodyHash": "254475adb14a30853be2c75a3c5c3745a021ef02f35062e72bc488de1e827d1c"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-06T22:05:55.156Z"
+    },
+    "image": "/assets/editorial/islam-makhachev-pourrait-laisser-sa-mere-peser-dans-sa-decision-de-retraite.webp",
+    "publicationBatchId": "2026-11-06T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/519724/islam-makhachev-reveals-mother-may-have-final-say-in-retirement-call-i-will-obey-her-word",
+        "sha256": "bd756d2c04687340c5e1761f0f996ef441a931c80d4198a57d2cb9f8362e19c0"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/519724/islam-makhachev-reveals-mother-may-have-final-say-in-retirement-call-i-will-obey-her-word",
+        "sha256": "fe630704b6efefd5c1e747dbb1592058c3058f27a5148f213a530fbdf14d1792"
+      }
+    ]
+  },
+  {
     "newsKey": "carlos-prates-reagit-au-changement-de-programme-de-makhachev",
     "imageAlt": "UFC Fight Night : Della Maddalena contre Prates",
     "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
