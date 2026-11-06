@@ -100,6 +100,7 @@ const breadcrumbSchema = {
 
       <section class="club-schedule-section" id="planning" aria-labelledby="schedule-title" data-reveal>
         <span class="kicker">Préparer sa séance</span><h2 class="display" id="schedule-title">{club.scheduleLabel}</h2><p class="club-text-body">{club.scheduleNote}</p>
+        {club.equipment && <p class="club-text-body">{club.equipment.text} <a href={club.equipment.url} target="_blank" rel="noopener noreferrer">{club.equipment.label} ↗</a></p>}
         {linksOut && <div class="schedule-cta"><p>Choisissez le cours et la salle avant de vous déplacer.</p><a href={club.scheduleUrl} target="_blank" rel="noopener noreferrer" class="btn btn--primary">Ouvrir le planning du club ↗</a></div>}
       </section>
 

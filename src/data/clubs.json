@@ -68,7 +68,13 @@
         "q": "Peut-on débuter le MMA dans cette salle ?",
         "a": "Le club annonce des cours Asso MMA pour débutants et confirmés, ainsi que du MMA jeunes 10–16 ans. Contactez le club pour choisir le créneau de votre premier cours."
       }
-    ]
+    ],
+    "equipment": {
+      "text": "Pour les cours Asso MMA et le MMA jeunes, les gants à doigts libres se choisissent après le premier cours, selon ce que le coach fait travailler : Boutique de Boxe en présente vingt modèles, de 16,90 € à 79,90 € au relevé du 6 novembre 2026, avec la grille de tailles de chaque marque.",
+      "label": "Gants MMA sur boutique-de-boxe.com",
+      "url": "https://www.boutique-de-boxe.com/gants-mma/"
+    },
+    "updatedAt": "2026-11-06"
   },
   {
     "slug": "boxing-center-ramonville",
@@ -152,7 +158,13 @@
       "lon": 1.484,
       "source": "OpenStreetMap Nominatim",
       "matched": "33, Rue des Ormes, Ramonville-Saint-Agne, Haute-Garonne, Occitanie, France métropolitaine"
-    }
+    },
+    "equipment": {
+      "text": "Pour l’équipement du cours — protège-dents, short sans poche, rashguard, puis gants à doigts libres selon ce que la séance travaille — le rayon matériel MMA de Boutique de Boxe, boutique en ligne toulousaine, compte 498 modèles dès 5,90 € au relevé du 6 novembre 2026.",
+      "label": "Matériel MMA sur boutique-de-boxe.com",
+      "url": "https://www.boutique-de-boxe.com/materiel-mma/"
+    },
+    "updatedAt": "2026-11-06"
   },
   {
     "slug": "cage-fight-toulouse",
