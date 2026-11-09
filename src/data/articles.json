@@ -1,5 +1,457 @@
 [
   {
+    "newsKey": "roberto-soldic-daniel-rodriguez-ufc-dallas",
+    "imageAlt": "UFC 332 : Soldić contre Williams",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2298458476.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2298458476.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/520233/roberto-soldic-vs-daniel-rodriguez-targeted-for-ufc-dallas",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "UFC 332: Soldić v Williams",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-09T21:06:14.026Z",
+      "originalWidth": 1200,
+      "originalHeight": 623
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "roberto-soldic-affrontera-daniel-rodriguez-a-l-ufc-dallas",
+    "title": "Roberto Soldić affrontera Daniel Rodriguez à l’UFC Dallas",
+    "excerpt": "Roberto Soldić affrontera Daniel Rodriguez à l’UFC Dallas, le 16 janvier 2027, selon MMA Fighting, qui a confirmé l’affiche.",
+    "category": "actualites",
+    "kicker": "UFC · Affiche confirmée",
+    "date": "2026-11-09",
+    "publishedAt": "2026-11-09T21:10:40.760Z",
+    "verifiedAt": "2026-11-09T21:10:40.760Z",
+    "sourcePublishedAt": "2026-11-09T20:30:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Selon MMA Fighting, Roberto Soldić affrontera Daniel Rodriguez à l’UFC Dallas. Le média a confirmé lundi cette affiche, d’abord signalée par The Starch. L’événement, premier rendez-vous de l’UFC en 2027, est prévu le 16 janvier.</p>",
+      "<h2>Soldić vise le top 15</h2>",
+      "<p>Cette rencontre offrira à Soldić une occasion d’entrer dans le top 15 des poids mi-moyens de l’organisation. Ancien champion de deux catégories au KSW, le Croate a rejoint l’UFC cette année et y a fait ses débuts le mois dernier.</p>",
+      "<h2>Une première victoire à l’UFC</h2>",
+      "<p>Lors de cette première sortie, Soldić a remporté une décision unanime face à Khaos Williams à l’UFC 332. Il avait auparavant détenu les titres des poids mi-moyens et moyens du KSW, avant de passer plusieurs années au ONE Championship.</p>",
+      "<h2>Rodriguez revient après un revers</h2>",
+      "<p>Présent dans la division des poids mi-moyens de l’UFC depuis 2020 et classé 14e, Rodriguez a connu une année 2026 perturbée. Après avoir passé une bonne partie de l’année dans une prison de Tijuana, il a été libéré en avril. De retour en août, il a été mis KO en 30 secondes par Uros Medic à l’UFC Serbia, mettant fin à sa série de trois victoires.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Roberto Soldic vs. Daniel Rodriguez targeted for UFC Dallas",
+        "url": "https://mmafighting.com/ufc/520233/roberto-soldic-vs-daniel-rodriguez-targeted-for-ufc-dallas",
+        "publishedAt": "2026-11-09T20:30:00.000Z",
+        "retrievedAt": "2026-11-09T21:10:40.760Z",
+        "bodyHash": "1155e7288b9681e2a2d1b6cb02bdca87888292727b8a90bba2233715efd88898"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-09T21:05:34.814Z"
+    },
+    "image": "/assets/editorial/roberto-soldic-affrontera-daniel-rodriguez-a-l-ufc-dallas.webp",
+    "publicationBatchId": "2026-11-09T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/520233/roberto-soldic-vs-daniel-rodriguez-targeted-for-ufc-dallas",
+        "sha256": "81ff195137b1bf0b8d66edd730a9efcdb62ea0aaba3872621585321669c80d07"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/520233/roberto-soldic-vs-daniel-rodriguez-targeted-for-ufc-dallas",
+        "sha256": "86c655a4aced50ae1940ba093e3216727fc11d3525a4144ecfaa17bb967bdcae"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/520233/roberto-soldic-vs-daniel-rodriguez-targeted-for-ufc-dallas",
+        "sha256": "1db210d307ff3be718253b14283e6e4896651b60771c378e069a25d3cee3ab1e"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/520233/roberto-soldic-vs-daniel-rodriguez-targeted-for-ufc-dallas",
+        "sha256": "6079e9d40e8f65f98924d481d1a32473df791a655100fa3e1b8c9350ce3b2e2b"
+      }
+    ]
+  },
+  {
+    "newsKey": "stipe-miocic-soutient-legitimite-ciryl-gane-champion-ufc",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/11/ciryl-gane-champion-ufc.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/11/ciryl-gane-champion-ufc.jpg",
+      "pageUrl": "https://actumma.com/ciryl-gane-champion-de-lufc-stipe-miocic-prend-position-et-revient-sur-un-episode-controverse/194681",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-09T21:07:27.934Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "stipe-miocic-estime-que-ciryl-gane-merite-sa-ceinture-ufc",
+    "title": "Stipe Miocic estime que Ciryl Gane mérite sa ceinture UFC",
+    "excerpt": "Stipe Miocic estime que Ciryl Gane mérite son statut de champion UFC et juge accidentel le geste qui a interrompu son combat contre Tom Aspinall.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-11-09",
+    "publishedAt": "2026-11-09T21:10:40.760Z",
+    "verifiedAt": "2026-11-09T21:10:40.760Z",
+    "sourcePublishedAt": "2026-11-09T17:12:37.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Stipe Miocic prend position en faveur de Ciryl Gane : l’ancien champion des poids lourds estime que le Français mérite sa ceinture de l’UFC. Dans une interview accordée à Casino.org, dont ActuMMA rapporte les propos, Miocic juge que Gane était le prétendant appelé à obtenir le titre après la blessure de Tom Aspinall.</p>",
+      "<h2>Une ceinture obtenue après le retrait d’Aspinall</h2>",
+      "<p>Le combat entre Gane et Aspinall s’était achevé sur un no contest à l’UFC 321, après un doigt dans l’œil reçu par le Britannique. Une revanche était prévue, mais la blessure d’Aspinall l’a contraint à laisser sa ceinture vacante. Gane a alors été désigné champion incontesté, sans avoir remporté le titre dans l’Octogone, une situation qui alimente les critiques sur la légitimité de son statut.</p>",
+      "<h2>Miocic juge l’incident accidentel</h2>",
+      "<p>Miocic considère que Gane était le mieux placé pour devenir champion et soutient qu’il n’avait aucune raison de provoquer volontairement l’arrêt du combat. Selon lui, le geste était accidentel et le Français contrôlait le combat. Il affirme également que Gane mérite pleinement la ceinture et le décrit comme un combattant solide.</p>",
+      "<h2>Une défense attendue contre Josh Hokit</h2>",
+      "<p>Gane doit défendre son titre contre Josh Hokit le 14 novembre, à l’UFC 334, à New York. Cette échéance offrira au Français l’occasion de combattre pour conserver la ceinture, tandis que les interrogations sur les circonstances de son accession au titre restent au cœur des débats.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Ciryl Gane champion de l’UFC : Stipe Miocic prend position et revient sur un épisode controversé",
+        "url": "https://actumma.com/ciryl-gane-champion-de-lufc-stipe-miocic-prend-position-et-revient-sur-un-episode-controverse/194681",
+        "publishedAt": "2026-11-09T17:12:37.000Z",
+        "retrievedAt": "2026-11-09T21:10:40.760Z",
+        "bodyHash": "97b0354eaadd1b5417b9825ef2f7c7bde63bf32c7908f53a119dcb7cda5b9f42"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-09T21:05:34.814Z"
+    },
+    "image": "/assets/editorial/stipe-miocic-estime-que-ciryl-gane-merite-sa-ceinture-ufc.webp",
+    "publicationBatchId": "2026-11-09T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/ciryl-gane-champion-de-lufc-stipe-miocic-prend-position-et-revient-sur-un-episode-controverse/194681",
+        "sha256": "1c0ee47fda9f96ef0e998ebdee0348a3eadffc43520569305de60b767e6b1c1c"
+      },
+      {
+        "sourceUrl": "https://actumma.com/ciryl-gane-champion-de-lufc-stipe-miocic-prend-position-et-revient-sur-un-episode-controverse/194681",
+        "sha256": "2fce1d6a53cdeb7acce7322377b0b314920eabf0a529c5abcadc2ed133b3256b"
+      },
+      {
+        "sourceUrl": "https://actumma.com/ciryl-gane-champion-de-lufc-stipe-miocic-prend-position-et-revient-sur-un-episode-controverse/194681",
+        "sha256": "f45b94b4677d1f66fbb28a8e050e767bd027af3d89a021fb7a32f515f6673ac8"
+      }
+    ]
+  },
+  {
+    "newsKey": "shavkat-rakhmonov-retour-2027",
+    "imageAlt": "Shavkat Rakhmonov",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2188814865.jpg?quality=90&strip=all&crop=10.6328125%2C4.954064187142%2C89.3671875%2C70.188041857328&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2188814865.jpg?quality=90&strip=all&crop=10.6328125%2C4.954064187142%2C89.3671875%2C70.188041857328&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/520119/shavkat-rakhmonov-teases-2027-return",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "Shavkat Rakhmonov",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-09T21:07:46.395Z",
+      "originalWidth": 1200,
+      "originalHeight": 629
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "shavkat-rakhmonov-laisse-entrevoir-un-retour-en-2027",
+    "title": "Shavkat Rakhmonov laisse entrevoir un retour en 2027",
+    "excerpt": "Shavkat Rakhmonov a publié un message évoquant un retour en 2027, sans confirmer de combat ni préciser son état de santé.",
+    "category": "actualites",
+    "kicker": "UFC · Retour évoqué",
+    "date": "2026-11-09",
+    "publishedAt": "2026-11-09T21:10:40.760Z",
+    "verifiedAt": "2026-11-09T21:10:40.760Z",
+    "sourcePublishedAt": "2026-11-09T16:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Shavkat Rakhmonov a laissé entrevoir un retour à la compétition en 2027. MMA Fighting rapporte que le poids mi-moyen a publié une image sur ses Stories Instagram, accompagnée d’un message évoquant son retour l’an prochain. Cette publication ne confirme toutefois ni combat programmé ni date de reprise.</p>",
+      "<h2>Un message après des rumeurs sur sa santé</h2>",
+      "<p>Rakhmonov semble répondre à des rumeurs diffusées sur les réseaux sociaux pendant le week-end. Des informations non confirmées évoquaient une nouvelle aggravation de ses problèmes au genou et une absence prolongée. Son message ne donne pas de précisions sur son état de santé et ne permet donc pas de confirmer ces informations.</p>",
+      "<h2>Une absence depuis décembre 2024</h2>",
+      "<p>Le combattant n’a plus disputé de combat depuis l’UFC 310, en décembre 2024. Il y avait battu Ian Machado Garry, appelé en remplacement du champion des poids mi-moyens Belal Muhammad, blessé. Cette victoire semblait lui ouvrir la voie à un combat contre Muhammad, mais les blessures ont ensuite éloigné Rakhmonov de la compétition.</p>",
+      "<h2>La ceinture a changé de mains</h2>",
+      "<p>Depuis, Muhammad a perdu le titre face à Jack Della Maddalena, qui l’a ensuite cédé à Islam Makhachev. Le message de Rakhmonov intervient donc après une longue période sans combattre, mais ne précise pas les prochaines étapes de son retour.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Shavkat Rakhmonov teases 2027 return",
+        "url": "https://mmafighting.com/ufc/520119/shavkat-rakhmonov-teases-2027-return",
+        "publishedAt": "2026-11-09T16:00:00.000Z",
+        "retrievedAt": "2026-11-09T21:10:40.760Z",
+        "bodyHash": "ae4f6f1430ad4165111a038a732c9bd026d70cc32988368435a90ef803fd9ba3"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-09T21:05:34.814Z"
+    },
+    "image": "/assets/editorial/shavkat-rakhmonov-laisse-entrevoir-un-retour-en-2027.webp",
+    "publicationBatchId": "2026-11-09T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/520119/shavkat-rakhmonov-teases-2027-return",
+        "sha256": "3da6950cc88e830d4d1c73660659d8ce2932132f7ee8c0eae55444aebb50d3c4"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/520119/shavkat-rakhmonov-teases-2027-return",
+        "sha256": "333855dcc6a41fe50bea6bc1e8124e78118d5d0e1ee93efe3f7450f8fca8da19"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/520119/shavkat-rakhmonov-teases-2027-return",
+        "sha256": "a82a17c41801351abef6c34f5ee15272790b769e32070bbf7a0a7ca4c1c07aca"
+      }
+    ]
+  },
+  {
+    "newsKey": "johnny-walker-remplacant-gane-hokit-ufc-334",
+    "imageAlt": "Photographie publiée par La Sueur avec son article source.",
+    "imageCaption": "Photographie publiée par La Sueur avec son article. Crédit : La Sueur.",
+    "imageCredit": "La Sueur",
+    "imageSource": {
+      "url": "https://lasueur.com/wp-content/uploads/2026/10/josh-hokit-briser-ciryl-gane.jpg",
+      "ogImageUrl": "https://lasueur.com/wp-content/uploads/2026/10/josh-hokit-briser-ciryl-gane.jpg",
+      "pageUrl": "https://lasueur.com/gane-vs-hokit-nouvelle-star-division-jouer-remplacants-9-11-2026",
+      "publisher": "La Sueur",
+      "credit": "La Sueur",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-09T21:08:59.237Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "johnny-walker-se-tient-pret-a-remplacer-un-combattant-pour-gane-hokit",
+    "title": "Johnny Walker se tient prêt à remplacer un combattant pour Gane-Hokit",
+    "excerpt": "Johnny Walker se dit prêt à remplacer un combattant pour l’affiche entre Ciryl Gane et Josh Hokit, si un forfait survient.",
+    "category": "actualites",
+    "kicker": "UFC · Remplaçant potentiel",
+    "date": "2026-11-09",
+    "publishedAt": "2026-11-09T21:10:40.760Z",
+    "verifiedAt": "2026-11-09T21:10:40.760Z",
+    "sourcePublishedAt": "2026-11-09T08:56:58.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Johnny Walker se tient prêt à intervenir en cas de forfait pour le combat entre Ciryl Gane et Josh Hokit à l’UFC 334. Le poids lourd brésilien s’est positionné comme remplaçant possible, alors que la semaine du rendez-vous approche. Il ne s’agit toutefois pas d’un remplacement confirmé.</p>",
+      "<h2>Walker se propose comme solution de secours</h2>",
+      "<p>Walker a expliqué qu’il accepterait d’être appelé si l’un des combattants devait se retirer ou se blesser. Dans des propos rapportés par La Sueur, il indique être disponible pour combattre dès la semaine suivante, y compris pour le titre. Il précise ne pas avoir été réellement blessé, même si son visage est encore gonflé.</p>",
+      "<h2>Une montée chez les poids lourds remarquée</h2>",
+      "<p>Le Brésilien a récemment choisi de passer chez les poids lourds après avoir alterné les résultats chez les mi-lourds. Selon La Sueur, ce changement de catégorie s’est accompagné de deux performances marquantes. Lors du dernier UFC Fight Night, Walker a notamment finalisé Waldo Cortes Acosta, puis s’est manifesté dans la course au titre.</p>",
+      "<h2>Aucun forfait annoncé</h2>",
+      "<p>À ce stade, l’article ne fait état d’aucun problème physique pour Ciryl Gane ou Josh Hokit. La disponibilité de Walker reste donc une proposition conditionnelle, dans l’éventualité où un combattant manquerait le rendez-vous. Aucun changement à l’affiche n’est annoncé.</p>"
+    ],
+    "sources": [
+      {
+        "name": "La Sueur",
+        "title": "Gane vs Hokit : une nouvelle star de la division pourrait jouer les remplaçants",
+        "url": "https://lasueur.com/gane-vs-hokit-nouvelle-star-division-jouer-remplacants-9-11-2026",
+        "publishedAt": "2026-11-09T08:56:58.000Z",
+        "retrievedAt": "2026-11-09T21:10:40.760Z",
+        "bodyHash": "da2469caf0812b90b6ab7ac9d6e83a7539737e34b9174dfb739c91704703f7b9"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-09T21:05:34.814Z"
+    },
+    "image": "/assets/editorial/johnny-walker-se-tient-pret-a-remplacer-un-combattant-pour-gane-hokit.webp",
+    "publicationBatchId": "2026-11-09T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://lasueur.com/gane-vs-hokit-nouvelle-star-division-jouer-remplacants-9-11-2026",
+        "sha256": "cfb91a3813aee1038b3f7135f148e1d5ec3f7cdcab379e7b1a1246b69597b921"
+      },
+      {
+        "sourceUrl": "https://lasueur.com/gane-vs-hokit-nouvelle-star-division-jouer-remplacants-9-11-2026",
+        "sha256": "91f9b149b9a6ea1966477535afc0fd5ef40bd56b25015509481022c878869697"
+      },
+      {
+        "sourceUrl": "https://lasueur.com/gane-vs-hokit-nouvelle-star-division-jouer-remplacants-9-11-2026",
+        "sha256": "d1db582017c42a105d856626f5163a765e65f1a9c52a4b108302275f6fe1e38f"
+      }
+    ]
+  },
+  {
+    "newsKey": "damian-pinas-baisangur-susurkaev-ufc-335",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/11/ufc-335-prospect-invaincu-choc.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/11/ufc-335-prospect-invaincu-choc.jpg",
+      "pageUrl": "https://actumma.com/ufc-335-oliveira-vs-lopes-deux-pepites-invaincues-dans-loctogone-vont-regler-leurs-comptes-a-las-vegas/194663",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-09T21:09:23.234Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "damian-pinas-et-baisangur-susurkaev-devraient-s-affronter-a-l-ufc-335",
+    "title": "Damian Pinas et Baisangur Susurkaev devraient s’affronter à l’UFC 335",
+    "excerpt": "ActuMMA, citant Vestnik MMA, rapporte que Damian Pinas et Baisangur Susurkaev devraient s’affronter à l’UFC 335, le 12 décembre.",
+    "category": "actualites",
+    "kicker": "UFC · Combat attendu",
+    "date": "2026-11-09",
+    "publishedAt": "2026-11-09T21:10:40.760Z",
+    "verifiedAt": "2026-11-09T21:10:40.760Z",
+    "sourcePublishedAt": "2026-11-09T08:07:26.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Damian Pinas et Baisangur Susurkaev pourraient se retrouver dans l’octogone à l’UFC 335. ActuMMA rapporte cette information en citant Vestnik MMA. Les deux middleweights se provoquent depuis plusieurs mois et affichent chacun trois victoires en autant de combats dans l’organisation.</p>",
+      "<h2>Une affiche attendue à l’UFC 335</h2>",
+      "<p>L’événement se déroulera le 12 décembre à la T-Mobile Arena de Las Vegas. Charles Oliveira et Diego Lopes y sont annoncés en main event pour la ceinture BMF. L’éventuelle opposition entre Pinas et Susurkaev viendrait compléter une carte qui continue de se remplir.</p>",
+      "<h2>Pinas reste sur trois succès à l’UFC</h2>",
+      "<p>Âgé de 24 ans, Damian Pinas compte 11 victoires pour une défaite chez les professionnels. Passé par les Dana White’s Contender Series en 2025, il a remporté ses trois combats à l’UFC par K.-O. ou TKO dès le premier round. Son dernier combat mentionné dans l’article s’est conclu par un K.-O. d’Andrey Pulyaev en octobre.</p>",
+      "<h2>Susurkaev a lui aussi trois victoires</h2>",
+      "<p>Baisangur Susurkaev, âgé de 25 ans, présente un bilan professionnel de 12 victoires sans défaite. Il a obtenu son contrat via les Contender Series en 2025, puis a signé trois succès par finition à l’UFC. Le texte cite notamment sa soumission de Djorden Santos au troisième round, en mai dernier.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "UFC 335 – Oliveira vs Lopes : deux pépites invaincues dans l’octogone vont régler leurs comptes à Las Vegas",
+        "url": "https://actumma.com/ufc-335-oliveira-vs-lopes-deux-pepites-invaincues-dans-loctogone-vont-regler-leurs-comptes-a-las-vegas/194663",
+        "publishedAt": "2026-11-09T08:07:26.000Z",
+        "retrievedAt": "2026-11-09T21:10:40.760Z",
+        "bodyHash": "7529d4b31d2ec2d725c9dbb4acaa4192a33eabeefc65a34bd7ea40ab41f11200"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-09T21:05:34.814Z"
+    },
+    "image": "/assets/editorial/damian-pinas-et-baisangur-susurkaev-devraient-s-affronter-a-l-ufc-335.webp",
+    "publicationBatchId": "2026-11-09T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/ufc-335-oliveira-vs-lopes-deux-pepites-invaincues-dans-loctogone-vont-regler-leurs-comptes-a-las-vegas/194663",
+        "sha256": "b9106b7244db45cf4a18d2be64fb5131e549e3416c64ab43f2bb41896438120d"
+      },
+      {
+        "sourceUrl": "https://actumma.com/ufc-335-oliveira-vs-lopes-deux-pepites-invaincues-dans-loctogone-vont-regler-leurs-comptes-a-las-vegas/194663",
+        "sha256": "e7c7399e5ecb23abfc345a66829ef48e9df85c4190737814c1ecba875e63028f"
+      },
+      {
+        "sourceUrl": "https://actumma.com/ufc-335-oliveira-vs-lopes-deux-pepites-invaincues-dans-loctogone-vont-regler-leurs-comptes-a-las-vegas/194663",
+        "sha256": "9b27f9f5c3da1eb02905fb8aadb45058af4726bda7b7457b0501e84456dc8d37"
+      },
+      {
+        "sourceUrl": "https://actumma.com/ufc-335-oliveira-vs-lopes-deux-pepites-invaincues-dans-loctogone-vont-regler-leurs-comptes-a-las-vegas/194663",
+        "sha256": "0a7b50acf574ff4ec0b61701d69b10a89719e595d31228f70e022d7265c865ed"
+      }
+    ]
+  },
+  {
+    "newsKey": "ciryl-gane-trash-talk-josh-hokit",
+    "imageAlt": "Photographie publiée par RMC Sport avec son article source.",
+    "imageCaption": "Photographie publiée par RMC Sport avec son article. Crédit : RMC Sport.",
+    "imageCredit": "RMC Sport",
+    "imageSource": {
+      "url": "https://io-fsly-bfmtv.cdn.nextradiotv.com/OL62EvdnQTz59Kc7RX3Ne7SspVU=/0x61:1536x925/images/Josh-Hokit-avec-un-micro-a-l-UFC-en-juin-2026-2365271.jpg",
+      "ogImageUrl": "https://io-fsly-bfmtv.cdn.nextradiotv.com/OL62EvdnQTz59Kc7RX3Ne7SspVU=/0x61:1536x925/images/Josh-Hokit-avec-un-micro-a-l-UFC-en-juin-2026-2365271.jpg",
+      "pageUrl": "https://rmcsport.bfmtv.com/sports-de-combat/mma/ufc/ufc-334-insultes-provocations-et-attaques-personnelles-ciryl-gane-peut-il-etre-perturbe-par-le-trash-talk-de-l-infernal-josh-hokit_AN-202611090001.html",
+      "publisher": "RMC Sport",
+      "credit": "RMC Sport",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-09T21:10:13.822Z",
+      "originalWidth": 1536,
+      "originalHeight": 864
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "ciryl-gane-estime-pouvoir-resister-au-trash-talk-de-josh-hokit",
+    "title": "Ciryl Gane estime pouvoir résister au trash-talk de Josh Hokit",
+    "excerpt": "Ciryl Gane estime que le trash-talk de Josh Hokit ne devrait pas le déstabiliser, avant leur combat pour la ceinture des poids lourds.",
+    "category": "actualites",
+    "kicker": "UFC · Analyse",
+    "date": "2026-11-09",
+    "publishedAt": "2026-11-09T21:10:40.760Z",
+    "verifiedAt": "2026-11-09T21:10:40.760Z",
+    "sourcePublishedAt": "2026-11-09T08:05:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Ciryl Gane ne pense pas que les provocations de Josh Hokit puissent le déstabiliser avant leur combat pour la ceinture des poids lourds de l’UFC, prévu le 14 novembre à New York. Dans un article publié par RMC Sport, le Français explique qu’il travaille avec son coach mental pour rester imperméable aux attaques personnelles.</p>",
+      "<h2>Les provocations de Josh Hokit</h2>",
+      "<p>Hokit a multiplié les provocations envers Gane, notamment sur les réseaux sociaux, où il l’a traité de tricheur et s’est moqué de lui. Le Californien avait aussi promis de faire de la conférence de presse d’avant-combat un moment à son avantage. RMC Sport rapporte que le trash-talk vise notamment à perturber l’adversaire.</p>",
+      "<h2>Des avis partagés sur l’effet du trash-talk</h2>",
+      "<p>L’ancien combattant et consultant Mickael Lebout estime auprès de RMC Sport que ces attaques peuvent coûter de l’énergie et pousser un athlète à s’emporter trop tôt. Cyrille Diabaté, ancien combattant de l’UFC, juge pour sa part que Gane n’a pas le tempérament à s’énerver et que les provocations pourraient glisser sur lui.</p>",
+      "<h2>Gane dit se sentir préparé</h2>",
+      "<p>Le Français reconnaît que Hokit peut utiliser ses provocations pour divertir, mais aussi pour déstabiliser certains combattants. Il assure toutefois ne pas se sentir particulièrement vulnérable à cette stratégie. Lebout considère également que l’expérience et la préparation mentale de Gane pourraient l’aider à ne pas se laisser entraîner dans le jeu de son adversaire.</p>"
+    ],
+    "sources": [
+      {
+        "name": "RMC Sport",
+        "title": "UFC 334: insultes, provocations et attaques personnelles... Ciryl Gane peut-il être déstabilisé par le...",
+        "url": "https://rmcsport.bfmtv.com/sports-de-combat/mma/ufc/ufc-334-insultes-provocations-et-attaques-personnelles-ciryl-gane-peut-il-etre-perturbe-par-le-trash-talk-de-l-infernal-josh-hokit_AN-202611090001.html",
+        "publishedAt": "2026-11-09T08:05:00.000Z",
+        "retrievedAt": "2026-11-09T21:10:40.760Z",
+        "bodyHash": "d4f34e6b3ebdfe015f3b29391522997cdc38e67de1bbb096897f7fdf5b56d5a1"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-09T21:05:34.814Z"
+    },
+    "image": "/assets/editorial/ciryl-gane-estime-pouvoir-resister-au-trash-talk-de-josh-hokit.webp",
+    "publicationBatchId": "2026-11-09T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://rmcsport.bfmtv.com/sports-de-combat/mma/ufc/ufc-334-insultes-provocations-et-attaques-personnelles-ciryl-gane-peut-il-etre-perturbe-par-le-trash-talk-de-l-infernal-josh-hokit_AN-202611090001.html",
+        "sha256": "522bcfd7f454dc8fa5d1f3749c50bc16aa6387431123d8f6ecdd153979e43188"
+      },
+      {
+        "sourceUrl": "https://rmcsport.bfmtv.com/sports-de-combat/mma/ufc/ufc-334-insultes-provocations-et-attaques-personnelles-ciryl-gane-peut-il-etre-perturbe-par-le-trash-talk-de-l-infernal-josh-hokit_AN-202611090001.html",
+        "sha256": "b6354db938d2532978a296ecd19957c9ca20bd5f7b03f6a2661ad01e69426fc3"
+      },
+      {
+        "sourceUrl": "https://rmcsport.bfmtv.com/sports-de-combat/mma/ufc/ufc-334-insultes-provocations-et-attaques-personnelles-ciryl-gane-peut-il-etre-perturbe-par-le-trash-talk-de-l-infernal-josh-hokit_AN-202611090001.html",
+        "sha256": "cee037d073050e5a8726f06843e6452e0fb83e9ac297f5de65f0b6ff05589e2d"
+      }
+    ]
+  },
+  {
     "newsKey": "carlos-prates-echeance-juin-islam-makhachev",
     "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
     "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
