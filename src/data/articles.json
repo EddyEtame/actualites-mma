@@ -1,5 +1,449 @@
 [
   {
+    "newsKey": "amanda-nunes-cris-cyborg-adversaire-plus-difficile",
+    "imageAlt": "Conférence de presse saisonnière de l’événement UFC It’s On.",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/01/gettyimages-2250234715.jpg?quality=90&strip=all&crop=0%2C4.6963094769361%2C100%2C78.528354117913&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/01/gettyimages-2250234715.jpg?quality=90&strip=all&crop=0%2C4.6963094769361%2C100%2C78.528354117913&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/520574/amanda-nunes-reveals-her-toughest-opponent-and-its-not-kayla-harrison",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "UFC It’s On Seasonal Press Conference",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-12T22:31:40.232Z",
+      "originalWidth": 1200,
+      "originalHeight": 624
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "amanda-nunes-designe-cris-cyborg-comme-son-adversaire-la-plus-difficile",
+    "title": "Amanda Nunes désigne Cris Cyborg comme son adversaire la plus difficile",
+    "excerpt": "Amanda Nunes estime que Cris Cyborg a été l’adversaire la plus difficile de sa carrière, devant Kayla Harrison, qu’elle doit affronter à l’UFC 334.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-11-12",
+    "publishedAt": "2026-11-12T22:35:07.175Z",
+    "verifiedAt": "2026-11-12T22:35:07.175Z",
+    "sourcePublishedAt": "2026-11-12T21:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">À l’approche de son combat contre Kayla Harrison à l’UFC 334, Amanda Nunes a désigné Cris Cyborg comme l’adversaire la plus difficile qu’elle ait affrontée. Lors de la journée médias de l’événement, elle a expliqué à MMA Fighting que Harrison ne représentait pas, selon elle, le plus grand défi de sa carrière.</p>",
+      "<h2>Pourquoi Cris Cyborg l’a marquée</h2>",
+      "<p>Nunes a mis en avant le gabarit et la puissance de Cyborg, qu’elle considérait capable de la mettre KO. Elle a également rappelé que la Brésilienne n’avait encore jamais perdu au moment de leur affrontement.</p>",
+      "<h2>Une victoire en 51 secondes</h2>",
+      "<p>Pour défier Cyborg pour le titre poids plume de l’UFC, Nunes était montée de catégorie. Elle avait remporté le combat en 51 secondes et était devenue championne dans deux divisions. Elle a ensuite défendu ses deux titres avant de prendre sa retraite.</p>",
+      "<h2>Nunes écarte toute animosité envers Harrison</h2>",
+      "<p>La Brésilienne a aussi assuré à MMA Fighting qu’elle n’éprouvait aucune haine envers Harrison, malgré leur passé d’entraînement dans le même gymnase avec des entraîneurs communs. Elle présente leur rencontre comme un défi sportif et souligne son importance pour le MMA féminin.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Amanda Nunes reveals her toughest opponent and it’s not Kayla Harrison",
+        "url": "https://mmafighting.com/ufc/520574/amanda-nunes-reveals-her-toughest-opponent-and-its-not-kayla-harrison",
+        "publishedAt": "2026-11-12T21:00:00.000Z",
+        "retrievedAt": "2026-11-12T22:35:07.175Z",
+        "bodyHash": "22441744e4331ee4424fd90ce15be83c1c6ab9ad54af47f90b96294ea8a36c2b"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-12T22:30:34.611Z"
+    },
+    "image": "/assets/editorial/amanda-nunes-designe-cris-cyborg-comme-son-adversaire-la-plus-difficile.webp",
+    "publicationBatchId": "2026-11-12T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/520574/amanda-nunes-reveals-her-toughest-opponent-and-its-not-kayla-harrison",
+        "sha256": "846816582b9fd0331eb214461e756b066b096eb4e086d5bd1c91bdd2b6b535fa"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/520574/amanda-nunes-reveals-her-toughest-opponent-and-its-not-kayla-harrison",
+        "sha256": "782ee6ab60249d73f7f200e3be81cb799555f1bb769d2599af462e8c449fd624"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/520574/amanda-nunes-reveals-her-toughest-opponent-and-its-not-kayla-harrison",
+        "sha256": "d08f6fae963b2a1e07428e2c807f275dcc6d2a2b44f9a2f9fd7567d7267894b7"
+      }
+    ]
+  },
+  {
+    "newsKey": "tommy-mcmillen-hospitalise-apres-avoir-ete-retrouve-inconscient",
+    "imageAlt": "Photographie publiée par La Sueur avec son article source.",
+    "imageCaption": "Photographie publiée par La Sueur avec son article. Crédit : La Sueur.",
+    "imageCredit": "La Sueur",
+    "imageSource": {
+      "url": "https://lasueur.com/wp-content/uploads/2026/10/Sean-OMalley-Tommy-McMillen.jpg",
+      "ogImageUrl": "https://lasueur.com/wp-content/uploads/2026/10/Sean-OMalley-Tommy-McMillen.jpg",
+      "pageUrl": "https://lasueur.com/tommy-mcmillen-la-pepite-ufc-invaincu-hospitalise-durgence-12-11-2026",
+      "publisher": "La Sueur",
+      "credit": "La Sueur",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-12T22:32:02.122Z",
+      "originalWidth": 1920,
+      "originalHeight": 1080
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "tommy-mcmillen-hospitalise-apres-avoir-ete-retrouve-inconscient",
+    "title": "Tommy McMillen hospitalisé après avoir été retrouvé inconscient",
+    "excerpt": "Retrouvé inconscient dans une boîte de nuit en Arizona, Tommy McMillen a été hospitalisé. Son entraîneur affirme qu’il va bien.",
+    "category": "actualites",
+    "kicker": "MMA · Nouvelles médicales",
+    "date": "2026-11-12",
+    "publishedAt": "2026-11-12T22:35:07.175Z",
+    "verifiedAt": "2026-11-12T22:35:07.175Z",
+    "sourcePublishedAt": "2026-11-12T20:29:23.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Tommy McMillen a été retrouvé inconscient dimanche soir dans les toilettes du Cake, une boîte de nuit de Scottsdale, en Arizona. Le combattant américain de 28 ans a été transporté à l’hôpital. L’information a été révélée jeudi par TMZ Sports, qui cite un porte-parole de la police locale.</p>",
+      "<h2>Les circonstances restent incertaines</h2>",
+      "<p>Selon le récit rapporté par La Sueur, les agents auraient découvert une substance blanche poudreuse près de McMillen et lui auraient administré du Narcan avant son transfert. Une suspicion de surdose est évoquée, mais la nature de la substance et la cause de sa perte de connaissance ne sont pas confirmées. Son état était décrit comme stable à son admission, sans complication apparente mettant sa vie en danger.</p>",
+      "<h2>Tim Welch donne des nouvelles</h2>",
+      "<p>La Sueur rapporte que son entraîneur, Tim Welch, a réagi sur Instagram après la publication de l’information. Il a indiqué que McMillen allait bien et s’était entraîné la veille. Cette déclaration rassurante ne précise toutefois pas les circonstances de l’hospitalisation.</p>",
+      "<h2>Aucun retour annoncé</h2>",
+      "<p>Sur le plan sportif, McMillen reste sur trois victoires en trois apparitions à l’UFC. En septembre, il a battu Marwan Rahiki par décision unanime à Noche UFC. Aucune date de retour dans l’octogone n’a été annoncée.</p>"
+    ],
+    "sources": [
+      {
+        "name": "La Sueur",
+        "title": "Tommy McMillen, la pépite UFC invaincue, hospitalisé d’urgence",
+        "url": "https://lasueur.com/tommy-mcmillen-la-pepite-ufc-invaincu-hospitalise-durgence-12-11-2026",
+        "publishedAt": "2026-11-12T20:29:23.000Z",
+        "retrievedAt": "2026-11-12T22:35:07.175Z",
+        "bodyHash": "d52ea98c418f2309cba57afabe938031923d8d66cb5769171858a9c462dc99f1"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-12T22:30:34.611Z"
+    },
+    "image": "/assets/editorial/tommy-mcmillen-hospitalise-apres-avoir-ete-retrouve-inconscient.webp",
+    "publicationBatchId": "2026-11-12T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://lasueur.com/tommy-mcmillen-la-pepite-ufc-invaincu-hospitalise-durgence-12-11-2026",
+        "sha256": "82db5c37f918ffd70c4b83c2edbfd1c067087596e02cd6dff1fa664e52827b22"
+      },
+      {
+        "sourceUrl": "https://lasueur.com/tommy-mcmillen-la-pepite-ufc-invaincu-hospitalise-durgence-12-11-2026",
+        "sha256": "5f6c65a8a6eb1c2a0604f36f6e00e08afeb1824df5a347ba01225db59d762ed6"
+      },
+      {
+        "sourceUrl": "https://lasueur.com/tommy-mcmillen-la-pepite-ufc-invaincu-hospitalise-durgence-12-11-2026",
+        "sha256": "15a03db2a8d0f3c4efefaef2c294945c2c967c368fa0e2ada94ac9b9b2b296f0"
+      }
+    ]
+  },
+  {
+    "newsKey": "abu-dhabi-interpellations-rixe-dvalishvili-nurmagomedov",
+    "imageAlt": "Photographie publiée par RMC Sport avec son article source.",
+    "imageCaption": "Photographie publiée par RMC Sport avec son article. Crédit : RMC Sport.",
+    "imageCredit": "RMC Sport",
+    "imageSource": {
+      "url": "https://io-fsly-bfmtv.cdn.nextradiotv.com/qTUesUqnchXSIC8H6NDUgwaA3lk=/0x28:1024x604/images/L-ancien-champion-des-poids-coqs-de-l-UFC-Merab-Dvalishvili-accuse-Usman-Nurmagomedov-et-son-clan-de-l-avoir-violemment-agresse-en-marge-du-RAF-a-Abu-Dhabi-2382362.jpg",
+      "ogImageUrl": "https://io-fsly-bfmtv.cdn.nextradiotv.com/qTUesUqnchXSIC8H6NDUgwaA3lk=/0x28:1024x604/images/L-ancien-champion-des-poids-coqs-de-l-UFC-Merab-Dvalishvili-accuse-Usman-Nurmagomedov-et-son-clan-de-l-avoir-violemment-agresse-en-marge-du-RAF-a-Abu-Dhabi-2382362.jpg",
+      "pageUrl": "https://rmcsport.bfmtv.com/sports-de-combat/mma/ufc/mma-dix-personnes-arretees-par-la-police-d-abu-dhabi-apres-la-bagarre-entre-merab-dvalishvili-et-usman-nurmagomedov_AV-202611120834.html",
+      "publisher": "RMC Sport",
+      "credit": "RMC Sport",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-12T22:32:45.220Z",
+      "originalWidth": 1024,
+      "originalHeight": 576
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "la-police-d-abou-dhabi-interpelle-dix-personnes-apres-la-rixe-impliquant-dvalishvili-et-nurmagomedov",
+    "title": "La police d’Abou Dhabi interpelle dix personnes après la rixe impliquant Dvalishvili et Nurmagomedov",
+    "excerpt": "La police d’Abou Dhabi a arrêté dix personnes après la rixe impliquant Merab Dvalishvili et Usman Nurmagomedov dans un hôtel.",
+    "category": "actualites",
+    "kicker": "Abou Dhabi · Interpellations",
+    "date": "2026-11-12",
+    "publishedAt": "2026-11-12T22:35:07.175Z",
+    "verifiedAt": "2026-11-12T22:35:07.175Z",
+    "sourcePublishedAt": "2026-11-12T18:36:36.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Les autorités d’Abou Dhabi ont annoncé l’interpellation de dix personnes après une bagarre survenue à l’entrée d’un hôtel, à laquelle Merab Dvalishvili et Usman Nurmagomedov ont été mêlés avec plusieurs proches. Les deux combattants avaient été conduits au poste mercredi ; les arrestations ont été annoncées jeudi.</p>",
+      "<h2>Dix personnes arrêtées</h2>",
+      "<p>Dans une déclaration de la police d’Abou Dhabi citée par Reuters et relayée par RMC Sport, huit personnes sont présentées comme impliquées dans la rixe, sur fond de différends antérieurs. Deux autres individus, accusés d’avoir filmé la scène, ont également été arrêtés. La police indique avoir pris à leur encontre les mesures légales nécessaires.</p>",
+      "<h2>La présence au RAF en question</h2>",
+      "<p>L’incident pourrait aussi peser sur leur participation au Real American Freestyle (RAF), l’organisation de lutte libre à laquelle ils s’étaient rendus aux Émirats arabes unis. Selon RMC Sport, Chad Bronstein, cofondateur du RAF, a indiqué qu’Usman Nurmagomedov ne serait pas présent à l’événement de samedi.</p>",
+      "<h2>L’espoir de voir Dvalishvili participer</h2>",
+      "<p>Chad Bronstein a toutefois exprimé l’espoir que Merab Dvalishvili puisse participer, en soulignant qu’il avait fait le déplacement et qu’il était un compétiteur exceptionnel pour l’organisation. Sa présence reste donc incertaine, tandis que le document ne précise pas quelles éventuelles sanctions pourraient être prises.</p>"
+    ],
+    "sources": [
+      {
+        "name": "RMC Sport",
+        "title": "MMA: dix personnes arrêtées par la police d'Abu Dhabi après la bagarre entre Merab Dvalishvili et Usman...",
+        "url": "https://rmcsport.bfmtv.com/sports-de-combat/mma/ufc/mma-dix-personnes-arretees-par-la-police-d-abu-dhabi-apres-la-bagarre-entre-merab-dvalishvili-et-usman-nurmagomedov_AV-202611120834.html",
+        "publishedAt": "2026-11-12T18:36:36.000Z",
+        "retrievedAt": "2026-11-12T22:35:07.175Z",
+        "bodyHash": "f0ab81b95239863a0bbabd1b858f34615023bc9d20b4ac66f6f8acc1fd578fc8"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-12T22:30:34.611Z"
+    },
+    "image": "/assets/editorial/la-police-d-abou-dhabi-interpelle-dix-personnes-apres-la-rixe-impliquant-dvalishvili-et-nurmagomedov.webp",
+    "publicationBatchId": "2026-11-12T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://rmcsport.bfmtv.com/sports-de-combat/mma/ufc/mma-dix-personnes-arretees-par-la-police-d-abu-dhabi-apres-la-bagarre-entre-merab-dvalishvili-et-usman-nurmagomedov_AV-202611120834.html",
+        "sha256": "599f354dfedfc0b6162a599e54b81b4d8c5c969b36a45c796555982f5dada5d6"
+      },
+      {
+        "sourceUrl": "https://rmcsport.bfmtv.com/sports-de-combat/mma/ufc/mma-dix-personnes-arretees-par-la-police-d-abu-dhabi-apres-la-bagarre-entre-merab-dvalishvili-et-usman-nurmagomedov_AV-202611120834.html",
+        "sha256": "47ac199da2b9c10d5b14e8726e31feb2610f902e451a0c931a00025c0aba165c"
+      },
+      {
+        "sourceUrl": "https://rmcsport.bfmtv.com/sports-de-combat/mma/ufc/mma-dix-personnes-arretees-par-la-police-d-abu-dhabi-apres-la-bagarre-entre-merab-dvalishvili-et-usman-nurmagomedov_AV-202611120834.html",
+        "sha256": "2b397e9df5ef4cdecbf69e70b21ba89f6abc3c191e7ecdf72631ba04f08a959e"
+      }
+    ]
+  },
+  {
+    "newsKey": "merab-dvalishvili-incident-georgie-avant-altercation-usman-nurmagomedov",
+    "imageAlt": "Photographie publiée par RMC Sport avec son article source.",
+    "imageCaption": "Photographie publiée par RMC Sport avec son article. Crédit : RMC Sport.",
+    "imageCredit": "RMC Sport",
+    "imageSource": {
+      "url": "https://io-fsly-bfmtv.cdn.nextradiotv.com/qTUesUqnchXSIC8H6NDUgwaA3lk=/0x28:1024x604/images/L-ancien-champion-des-poids-coqs-de-l-UFC-Merab-Dvalishvili-accuse-Usman-Nurmagomedov-et-son-clan-de-l-avoir-violemment-agresse-en-marge-du-RAF-a-Abu-Dhabi-2382362.jpg",
+      "ogImageUrl": "https://io-fsly-bfmtv.cdn.nextradiotv.com/qTUesUqnchXSIC8H6NDUgwaA3lk=/0x28:1024x604/images/L-ancien-champion-des-poids-coqs-de-l-UFC-Merab-Dvalishvili-accuse-Usman-Nurmagomedov-et-son-clan-de-l-avoir-violemment-agresse-en-marge-du-RAF-a-Abu-Dhabi-2382362.jpg",
+      "pageUrl": "https://rmcsport.bfmtv.com/sports-de-combat/mma/ufc/mma-une-attaque-premeditee-depuis-plusieurs-mois-les-coulisses-de-l-agression-de-merab-dvalishvili-par-usman-nurmagomedov_AV-202611120782.html",
+      "publisher": "RMC Sport",
+      "credit": "RMC Sport",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-12T22:33:13.585Z",
+      "originalWidth": 1024,
+      "originalHeight": 576
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "merab-dvalishvili-revient-sur-un-incident-anterieur-a-l-altercation-avec-usman-nurmagomedov",
+    "title": "Merab Dvalishvili revient sur un incident antérieur à l’altercation avec Usman Nurmagomedov",
+    "excerpt": "Merab Dvalishvili a raconté à Ariel Helwani une confrontation en Géorgie, plusieurs mois avant l’altercation avec Usman Nurmagomedov à Abou Dhabi.",
+    "category": "actualites",
+    "kicker": "MMA · Contexte",
+    "date": "2026-11-12",
+    "publishedAt": "2026-11-12T22:35:07.175Z",
+    "verifiedAt": "2026-11-12T22:35:07.175Z",
+    "sourcePublishedAt": "2026-11-12T17:43:04.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Merab Dvalishvili a raconté à Ariel Helwani un incident survenu en Géorgie, plusieurs mois avant son altercation avec Usman Nurmagomedov dans un hôtel d’Abou Dhabi. RMC Sport rapporte ce témoignage, qui apporte un éclairage sur les tensions entre les deux camps.</p>",
+      "<h2>Une confrontation en Géorgie</h2>",
+      "<p>Selon Dvalishvili, l’épisode s’est déroulé en juillet, lors d’un événement de lutte organisé par le RAF. Ahmed Gadzhimagomedov, lutteur daghestanais et ami d’Umar et d’Usman Nurmagomedov, l’aurait interpellé au sujet de son refus d’envisager une revanche contre Umar. Dvalishvili affirme que l’homme l’a saisi par le cou et lui a crié dessus en russe.</p>",
+      "<h2>Un différend autour d’Umar Nurmagomedov</h2>",
+      "<p>Dvalishvili a expliqué à Ariel Helwani qu’il avait d’abord mis quelques secondes à comprendre que l’échange concernait Umar. Il a défendu l’idée que leur différend ne regardait qu’eux deux et a aussi évoqué des propos qu’il jugeait irrespectueux sur les réseaux sociaux, attribués à l’entourage de son ancien adversaire.</p>",
+      "<h2>Une situation rapidement apaisée</h2>",
+      "<p>Après l’échange, Dvalishvili aurait poussé Gadzhimagomedov au niveau du cou. RMC Sport précise que la situation s’était rapidement calmée, contrairement à l’altercation survenue ensuite à l’hôtel. Le média présente cet épisode comme un antécédent, sans l’établir comme la cause principale de la bagarre.</p>"
+    ],
+    "sources": [
+      {
+        "name": "RMC Sport",
+        "title": "MMA: une attaque préméditée depuis plusieurs mois? Les coulisses de l'agression de Merab Dvalishvili par...",
+        "url": "https://rmcsport.bfmtv.com/sports-de-combat/mma/ufc/mma-une-attaque-premeditee-depuis-plusieurs-mois-les-coulisses-de-l-agression-de-merab-dvalishvili-par-usman-nurmagomedov_AV-202611120782.html",
+        "publishedAt": "2026-11-12T17:43:04.000Z",
+        "retrievedAt": "2026-11-12T22:35:07.175Z",
+        "bodyHash": "c871d47e840bc5ccb4f32dac16ed9abb4a573fcee3db45d887abe28369bdb07d"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-12T22:30:34.611Z"
+    },
+    "image": "/assets/editorial/merab-dvalishvili-revient-sur-un-incident-anterieur-a-l-altercation-avec-usman-nurmagomedov.webp",
+    "publicationBatchId": "2026-11-12T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://rmcsport.bfmtv.com/sports-de-combat/mma/ufc/mma-une-attaque-premeditee-depuis-plusieurs-mois-les-coulisses-de-l-agression-de-merab-dvalishvili-par-usman-nurmagomedov_AV-202611120782.html",
+        "sha256": "258ad3f865c8356f4c8d205e52525601bee6e5b77b65ed7ea8edd3038d8fd130"
+      },
+      {
+        "sourceUrl": "https://rmcsport.bfmtv.com/sports-de-combat/mma/ufc/mma-une-attaque-premeditee-depuis-plusieurs-mois-les-coulisses-de-l-agression-de-merab-dvalishvili-par-usman-nurmagomedov_AV-202611120782.html",
+        "sha256": "a853f4d4173b8a878e4407b1d8b467f0ca24f2a19e45c8f777a613aa17398b7a"
+      },
+      {
+        "sourceUrl": "https://rmcsport.bfmtv.com/sports-de-combat/mma/ufc/mma-une-attaque-premeditee-depuis-plusieurs-mois-les-coulisses-de-l-agression-de-merab-dvalishvili-par-usman-nurmagomedov_AV-202611120782.html",
+        "sha256": "75a61894b2321f48bea6d0fb7af58b65b184d6baf0217f5eebba6d4263fc6fb5"
+      }
+    ]
+  },
+  {
+    "newsKey": "ciryl-gane-physique-avant-ufc-334",
+    "imageAlt": "Photographie publiée par La Sueur avec son article source.",
+    "imageCaption": "Photographie publiée par La Sueur avec son article. Crédit : La Sueur.",
+    "imageCredit": "La Sueur",
+    "imageSource": {
+      "url": "https://lasueur.com/wp-content/uploads/2026/11/Ciryl-Gane-UFC-334.jpg",
+      "ogImageUrl": "https://lasueur.com/wp-content/uploads/2026/11/Ciryl-Gane-UFC-334.jpg",
+      "pageUrl": "https://lasueur.com/ciryl-gane-affiche-un-physique-impressionnant-avant-lufc-334-12-11-2026",
+      "publisher": "La Sueur",
+      "credit": "La Sueur",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-12T22:33:46.375Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "ciryl-gane-semble-plus-muscle-avant-l-ufc-334",
+    "title": "Ciryl Gane semble plus musclé avant l’UFC 334",
+    "excerpt": "Ciryl Gane semble plus musclé qu’à l’accoutumée avant d’affronter Josh Hokit lors de la première défense de sa ceinture, annoncée à l’UFC 334.",
+    "category": "actualites",
+    "kicker": "UFC · Forme physique",
+    "date": "2026-11-12",
+    "publishedAt": "2026-11-12T22:35:07.175Z",
+    "verifiedAt": "2026-11-12T22:35:07.175Z",
+    "sourcePublishedAt": "2026-11-12T17:06:15.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">La Sueur rapporte que Ciryl Gane semble encore plus musclé qu’à l’accoutumée avant d’affronter Josh Hokit. Le média rappelle aussi que le Français affiche un physique impressionnant depuis ses débuts à l’UFC et le décrit comme l’un des combattants les plus athlétiques de sa division.</p>",
+      "<h2>Une première défense de ceinture</h2>",
+      "<p>Le combat contre Hokit doit être la première défense de ceinture de Gane. Les deux hommes sont annoncés en tête d’affiche de l’UFC 334, événement qui aura lieu au Madison Square Garden, à New York. Gane est aujourd’hui champion incontesté des poids lourds après avoir été double champion intérimaire.</p>",
+      "<h2>Hokit a tenté de provoquer Gane</h2>",
+      "<p>Avant l’événement, Hokit a tenté de provoquer le champion. La Sueur le présente comme un combattant connu pour son trash-talk. Gane, de son côté, ne rentre pas dans le jeu de son adversaire et semble plutôt s’amuser de la situation.</p>",
+      "<h2>L’expérience et l’allonge de Gane</h2>",
+      "<p>Le média souligne également que Gane possède davantage d’expérience et une meilleure allonge que son challenger américain.</p>"
+    ],
+    "sources": [
+      {
+        "name": "La Sueur",
+        "title": "Ciryl Gane affiche un physique impressionnant avant l’UFC 334",
+        "url": "https://lasueur.com/ciryl-gane-affiche-un-physique-impressionnant-avant-lufc-334-12-11-2026",
+        "publishedAt": "2026-11-12T17:06:15.000Z",
+        "retrievedAt": "2026-11-12T22:35:07.175Z",
+        "bodyHash": "31f02790755fbaa5f3f48d60604325fea12b7f71d8830eca9cb92ef6b82d26a0"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-12T22:30:34.611Z"
+    },
+    "image": "/assets/editorial/ciryl-gane-semble-plus-muscle-avant-l-ufc-334.webp",
+    "publicationBatchId": "2026-11-12T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://lasueur.com/ciryl-gane-affiche-un-physique-impressionnant-avant-lufc-334-12-11-2026",
+        "sha256": "fc50d9138ac50f0e52a7cc2bb384accebfb3cd8bd1582418c2907e3411cc3b16"
+      },
+      {
+        "sourceUrl": "https://lasueur.com/ciryl-gane-affiche-un-physique-impressionnant-avant-lufc-334-12-11-2026",
+        "sha256": "8f90cc9c875db103cfde41caaaa1d597f76d18794ba0800e76a1d45ca6aa0d7a"
+      },
+      {
+        "sourceUrl": "https://lasueur.com/ciryl-gane-affiche-un-physique-impressionnant-avant-lufc-334-12-11-2026",
+        "sha256": "446436637b6f7c16ec2085c2ec9db996e2351e8e63cb1ae2d7c64308b0d36242"
+      }
+    ]
+  },
+  {
+    "newsKey": "josh-hokit-vise-double-champion-ufc",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/11/josh-hokit-ambition-ufc.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/11/josh-hokit-ambition-ufc.jpg",
+      "pageUrl": "https://actumma.com/josh-hokit-revele-ce-quil-compte-faire-en-cas-de-victoire-a-lufc-334-contre-ciryl-gane/194768",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-12T22:34:50.750Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "josh-hokit-vise-une-deuxieme-ceinture-apres-un-eventuel-sacre-chez-les-poids-lourds",
+    "title": "Josh Hokit vise une deuxième ceinture après un éventuel sacre chez les poids lourds",
+    "excerpt": "Josh Hokit veut conquérir la ceinture des poids lourds face à Ciryl Gane, puis tenter de devenir double champion de l’UFC.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-11-12",
+    "publishedAt": "2026-11-12T22:35:07.175Z",
+    "verifiedAt": "2026-11-12T22:35:07.175Z",
+    "sourcePublishedAt": "2026-11-12T17:00:14.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Josh Hokit a déjà en tête la suite de sa carrière avant son combat pour la ceinture des poids lourds contre Ciryl Gane à l’UFC 334. L’Américain a expliqué qu’il entendait viser un deuxième titre après cette première échéance.</p>",
+      "<h2>Hokit promet d’être un champion actif</h2>",
+      "<p>Lors du media day de l’événement, Hokit a évoqué ce qu’un succès contre le Français représenterait pour lui. Dans des propos rapportés par ActuMMA, il a affirmé vouloir apporter de la stabilité à la division et rester actif s’il devient champion.</p>",
+      "<h2>Un objectif chez les mi-lourds</h2>",
+      "<p>Le prétendant ne compte pas s’arrêter à un éventuel titre chez les poids lourds. Il a indiqué vouloir ensuite tenter de conquérir la ceinture des light heavyweights et viser le statut de double champion. Hokit a aussi précisé avoir quelques noms en tête, tout en ajoutant que les combattants concernés devaient d’abord gagner.</p>",
+      "<h2>Gane d’abord</h2>",
+      "<p>Cette ambition dépend toutefois de l’issue de son affrontement contre Ciryl Gane. Hokit doit d’abord battre le Français pour décrocher la ceinture des poids lourds avant de pouvoir envisager une autre catégorie.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Josh Hokit révèle ce qu’il compte faire en cas de victoire à l’UFC 334 contre Ciryl Gane",
+        "url": "https://actumma.com/josh-hokit-revele-ce-quil-compte-faire-en-cas-de-victoire-a-lufc-334-contre-ciryl-gane/194768",
+        "publishedAt": "2026-11-12T17:00:14.000Z",
+        "retrievedAt": "2026-11-12T22:35:07.175Z",
+        "bodyHash": "6d80a3403211ee1d98e209e3236bb3d1d036d7294bb697eaa0532a0254fac948"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-12T22:30:34.611Z"
+    },
+    "image": "/assets/editorial/josh-hokit-vise-une-deuxieme-ceinture-apres-un-eventuel-sacre-chez-les-poids-lourds.webp",
+    "publicationBatchId": "2026-11-12T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/josh-hokit-revele-ce-quil-compte-faire-en-cas-de-victoire-a-lufc-334-contre-ciryl-gane/194768",
+        "sha256": "ea4bc53741e470b259a93be59a58c123a85beb887090a753e56e362536b4ad51"
+      },
+      {
+        "sourceUrl": "https://actumma.com/josh-hokit-revele-ce-quil-compte-faire-en-cas-de-victoire-a-lufc-334-contre-ciryl-gane/194768",
+        "sha256": "3d540c937624d4d507a7e3d1f38b49a7423eed9e379eae252687b73d57d58d8c"
+      },
+      {
+        "sourceUrl": "https://actumma.com/josh-hokit-revele-ce-quil-compte-faire-en-cas-de-victoire-a-lufc-334-contre-ciryl-gane/194768",
+        "sha256": "654cc74796037c18be986f08a8dac4cbfc761f5148a518d2246046fa9d98cdbe"
+      }
+    ]
+  },
+  {
     "newsKey": "roberto-soldic-daniel-rodriguez-ufc-dallas",
     "imageAlt": "UFC 332 : Soldić contre Williams",
     "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
