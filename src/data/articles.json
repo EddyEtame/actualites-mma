@@ -1,5 +1,449 @@
 [
   {
+    "newsKey": "demetrious-johnson-critique-prestation-ciryl-gane",
+    "imageAlt": "Photographie publiée par La Sueur avec son article source.",
+    "imageCaption": "Photographie publiée par La Sueur avec son article. Crédit : La Sueur.",
+    "imageCredit": "La Sueur",
+    "imageSource": {
+      "url": "https://lasueur.com/wp-content/uploads/2026/11/iPiccy.jpg",
+      "ogImageUrl": "https://lasueur.com/wp-content/uploads/2026/11/iPiccy.jpg",
+      "pageUrl": "https://lasueur.com/demetrious-johnson-severe-avec-ciryl-gane-je-suis-tellement-decu-15-11-2026",
+      "publisher": "La Sueur",
+      "credit": "La Sueur",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-15T19:57:05.494Z",
+      "originalWidth": 1920,
+      "originalHeight": 1080
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "demetrious-johnson-critique-la-prestation-de-ciryl-gane-contre-josh-hokit",
+    "title": "Demetrious Johnson critique la prestation de Ciryl Gane contre Josh Hokit",
+    "excerpt": "Demetrious Johnson a critiqué la prestation de Ciryl Gane contre Josh Hokit, avant d’indiquer qu’il donnerait le combat au Français.",
+    "category": "actualites",
+    "kicker": "MMA · Réaction",
+    "date": "2026-11-15",
+    "publishedAt": "2026-11-15T20:00:16.023Z",
+    "verifiedAt": "2026-11-15T20:00:16.023Z",
+    "sourcePublishedAt": "2026-11-15T18:48:41.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Dans une vidéo de réaction publiée sur YouTube, Demetrious Johnson a vivement critiqué la prestation de Ciryl Gane face à Josh Hokit. La Sueur rapporte que l’Américain a ciblé les déplacements du Français et ses réponses à la pression. Gane venait de conserver sa ceinture après cinq rounds éprouvants.</p>",
+      "<h2>Les choix de Gane critiqués</h2>",
+      "<p>Johnson estime que Gane recule trop et varie insuffisamment ses actions. Il aurait voulu voir le champion davantage utiliser les genoux, les coudes et les coups de pied au corps. Il s’est aussi étonné que le Français n’exploite pas plus son passé en muay-thaï, notamment en lançant des genoux.</p>",
+      "<h2>Une appréciation plus nuancée en fin de combat</h2>",
+      "<p>Son appréciation évolue toutefois à mesure que le combat avance. Johnson relève que Gane commence à placer des genoux et à travailler au corps. Il considère alors que le Français retrouve progressivement son rythme et utilise mieux son gabarit. Malgré ses reproches, Johnson dit qu’il donnerait la victoire à Gane.</p>",
+      "<h2>Johnson évoque aussi les limites de Hokit</h2>",
+      "<p>La Sueur rapporte également que Johnson a critiqué les limites techniques de Hokit, malgré son rythme et sa lutte. Il estime que l’Américain pourrait devenir champion du monde s’il consacrait six mois à un an à améliorer son kickboxing et son travail au clinch.</p>"
+    ],
+    "sources": [
+      {
+        "name": "La Sueur",
+        "title": "Demetrious Johnson sévère avec Ciryl Gane : « Je suis tellement déçu »",
+        "url": "https://lasueur.com/demetrious-johnson-severe-avec-ciryl-gane-je-suis-tellement-decu-15-11-2026",
+        "publishedAt": "2026-11-15T18:48:41.000Z",
+        "retrievedAt": "2026-11-15T20:00:16.023Z",
+        "bodyHash": "9696a7a0ddc3b824a7b9fd8354a6a54cf01f17e4275ce035de2e2a00d25d384c"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-15T19:56:52.991Z"
+    },
+    "image": "/assets/editorial/demetrious-johnson-critique-la-prestation-de-ciryl-gane-contre-josh-hokit.webp",
+    "publicationBatchId": "2026-11-15T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://lasueur.com/demetrious-johnson-severe-avec-ciryl-gane-je-suis-tellement-decu-15-11-2026",
+        "sha256": "26bbe93552189e5e28c8f23a2265822e10f683303386bbe62411b0562450824c"
+      },
+      {
+        "sourceUrl": "https://lasueur.com/demetrious-johnson-severe-avec-ciryl-gane-je-suis-tellement-decu-15-11-2026",
+        "sha256": "0ec5765624dd1882e8fec9b3120705ed62df4a947f570c28b72f1386501ba79e"
+      },
+      {
+        "sourceUrl": "https://lasueur.com/demetrious-johnson-severe-avec-ciryl-gane-je-suis-tellement-decu-15-11-2026",
+        "sha256": "6b8b3537325c49044a9d488eb83a83432755ee6ed924175b4e5139c7cf50d9bd"
+      }
+    ]
+  },
+  {
+    "newsKey": "stephen-thompson-fin-carriere-ko-emotion-joe-rogan",
+    "imageAlt": "Stephen « Wonderboy » Thompson et Joe Rogan",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2305158644.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C78.528228263431&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2305158644.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C78.528228263431&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/521580/stephen-wonderboy-thompsons-perfect-ending-to-career-made-joe-rogan-emotional-at-ufc-334-ive-never-seen-that-guy-cry-in-my-life",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "Stephen “Wonderboy” Thompson and Joe Rogan",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-15T19:57:54.851Z",
+      "originalWidth": 1200,
+      "originalHeight": 624
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "stephen-thompson-termine-sa-carriere-par-un-ko-et-emeut-joe-rogan",
+    "title": "Stephen Thompson termine sa carrière par un KO et émeut Joe Rogan",
+    "excerpt": "Stephen Thompson a conclu sa carrière par un KO contre Charles Radtke à l’UFC 334, une issue qui a ému Joe Rogan.",
+    "category": "actualites",
+    "kicker": "UFC · Fin de carrière",
+    "date": "2026-11-15",
+    "publishedAt": "2026-11-15T20:00:16.023Z",
+    "verifiedAt": "2026-11-15T20:00:16.023Z",
+    "sourcePublishedAt": "2026-11-15T18:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Stephen Thompson a mis fin à sa carrière professionnelle de MMA à l’UFC 334, comme il l’avait annoncé avant le combat, quel qu’en soit le résultat. Le combattant de 43 ans a terminé sur une victoire : il a mis Charles Radtke KO avec un coup de pied retourné à la tête, dans le dernier round de leur affrontement des poids mi-moyens.</p>",
+      "<h2>Une dernière apparition chargée d’émotion</h2>",
+      "<p>Après la diffusion d’une vidéo retraçant sa carrière au Madison Square Garden, Thompson a échangé avec Joe Rogan, qui venait de l’interviewer. Rogan a salué le parcours du combattant et lui a dit qu’il pleurait. Thompson, qui s’était promis de ne pas craquer, lui a alors témoigné son affection. Il a ensuite laissé ses gants au centre de l’octogone.</p>",
+      "<h2>Thompson revient sur la réaction de Rogan</h2>",
+      "<p>Interrogé par MMA Fighting après le combat, Thompson a expliqué combien cette issue le touchait, notamment parce qu’il s’agissait de son combat de retraite. Il a également raconté avoir vu une larme couler sur le visage de Rogan et avoir lui-même été submergé par l’émotion. « Je ne l’avais jamais vu pleurer de ma vie », a-t-il déclaré à MMA Fighting.</p>",
+      "<h2>Un dernier succès en forme de clin d’œil</h2>",
+      "<p>Cette victoire est la première de Thompson depuis 2022. Elle fait aussi écho à ses débuts à l’UFC : en 2012, il avait commencé son parcours dans l’organisation par un KO avec un coup de pied à la tête contre Dan Stittgen.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Stephen ‘Wonderboy’ Thompson’s perfect ending to career made Joe Rogan emotional at UFC 334: ‘I’ve never seen that guy cry in my life’",
+        "url": "https://mmafighting.com/ufc/521580/stephen-wonderboy-thompsons-perfect-ending-to-career-made-joe-rogan-emotional-at-ufc-334-ive-never-seen-that-guy-cry-in-my-life",
+        "publishedAt": "2026-11-15T18:00:00.000Z",
+        "retrievedAt": "2026-11-15T20:00:16.023Z",
+        "bodyHash": "c541e8f3607449c4e12d1af4bebf9dc59013e29c69023bd27a5c7c31dbd0443e"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-15T19:56:52.991Z"
+    },
+    "image": "/assets/editorial/stephen-thompson-termine-sa-carriere-par-un-ko-et-emeut-joe-rogan.webp",
+    "publicationBatchId": "2026-11-15T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/521580/stephen-wonderboy-thompsons-perfect-ending-to-career-made-joe-rogan-emotional-at-ufc-334-ive-never-seen-that-guy-cry-in-my-life",
+        "sha256": "69b44d57c0284e97c625a3f6da587a4348d5e4bb1e576dd5f68616cf62c57e6f"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/521580/stephen-wonderboy-thompsons-perfect-ending-to-career-made-joe-rogan-emotional-at-ufc-334-ive-never-seen-that-guy-cry-in-my-life",
+        "sha256": "0b6b40942d3758fc652f67de07f4cfe18e21cdb0ca4724b8266ca338715b6d4d"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/521580/stephen-wonderboy-thompsons-perfect-ending-to-career-made-joe-rogan-emotional-at-ufc-334-ive-never-seen-that-guy-cry-in-my-life",
+        "sha256": "caea148e7ac41ba43a26e1f41235566c85130d9633597f7042d085704d8b91b1"
+      }
+    ]
+  },
+  {
+    "newsKey": "josh-hokit-reclame-revanche-immediate-ciryl-gane",
+    "imageAlt": "Josh Hokit et Ciryl Gane",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2305179787.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C78.528756779224&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2305179787.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C78.528756779224&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/521591/josh-hokit-releases-statement-following-ufc-334-title-fight-loss-to-ciryl-gane",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "Josh Hokit and Ciryl Gane",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-15T19:58:14.105Z",
+      "originalWidth": 1200,
+      "originalHeight": 624
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "josh-hokit-reclame-une-revanche-immediate-contre-ciryl-gane-apres-sa-defaite-a-l-ufc-334",
+    "title": "Josh Hokit réclame une revanche immédiate contre Ciryl Gane après sa défaite à l’UFC 334",
+    "excerpt": "Josh Hokit réclame une revanche immédiate à Ciryl Gane après sa défaite aux points dans le combat principal de l’UFC 334.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-11-15",
+    "publishedAt": "2026-11-15T20:00:16.023Z",
+    "verifiedAt": "2026-11-15T20:00:16.023Z",
+    "sourcePublishedAt": "2026-11-15T17:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Josh Hokit demande une revanche immédiate à Ciryl Gane après sa défaite dans le combat principal de l’UFC 334. MMA Fighting rapporte que le poids lourd a lancé cet appel dans une publication Instagram, peu après la fin de l’événement.</p>",
+      "<h2>Une défaite aux points face au champion</h2>",
+      "<p>Face au champion des poids lourds, Hokit s’est incliné aux points au Madison Square Garden, à New York. Le média décrit un combat disputé avec acharnement par Hokit et une prestation courageuse, mais le résultat s’est décidé sur les cartes des juges.</p>",
+      "<h2>Hokit affirme que la défaite le rendra plus fort</h2>",
+      "<p>Après le combat, les deux hommes se sont témoigné du respect. Selon MMA Fighting, Hokit a également indiqué que cette défaite le rendrait plus fort, en adoptant un ton plus sobre que dans ses prises de parole habituelles après combat.</p>",
+      "<h2>Une première défaite professionnelle</h2>",
+      "<p>Cette défaite est la première de sa carrière professionnelle, après un début de parcours en MMA marqué par dix victoires consécutives. Sa demande de revanche reste un appel de Hokit : aucun nouveau combat n’est annoncé dans cette information.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Josh Hokit releases statement following UFC 334 title fight loss to Ciryl Gane",
+        "url": "https://mmafighting.com/ufc/521591/josh-hokit-releases-statement-following-ufc-334-title-fight-loss-to-ciryl-gane",
+        "publishedAt": "2026-11-15T17:00:00.000Z",
+        "retrievedAt": "2026-11-15T20:00:16.023Z",
+        "bodyHash": "c4a8f70cc505dfc4bffe919561172270715e55ca8a3f4442fcb357f160f6d48d"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-15T19:56:52.991Z"
+    },
+    "image": "/assets/editorial/josh-hokit-reclame-une-revanche-immediate-contre-ciryl-gane-apres-sa-defaite-a-l-ufc-334.webp",
+    "publicationBatchId": "2026-11-15T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/521591/josh-hokit-releases-statement-following-ufc-334-title-fight-loss-to-ciryl-gane",
+        "sha256": "9fa48c522783f86efdbb2936f5c118734d808d36f003a24314dc965bcb6f9aea"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/521591/josh-hokit-releases-statement-following-ufc-334-title-fight-loss-to-ciryl-gane",
+        "sha256": "37b9e8c5ec347b57bb1d340c89282095811e4993bc866383fdcd9e1936de9fd3"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/521591/josh-hokit-releases-statement-following-ufc-334-title-fight-loss-to-ciryl-gane",
+        "sha256": "71e5bd2c3c63df5f1d826c4f692d0f93b56f06072bfb88bc72ac6b595022bd2e"
+      }
+    ]
+  },
+  {
+    "newsKey": "dana-white-conteste-match-nul-kevin-holland-uros-medic",
+    "imageAlt": "UFC 334 : Medic contre Holland",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2305167432.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2305167432.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/521598/dana-white-blasts-the-majority-draw-in-ufc-334-fight-clearly-kevin-holland-won-the-fight",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "UFC 334: Medic v Holland",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-15T19:58:59.106Z",
+      "originalWidth": 1200,
+      "originalHeight": 623
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "dana-white-conteste-le-match-nul-accorde-a-kevin-holland-a-l-ufc-334",
+    "title": "Dana White conteste le match nul accordé à Kevin Holland à l’UFC 334",
+    "excerpt": "Dana White estime que Kevin Holland aurait dû battre Uros Medic à l’UFC 334, où les juges ont finalement rendu un match nul majoritaire.",
+    "category": "actualites",
+    "kicker": "UFC · Réaction",
+    "date": "2026-11-15",
+    "publishedAt": "2026-11-15T20:00:16.023Z",
+    "verifiedAt": "2026-11-15T20:00:16.023Z",
+    "sourcePublishedAt": "2026-11-15T16:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Kevin Holland repart de l’UFC 334 avec un match nul majoritaire contre Uros Medic, et non une victoire. Medic avait pourtant écopé d’un point de pénalité pour des coups bas répétés. Deux juges ont rendu des cartes à 28-28, entraînant le nul.</p>",
+      "<h2>Dana White conteste le verdict</h2>",
+      "<p>Dans des propos rapportés par MMA Fighting, le PDG de l’UFC a contesté ce verdict et dit avoir été surpris d’apprendre que Holland n’avait pas gagné. Il a estimé que le combattant aurait dû obtenir la victoire.</p>",
+      "<h2>Le point de pénalité en question</h2>",
+      "<p>White a expliqué que, selon ce qu’il avait compris, le point avait été retiré sur la mauvaise carte de score. Il a qualifié la décision d’insensée et déclaré que Holland avait clairement gagné.</p>",
+      "<h2>Un résultat qui reste officiel</h2>",
+      "<p>White a aussi raconté que son fils lui avait écrit pour lui demander comment Holland avait pu perdre. Il a répondu qu’il ignorait que celui-ci n’avait pas gagné. Le résultat reste un match nul majoritaire, et White n’a pas indiqué si l’UFC comptait verser une rémunération supplémentaire à Holland.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Dana White blasts the majority draw in UFC 334 clash: ‘Clearly, Kevin Holland won the fight’",
+        "url": "https://mmafighting.com/ufc/521598/dana-white-blasts-the-majority-draw-in-ufc-334-fight-clearly-kevin-holland-won-the-fight",
+        "publishedAt": "2026-11-15T16:00:00.000Z",
+        "retrievedAt": "2026-11-15T20:00:16.023Z",
+        "bodyHash": "5db8109b235b5e8f4b321bf214454a2f97fa1df7f1c1ef3487613941c2cf1cde"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-15T19:56:52.991Z"
+    },
+    "image": "/assets/editorial/dana-white-conteste-le-match-nul-accorde-a-kevin-holland-a-l-ufc-334.webp",
+    "publicationBatchId": "2026-11-15T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/521598/dana-white-blasts-the-majority-draw-in-ufc-334-fight-clearly-kevin-holland-won-the-fight",
+        "sha256": "8d9762d6bdfb8832c57d2bcaa10cabe66c7984a5850b2d8250b70c65e84063ed"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/521598/dana-white-blasts-the-majority-draw-in-ufc-334-fight-clearly-kevin-holland-won-the-fight",
+        "sha256": "94d42580b31bc578a0f97c0e17070f5363611834a794d230b6c67c5d71fd76fa"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/521598/dana-white-blasts-the-majority-draw-in-ufc-334-fight-clearly-kevin-holland-won-the-fight",
+        "sha256": "ce975691a3b466c472362a3183d842cbdf82afb2563e94975a81595c448f3096"
+      }
+    ]
+  },
+  {
+    "newsKey": "kayla-harrison-ronda-rousey-combat",
+    "imageAlt": "Kayla Harrison",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2305174024.jpg?quality=90&strip=all&crop=0%2C3.5694440107364%2C100%2C78.543585432033&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2305174024.jpg?quality=90&strip=all&crop=0%2C3.5694440107364%2C100%2C78.543585432033&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/521605/kayla-harrison-likes-idea-of-free-money-fight-against-ronda-rousey",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "Kayla Harrison",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-15T19:59:35.969Z",
+      "originalWidth": 1200,
+      "originalHeight": 623
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "kayla-harrison-evoque-un-combat-contre-ronda-rousey",
+    "title": "Kayla Harrison évoque un combat contre Ronda Rousey",
+    "excerpt": "Kayla Harrison a cité Ronda Rousey comme adversaire de rêve, évoquant avec ironie un combat qui pourrait être de l’« argent facile ».",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-11-15",
+    "publishedAt": "2026-11-15T20:00:16.023Z",
+    "verifiedAt": "2026-11-15T20:00:16.023Z",
+    "sourcePublishedAt": "2026-11-15T15:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Après avoir battu Amanda Nunes et défendu pour la première fois sa ceinture des poids coqs à l’UFC 334, Kayla Harrison a évoqué Ronda Rousey parmi les adversaires qu’elle aimerait affronter. Selon MMA Fighting, l’Américaine a cité son ancienne partenaire d’entraînement en judo lorsqu’on lui a demandé de nommer une adversaire de rêve.</p>",
+      "<h2>Une réponse sur le ton de la plaisanterie</h2>",
+      "<p>À la conférence de presse d’après-combat, Harrison a lancé que Rousey pouvait venir la défier. Elle a ajouté qu’un tel affrontement pourrait être amusant et représenter de « l’argent facile », sur le ton de la plaisanterie. Cette remarque ne constitue pas l’annonce d’un combat.</p>",
+      "<h2>Un affrontement qui reste peu probable</h2>",
+      "<p>Rousey est revenue à la compétition en mai, après plus de neuf ans d’absence, pour affronter Gina Carano dans le combat principal du premier événement de MVP MMA. MMA Fighting indique toutefois qu’une rencontre avec Harrison reste peu probable, Rousey semblant satisfaite d’avoir conclu sa carrière par ce combat.</p>",
+      "<h2>Harrison envisage aussi une ceinture des poids plumes</h2>",
+      "<p>Pour la suite, Harrison avait également indiqué préférer une revanche contre Nunes avec la ceinture des poids plumes en jeu plutôt qu’une nouvelle défense chez les poids coqs, après que Dana White s’est montré ouvert à cette possibilité. Elle pense par ailleurs s’être peut-être fracturé le pied avant de soumettre Nunes au quatrième round, ce qui pourrait retarder son prochain combat.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Kayla Harrison likes idea of ‘free money’ fight against Ronda Rousey",
+        "url": "https://mmafighting.com/ufc/521605/kayla-harrison-likes-idea-of-free-money-fight-against-ronda-rousey",
+        "publishedAt": "2026-11-15T15:00:00.000Z",
+        "retrievedAt": "2026-11-15T20:00:16.023Z",
+        "bodyHash": "8ca14c65e28d9e6e4d1136bb6f445a441a038b9e1340f2615bad321e13275d84"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-15T19:56:52.991Z"
+    },
+    "image": "/assets/editorial/kayla-harrison-evoque-un-combat-contre-ronda-rousey.webp",
+    "publicationBatchId": "2026-11-15T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/521605/kayla-harrison-likes-idea-of-free-money-fight-against-ronda-rousey",
+        "sha256": "f8cdaa4990b7ada44f60b01c7a8ed9dbf7090290fd9e4a6e1ee984d8c41b433a"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/521605/kayla-harrison-likes-idea-of-free-money-fight-against-ronda-rousey",
+        "sha256": "6f7c569eb2f33d96644bfba4db45ee8cdf7f9c782431ac02ba37280f61482e68"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/521605/kayla-harrison-likes-idea-of-free-money-fight-against-ronda-rousey",
+        "sha256": "1e4f55423085f1a159c92c9ef2a520705710d5ad5e17d2cd9a565e597bd69999"
+      }
+    ]
+  },
+  {
+    "newsKey": "dana-white-salue-prestation-josh-hokit-face-ciryl-gane",
+    "imageAlt": "UFC 334 : Gane contre Hokit",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2305179356.jpg?quality=90&strip=all&crop=0%2C10.730334160528%2C100%2C78.539331678944&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2305179356.jpg?quality=90&strip=all&crop=0%2C10.730334160528%2C100%2C78.539331678944&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/521595/dana-white-credits-josh-hokit-for-the-perfect-fight-but-he-still-lost-to-ciryl-gane",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "UFC 334: Gane v Hokit",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-15T19:59:56.985Z",
+      "originalWidth": 1200,
+      "originalHeight": 623
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "dana-white-salue-la-prestation-de-josh-hokit-malgre-sa-defaite-face-a-ciryl-gane",
+    "title": "Dana White salue la prestation de Josh Hokit malgré sa défaite face à Ciryl Gane",
+    "excerpt": "Dana White a salué la prestation de Josh Hokit face à Ciryl Gane, malgré sa défaite, estimant que le poids lourd avait adopté la bonne approche.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-11-15",
+    "publishedAt": "2026-11-15T20:00:16.023Z",
+    "verifiedAt": "2026-11-15T20:00:16.023Z",
+    "sourcePublishedAt": "2026-11-15T14:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">MMA Fighting rapporte que Dana White a salué la prestation de Josh Hokit contre Ciryl Gane à l’UFC 334, malgré la défaite du poids lourd. White a reconnu ne pas être le plus grand admirateur de Hokit ou de ses provocations, mais a loué sa manière d’aborder le combat.</p>",
+      "<h2>White estime que Hokit a choisi la bonne approche</h2>",
+      "<p>Selon le patron de l’UFC, Hokit a imposé un affrontement très engagé dès le début, ce qui constituait la meilleure façon de tenter de battre Gane. Le Français a toutefois pris l’ascendant dans les derniers rounds et conservé son titre. White a jugé que Hokit avait livré le combat idéal, sans pour autant l’emporter.</p>",
+      "<h2>White avait Gane vainqueur sur sa carte</h2>",
+      "<p>Les trois juges ont donné la victoire à Gane sur le score de 48-47. White a, lui, attribué quatre rounds au Français. Il a estimé que Gane avait été particulièrement performant dans les quatrième et cinquième reprises, après avoir été mis sous pression par le rythme de Hokit.</p>",
+      "<h2>Hokit a demandé une revanche immédiate</h2>",
+      "<p>White a aussi souligné que Hokit disputait son premier combat principal en cinq rounds et qu’il avait tenu jusqu’au bout. Il a salué son endurance et sa résistance, tout en lui témoignant son respect. Après cette première défaite, Hokit a réclamé une revanche immédiate, mais MMA Fighting indique que cette demande a peu de chances d’aboutir.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Dana White credits Josh Hokit for the ‘perfect fight’ but he still lost to Ciryl Gane",
+        "url": "https://mmafighting.com/ufc/521595/dana-white-credits-josh-hokit-for-the-perfect-fight-but-he-still-lost-to-ciryl-gane",
+        "publishedAt": "2026-11-15T14:00:00.000Z",
+        "retrievedAt": "2026-11-15T20:00:16.023Z",
+        "bodyHash": "6a90e1bd4e2085836cebd6a2fd13ed5f8dc115c2cab4213a2d4daa67ac6d2618"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-15T19:56:52.991Z"
+    },
+    "image": "/assets/editorial/dana-white-salue-la-prestation-de-josh-hokit-malgre-sa-defaite-face-a-ciryl-gane.webp",
+    "publicationBatchId": "2026-11-15T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/521595/dana-white-credits-josh-hokit-for-the-perfect-fight-but-he-still-lost-to-ciryl-gane",
+        "sha256": "a676268dbea7eda352a3b9e4ae2d7506abaf1af2de4128da81e5eb2f06496129"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/521595/dana-white-credits-josh-hokit-for-the-perfect-fight-but-he-still-lost-to-ciryl-gane",
+        "sha256": "6628770bc72a2413c29ddf7a4754bd786be90a066adf1735676c91b0b346ba5a"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/521595/dana-white-credits-josh-hokit-for-the-perfect-fight-but-he-still-lost-to-ciryl-gane",
+        "sha256": "5f8b5afd0b3de7d2cd886e4849517a2cf1ba8b5432208a055a42e2615aaefe54"
+      }
+    ]
+  },
+  {
     "newsKey": "amanda-nunes-cris-cyborg-adversaire-plus-difficile",
     "imageAlt": "Conférence de presse saisonnière de l’événement UFC It’s On.",
     "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
