@@ -1,5 +1,453 @@
 [
   {
+    "newsKey": "sterling-recit-frappe-umar-nurmagomedov-merab-apres-videos",
+    "imageAlt": "Entraînements ouverts de l’UFC Fight Night",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2292137772.jpg?quality=90&strip=all&crop=0%2C1.1492407972016%2C100%2C78.534031413613&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2292137772.jpg?quality=90&strip=all&crop=0%2C1.1492407972016%2C100%2C78.534031413613&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/522236/aljamain-sterling-details-umar-nurmagomedovs-alleged-role-in-merab-dvalishvili-attack",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "UFC Fight Night Open Workouts",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-18T19:05:06.259Z",
+      "originalWidth": 1200,
+      "originalHeight": 624
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "aljamain-sterling-affirme-qu-umar-nurmagomedov-a-frappe-merab-dvalishvili-apres-l-arret-des-videos",
+    "title": "Aljamain Sterling affirme qu’Umar Nurmagomedov a frappé Merab Dvalishvili après l’arrêt des vidéos",
+    "excerpt": "Aljamain Sterling affirme qu’Umar Nurmagomedov a frappé Merab Dvalishvili après l’arrêt des vidéos. Il dénonce aussi l’altercation.",
+    "category": "actualites",
+    "kicker": "MMA · Déclaration",
+    "date": "2026-11-18",
+    "publishedAt": "2026-11-18T19:08:14.612Z",
+    "verifiedAt": "2026-11-18T19:08:14.612Z",
+    "sourcePublishedAt": "2026-11-18T17:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Aljamain Sterling affirme qu’Umar Nurmagomedov a frappé Merab Dvalishvili après que les caméras ont cessé de filmer une altercation à Abou Dhabi. Sterling n’était pas présent. Son récit s’appuie sur des propos tenus à ESPN et rapportés par MMA Fighting.</p>",
+      "<h2>Ce que Sterling dit avoir appris</h2>",
+      "<p>Selon Sterling, Umar se serait approché de Merab après l’arrêt des vidéos, puis l’aurait frappé au visage. Il dit que son approche semblait d’abord viser à apaiser la situation. Sterling affirme également que Saba Lazishvili aurait été maintenu au sol pendant que des personnes lui portaient des coups à la tête.</p>",
+      "<h2>Sterling dit avoir perdu tout respect</h2>",
+      "<p>Le coéquipier de Dvalishvili dit ne plus éprouver de respect pour Umar et Usman Nurmagomedov. Il estime qu’Umar et son entourage auraient dû rester en prison. MMA Fighting rapporte que leurs peines ont ensuite été réduites et qu’ils ont depuis été libérés.</p>",
+      "<h2>La crainte d’une escalade</h2>",
+      "<p>Sterling juge que le conflit est allé trop loin et dit craindre qu’il ne conduise à une issue tragique. Il évoque le risque d’une réaction violente lors d’une confrontation de groupe aux États-Unis. Ces propos constituent son appréciation de l’incident, auquel il dit ne pas avoir assisté.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Aljamain Sterling details Umar Nurmagomedov’s alleged role in Merab Dvalishvili attack",
+        "url": "https://mmafighting.com/ufc/522236/aljamain-sterling-details-umar-nurmagomedovs-alleged-role-in-merab-dvalishvili-attack",
+        "publishedAt": "2026-11-18T17:00:00.000Z",
+        "retrievedAt": "2026-11-18T19:08:14.612Z",
+        "bodyHash": "66e79a3a65d18e337155dbf00263606d69f708fb117b27874aa79e9c113d5209"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-18T19:04:10.485Z"
+    },
+    "image": "/assets/editorial/aljamain-sterling-affirme-qu-umar-nurmagomedov-a-frappe-merab-dvalishvili-apres-l-arret-des-videos.webp",
+    "publicationBatchId": "2026-11-18T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/522236/aljamain-sterling-details-umar-nurmagomedovs-alleged-role-in-merab-dvalishvili-attack",
+        "sha256": "80109ba38a20b7514ba6ea249b4a2c308b477d2c5d7c493821ed3951e6f69271"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/522236/aljamain-sterling-details-umar-nurmagomedovs-alleged-role-in-merab-dvalishvili-attack",
+        "sha256": "17d56a142826835df9b0bbd0a839b9b7b1e9a9202b632baf5c4cd473ba815521"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/522236/aljamain-sterling-details-umar-nurmagomedovs-alleged-role-in-merab-dvalishvili-attack",
+        "sha256": "4a2144986e950a4ec34bddeb31eca26557b8560be6b32be48a1e05a77f4ac5af"
+      }
+    ]
+  },
+  {
+    "newsKey": "baysangur-chamsoudinov-ajustements-revanche-jordan-zebo",
+    "imageAlt": "Photographie publiée par ActuMMA avec son article source.",
+    "imageCaption": "Photographie publiée par ActuMMA avec son article. Crédit : ActuMMA.",
+    "imageCredit": "ActuMMA",
+    "imageSource": {
+      "url": "https://www.actumma.com/wp-content/uploads/2026/11/baki-retour-strategie-zebo-ares-45.jpg",
+      "ogImageUrl": "https://www.actumma.com/wp-content/uploads/2026/11/baki-retour-strategie-zebo-ares-45.jpg",
+      "pageUrl": "https://actumma.com/baki-revele-ce-quil-compte-changer-face-a-jordan-zebo-lors-de-leur-revanche-a-lares-45/195076",
+      "publisher": "ActuMMA",
+      "credit": "ActuMMA",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-18T19:06:03.166Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "baysangur-chamsoudinov-detaille-les-ajustements-prevus-pour-sa-revanche-contre-jordan-zebo",
+    "title": "Baysangur Chamsoudinov détaille les ajustements prévus pour sa revanche contre Jordan Zébo",
+    "excerpt": "À l’approche de sa revanche contre Jordan Zébo, Baysangur Chamsoudinov prévoit de conserver l’essentiel de son plan et d’y apporter quelques ajustements.",
+    "category": "actualites",
+    "kicker": "ARES · Déclaration",
+    "date": "2026-11-18",
+    "publishedAt": "2026-11-18T19:08:14.612Z",
+    "verifiedAt": "2026-11-18T19:08:14.612Z",
+    "sourcePublishedAt": "2026-11-18T16:46:38.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">À quelques jours de retrouver Jordan Zébo à l’ARES 45, Baysangur Chamsoudinov est revenu sur les erreurs de leur premier affrontement et sur le plan qu’il compte suivre pour la revanche. Le Français avait alors subi la première défaite de sa carrière professionnelle, par K.-O. au quatrième round.</p>",
+      "<h2>Un premier combat marqué par une préparation difficile</h2>",
+      "<p>Dans un face-à-face avec Zébo organisé par Canal+, Chamsoudinov a expliqué que son contexte de préparation l’avait conduit à vouloir conclure rapidement. Il a également évoqué le manque de préparation et une diète particulièrement éprouvante. Le combattant reconnaît avoir mal évalué la situation, sans pour autant attribuer sa défaite à ces seuls éléments.</p>",
+      "<h2>Des ajustements plutôt qu’un changement complet</h2>",
+      "<p>Selon ActuMMA, Chamsoudinov estime que quelques modifications auraient pu faire la différence lors du premier duel. Il ne souhaite cependant pas repartir de zéro : à ses yeux, l’essentiel de sa stratégie reste à conserver, car elle comportait aussi des aspects positifs.</p>",
+      "<h2>Une revanche à l’ARES 45</h2>",
+      "<p>Le Français prévoit donc de modifier certains éléments sans bouleverser son approche. Il estime que 90 % de son plan restera similaire pour ce deuxième combat. La revanche contre Zébo est annoncée en main event de l’ARES 45, à l’Adidas Arena de Paris. Chamsoudinov tentera aussi de récupérer sa ceinture des welterweights.</p>"
+    ],
+    "sources": [
+      {
+        "name": "ActuMMA",
+        "title": "Baki révèle ce qu’il compte changer face à Jordan Zébo lors de leur revanche à l’ARES 45",
+        "url": "https://actumma.com/baki-revele-ce-quil-compte-changer-face-a-jordan-zebo-lors-de-leur-revanche-a-lares-45/195076",
+        "publishedAt": "2026-11-18T16:46:38.000Z",
+        "retrievedAt": "2026-11-18T19:08:14.612Z",
+        "bodyHash": "176def319068e8fe24b2c678a661fd4d0f827886eacf67050616c6c22094bf2b"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-18T19:04:10.485Z"
+    },
+    "image": "/assets/editorial/baysangur-chamsoudinov-detaille-les-ajustements-prevus-pour-sa-revanche-contre-jordan-zebo.webp",
+    "publicationBatchId": "2026-11-18T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://actumma.com/baki-revele-ce-quil-compte-changer-face-a-jordan-zebo-lors-de-leur-revanche-a-lares-45/195076",
+        "sha256": "eb1d665ff9b925367c9159df0f6c02d57980ea48ab766b57cc48b6ba6c995862"
+      },
+      {
+        "sourceUrl": "https://actumma.com/baki-revele-ce-quil-compte-changer-face-a-jordan-zebo-lors-de-leur-revanche-a-lares-45/195076",
+        "sha256": "e1403ffb30f8aa1160c40d623fb7fed2c7fd2df6d67c1ec093246fd856f689e3"
+      },
+      {
+        "sourceUrl": "https://actumma.com/baki-revele-ce-quil-compte-changer-face-a-jordan-zebo-lors-de-leur-revanche-a-lares-45/195076",
+        "sha256": "41436e7f0af1a2e8e662c201f63fd00bb17824264033315dc7308f3707f22817"
+      }
+    ]
+  },
+  {
+    "newsKey": "josh-hokit-rejet-professionnalisme",
+    "imageAlt": "UFC 334 : Gane contre Hokit",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2305176601.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C78.545194744304&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2305176601.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C78.545194744304&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/522223/josh-hokit-explains-why-he-flipped-off-bruce-buffer-at-ufc-334-its-gonna-be-fck-you-every-time",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "UFC 334: Gane v Hokit",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-18T19:06:23.714Z",
+      "originalWidth": 1200,
+      "originalHeight": 623
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "josh-hokit-explique-son-doigt-d-honneur-a-bruce-buffer-par-son-rejet-du-professionnalisme",
+    "title": "Josh Hokit explique son doigt d’honneur à Bruce Buffer par son rejet du professionnalisme",
+    "excerpt": "Josh Hokit explique que son doigt d’honneur à Bruce Buffer visait le professionnalisme qu’il estime néfaste pour le MMA. MMA Fighting rapporte ses propos.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-11-18",
+    "publishedAt": "2026-11-18T19:08:14.612Z",
+    "verifiedAt": "2026-11-18T19:08:14.612Z",
+    "sourcePublishedAt": "2026-11-18T16:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Josh Hokit a expliqué le sens du doigt d’honneur adressé à Bruce Buffer lors de son entrée dans la cage à l’UFC 334. Dans une vidéo publiée sur les réseaux sociaux mercredi, il a présenté ce geste comme une contestation de l’évolution du MMA. Le média MMA Fighting rapporte ses déclarations.</p>",
+      "<h2>Un geste dirigé contre le professionnalisme</h2>",
+      "<p>Hokit précise qu’il n’a pas de grief particulier contre Buffer. Il associe plutôt son geste aux critiques visant son activité et sa manière de gagner de l’argent, et dit vouloir rejeter le « professionnalisme ». Le geste a eu lieu à New York, avant le combat principal contre Ciryl Gane, le 16 novembre.</p>",
+      "<h2>Hokit défend une approche plus combative</h2>",
+      "<p>Selon lui, le professionnalisme détourne le sport de ce qui devrait compter dans la cage : avancer, imposer sa volonté et pousser l’adversaire à céder. Il reproche aux combattants de privilégier l’apparence et les points plutôt que l’affrontement. Hokit estime aussi que l’argent conduit à regarder le MMA sous un angle plus professionnel.</p>",
+      "<h2>Une critique après sa défaite contre Gane</h2>",
+      "<p>Hokit a perdu ce combat par décision unanime. Il affirme vouloir freiner cette évolution aussi longtemps qu’il restera dans le sport. Jon Jones a réagi sur les réseaux sociaux en critiquant sa condition physique, après s’être moqué de sa défaite contre Gane.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "Josh Hokit explains why he flipped off Bruce Buffer at UFC 334: ‘It’s gonna be f*ck you every time’",
+        "url": "https://mmafighting.com/ufc/522223/josh-hokit-explains-why-he-flipped-off-bruce-buffer-at-ufc-334-its-gonna-be-fck-you-every-time",
+        "publishedAt": "2026-11-18T16:00:00.000Z",
+        "retrievedAt": "2026-11-18T19:08:14.612Z",
+        "bodyHash": "185964b467b7782dcb3d6ff77a818b629e59b003f9da7568b7c7a12d8675ea5c"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-18T19:04:10.485Z"
+    },
+    "image": "/assets/editorial/josh-hokit-explique-son-doigt-d-honneur-a-bruce-buffer-par-son-rejet-du-professionnalisme.webp",
+    "publicationBatchId": "2026-11-18T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/522223/josh-hokit-explains-why-he-flipped-off-bruce-buffer-at-ufc-334-its-gonna-be-fck-you-every-time",
+        "sha256": "5c95cdfdb08068b481eea4457821390e56f86ba597489812a3a999a57374aa1d"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/522223/josh-hokit-explains-why-he-flipped-off-bruce-buffer-at-ufc-334-its-gonna-be-fck-you-every-time",
+        "sha256": "98eaa25ad88066dd2a11b897074543019dbcaf6d50342a75a29b615df5327e99"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/522223/josh-hokit-explains-why-he-flipped-off-bruce-buffer-at-ufc-334-its-gonna-be-fck-you-every-time",
+        "sha256": "ffeeb0f76d9177838c3679ab2f8393fb96d5fb7a7bc51f57f9ea99f2562885ad"
+      }
+    ]
+  },
+  {
+    "newsKey": "conor-mcgregor-eloges-josh-hokit-attraction-ufc",
+    "imageAlt": "Photographie publiée par La Sueur avec son article source.",
+    "imageCaption": "Photographie publiée par La Sueur avec son article. Crédit : La Sueur.",
+    "imageCredit": "La Sueur",
+    "imageSource": {
+      "url": "https://lasueur.com/wp-content/uploads/2026/07/conor-mcgregor-retour-ufc-derniere-danse.jpeg",
+      "ogImageUrl": "https://lasueur.com/wp-content/uploads/2026/07/conor-mcgregor-retour-ufc-derniere-danse.jpeg",
+      "pageUrl": "https://lasueur.com/conor-mcgregor-voit-en-cette-nouvelle-star-la-plus-grande-attraction-de-lufc-18-11-2026",
+      "publisher": "La Sueur",
+      "credit": "La Sueur",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": null,
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-18T19:06:45.053Z",
+      "originalWidth": 1200,
+      "originalHeight": 675
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "conor-mcgregor-presente-josh-hokit-comme-la-plus-grande-attraction-de-l-ufc-apres-lui",
+    "title": "Conor McGregor présente Josh Hokit comme la plus grande attraction de l’UFC après lui",
+    "excerpt": "Conor McGregor a salué la prestation de Josh Hokit face à Ciryl Gane et l’a présenté comme la principale attraction de l’UFC après lui.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-11-18",
+    "publishedAt": "2026-11-18T19:08:14.612Z",
+    "verifiedAt": "2026-11-18T19:08:14.612Z",
+    "sourcePublishedAt": "2026-11-18T15:29:57.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Conor McGregor a publiquement salué Josh Hokit après sa première défaite professionnelle. Dans un message publié sur X et rapporté par La Sueur, l’ancien double champion de l’UFC estime que le poids lourd est, derrière lui, la plus grande attraction de l’organisation. Il a également félicité l’Américain pour sa prestation.</p>",
+      "<h2>La défaite face à Ciryl Gane</h2>",
+      "<p>Hokit venait de disputer sa première chance au titre contre Ciryl Gane. Le Californien a poussé le champion jusqu’au cinquième round, mais s’est incliné par décision unanime. Gane a conservé sa ceinture des poids lourds, les trois juges rendant une carte de 48-47. Les deux combattants ont toutefois partagé le bonus du combat de la soirée.</p>",
+      "<h2>Une revanche encore à programmer</h2>",
+      "<p>L’éloge de McGregor intervient alors que Hokit réclame une revanche immédiate. Dana White a salué après le combat sa performance et son audace, mais cette revanche reste à programmer.</p>",
+      "<h2>Un lien avec Paradigm Sports</h2>",
+      "<p>Les deux hommes sont représentés par Paradigm Sports, l’agence d’Audie Attar. Hokit a répondu au message de McGregor sur X par trois émojis. De son côté, l’Irlandais a indiqué qu’il ne lui restait qu’un combat à disputer sur son contrat avec l’UFC.</p>"
+    ],
+    "sources": [
+      {
+        "name": "La Sueur",
+        "title": "Conor McGregor voit en cette nouvelle star « la plus grande attraction de l’UFC »",
+        "url": "https://lasueur.com/conor-mcgregor-voit-en-cette-nouvelle-star-la-plus-grande-attraction-de-lufc-18-11-2026",
+        "publishedAt": "2026-11-18T15:29:57.000Z",
+        "retrievedAt": "2026-11-18T19:08:14.612Z",
+        "bodyHash": "366ebfc10377596cdce6bc6d36d56d7cf088042ee42f8264421314a94e276c01"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-18T19:04:10.485Z"
+    },
+    "image": "/assets/editorial/conor-mcgregor-presente-josh-hokit-comme-la-plus-grande-attraction-de-l-ufc-apres-lui.webp",
+    "publicationBatchId": "2026-11-18T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://lasueur.com/conor-mcgregor-voit-en-cette-nouvelle-star-la-plus-grande-attraction-de-lufc-18-11-2026",
+        "sha256": "b7a20f289e2660ff8d24954668a0948557700394d51ec1d3b5a31436248e1452"
+      },
+      {
+        "sourceUrl": "https://lasueur.com/conor-mcgregor-voit-en-cette-nouvelle-star-la-plus-grande-attraction-de-lufc-18-11-2026",
+        "sha256": "5e9101c5fdd2aac4f6fd16313c58272f28483daa2f0e384c2b2b25500173afad"
+      },
+      {
+        "sourceUrl": "https://lasueur.com/conor-mcgregor-voit-en-cette-nouvelle-star-la-plus-grande-attraction-de-lufc-18-11-2026",
+        "sha256": "f37473f51ec4d9d2c5835553d4216558b7f336d7f7420df30faacf7a34f3bb69"
+      },
+      {
+        "sourceUrl": "https://lasueur.com/conor-mcgregor-voit-en-cette-nouvelle-star-la-plus-grande-attraction-de-lufc-18-11-2026",
+        "sha256": "8e5e401cfe3de222f01afab4fdd22be12a2cb0e0f6606ce70f1e34185554f4fc"
+      }
+    ]
+  },
+  {
+    "newsKey": "virna-jandiroba-liberee-ufc",
+    "imageAlt": "Tatiana Suarez contre Virna Jandiroba lors de l’UFC Fight Night.",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2304056727.jpg?quality=90&strip=all&crop=0%2C6.8329233547416%2C100%2C78.534031413613&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2304056727.jpg?quality=90&strip=all&crop=0%2C6.8329233547416%2C100%2C78.534031413613&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/522228/ufc-releases-former-title-contender-virna-jandiroba-i-was-caught-off-guard-by-this-decision",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "UFC Fight Night: Suarez v Jandiroba",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-18T19:07:10.261Z",
+      "originalWidth": 1200,
+      "originalHeight": 623
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "virna-jandiroba-annonce-avoir-ete-liberee-par-l-ufc",
+    "title": "Virna Jandiroba annonce avoir été libérée par l’UFC",
+    "excerpt": "Virna Jandiroba annonce que l’UFC l’a libérée après sa défaite contre Tatiana Suarez. La Brésilienne veut poursuivre sa carrière.",
+    "category": "actualites",
+    "kicker": "UFC · Libération",
+    "date": "2026-11-18",
+    "publishedAt": "2026-11-18T19:08:14.612Z",
+    "verifiedAt": "2026-11-18T19:08:14.612Z",
+    "sourcePublishedAt": "2026-11-18T15:14:22.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Virna Jandiroba a annoncé mercredi sur les réseaux sociaux que l’UFC l’avait libérée, après sa défaite face à Tatiana Suarez à l’UFC Vegas 124. Cette décision met fin à son parcours dans l’organisation, où elle a disputé 14 combats et signé neuf victoires pour cinq défaites.</p>",
+      "<h2>Une décision qui l’a surprise</h2>",
+      "<p>Dans des propos rapportés par MMA Fighting, la Brésilienne explique avoir été prise au dépourvu. Elle reconnaît avoir su que sa place pouvait être instable, mais dit avoir été surprise par le moment choisi, car elle se sentait dans une bonne période de sa carrière. Elle retient aussi les expériences vécues dans l’organisation et le fait d’avoir atteint le sommet de la division et combattu pour la ceinture.</p>",
+      "<h2>Un parcours jusqu’au combat pour le titre</h2>",
+      "<p>Jandiroba avait obtenu une chance pour le titre vacant en 2025, mais s’était inclinée à la décision contre Mackenzie Dern à Abu Dhabi. Elle avait renoué avec la victoire face à Tabatha Ricci en avril, avant sa défaite contre Suarez à Las Vegas plus tôt ce mois-ci.</p>",
+      "<h2>Jandiroba ne prévoit pas de prendre sa retraite</h2>",
+      "<p>Âgée de 38 ans, la combattante assure ne pas vouloir mettre un terme à sa carrière. Toujours selon MMA Fighting, elle indique que son équipe et son manager étudient déjà les possibilités pour la suite. Jandiroba dit se sentir bien et motivée, et se projette vers d’autres combats avant la fin de sa carrière.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "UFC releases former title contender Virna Jandiroba: ‘I was caught off guard by this decision’",
+        "url": "https://mmafighting.com/ufc/522228/ufc-releases-former-title-contender-virna-jandiroba-i-was-caught-off-guard-by-this-decision",
+        "publishedAt": "2026-11-18T15:14:22.000Z",
+        "retrievedAt": "2026-11-18T19:08:14.612Z",
+        "bodyHash": "6a84d26e1c878a26585e520b4e4a71b56073786bc556d23550db8ee9c5ccbdc1"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-18T19:04:10.485Z"
+    },
+    "image": "/assets/editorial/virna-jandiroba-annonce-avoir-ete-liberee-par-l-ufc.webp",
+    "publicationBatchId": "2026-11-18T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/522228/ufc-releases-former-title-contender-virna-jandiroba-i-was-caught-off-guard-by-this-decision",
+        "sha256": "e0042c72df3e1188be9224f2d771ea1c15dc3035a93f7ecead1e5664aa16e1e9"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/522228/ufc-releases-former-title-contender-virna-jandiroba-i-was-caught-off-guard-by-this-decision",
+        "sha256": "f1fcc9bf82afacf6df20455e194f6fcafbc503379762cd63a7c087b259c745d6"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/522228/ufc-releases-former-title-contender-virna-jandiroba-i-was-caught-off-guard-by-this-decision",
+        "sha256": "bb905dda3c16a09fa652639248156d83d864de2de02208cee4537058954ff1bb"
+      }
+    ]
+  },
+  {
+    "newsKey": "jiri-prochazka-preparation-psychologique-ufc-qatar",
+    "imageAlt": "Jiri Prochazka et Navajo Stirling face-à-face lors de l’UFC Fight Night.",
+    "imageCaption": "Photographie publiée par MMA Fighting avec son article. Crédit : MMA Fighting.",
+    "imageCredit": "MMA Fighting",
+    "imageSource": {
+      "url": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2305050053.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C78.55366983107&w=1200",
+      "ogImageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2305050053.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C78.55366983107&w=1200",
+      "pageUrl": "https://mmafighting.com/ufc/522012/feelings-is-not-for-the-cage-jiri-prochazka-promises-to-be-a-weapon-like-never-before-in-ufc-qatar-main-event",
+      "publisher": "MMA Fighting",
+      "credit": "MMA Fighting",
+      "creditBasis": "source-publisher-only",
+      "sourceImageAlt": "UFC Fight Night: Prochazka v Stirling - Face-off",
+      "rightsStatus": "unverified",
+      "fetchedAt": "2026-11-18T19:07:53.984Z",
+      "originalWidth": 1200,
+      "originalHeight": 623
+    },
+    "imageWidth": 1200,
+    "imageHeight": 675,
+    "illustration": false,
+    "slug": "jiri-prochazka-affine-sa-preparation-avant-le-combat-principal-de-l-ufc-qatar",
+    "title": "Jiri Prochazka affine sa préparation avant le combat principal de l’UFC Qatar",
+    "excerpt": "Jiri Prochazka dit avoir travaillé sa préparation psychologique avant d’affronter Navajo Stirling dans le combat principal de l’UFC Qatar.",
+    "category": "actualites",
+    "kicker": "UFC · Déclaration",
+    "date": "2026-11-18",
+    "publishedAt": "2026-11-18T19:08:14.612Z",
+    "verifiedAt": "2026-11-18T19:08:14.612Z",
+    "sourcePublishedAt": "2026-11-18T14:00:00.000Z",
+    "status": "published",
+    "author": "Rédaction PRISE MMA",
+    "readTime": "2 min",
+    "originalReporting": false,
+    "content": [
+      "<p class=\"lead\">Jiri Prochazka affrontera Navajo Stirling dans le combat principal de l’UFC Qatar ce samedi. À l’approche de ce rendez-vous, l’ancien champion des poids mi-lourds explique avoir travaillé avec son équipe sur sa préparation psychologique, après avoir identifié une erreur lors de son dernier combat.</p>",
+      "<h2>Une préparation centrée sur la concentration</h2>",
+      "<p>Dans un entretien accordé à MMA Fighting, Prochazka a expliqué que les émotions n’avaient pas leur place dans la cage. Il veut rester concentré sur ses objectifs et aborder le combat comme une arme. Il espère ainsi montrer une autre version de lui-même et repartir avec la victoire.</p>",
+      "<h2>Un adversaire qu’il juge dangereux</h2>",
+      "<p>Stirling est un coéquipier de Carlos Ulberg, qui a battu Prochazka lors de son précédent combat. Le combattant dit être enthousiaste à l’idée de relever ce défi, tout en reconnaissant le risque que représente son adversaire. Il estime que sa préparation lui permettra de réussir.</p>",
+      "<h2>Une nouvelle chance pour le titre en ligne de mire</h2>",
+      "<p>Prochazka considère qu’une victoire contre Stirling le rendrait incontournable pour une nouvelle occasion de viser le titre. Il estime toutefois que ce retour au sommet viendra au bon moment et présente ce combat comme l’étape à franchir maintenant.</p>"
+    ],
+    "sources": [
+      {
+        "name": "MMA Fighting",
+        "title": "‘Feelings is not for the cage’: Jiri Prochazka promises to be a weapon like never before in UFC Qatar main event",
+        "url": "https://mmafighting.com/ufc/522012/feelings-is-not-for-the-cage-jiri-prochazka-promises-to-be-a-weapon-like-never-before-in-ufc-qatar-main-event",
+        "publishedAt": "2026-11-18T14:00:00.000Z",
+        "retrievedAt": "2026-11-18T19:08:14.612Z",
+        "bodyHash": "993b2768235288ea4cd16e9af4020c433db8b8d462453d87d7b2102ed0bc2b2b"
+      }
+    ],
+    "editorialReview": {
+      "method": "source-grounded-draft-and-independent-review",
+      "verifiedAt": "2026-11-18T19:04:10.485Z"
+    },
+    "image": "/assets/editorial/jiri-prochazka-affine-sa-preparation-avant-le-combat-principal-de-l-ufc-qatar.webp",
+    "publicationBatchId": "2026-11-18T18:00:00.000Z",
+    "evidenceHashes": [
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/522012/feelings-is-not-for-the-cage-jiri-prochazka-promises-to-be-a-weapon-like-never-before-in-ufc-qatar-main-event",
+        "sha256": "291428e27ee990652e277f7f3ee5993ccc710fe23ec1cf3454e17b47024c1340"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/522012/feelings-is-not-for-the-cage-jiri-prochazka-promises-to-be-a-weapon-like-never-before-in-ufc-qatar-main-event",
+        "sha256": "23f588cd1e879d238cf1fbff5a02e78fca886370de01cb692be69772e296228c"
+      },
+      {
+        "sourceUrl": "https://mmafighting.com/ufc/522012/feelings-is-not-for-the-cage-jiri-prochazka-promises-to-be-a-weapon-like-never-before-in-ufc-qatar-main-event",
+        "sha256": "f445691e5ee342f7a5b3e044c9db4c4280cc0111ba28e2eff7cea4d082a86e1a"
+      }
+    ]
+  },
+  {
     "newsKey": "demetrious-johnson-critique-prestation-ciryl-gane",
     "imageAlt": "Photographie publiée par La Sueur avec son article source.",
     "imageCaption": "Photographie publiée par La Sueur avec son article. Crédit : La Sueur.",
